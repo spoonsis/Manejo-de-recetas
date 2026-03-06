@@ -1,0 +1,88 @@
+{
+  "receta": {
+    "id": "52w10t7yv",
+    "nombre": "Pistacho tostado",
+    "estado": "APROBADO",
+    "versionActual": 2,
+    "pasos": [
+      "hornear 10 min"
+    ],
+    "ultimoRegistroCambios": null,
+    "costoTotal": "13344240.0735",
+    "esSubReceta": 1,
+    "esSemielaborado": 0,
+    "codigoCalidad": "52582",
+    "flujo_aprobacion_id": null,
+    "tipoCosteo": "GRAMO",
+    "mudi": "0.7700",
+    "gif": "0.0000",
+    "totalMP": "13344240.0735",
+    "totalEMP": "0.0000",
+    "totalMUDI": "0.7700",
+    "costoTotalBase": "13344240.8435",
+    "costoTotalFinal": "13344240.8435",
+    "costoUnitarioMP": "0.0000",
+    "costoUnitarioEMP": "0.0000",
+    "costoUnitarioMUDI": "0.0000",
+    "pesoTotalCantidad": null,
+    "pesoTotalUnidad": null,
+    "tiempoPrepCantidad": null,
+    "tiempoPrepUnidad": null,
+    "porcionesCantidad": null,
+    "porcionesUnidad": null,
+    "pesoPorcionCantidad": null,
+    "pesoPorcionUnidad": null,
+    "mermaCantidad": null,
+    "mermaUnidad": null,
+    "subsidiaria": null,
+    "elaboradoPor": null,
+    "aprobadoPor": null,
+    "areaProduce": null,
+    "areaEmpaca": null,
+    "fechaCreacion": "2026-03-04T21:55:48.000Z",
+    "ultimaModificacion": "2026-03-04T22:05:29.000Z"
+  },
+  "ingredientes": [
+    {
+      "id": "lghbok2isnpve8m0yz",
+      "receta_id": "52w10t7yv",
+      "tipo": "INSUMO",
+      "idReferencia": "MP10778",
+      "nombre": "Pistacho Pelado Sin Sal ",
+      "cantidad": "1000.0000",
+      "unidad": "g",
+      "costoUnitario": "12.7500",
+      "costoTotal": "12750.0000",
+      "snapshotCostoUnitario": null,
+      "snapshotVersion": null,
+      "codigo": null,
+      "codigoNetSuite": "MP10778",
+      "descripcionIngrediente": "Pistacho Pelado Sin Sal ",
+      "tipoMaterial": "Materia Prima"
+    }
+  ],
+  "historial": [
+    {
+      "version": 2,
+      "snapshot": {
+        "gif": 0,
+        "totalMP": 13344240.073529411,
+        "totalEMP": 0,
+        "totalMUDI": 0.77,
+        "costoTotalBase": 13344240.843529413,
+        "costoTotalFinal": 13344240.843529413
+      }
+    },
+    {
+      "version": 1,
+      "snapshot": {
+        "gif": 0,
+        "totalMP": 13344240.073529411,
+        "totalEMP": 0,
+        "totalMUDI": 0.77,
+        "costoTotalBase": 13344240.843529413,
+        "costoTotalFinal": 13344240.843529413
+      }
+    }
+  ]
+}

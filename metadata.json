@@ -1,0 +1,5 @@
+{
+  "name": "GastroFlow Pro - Gestión de Recetas y Costos",
+  "description": "Sistema avanzado de administración de recetas para restaurantes con control de versiones, flujo de aprobaciones (Costos y MK), costeo dinámico de insumos y gestión de sub-recetas.",
+  "requestFramePermissions": []
+}

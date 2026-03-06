@@ -1,0 +1,84 @@
+{
+  "receta": {
+    "id": "wbzev8382",
+    "nombre": "Pistacho tostado",
+    "estado": "PENDIENTE_COSTOS",
+    "versionActual": 4,
+    "pasos": [
+      "hornear 10 min"
+    ],
+    "ultimoRegistroCambios": null,
+    "costoTotal": "0.7700",
+    "esSubReceta": 1,
+    "esSemielaborado": 0,
+    "codigoCalidad": "52582",
+    "flujo_aprobacion_id": null,
+    "tipoCosteo": "GRAMO",
+    "mudi": "0.7700",
+    "gif": "0.0000",
+    "totalMP": "0.0000",
+    "totalEMP": "0.0000",
+    "totalMUDI": "0.7700",
+    "costoTotalBase": "0.7700",
+    "costoTotalFinal": "0.7700",
+    "costoUnitarioMP": "0.0000",
+    "costoUnitarioEMP": "0.0000",
+    "costoUnitarioMUDI": "0.0000",
+    "pesoTotalCantidad": null,
+    "pesoTotalUnidad": null,
+    "tiempoPrepCantidad": null,
+    "tiempoPrepUnidad": null,
+    "porcionesCantidad": null,
+    "porcionesUnidad": null,
+    "pesoPorcionCantidad": null,
+    "pesoPorcionUnidad": null,
+    "mermaCantidad": null,
+    "mermaUnidad": null,
+    "subsidiaria": null,
+    "elaboradoPor": null,
+    "aprobadoPor": null,
+    "areaProduce": null,
+    "areaEmpaca": null,
+    "fechaCreacion": "2026-03-04T23:11:32.000Z",
+    "ultimaModificacion": "2026-03-04T23:11:32.000Z"
+  },
+  "ingredientes": [
+    {
+      "id": "rdgawo3rp4u4ye3jt8",
+      "receta_id": "wbzev8382",
+      "tipo": "INSUMO",
+      "idReferencia": "MP10778",
+      "nombre": "Pistacho Pelado Sin Sal ",
+      "cantidad": "1000.0000",
+      "unidad": "g",
+      "costoUnitario": "13.3440",
+      "costoTotal": "13344.0000",
+      "snapshotCostoUnitario": null,
+      "snapshotVersion": null,
+      "codigo": null,
+      "codigoNetSuite": "MP10778",
+      "descripcionIngrediente": "Pistacho Pelado Sin Sal ",
+      "tipoMaterial": "Materia Prima"
+    }
+  ],
+  "historial": [
+    {
+      "id": 13,
+      "receta_id": "wbzev8382",
+      "numeroVersion": 1,
+      "fechaAprobacion": "2026-03-04T21:12:57.000Z",
+      "codigoCalidad": "52582",
+      "registroCambios": "Nueva creación",
+      "snapshotCostos": {
+        "gif": 0,
+        "totalMP": 13344240.073529411,
+        "totalEMP": 0,
+        "totalMUDI": 0.77,
+        "costoTotalBase": 13344240.843529413,
+        "costoTotalFinal": 13344240.843529413
+      },
+      "aprobadoPorCostos": "N/A",
+      "aprobadoPorMkt": "N/A"
+    }
+  ]
+}

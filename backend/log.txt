@@ -1,0 +1,74 @@
+[dotenv@17.3.1] injecting env (15) from .env -- tip: ­ƒøí´©Å auth for agents: https://vestauth.com
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ­ƒñû agentic secret storage: https://dotenvx.com/as2
+Conectando a Azure SQL con estos datos:
+Servidor backend en http://localhost:3001
+Ô£à Conectado a MySQL
+Conectado a Azure SQL ­ƒÄë
+Error POST /recetas Error: Unknown column 'codigo' in 'field list'
+    at PromisePoolConnection.query (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\mysql2\lib\promise\connection.js:29:22)
+    at Object.upsertReceta (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\servicios\ServicioRecetasInsumos.js:113:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\rutas\rutasRecetasInsumos.js:41:9 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n' +
+    '                INSERT INTO ingredientes_receta (\n' +
+    '                    id, receta_id, tipo, idReferencia, nombre, cantidad, unidad, \n' +
+    '                    costoUnitario, costoTotal, codigo, codigoNetSuite, \n' +
+    '                    descripcionIngrediente, tipoMaterial\n' +
+    "                ) VALUES ('9suhdnywv5yyfh0sbh', 'hdlg9swgi', 'INSUMO', 'MP10778', 'Pistacho Pelado Sin Sal ', 1000, 'g', 13344.240073529412, 13344240.073529413, NULL, 'MP10778', 'Pistacho Pelado Sin Sal ', 'Materia Prima')\n" +
+    '            ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'codigo' in 'field list'"
+}
+Error POST /recetas Error: Unknown column 'codigo' in 'field list'
+    at PromisePoolConnection.query (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\mysql2\lib\promise\connection.js:29:22)
+    at Object.upsertReceta (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\servicios\ServicioRecetasInsumos.js:113:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\rutas\rutasRecetasInsumos.js:41:9 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n' +
+    '                INSERT INTO ingredientes_receta (\n' +
+    '                    id, receta_id, tipo, idReferencia, nombre, cantidad, unidad, \n' +
+    '                    costoUnitario, costoTotal, codigo, codigoNetSuite, \n' +
+    '                    descripcionIngrediente, tipoMaterial\n' +
+    "                ) VALUES ('d6awxwo91iyvnz0w90', 'f54lrls0b', 'INSUMO', 'MP10778', 'Pistacho Pelado Sin Sal ', 1000, 'g', 13344.240073529412, 13344240.073529413, NULL, 'MP10778', 'Pistacho Pelado Sin Sal ', 'Materia Prima'), ('hmwadk6n4hzg1hr04z', 'f54lrls0b', 'INSUMO', 'MP10253', 'Monedas Marmoleadas', 1, 'unidad', 103.7375, 103.7375, NULL, 'MP10253', 'Monedas Marmoleadas', 'Materia Prima')\n" +
+    '            ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'codigo' in 'field list'"
+}
+Error POST /recetas Error: Unknown column 'codigo' in 'field list'
+    at PromisePoolConnection.query (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\mysql2\lib\promise\connection.js:29:22)
+    at Object.upsertReceta (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\servicios\ServicioRecetasInsumos.js:113:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\rutas\rutasRecetasInsumos.js:41:9 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n' +
+    '                INSERT INTO ingredientes_receta (\n' +
+    '                    id, receta_id, tipo, idReferencia, nombre, cantidad, unidad, \n' +
+    '                    costoUnitario, costoTotal, codigo, codigoNetSuite, \n' +
+    '                    descripcionIngrediente, tipoMaterial\n' +
+    "                ) VALUES ('mlz4jdi4vn7i5dipz5', 'rcfkdrifz', 'INSUMO', 'MP10778', 'Pistacho Pelado Sin Sal ', 1000, 'g', 13344.2401, 13344240.0735, NULL, 'MP10778', 'Pistacho Pelado Sin Sal ', 'Materia Prima'), ('4u3mioilkamujdox19', 'rcfkdrifz', 'INSUMO', 'MP10256', 'Mostaza Dijon Extra Fuerte', 1, 'unidad', 6010.8423211674535, 6010.8423211674535, NULL, 'MP10256', 'Mostaza Dijon Extra Fuerte', 'Materia Prima')\n" +
+    '            ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'codigo' in 'field list'"
+}
+Error POST /recetas Error: Unknown column 'codigo' in 'field list'
+    at PromisePoolConnection.query (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\mysql2\lib\promise\connection.js:29:22)
+    at Object.upsertReceta (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\servicios\ServicioRecetasInsumos.js:113:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\rutas\rutasRecetasInsumos.js:41:9 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n' +
+    '                INSERT INTO ingredientes_receta (\n' +
+    '                    id, receta_id, tipo, idReferencia, nombre, cantidad, unidad, \n' +
+    '                    costoUnitario, costoTotal, codigo, codigoNetSuite, \n' +
+    '                    descripcionIngrediente, tipoMaterial\n' +
+    "                ) VALUES ('6tgwoh5amda3saev4x', '2igvqp288', 'INSUMO', 'MP10778', 'Pistacho Pelado Sin Sal ', 1000, 'g', 13344.2401, 13344240.0735, NULL, 'MP10778', 'Pistacho Pelado Sin Sal ', 'Materia Prima'), ('9d6qb6je04lrhjqqft', '2igvqp288', 'INSUMO', 'MP10256', 'Mostaza Dijon Extra Fuerte', 1, 'unidad', 6010.8423211674535, 6010.8423211674535, NULL, 'MP10256', 'Mostaza Dijon Extra Fuerte', 'Materia Prima')\n" +
+    '            ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'codigo' in 'field list'"
+}
