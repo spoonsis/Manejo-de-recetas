@@ -56,7 +56,7 @@ import {
   ArrowRightCircle,
   Coins, HandCoins, Factory, ChevronRight
 } from 'lucide-react';
-import { Receta, Insumo, EstadoReceta, EstadoInsumo, Rol, IngredienteReceta, ConfiguracionRol, Permiso, FlujoAprobacion, PasoFlujo, FichaTecnica, EstadoFicha, RegistroCambioFicha, AspectoMicrobiologico, FaseFluxoInsumo, HistorialVersiones } from './types';
+import { Receta, Insumo, EstadoReceta, EstadoInsumo, Rol, IngredienteReceta, ConfiguracionRol, Permiso, FlujoAprobacion, PasoFlujo, FichaTecnica, EstadoFicha, RegistroCambioFicha, AspectoMicrobiologico, FaseFluxoInsumo, HistorialVersiones, Notificacion } from './types';
 import { ESTILOS_ESTADO, ETIQUETAS_ESTADO, ESTILOS_ESTADO_INSUMO, ETIQUETAS_ESTADO_INSUMO, UNIDADES, UNIDADES_STOCK, OPCIONES_IMPUESTO, TIPOS_MATERIAL, MAPA_CONVERSION_UNIDADES } from './constants';
 import { optimizarPasosReceta } from './geminiService';
 
@@ -183,9 +183,51 @@ export default function App() {
   // Tab Admin Interno
   const [adminTab, setAdminTab] = useState<'workflows' | 'usuarios'>('workflows');
 
+  const [notificaciones, setNotificaciones] = useState<Notificacion[]>([]);
+  const [mostrarNotificaciones, setMostrarNotificaciones] = useState(false);
+
+  const cargarNotificaciones = async () => {
+    if (!usuarioActual) return;
+    try {
+      const res = await fetch(`http://localhost:3001/api/notificaciones?rol=${usuarioActual.rol}`);
+      if (res.ok) {
+        setNotificaciones(await res.json());
+      }
+    } catch (e) {
+      console.error("Error loading notif", e);
+    }
+  };
+
   useEffect(() => {
     setVista('panel');
+    cargarNotificaciones();
+    const interval = setInterval(cargarNotificaciones, 10000); // 10s para testing rápido
+    return () => clearInterval(interval);
   }, [usuarioActual]);
+
+  const enviarNotificacion = async (rolDestino: string, titulo: string, mensaje: string, tipo: 'INFO' | 'SUCCESS' | 'WARNING' | 'DANGER' = 'INFO', referenciaId: string | null = null) => {
+    try {
+      await fetch("http://localhost:3001/api/notificaciones", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ rolDestino, titulo, mensaje, tipo, referenciaId })
+      });
+      cargarNotificaciones(); // Refrescar en este cliente si se notifica a si mismo o a todos
+    } catch (error) {
+      console.error("Error enviando notificación", error);
+    }
+  };
+
+  const marcarNotificacionLeida = async (id: number) => {
+    try {
+      const res = await fetch(`http://localhost:3001/api/notificaciones/${id}/leer`, { method: 'PUT' });
+      if (res.ok) {
+        setNotificaciones(prev => prev.map(n => n.id === id ? { ...n, leida: true } : n));
+      }
+    } catch (e) {
+      console.error("Error marcando notificación como leída", e);
+    }
+  };
 
   // CARGA DE DATOS DESDE API SQL
   useEffect(() => {
@@ -221,6 +263,13 @@ export default function App() {
           return Array.from(map.values());
         });
 
+        // 4. Cargar Fichas Técnicas
+        const resFichas = await fetch("http://localhost:3001/api/local/fichas");
+        if (resFichas.ok) {
+          const dataFichas = await resFichas.json();
+          setFichas(dataFichas);
+        }
+
       } catch (error) {
         console.error("Error cargando todos los catálogos:", error);
       }
@@ -244,6 +293,24 @@ export default function App() {
         // En actualizar estado local si la BD salvó bien
         setInsumos((prev: any[]) => {
           const existe = prev.find((i: { id: string; }) => i.id === insumo.id);
+
+          setTimeout(() => {
+            if (!existe && insumo.locales) {
+              const primerFase = fasesInsumo.find(f => f.orden === 1);
+              if (primerFase) enviarNotificacion(primerFase.rolResponsable, 'Nuevo Insumo Local', `El Chef creó el insumo "${insumo.nombre}", por favor completa la información inicial.`, 'WARNING', insumo.id);
+            } else if (existe) {
+              if (existe.estado !== EstadoInsumo.COMPLETADO && insumo.estado === EstadoInsumo.COMPLETADO) {
+                enviarNotificacion('TODOS', 'Insumo Completado', `La información del insumo "${insumo.nombre}" ha sido completada por todas las áreas.`, 'SUCCESS', insumo.id);
+              } else if (insumo.estado !== EstadoInsumo.COMPLETADO) {
+                const faseActual = fasesInsumo.find(f => f.rolResponsable === usuarioActual?.rol);
+                if (faseActual) {
+                  const faseSiguiente = fasesInsumo.find(f => f.orden === faseActual.orden + 1);
+                  if (faseSiguiente) enviarNotificacion(faseSiguiente.rolResponsable, 'Actualización de Insumo', `El Insumo "${insumo.nombre}" fue actualizado por ${faseActual.nombre} y requiere tu validación.`, 'INFO', insumo.id);
+                }
+              }
+            }
+          }, 0);
+
           if (existe) return prev.map((i: { id: string; }) => i.id === insumo.id ? insumo : i);
           return [...prev, insumo];
         });
@@ -364,6 +431,15 @@ export default function App() {
         } else {
           setRecetas((prev: any) => [...prev, recetaFinal]);
         }
+
+        if (original && original.estado === EstadoReceta.BORRADOR && recetaFinal.estado === EstadoReceta.PENDIENTE_COSTOS) {
+          const flujoAsignado = flujos.find(f => f.id === recetaFinal.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
+          const primerPaso = flujoAsignado.pasos.find(p => p.orden === 1);
+          if (primerPaso) {
+            enviarNotificacion(primerPaso.rolResponsable, 'Receta Enviada a Revisión', `El chef ha enviado la receta "${recetaFinal.nombre}" para tu revisión inicial de costos.`, 'WARNING', recetaFinal.id);
+          }
+        }
+
         setEditandoReceta(null);
       } else {
         alert("Error del servidor al guardar la receta. Revisa tu conexión o el formato de datos.");
@@ -454,6 +530,17 @@ export default function App() {
       });
       if (res.ok) {
         setRecetas((prev: Receta[]) => prev.map((r: Receta) => r.id === idReceta ? recetaFinal : r));
+
+        if (siguienteEstado === EstadoReceta.APROBADO) {
+          enviarNotificacion('CHEF', 'Receta Aprobada', `La receta "${recetaFinal.nombre}" ha sido aprobada exitosamente y está en el Libro Oficial.`, 'SUCCESS', recetaFinal.id);
+          enviarNotificacion('TODOS', 'Nueva Receta Aprobada', `La receta "${recetaFinal.nombre}" ya está disponible en el Libro de Recetas.`, 'INFO', recetaFinal.id);
+        } else if (siguienteEstado !== currReceta.estado) {
+          const pasoSiguiente = flujoAsignado.pasos.find(p => p.estadoDestino === siguienteEstado) || flujoAsignado.pasos.find(p => p.orden === (pasoActual?.orden || 0) + 1);
+          if (pasoSiguiente) {
+            enviarNotificacion(pasoSiguiente.rolResponsable, 'Receta Pendiente de Revisión', `La receta "${recetaFinal.nombre}" fue aprobada por ${rolActual} y requiere tu validación.`, 'WARNING', recetaFinal.id);
+          }
+        }
+
       } else {
         alert("Error del servidor al intentar aprobar la receta.");
       }
@@ -481,6 +568,7 @@ export default function App() {
       });
       if (res.ok) {
         setRecetas((prev: Receta[]) => prev.map((re: Receta) => re.id === idReceta ? recetaFinal : re));
+        enviarNotificacion('CHEF', 'Receta Rechazada', `La receta "${recetaFinal.nombre}" fue rechazada por el área de ${rolActual}. Por favor, realiza las correcciones.`, 'DANGER', recetaFinal.id);
       }
     } catch (e) {
       console.error("Error rechazando receta", e);
@@ -534,24 +622,54 @@ export default function App() {
     setEditandoFicha(nueva);
   };
 
-  const manejarGuardarFicha = (actualizada: FichaTecnica) => {
+  const manejarGuardarFicha = async (actualizada: FichaTecnica) => {
+    let fichaFinal = { ...actualizada };
+
     setFichas((prev: any[]) => {
       const existe = prev.find((f: { id: string; }) => f.id === actualizada.id);
       if (existe) {
         if (existe.estado === EstadoFicha.COMPLETA) {
           const nuevaV = { ...actualizada, version: existe.version + 1, ultimaModificacion: new Date().toLocaleString() };
           nuevaV.historialCambios.push({ fecha: new Date().toLocaleString(), usuario: rol, descripcion: 'Nueva versión por actualización técnica', version: nuevaV.version });
+          fichaFinal = nuevaV;
           return prev.map((f: { id: string; }) => f.id === actualizada.id ? nuevaV : f);
         }
         return prev.map((f: { id: string; }) => f.id === actualizada.id ? actualizada : f);
       }
       return [...prev, actualizada];
     });
+
+    try {
+      await fetch("http://localhost:3001/api/local/fichas", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(fichaFinal)
+      });
+    } catch (e) {
+      console.error("Error guardando ficha en BD", e);
+      alert("La ficha se guardó localmente, pero hubo un error de conexión con la base de datos.");
+    }
+
     setEditandoFicha(null);
   };
 
-  const manejarInactivarFicha = (id: string) => {
-    setFichas((prev: any[]) => prev.map((f: { id: string; }) => f.id === id ? { ...f, estado: EstadoFicha.INACTIVA } : f));
+  const manejarInactivarFicha = async (id: string) => {
+    const fichaInactivada = fichas.find(f => f.id === id);
+    if (!fichaInactivada) return;
+
+    const fichaFinal = { ...fichaInactivada, estado: EstadoFicha.INACTIVA };
+
+    setFichas((prev: any[]) => prev.map((f: { id: string; }) => f.id === id ? fichaFinal : f));
+
+    try {
+      await fetch("http://localhost:3001/api/local/fichas", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(fichaFinal)
+      });
+    } catch (e) {
+      console.error("Error inactivando ficha en BD", e);
+    }
   };
   const recetasFiltradas = recetas.filter((r: { nombre: string; }) =>
     r.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase())
@@ -662,6 +780,59 @@ export default function App() {
 
         {/* Footer: Perfil y Logout (Ahora abajo) */}
         <div className="p-3 border-t border-slate-800 bg-slate-950/30 space-y-3 relative">
+
+          {/* Notificaciones UI */}
+          <div className="relative">
+            <button
+              onClick={() => { setMostrarNotificaciones(!mostrarNotificaciones); setShowUserMenu(false); }}
+              className={`w-full flex items-center ${isCollapsed ? 'justify-center' : 'justify-between px-3'} py-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/50 transition-all`}
+            >
+              <div className="flex items-center gap-3">
+                <div className="relative shrink-0">
+                  <Bell className="w-5 h-5" />
+                  {notificaciones.filter(n => !n.leida).length > 0 && (
+                    <span className="absolute -top-1 -right-1 flex h-3 w-3">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-500 border border-slate-900"></span>
+                    </span>
+                  )}
+                </div>
+                {!isCollapsed && <span className="text-sm font-medium">Notificaciones</span>}
+              </div>
+              {!isCollapsed && notificaciones.filter(n => !n.leida).length > 0 && (
+                <span className="bg-rose-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{notificaciones.filter(n => !n.leida).length}</span>
+              )}
+            </button>
+
+            {mostrarNotificaciones && (
+              <div className="absolute bottom-full left-0 w-80 mb-2 bg-white rounded-2xl shadow-2xl border border-slate-200 z-50 overflow-hidden flex flex-col max-h-[400px] animate-in slide-in-from-bottom-2 fade-in">
+                <div className="p-3 border-b flex justify-between items-center bg-slate-50">
+                  <h3 className="font-bold text-slate-800 flex items-center gap-2"><Bell className="w-4 h-4 text-indigo-500" /> Notificaciones</h3>
+                  <button onClick={() => setMostrarNotificaciones(false)} className="p-1 hover:bg-slate-200 rounded-full"><X className="w-4 h-4 text-slate-500" /></button>
+                </div>
+                <div className="overflow-y-auto custom-scrollbar flex-1 bg-white">
+                  {notificaciones.length === 0 ? (
+                    <div className="p-6 text-center text-sm text-slate-400">No tienes notificaciones.</div>
+                  ) : (
+                    <div className="divide-y divide-slate-100 p-2 space-y-2">
+                      {notificaciones.map(n => (
+                        <div key={n.id} onClick={() => !n.leida && marcarNotificacionLeida(n.id)} className={`p-4 rounded-2xl cursor-pointer transition-colors ${!n.leida ? 'bg-indigo-50/50 hover:bg-indigo-100/50' : 'opacity-70 hover:bg-slate-50'}`}>
+                          <div className="flex items-start gap-3">
+                            <div className={`mt-0.5 w-2 h-2 rounded-full shrink-0 ${!n.leida ? 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.5)]' : 'bg-transparent'}`}></div>
+                            <div className="flex-1 min-w-0">
+                              <p className={`text-sm tracking-tight ${!n.leida ? 'font-bold text-slate-900' : 'font-medium text-slate-700'}`}>{n.titulo}</p>
+                              <p className="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">{n.mensaje}</p>
+                              <p className="text-[10px] text-slate-400 mt-2 font-medium">{new Date(n.fecha).toLocaleString()}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* Menú Desplegable de Logout */}
           {showUserMenu && (
