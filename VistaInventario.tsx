@@ -8,7 +8,10 @@ import {
     ShieldCheck,
     Save,
     X,
-    FileText
+    FileText,
+    Upload,
+    Trash2,
+    Download
 } from 'lucide-react';
 import { Insumo, EstadoInsumo, Rol, FaseFluxoInsumo } from './types';
 import { ESTILOS_ESTADO_INSUMO, ETIQUETAS_ESTADO_INSUMO, MAPA_CONVERSION_UNIDADES } from './constants';
@@ -305,6 +308,7 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
     const [datos, setDatos] = useState<Insumo>(insumo);
     const fasesActivas = fasesConfig.filter(f => f.activo).sort((a, b) => a.orden - b.orden);
     const [faseActivaId, setFaseActivaId] = useState<string>(fasesActivas[0]?.id || '');
+    const [subiendoArchivo, setSubiendoArchivo] = useState(false);
 
     React.useEffect(() => {
         if (!faseActivaId && fasesActivas.length > 0) {
@@ -341,6 +345,41 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         setDatos(nuevosDatos);
     };
 
+    const handleUploadFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setSubiendoArchivo(true);
+        const formData = new FormData();
+        formData.append('archivo', file);
+
+        try {
+            const res = await fetch('http://localhost:3001/api/upload', {
+                method: 'POST',
+                body: formData
+            });
+            if (res.ok) {
+                const data = await res.json();
+                const nuevosDocs = [...(datos.documentos || []), { url: data.url, nombre: data.originalName }];
+                handleFieldChange('documentos', nuevosDocs);
+            } else {
+                alert("Error al subir el archivo.");
+            }
+        } catch (error) {
+            console.error("Error upload:", error);
+            alert("Error de conexión al subir.");
+        } finally {
+            setSubiendoArchivo(false);
+            if (e.target) e.target.value = '';
+        }
+    };
+
+    const handleRemoveFile = (index: number) => {
+        const nuevosDocs = [...(datos.documentos || [])];
+        nuevosDocs.splice(index, 1);
+        handleFieldChange('documentos', nuevosDocs);
+    };
+
     const faseActual = fasesActivas.find(f => f.id === faseActivaId);
     const puedeEditarFase = (fase: FaseFluxoInsumo) => {
         if (role === 'ADMIN') return true;
@@ -360,13 +399,46 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         }
 
         if (campo === 'documentos') {
+            const docsList = Array.isArray(datos.documentos) ? datos.documentos : [];
             return (
-                <div key={campo} className="col-span-full">
-                    <label className="text-[9px] font-black text-slate-400 uppercase mb-1.5 block">{label}</label>
-                    <div className="p-4 border-2 border-dashed border-slate-200 rounded-xl flex flex-col items-center justify-center text-slate-400 gap-1 hover:bg-slate-50 transition-colors">
-                        <FileText className="w-6 h-6" />
-                        <span className="text-[10px] font-bold">Gestión de Documentos</span>
+                <div key={campo} className="col-span-full space-y-3">
+                    <label className="text-[9px] font-black text-slate-400 border-b pb-1 w-full block uppercase mb-1.5">{label}</label>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
+                        {docsList.map((doc: any, idx: number) => (
+                            <div key={idx} className="flex items-center justify-between p-3 border border-slate-200 rounded-xl bg-slate-50 relative group">
+                                <div className="flex items-center gap-3 overflow-hidden">
+                                    <div className="p-2 bg-indigo-100 text-indigo-600 rounded-lg shrink-0">
+                                        <FileText className="w-4 h-4" />
+                                    </div>
+                                    <div className="min-w-0 pr-12">
+                                        <p className="text-xs font-bold text-slate-700 truncate">{doc.nombre || 'Documento adjunto'}</p>
+                                        <div className="flex items-center gap-2 mt-1">
+                                            <a href={`http://localhost:3001${doc.url}`} target="_blank" rel="noopener noreferrer" className="text-[9px] font-black uppercase tracking-wider text-indigo-500 hover:text-indigo-700 flex items-center gap-1">
+                                                <Download className="w-3 h-3" /> Descargar
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {esEditableActual && (
+                                    <button onClick={() => handleRemoveFile(idx)} className="absolute right-3 p-1.5 bg-white text-rose-400 hover:text-rose-600 hover:bg-rose-50 border border-slate-200 rounded-lg opacity-0 group-hover:opacity-100 transition-all shadow-sm">
+                                        <Trash2 className="w-3.5 h-3.5" />
+                                    </button>
+                                )}
+                            </div>
+                        ))}
                     </div>
+
+                    {esEditableActual && (
+                        <div className="relative">
+                            <input type="file" onChange={handleUploadFile} disabled={subiendoArchivo || !esEditableActual} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+                            <div className={`p-6 border-2 border-dashed ${subiendoArchivo ? 'border-indigo-300 bg-indigo-50' : 'border-slate-300 hover:border-indigo-400 hover:bg-indigo-50/30'} rounded-2xl flex flex-col items-center justify-center text-slate-500 gap-2 transition-all`}>
+                                <Upload className={`w-8 h-8 ${subiendoArchivo ? 'text-indigo-400 animate-bounce' : 'text-slate-400'}`} />
+                                <span className="text-xs font-bold">{subiendoArchivo ? 'Subiendo archivo...' : 'Haz clic o arrastra un archivo aquí'}</span>
+                                <span className="text-[9px] text-slate-400 font-medium">Soporta PDF, Word, Excel, Excel y más.</span>
+                            </div>
+                        </div>
+                    )}
                 </div>
             );
         }

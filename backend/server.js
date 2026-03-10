@@ -19,6 +19,8 @@ const costeoRoutes = require("./rutas/rutasCosteo");
 const localRoutes = require("./rutas/rutasRecetasInsumos");
 const fichasRoutes = require("./rutas/rutasFichas");
 const notificacionesRoutes = require("./rutas/rutasNotificaciones");
+const uploadsRoutes = require("./rutas/rutasUploads");
+const path = require("path");
 
 const app = express();
 
@@ -26,12 +28,16 @@ const app = express();
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 
+// Add static serving for uploads
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 // Rutas
 app.use("/api", externalRoutes);
 app.use("/api/local", localRoutes);
 app.use("/api/local", fichasRoutes); // Add new Fichas routes
 app.use("/api/costeo", costeoRoutes);
 app.use("/api/notificaciones", notificacionesRoutes);
+app.use("/api/upload", uploadsRoutes);
 
 // Puerto 3001
 const PORT = 3001;
