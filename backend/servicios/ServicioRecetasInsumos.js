@@ -33,7 +33,6 @@ async function obtenerRecetas() {
 
     return recetas.map(r => {
         r.pasos = typeof r.pasos === 'string' ? JSON.parse(r.pasos || "[]") : (r.pasos || []);
-        r.esSubReceta = r.esSubReceta === 1;
         r.esSemielaborado = r.esSemielaborado === 1;
 
         r.ingredientes = ingredientes.filter(i => i.receta_id === r.id).map(ing => ({
@@ -64,7 +63,7 @@ async function upsertReceta(data) {
 
         const {
             id, nombre, estado, versionActual, pasos, costoTotal,
-            esSubReceta, tipoCosteo, mudi, gif,
+            esSemielaborado, tipoCosteo, mudi, gif,
             totalMP, totalEMP, totalMUDI, costoTotalBase, costoTotalFinal,
             codigoCalidad
         } = data;
@@ -72,7 +71,7 @@ async function upsertReceta(data) {
         await conn.query(`
             INSERT INTO recetas (
                 id, nombre, estado, versionActual, pasos, costoTotal, 
-                esSubReceta, tipoCosteo, mudi, gif, 
+                esSemielaborado, tipoCosteo, mudi, gif, 
                 totalMP, totalEMP, totalMUDI, costoTotalBase, costoTotalFinal, codigoCalidad
             )
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -84,7 +83,7 @@ async function upsertReceta(data) {
                 costoTotalFinal=VALUES(costoTotalFinal), codigoCalidad=VALUES(codigoCalidad)
         `, [
             id, nombre, estado, versionActual || 1, JSON.stringify(pasos || []), costoTotal || 0,
-            esSubReceta ? 1 : 0, tipoCosteo || 'GRAMO', mudi || 0, gif || 0,
+            esSemielaborado ? 1 : 0, tipoCosteo || 'GRAMO', mudi || 0, gif || 0,
             totalMP || 0, totalEMP || 0, totalMUDI || 0, costoTotalBase || 0, costoTotalFinal || 0,
             codigoCalidad || null
         ]);

@@ -48,8 +48,8 @@ class CosteoService {
                 } else {
                     totalMP += costoTotal;
                 }
-            } else if (ing.tipo === 'SUBRECETA') {
-                const subreceta = todasRecetas.find(r => r.id === ing.idReferencia && r.estado === 'APROBADO');
+            } else if (ing.tipo === 'SEMIELABORADO') {
+                const subreceta = todasRecetas.find(r => r.id === ing.idReferencia);
                 if (subreceta) {
                     const factor = ing.cantidad;
                     totalMP += (subreceta.costoUnitarioMP || 0) * factor;
@@ -92,8 +92,8 @@ class CosteoService {
             let costoU = ing.costoUnitario; // Ya actualizado por calcular() si era NetSuite
             let version = null;
 
-            if (ing.tipo === 'SUBRECETA') {
-                const sub = todasRecetas.find(r => r.id === ing.idReferencia && r.estado === 'APROBADO');
+            if (ing.tipo === 'SEMIELABORADO') {
+                const sub = todasRecetas.find(r => r.id === ing.idReferencia);
                 if (sub) {
                     costoU = sub.costoTotalFinal / (sub.tipoCosteo === 'GRAMO' ? sub.pesoTotalCantidad : sub.porcionesCantidad);
                     version = sub.versionActual;

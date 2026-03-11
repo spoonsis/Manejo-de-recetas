@@ -188,7 +188,7 @@ export type ItemSidebar = {
 
 export interface IngredienteReceta {
   id: string;
-  tipo: 'INSUMO' | 'SUBRECETA';
+  tipo: 'INSUMO' | 'SEMIELABORADO';
   idReferencia: string;
   nombre: string;
   cantidad: number;
@@ -234,7 +234,6 @@ export interface Receta {
   versiones: HistorialVersiones[];
   ultimoRegistroCambios: string;
   costoTotal: number;
-  esSubReceta: boolean;
   esSemielaborado: boolean;
   codigoCalidad?: string;
   flujoAprobacionId?: string;
@@ -258,6 +257,7 @@ export interface Receta {
 
   pesoTotalCantidad?: number;
   pesoTotalUnidad?: string;
+  sumaTotalInsumos?: number;
   tiempoPrepCantidad?: number;
   tiempoPrepUnidad?: string;
   porcionesCantidad?: number;
