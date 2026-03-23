@@ -1,0 +1,2 @@
+[dotenv@17.3.1] injecting env (15) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+[{"id":"balfaro","nombreUsuario":"balfaro","email":"balfaro@fascr.com","nombreCompleto":"Brenda Alfaro","rol":"ADMIN","activo":1,"passwordHash":".fZTDWOnUXiBsvU9TdjtAWKLB/PBbB79OZgizq","avatar":null,"ultimoAcceso":"2026-03-05T20:04:38.000Z","resetToken":null,"resetTokenExpira":null}]

@@ -43,7 +43,7 @@ router.post('/', upload.single('archivo'), (req, res) => {
         });
     } catch (e) {
         console.error("Error POST /upload", e);
-        res.status(500).json({ error: e.message });
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
     }
 });
 

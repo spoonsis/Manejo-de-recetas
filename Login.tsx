@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Utensils, Lock, User, ArrowRight, Loader2, ChefHat, ShieldCheck } from 'lucide-react';
 import { Usuario } from './types';
 
@@ -7,46 +7,83 @@ interface LoginProps {
     usuariosRegistrados: Usuario[];
 }
 
-export default function Login({ onLogin, usuariosRegistrados }: LoginProps) {
+export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
+    const resetPassword = async () => {
+        try {
+            const host = window.location.hostname === 'localhost' ? 'localhost' : window.location.hostname;
 
-    const handleLogin = (e: React.FormEvent) => {
+            const res = await fetch(`/api/auth/reset-password`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    username,
+                    newPassword: password
+                })
+            });
+
+            const data = await res.json();
+            console.log("RESET:", data);
+
+            if (data.success) {
+                alert("✅ Contraseña actualizada. Ahora intenta ingresar.");
+            } else {
+                alert(data.error || "Error en reset");
+            }
+
+        } catch (err) {
+            console.error(err);
+            alert("Error de conexión en reset");
+        }
+    };
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
         setError('');
 
-        // Simulación de delay de red
-        setTimeout(() => {
-            const usuario = usuariosRegistrados.find(
-                u => (u.nombreUsuario === username || u.email === username) && u.activo
-            );
+        try {
+            const host = window.location.hostname === 'localhost' ? 'localhost' : window.location.hostname;
+            const apiUrl = `/api/auth/login`;
 
-            // Simulación muy básica de auth (en prod esto va al backend)
-            if (usuario) {
-                // En un caso real, validaríamos hash de contraseña
-                if (password === 'admin' || password === '1234') { // Contraseñas default para demo
-                    onLogin(usuario);
-                } else {
-                    setError('Contraseña incorrecta');
-                    setLoading(false);
-                }
+            console.log("Intentando login en:", apiUrl);
+
+            const res = await fetch(apiUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password }),
+                credentials: 'include'
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                onLogin(data.user);
             } else {
-                setError('Usuario no encontrado o inactivo');
-                setLoading(false);
+                const errData = await res.json();
+                setError(errData.error || 'Credenciales inválidas');
             }
-        }, 1500);
+        } catch (err: any) {
+            console.error("DETALLE ERROR LOGIN:", {
+                mensaje: err.message,
+                causa: err.cause,
+                stack: err.stack,
+                type: typeof err
+            });
+            setError(`Error de conexión: ${err.message}`);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
-        <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-business-olive flex items-center justify-center p-4">
 
             {/* Tarjeta de Login Centrada */}
             <div className="bg-white w-full max-w-[400px] rounded-3xl shadow-2xl p-8 animate-in fade-in zoom-in duration-500">
                 <div className="text-center mb-8">
-                    <div className="w-12 h-12 bg-indigo-600 rounded-xl mx-auto flex items-center justify-center mb-4 text-white shadow-lg shadow-indigo-200">
+                    <div className="w-12 h-12 bg-business-orange rounded-xl mx-auto flex items-center justify-center mb-4 text-white shadow-lg shadow-business-orange/20">
                         <ChefHat className="w-7 h-7" />
                     </div>
                     <h3 className="text-2xl font-black text-slate-900">Bienvenido</h3>
@@ -57,12 +94,12 @@ export default function Login({ onLogin, usuariosRegistrados }: LoginProps) {
                     <div className="space-y-1.5">
                         <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Usuario</label>
                         <div className="relative group">
-                            <User className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-indigo-600 transition-colors" />
+                            <User className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="text"
                                 value={username}
                                 onChange={e => setUsername(e.target.value)}
-                                className="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-4 text-sm font-bold text-slate-700 outline-none focus:ring-2 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all"
+                                className="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-4 text-sm font-bold text-slate-700 outline-none focus:ring-2 focus:ring-business-mustard/20 focus:border-business-orange transition-all"
                                 placeholder="ej. admin"
                                 required
                             />
@@ -72,13 +109,13 @@ export default function Login({ onLogin, usuariosRegistrados }: LoginProps) {
                     <div className="space-y-1.5">
                         <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Contraseña</label>
                         <div className="relative group">
-                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-indigo-600 transition-colors" />
+                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="password"
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}
-                                className="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-4 text-sm font-bold text-slate-700 outline-none focus:ring-2 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all"
-                                placeholder="••••••••"
+                                className="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-4 text-sm font-bold text-slate-700 outline-none focus:ring-2 focus:ring-business-mustard/20 focus:border-business-orange transition-all"
+                                placeholder="*******"
                                 required
                             />
                         </div>
@@ -93,18 +130,25 @@ export default function Login({ onLogin, usuariosRegistrados }: LoginProps) {
 
                     <div className="flex items-center justify-between pt-2">
                         <label className="flex items-center gap-2 cursor-pointer">
-                            <input type="checkbox" className="w-3.5 h-3.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500" />
+                            <input type="checkbox" className="w-3.5 h-3.5 rounded border-slate-300 text-business-orange focus:ring-business-mustard/20" />
                             <span className="text-xs font-bold text-slate-500">Recordarme</span>
                         </label>
-                        <a href="#" className="text-xs font-bold text-indigo-600 hover:text-indigo-800">¿Olvidaste pass?</a>
+                        <a href="#" className="text-xs font-bold text-business-orange hover:text-business-olive">¿Olvidaste pass?</a>
                     </div>
 
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-slate-900 text-white py-3.5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20 active:scale-95 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed mt-2"
+                        className="w-full bg-business-orange text-white py-3.5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-business-orange/90 transition-all shadow-lg shadow-business-orange/20 active:scale-95 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed mt-2"
                     >
                         {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <>Ingresar <ArrowRight className="w-4 h-4" /></>}
+                    </button>
+                    <button
+                        type="button"
+                        onClick={resetPassword}
+                        className="w-full bg-blue-500 text-white py-3 rounded-xl font-bold text-xs uppercase mt-2"
+                    >
+                        Resetear contraseña
                     </button>
                 </form>
 

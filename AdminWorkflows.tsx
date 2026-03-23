@@ -39,9 +39,20 @@ interface AdminWorkflowsProps {
     setFlujos: React.Dispatch<React.SetStateAction<FlujoAprobacion[]>>;
     fasesInsumo: FaseFluxoInsumo[];
     setFasesInsumo: React.Dispatch<React.SetStateAction<FaseFluxoInsumo[]>>;
+    onSaveFlujo: (flujo: FlujoAprobacion) => Promise<void>;
+    onDeleteFlujo: (id: string) => Promise<void>;
 }
 
-export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, setFlujos, fasesInsumo, setFasesInsumo }: AdminWorkflowsProps) {
+export default function AdminWorkflows({ 
+    configRoles, 
+    setConfigRoles, 
+    flujos, 
+    setFlujos, 
+    fasesInsumo, 
+    setFasesInsumo,
+    onSaveFlujo,
+    onDeleteFlujo
+}: AdminWorkflowsProps) {
     const [tab, setTab] = useState<'roles' | 'flujos' | 'insumos'>('flujos');
     const [editandoFlujo, setEditandoFlujo] = useState<FlujoAprobacion | null>(null);
     const [editandoFase, setEditandoFase] = useState<FaseFluxoInsumo | null>(null);
@@ -59,19 +70,13 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
 
     // --- Flujos Aprobación Handlers ---
     const guardarFlujo = (flujo: FlujoAprobacion) => {
-        setFlujos(prev => {
-            const existe = prev.find(f => f.id === flujo.id);
-            if (existe) {
-                return prev.map(f => f.id === flujo.id ? flujo : f);
-            }
-            return [...prev, flujo];
-        });
+        onSaveFlujo(flujo);
         setEditandoFlujo(null);
     };
 
     const eliminarFlujo = (id: string) => {
         if (confirm('¿Estás seguro de eliminar este flujo?')) {
-            setFlujos(prev => prev.filter(f => f.id !== id));
+            onDeleteFlujo(id);
         }
     };
 
@@ -103,7 +108,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
             <header className="flex justify-between items-end">
                 <div>
                     <h1 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-3">
-                        <Settings2 className="w-8 h-8 text-indigo-600" />
+                        <Settings2 className="w-8 h-8 text-business-orange" />
                         Configuración del Sistema
                     </h1>
                     <p className="text-slate-500 font-medium text-xs mt-1 italic">Define la arquitectura operativa y de seguridad del sistema.</p>
@@ -113,19 +118,19 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
             <div className="flex gap-2 border-b">
                 <button
                     onClick={() => setTab('roles')}
-                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'roles' ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-400'}`}
+                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'roles' ? 'border-business-orange text-business-orange' : 'border-transparent text-slate-400'}`}
                 >
                     Roles y Privilegios
                 </button>
                 <button
                     onClick={() => setTab('flujos')}
-                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'flujos' ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-400'}`}
+                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'flujos' ? 'border-business-orange text-business-orange' : 'border-transparent text-slate-400'}`}
                 >
                     Flujos Aprobación
                 </button>
                 <button
                     onClick={() => setTab('insumos')}
-                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'insumos' ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-400'}`}
+                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'insumos' ? 'border-business-orange text-business-orange' : 'border-transparent text-slate-400'}`}
                 >
                     Flujos Insumos
                 </button>
@@ -153,7 +158,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                         setConfigRoles(prev => [...prev, { rol: nombre, permisos: [], color }]);
                                     }
                                 }}
-                                className="bg-indigo-600 text-white px-4 py-2 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-indigo-700 transition"
+                                className="bg-business-orange text-white px-4 py-2 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-business-orange/90 transition"
                             >
                                 <Plus className="w-3.5 h-3.5" /> Nuevo Rol
                             </button>
@@ -195,10 +200,10 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                                     <button
                                                         key={p}
                                                         onClick={() => alternarPermiso(cr.rol, p)}
-                                                        className={`flex items-center justify-between p-2 rounded-lg transition-all text-[10px] font-bold uppercase tracking-wider ${activo ? 'bg-indigo-50 text-indigo-700' : 'text-slate-400 hover:bg-slate-50'}`}
+                                                        className={`flex items-center justify-between p-2 rounded-lg transition-all text-[10px] font-bold uppercase tracking-wider ${activo ? 'bg-business-mustard/10 text-business-orange' : 'text-slate-400 hover:bg-slate-50'}`}
                                                     >
                                                         <span>{p.replace(/_/g, ' ')}</span>
-                                                        {activo && <CheckCircle2 className="w-3 h-3 text-indigo-600" />}
+                                                        {activo && <CheckCircle2 className="w-3 h-3 text-business-orange" />}
                                                     </button>
                                                 );
                                             })}
@@ -233,13 +238,13 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                             activo: false,
                                             pasos: []
                                         })}
-                                        className="bg-indigo-600 text-white px-4 py-2 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-indigo-700 transition"
+                                        className="bg-business-orange text-white px-4 py-2 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-business-orange/90 transition"
                                     >
                                         <Plus className="w-3.5 h-3.5" /> Nuevo Flujo
                                     </button>
                                 </div>
                                 {flujos.map((f) => (
-                                    <div key={f.id} className={`border rounded-2xl p-5 space-y-5 transition-all ${f.activo ? 'border-indigo-100 bg-indigo-50/10' : 'border-slate-100 bg-slate-50 opactiy-75'}`}>
+                                    <div key={f.id} className={`border rounded-2xl p-5 space-y-5 transition-all ${f.activo ? 'border-business-mustard/20 bg-business-mustard/5' : 'border-slate-100 bg-slate-50 opactiy-75'}`}>
                                         <div className="flex justify-between items-start">
                                             <div>
                                                 <div className="flex items-center gap-2 mb-1">
@@ -263,7 +268,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                                 </button>
                                                 <button
                                                     onClick={() => setEditandoFlujo(f)}
-                                                    className="p-2 bg-white text-indigo-600 rounded-lg shadow-sm border border-slate-100 hover:border-indigo-200"
+                                                    className="p-2 bg-white text-business-orange rounded-lg shadow-sm border border-slate-100 hover:border-business-mustard/50"
                                                 >
                                                     <Edit3 className="w-4 h-4" />
                                                 </button>
@@ -284,7 +289,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                                             {p.orden}
                                                         </div>
                                                         <div className="flex items-center gap-2 mb-3 mt-1">
-                                                            <div className="p-2 bg-indigo-50 rounded-lg text-indigo-600">
+                                                            <div className="p-2 bg-business-mustard/10 rounded-lg text-business-orange">
                                                                 <Users className="w-3.5 h-3.5" />
                                                             </div>
                                                             <h4 className="font-black text-slate-900 uppercase text-[9px] tracking-widest truncate" title={p.etiqueta}>
@@ -293,7 +298,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                                         </div>
                                                         <div className="space-y-2">
                                                             <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">
-                                                                Responsable: <span className="text-indigo-600">{p.rolResponsable}</span>
+                                                                Responsable: <span className="text-business-orange">{p.rolResponsable}</span>
                                                             </p>
                                                             <div className="flex items-center gap-1.5 text-[8px] font-bold text-slate-500 bg-slate-50 p-1.5 rounded-md border border-slate-100">
                                                                 <Key className="w-2.5 h-2.5" /> {p.accionRequerida.replace('_', ' ')}
@@ -338,7 +343,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                             campos: [],
                                             activo: true
                                         })}
-                                        className="bg-indigo-600 text-white px-4 py-2 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-indigo-700 transition"
+                                        className="bg-business-orange text-white px-4 py-2 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-business-orange/90 transition"
                                     >
                                         <Plus className="w-3.5 h-3.5" /> Nueva Fase
                                     </button>
@@ -353,7 +358,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                             <div className="flex-1">
                                                 <h4 className="text-base font-black text-slate-900">{f.nombre}</h4>
                                                 <div className="flex items-center gap-3 mt-1">
-                                                    <span className="text-[9px] font-black uppercase text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-full">
+                                                    <span className="text-[9px] font-black uppercase text-business-orange bg-business-mustard/10 px-2.5 py-0.5 rounded-full">
                                                         Rol: {f.rolResponsable}
                                                     </span>
                                                     <span className="text-[9px] font-black uppercase text-slate-400 bg-slate-100 px-2.5 py-0.5 rounded-full">
@@ -365,7 +370,7 @@ export default function AdminWorkflows({ configRoles, setConfigRoles, flujos, se
                                                 <button onClick={() => guardarFase({ ...f, activo: !f.activo })} className={`p-2 rounded-lg border ${f.activo ? 'text-emerald-600 border-emerald-100 hover:bg-emerald-50' : 'text-slate-400 border-slate-200 bg-white'}`}>
                                                     <CheckCircle2 className="w-4 h-4" />
                                                 </button>
-                                                <button onClick={() => setEditandoFase(f)} className="p-2 bg-white text-indigo-600 rounded-lg shadow-sm border border-slate-100 hover:border-indigo-200">
+                                                <button onClick={() => setEditandoFase(f)} className="p-2 bg-white text-business-orange rounded-lg shadow-sm border border-slate-100 hover:border-business-mustard/50">
                                                     <Edit3 className="w-4 h-4" />
                                                 </button>
                                                 <button onClick={() => eliminarFase(f.id)} className="p-2 bg-white text-rose-500 rounded-lg shadow-sm border border-slate-100 hover:border-rose-200">
@@ -458,7 +463,7 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
                 <div className="space-y-1">
                     <label className="text-[9px] font-black uppercase text-slate-400 tracking-wider">Nombre del Flujo</label>
                     <input
-                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-business-mustard/50 outline-none transition"
                         value={datos.nombre}
                         onChange={e => setDatos({ ...datos, nombre: e.target.value })}
                         placeholder="Ej. Flujo Estándar..."
@@ -467,7 +472,7 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
                 <div className="space-y-1">
                     <label className="text-[9px] font-black uppercase text-slate-400 tracking-wider">Descripción Breve</label>
                     <input
-                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-medium text-slate-700 text-xs focus:ring-2 focus:ring-indigo-500 outline-none transition"
+                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-medium text-slate-700 text-xs focus:ring-2 focus:ring-business-mustard/50 outline-none transition"
                         value={datos.descripcion}
                         onChange={e => setDatos({ ...datos, descripcion: e.target.value })}
                         placeholder="Ej. Validación técnica y comercial..."
@@ -489,7 +494,7 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
             <div className="mt-10">
                 <div className="flex justify-between items-center mb-6">
                     <h4 className="text-lg font-black text-slate-800 flex items-center gap-2">
-                        <Users className="w-5 h-5 text-indigo-500" />
+                        <Users className="w-5 h-5 text-business-orange" />
                         Secuencia de Aprobación
                     </h4>
                     <button
@@ -502,12 +507,12 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
 
                 <div className="space-y-4">
                     {datos.pasos.sort((a, b) => a.orden - b.orden).map((paso, index) => (
-                        <div key={paso.id} className="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex gap-6 items-start group hover:border-indigo-300 transition-colors">
+                        <div key={paso.id} className="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex gap-6 items-start group hover:border-business-mustard/50 transition-colors">
                             <div className="flex flex-col gap-1 items-center justify-center pt-2">
                                 <button
                                     onClick={() => moverPaso(index, 'subir')}
                                     disabled={index === 0}
-                                    className="p-1 text-slate-400 hover:text-indigo-600 disabled:opacity-30"
+                                    className="p-1 text-slate-400 hover:text-business-orange disabled:opacity-30"
                                 >
                                     <ChevronUp className="w-5 h-5" />
                                 </button>
@@ -517,7 +522,7 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
                                 <button
                                     onClick={() => moverPaso(index, 'bajar')}
                                     disabled={index === datos.pasos.length - 1}
-                                    className="p-1 text-slate-400 hover:text-indigo-600 disabled:opacity-30"
+                                    className="p-1 text-slate-400 hover:text-business-orange disabled:opacity-30"
                                 >
                                     <ChevronDown className="w-5 h-5" />
                                 </button>
@@ -621,7 +626,7 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
                     <button onClick={onCancel} className="px-4 py-2 rounded-lg font-bold text-slate-500 text-[10px] uppercase hover:bg-slate-100 transition">
                         Cancelar
                     </button>
-                    <button onClick={() => onSave(datos)} className="px-5 py-2 rounded-xl bg-indigo-600 text-white font-bold text-[10px] uppercase shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition flex items-center gap-2">
+                    <button onClick={() => onSave(datos)} className="px-5 py-2 rounded-xl bg-business-orange text-white font-bold text-[10px] uppercase shadow-lg shadow-business-orange/20 hover:bg-business-orange/90 transition flex items-center gap-2">
                         <Save className="w-3.5 h-3.5" /> Guardar
                     </button>
                 </div>
@@ -631,7 +636,7 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
                 <div className="space-y-1">
                     <label className="text-[9px] font-black uppercase text-slate-400 tracking-wider">Nombre de la Fase</label>
                     <input
-                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-business-mustard/50 outline-none"
                         value={datos.nombre}
                         onChange={e => setDatos({ ...datos, nombre: e.target.value })}
                     />
@@ -640,7 +645,7 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
                     <label className="text-[9px] font-black uppercase text-slate-400 tracking-wider">Orden</label>
                     <input
                         type="number"
-                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-business-mustard/50 outline-none"
                         value={datos.orden}
                         onChange={e => setDatos({ ...datos, orden: parseInt(e.target.value) })}
                     />
@@ -648,7 +653,7 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
                 <div className="space-y-1">
                     <label className="text-[9px] font-black uppercase text-slate-400 tracking-wider">Responsable</label>
                     <select
-                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+                        className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs focus:ring-2 focus:ring-business-mustard/50 outline-none"
                         value={datos.rolResponsable}
                         onChange={e => setDatos({ ...datos, rolResponsable: e.target.value as Rol })}
                     >
@@ -666,7 +671,7 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
                             <button
                                 key={campo}
                                 onClick={() => toggleCampo(campo)}
-                                className={`p-3 rounded-xl text-left border transition-all ${asignado ? 'border-indigo-600 bg-indigo-50 text-indigo-700' : 'border-slate-100 bg-white text-slate-400 hover:border-slate-200'}`}
+                                className={`p-3 rounded-xl text-left border transition-all ${asignado ? 'border-business-orange bg-business-mustard/10 text-business-orange' : 'border-slate-100 bg-white text-slate-400 hover:border-slate-200'}`}
                             >
                                 <div className="flex justify-between items-center">
                                     <span className="font-bold text-[9px] uppercase">{campo}</span>

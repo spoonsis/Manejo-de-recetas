@@ -28,7 +28,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
     const [editando, setEditando] = useState<Insumo | null>(null);
     const [terminoBusqueda, setTerminoBusqueda] = useState('');
     const [filtroEstado, setFiltroEstado] = useState<string>('TODOS');
-    const [tabActiva, setTabActiva] = useState<'INTERNA' | 'EXTERNA'>('INTERNA');
+    const [tabActiva, setTabActiva] = useState<'INTERNA' | 'EXTERNA'>('EXTERNA');
 
     // Calcular progreso dinámico basado en la configuración de fases
     const calcularProgreso = (i: Insumo) => {
@@ -56,11 +56,13 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
         return insumos.filter(i => {
             const nombre = i.nombre?.toLowerCase() || "";
             const proveedor = i.proveedor?.toLowerCase() || "";
+            const marca = i.marca?.toLowerCase() || "";
             const id = i.id?.toLowerCase() || "";
 
             const cumpleBusqueda =
                 nombre.includes(textoBusqueda) ||
                 proveedor.includes(textoBusqueda) ||
+                marca.includes(textoBusqueda) ||
                 id.includes(textoBusqueda);
 
             const cumpleFiltro =
@@ -78,9 +80,9 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
             <div className={`px-6 py-4 border-b flex flex-col gap-1 ${colorClass}`}>
                 <div className="flex items-center gap-2">
                     <h2 className="text-sm font-bold text-slate-800">{titulo}</h2>
-                    <span className="text-[10px] font-black text-slate-500 bg-white/50 px-2 py-0.5 rounded-full shadow-sm">{lista.length}</span>
+                    <span className="text-[10px] font-black text-business-orange bg-white/70 px-2 py-0.5 rounded-full shadow-sm">{lista.length}</span>
                 </div>
-                <p className="text-[10px] text-slate-500 font-medium">{subtitulo}</p>
+                <p className="text-[10px] text-business-olive font-medium">{subtitulo}</p>
             </div>
             <div className="overflow-x-auto inner-scroll">
                 <table className="w-full text-left min-w-[1000px]">
@@ -100,7 +102,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                 <tr key={i.id} className="hover:bg-slate-50/50 transition-colors group">
                                     <td className="px-6 py-3">
                                         <div className="flex items-center gap-3">
-                                            <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-white shadow-md ${prog === 100 ? 'bg-emerald-500' : 'bg-slate-900'}`}>
+                                            <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-white shadow-md ${prog === 100 ? 'bg-business-olive' : 'bg-business-orange'}`}>
                                                 <Package className="w-4 h-4" />
                                             </div>
                                             <div>
@@ -109,7 +111,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                                     {i.source === 'EXTERNA' && <span className="text-[8px] bg-sky-100 text-sky-700 px-1.5 py-0.5 rounded uppercase tracking-wider font-bold">NetSuite</span>}
                                                 </div>
                                                 <div className="text-[9px] text-slate-400 font-bold uppercase mt-0.5 flex items-center gap-1.5">
-                                                    <Tag size={9} /> {i.proveedor || 'No Definido'}
+                                                    <Tag size={9} className="text-business-orange" /> {i.proveedor || 'No Definido'}
                                                 </div>
                                             </div>
                                         </div>
@@ -120,11 +122,11 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                                 <span className={`text-[8px] font-black uppercase px-2 py-0.5 rounded-full border shadow-sm ${ESTILOS_ESTADO_INSUMO[i.estado]}`}>
                                                     {ETIQUETAS_ESTADO_INSUMO[i.estado]}
                                                 </span>
-                                                <span className="text-[9px] font-black text-indigo-600">{prog}%</span>
+                                                <span className="text-[9px] font-black text-business-orange">{prog}%</span>
                                             </div>
-                                            <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                                            <div className="w-full h-1.5 bg-business-beige rounded-full overflow-hidden">
                                                 <div
-                                                    className={`h-full transition-all duration-1000 ease-out ${prog === 100 ? 'bg-emerald-500' : 'bg-indigo-600'}`}
+                                                    className={`h-full transition-all duration-1000 ease-out ${prog === 100 ? 'bg-business-olive' : 'bg-business-orange'}`}
                                                     style={{ width: `${prog}%` }}
                                                 />
                                             </div>
@@ -144,7 +146,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                     </td>
                                     <td className="px-6 py-3 text-center">
                                         <div className="flex justify-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
-                                            <button onClick={() => setEditando(i)} className="p-2 bg-white border border-slate-200 text-indigo-600 rounded-lg hover:bg-indigo-50 transition-all shadow-sm">
+                                            <button onClick={() => setEditando(i)} className="p-2 bg-white border border-slate-200 text-business-orange rounded-lg hover:bg-business-beige transition-all shadow-sm">
                                                 <FileText size={14} />
                                             </button>
                                             {(role === 'ADMIN' || role === 'COMPRAS') && (
@@ -168,7 +170,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
             <header className="flex flex-col md:flex-row justify-between items-end gap-4 shrink-0">
                 <div>
                     <h1 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-                        <Package className="w-8 h-8 text-indigo-600" />
+                        <Package className="w-8 h-8 text-business-orange" />
                         Inventario Maestro
                     </h1>
                     <p className="text-slate-500 font-medium italic text-[11px] mt-1">
@@ -184,7 +186,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                             placeholder="Buscar por código o descripción..."
                             value={terminoBusqueda}
                             onChange={(e) => setTerminoBusqueda(e.target.value)}
-                            className="w-full pl-9 pr-3 py-2 bg-white border border-slate-200 rounded-xl focus:ring-4 focus:ring-indigo-100 outline-none text-xs font-medium shadow-sm transition-all"
+                            className="w-full pl-9 pr-3 py-2 bg-white border border-slate-200 rounded-xl focus:ring-4 focus:ring-business-mustard/20 outline-none text-xs font-medium shadow-sm transition-all"
                         />
                     </div>
                     <div className="relative md:w-40">
@@ -192,7 +194,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                         <select
                             value={filtroEstado}
                             onChange={e => setFiltroEstado(e.target.value)}
-                            className="w-full pl-9 pr-6 py-2 bg-white border border-slate-200 rounded-xl appearance-none font-bold text-[10px] text-slate-600 focus:ring-4 focus:ring-indigo-100 outline-none shadow-sm cursor-pointer"
+                            className="w-full pl-9 pr-6 py-2 bg-white border border-slate-200 rounded-xl appearance-none font-bold text-[10px] text-slate-600 focus:ring-4 focus:ring-business-mustard/20 outline-none shadow-sm cursor-pointer"
                         >
                             <option value="TODOS">Todos los Estados</option>
                             {Object.values(EstadoInsumo).map(e => (
@@ -205,6 +207,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                             onClick={() => setEditando({
                                 id: Math.random().toString(36).substr(2, 9),
                                 nombre: '',
+                                marca: '',
                                 estado: EstadoInsumo.PENDIENTE_COMPRAS,
                                 source: 'INTERNA',
                                 tipoMaterial: 'Materia Prima',
@@ -230,7 +233,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                 precioPorUnidad: 0,
                                 cantidadCompra: 1
                             })}
-                            className="flex items-center gap-1.5 bg-indigo-600 text-white px-4 py-2 rounded-xl font-black uppercase text-[10px] shadow-lg hover:bg-indigo-700 transition-all active:scale-95"
+                            className="flex items-center gap-1.5 bg-business-orange text-white px-4 py-2 rounded-xl font-black uppercase text-[10px] shadow-lg hover:bg-business-orange/90 transition-all active:scale-95"
                         >
                             <Plus size={14} /> Nuevo Insumo
                         </button>
@@ -240,24 +243,24 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
 
             <div className="flex border-b border-slate-200 mt-2 px-6 gap-8 bg-white shrink-0">
                 <button
-                    onClick={() => setTabActiva('INTERNA')}
-                    className={`py-3 text-[11px] font-black uppercase tracking-wider border-b-2 transition-all ${tabActiva === 'INTERNA' ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-400 hover:text-slate-600'}`}
-                >
-                    <div className="flex items-center gap-2">
-                        Insumos Locales
-                        <span className={`px-2 py-0.5 rounded-full text-[9px] ${tabActiva === 'INTERNA' ? 'bg-indigo-100 text-indigo-700' : 'bg-slate-100 text-slate-500'}`}>
-                            {insumosInternos.length}
-                        </span>
-                    </div>
-                </button>
-                <button
                     onClick={() => setTabActiva('EXTERNA')}
                     className={`py-3 text-[11px] font-black uppercase tracking-wider border-b-2 transition-all ${tabActiva === 'EXTERNA' ? 'border-sky-500 text-sky-600' : 'border-transparent text-slate-400 hover:text-slate-600'}`}
                 >
                     <div className="flex items-center gap-2">
-                        Insumos NetSuite
+                        Insumos Externos (NetSuite)
                         <span className={`px-2 py-0.5 rounded-full text-[9px] ${tabActiva === 'EXTERNA' ? 'bg-sky-100 text-sky-700' : 'bg-slate-100 text-slate-500'}`}>
                             {insumosExternos.length}
+                        </span>
+                    </div>
+                </button>
+                <button
+                    onClick={() => setTabActiva('INTERNA')}
+                    className={`py-3 text-[11px] font-black uppercase tracking-wider border-b-2 transition-all ${tabActiva === 'INTERNA' ? 'border-business-orange text-business-orange' : 'border-transparent text-slate-400 hover:text-slate-600'}`}
+                >
+                    <div className="flex items-center gap-2">
+                        Insumos Nuevos
+                        <span className={`px-2 py-0.5 rounded-full text-[9px] ${tabActiva === 'INTERNA' ? 'bg-business-mustard/20 text-business-orange' : 'bg-slate-100 text-slate-500'}`}>
+                            {insumosInternos.length}
                         </span>
                     </div>
                 </button>
@@ -354,7 +357,7 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         formData.append('archivo', file);
 
         try {
-            const res = await fetch('http://localhost:3001/api/upload', {
+            const res = await fetch('/api/upload', {
                 method: 'POST',
                 body: formData
             });
@@ -391,9 +394,9 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         const label = campo.replace(/([A-Z])/g, ' $1').toUpperCase();
         if (typeof datos[campo] === 'boolean' || campo === 'locales' || campo === 'lote' || campo === 'alergenos') {
             return (
-                <div key={campo} className="flex items-center gap-2 p-3 bg-slate-50 rounded-xl border border-slate-100">
-                    <input type="checkbox" checked={!!datos[campo]} onChange={e => handleFieldChange(campo, e.target.checked)} disabled={!esEditableActual} className="w-5 h-5 text-indigo-600 rounded" />
-                    <label className="text-[10px] font-black text-slate-700 uppercase">{label}</label>
+                <div key={campo} className="flex items-center gap-2 p-3 bg-business-beige/30 rounded-xl border border-business-mustard/10">
+                    <input type="checkbox" checked={!!datos[campo]} onChange={e => handleFieldChange(campo, e.target.checked)} disabled={!esEditableActual} className="w-5 h-5 text-business-orange rounded" />
+                    <label className="text-[10px] font-black text-business-olive uppercase">{label}</label>
                 </div>
             );
         }
@@ -408,13 +411,13 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
                         {docsList.map((doc: any, idx: number) => (
                             <div key={idx} className="flex items-center justify-between p-3 border border-slate-200 rounded-xl bg-slate-50 relative group">
                                 <div className="flex items-center gap-3 overflow-hidden">
-                                    <div className="p-2 bg-indigo-100 text-indigo-600 rounded-lg shrink-0">
+                                    <div className="p-2 bg-business-mustard/20 text-business-orange rounded-lg shrink-0">
                                         <FileText className="w-4 h-4" />
                                     </div>
                                     <div className="min-w-0 pr-12">
                                         <p className="text-xs font-bold text-slate-700 truncate">{doc.nombre || 'Documento adjunto'}</p>
                                         <div className="flex items-center gap-2 mt-1">
-                                            <a href={`http://localhost:3001${doc.url}`} target="_blank" rel="noopener noreferrer" className="text-[9px] font-black uppercase tracking-wider text-indigo-500 hover:text-indigo-700 flex items-center gap-1">
+                                            <a href={`${doc.url}`} target="_blank" rel="noopener noreferrer" className="text-[9px] font-black uppercase tracking-wider text-business-orange hover:text-business-olive flex items-center gap-1">
                                                 <Download className="w-3 h-3" /> Descargar
                                             </a>
                                         </div>
@@ -447,7 +450,7 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         return (
             <div key={campo} className="space-y-1">
                 <label className="text-[9px] font-black text-slate-400 uppercase">{label}</label>
-                <input type={isNumber ? "number" : "text"} value={datos[campo] as any} onChange={e => handleFieldChange(campo, isNumber ? parseFloat(e.target.value) : e.target.value)} disabled={!esEditableActual} className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-indigo-50 transition-all disabled:bg-slate-50 disabled:text-slate-400" />
+                <input type={isNumber ? "number" : "text"} value={datos[campo] as any} onChange={e => handleFieldChange(campo, isNumber ? parseFloat(e.target.value) : e.target.value)} disabled={!esEditableActual} className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-business-mustard/10 transition-all disabled:bg-slate-50 disabled:text-slate-400" />
             </div>
         );
     };
@@ -457,10 +460,10 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
             <div className="bg-white w-full max-w-5xl rounded-[2rem] shadow-2xl flex flex-col max-h-[95vh] overflow-hidden">
                 <div className="p-5 border-b bg-slate-50/50 flex justify-between items-center">
                     <div className="flex items-center gap-3">
-                        <div className="p-3 bg-slate-900 text-white rounded-xl shadow-lg"><Package className="w-6 h-6" /></div>
+                        <div className="p-3 bg-business-olive text-white rounded-xl shadow-lg shadow-business-olive/20"><Package className="w-6 h-6" /></div>
                         <div>
                             <h2 className="text-xl font-black text-slate-900 tracking-tight">{datos.nombre || 'Nuevo Insumo'}</h2>
-                            <p className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">ID: {datos.id}</p>
+                            <p className="text-[9px] font-bold text-business-orange uppercase mt-0.5">ID: {datos.id}</p>
                         </div>
                     </div>
                     <button onClick={onClose} className="p-2 text-slate-400 hover:text-rose-500 rounded-xl transition-all"><X className="w-5 h-5" /></button>
@@ -468,8 +471,8 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
 
                 <div className="flex border-b overflow-x-auto bg-white px-2">
                     {fasesActivas.map((f, idx) => (
-                        <button key={f.id} onClick={() => setFaseActivaId(f.id)} className={`px-5 py-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest border-b-4 transition-all shrink-0 ${faseActivaId === f.id ? 'border-indigo-600 text-indigo-600 bg-indigo-50/20' : 'border-transparent text-slate-400'}`}>
-                            <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] ${faseActivaId === f.id ? 'bg-indigo-600 text-white' : 'bg-slate-200 text-slate-500'}`}>{idx + 1}</div>
+                        <button key={f.id} onClick={() => setFaseActivaId(f.id)} className={`px-5 py-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest border-b-4 transition-all shrink-0 ${faseActivaId === f.id ? 'border-business-orange text-business-orange bg-business-mustard/5' : 'border-transparent text-slate-400'}`}>
+                            <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] ${faseActivaId === f.id ? 'bg-business-orange text-white' : 'bg-slate-200 text-slate-500'}`}>{idx + 1}</div>
                             {f.nombre}
                         </button>
                     ))}
@@ -478,11 +481,11 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
                 <div className="flex-1 overflow-y-auto p-6 bg-white">
                     {faseActual && (
                         <div className="space-y-6 animate-in slide-in-from-right-2 duration-300" key={faseActual.id}>
-                            <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                                <ShieldCheck className="w-5 h-5 text-indigo-600" />
+                            <div className="flex items-center gap-3 p-4 bg-business-beige/20 rounded-2xl border border-business-mustard/10">
+                                <ShieldCheck className="w-5 h-5 text-business-olive" />
                                 <div>
                                     <h3 className="text-sm font-black text-slate-900">Responsable: {faseActual.rolResponsable}</h3>
-                                    <p className="text-[10px] font-medium text-slate-500">{esEditableActual ? "Permisos activos." : `Sólo ${faseActual.rolResponsable} o ADMIN.`}</p>
+                                    <p className="text-[10px] font-medium text-business-olive">{esEditableActual ? "Permisos activos." : `Sólo ${faseActual.rolResponsable} o ADMIN.`}</p>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{faseActual.campos.map(campo => renderCampo(campo))}</div>
@@ -491,8 +494,8 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
                 </div>
 
                 <div className="p-6 border-t bg-slate-50/80 flex justify-end gap-3 rounded-b-[2rem]">
-                    <button onClick={onClose} className="px-6 py-3 text-slate-500 font-black uppercase text-[10px] rounded-xl hover:bg-slate-100 transition-all">Descartar</button>
-                    <button onClick={() => onSave(datos)} className="px-8 py-3 bg-indigo-600 text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2"><Save className="w-3.5 h-3.5" /> Guardar Cambios</button>
+                    <button onClick={onClose} className="px-6 py-3 text-business-olive font-black uppercase text-[10px] rounded-xl hover:bg-business-beige transition-all">Descartar</button>
+                    <button onClick={() => onSave(datos)} className="px-8 py-3 bg-business-orange text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-business-orange/90 transition-all flex items-center gap-2"><Save className="w-3.5 h-3.5" /> Guardar Cambios</button>
                 </div>
             </div>
         </div>

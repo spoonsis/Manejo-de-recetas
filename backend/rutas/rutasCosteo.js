@@ -46,7 +46,7 @@ router.post("/calcular", async (req, res) => {
         const resultados = await CosteoService.calcular(receta, insumos, todasRecetas);
         res.json(resultados);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
     }
 });
 
@@ -63,7 +63,7 @@ router.post("/aprobar", async (req, res) => {
             data: snapshot
         });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
     }
 });
 

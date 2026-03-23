@@ -1,0 +1,314 @@
+[
+  {
+    "Field": "id",
+    "Type": "varchar(50)",
+    "Null": "NO",
+    "Key": "PRI",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "nombre",
+    "Type": "varchar(255)",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "estado",
+    "Type": "enum('BORRADOR','PENDIENTE_COSTOS','PENDIENTE_MKT','PENDIENTE_CALIDAD','APROBADO','RECHAZADO_COSTOS','RECHAZADO_MKT','RECHAZADO_CALIDAD')",
+    "Null": "NO",
+    "Key": "",
+    "Default": "BORRADOR",
+    "Extra": ""
+  },
+  {
+    "Field": "versionActual",
+    "Type": "int",
+    "Null": "YES",
+    "Key": "",
+    "Default": "1",
+    "Extra": ""
+  },
+  {
+    "Field": "pasos",
+    "Type": "json",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "ultimoRegistroCambios",
+    "Type": "text",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "costoTotal",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "esSubReceta",
+    "Type": "tinyint(1)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "esSemielaborado",
+    "Type": "tinyint(1)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "codigoCalidad",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "flujo_aprobacion_id",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "MUL",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "tipoCosteo",
+    "Type": "enum('GRAMO','UNIDAD')",
+    "Null": "YES",
+    "Key": "",
+    "Default": "GRAMO",
+    "Extra": ""
+  },
+  {
+    "Field": "mudi",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "gif",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "totalMP",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "totalEMP",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "totalMUDI",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "costoTotalBase",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "costoTotalFinal",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "costoUnitarioMP",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "costoUnitarioEMP",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "costoUnitarioMUDI",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "pesoTotalCantidad",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "pesoTotalUnidad",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "tiempoPrepCantidad",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "tiempoPrepUnidad",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "porcionesCantidad",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "porcionesUnidad",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "pesoPorcionCantidad",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "pesoPorcionUnidad",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "mermaCantidad",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "mermaUnidad",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "subsidiaria",
+    "Type": "varchar(255)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "elaboradoPor",
+    "Type": "varchar(150)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "aprobadoPor",
+    "Type": "varchar(150)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "areaProduce",
+    "Type": "varchar(150)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "areaEmpaca",
+    "Type": "varchar(150)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "fechaCreacion",
+    "Type": "datetime",
+    "Null": "YES",
+    "Key": "",
+    "Default": "CURRENT_TIMESTAMP",
+    "Extra": "DEFAULT_GENERATED"
+  },
+  {
+    "Field": "ultimaModificacion",
+    "Type": "datetime",
+    "Null": "YES",
+    "Key": "",
+    "Default": "CURRENT_TIMESTAMP",
+    "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+  }
+]

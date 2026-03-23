@@ -21,14 +21,14 @@ export const MAPA_CONVERSION_UNIDADES: Record<string, { familia: string, valor: 
 };
 
 export const ESTILOS_ESTADO: Record<string, string> = {
-  BORRADOR: 'bg-blue-100 text-blue-700 border-blue-200',
-  PENDIENTE_COSTOS: 'bg-yellow-100 text-yellow-700 border-yellow-200',
-  PENDIENTE_MKT: 'bg-orange-100 text-orange-700 border-orange-200',
-  PENDIENTE_CALIDAD: 'bg-purple-100 text-purple-700 border-purple-200',
-  APROBADO: 'bg-green-100 text-green-700 border-green-200',
-  RECHAZADO_COSTOS: 'bg-red-100 text-red-700 border-red-200',
-  RECHAZADO_MKT: 'bg-rose-100 text-rose-700 border-rose-200',
-  RECHAZADO_CALIDAD: 'bg-slate-200 text-slate-700 border-slate-300',
+  BORRADOR: 'bg-business-beige text-business-olive border-business-olive/20',
+  PENDIENTE_COSTOS: 'bg-business-mustard/20 text-business-orange border-business-mustard',
+  PENDIENTE_MKT: 'bg-business-orange/10 text-business-orange border-business-orange/20',
+  PENDIENTE_CALIDAD: 'bg-business-lavender/20 text-business-lavender border-business-lavender',
+  APROBADO: 'bg-business-olive text-white border-business-olive',
+  RECHAZADO_COSTOS: 'bg-red-50 text-red-600 border-red-100',
+  RECHAZADO_MKT: 'bg-rose-50 text-rose-600 border-rose-100',
+  RECHAZADO_CALIDAD: 'bg-slate-100 text-slate-600 border-slate-200',
 };
 
 export const ETIQUETAS_ESTADO: Record<string, string> = {

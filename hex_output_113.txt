@@ -1,0 +1,2 @@
+Line 113 text: // --- CONFIGURACI├ôN ---
+Line 113 hex: 2f2f202d2d2d20434f4e4649475552414349c3934e202d2d2d0d

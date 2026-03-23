@@ -1,0 +1,726 @@
+commit 5f9a7e96df922348e7750a7ccffff499c1b6fb73
+Author: Balfaro6 <balfaro@fascr.com>
+Date:   Wed Mar 11 14:38:11 2026 -0600
+
+    ajustes varios
+
+diff --git a/App.tsx b/App.tsx
+index cf4eea7..6f4d5b7 100644
+--- a/App.tsx
++++ b/App.tsx
+@@ -329,7 +329,6 @@ export default function App() {
+       nombre: '',
+       estado: EstadoReceta.BORRADOR,
+       versionActual: 1,
+-      esSubReceta: false,
+       esSemielaborado: false,
+       codigoCalidad: '',
+       flujoAprobacionId: flujoDefault,
+@@ -345,6 +344,7 @@ export default function App() {
+       costoTotal: 0,
+       pesoTotalCantidad: 0,
+       pesoTotalUnidad: 'g',
++      sumaTotalInsumos: 0,
+       tiempoPrepCantidad: 0,
+       tiempoPrepUnidad: 'min',
+       porcionesCantidad: 0,
+@@ -354,7 +354,7 @@ export default function App() {
+       mermaCantidad: 0,
+       mermaUnidad: '%',
+       tipoCosteo: 'GRAMO',
+-      mudi: 0,
++      mudi: 77,
+       gif: 0,
+       totalMP: 0,
+       totalEMP: 0,
+@@ -460,6 +460,12 @@ export default function App() {
+     const pasoActual = flujoAsignado.pasos.find(p => p.rolResponsable === rolActual);
+     if (pasoActual) siguienteEstado = pasoActual.estadoDestino;
+ 
++    // MKT Auto-Bypass para Semielaborados
++    if (currReceta.esSemielaborado && siguienteEstado === EstadoReceta.PENDIENTE_MKT) {
++      const pasoMKT = flujoAsignado.pasos.find((p: any) => p.rolResponsable === 'MKT');
++      if (pasoMKT) siguienteEstado = pasoMKT.estadoDestino;
++    }
++
+     if (siguienteEstado === EstadoReceta.APROBADO) {
+       const snapshotIngredientes: IngredienteReceta[] = currReceta.ingredientes.map((ing: IngredienteReceta) => {
+         let costoU = ing.costoUnitario;
+@@ -468,7 +474,7 @@ export default function App() {
+           const ins = insumos.find(i => i.id === ing.idReferencia);
+           if (ins && (costoU === undefined || costoU === null)) costoU = Number(ins.precioPorUnidad || ins.precioCompra || 0);
+         } else {
+-          const sub = recetas.find((sr: Receta) => sr.id === ing.idReferencia && sr.estado === EstadoReceta.APROBADO);
++          const sub = recetas.find((sr: Receta) => sr.id === ing.idReferencia);
+           if (sub) {
+             const divisor = sub.tipoCosteo === 'GRAMO' ? (sub.pesoTotalCantidad || 1) : (sub.porcionesCantidad || 1);
+             costoU = sub.costoTotalFinal / divisor;
+@@ -950,7 +956,7 @@ export default function App() {
+         <EditorReceta
+           recipe={editandoReceta}
+           insumos={insumos}
+-          subRecipes={recetas.filter((r: { esSemielaborado: any; esSubReceta: any; nombre: any; }) => (r.esSemielaborado || r.esSubReceta) && r.nombre !== editandoReceta.nombre)}
++          subRecipes={recetas.filter((r: { esSemielaborado: any; nombre: any; }) => r.esSemielaborado && r.nombre !== editandoReceta.nombre)}
+           flujosAprobacion={flujos}
+           onClose={() => setEditandoReceta(null)}
+           onSave={manejarActualizarReceta}
+@@ -1521,7 +1527,7 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+     };
+ 
+     recetaActiva.ingredientes.forEach((ing: IngredienteReceta) => {
+-      if (ing.tipo === 'SUBRECETA') {
++      if (ing.tipo === 'SEMIELABORADO') {
+         grupos.materiasPrimas.push(ing);
+       } else {
+         const ins = insumos.find((i: any) => i.id === ing.idReferencia);
+@@ -1580,6 +1586,7 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 bg-slate-50 border rounded-2xl">
+                 <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Subsidiaria</p><p className="font-bold text-xs">{recetaActiva.subsidiaria}</p></div>
+                 <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Elaborado Por</p><p className="font-bold text-xs">{recetaActiva.elaboradoPor || '---'}</p></div>
++                <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Aprobado Por</p><p className="font-bold text-xs">{recetaActiva.aprobadoPor || '---'}</p></div>
+                 <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Producción</p><p className="font-bold text-xs">{recetaActiva.areaProduce || 'Cocina Central'}</p></div>
+                 <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Empaque</p><p className="font-bold text-xs">{recetaActiva.areaEmpaca || 'Línea 1'}</p></div>
+               </div>
+@@ -1618,44 +1625,37 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+                                 </td>
+                                 <td className="px-4 py-2 text-center font-black">{ing.cantidad} {ing.unidad}</td>
+                                 <td className="px-4 py-2 text-center text-slate-500 font-medium italic text-[9px]">{ing.marca || 'N/A'}</td>
+-                                {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') ? (
+-                                  <>
+-                                    <td className="px-4 py-2 text-right">
+-                                      <div className="flex flex-col items-end">
+-                                        <span className="font-bold text-slate-400">{ing.costoUnitario.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
+-                                        {ing.snapshotCostoUnitario && (
+-                                          <span className="text-[7px] font-black text-indigo-400 uppercase">Audit: {(ing.snapshotCostoUnitario || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
+-                                        )}
+-                                      </div>
+-                                    </td>
+-                                    <td className="px-4 py-2 text-right">
+-                                      <div className="flex flex-col items-end">
+-                                        <span className={`font-black ${Math.abs(diff) > 5 ? 'text-rose-600' : 'text-slate-900'}`}>{ing.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
+-                                        {Math.abs(diff) > 0.1 && (
+-                                          <span className={`text-[7px] font-black uppercase ${diff > 0 ? 'text-rose-500' : 'text-emerald-500'}`}>
+-                                            {diff > 0 ? '▲' : '▼'} {Math.abs(diff).toFixed(1)}% vs Audit
+-                                          </span>
+-                                        )}
+-                                      </div>
+-                                    </td>
+-                                  </>
+-                                ) : (
+-                                  <>
+-                                    <td className="px-4 py-2 text-right text-slate-300 font-bold">$***</td>
+-                                    <td className="px-4 py-2 text-right font-black text-slate-300">$***</td>
+-                                  </>
+-                                )}
++                                <>
++                                  <td className="px-4 py-2 text-right">
++                                    <div className="flex flex-col items-end">
++                                      <span className="font-bold text-slate-400">{ing.costoUnitario.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
++                                      {ing.snapshotCostoUnitario && (
++                                        <span className="text-[7px] font-black text-indigo-400 uppercase">Audit: {(ing.snapshotCostoUnitario || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
++                                      )}
++                                    </div>
++                                  </td>
++                                  <td className="px-4 py-2 text-right">
++                                    <div className="flex flex-col items-end">
++                                      <span className={`font-black ${Math.abs(diff) > 5 ? 'text-rose-600' : 'text-slate-900'}`}>{ing.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
++                                      {Math.abs(diff) > 0.1 && (
++                                        <span className={`text-[7px] font-black uppercase ${diff > 0 ? 'text-rose-500' : 'text-emerald-500'}`}>
++                                          {diff > 0 ? '▲' : '▼'} {Math.abs(diff).toFixed(1)}% vs Audit
++                                        </span>
++                                      )}
++                                    </div>
++                                  </td>
++                                </>
+                               </tr>
+                             );
+                           })}
+                           <tr className="bg-slate-50/20">
+                             <td colSpan={4} className="px-4 py-1 text-right text-[8px] font-bold text-slate-400 uppercase">Subtotal {seccion.label}</td>
+                             <td className="px-4 py-1 text-right font-black text-slate-600 text-xs">
+-                              {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') ? seccion.data.reduce((s: any, i: { costoTotal: any; }) => s + i.costoTotal, 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' }) : '₡***'}
++                              {seccion.data.reduce((s: any, i: { costoTotal: any; }) => s + i.costoTotal, 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+                             </td>
+                           </tr>
+-                          {/* Snapshot values for audit (Visible only if user is COSTOS) */}
+-                          {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') && ingredientesCategorizados.materiasPrimas.concat(ingredientesCategorizados.empaque, ingredientesCategorizados.modi).some((i: { snapshotCostoUnitario: any; }) => i.snapshotCostoUnitario) && (
++                          {/* Snapshot values for audit */}
++                          {ingredientesCategorizados.materiasPrimas.concat(ingredientesCategorizados.empaque, ingredientesCategorizados.modi).some((i: { snapshotCostoUnitario: any; }) => i.snapshotCostoUnitario) && (
+                             <tr className="bg-amber-50/30">
+                               <td colSpan={5} className="px-4 py-1 text-[7px] font-bold uppercase text-amber-600 italic tracking-widest">Dato Histórico: Snapshot de costos capturado en aprobación</td>
+                             </tr>
+@@ -1665,7 +1665,7 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+                       <tr className="bg-slate-50 font-black text-indigo-600 border-t-2 border-indigo-100">
+                         <td colSpan={4} className="px-4 py-3 uppercase text-[9px] tracking-widest">COSTO TOTAL PRODUCCIÓN</td>
+                         <td className="px-4 py-3 text-right text-base">
+-                          {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') ? recetaActiva.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' }) : '₡***'}
++                          {recetaActiva.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+                         </td>
+                       </tr>
+                     </tbody>
+@@ -1674,26 +1674,27 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+               </div>
+ 
+               {/* Datos de Rendimiento */}
+-              <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
+-                <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+-                  <p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Peso Total</p>
+-                  <p className="text-lg font-black text-slate-900">{recetaActiva.pesoTotalCantidad} {recetaActiva.pesoTotalUnidad}</p>
+-                </div>
+-                <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+-                  <p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Tiempo Prep.</p>
+-                  <p className="text-lg font-black text-slate-900">{recetaActiva.tiempoPrepCantidad} {recetaActiva.tiempoPrepUnidad}</p>
+-                </div>
+-                <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+-                  <p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Porciones</p>
+-                  <p className="text-lg font-black text-slate-900">{recetaActiva.porcionesCantidad} {recetaActiva.porcionesUnidad}</p>
+-                </div>
+-                <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+-                  <p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Peso Porción</p>
+-                  <p className="text-lg font-black text-slate-900">{recetaActiva.pesoPorcionCantidad} {recetaActiva.pesoPorcionUnidad}</p>
++              <div className="p-4 bg-slate-50 border border-slate-100 rounded-3xl">
++                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
++                  <div><p className="text-[8px] text-emerald-500 font-black uppercase mb-0.5">Insumos Totales</p><p className="font-bold text-xs text-slate-700">{recetaActiva.sumaTotalInsumos ? `${recetaActiva.sumaTotalInsumos} g` : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Peso Total</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoTotalCantidad ? `${recetaActiva.pesoTotalCantidad} ${recetaActiva.pesoTotalUnidad}` : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Merma</p><p className="font-bold text-xs text-rose-500">{recetaActiva.mermaCantidad !== undefined && recetaActiva.mermaCantidad !== null ? `${recetaActiva.mermaCantidad} g` : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Porciones</p><p className="font-bold text-xs text-slate-700">{recetaActiva.porcionesCantidad ? `${recetaActiva.porcionesCantidad} ${recetaActiva.porcionesUnidad}` : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Peso Porción</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoPorcionCantidad ? `${recetaActiva.pesoPorcionCantidad} ${recetaActiva.pesoPorcionUnidad}` : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Tiempo Prep.</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tiempoPrepCantidad ? `${recetaActiva.tiempoPrepCantidad} ${recetaActiva.tiempoPrepUnidad}` : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Tipo Costeo</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tipoCosteo || '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">MODI</p><p className="font-bold text-xs text-slate-700">{recetaActiva.mudi !== undefined ? recetaActiva.mudi : '---'}</p></div>
++                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">GIF (Fijo)</p><p className="font-bold text-xs text-slate-700">{recetaActiva.gif !== undefined ? recetaActiva.gif : '---'}</p></div>
+                 </div>
+-                <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+-                  <p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Merma %</p>
+-                  <p className="text-lg font-black text-rose-500">{recetaActiva.mermaCantidad}{recetaActiva.mermaUnidad}</p>
++              </div>
++
++              {/* Resultados de Costeo */}
++              <div className="p-4 bg-indigo-50/50 border border-indigo-100 border-dashed rounded-3xl mt-4">
++                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
++                  <div><p className="text-[7px] font-black text-indigo-400 uppercase tracking-widest mb-0.5">Costo MP ({recetaActiva.tipoCosteo})</p><p className="text-sm font-black text-indigo-900">₡{Number(recetaActiva.costoUnitarioMP || 0).toFixed(4)}</p></div>
++                  <div><p className="text-[7px] font-black text-indigo-400 uppercase tracking-widest mb-0.5">Costo EMP ({recetaActiva.tipoCosteo})</p><p className="text-sm font-black text-indigo-900">₡{Number(recetaActiva.costoUnitarioEMP || 0).toFixed(4)}</p></div>
++                  <div><p className="text-[7px] font-black text-indigo-400 uppercase tracking-widest mb-0.5">Costo MODI ({recetaActiva.tipoCosteo})</p><p className="text-sm font-black text-indigo-900">₡{Number(recetaActiva.costoUnitarioMUDI || 0).toFixed(4)}</p></div>
++                  <div className="border-t border-indigo-100 md:border-t-0 md:border-l pl-0 md:pl-4 pt-4 md:pt-0"><p className="text-[7px] font-black text-slate-500 uppercase tracking-widest mb-0.5">Costo Total Final</p><p className="text-base font-black text-indigo-600 leading-none">{Number(recetaActiva.costoTotalFinal || recetaActiva.costoTotal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
+                 </div>
+               </div>
+             </div>
+@@ -1701,16 +1702,18 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+ 
+           {tab === 'preparacion' && (
+             <div className="max-w-4xl mx-auto space-y-6 animate-in slide-in-from-bottom duration-500">
+-              <h3 className="text-2xl font-black text-slate-900 mb-8 flex items-center gap-3">
+-                <Sparkles className="w-6 h-6 text-indigo-600" />
++              <h3 className="text-xl font-black text-slate-900 mb-6 flex items-center gap-2">
++                <Sparkles className="w-5 h-5 text-indigo-600" />
+                 Guía de Elaboración Paso a Paso
+               </h3>
+-              {recetaActiva.pasos.map((paso: any, idx: number) => (
+-                <div key={idx} className="flex gap-8 items-start p-8 bg-slate-50 border rounded-\[2rem] hover:border-indigo-200 transition-all">
+-                  <div className="w-12 h-12 bg-slate-900 text-white rounded-2xl flex items-center justify-center font-black text-xl shrink-0">{idx + 1}</div>
+-                  <div className="flex-1 text-slate-700 font-medium text-lg leading-relaxed">{paso}</div>
+-                </div>
+-              ))}
++              <div className="space-y-3">
++                {recetaActiva.pasos.map((paso: any, idx: number) => (
++                  <div key={idx} className="flex gap-4 items-start p-4 bg-slate-50 border rounded-2xl hover:border-indigo-200 transition-all">
++                    <div className="w-8 h-8 bg-slate-900 text-white rounded-xl flex items-center justify-center font-black text-sm shrink-0">{idx + 1}</div>
++                    <div className="flex-1 text-slate-700 font-medium text-sm leading-snug pt-1">{paso}</div>
++                  </div>
++                ))}
++              </div>
+               {recetaActiva.pasos.length === 0 && (
+                 <div className="text-center py-20 opacity-20">No hay pasos registrados para esta versión de la receta.</div>
+               )}
+@@ -1718,43 +1721,43 @@ function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, role }: { reci
+           )}
+ 
+           {tab === 'historial' && (
+-            <div className="max-w-4xl mx-auto space-y-10 animate-in fade-in duration-500">
+-              <h3 className="text-2xl font-black text-slate-900 flex items-center gap-3">
+-                <History className="w-6 h-6 text-indigo-600" />
++            <div className="max-w-4xl mx-auto space-y-6 animate-in fade-in duration-500">
++              <h3 className="text-xl font-black text-slate-900 flex items-center gap-2">
++                <History className="w-5 h-5 text-indigo-600" />
+                 Cronograma de Evolución y Copias
+               </h3>
+-              <div className="relative pl-10 border-l-2 border-slate-100 space-y-12">
++              <div className="relative pl-8 border-l-2 border-slate-100 space-y-6">
+                 {versionesGuardadas.map((v: { id: any; versionActual: any; estado: string | number; ultimoRegistroCambios: any; costoTotal: number; ingredientes: string | any[]; }) => (
+                   <div key={v.id} className="relative group">
+-                    <div className={`absolute -left-\[51px] top-0 w-10 h-10 ${v.id === recetaActiva.id ? 'bg-indigo-600' : 'bg-slate-200'} text-white rounded-xl flex items-center justify-center font-black shadow-lg transition-colors`}>
++                    <div className={`absolute -left-[37px] top-0 w-8 h-8 ${v.id === recetaActiva.id ? 'bg-indigo-600' : 'bg-slate-200'} text-white rounded-lg flex items-center justify-center font-black text-xs shadow-md transition-colors`}>
+                       v{v.versionActual}
+                     </div>
+-                    <div className={`bg-white border rounded-\[2.5rem] p-8 shadow-sm group-hover:shadow-xl transition-all ${v.id === recetaActiva.id ? 'ring-2 ring-indigo-600' : ''}`}>
+-                      <div className="flex justify-between items-start mb-6">
++                    <div className={`bg-white border rounded-2xl p-5 shadow-sm group-hover:shadow-md transition-all ${v.id === recetaActiva.id ? 'ring-2 ring-indigo-600' : ''}`}>
++                      <div className="flex justify-between items-start mb-4">
+                         <div>
+-                          <p className="text-\[10px] text-slate-400 font-black uppercase tracking-widest">Estado: {ETIQUETAS_ESTADO[v.estado]}</p>
+-                          <p className="text-xl font-black text-slate-900 mt-1">ID Único: {v.id}</p>
++                          <p className="text-[9px] text-slate-400 font-black uppercase tracking-widest">Estado: {ETIQUETAS_ESTADO[v.estado]}</p>
++                          <p className="text-base font-black text-slate-900 mt-0.5">ID Único: {v.id}</p>
+                         </div>
+-                        <div className="flex gap-3">
++                        <div className="flex gap-2">
+                           {v.id === recetaActiva.id ? (
+-                            <span className="bg-indigo-600 text-white px-4 py-2 rounded-full text-\[9px] font-black uppercase flex items-center gap-1"><Eye className="w-3 h-3" /> Visualizando</span>
++                            <span className="bg-indigo-600 text-white px-3 py-1.5 rounded-full text-[8px] font-black uppercase flex items-center gap-1"><Eye className="w-3 h-3" /> Visualizando</span>
+                           ) : (
+                             <button
+                               onClick={() => setRecetaActiva(v)}
+-                              className="bg-slate-900 text-white px-4 py-2 rounded-full text-[9px] font-black uppercase hover:bg-indigo-600 transition-all"
++                              className="bg-slate-900 text-white px-3 py-1.5 rounded-full text-[8px] font-black uppercase hover:bg-indigo-600 transition-all"
+                             >
+                               Ver esta versión
+                             </button>
+                           )}
+                         </div>
+                       </div>
+-                      <div className="p-6 bg-slate-50 rounded-2xl">
+-                        <p className="text-\[10px] text-slate-400 font-black uppercase mb-2">Resumen de Cambios:</p>
+-                        <p className="text-slate-600 font-medium leading-relaxed italic">"{v.ultimoRegistroCambios || 'Sin descripción detallada'}"</p>
++                      <div className="p-4 bg-slate-50 rounded-xl">
++                        <p className="text-[9px] text-slate-400 font-black uppercase mb-1">Resumen de Cambios:</p>
++                        <p className="text-slate-600 text-sm font-medium leading-snug italic">"{v.ultimoRegistroCambios || 'Sin descripción detallada'}"</p>
+                       </div>
+-                      <div className="mt-6 flex gap-10">
+-                        <div><p className="text-\[9px] text-slate-400 font-bold uppercase">Costo Total</p><p className="text-xs font-black">{v.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
+-                        <div><p className="text-\[9px] text-slate-400 font-bold uppercase">Ingredientes</p><p className="text-xs font-black">{v.ingredientes.length} items</p></div>
++                      <div className="mt-4 flex gap-6">
++                        <div><p className="text-[8px] text-slate-400 font-bold uppercase">Costo Total</p><p className="text-sm font-black text-slate-800">{v.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
++                        <div><p className="text-[8px] text-slate-400 font-bold uppercase">Ing.</p><p className="text-sm font-black text-slate-800">{v.ingredientes.length}</p></div>
+                       </div>
+                     </div>
+                   </div>
+@@ -1871,7 +1874,7 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+ 
+     let costoU = 0;
+     let nombre = nombreInterno || codigoNetSuite;
+-    let tipo: 'INSUMO' | 'SUBRECETA' = 'INSUMO';
++    let tipo: 'INSUMO' | 'SEMIELABORADO' = 'INSUMO';
+     let idReferencia = idReferenciaInterno;
+ 
+     if (esProductoNuevo) {
+@@ -1899,7 +1902,7 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+       if (ins) {
+         costoU = Number(ins.precioPorUnidad || ins.precioCompra || 0);
+       } else if (sub) {
+-        tipo = 'SUBRECETA';
++        tipo = 'SEMIELABORADO';
+         costoU = sub.costoTotal;
+       } else {
+         return;
+@@ -1954,7 +1957,7 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+     let mudi = datosForm.mudi || 0;
+ 
+     datosForm.ingredientes.forEach((ing: { tipo: string; idReferencia: any; cantidad: number; tipoMaterial: any; costoUnitario?: number; costoTotal?: number; }) => {
+-      if (ing.tipo === 'SUBRECETA') {
++      if (ing.tipo === 'SEMIELABORADO') {
+         const sub = subRecipes.find((r: any) => r.id === ing.idReferencia);
+         if (sub) {
+           mp += (sub.costoUnitarioMP || 0) * ing.cantidad;
+@@ -1991,6 +1994,37 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+     };
+   }, [datosForm.ingredientes, datosForm.mudi, datosForm.gif, datosForm.tipoCosteo, datosForm.pesoTotalCantidad, datosForm.porcionesCantidad, insumos, subRecipes]);
+ 
++  // Cálculo automático de Suma de Insumos y Merma basado en ingredientes
++  const depIng = JSON.stringify(datosForm.ingredientes.map((i: any) => ({ id: i.idReferencia, qty: i.cantidad })));
++  useEffect(() => {
++    let sum = 0;
++    datosForm.ingredientes.forEach((ing: any) => {
++      if (ing.tipo === 'SEMIELABORADO') {
++        sum += (ing.cantidad || 0);
++      } else {
++        const ins = insumos.find((i: any) => i.id === ing.idReferencia);
++        if (ins) {
++          const tipo = (ing.tipoMaterial || ins.tipoMaterial || '').toUpperCase();
++          if (!tipo.includes('EMPAQUE') && !tipo.includes('MODI')) {
++            sum += (ing.cantidad || 0);
++          }
++        } else {
++          sum += (ing.cantidad || 0);
++        }
++      }
++    });
++
++    if (sum !== datosForm.sumaTotalInsumos) {
++      setDatosForm((prev: any) => ({
++        ...prev,
++        sumaTotalInsumos: sum,
++        mermaCantidad: sum - (prev.pesoTotalCantidad || 0),
++        mermaUnidad: 'g' // Fija la magnitud en gramos
++      }));
++    }
++    // eslint-disable-next-line react-hooks/exhaustive-deps
++  }, [depIng]);
++
+   const ingredientesCategorizados = useMemo(() => {
+     const grupos = {
+       materiasPrimas: [] as IngredienteReceta[],
+@@ -1999,7 +2033,7 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+     };
+ 
+     datosForm.ingredientes.forEach((ing: IngredienteReceta) => {
+-      if (ing.tipo === 'SUBRECETA') {
++      if (ing.tipo === 'SEMIELABORADO') {
+         grupos.materiasPrimas.push(ing);
+       } else {
+         const ins = insumos.find((i: any) => i.id === ing.idReferencia);
+@@ -2138,7 +2172,7 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 h-fit space-y-3">
+                   <h4 className="text-[8px] font-black uppercase text-slate-400 tracking-widest">Categorización</h4>
+                   <div className="flex items-center gap-3">
+-                    <input type="checkbox" disabled={!esChefEditable} checked={datosForm.esSemielaborado} onChange={(e: { target: { checked: any; }; }) => setDatosForm({ ...datosForm, esSemielaborado: e.target.checked, esSubReceta: e.target.checked })} className="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" id="semielaborado" />
++                    <input type="checkbox" disabled={!esChefEditable} checked={datosForm.esSemielaborado} onChange={(e: { target: { checked: any; }; }) => setDatosForm({ ...datosForm, esSemielaborado: e.target.checked })} className="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" id="semielaborado" />
+                     <label htmlFor="semielaborado" className="cursor-pointer select-none">
+                       <p className="font-black text-amber-900 uppercase text-[10px] tracking-tighter">Semielaborado</p>
+                       <p className="text-[8px] text-slate-500 mt-0 font-bold uppercase tracking-tighter italic">En transformación</p>
+@@ -2431,11 +2465,16 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+                   </div>
+ 
+                   <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
++
++
+                     {/* Peso Total Obtenido */}
+                     <div className="space-y-1">
+                       <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5" /> Peso Total</label>
+                       <div className="flex gap-1.5">
+-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.pesoTotalCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, pesoTotalCantidad: Number(e.target.value) })} />
++                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.pesoTotalCantidad || ''} onChange={(e) => {
++                          const val = Number(e.target.value);
++                          setDatosForm({ ...datosForm, pesoTotalCantidad: val, pesoPorcionCantidad: val * (datosForm.porcionesCantidad || 0), mermaCantidad: (datosForm.sumaTotalInsumos || 0) - val });
++                        }} />
+                         <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.pesoTotalUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoTotalUnidad: e.target.value })}>
+                           {['g', 'kg', 'L', 'ml'].map(u => <option key={u} value={u}>{u}</option>)}
+                         </select>
+@@ -2444,26 +2483,32 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+ 
+                     {/* Merma */}
+                     <div className="space-y-1">
+-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> Merma %</label>
++                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> Merma</label>
+                       <div className="flex gap-1.5">
+                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.mermaCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, mermaCantidad: Number(e.target.value) })} />
+-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.mermaUnidad || '%'} onChange={(e) => setDatosForm({ ...datosForm, mermaUnidad: e.target.value })}>
+-                          <option value="%">%</option>
+-                          <option value="g">g</option>
+-                          <option value="kg">kg</option>
+-                        </select>
++                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-500 text-[10px] flex items-center justify-center w-12">g</span>
++                      </div>
++                    </div>
++                    {/* Suma Total Insumos */}
++                    <div className="space-y-1">
++                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-500" /> Insumos Totales</label>
++                      <div className="flex gap-1.5">
++                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.sumaTotalInsumos || ''} onChange={(e) => {
++                          const val = Number(e.target.value);
++                          setDatosForm({ ...datosForm, sumaTotalInsumos: val, mermaCantidad: val - (datosForm.pesoTotalCantidad || 0) });
++                        }} />
++                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-500 text-[10px] flex items-center justify-center w-12">g</span>
+                       </div>
+                     </div>
+-
+                     {/* Cantidad de Porciones */}
+                     <div className="space-y-1">
+                       <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Layers className="w-2.5 h-2.5" /> Porciones</label>
+                       <div className="flex gap-1.5">
+-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.porcionesCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, porcionesCantidad: Number(e.target.value) })} />
++                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.porcionesCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, porcionesCantidad: Number(e.target.value), pesoPorcionCantidad: (datosForm.pesoTotalCantidad || 0) * Number(e.target.value) })} />
+                         <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.porcionesUnidad || 'porciones'} onChange={(e) => setDatosForm({ ...datosForm, porcionesUnidad: e.target.value })}>
+                           <option value="porciones">porciones</option>
+-                          <option value="unidades">unidades</option>
+-                          <option value="platos">platos</option>
++                          <option value="unidades">tandas</option>
++
+                         </select>
+                       </div>
+                     </div>
+@@ -2499,9 +2544,9 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+                       </select>
+                     </div>
+ 
+-                    {/* MUDI */}
++                    {/* MODI */}
+                     <div className="space-y-1">
+-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> MUDI</label>
++                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> MODI</label>
+                       <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-indigo-100 text-xs" value={datosForm.mudi || 0} onChange={(e) => setDatosForm({ ...datosForm, mudi: Number(e.target.value) })} />
+                     </div>
+ 
+@@ -2519,15 +2564,15 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-5 bg-indigo-50/50 rounded-[2rem] border border-indigo-100 border-dashed animate-in fade-in zoom-in duration-500">
+                       <div className="space-y-1">
+                         <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo MP ({datosForm.tipoCosteo})</p>
+-                        <p className="text-sm font-black text-indigo-900">${(costeoProyectado.costoUnitarioMP || 0).toFixed(4)}</p>
++                        <p className="text-sm font-black text-indigo-900">₡{(costeoProyectado.costoUnitarioMP || 0).toFixed(4)}</p>
+                       </div>
+                       <div className="space-y-1">
+                         <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo EMP ({datosForm.tipoCosteo})</p>
+-                        <p className="text-sm font-black text-indigo-900">${(costeoProyectado.costoUnitarioEMP || 0).toFixed(4)}</p>
++                        <p className="text-sm font-black text-indigo-900">₡{(costeoProyectado.costoUnitarioEMP || 0).toFixed(4)}</p>
+                       </div>
+                       <div className="space-y-1">
+-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo MUDI ({datosForm.tipoCosteo})</p>
+-                        <p className="text-sm font-black text-indigo-900">${(costeoProyectado.costoUnitarioMUDI || 0).toFixed(4)}</p>
++                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo MODI ({datosForm.tipoCosteo})</p>
++                        <p className="text-sm font-black text-indigo-900">₡{(costeoProyectado.costoUnitarioMUDI || 0).toFixed(4)}</p>
+                       </div>
+                       <div className="space-y-1">
+                         <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Costo Total Final</p>
+@@ -2541,42 +2586,42 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+           )}
+ 
+           {tabActiva === 'pasos' && (
+-            <div className="max-w-4xl mx-auto space-y-6 animate-in slide-in-from-bottom duration-500">
+-              <div className="flex justify-between items-center bg-indigo-600 p-5 rounded-2xl shadow-lg text-white">
+-                <div className="flex items-center gap-4">
+-                  <Sparkles className="w-8 h-8" />
+-                  <div><h4 className="text-lg font-black uppercase tracking-tight">IA Culinary Engine</h4><p className="text-xs opacity-80">Refina tus procesos con inteligencia artificial gastronómica.</p></div>
++            <div className="max-w-4xl mx-auto space-y-4 animate-in slide-in-from-bottom duration-500">
++              <div className="flex justify-between items-center bg-indigo-600 p-4 rounded-3xl shadow-md text-white">
++                <div className="flex items-center gap-3">
++                  <Sparkles className="w-6 h-6" />
++                  <div><h4 className="text-sm font-black uppercase tracking-tight">IA Culinary Engine</h4><p className="text-[10px] opacity-80">Refina tus procesos con inteligencia artificial gastronómica.</p></div>
+                 </div>
+                 <button onClick={async () => {
+                   setEstaOptimizando(true);
+                   const opt = await optimizarPasosReceta(datosForm.nombre, datosForm.ingredientes.map((i: { nombre: any; }) => i.nombre));
+                   if (opt) setDatosForm({ ...datosForm, pasos: opt });
+                   setEstaOptimizando(false);
+-                }} disabled={estaOptimizando || !datosForm.nombre} className="bg-white text-indigo-600 px-6 py-2 rounded-xl font-black text-[10px] uppercase shadow-md transition-all disabled:opacity-50">{estaOptimizando ? 'Procesando...' : 'Optimizar Pasos'}</button>
++                }} disabled={estaOptimizando || !datosForm.nombre} className="bg-white text-indigo-600 px-4 py-1.5 rounded-xl font-black text-[9px] uppercase shadow-sm transition-all disabled:opacity-50">{estaOptimizando ? 'Procesando...' : 'Optimizar Pasos'}</button>
+               </div>
+ 
+-              <div className="space-y-4">
++              <div className="space-y-3">
+                 {esChefEditable && (
+-                  <div className="flex gap-4 p-4 border-2 border-dashed border-slate-200 bg-slate-50 rounded-2xl items-center">
+-                    <textarea rows={2} className="flex-1 p-3 bg-white border border-slate-200 rounded-xl outline-none font-medium text-sm resize-none focus:ring-2 focus:ring-indigo-100" placeholder="Describe el siguiente proceso técnico..." value={nuevoPaso} onChange={(e: { target: { value: any; }; }) => setNuevoPaso(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey && nuevoPaso) { e.preventDefault(); setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} />
+-                    <button onClick={() => { if (nuevoPaso) { setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} className="px-6 py-3 bg-slate-900 text-white rounded-xl font-black uppercase text-[10px] tracking-widest hover:bg-indigo-600 transition-all shadow-sm">Añadir Paso</button>
++                  <div className="flex gap-3 p-3 border-2 border-dashed border-slate-200 bg-slate-50 rounded-2xl items-center">
++                    <textarea rows={2} className="flex-1 p-2.5 bg-white border border-slate-200 rounded-xl outline-none font-medium text-xs resize-none focus:ring-2 focus:ring-indigo-100" placeholder="Describe el siguiente proceso técnico..." value={nuevoPaso} onChange={(e: { target: { value: any; }; }) => setNuevoPaso(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey && nuevoPaso) { e.preventDefault(); setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} />
++                    <button onClick={() => { if (nuevoPaso) { setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} className="px-5 py-2.5 bg-slate-900 text-white rounded-xl font-black uppercase text-[9px] tracking-widest hover:bg-indigo-600 transition-all shadow-sm">Añadir</button>
+                   </div>
+                 )}
+ 
+-                <div className="space-y-3">
++                <div className="space-y-2">
+                   {datosForm.pasos.map((p: any, i: number) => (
+-                    <div key={i} className="flex gap-4 items-center p-4 bg-white border border-slate-100 rounded-2xl shadow-sm group transition-all hover:shadow-md">
+-                      <div className="flex-shrink-0 w-8 h-8 bg-slate-900 text-white rounded-xl flex items-center justify-center font-black text-sm shadow-md">{i + 1}</div>
++                    <div key={i} className="flex gap-3 items-center p-3 bg-white border border-slate-100 rounded-2xl shadow-sm group transition-all hover:shadow-md">
++                      <div className="flex-shrink-0 w-8 h-8 bg-slate-900 text-white rounded-xl flex items-center justify-center font-black text-xs shadow-sm">{i + 1}</div>
+                       <div className="flex-1">
+-                        <p className="text-sm font-medium text-slate-700 leading-relaxed">{p}</p>
++                        <p className="text-xs font-medium text-slate-700 leading-snug">{p}</p>
+                       </div>
+                       {esChefEditable && (
+-                        <button onClick={() => setDatosForm({ ...datosForm, pasos: datosForm.pasos.filter((_: any, idx: any) => idx !== i) })} className="opacity-0 group-hover:opacity-100 p-2 text-rose-500 hover:bg-rose-50 rounded-xl transition-all"><Trash2 size={16} /></button>
++                        <button onClick={() => setDatosForm({ ...datosForm, pasos: datosForm.pasos.filter((_: any, idx: any) => idx !== i) })} className="opacity-0 group-hover:opacity-100 p-2 text-rose-500 hover:bg-rose-50 rounded-xl transition-all"><Trash2 size={14} /></button>
+                       )}
+                     </div>
+                   ))}
+                   {datosForm.pasos.length === 0 && (
+-                    <div className="text-center py-6 text-slate-400 font-medium text-xs border-2 border-dashed border-slate-100 rounded-2xl">
++                    <div className="text-center py-4 text-slate-400 font-medium text-[10px] uppercase tracking-widest border-2 border-dashed border-slate-100 rounded-2xl">
+                       Aún no hay pasos en la preparación.
+                     </div>
+                   )}
+@@ -2586,39 +2631,39 @@ function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose,
+           )}
+ 
+           {tabActiva === 'historial' && (
+-            <div className="max-w-4xl mx-auto space-y-10 animate-in slide-in-from-bottom duration-500">
+-              <div className="p-10 bg-indigo-50 border-2 border-dashed border-indigo-100 rounded-[3rem] text-center">
+-                <History className="w-16 h-16 text-indigo-300 mx-auto mb-6" />
+-                <h4 className="text-xl font-black text-indigo-900 uppercase tracking-tight">Trazabilidad Técnica de Cambios</h4>
+-                <p className="text-sm text-indigo-500 font-medium mt-2">Sello de inmutabilidad operativa y registro de certificaciones QC.</p>
++            <div className="max-w-4xl mx-auto space-y-6 animate-in fade-in duration-500">
++              <div className="p-6 bg-indigo-50 border-2 border-dashed border-indigo-100 rounded-3xl text-center">
++                <History className="w-10 h-10 text-indigo-300 mx-auto mb-4" />
++                <h4 className="text-lg font-black text-indigo-900 uppercase tracking-tight">Trazabilidad Técnica de Cambios</h4>
++                <p className="text-xs text-indigo-500 font-medium mt-1">Sello de inmutabilidad operativa y registro de certificaciones QC.</p>
+               </div>
+ 
+-              <div className="space-y-6">
++              <div className="space-y-4">
+                 {datosForm.versiones.slice().reverse().map((v: { numeroVersion: any; fechaAprobacion: any; aprobadoPorCostos: any; codigoCalidad: any; registroCambios: any; }, i: any) => (
+-                  <div key={i} className="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm relative overflow-hidden group">
+-                    <div className="absolute top-0 right-0 p-6 bg-emerald-600 text-white font-black text-[10px] uppercase tracking-widest rounded-bl-3xl">Certificado</div>
+-                    <div className="flex items-center gap-6 mb-8">
+-                      <div className="p-4 bg-slate-100 rounded-2xl group-hover:bg-indigo-100 transition-colors"><BadgeCheck className="w-8 h-8 text-indigo-600" /></div>
+-                      <div><h4 className="text-3xl font-black text-slate-900">Versión {v.numeroVersion}</h4><p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mt-1">Auditado el {v.fechaAprobacion}</p></div>
++                  <div key={i} className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden group">
++                    <div className="absolute top-0 right-0 p-3 bg-emerald-600 text-white font-black text-[9px] uppercase tracking-widest rounded-bl-2xl">Certificado</div>
++                    <div className="flex items-center gap-4 mb-6">
++                      <div className="p-3 bg-slate-100 rounded-xl group-hover:bg-indigo-100 transition-colors"><BadgeCheck className="w-6 h-6 text-indigo-600" /></div>
++                      <div><h4 className="text-xl font-black text-slate-900">Versión {v.numeroVersion}</h4><p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mt-0.5">Auditado el {v.fechaAprobacion}</p></div>
+                     </div>
+-                    <div className="grid grid-cols-2 gap-8 p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
++                    <div className="grid grid-cols-2 gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                       <div>
+-                        <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mb-1">ID Auditor Costos</p>
+-                        <p className="font-bold text-slate-600">{v.aprobadoPorCostos || 'S/D'}</p>
++                        <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">ID Auditor Costos</p>
++                        <p className="font-bold text-sm text-slate-600">{v.aprobadoPorCostos || 'S/D'}</p>
+                       </div>
+                       <div>
+-                        <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mb-1">Código QC de Control</p>
+-                        <p className="font-black text-indigo-600 text-lg">{v.codigoCalidad || 'S/D'}</p>
++                        <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">Código QC de Control</p>
++                        <p className="font-black text-indigo-600 text-sm">{v.codigoCalidad || 'S/D'}</p>
+                       </div>
+-                      <div className="col-span-2 pt-4 border-t border-slate-200">
+-                        <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mb-2">Registro de Cambios</p>
+-                        <p className="text-sm font-medium text-slate-500 italic">"{v.registroCambios || 'Sin cambios registrados'}"</p>
++                      <div className="col-span-2 pt-3 border-t border-slate-200">
++                        <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1.5">Registro de Cambios</p>
++                        <p className="text-xs font-medium text-slate-500 italic">"{v.registroCambios || 'Sin cambios registrados'}"</p>
+                       </div>
+                     </div>
+                   </div>
+                 ))}
+                 {datosForm.versiones.length === 0 && (
+-                  <div className="py-20 text-center text-slate-200 font-black uppercase tracking-[0.4em] italic">No existen registros históricos para esta fórmula</div>
++                  <div className="py-12 text-center text-slate-300 font-black uppercase tracking-widest text-xs italic">No existen registros históricos para esta fórmula</div>
+                 )}
+               </div>
+             </div>
+diff --git a/backend/servicios/CosteoService.js b/backend/servicios/CosteoService.js
+index a1ae28f..a48839e 100644
+--- a/backend/servicios/CosteoService.js
++++ b/backend/servicios/CosteoService.js
+@@ -48,8 +48,8 @@ class CosteoService {
+                 } else {
+                     totalMP += costoTotal;
+                 }
+-            } else if (ing.tipo === 'SUBRECETA') {
+-                const subreceta = todasRecetas.find(r => r.id === ing.idReferencia && r.estado === 'APROBADO');
++            } else if (ing.tipo === 'SEMIELABORADO') {
++                const subreceta = todasRecetas.find(r => r.id === ing.idReferencia);
+                 if (subreceta) {
+                     const factor = ing.cantidad;
+                     totalMP += (subreceta.costoUnitarioMP || 0) * factor;
+@@ -92,8 +92,8 @@ class CosteoService {
+             let costoU = ing.costoUnitario; // Ya actualizado por calcular() si era NetSuite
+             let version = null;
+ 
+-            if (ing.tipo === 'SUBRECETA') {
+-                const sub = todasRecetas.find(r => r.id === ing.idReferencia && r.estado === 'APROBADO');
++            if (ing.tipo === 'SEMIELABORADO') {
++                const sub = todasRecetas.find(r => r.id === ing.idReferencia);
+                 if (sub) {
+                     costoU = sub.costoTotalFinal / (sub.tipoCosteo === 'GRAMO' ? sub.pesoTotalCantidad : sub.porcionesCantidad);
+                     version = sub.versionActual;
+diff --git a/backend/servicios/ServicioRecetasInsumos.js b/backend/servicios/ServicioRecetasInsumos.js
+index 596361c..ff4f9d3 100644
+--- a/backend/servicios/ServicioRecetasInsumos.js
++++ b/backend/servicios/ServicioRecetasInsumos.js
+@@ -33,7 +33,6 @@ async function obtenerRecetas() {
+ 
+     return recetas.map(r => {
+         r.pasos = typeof r.pasos === 'string' ? JSON.parse(r.pasos || "[]") : (r.pasos || []);
+-        r.esSubReceta = r.esSubReceta === 1;
+         r.esSemielaborado = r.esSemielaborado === 1;
+ 
+         r.ingredientes = ingredientes.filter(i => i.receta_id === r.id).map(ing => ({
+@@ -64,7 +63,7 @@ async function upsertReceta(data) {
+ 
+         const {
+             id, nombre, estado, versionActual, pasos, costoTotal,
+-            esSubReceta, tipoCosteo, mudi, gif,
++            esSemielaborado, tipoCosteo, mudi, gif,
+             totalMP, totalEMP, totalMUDI, costoTotalBase, costoTotalFinal,
+             codigoCalidad
+         } = data;
+@@ -72,7 +71,7 @@ async function upsertReceta(data) {
+         await conn.query(`
+             INSERT INTO recetas (
+                 id, nombre, estado, versionActual, pasos, costoTotal, 
+-                esSubReceta, tipoCosteo, mudi, gif, 
++                esSemielaborado, tipoCosteo, mudi, gif, 
+                 totalMP, totalEMP, totalMUDI, costoTotalBase, costoTotalFinal, codigoCalidad
+             )
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+@@ -84,7 +83,7 @@ async function upsertReceta(data) {
+                 costoTotalFinal=VALUES(costoTotalFinal), codigoCalidad=VALUES(codigoCalidad)
+         `, [
+             id, nombre, estado, versionActual || 1, JSON.stringify(pasos || []), costoTotal || 0,
+-            esSubReceta ? 1 : 0, tipoCosteo || 'GRAMO', mudi || 0, gif || 0,
++            esSemielaborado ? 1 : 0, tipoCosteo || 'GRAMO', mudi || 0, gif || 0,
+             totalMP || 0, totalEMP || 0, totalMUDI || 0, costoTotalBase || 0, costoTotalFinal || 0,
+             codigoCalidad || null
+         ]);
+diff --git a/test_db.cjs b/test_db.cjs
+new file mode 100644
+index 0000000..84dafe9
+--- /dev/null
++++ b/test_db.cjs
+@@ -0,0 +1,13 @@
++const pool = require('./backend/config/database');
++
++async function test() {
++    try {
++        const [rows] = await pool.query('SHOW COLUMNS FROM recetas;');
++        console.log(rows);
++    } catch (e) {
++        console.error(e);
++    } finally {
++        process.exit();
++    }
++}
++test();
+diff --git a/test_db.js b/test_db.js
+new file mode 100644
+index 0000000..84dafe9
+--- /dev/null
++++ b/test_db.js
+@@ -0,0 +1,13 @@
++const pool = require('./backend/config/database');
++
++async function test() {
++    try {
++        const [rows] = await pool.query('SHOW COLUMNS FROM recetas;');
++        console.log(rows);
++    } catch (e) {
++        console.error(e);
++    } finally {
++        process.exit();
++    }
++}
++test();
+diff --git a/test_db.mjs b/test_db.mjs
+new file mode 100644
+index 0000000..e69de29
+diff --git a/types.ts b/types.ts
+index a54e406..57d311b 100644
+--- a/types.ts
++++ b/types.ts
+@@ -188,7 +188,7 @@ export type ItemSidebar = {
+ 
+ export interface IngredienteReceta {
+   id: string;
+-  tipo: 'INSUMO' | 'SUBRECETA';
++  tipo: 'INSUMO' | 'SEMIELABORADO';
+   idReferencia: string;
+   nombre: string;
+   cantidad: number;
+@@ -234,7 +234,6 @@ export interface Receta {
+   versiones: HistorialVersiones[];
+   ultimoRegistroCambios: string;
+   costoTotal: number;
+-  esSubReceta: boolean;
+   esSemielaborado: boolean;
+   codigoCalidad?: string;
+   flujoAprobacionId?: string;
+@@ -258,6 +257,7 @@ export interface Receta {
+ 
+   pesoTotalCantidad?: number;
+   pesoTotalUnidad?: string;
++  sumaTotalInsumos?: number;
+   tiempoPrepCantidad?: number;
+   tiempoPrepUnidad?: string;
+   porcionesCantidad?: number;

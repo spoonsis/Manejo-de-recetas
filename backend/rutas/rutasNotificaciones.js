@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
         res.json(data);
     } catch (e) {
         console.error("Error GET /notificaciones", e);
-        res.status(500).json({ error: e.message });
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
     }
 });
 
@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
         res.json({ success: true, id });
     } catch (e) {
         console.error("Error POST /notificaciones", e);
-        res.status(500).json({ error: e.message });
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
     }
 });
 
@@ -34,7 +34,7 @@ router.put("/:id/leer", async (req, res) => {
         res.json({ success: true });
     } catch (e) {
         console.error("Error PUT /notificaciones/:id/leer", e);
-        res.status(500).json({ error: e.message });
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
     }
 });
 

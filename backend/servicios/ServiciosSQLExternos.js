@@ -8,7 +8,9 @@ async function listarArticulos() {
     SELECT 
     fullname AS id,
     description AS nombre,
-    averagecost AS precioCompra
+    averagecost AS precioCompra,
+    marca,
+    weightunits AS unidad
 FROM l_nt_dim_articulo
 WHERE LEFT(fullname, 2) IN ('MP', 'SE', 'PT', 'EM');
         `);
