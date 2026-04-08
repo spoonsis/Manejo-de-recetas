@@ -10,9 +10,8 @@ import { optimizarPasosReceta } from './geminiService';
 import { useStore } from './useStore';
 
 // --- Listas de Referencia ---
-const PERSONAL_MOCK = ["Chef Antonio García", "Lucía Fernández (Pastelera)", "Elena Rodríguez (Costos)", "Carlos Mendoza (Marketing)", "Daniela Silva (Calidad)"];
-const AREAS_PRODUCCION = ["Cocina Caliente", "Cuarto Frío", "Pastelería Industrial", "Panadería Artesanal", "Área de Mezclado"];
-const AREAS_EMPAQUE = ["Línea de Empaque Primario", "Área de Etiquetado", "Zona de Despacho", "Cámaras de Refrigeración"];
+const AREAS_PRODUCCION = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
+const AREAS_EMPAQUE = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
 
 export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role }: any) {
   const [datosForm, setDatosForm] = useState<Receta>(recipe);
@@ -106,11 +105,11 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
     let idReferencia = idReferenciaInterno;
 
     if (esProductoNuevo) {
-      if (!codigo.trim() || !descripcionDetalle.trim()) {
-        alert("Para crear un insumo nuevo debe proporcionar un Código (Código QC) y una Descripción.");
+      if (!descripcionDetalle.trim()) {
+        alert("Para crear un insumo nuevo debe proporcionar una Descripción.");
         return;
       }
-      const nuevoId = codigo.trim();
+      const nuevoId = `NVO-${Math.floor(Date.now() / 1000)}`;
       nombre = descripcionDetalle.trim();
       onSaveInsumo({
         id: nuevoId, nombre, estado: EstadoInsumo.PENDIENTE_COMPRAS,
@@ -336,9 +335,6 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 <div className="space-y-1">
                   <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Users className="w-2.5 h-2.5" /> Elaborado por</label>
                   <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.elaboradoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, elaboradoPor: e.target.value })} placeholder="Creador..." />
-                  <datalist id="personal-datalist">
-                    {PERSONAL_MOCK.map(p => <option key={p} value={p} />)}
-                  </datalist>
                 </div>
                 <div className="space-y-1">
                   <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><BadgeCheck className="w-2.5 h-2.5" /> Aprobado por</label>
@@ -438,8 +434,12 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </datalist>
                       </div>
                       <div>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Código</label>
-                        <input placeholder="Código Interno..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={codigo} onChange={(e: { target: { value: any; }; }) => setCodigo(e.target.value)} />
+                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Tipo Insumo</label>
+                        <input
+                          disabled
+                          className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-emerald-400 text-xs text-center uppercase tracking-widest cursor-not-allowed"
+                          value={esProductoNuevo ? 'Nuevo' : (codigoNetSuite ? 'Existente' : '-')}
+                        />
                       </div>
                       <div>
                         <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Marca</label>
@@ -460,7 +460,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                       <div className="bg-rose-500/10 border border-rose-500/20 p-2 rounded-lg mt-2 mb-2 flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 text-rose-400" />
                         <span className="text-[9px] font-bold text-rose-300">
-                          Estás creando un Insumo Nuevo. Asegúrate de llenar <strong className="text-white">Código</strong> y <strong className="text-white">Descripción</strong>. Este insumo se guardará en el catálogo general.
+                          Estás creando un Insumo Nuevo. Asegúrate de proporcionar una <strong className="text-white">Descripción</strong> clara. Este insumo se guardará posteriormente en tu catálogo al guardar.
                         </span>
                       </div>
                     )}

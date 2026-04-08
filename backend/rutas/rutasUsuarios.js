@@ -41,7 +41,7 @@ router.post('/', roleMiddleware('ADMIN'), async (req, res) => {
         const hash = await bcrypt.hash(password, 10);
         
         await pool.query(
-            "INSERT INTO usuarios (id, nombreUsuario, email, passwordHash, rol, nombreCompleto, activo) VALUES (?, ?, ?, ?, ?, ?, 1)",
+            "INSERT INTO usuarios (id, nombreUsuario, email, passwordHash, rol, nombreCompleto, activo, resetToken) VALUES (?, ?, ?, ?, ?, ?, 1, 'TEMP_PASSWORD')",
             [username, username, email, hash, rol, nombreCompleto || username]
         );
 

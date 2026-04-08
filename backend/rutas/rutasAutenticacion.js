@@ -2,8 +2,21 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const crypto = require('crypto');
+const nodemailer = require('nodemailer');
 const pool = require('../config/database');
 const { secretKey } = require('../middlewares/authMiddleware');
+
+// Configuración de Nodemailer Transport
+const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: process.env.SMTP_PORT || 587,
+    secure: process.env.SMTP_SECURE === 'true', // true para puerto 465, false para otros
+    auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS
+    }
+});
 
 /**
  * POST /api/auth/register
@@ -26,7 +39,7 @@ router.post('/register', async (req, res) => {
         const hash = await bcrypt.hash(password, 10);
         
         await pool.query(
-            "INSERT INTO usuarios (id, nombreUsuario, email, passwordHash, rol, nombreCompleto, activo) VALUES (?, ?, ?, ?, ?, ?, 1)",
+            "INSERT INTO usuarios (id, nombreUsuario, email, passwordHash, rol, nombreCompleto, activo, resetToken) VALUES (?, ?, ?, ?, ?, ?, 1, 'TEMP_PASSWORD')",
             [username, username, email, hash, rol || 'CHEF', nombreCompleto || username]
         );
 
@@ -72,6 +85,13 @@ router.post('/login', async (req, res) => {
             return res.status(401).json({ error: "Credenciales inválidas" });
         }
 
+        if (usuario.resetToken === 'TEMP_PASSWORD') {
+            return res.status(200).json({
+                error: "PASSWORD_CHANGE_REQUIRED",
+                message: "Debes cambiar tu contraseña antes de continuar"
+            });
+        }
+
         // Generar Token
         const payload = {
             id: usuario.id,
@@ -103,23 +123,133 @@ router.post('/login', async (req, res) => {
 });
 
 /**
- * POST /api/auth/reset-password
- * Permite cambiar el password (en este caso simplificado por ID de usuario)
+ * POST /api/auth/change-password
  */
-router.post('/reset-password', async (req, res) => {
-    const { username, newPassword } = req.body;
+router.post('/change-password', async (req, res) => {
+    const { username, currentPassword, newPassword } = req.body;
+    if (!username || !currentPassword || !newPassword) {
+        return res.status(400).json({ error: "Faltan datos obligatorios" });
+    }
+    try {
+        const [rows] = await pool.query("SELECT * FROM usuarios WHERE nombreUsuario = ?", [username]);
+        if (rows.length === 0) return res.status(401).json({ error: "Credenciales inválidas" });
+        const usuario = rows[0];
+        
+        const passwordMatch = await bcrypt.compare(currentPassword, usuario.passwordHash);
+        if (!passwordMatch) return res.status(401).json({ error: "Credenciales inválidas" });
 
-    if (!username || !newPassword) {
-        return res.status(400).json({ error: "Username y nueva contraseña son requeridos" });
+        const hash = await bcrypt.hash(newPassword, 10);
+        await pool.query("UPDATE usuarios SET passwordHash = ?, resetToken = NULL, resetTokenExpira = NULL WHERE nombreUsuario = ?", [hash, username]);
+        
+        res.json({ success: true, message: "Contraseña actualizada exitosamente" });
+    } catch (error) {
+        console.error("Error en change-password:", error);
+        res.status(500).json({ error: "Error interno" });
+    }
+});
+
+/**
+ * POST /api/auth/forgot-password
+ */
+router.post('/forgot-password', async (req, res) => {
+    const { email } = req.body;
+    if (!email) {
+        return res.status(400).json({ error: "Email requerido" });
     }
 
     try {
-        const hash = await bcrypt.hash(newPassword, 10);
-        const [result] = await pool.query("UPDATE usuarios SET passwordHash = ? WHERE nombreUsuario = ? OR email = ?", [hash, username, username]);
+        // Step 1: Clear previous tokens
+        await pool.query("UPDATE usuarios SET resetToken = NULL, resetTokenExpira = NULL WHERE email = ?", [email]);
 
-        if (result.affectedRows === 0) {
-            return res.status(404).json({ error: "Usuario no encontrado" });
+        // Validate user existence but do not reveal it
+        const [rows] = await pool.query("SELECT id FROM usuarios WHERE email = ?", [email]);
+        if (rows.length > 0) {
+            // Step 2 & 3: Generate and Hash token
+            const rawToken = crypto.randomBytes(32).toString('hex');
+            const hashedToken = crypto.createHash('sha256').update(rawToken).digest('hex');
+
+            // Step 4: Store in DB
+            await pool.query(
+                "UPDATE usuarios SET resetToken = ?, resetTokenExpira = DATE_ADD(NOW(), INTERVAL 1 HOUR) WHERE email = ?",
+                [hashedToken, email]
+            );
+
+            // Step 5: Enviar correo electrónico real
+            const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+            const resetLink = `${frontendUrl}/reset-password?token=${rawToken}`;
+            
+            if (process.env.SMTP_USER && process.env.SMTP_PASS) {
+                try {
+                    await transporter.sendMail({
+                        from: `"GastroFlow Pro" <${process.env.SMTP_USER}>`,
+                        to: email,
+                        subject: "Recuperación de Contraseña - GastroFlow Pro",
+                        html: `
+                            <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px;">
+                                <h2 style="color: #0f172a; text-align: center;">Recuperación de Acceso</h2>
+                                <p style="color: #475569; font-size: 16px;">Hola,</p>
+                                <p style="color: #475569; font-size: 16px;">Hemos recibido una solicitud para restablecer tu contraseña en GastroFlow Pro. Si fuiste tú, por favor asegúrate de clicar el botón de abajo.</p>
+                                <div style="text-align: center; margin: 30px 0;">
+                                    <a href="${resetLink}" style="background-color: #f97316; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; display: inline-block;">
+                                        Restablecer mi Contraseña
+                                    </a>
+                                </div>
+                                <p style="color: #475569; font-size: 14px;">Este enlace es seguro y expirará en <strong>1 hora</strong>. Si no solicitaste este cambio, puedes ignorar el correo.</p>
+                                <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;" />
+                                <p style="color: #94a3b8; font-size: 12px; text-align: center;">GastroFlow Pro &copy; 2026</p>
+                            </div>
+                        `
+                    });
+                    console.log(`[EMAIL ENVIADO] Recuperación enviada exitosamente a ${email}`);
+                } catch (emailError) {
+                    console.error("[EMAIL ERROR] Falló el envío del correo:", emailError);
+                }
+            } else {
+                console.log(`\n========================================`);
+                console.log(`[SIMULATED EMAIL TO: ${email}]`);
+                console.log(`Link para restablecer contraseña:`);
+                console.log(resetLink);
+                console.log(`\n⚠️ ATENCIÓN: El correo NO se envió porque no has configurado SMTP_USER y SMTP_PASS en el .env`);
+                console.log(`========================================\n`);
+            }
         }
+
+        res.json({ success: true, message: "Si el correo está registrado, recibirás un enlace de recuperación." });
+    } catch (error) {
+        console.error("Error en forgot-password:", error);
+        res.status(500).json({ error: "Error interno" });
+    }
+});
+
+/**
+ * POST /api/auth/reset-password
+ */
+router.post('/reset-password', async (req, res) => {
+    const { token, newPassword } = req.body;
+
+    if (!token || !newPassword) {
+        return res.status(400).json({ error: "Token y nueva contraseña son requeridos" });
+    }
+
+    try {
+        const hashedToken = crypto.createHash('sha256').update(token).digest('hex');
+        
+        const [rows] = await pool.query(
+            "SELECT id FROM usuarios WHERE resetToken = ? AND resetTokenExpira > NOW()",
+            [hashedToken]
+        );
+
+        if (rows.length === 0) {
+            return res.status(400).json({ error: "Token inválido o expirado" });
+        }
+
+        const userId = rows[0].id;
+        const hash = await bcrypt.hash(newPassword, 10);
+        
+        await pool.query(
+            "UPDATE usuarios SET passwordHash = ?, resetToken = NULL, resetTokenExpira = NULL WHERE id = ?", 
+            [hash, userId]
+        );
 
         res.json({ success: true, message: "Contraseña actualizada exitosamente" });
     } catch (error) {

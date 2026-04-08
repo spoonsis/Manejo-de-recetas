@@ -120,7 +120,7 @@ async function upsertFicha(datos) {
         const {
             id, recetaId, nombreReceta, codigoCalidadPropio, estado, version,
             subsidiaria, elaboradoPor, aprobadoPor, areaProduce, areaEmpaca,
-            descripcionTecnica, alergenos, usoIntencional, consumidorObjetivo,
+            descripcionTecnica, declaracionIngredientes, alergenos, usoIntencional, consumidorObjetivo,
             restricciones, empaque, almacenamientoInterno, transporte, aspectoRechazo,
             almacenamientoPuntoVenta, vidaUtilCongelado, vidaUtilRefrigerado, vidaUtilAmbiente,
             pesoBruto, pesoNeto, pesoEtiqueta, requiereEtiquetaIngredientes,
@@ -133,7 +133,7 @@ async function upsertFicha(datos) {
             INSERT INTO fichas_tecnicas (
                 id, recetaId, nombreReceta, codigoCalidadPropio, estado, version,
                 subsidiaria, elaboradoPor, aprobadoPor, areaProduce, areaEmpaca,
-                descripcionTecnica, alergenos, usoIntencional, consumidorObjetivo,
+                descripcionTecnica, declaracionIngredientes, alergenos, usoIntencional, consumidorObjetivo,
                 restricciones, empaque, almacenamientoInterno, transporte, aspectoRechazo,
                 almacenamientoPuntoVenta, vidaUtilCongelado, vidaUtilRefrigerado, vidaUtilAmbiente,
                 pesoBruto, pesoNeto, pesoEtiqueta, requiereEtiquetaIngredientes,
@@ -141,12 +141,12 @@ async function upsertFicha(datos) {
                 fisicas, organolepticas, aspectosMicrobiologicos, imagenes, requisitosLegales,
                 fechaCreacion, ultimaModificacion
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
             ON DUPLICATE KEY UPDATE 
                 recetaId=VALUES(recetaId), nombreReceta=VALUES(nombreReceta), codigoCalidadPropio=VALUES(codigoCalidadPropio), 
                 estado=VALUES(estado), version=VALUES(version), subsidiaria=VALUES(subsidiaria), elaboradoPor=VALUES(elaboradoPor), 
                 aprobadoPor=VALUES(aprobadoPor), areaProduce=VALUES(areaProduce), areaEmpaca=VALUES(areaEmpaca),
-                descripcionTecnica=VALUES(descripcionTecnica), alergenos=VALUES(alergenos), usoIntencional=VALUES(usoIntencional), 
+                descripcionTecnica=VALUES(descripcionTecnica), declaracionIngredientes=VALUES(declaracionIngredientes), alergenos=VALUES(alergenos), usoIntencional=VALUES(usoIntencional), 
                 consumidorObjetivo=VALUES(consumidorObjetivo), restricciones=VALUES(restricciones), empaque=VALUES(empaque), 
                 almacenamientoInterno=VALUES(almacenamientoInterno), transporte=VALUES(transporte), aspectoRechazo=VALUES(aspectoRechazo),
                 almacenamientoPuntoVenta=VALUES(almacenamientoPuntoVenta), vidaUtilCongelado=VALUES(vidaUtilCongelado), 
@@ -160,7 +160,7 @@ async function upsertFicha(datos) {
         `, [
             id, recetaId, nombreReceta, codigoCalidadPropio || '', estado, version || 1,
             subsidiaria || '', elaboradoPor || '', aprobadoPor || '', areaProduce || '', areaEmpaca || '',
-            descripcionTecnica || '', JSON.stringify(alergenos || []), usoIntencional || '', consumidorObjetivo || '',
+            descripcionTecnica || '', declaracionIngredientes || '', JSON.stringify(alergenos || []), usoIntencional || '', consumidorObjetivo || '',
             restricciones || '', empaque || '', almacenamientoInterno || '', transporte || '', aspectoRechazo || '',
             almacenamientoPuntoVenta || '', vidaUtilCongelado || '', vidaUtilRefrigerado || '', vidaUtilAmbiente || '',
             pesoBruto || '', pesoNeto || '', pesoEtiqueta || '', requiereEtiquetaIngredientes ? 1 : 0,

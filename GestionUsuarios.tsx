@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { 
-    Users, 
-    UserPlus, 
-    Mail, 
-    Shield, 
-    Lock, 
-    Trash2, 
-    UserCheck, 
-    UserX, 
+import {
+    Users,
+    UserPlus,
+    Mail,
+    Shield,
+    Lock,
+    Trash2,
+    UserCheck,
+    UserX,
     Search,
     Loader2,
     Plus,
@@ -24,7 +24,7 @@ export default function GestionUsuarios() {
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
     const [showAddModal, setShowAddModal] = useState(false);
-    
+
     // New user form state
     const [newUser, setNewUser] = useState({
         username: '',
@@ -93,7 +93,7 @@ export default function GestionUsuarios() {
         }
     };
 
-    const filteredUsers = usuarios.filter(u => 
+    const filteredUsers = usuarios.filter(u =>
         u.nombreCompleto.toLowerCase().includes(searchTerm.toLowerCase()) ||
         u.nombreUsuario.toLowerCase().includes(searchTerm.toLowerCase()) ||
         u.email.toLowerCase().includes(searchTerm.toLowerCase())
@@ -120,7 +120,7 @@ export default function GestionUsuarios() {
                 <div className="p-4 border-b border-slate-100 bg-slate-50/50 flex items-center gap-4">
                     <div className="relative flex-1 max-w-md">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-                        <input 
+                        <input
                             type="text"
                             placeholder="Buscar por nombre, usuario o email..."
                             value={searchTerm}
@@ -189,7 +189,7 @@ export default function GestionUsuarios() {
                                         </div>
                                     </td>
                                     <td className="px-6 py-4 text-center">
-                                        <button 
+                                        <button
                                             onClick={() => toggleUserStatus(u.id)}
                                             title={u.activo ? "Inactivar Usuario" : "Activar Usuario"}
                                             className={`p-2 rounded-lg transition-all ${u.activo ? 'text-slate-300 hover:text-rose-500 hover:bg-rose-50' : 'text-emerald-400 hover:text-emerald-600 hover:bg-emerald-50'}`}
@@ -218,25 +218,25 @@ export default function GestionUsuarios() {
                                 <X className="w-5 h-5 text-slate-400 group-hover:text-rose-500" />
                             </button>
                         </div>
-                        
+
                         <form onSubmit={handleCreateUser} className="p-8 space-y-6">
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-1.5">
                                     <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Usuario (ID)</label>
-                                    <input 
+                                    <input
                                         required
                                         className="w-full p-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none transition-all"
                                         placeholder="ej. agarcia"
                                         value={newUser.username}
-                                        onChange={e => setNewUser({...newUser, username: e.target.value})}
+                                        onChange={e => setNewUser({ ...newUser, username: e.target.value })}
                                     />
                                 </div>
                                 <div className="space-y-1.5">
                                     <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Rol del Sistema</label>
-                                    <select 
+                                    <select
                                         className="w-full p-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none appearance-none"
                                         value={newUser.rol}
-                                        onChange={e => setNewUser({...newUser, rol: e.target.value as Rol})}
+                                        onChange={e => setNewUser({ ...newUser, rol: e.target.value as Rol })}
                                     >
                                         {roles.map(r => <option key={r} value={r}>{r}</option>)}
                                     </select>
@@ -245,12 +245,12 @@ export default function GestionUsuarios() {
 
                             <div className="space-y-1.5">
                                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Nombre Completo</label>
-                                <input 
+                                <input
                                     required
                                     className="w-full p-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none transition-all"
                                     placeholder="ej. Antonio García"
                                     value={newUser.nombreCompleto}
-                                    onChange={e => setNewUser({...newUser, nombreCompleto: e.target.value})}
+                                    onChange={e => setNewUser({ ...newUser, nombreCompleto: e.target.value })}
                                 />
                             </div>
 
@@ -258,13 +258,13 @@ export default function GestionUsuarios() {
                                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Correo Electrónico</label>
                                 <div className="relative">
                                     <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
-                                    <input 
+                                    <input
                                         type="email"
                                         required
                                         className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none transition-all"
                                         placeholder="ej. agarcia@restaurante.com"
                                         value={newUser.email}
-                                        onChange={e => setNewUser({...newUser, email: e.target.value})}
+                                        onChange={e => setNewUser({ ...newUser, email: e.target.value })}
                                     />
                                 </div>
                             </div>
@@ -273,13 +273,13 @@ export default function GestionUsuarios() {
                                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Contraseña Temporal</label>
                                 <div className="relative">
                                     <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
-                                    <input 
+                                    <input
                                         type="password"
                                         required
                                         className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none transition-all"
-                                        placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+                                        placeholder="Contraseña Temporal"
                                         value={newUser.password}
-                                        onChange={e => setNewUser({...newUser, password: e.target.value})}
+                                        onChange={e => setNewUser({ ...newUser, password: e.target.value })}
                                     />
                                 </div>
                             </div>

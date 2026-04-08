@@ -14,7 +14,7 @@ import {
     Download
 } from 'lucide-react';
 import { Insumo, EstadoInsumo, Rol, FaseFluxoInsumo } from './types';
-import { ESTILOS_ESTADO_INSUMO, ETIQUETAS_ESTADO_INSUMO, MAPA_CONVERSION_UNIDADES } from './constants';
+import { ESTILOS_ESTADO_INSUMO, ETIQUETAS_ESTADO_INSUMO, MAPA_CONVERSION_UNIDADES, UNIDADES, UNIDADES_STOCK, TIPOS_MATERIAL, OPCIONES_IMPUESTO } from './constants';
 
 interface VistaInventarioProps {
     insumos: Insumo[];
@@ -332,7 +332,7 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
                 const famConsumo = MAPA_CONVERSION_UNIDADES[uConsumo].familia;
 
                 if (famCompra === famConsumo) {
-                    nuevosDatos.factorConversion = MAPA_CONVERSION_UNIDADES[uConsumo].valor / MAPA_CONVERSION_UNIDADES[uCompra].valor;
+                    nuevosDatos.factorConversion = MAPA_CONVERSION_UNIDADES[uCompra].valor / MAPA_CONVERSION_UNIDADES[uConsumo].valor;
                 }
             }
         }
@@ -342,8 +342,8 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         const cCompra = nuevosDatos.cantidadCompra || 1;
         const factor = nuevosDatos.factorConversion || 1;
 
-        nuevosDatos.precioPorUnidad = (pCompra / cCompra) * factor;
-        nuevosDatos.cantidadConvertida = cCompra / (factor || 1);
+        nuevosDatos.precioPorUnidad = (pCompra / cCompra) / factor;
+        nuevosDatos.cantidadConvertida = cCompra * factor;
 
         setDatos(nuevosDatos);
     };
@@ -446,6 +446,29 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
             );
         }
 
+        if (['unidad', 'unidadStock', 'unidadConsumo', 'tipoMaterial', 'tipoImpuesto'].includes(campo)) {
+            let opciones: string[] = [];
+            if (campo === 'unidad' || campo === 'unidadConsumo') opciones = UNIDADES;
+            else if (campo === 'unidadStock') opciones = UNIDADES_STOCK;
+            else if (campo === 'tipoMaterial') opciones = TIPOS_MATERIAL;
+            else if (campo === 'tipoImpuesto') opciones = OPCIONES_IMPUESTO;
+            
+            return (
+                <div key={campo} className="space-y-1">
+                    <label className="text-[9px] font-black text-slate-400 uppercase">{label}</label>
+                    <select
+                        value={datos[campo] as any || ''}
+                        onChange={e => handleFieldChange(campo, e.target.value)}
+                        disabled={!esEditableActual}
+                        className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-business-mustard/10 transition-all disabled:bg-slate-50 disabled:text-slate-400"
+                    >
+                        <option value="">Seleccione...</option>
+                        {opciones.map(op => <option key={op} value={op}>{op}</option>)}
+                    </select>
+                </div>
+            );
+        }
+
         const isNumber = typeof datos[campo] === 'number' || ['pesoBruto', 'pesoNeto', 'precioCompra', 'factorConversion', 'cantidadConvertida', 'precioPorUnidad', 'cantidadCompra'].includes(campo);
         return (
             <div key={campo} className="space-y-1">
@@ -495,7 +518,55 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
 
                 <div className="p-6 border-t bg-slate-50/80 flex justify-end gap-3 rounded-b-[2rem]">
                     <button onClick={onClose} className="px-6 py-3 text-business-olive font-black uppercase text-[10px] rounded-xl hover:bg-business-beige transition-all">Descartar</button>
-                    <button onClick={() => onSave(datos)} className="px-8 py-3 bg-business-orange text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-business-orange/90 transition-all flex items-center gap-2"><Save className="w-3.5 h-3.5" /> Guardar Cambios</button>
+                    
+                    {datos.estado !== EstadoInsumo.COMPLETADO && (
+                        <button onClick={() => onSave(datos)} className="px-8 py-3 bg-slate-200 text-slate-700 font-black uppercase text-[10px] rounded-xl hover:bg-slate-300 transition-all flex items-center gap-2">
+                            <Save className="w-3.5 h-3.5" /> Guardar Avance
+                        </button>
+                    )}
+
+                    {datos.estado === EstadoInsumo.PENDIENTE_COMPRAS && (role === 'COMPRAS' || role === 'ADMIN' || role === 'CHEF') && (
+                        <button 
+                            onClick={() => {
+                                if (!datos.nombre || !datos.marca || !datos.proveedor || !datos.precioCompra || !datos.unidad) {
+                                    alert("Por favor complete nombre, marca, proveedor, precio y unidad antes de enviar a Calidad.");
+                                    return;
+                                }
+                                onSave({ ...datos, estado: EstadoInsumo.PENDIENTE_CALIDAD });
+                            }} 
+                            className="px-8 py-3 bg-business-orange text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-business-orange/90 transition-all flex items-center gap-2"
+                        >
+                            <ShieldCheck className="w-3.5 h-3.5" /> Completar Fase (A Calidad)
+                        </button>
+                    )}
+
+                    {datos.estado === EstadoInsumo.PENDIENTE_CALIDAD && (role === 'CALIDAD' || role === 'ADMIN') && (
+                        <button 
+                            onClick={() => {
+                                onSave({ ...datos, estado: EstadoInsumo.PENDIENTE_LOGISTICA });
+                            }} 
+                            className="px-8 py-3 bg-business-orange text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-business-orange/90 transition-all flex items-center gap-2"
+                        >
+                            <ShieldCheck className="w-3.5 h-3.5" /> Completar Fase (A Logística)
+                        </button>
+                    )}
+
+                    {datos.estado === EstadoInsumo.PENDIENTE_LOGISTICA && (role === 'LOGISTICA' || role === 'ADMIN') && (
+                        <button 
+                            onClick={() => {
+                                onSave({ ...datos, estado: EstadoInsumo.COMPLETADO });
+                            }} 
+                            className="px-8 py-3 bg-emerald-600 text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-emerald-700 transition-all flex items-center gap-2"
+                        >
+                            <ShieldCheck className="w-3.5 h-3.5" /> Finalizar Alta Insumo
+                        </button>
+                    )}
+
+                    {datos.estado === EstadoInsumo.COMPLETADO && (
+                        <button onClick={() => onSave(datos)} className="px-8 py-3 bg-emerald-600 text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-emerald-700 transition-all flex items-center gap-2">
+                            <Save className="w-3.5 h-3.5" /> Guardar Cambios
+                        </button>
+                    )}
                 </div>
             </div>
         </div>

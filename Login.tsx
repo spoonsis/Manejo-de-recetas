@@ -1,5 +1,6 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Utensils, Lock, User, ArrowRight, Loader2, ChefHat, ShieldCheck } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Usuario } from './types';
 
 interface LoginProps {
@@ -8,6 +9,7 @@ interface LoginProps {
 }
 
 export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void }) {
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
@@ -59,7 +61,11 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
 
             if (res.ok) {
                 const data = await res.json();
-                onLogin(data.user);
+                if (data.error === "PASSWORD_CHANGE_REQUIRED") {
+                    navigate('/change-password', { state: { username } });
+                } else {
+                    onLogin(data.user);
+                }
             } else {
                 const errData = await res.json();
                 setError(errData.error || 'Credenciales inválidas');
@@ -133,7 +139,9 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
                             <input type="checkbox" className="w-3.5 h-3.5 rounded border-slate-300 text-business-orange focus:ring-business-mustard/20" />
                             <span className="text-xs font-bold text-slate-500">Recordarme</span>
                         </label>
-                        <a href="#" className="text-xs font-bold text-business-orange hover:text-business-olive">¿Olvidaste pass?</a>
+                        <button type="button" onClick={() => navigate('/forgot-password')} className="text-xs font-bold text-business-orange hover:text-business-olive bg-transparent border-none">
+                            ¿Olvidaste tu contraseña?
+                        </button>
                     </div>
 
                     <button
@@ -142,13 +150,6 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
                         className="w-full bg-business-orange text-white py-3.5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-business-orange/90 transition-all shadow-lg shadow-business-orange/20 active:scale-95 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed mt-2"
                     >
                         {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <>Ingresar <ArrowRight className="w-4 h-4" /></>}
-                    </button>
-                    <button
-                        type="button"
-                        onClick={resetPassword}
-                        className="w-full bg-blue-500 text-white py-3 rounded-xl font-bold text-xs uppercase mt-2"
-                    >
-                        Resetear contraseña
                     </button>
                 </form>
 

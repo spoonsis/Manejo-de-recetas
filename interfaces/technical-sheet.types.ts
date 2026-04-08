@@ -34,6 +34,7 @@ export interface FichaTecnica {
 
   // Descripción del Producto
   descripcionTecnica: string;
+  declaracionIngredientes: string;
   alergenos: string[];
   usoIntencional: string;
   consumidorObjetivo: string;
@@ -76,6 +77,7 @@ export interface FichaTecnica {
     color: string;
     sabor: string;
     textura: string;
+    olor?: string;
   };
 
   // Otros

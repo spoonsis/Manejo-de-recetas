@@ -3,7 +3,7 @@ import React from 'react';
 import { EstadoReceta, EstadoInsumo } from './types';
 
 
-export const UNIDADES = ['kg', 'g', 'L', 'ml', 'unidad', 'cda', 'cdta', 'taza'];
+export const UNIDADES = ['kg', 'g', 'L', 'ml', 'unidad', 'cda', 'cdta', 'taza', 'cm'];
 export const UNIDADES_STOCK = ['kg', 'g', 'L', 'ml', 'unidad', 'paquete', 'caja', 'pacón', 'bandeja', 'saco'];
 export const OPCIONES_IMPUESTO = ['IVA 13%', 'IVA 1%', 'Exento', 'IVA 2%', 'IVA 4%'];
 export const TIPOS_MATERIAL = ['Materia Prima', 'Empaque', 'Lácteos', 'Proteínas', 'Secos', 'Químicos', 'MODI'];

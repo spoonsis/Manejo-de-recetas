@@ -6,7 +6,7 @@ import { EstadoReceta } from './types';
 import { ETIQUETAS_ESTADO } from './constants';
 import { useStore } from './useStore';
 
-export default function VistaAprobaciones({ pendingRecipes, onApprove, onReject, onOpen, onRefreshCosts }: any) {
+export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApprove, onReject, onOpen, onRefreshCosts, onApproveFicha }: any) {
   const { role } = useStore();
   const [codigoCalidadInput, setCodigoCalidadInput] = useState<Record<string, string>>({});
 
@@ -141,7 +141,41 @@ export default function VistaAprobaciones({ pendingRecipes, onApprove, onReject,
           </div>
         ))}
 
-        {pendingRecipes.length === 0 && (
+        {pendingFichas && pendingFichas.map((f: any) => (
+          <div key={f.id} className="bg-white p-4 rounded-2xl border flex flex-col lg:flex-row justify-between gap-4 shadow-sm relative group overflow-hidden border-emerald-100">
+            <div className="absolute top-0 right-0 p-2 bg-emerald-600 text-white font-black text-[7px] uppercase tracking-widest rounded-bl-lg">
+              Ficha Técnica
+            </div>
+            <div className="flex items-start gap-3 flex-1">
+              <div className="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:bg-emerald-100 transition-colors">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight leading-tight">{f.nombreReceta}</h3>
+                </div>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-full">
+                    {f.estado.replace('_', ' ')}
+                  </span>
+                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-slate-50 text-slate-400 border rounded-full">
+                    v{f.version}
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 min-w-[280px] lg:border-l lg:pl-6 border-slate-100">
+              <button
+                onClick={() => onApproveFicha(f)}
+                className="w-full py-3 bg-slate-900 text-white rounded-xl font-black uppercase text-[10px] tracking-widest shadow-md hover:bg-slate-800 active:scale-95 transition-all flex items-center justify-center gap-2"
+              >
+                <Eye className="w-4 h-4" /> Revisar y Certificar
+              </button>
+            </div>
+          </div>
+        ))}
+
+        {pendingRecipes.length === 0 && (!pendingFichas || pendingFichas.length === 0) && (
           <div className="text-center p-20 bg-white border-2 border-dashed rounded-[3rem] text-slate-300 font-black uppercase tracking-widest">
             <BadgeCheck className="w-16 h-16 mx-auto mb-4 opacity-5" />
             0 Pendientes

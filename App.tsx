@@ -10,11 +10,12 @@ import VistaFichasTecnicas from './VistaFichasTecnicas';
 import VistaLibroRecetas from './VistaLibroRecetas';
 import VisorRecetaLibro from './VisorRecetaLibro';
 import EditorReceta from './EditorReceta';
+import EditorFichaTecnica from './EditorFichaTecnica';
 import VistaAprobaciones from './VistaAprobaciones';
 
 import {
   Utensils, Package, ClipboardList, CheckCircle2, History, Plus, Trash2,
-
+  LayoutGrid, List as ListIcon,
   Edit3, Eye, AlertCircle, TrendingUp, LayoutDashboard, Search, Save, X,
   FileText, BadgeCheck, Calculator, RefreshCw, Sparkles, ShieldCheck, Info,
   Clock, Bell, Scale, Check, Lock, Tag, Timer, Layers, Dna, Users, Warehouse,
@@ -33,9 +34,8 @@ import { Card } from './components/ui/Card';
 import { Badge } from './components/ui/Badge';
 
 // --- Listas de Referencia ---
-const PERSONAL_MOCK = ["Chef Antonio García", "Lucía Fernández (Pastelera)", "Elena Rodríguez (Costos)", "Carlos Mendoza (Marketing)", "Daniela Silva (Calidad)"];
-const AREAS_PRODUCCION = ["Cocina Caliente", "Cuarto Frío", "Pastelería Industrial", "Panadería Artesanal", "Área de Mezclado"];
-const AREAS_EMPAQUE = ["Línea de Empaque Primario", "Área de Etiquetado", "Zona de Despacho", "Cámaras de Refrigeración"];
+const AREAS_PRODUCCION = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
+const AREAS_EMPAQUE = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
 const MICROORGANISMOS_INICIALES = ["Salmonella spp", "Listeria monocytogenes", "Escherichia coli", "Mohos y Levaduras", "Staphylococcus aureus"];
 const PERMISOS_DISPONIBLES: Permiso[] = [
   'RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'APROBAR_COSTOS',
@@ -113,6 +113,9 @@ const FASES_INSUMO_DEFAULT: FaseFluxoInsumo[] = [
 // --- CONFIGURACIÓN ---
 
 import Login from './Login';
+import ForgotPassword from './ForgotPassword';
+import ResetPassword from './ResetPassword';
+import ChangePassword from './ChangePassword';
 import AdminUsers from './AdminUsers';
 import { Usuario } from './types';
 
@@ -417,7 +420,7 @@ export default function App() {
     let recetaFinal = actualizada;
 
     if (original) {
-      if (original.estado === EstadoReceta.BORRADOR || original.estado === EstadoReceta.PENDIENTE_COSTOS) {
+      if (original.estado === EstadoReceta.BORRADOR || original.estado === EstadoReceta.PENDIENTE_COSTOS || original.estado.includes('RECHAZADO')) {
         // Mantiene igual
       } else {
         const versionesMismoNombre = recetas.filter((r: { nombre: any; }) => r.nombre === original.nombre);
@@ -442,13 +445,13 @@ export default function App() {
       if (res.ok) {
         if (!original) {
           setRecetas((prev: any) => [...prev, recetaFinal]);
-        } else if (original.estado === EstadoReceta.BORRADOR || original.estado === EstadoReceta.PENDIENTE_COSTOS) {
+        } else if (original.estado === EstadoReceta.BORRADOR || original.estado === EstadoReceta.PENDIENTE_COSTOS || original.estado.includes('RECHAZADO')) {
           setRecetas((prev: any[]) => prev.map((r: { id: string; }) => r.id === recetaFinal.id ? recetaFinal : r));
         } else {
           setRecetas((prev: any) => [...prev, recetaFinal]);
         }
 
-        if (original && original.estado === EstadoReceta.BORRADOR && recetaFinal.estado === EstadoReceta.PENDIENTE_COSTOS) {
+        if (original && (original.estado === EstadoReceta.BORRADOR || original.estado.includes('RECHAZADO')) && recetaFinal.estado === EstadoReceta.PENDIENTE_COSTOS) {
           const flujoAsignado = flujos.find(f => f.id === recetaFinal.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
           const primerPaso = flujoAsignado.pasos.find(p => p.orden === 1);
           if (primerPaso) {
@@ -470,7 +473,7 @@ export default function App() {
 
   const manejarEliminarReceta = async (id: string) => {
     if (!window.confirm("¿Está seguro de que desea eliminar permanentemente esta receta y sus ingredientes?")) return;
-    
+
     setSaving(true);
     try {
       const res = await fetch(`/api/local/recetas/${id}`, {
@@ -673,6 +676,7 @@ export default function App() {
       areaProduce: '',
       areaEmpaca: '',
       descripcionTecnica: '',
+      declaracionIngredientes: '',
       alergenos: [],
       usoIntencional: '',
       consumidorObjetivo: '',
@@ -706,19 +710,21 @@ export default function App() {
 
   const manejarGuardarFicha = async (actualizada: FichaTecnica) => {
     let fichaFinal = { ...actualizada };
+    const existe = fichas.find((f: { id: string; }) => f.id === actualizada.id);
+
+    if (existe && existe.estado === EstadoFicha.COMPLETA && actualizada.estado === EstadoFicha.COMPLETA) {
+      fichaFinal = { ...actualizada, version: existe.version + 1, ultimaModificacion: new Date().toLocaleString() };
+      fichaFinal.historialCambios = [...fichaFinal.historialCambios, { fecha: new Date().toLocaleString(), usuario: rol, descripcion: 'Nueva versión por actualización técnica', version: fichaFinal.version }];
+    } else {
+      fichaFinal.ultimaModificacion = new Date().toLocaleString();
+    }
 
     setFichas((prev: any[]) => {
-      const existe = prev.find((f: { id: string; }) => f.id === actualizada.id);
-      if (existe) {
-        if (existe.estado === EstadoFicha.COMPLETA) {
-          const nuevaV = { ...actualizada, version: existe.version + 1, ultimaModificacion: new Date().toLocaleString() };
-          nuevaV.historialCambios.push({ fecha: new Date().toLocaleString(), usuario: rol, descripcion: 'Nueva versión por actualización técnica', version: nuevaV.version });
-          fichaFinal = nuevaV;
-          return prev.map((f: { id: string; }) => f.id === actualizada.id ? nuevaV : f);
-        }
-        return prev.map((f: { id: string; }) => f.id === actualizada.id ? actualizada : f);
+      const existeLocal = prev.find((f: { id: string; }) => f.id === fichaFinal.id);
+      if (existeLocal) {
+        return prev.map((f: { id: string; }) => f.id === fichaFinal.id ? fichaFinal : f);
       }
-      return [...prev, actualizada];
+      return [...prev, fichaFinal];
     });
 
     try {
@@ -774,7 +780,7 @@ export default function App() {
     (rol === 'COSTOS' && r.estado === EstadoReceta.PENDIENTE_COSTOS) ||
     (rol === 'MKT' && r.estado === EstadoReceta.PENDIENTE_MKT) ||
     (rol === 'CALIDAD' && r.estado === EstadoReceta.PENDIENTE_CALIDAD)
-  ).length;
+  ).length + (rol === 'CALIDAD' ? fichas.filter((f: { estado: EstadoFicha; }) => f.estado === EstadoFicha.PENDIENTE_CALIDAD).length : 0);
 
 
   const itemsSidebar = [
@@ -807,7 +813,14 @@ export default function App() {
 
   // --- RENDERIZADO CONDICIONAL POR AUTH ---
   if (!usuarioActual) {
-    return <Login onLogin={setUsuarioActual} />;
+    return (
+      <Routes>
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/change-password" element={<ChangePassword />} />
+        <Route path="*" element={<Login onLogin={setUsuarioActual} />} />
+      </Routes>
+    );
   }
 
   return (
@@ -1003,11 +1016,13 @@ export default function App() {
                 (rol === 'MKT' && r.estado === EstadoReceta.PENDIENTE_MKT) ||
                 (rol === 'CALIDAD' && r.estado === EstadoReceta.PENDIENTE_CALIDAD)
               )}
+              pendingFichas={rol === 'CALIDAD' ? fichas.filter((f: { estado: EstadoFicha; }) => f.estado === EstadoFicha.PENDIENTE_CALIDAD) : []}
               role={rol}
               onApprove={manejarAprobacion}
               onReject={manejarRechazo}
               onOpen={(r: any) => setEditandoReceta(r)}
               onRefreshCosts={manejarRefrescarCostos}
+              onApproveFicha={(f: any) => setEditandoFicha(f)}
             />
           } />
           <Route path="/admin" element={
@@ -1090,333 +1105,6 @@ export default function App() {
 
 // --- MÓDULO FICHA TÉCNICA AVANZADO ---
 
-function EditorFichaTecnica({ ficha, recetasDisponibles, onClose, onSave, role, maestroMicroorganismos, setMaestroMicroorganismos }: { ficha: FichaTecnica, recetasDisponibles: Receta[], onClose: () => void, onSave: (f: FichaTecnica) => void, role: Rol, maestroMicroorganismos: string[], setMaestroMicroorganismos: React.Dispatch<React.SetStateAction<string[]>> }) {
-  const [datos, setDatos] = useState<FichaTecnica>(ficha);
-  const [tab, setTab] = useState<'descripcion' | 'fisicoquimica' | 'microbiologia' | 'historial'>('descripcion');
-
-  const esChefEditable = (role === 'CHEF' || role === 'ADMIN') && (datos.estado === EstadoFicha.BORRADOR || datos.estado === EstadoFicha.INACTIVA);
-  const esCalidadEditable = (role === 'CALIDAD' || role === 'ADMIN') && (datos.estado === EstadoFicha.PENDIENTE_CALIDAD || datos.estado === EstadoFicha.COMPLETA);
-  const esSoloLectura = !esChefEditable && !esCalidadEditable;
-
-  const manejarCambioFisico = (campo: keyof FichaTecnica['fisicas'], valor: string) => setDatos({ ...datos, fisicas: { ...datos.fisicas, [campo]: valor } });
-  const manejarCambioOrganoleptico = (campo: keyof FichaTecnica['organolepticas'], valor: string) => setDatos({ ...datos, organolepticas: { ...datos.organolepticas, [campo]: valor } });
-
-  const agregarMicro = () => setDatos({ ...datos, aspectosMicrobiologicos: [...datos.aspectosMicrobiologicos, { microorganismo: '', detalle: '' }] });
-  const actualizarMicro = (index: number, campo: keyof AspectoMicrobiologico, valor: string) => {
-    const nuevos = [...datos.aspectosMicrobiologicos];
-    nuevos[index] = { ...nuevos[index], [campo]: valor };
-    setDatos({ ...datos, aspectosMicrobiologicos: nuevos });
-  };
-
-  const handleGuardar = (enviar = false) => {
-    let nEstado = datos.estado;
-    if (enviar) {
-      if (role === 'CHEF') nEstado = EstadoFicha.PENDIENTE_CALIDAD;
-      if (role === 'CALIDAD' || role === 'ADMIN') nEstado = EstadoFicha.COMPLETA;
-    }
-    // Sincronizar nuevos microorganismos con el maestro
-    const nuevosMicro = datos.aspectosMicrobiologicos
-      .map((m: { microorganismo: any; }) => m.microorganismo)
-      .filter((m: string) => m && !maestroMicroorganismos.includes(m));
-
-    if (nuevosMicro.length > 0) {
-      setMaestroMicroorganismos((prev: any) => [...prev, ...nuevosMicro]);
-    }
-
-    onSave({ ...datos, estado: nEstado, ultimaModificacion: new Date().toLocaleString() });
-  };
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/90 backdrop-blur-xl p-2 animate-in fade-in">
-      <div className="bg-white w-full max-w-6xl rounded-[2rem] shadow-2xl flex flex-col max-h-[98vh] border overflow-hidden">
-        {/* ENCABEZADO CORPORATIVO SOLICITADO */}
-        <div className="p-4 border-b bg-slate-50/80 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-business-orange text-white rounded-xl shadow-lg shadow-business-orange/20"><FlaskConical className="w-6 h-6" /></div>
-            <div>
-              <h2 className="text-xl font-black text-slate-900 leading-tight">Ficha Técnica</h2>
-              <p className="text-[9px] font-black text-business-orange uppercase tracking-[0.2em]">{datos.subsidiaria}</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-3">
-            <div className="space-y-1">
-              <label className="text-[8px] font-black text-slate-400 uppercase">Elaborado por</label>
-              <input list="personal" disabled={esSoloLectura} className="w-full p-1.5 border rounded-lg text-[11px] font-bold" value={datos.elaboradoPor} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, elaboradoPor: e.target.value })} />
-            </div>
-            <div className="space-y-1">
-              <label className="text-[8px] font-black text-slate-400 uppercase">Aprobado por</label>
-              <input list="personal" disabled={esSoloLectura} className="w-full p-1.5 border rounded-lg text-[11px] font-bold" value={datos.aprobadoPor} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, aprobadoPor: e.target.value })} />
-            </div>
-            <datalist id="personal">{PERSONAL_MOCK.map(p => <option key={p} value={p} />)}</datalist>
-          </div>
-          <div className="grid grid-cols-2 gap-3">
-            <div className="space-y-1">
-              <label className="text-[8px] font-black text-slate-400 uppercase">Área Produce</label>
-              <input list="areas-p" disabled={esSoloLectura} className="w-full p-1.5 border rounded-lg text-[11px] font-bold" value={datos.areaProduce} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, areaProduce: e.target.value })} />
-            </div>
-            <div className="space-y-1">
-              <label className="text-[8px] font-black text-slate-400 uppercase">Área Empaca</label>
-              <input list="areas-e" disabled={esSoloLectura} className="w-full p-1.5 border rounded-lg text-[11px] font-bold" value={datos.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, areaEmpaca: e.target.value })} />
-            </div>
-            <datalist id="areas-p">{AREAS_PRODUCCION.map(a => <option key={a} value={a} />)}</datalist>
-            <datalist id="areas-e">{AREAS_EMPAQUE.map(a => <option key={a} value={a} />)}</datalist>
-          </div>
-        </div>
-
-        {/* TABS DE SECCIONES */}
-        <div className="flex border-b bg-white px-6 space-x-8">
-          {[
-            { id: 'descripcion', label: 'Descripción', icon: FileText },
-            { id: 'fisicoquimica', label: 'Física / Org.', icon: Activity },
-            { id: 'microbiologia', label: 'Microbiología', icon: Microscope },
-            { id: 'historial', label: 'Legal / Hist.', icon: ShieldCheck }
-          ].map((t) => (
-            <button key={t.id} onClick={() => setTab(t.id as any)} className={`py-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest border-b-4 transition-all ${tab === t.id ? 'border-business-orange text-business-orange' : 'border-transparent text-slate-300'}`}>
-              <t.icon className="w-3.5 h-3.5" /> {t.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="flex-1 overflow-y-auto p-6 space-y-6">
-          {tab === 'descripcion' && (
-            <div className="space-y-6 animate-in fade-in">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="md:col-span-2">
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Vínculo con Receta</label>
-                  <select disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-bold text-base bg-white outline-none focus:ring-4 focus:ring-business-mustard/20" value={datos.recetaId} onChange={(e: { target: { value: string; }; }) => { const r = recetasDisponibles.find(x => x.id === e.target.value); setDatos({ ...datos, recetaId: e.target.value, nombreReceta: r?.nombre || '' }); }}>
-                    <option value="">Seleccione Receta...</option>
-                    {recetasDisponibles.map(r => <option key={r.id} value={r.id}>{r.nombre} {r.esSemielaborado ? '(S)' : ''}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Vida Útil Congelado</label>
-                  <input disabled={esSoloLectura} className="w-full p-2 border rounded-xl font-bold text-sm" value={datos.vidaUtilCongelado} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, vidaUtilCongelado: e.target.value })} />
-                </div>
-                <div>
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Vida Útil Refrigerado</label>
-                  <input disabled={esSoloLectura} className="w-full p-2 border rounded-xl font-bold text-sm" value={datos.vidaUtilRefrigerado} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, vidaUtilRefrigerado: e.target.value })} />
-                </div>
-                <div>
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Vida Útil Ambiente</label>
-                  <input disabled={esSoloLectura} className="w-full p-2 border rounded-xl font-bold text-sm" value={datos.vidaUtilAmbiente} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, vidaUtilAmbiente: e.target.value })} />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-3">
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Descripción Técnica</label>
-                  <textarea disabled={esSoloLectura} rows={2} className="w-full p-2.5 border rounded-xl font-medium text-sm" value={datos.descripcionTecnica} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, descripcionTecnica: e.target.value })} placeholder="Definición técnica..." />
-                </div>
-                <div className="md:col-span-3">
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Comentarios de Calidad</label>
-                  <textarea disabled={esSoloLectura} rows={1} className="w-full p-2 border rounded-xl font-medium text-sm text-business-olive bg-business-olive/5" value={datos.comentariosCalidad} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, comentariosCalidad: e.target.value })} placeholder="Notas de calidad, alérgenos, etc..." />
-                </div>
-                <div className="md:col-span-3">
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Ingredientes (Resumen Declaración)</label>
-                  <textarea disabled={esSoloLectura} rows={1} className="w-full p-2 border rounded-xl font-medium italic text-xs text-slate-600 bg-business-beige/30" value={datos.nombreReceta ? `Base Receta: ${datos.nombreReceta}` : ''} readOnly />
-                </div>
-                <div>
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Uso Intencional</label>
-                  <input disabled={esSoloLectura} className="w-full p-2 border rounded-xl text-sm" value={datos.usoIntencional} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, usoIntencional: e.target.value })} />
-                </div>
-                <div>
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Consumidor</label>
-                  <input disabled={esSoloLectura} className="w-full p-2 border rounded-xl text-sm" value={datos.consumidorObjetivo} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, consumidorObjetivo: e.target.value })} />
-                </div>
-                <div>
-                  <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">Restricciones</label>
-                  <input disabled={esSoloLectura} className="w-full p-2 border rounded-xl text-sm" value={datos.restricciones} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, restricciones: e.target.value })} />
-                </div>
-              </div>
-
-              <div className="p-4 bg-business-mustard/10 rounded-2xl border border-business-mustard/20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="lg:col-span-2 space-y-2">
-                  <label className="text-[9px] font-black text-business-olive uppercase">Configuración de Pesos (g/kg)</label>
-                  <div className="grid grid-cols-3 gap-2">
-                    <input disabled={esSoloLectura} placeholder="Bruto" className="p-2 border rounded-lg font-bold text-center text-sm" value={datos.pesoBruto} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, pesoBruto: e.target.value })} />
-                    <input disabled={esSoloLectura} placeholder="Neto" className="p-2 border rounded-lg font-bold text-center text-sm" value={datos.pesoNeto} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, pesoNeto: e.target.value })} />
-                    <input disabled={esSoloLectura} placeholder="Etiqueta" className="p-2 border rounded-lg font-bold text-center text-sm" value={datos.pesoEtiqueta} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, pesoEtiqueta: e.target.value })} />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-[9px] font-black text-indigo-900 uppercase block">Logística</label>
-                  <div className="flex items-center gap-2">
-                    <input type="checkbox" disabled={esSoloLectura} checked={datos.requiereEtiquetaIngredientes} onChange={(e: { target: { checked: any; }; }) => setDatos({ ...datos, requiereEtiquetaIngredientes: e.target.checked })} className="w-4 h-4 rounded text-business-orange focus:ring-business-orange" id="labelreq" />
-                    <label htmlFor="labelreq" className="text-[9px] font-black uppercase text-business-olive">Etiqueta Ingredientes</label>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-[9px] font-black text-business-olive uppercase">Registro M.S.</label>
-                  <input disabled={esSoloLectura} placeholder="Registro..." className="w-full p-2 border rounded-lg font-bold text-sm uppercase" value={datos.registroMS} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, registroMS: e.target.value })} />
-                </div>
-              </div>
-            </div>
-          )}
-
-          {tab === 'fisicoquimica' && (
-            <><div className="space-y-8 animate-in fade-in">
-              {[
-                { k: 'largo', l: 'Largo' }, { k: 'ancho', l: 'Ancho' }, { k: 'altura', l: 'Altura' }, { k: 'diametro', l: 'Diám.' },
-                { k: 'humedad', l: 'Hum.', qc: true }, { k: 'acidezTotal', l: 'Acidez', qc: true }
-              ].map(f => (
-                <div key={f.k}>
-                  <label className={`text-[9px] font-black uppercase block mb-1 ${f.qc ? 'text-business-olive' : 'text-slate-400'}`}>{f.l}</label>
-                  <input disabled={f.qc ? !esCalidadEditable : esSoloLectura} className={`w-full p-2 border rounded-xl font-bold text-center text-sm ${f.qc ? 'bg-business-olive/5' : 'bg-white'}`} value={(datos.fisicas as any)[f.k]} onChange={(e: { target: { value: string; }; }) => manejarCambioFisico(f.k as any, e.target.value)} />
-                </div>
-              ))}
-            </div><div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { k: 'ph', l: 'Potencial Hidrógeno (pH)', min: 'phMin', max: 'phMax' },
-                  { k: 'brix', l: 'Grados Brix (°Bx)', min: 'brixMin', max: 'brixMax' },
-                  { k: 'densidad', l: 'Densidad (g/ml)', min: 'densidadMin', max: 'densidadMax' }
-                ].map(f => (
-                  <div key={f.k} className="p-4 bg-indigo-50/20 border border-indigo-100 rounded-2xl space-y-3">
-                    <label className="text-[10px] font-black text-business-olive uppercase tracking-widest block">{f.l}</label>
-                    <div className="grid grid-cols-3 gap-2">
-                      <div className="space-y-1">
-                        <label className="text-[8px] font-black text-slate-400 uppercase text-center block">Min</label>
-                        <input disabled={!esCalidadEditable} className="w-full p-2 border rounded-lg font-bold text-center text-xs" placeholder="Min" value={(datos.fisicas as any)[f.min]} onChange={(e: { target: { value: string; }; }) => manejarCambioFisico(f.min as any, e.target.value)} />
-                      </div>
-                      <div className="space-y-1">
-                        <label className="text-[8px] font-black text-business-orange uppercase text-center block">Target</label>
-                        <input disabled={!esCalidadEditable} className="w-full p-2 border border-business-mustard/20 rounded-lg font-black text-center text-sm bg-white" placeholder="Target" value={(datos.fisicas as any)[f.k]} onChange={(e: { target: { value: string; }; }) => manejarCambioFisico(f.k as any, e.target.value)} />
-                      </div>
-                      <div className="space-y-1">
-                        <label className="text-[8px] font-black text-slate-400 uppercase text-center block">Max</label>
-                        <input disabled={!esCalidadEditable} className="w-full p-2 border rounded-lg font-bold text-center text-xs" placeholder="Max" value={(datos.fisicas as any)[f.max]} onChange={(e: { target: { value: string; }; }) => manejarCambioFisico(f.max as any, e.target.value)} />
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div><div className="space-y-4">
-                <h3 className="text-base font-black text-slate-900 uppercase tracking-tight flex items-center gap-2"><Sparkles className="w-4 h-4 text-indigo-600" /> Perfil Organoléptico</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {['color', 'sabor', 'textura'].map(o => (
-                    <div key={o}>
-                      <label className="text-[9px] font-black text-slate-400 uppercase block mb-1">{o}</label>
-                      <textarea disabled={esSoloLectura} rows={2} className="w-full p-2 border rounded-xl font-medium text-sm" value={(datos.organolepticas as any)[o]} onChange={(e: { target: { value: string; }; }) => manejarCambioOrganoleptico(o as any, e.target.value)} placeholder={`Nota de ${o}...`} />
-                    </div>
-                  ))}
-                </div>
-              </div></>
-          )}
-
-          {tab === 'microbiologia' && (
-            <div className="space-y-4 animate-in fade-in">
-              <div className="flex justify-between items-center">
-                <h3 className="text-base font-black text-slate-900 uppercase tracking-tight">Análisis Microbiológico</h3>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => {
-                      const nuevosCargar = maestroMicroorganismos.filter(m => !datos.aspectosMicrobiologicos.some((am: { microorganismo: string; }) => am.microorganismo === m));
-                      if (nuevosCargar.length > 0) {
-                        setDatos({
-                          ...datos,
-                          aspectosMicrobiologicos: [
-                            ...datos.aspectosMicrobiologicos,
-                            ...nuevosCargar.map(m => ({ microorganismo: m, detalle: '' }))
-                          ]
-                        });
-                      }
-                    }}
-                    disabled={!esCalidadEditable}
-                    className="flex items-center gap-1.5 bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-xl font-black text-[8px] uppercase border border-indigo-100 transition"
-                  >
-                    <ClipboardList className="w-3.5 h-3.5" /> Pre-cargar
-                  </button>
-                  <button onClick={agregarMicro} disabled={!esCalidadEditable} className="flex items-center gap-1.5 bg-slate-900 text-white px-3 py-1.5 rounded-xl font-black text-[8px] uppercase hover:bg-slate-800 transition"><Plus className="w-3.5 h-3.5" /> Agregar</button>
-                </div>
-              </div>
-              <div className="border rounded-2xl overflow-hidden shadow-sm">
-                <table className="w-full text-left text-[11px]">
-                  <thead className="bg-slate-900 text-slate-400 font-bold uppercase tracking-wider">
-                    <tr><th className="px-4 py-2">Microorganismo</th><th className="px-4 py-2">Límite</th><th className="px-4 py-2 text-center">---</th></tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100">
-                    {datos.aspectosMicrobiologicos.map((m: { microorganismo: any; detalle: any; }, i: number) => (
-                      <tr key={i} className="hover:bg-slate-50 transition-colors">
-                        <td className="px-4 py-1.5">
-                          <input list="micros-list" disabled={!esCalidadEditable} className="w-full p-1.5 border rounded-lg font-bold bg-white text-xs" value={m.microorganismo} onChange={(e: { target: { value: string; }; }) => actualizarMicro(i, 'microorganismo', e.target.value)} />
-                        </td>
-                        <td className="px-4 py-1.5"><input disabled={!esCalidadEditable} className="w-full p-1.5 border rounded-lg text-xs" value={m.detalle} onChange={(e: { target: { value: string; }; }) => actualizarMicro(i, 'detalle', e.target.value)} /></td>
-                        <td className="px-4 py-1.5 text-center">
-                          <button disabled={!esCalidadEditable} onClick={() => { const nuevos = datos.aspectosMicrobiologicos.filter((_: any, idx: any) => idx !== i); setDatos({ ...datos, aspectosMicrobiologicos: nuevos }); }} className="p-1 px-2 text-slate-300 hover:text-rose-500 transition-colors"><Trash2 className="w-4 h-4" /></button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-          {tab === 'historial' && (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-in fade-in">
-              <div className="space-y-4">
-                <h3 className="text-base font-black text-slate-900 uppercase">Reglamentación</h3>
-                <textarea disabled={esSoloLectura} rows={4} className="w-full p-3 border rounded-2xl font-medium text-sm text-slate-600 bg-slate-50/30" value={datos.requisitosLegales} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, requisitosLegales: e.target.value })} placeholder="Normativas aplicables..." />
-
-                <div className="p-4 bg-slate-900 rounded-2xl border space-y-3">
-                  <label className="text-[8px] font-black text-indigo-300 uppercase tracking-widest block">Certificación Final</label>
-                  <div className="flex gap-2">
-                    <input disabled={!esCalidadEditable} className="flex-1 p-2 rounded-lg font-black text-lg bg-slate-800 text-white" placeholder="QC-PASS" value={datos.codigoCalidadPropio} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, codigoCalidadPropio: e.target.value })} />
-                    <div className="p-2.5 bg-indigo-600 rounded-lg flex items-center justify-center text-white"><ShieldCheck className="w-6 h-6" /></div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-base font-black text-slate-900 uppercase">Evidencia</h3>
-                <div className="grid grid-cols-3 gap-2">
-                  {datos.imagenes.map((img: any, i: any) => (
-                    <div key={i} className="relative aspect-square rounded-xl overflow-hidden border group">
-                      <img src={img} className="w-full h-full object-cover" />
-                      <button onClick={() => setDatos({ ...datos, imagenes: datos.imagenes.filter((_: any, idx: any) => idx !== i) })} className="absolute top-1 right-1 p-1 bg-rose-500 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-all"><X className="w-3 h-3" /></button>
-                    </div>
-                  ))}
-                  <label className="aspect-square rounded-xl border-2 border-dashed border-slate-100 flex flex-col items-center justify-center gap-1 cursor-pointer hover:border-indigo-200 text-slate-300 transition-all">
-                    <Camera className="w-6 h-6" />
-                    <span className="text-[8px] font-black uppercase">Subir</span>
-                    <input type="file" accept="image/*" className="hidden" onChange={async (e: { target: { files: any[]; }; }) => {
-                      const file = e.target.files?.[0];
-                      if (file) {
-                        const reader = new FileReader();
-                        reader.onload = (ev) => setDatos({ ...datos, imagenes: [...datos.imagenes, ev.target?.result as string] });
-                        reader.readAsDataURL(file);
-                      }
-                    }} />
-                  </label>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div className="p-4 border-t bg-slate-50/80 flex justify-between items-center rounded-b-[2rem]">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-white border flex items-center justify-center font-black text-[10px]">v{datos.version}</div>
-            <div>
-              <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest leading-none">Última Modificación</p>
-              <p className="text-[8px] font-bold text-slate-500 italic mt-0.5">{datos.ultimaModificacion}</p>
-            </div>
-          </div>
-          <div className="flex gap-2">
-            <button onClick={onClose} className="px-6 py-2 bg-white border text-slate-600 font-black uppercase text-[10px] rounded-xl shadow-sm hover:bg-slate-50">Cerrar</button>
-            {!esSoloLectura && (
-              <>
-                <button onClick={() => handleGuardar()} className="px-6 py-2 bg-slate-200 text-slate-700 font-black uppercase text-[10px] rounded-xl hover:bg-slate-300">Guardar Avance</button>
-                <button onClick={() => handleGuardar(true)} className="px-8 py-2 bg-business-orange text-white font-black uppercase text-[10px] rounded-xl shadow-lg hover:bg-business-orange/90 flex items-center gap-2">
-                  {role === 'CHEF' ? <ArrowRight className="w-4 h-4" /> : <ShieldCheck className="w-4 h-4" />}
-                  {role === 'CHEF' ? 'Enviar a Calidad' : 'Certificar'}
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 
 
@@ -1427,8 +1115,9 @@ function EditorFichaTecnica({ ficha, recetasDisponibles, onClose, onSave, role, 
 
 
 
-function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, role }: any) {
+function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, onDelete, role }: any) {
   const isLoadingData = useStore(state => state.isLoadingData);
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
 
   return (
     <div className="space-y-4 animate-in slide-in-from-bottom duration-500">
@@ -1437,14 +1126,21 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, ro
           <h2 className="text-xl font-black text-slate-900 uppercase tracking-tight">Administración de Versiones</h2>
           <p className="text-slate-500 font-medium text-[11px] mt-0.5">Control de versiones y trazabilidad de recetas.</p>
         </div>
-        {(role === 'CHEF' || role === 'ADMIN') && (
-          <Button onClick={onCreate} className="w-full sm:w-auto">
-            <Plus className="w-4 h-4" /> Nueva Receta
-          </Button>
-        )}
+
+        <div className="flex items-center gap-3 w-full sm:w-auto">
+          <div className="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex gap-0.5">
+            <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
+            <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
+          </div>
+          {(role === 'CHEF' || role === 'ADMIN') && (
+            <Button onClick={onCreate} className="w-full sm:w-auto">
+              <Plus className="w-4 h-4" /> Nueva Receta
+            </Button>
+          )}
+        </div>
       </div>
 
-      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-4">
         <div className="p-3 border-b border-slate-100 bg-slate-50 flex items-center gap-3">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" />
@@ -1458,64 +1154,103 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, ro
           </div>
         </div>
 
-        <div className="overflow-x-auto inner-scroll">
-          <table className="w-full text-left min-w-[700px]">
-            <thead className="bg-slate-50 text-slate-400 text-[9px] font-black uppercase tracking-widest border-b">
-              <tr>
-                <th className="px-6 py-4">Nombre / Evolución</th>
-                <th className="px-6 py-4">Fase Actual</th>
-                <th className="px-6 py-4 text-right">Costo Auditado</th>
-                <th className="px-6 py-4 text-center">Gestión</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {isLoadingData ? (
-                Array.from({ length: 5 }).map((_, index) => (
-                  <tr key={`skeleton-${index}`} className="animate-pulse">
-                    <td className="px-6 py-4"><Skeleton className="h-6 w-3/4 mb-2" /><Skeleton className="h-4 w-1/4" /></td>
-                    <td className="px-6 py-4"><Skeleton className="h-6 w-24 rounded-md" /></td>
-                    <td className="px-6 py-4 text-right"><Skeleton className="h-6 w-16 ml-auto mb-2" /><Skeleton className="h-4 w-20 ml-auto" /></td>
-                    <td className="px-6 py-4 text-center"><Skeleton className="h-8 w-8 rounded-lg mx-auto" /></td>
-                  </tr>
-                ))
-              ) : recipes.slice().reverse().map((r: any) => (
-                <tr key={r.id} className="hover:bg-slate-50/50 transition-colors group">
-                  <td className="px-6 py-2">
-                    <div className="font-black text-slate-900 text-sm leading-tight">{r.nombre}</div>
-                    <div className="text-[9px] text-slate-400 font-bold flex items-center gap-2">
-                      <History className="w-2.5 h-2.5" /> v{r.versionActual}
-                      <span className="text-[8px] bg-slate-100 px-1.5 py-0.5 rounded text-slate-400 uppercase">ID: {r.id}</span>
-                    </div>
-                  </td>
-                  <td className="px-6 py-2">
+        {viewMode === 'grid' ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 bg-slate-50/30">
+            {isLoadingData ? (
+              Array.from({ length: 4 }).map((_, i) => <div key={`skg-${i}`} className="h-40 bg-white rounded-2xl animate-pulse border border-slate-100"></div>)
+            ) : recipes.slice().reverse().map((r: any) => (
+              <div key={r.id} className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-xl transition-all group relative">
+                <div>
+                  <div className="flex justify-between items-start mb-3">
                     <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
                       {ETIQUETAS_ESTADO[r.estado]}
                     </Badge>
-                  </td>
-                  <td className="px-6 py-2 text-right">
-                    <div className="font-black text-slate-900 text-sm leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
-                    <div className="text-[8px] font-black text-slate-400 uppercase mt-0.5">
-                      Auditado: {r.fechaRevision ||
-                        (r.versiones && r.versiones.length > 0
-                          ? new Date(r.versiones[r.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR')
-                          : 'Pendiente')}
-                    </div>
-                  </td>
-                  <td className="px-6 py-2 text-center">
-                    <Button onClick={() => onEdit(r)} variant="outline" size="sm" className="px-2 py-1 hover:bg-business-olive hover:text-white hover:border-business-olive text-business-orange text-center mx-auto">
-                      <Edit3 className="w-3.5 h-3.5" />
-                    </Button>
+                    <span className="text-[10px] font-black text-slate-300">v{r.versionActual}</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 leading-tight mb-2 group-hover:text-business-orange transition-colors">{r.nombre}</h3>
+                  <div className="text-[9px] text-slate-400 font-bold mb-4 flex items-center gap-2">
+                    <History className="w-3.5 h-3.5" /> ID: {r.id}
+                  </div>
+                </div>
+                <div className="border-t border-slate-50 pt-4 mt-auto flex justify-between items-end">
+                  <div>
+                    <div className="text-[9px] font-black text-slate-400 uppercase mb-0.5 tracking-widest">Costo Auditado</div>
+                    <div className="font-black text-slate-900 text-xl tracking-tighter leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
+                  </div>
+                  <div className="flex gap-2">
+                    <button onClick={() => onEdit(r)} className="p-2.5 bg-slate-900 text-white rounded-xl hover:bg-business-olive transition-all shadow-md">
+                      <Edit3 className="w-4 h-4" />
+                    </button>
                     {(role === 'CHEF' || role === 'ADMIN') && (
-                      <Button onClick={() => arguments[0].onDelete(r.id)} variant="outline" size="sm" className="px-2 py-1 hover:bg-rose-600 hover:text-white hover:border-rose-600 text-rose-500 ml-2">
-                        <Trash2 className="w-3.5 h-3.5" />
-                      </Button>
+                      <button onClick={() => onDelete(r.id)} className="p-2.5 bg-rose-50 text-rose-500 rounded-xl hover:bg-rose-500 hover:text-white transition-all shadow-sm">
+                        <Trash2 className="w-4 h-4" />
+                      </button>
                     )}
-                  </td>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="overflow-x-auto inner-scroll">
+            <table className="w-full text-left min-w-[700px]">
+              <thead className="bg-slate-50 text-slate-400 text-[9px] font-black uppercase tracking-widest border-b">
+                <tr>
+                  <th className="px-6 py-4">Nombre / Evolución</th>
+                  <th className="px-6 py-4">Fase Actual</th>
+                  <th className="px-6 py-4 text-right">Costo Auditado</th>
+                  <th className="px-6 py-4 text-center">Gestión</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {isLoadingData ? (
+                  Array.from({ length: 5 }).map((_, index) => (
+                    <tr key={`skeleton-${index}`} className="animate-pulse">
+                      <td className="px-6 py-4"><Skeleton className="h-6 w-3/4 mb-2" /><Skeleton className="h-4 w-1/4" /></td>
+                      <td className="px-6 py-4"><Skeleton className="h-6 w-24 rounded-md" /></td>
+                      <td className="px-6 py-4 text-right"><Skeleton className="h-6 w-16 ml-auto mb-2" /><Skeleton className="h-4 w-20 ml-auto" /></td>
+                      <td className="px-6 py-4 text-center"><Skeleton className="h-8 w-8 rounded-lg mx-auto" /></td>
+                    </tr>
+                  ))
+                ) : recipes.slice().reverse().map((r: any) => (
+                  <tr key={r.id} className="hover:bg-slate-50/50 transition-colors group">
+                    <td className="px-6 py-2">
+                      <div className="font-black text-slate-900 text-sm leading-tight">{r.nombre}</div>
+                      <div className="text-[9px] text-slate-400 font-bold flex items-center gap-2">
+                        <History className="w-2.5 h-2.5" /> v{r.versionActual}
+                        <span className="text-[8px] bg-slate-100 px-1.5 py-0.5 rounded text-slate-400 uppercase">ID: {r.id}</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-2">
+                      <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
+                        {ETIQUETAS_ESTADO[r.estado]}
+                      </Badge>
+                    </td>
+                    <td className="px-6 py-2 text-right">
+                      <div className="font-black text-slate-900 text-sm leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
+                      <div className="text-[8px] font-black text-slate-400 uppercase mt-0.5">
+                        Auditado: {r.fechaRevision ||
+                          (r.versiones && r.versiones.length > 0
+                            ? new Date(r.versiones[r.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR')
+                            : 'Pendiente')}
+                      </div>
+                    </td>
+                    <td className="px-6 py-2 text-center">
+                      <Button onClick={() => onEdit(r)} variant="outline" size="sm" className="px-2 py-1 hover:bg-business-olive hover:text-white hover:border-business-olive text-business-orange text-center mx-auto">
+                        <Edit3 className="w-3.5 h-3.5" />
+                      </Button>
+                      {(role === 'CHEF' || role === 'ADMIN') && (
+                        <Button onClick={() => onDelete(r.id)} variant="outline" size="sm" className="px-2 py-1 hover:bg-rose-600 hover:text-white hover:border-rose-600 text-rose-500 ml-2">
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </Button>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </div>
   );
