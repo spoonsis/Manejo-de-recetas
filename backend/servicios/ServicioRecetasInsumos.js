@@ -6,22 +6,61 @@ async function obtenerInsumosLocales() {
         ...r,
         lote: r.lote === 1,
         alergenos: r.alergenos === 1,
-        locales: r.locales === 1
+        locales: r.locales === 1,
+        documentos: typeof r.documentos === 'string' ? JSON.parse(r.documentos || "[]") : (r.documentos || []),
+        // Convertir decimales a números
+        precioCompra: Number(r.precioCompra || 0),
+        precioPorUnidad: Number(r.precioPorUnidad || 0),
+        pesoBruto: Number(r.pesoBruto || 0),
+        pesoNeto: Number(r.pesoNeto || 0),
+        factorConversion: Number(r.factorConversion || 1),
+        cantidadConvertida: Number(r.cantidadConvertida || 0),
+        cantidadCompra: Number(r.cantidadCompra || 0)
     }));
 }
 
 async function crearInsumoLocal(data) {
-    const { id, nombre, estado, source, marca, tipoMaterial, unidad, unidadStock, precioCompra, precioPorUnidad, pesoBruto, pesoNeto } = data;
+    const { 
+        id, nombre, estado, source, marca, tipoMaterial, unidad, unidadStock, 
+        precioCompra, precioPorUnidad, pesoBruto, pesoNeto,
+        tipoImpuesto, proveedor, codigoBarras, locales, documentos,
+        lote, alergenos, descripcionAlergenos, tipoAlmacenamiento,
+        seccionAlisto, clasificacion, unidadConsumo, factorConversion,
+        cantidadConvertida, cantidadCompra
+    } = data;
+
     await pool.query(`
-        INSERT INTO insumos (id, nombre, estado, source, marca, tipoMaterial, unidad, unidadStock, precioCompra, precioPorUnidad, pesoBruto, pesoNeto)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO insumos (
+            id, nombre, estado, source, marca, tipoMaterial, unidad, unidadStock, 
+            precioCompra, precioPorUnidad, pesoBruto, pesoNeto,
+            tipoImpuesto, proveedor, codigoBarras, locales, documentos,
+            lote, alergenos, descripcionAlergenos, tipoAlmacenamiento,
+            seccionAlisto, clasificacion, unidadConsumo, factorConversion,
+            cantidadConvertida, cantidadCompra
+        )
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON DUPLICATE KEY UPDATE
-            nombre=VALUES(nombre), estado=VALUES(estado), marca=VALUES(marca), tipoMaterial=VALUES(tipoMaterial), 
-            unidad=VALUES(unidad), precioCompra=VALUES(precioCompra), precioPorUnidad=VALUES(precioPorUnidad)
+            nombre=VALUES(nombre), estado=VALUES(estado), marca=VALUES(marca), 
+            tipoMaterial=VALUES(tipoMaterial), unidad=VALUES(unidad), unidadStock=VALUES(unidadStock),
+            precioCompra=VALUES(precioCompra), precioPorUnidad=VALUES(precioPorUnidad), 
+            pesoBruto=VALUES(pesoBruto), pesoNeto=VALUES(pesoNeto),
+            tipoImpuesto=VALUES(tipoImpuesto), proveedor=VALUES(proveedor), 
+            codigoBarras=VALUES(codigoBarras), locales=VALUES(locales), 
+            documentos=VALUES(documentos), lote=VALUES(lote), 
+            alergenos=VALUES(alergenos), descripcionAlergenos=VALUES(descripcionAlergenos), 
+            tipoAlmacenamiento=VALUES(tipoAlmacenamiento), seccionAlisto=VALUES(seccionAlisto), 
+            clasificacion=VALUES(clasificacion), unidadConsumo=VALUES(unidadConsumo), 
+            factorConversion=VALUES(factorConversion), cantidadConvertida=VALUES(cantidadConvertida), 
+            cantidadCompra=VALUES(cantidadCompra)
     `, [
         id, nombre, estado || 'PENDIENTE_COMPRAS', source || 'INTERNA', marca || '',
         tipoMaterial || '', unidad || '', unidadStock || '',
-        precioCompra || 0, precioPorUnidad || 0, pesoBruto || 0, pesoNeto || 0
+        precioCompra || 0, precioPorUnidad || 0, pesoBruto || 0, pesoNeto || 0,
+        tipoImpuesto || 'Exento', proveedor || '', codigoBarras || '', locales ? 1 : 0, 
+        JSON.stringify(documentos || []), lote ? 1 : 0, alergenos ? 1 : 0, 
+        descripcionAlergenos || '', tipoAlmacenamiento || '', seccionAlisto || '', 
+        clasificacion || '', unidadConsumo || '', factorConversion || 1, 
+        cantidadConvertida || 0, cantidadCompra || 0
     ]);
     return { id, nombre };
 }

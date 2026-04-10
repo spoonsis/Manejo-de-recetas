@@ -1,0 +1,243 @@
+[dotenv@17.3.1] injecting env (22) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[
+  {
+    "Field": "id",
+    "Type": "varchar(100)",
+    "Null": "NO",
+    "Key": "PRI",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "nombre",
+    "Type": "varchar(255)",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "estado",
+    "Type": "enum('PENDIENTE_COMPRAS','PENDIENTE_CALIDAD','PENDIENTE_LOGISTICA','COMPLETADO')",
+    "Null": "NO",
+    "Key": "",
+    "Default": "PENDIENTE_COMPRAS",
+    "Extra": ""
+  },
+  {
+    "Field": "source",
+    "Type": "enum('INTERNA','EXTERNA')",
+    "Null": "YES",
+    "Key": "",
+    "Default": "INTERNA",
+    "Extra": ""
+  },
+  {
+    "Field": "marca",
+    "Type": "varchar(150)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "registrado_netsuite",
+    "Type": "tinyint(1)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "tipoMaterial",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "unidad",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "unidadStock",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "pesoBruto",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "pesoNeto",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "precioCompra",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "tipoImpuesto",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "proveedor",
+    "Type": "varchar(255)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "codigoBarras",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "locales",
+    "Type": "tinyint(1)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "documentos",
+    "Type": "json",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "lote",
+    "Type": "tinyint(1)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "alergenos",
+    "Type": "tinyint(1)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "descripcionAlergenos",
+    "Type": "text",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "tipoAlmacenamiento",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "seccionAlisto",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "clasificacion",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "unidadConsumo",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "factorConversion",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "1.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "cantidadConvertida",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "1.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "precioPorUnidad",
+    "Type": "decimal(15,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "cantidadCompra",
+    "Type": "decimal(12,4)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "1.0000",
+    "Extra": ""
+  },
+  {
+    "Field": "fechaCreacion",
+    "Type": "datetime",
+    "Null": "YES",
+    "Key": "",
+    "Default": "CURRENT_TIMESTAMP",
+    "Extra": "DEFAULT_GENERATED"
+  },
+  {
+    "Field": "ultimaModificacion",
+    "Type": "datetime",
+    "Null": "YES",
+    "Key": "",
+    "Default": "CURRENT_TIMESTAMP",
+    "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+  }
+]

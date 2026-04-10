@@ -120,15 +120,7 @@ import AdminUsers from './AdminUsers';
 import { Usuario } from './types';
 
 // --- DATOS INICIALES MOCK USUARIOS ---
-const USUARIOS_INICIALES: Usuario[] = [
-  { id: 'u1', nombreUsuario: 'chef', email: 'chef@gastroflow.com', nombreCompleto: 'Antonio García', rol: 'CHEF', activo: true, avatar: 'https://ui-avatars.com/api/?name=Antonio+Garcia&background=ef4444&color=fff' },
-  { id: 'u2', nombreUsuario: 'admin', email: 'admin@gastroflow.com', nombreCompleto: 'Admin Sistema', rol: 'ADMIN', activo: true, avatar: 'https://ui-avatars.com/api/?name=Admin+Sys&background=0f172a&color=fff' },
-  { id: 'u3', nombreUsuario: 'costos', email: 'costos@gastroflow.com', nombreCompleto: 'Elena Rodríguez', rol: 'COSTOS', activo: true, avatar: 'https://ui-avatars.com/api/?name=Elena+Rodriguez&background=10b981&color=fff' },
-  { id: 'u4', nombreUsuario: 'mkt', email: 'mkt@gastroflow.com', nombreCompleto: 'Carlos Mendoza', rol: 'MKT', activo: true, avatar: 'https://ui-avatars.com/api/?name=Carlos+Mendoza&background=f59e0b&color=fff' },
-  { id: 'u5', nombreUsuario: 'calidad', email: 'calidad@gastroflow.com', nombreCompleto: 'Daniela Silva', rol: 'CALIDAD', activo: true, avatar: 'https://ui-avatars.com/api/?name=Daniela+Silva&background=8b5cf6&color=fff' },
-  { id: 'u6', nombreUsuario: 'compras', email: 'compras@gastroflow.com', nombreCompleto: 'Miguel Mercado', rol: 'COMPRAS', activo: true, avatar: 'https://ui-avatars.com/api/?name=Miguel+Mercado&background=10b981&color=fff' },
-  { id: 'u7', nombreUsuario: 'logistica', email: 'logistica@gastroflow.com', nombreCompleto: 'Laura Logística', rol: 'LOGISTICA', activo: true, avatar: 'https://ui-avatars.com/api/?name=Laura+Logistica&background=f97316&color=fff' },
-];
+
 
 import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
 

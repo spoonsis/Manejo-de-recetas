@@ -11,7 +11,12 @@ export default function Panel({ recipes, statsRecetas, insumos, setView }: any) 
     { label: 'Vigentes Aprobadas', value: statsRecetas?.aprobadas || 0, icon: CheckCircle2, color: 'text-business-olive', bg: 'bg-business-olive/10', vista: 'libro' },
     { label: 'Insumos', value: insumos.length, icon: Package, color: 'text-business-teal', bg: 'bg-business-teal/10', vista: 'inventario' },
     { label: 'En Revisión', value: statsRecetas?.pendientes || 0, icon: AlertCircle, color: 'text-business-orange', bg: 'bg-business-mustard/20', vista: 'aprobaciones' },
-  ];
+  ].filter(stat => {
+    if (stat.label === 'Versiones Totales') {
+      return ['CHEF', 'ADMIN'].includes(role);
+    }
+    return true;
+  });
 
   return (
     <div className="space-y-4 animate-in fade-in duration-500">
