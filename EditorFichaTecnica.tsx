@@ -4,11 +4,10 @@ import { FichaTecnica, EstadoFicha, Rol, Receta, AspectoMicrobiologico, Ingredie
 import { ESTILOS_ESTADO_INSUMO, ETIQUETAS_ESTADO_INSUMO, ESTILOS_ESTADO, ETIQUETAS_ESTADO, UNIDADES } from './constants';
 import { optimizarPasosReceta } from './geminiService';
 
-const MICROORGANISMOS_INICIALES = ["Salmonella spp", "Listeria monocytogenes", "Escherichia coli", "Mohos y Levaduras", "Staphylococcus aureus"];
-const AREAS_PRODUCCION = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
-const AREAS_EMPAQUE = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"]
+// --- Listas de Referencia ---
+// Ahora se reciben como prop 'areas'
 
-export default function EditorFichaTecnica({ ficha, recetasDisponibles, onClose, onSave, role, maestroMicroorganismos, setMaestroMicroorganismos }: { ficha: FichaTecnica, recetasDisponibles: Receta[], onClose: () => void, onSave: (f: FichaTecnica) => void, role: Rol, maestroMicroorganismos: string[], setMaestroMicroorganismos: React.Dispatch<React.SetStateAction<string[]>> }) {
+export default function EditorFichaTecnica({ ficha, recetasDisponibles, onClose, onSave, role, maestroMicroorganismos, setMaestroMicroorganismos, areas = [] }: { ficha: FichaTecnica, recetasDisponibles: Receta[], onClose: () => void, onSave: (f: FichaTecnica) => void, role: Rol, maestroMicroorganismos: string[], setMaestroMicroorganismos: React.Dispatch<React.SetStateAction<string[]>>, areas?: string[] }) {
   const [datos, setDatos] = useState<FichaTecnica>(ficha);
   const [tab, setTab] = useState<'descripcion' | 'fisicoquimica' | 'microbiologia' | 'historial'>('descripcion');
 
@@ -75,8 +74,8 @@ export default function EditorFichaTecnica({ ficha, recetasDisponibles, onClose,
               <label className="text-[8px] font-black text-slate-400 uppercase">Área Empaca</label>
               <input list="areas-e" disabled={esSoloLectura} className="w-full p-1.5 border rounded-lg text-[11px] font-bold" value={datos.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatos({ ...datos, areaEmpaca: e.target.value })} />
             </div>
-            <datalist id="areas-p">{AREAS_PRODUCCION.map(a => <option key={a} value={a} />)}</datalist>
-            <datalist id="areas-e">{AREAS_EMPAQUE.map(a => <option key={a} value={a} />)}</datalist>
+            <datalist id="areas-p">{areas.map(a => <option key={a} value={a} />)}</datalist>
+            <datalist id="areas-e">{areas.map(a => <option key={a} value={a} />)}</datalist>
           </div>
         </div>
 
@@ -206,8 +205,8 @@ export default function EditorFichaTecnica({ ficha, recetasDisponibles, onClose,
           {tab === 'fisicoquimica' && (
             <><div className="space-y-8 animate-in fade-in">
               {[
-                { k: 'largo', l: 'Largo' }, { k: 'ancho', l: 'Ancho' }, { k: 'altura', l: 'Altura' }, { k: 'diametro', l: 'Diám.' },
-                { k: 'humedad', l: 'Hum.', qc: true }, { k: 'acidezTotal', l: 'Acidez', qc: true }
+                { k: 'largo', l: 'Largo (cm)' }, { k: 'ancho', l: 'Ancho (cm)' }, { k: 'altura', l: 'Altura (cm)' }, { k: 'diametro', l: 'Diám. (cm)' },
+                { k: 'humedad', l: 'Hum. (%)', qc: true }, { k: 'acidezTotal', l: 'Acidez', qc: true }
               ].map(f => (
                 <div key={f.k}>
                   <label className={`text-[9px] font-black uppercase block mb-1 ${f.qc ? 'text-emerald-600' : 'text-slate-400'}`}>{f.l}</label>

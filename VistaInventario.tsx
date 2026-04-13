@@ -22,9 +22,10 @@ interface VistaInventarioProps {
     onDelete: (id: string) => void;
     role: Rol;
     fasesConfig: FaseFluxoInsumo[];
+    proveedores: any[];
 }
 
-export default function VistaInventario({ insumos, onSave, onDelete, role, fasesConfig }: VistaInventarioProps) {
+export default function VistaInventario({ insumos, onSave, onDelete, role, fasesConfig, proveedores }: VistaInventarioProps) {
     const [editando, setEditando] = useState<Insumo | null>(null);
     const [terminoBusqueda, setTerminoBusqueda] = useState('');
     const [filtroEstado, setFiltroEstado] = useState<string>('TODOS');
@@ -219,7 +220,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                 tipoImpuesto: 'Exento',
                                 proveedor: '',
                                 codigoBarras: '',
-                                locales: false,
+                                locales: 'No',
                                 documentos: [],
                                 lote: false,
                                 alergenos: false,
@@ -301,13 +302,14 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                     onSave={(i) => { onSave(i); setEditando(null); }}
                     role={role}
                     fasesConfig={fasesConfig}
+                    proveedores={proveedores}
                 />
             )}
         </div>
     );
 }
 
-function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: Insumo, onClose: () => void, onSave: (i: Insumo) => void, role: Rol, fasesConfig: FaseFluxoInsumo[] }) {
+function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig, proveedores }: { insumo: Insumo, onClose: () => void, onSave: (i: Insumo) => void, role: Rol, fasesConfig: FaseFluxoInsumo[], proveedores: any[] }) {
     const [datos, setDatos] = useState<Insumo>(insumo);
     const fasesActivas = fasesConfig.filter(f => f.activo).sort((a, b) => a.orden - b.orden);
     const [faseActivaId, setFaseActivaId] = useState<string>(fasesActivas[0]?.id || '');
@@ -391,8 +393,27 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
     const esEditableActual = faseActual ? puedeEditarFase(faseActual) : false;
 
     const renderCampo = (campo: keyof Insumo) => {
-        const label = campo.replace(/([A-Z])/g, ' $1').toUpperCase();
-        if (typeof datos[campo] === 'boolean' || campo === 'locales' || campo === 'lote' || campo === 'alergenos') {
+        const label = campo === 'clasificacion' ? 'GRUPO DE PROCESO DE ARTICULOS' : campo.replace(/([A-Z])/g, ' $1').toUpperCase();
+
+        if (campo === 'locales') {
+            return (
+                <div key={campo} className="space-y-1">
+                    <label className="text-[9px] font-black text-slate-400 uppercase">CREAR EN LOCALES:</label>
+                    <select
+                        value={datos[campo] as string || 'No'}
+                        onChange={e => handleFieldChange(campo, e.target.value)}
+                        disabled={!esEditableActual}
+                        className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-business-mustard/10 transition-all disabled:bg-slate-50 disabled:text-slate-400"
+                    >
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                        <option value="Ambos">Ambos</option>
+                    </select>
+                </div>
+            );
+        }
+
+        if (typeof datos[campo] === 'boolean' || campo === 'lote' || campo === 'alergenos') {
             return (
                 <div key={campo} className="flex items-center gap-2 p-3 bg-business-beige/30 rounded-xl border border-business-mustard/10">
                     <input type="checkbox" checked={!!datos[campo]} onChange={e => handleFieldChange(campo, e.target.checked)} disabled={!esEditableActual} className="w-5 h-5 text-business-orange rounded" />
@@ -470,6 +491,29 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig }: { insumo: 
         }
 
         const isNumber = typeof datos[campo] === 'number' || ['pesoBruto', 'pesoNeto', 'precioCompra', 'factorConversion', 'cantidadConvertida', 'precioPorUnidad', 'cantidadCompra'].includes(campo);
+        
+        if (campo === 'proveedor') {
+            return (
+                <div key={campo} className="space-y-1">
+                    <label className="text-[9px] font-black text-slate-400 uppercase">{label}</label>
+                    <input 
+                        list="proveedores-datalist"
+                        type="text" 
+                        value={datos[campo] as any} 
+                        onChange={e => handleFieldChange(campo, e.target.value)} 
+                        disabled={!esEditableActual} 
+                        placeholder="Escribe para buscar proveedor..."
+                        className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-business-mustard/10 transition-all disabled:bg-slate-50 disabled:text-slate-400" 
+                    />
+                    <datalist id="proveedores-datalist">
+                        {proveedores.map((p, idx) => (
+                            <option key={`${p.nombre}-${idx}`} value={p.nombre} />
+                        ))}
+                    </datalist>
+                </div>
+            );
+        }
+
         return (
             <div key={campo} className="space-y-1">
                 <label className="text-[9px] font-black text-slate-400 uppercase">{label}</label>

@@ -6,7 +6,7 @@ async function obtenerInsumosLocales() {
         ...r,
         lote: r.lote === 1,
         alergenos: r.alergenos === 1,
-        locales: r.locales === 1,
+        locales: r.locales,
         documentos: typeof r.documentos === 'string' ? JSON.parse(r.documentos || "[]") : (r.documentos || []),
         // Convertir decimales a números
         precioCompra: Number(r.precioCompra || 0),
@@ -56,7 +56,9 @@ async function crearInsumoLocal(data) {
         id, nombre, estado || 'PENDIENTE_COMPRAS', source || 'INTERNA', marca || '',
         tipoMaterial || '', unidad || '', unidadStock || '',
         precioCompra || 0, precioPorUnidad || 0, pesoBruto || 0, pesoNeto || 0,
-        tipoImpuesto || 'Exento', proveedor || '', codigoBarras || '', locales ? 1 : 0, 
+        tipoImpuesto || 'Exento', proveedor || '', codigoBarras || '', 
+        (locales === true || locales === 1 || locales === '1') ? 'Si' : 
+        (locales === false || locales === 0 || locales === '0' || !locales) ? 'No' : locales,
         JSON.stringify(documentos || []), lote ? 1 : 0, alergenos ? 1 : 0, 
         descripcionAlergenos || '', tipoAlmacenamiento || '', seccionAlisto || '', 
         clasificacion || '', unidadConsumo || '', factorConversion || 1, 

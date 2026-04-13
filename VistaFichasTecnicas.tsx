@@ -1,35 +1,69 @@
 import React, { useState } from 'react';
-import { FlaskConical, Plus, Edit3, RefreshCw, Printer, LayoutGrid, List as ListIcon } from 'lucide-react';
+import { FlaskConical, Plus, Edit3, RefreshCw, Printer, LayoutGrid, List as ListIcon, Trash2, Search } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarFichaTecnicaPDF from './ExportarFichaTecnicaPDF';
 import { FichaTecnica, EstadoFicha, Rol, Receta } from './types';
 import { useStore } from './useStore';
 import { Skeleton } from './components/Skeleton';
 
-export default function VistaFichasTecnicas({ fichas, onEdit, onCreate, onInactivate, allRecipes }: { fichas: FichaTecnica[], onEdit: (f: FichaTecnica) => void, onCreate: () => void, onInactivate: (id: string) => void, allRecipes: Receta[] }) {
+export default function VistaFichasTecnicas({ 
+  fichas, onEdit, onCreate, onInactivate, onDelete, allRecipes 
+}: { 
+  fichas: FichaTecnica[], 
+  onEdit: (f: FichaTecnica) => void, 
+  onCreate: () => void, 
+  onInactivate: (id: string) => void, 
+  onDelete: (id: string) => void,
+  allRecipes: Receta[] 
+}) {
   const { role, isLoadingData } = useStore();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
-  const filtradas = fichas.filter(f => f.estado !== EstadoFicha.INACTIVA || role === 'ADMIN');
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filtradas = fichas.filter(f => {
+    const cumpleEstado = f.estado !== EstadoFicha.INACTIVA || role === 'ADMIN';
+    const term = searchTerm.toLowerCase();
+    const cumpleSearch = 
+      f.nombreReceta.toLowerCase().includes(term) || 
+      (f.codigoCalidadPropio || '').toLowerCase().includes(term) ||
+      f.id.toLowerCase().includes(term);
+    return cumpleEstado && cumpleSearch;
+  });
+
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
-      <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-3">
-        <div>
+      <header className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+        <div className="flex-1 min-w-0">
           <h1 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-3">
             <FlaskConical className="w-8 h-8 text-business-orange" />
             Repositorio de Fichas Técnicas
           </h1>
           <p className="text-slate-500 font-medium text-sm mt-1 italic">Certificación legal, física y microbiológica de productos terminados.</p>
         </div>
-        <div className="flex items-center gap-3 w-full md:w-auto mt-2 md:mt-0">
-          <div className="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex gap-0.5">
-            <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
-            <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
+
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
+          <div className="relative flex-1 sm:w-64">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <input 
+              type="text" 
+              placeholder="Buscar por nombre, código..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-10 pr-4 py-2 bg-white border border-slate-200 rounded-xl focus:ring-4 focus:ring-business-mustard/20 outline-none font-bold text-xs transition-all"
+            />
           </div>
-          {(role === 'CHEF' || role === 'ADMIN') && (
-            <button onClick={onCreate} className="flex items-center gap-2 bg-business-orange text-white px-5 py-2.5 rounded-xl font-black uppercase text-[10px] tracking-widest shadow-lg hover:bg-business-orange/90 transition-all w-full md:w-auto justify-center">
-              <Plus className="w-4 h-4" /> Iniciar Ficha
-            </button>
-          )}
+
+          <div className="flex items-center gap-3">
+            <div className="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex gap-0.5">
+              <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
+              <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
+            </div>
+            {(role === 'CHEF' || role === 'ADMIN') && (
+              <button onClick={onCreate} className="flex items-center gap-2 bg-business-orange text-white px-5 py-2.5 rounded-xl font-black uppercase text-[10px] tracking-widest shadow-lg hover:bg-business-orange/90 transition-all justify-center whitespace-nowrap">
+                <Plus className="w-4 h-4" /> Iniciar Ficha
+              </button>
+            )}
+          </div>
         </div>
       </header>
       
@@ -82,10 +116,14 @@ export default function VistaFichasTecnicas({ fichas, onEdit, onCreate, onInacti
                 <button onClick={() => onEdit(f)} className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-900 text-white rounded-xl font-black uppercase text-[10px] hover:bg-slate-800 transition-all">
                   <Edit3 className="w-3.5 h-3.5" /> Gestionar
                 </button>
-                {f.estado === EstadoFicha.COMPLETA && role === 'CALIDAD' && (
+                <button onClick={() => onDelete(f.id)} className="flex items-center justify-center p-2.5 bg-rose-50 text-rose-500 rounded-xl hover:bg-rose-500 hover:text-white transition-all shadow-sm group/del relative">
+                  <Trash2 className="w-4 h-4" />
+                  <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-[8px] text-white px-2 py-1 rounded opacity-0 group-hover/del:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Eliminar</span>
+                </button>
+                {f.estado === EstadoFicha.COMPLETA && (role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && (
                   <PDFDownloadLink
                     document={<ExportarFichaTecnicaPDF ficha={f} receta={recetaRelacionada} />}
-                    fileName={`FT_${f.nombreReceta.replace(/\s+/g, '_')}_v${f.version}.pdf`}
+                    fileName={`FT_${f.codigoCalidadPropio || 'SIN_CODIGO'}_${f.nombreReceta.replace(/\s+/g, '_')}_v${f.version}.pdf`}
                     className="flex items-center justify-center bg-teal-600 text-white w-10 rounded-xl hover:bg-teal-700 transition-all shadow-md group/pdf relative"
                   >
                     {({ loading }: any) => (
@@ -149,10 +187,14 @@ export default function VistaFichasTecnicas({ fichas, onEdit, onCreate, onInacti
                         <button onClick={() => onEdit(f)} className="px-3 py-1.5 bg-slate-100 text-slate-600 hover:bg-slate-900 hover:text-white rounded-lg font-black uppercase text-[10px] transition-all flex items-center gap-1 shadow-sm">
                           <Edit3 className="w-3.5 h-3.5" /> Gestionar
                         </button>
-                        {f.estado === EstadoFicha.COMPLETA && role === 'CALIDAD' && (
+                        <button onClick={() => onDelete(f.id)} className="p-1.5 bg-rose-50 text-rose-500 hover:bg-rose-500 hover:text-white rounded-lg transition-all shadow-sm group/del relative flex items-center justify-center">
+                          <Trash2 className="w-3.5 h-3.5" />
+                          <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-[8px] text-white px-2 py-1 rounded opacity-0 group-hover/del:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">Eliminar</span>
+                        </button>
+                        {f.estado === EstadoFicha.COMPLETA && (role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && (
                           <PDFDownloadLink
                             document={<ExportarFichaTecnicaPDF ficha={f} receta={recetaRelacionada} />}
-                            fileName={`FT_${f.nombreReceta.replace(/\s+/g, '_')}_v${f.version}.pdf`}
+                            fileName={`FT_${f.codigoCalidadPropio || 'SIN_CODIGO'}_${f.nombreReceta.replace(/\s+/g, '_')}_v${f.version}.pdf`}
                             className="p-1.5 bg-teal-100 text-teal-700 hover:bg-teal-600 hover:text-white rounded-lg transition-all shadow-sm group/pdf relative flex items-center justify-center"
                           >
                             {({ loading }: any) => (

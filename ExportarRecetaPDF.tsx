@@ -6,8 +6,8 @@ import { Page, Text, View, Document, StyleSheet, Image, Font } from '@react-pdf/
 
 const styles = StyleSheet.create({
   page: {
-    padding: 30,
-    fontSize: 9,
+    padding: 20,
+    fontSize: 7.5,
     fontFamily: 'Helvetica',
     color: '#334155', // slate-700
   },
@@ -18,22 +18,22 @@ const styles = StyleSheet.create({
     marginBottom: 0,
   },
   logoSection: {
-    width: '20%',
-    padding: 10,
+    width: '15%',
+    padding: 5,
     borderRight: '1px solid #94a3b8',
     justifyContent: 'center',
     alignItems: 'center',
   },
   titleSection: {
-    width: '50%',
-    padding: 5,
+    width: '55%',
+    padding: 3,
     borderRight: '1px solid #94a3b8',
     textAlign: 'center',
     justifyContent: 'center',
   },
   metaSection: {
     width: '30%',
-    padding: 5,
+    padding: 3,
     justifyContent: 'center',
   },
   companyName: {
@@ -113,12 +113,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   colCode: { width: '12%', borderRight: '1px solid #e2e8f0', padding: 2, textAlign: 'center', fontSize: 7 },
-  colDesc: { width: '33%', borderRight: '1px solid #e2e8f0', padding: 4 },
+  colDesc: { width: '43%', borderRight: '1px solid #e2e8f0', padding: 4 },
   colBrand: { width: '12%', borderRight: '1px solid #e2e8f0', padding: 2, textAlign: 'center' },
   colQty: { width: '10%', borderRight: '1px solid #e2e8f0', padding: 2, textAlign: 'center', fontWeight: 'bold' },
   colUnit: { width: '8%', borderRight: '1px solid #e2e8f0', padding: 2, textAlign: 'center' },
-  colObs: { width: '15%', borderRight: '1px solid #e2e8f0', padding: 2 },
-  colCost: { width: '10%', padding: 2, textAlign: 'right' },
+  colObs: { width: '15%', padding: 2 },
   
   categoryRow: {
     backgroundColor: '#f1f5f9',
@@ -133,59 +132,63 @@ const styles = StyleSheet.create({
   },
   
   yieldSection: {
-    marginTop: 10,
+    marginTop: 5,
     border: '1px solid #94a3b8',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
   },
   yieldRow: {
     flexDirection: 'row',
-    borderBottom: '1px solid #e2e8f0',
+    width: '33.33%',
+    borderRight: '1px solid #f1f5f9',
+    borderBottom: '1px solid #f1f5f9',
+    alignItems: 'center',
   },
   yieldLabel: {
-    width: '40%',
+    flex: 1,
     backgroundColor: '#f8fafc',
-    padding: 4,
-    fontSize: 7,
+    padding: 3,
+    fontSize: 6.5,
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    borderRight: '1px solid #e2e8f0',
+    borderRight: '0.5px solid #e2e8f0',
   },
   yieldValue: {
-    width: '30%',
-    padding: 4,
+    width: '35%',
+    padding: 3,
     textAlign: 'center',
     fontWeight: 'bold',
-    fontSize: 9,
-    borderRight: '1px solid #e2e8f0',
+    fontSize: 8,
   },
   yieldUnit: {
-    width: '30%',
-    padding: 4,
-    textAlign: 'center',
-    fontSize: 8,
+    fontSize: 6,
+    color: '#64748b',
+    paddingRight: 2,
   },
   
   sectionHeader: {
     backgroundColor: '#334155',
     color: 'white',
-    padding: 4,
-    fontSize: 8,
+    padding: 3,
+    fontSize: 7.5,
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    marginTop: 10,
+    marginTop: 8,
   },
   stepsContent: {
-    padding: 8,
+    padding: 4,
     border: '1px solid #e2e8f0',
     borderTop: 0,
   },
   stepItem: {
-    marginBottom: 4,
-    fontSize: 8,
+    marginBottom: 2,
+    fontSize: 7,
     flexDirection: 'row',
   },
   stepNumber: {
     fontWeight: 'bold',
-    marginRight: 5,
+    marginRight: 3,
+    color: '#334155',
   },
   
   footer: {
@@ -291,7 +294,6 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
             <Text style={styles.colQty}>Cant.</Text>
             <Text style={styles.colUnit}>U.M.</Text>
             <Text style={styles.colObs}>Obs.</Text>
-            <Text style={styles.colCost}>Costo (₡)</Text>
           </View>
 
           {/* MATERIAS PRIMAS */}
@@ -306,7 +308,6 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
               <Text style={styles.colQty}>{ing.cantidad || 0}</Text>
               <Text style={styles.colUnit}>{ing.unidad || 'g'}</Text>
               <Text style={styles.colObs}>{ing.observaciones || '-'}</Text>
-              <Text style={styles.colCost}>{ing.costoTotal?.toFixed(2) || '0.00'}</Text>
             </View>
           ))}
 
@@ -324,37 +325,36 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
                   <Text style={styles.colQty}>{ing.cantidad || 0}</Text>
                   <Text style={styles.colUnit}>{ing.unidad || 'u'}</Text>
                   <Text style={styles.colObs}>{ing.observaciones || '-'}</Text>
-                  <Text style={styles.colCost}>{ing.costoTotal?.toFixed(2) || '0.00'}</Text>
                 </View>
               ))}
             </>
           )}
         </View>
 
-        {/* RENDIMIENTO */}
+        {/* RENDIMIENTO COMPACTO EN GRILLA */}
         <View style={styles.yieldSection}>
           <View style={styles.yieldRow}>
-            <Text style={styles.yieldLabel}>Peso Total Obtenido</Text>
+            <Text style={styles.yieldLabel}>PESO TOTAL</Text>
             <Text style={styles.yieldValue}>{receta.pesoTotalCantidad || 0}</Text>
             <Text style={styles.yieldUnit}>{receta.pesoTotalUnidad || 'g'}</Text>
           </View>
           <View style={styles.yieldRow}>
-            <Text style={styles.yieldLabel}>Tiempo Total de Preparación</Text>
+            <Text style={styles.yieldLabel}>TIEMPO PREP.</Text>
             <Text style={styles.yieldValue}>{receta.tiempoPrepCantidad || 0}</Text>
             <Text style={styles.yieldUnit}>{receta.tiempoPrepUnidad || 'min'}</Text>
           </View>
           <View style={styles.yieldRow}>
-            <Text style={styles.yieldLabel}>Cantidad de Porciones Obtenidas</Text>
+            <Text style={styles.yieldLabel}>PORCIONES</Text>
             <Text style={styles.yieldValue}>{receta.porcionesCantidad || 0}</Text>
-            <Text style={styles.yieldUnit}>{receta.porcionesUnidad || 'porciones'}</Text>
+            <Text style={styles.yieldUnit}>{receta.porcionesUnidad || 'porc.'}</Text>
           </View>
           <View style={styles.yieldRow}>
-            <Text style={styles.yieldLabel}>Peso de Cada Porción</Text>
+            <Text style={styles.yieldLabel}>PESO PORCIÓN</Text>
             <Text style={styles.yieldValue}>{receta.pesoPorcionCantidad || 0}</Text>
             <Text style={styles.yieldUnit}>{receta.pesoPorcionUnidad || 'g'}</Text>
           </View>
-          <View style={[styles.yieldRow, { borderBottom: 0 }]}>
-            <Text style={styles.yieldLabel}>Merma (Materia Prima)</Text>
+          <View style={[styles.yieldRow, { borderRight: 0 }]}>
+            <Text style={styles.yieldLabel}>MERMA (MP)</Text>
             <Text style={styles.yieldValue}>{receta.mermaCantidad || 0}</Text>
             <Text style={styles.yieldUnit}>g</Text>
           </View>

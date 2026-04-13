@@ -13,7 +13,8 @@ import {
     X,
     ChevronUp,
     ChevronDown,
-    CheckCircle2
+    CheckCircle2,
+    Building2
 } from 'lucide-react';
 import {
     ConfiguracionRol,
@@ -39,6 +40,8 @@ interface AdminWorkflowsProps {
     setFlujos: React.Dispatch<React.SetStateAction<FlujoAprobacion[]>>;
     fasesInsumo: FaseFluxoInsumo[];
     setFasesInsumo: React.Dispatch<React.SetStateAction<FaseFluxoInsumo[]>>;
+    areasMaestras: { id: number, nombre: string }[];
+    setAreasMaestras: React.Dispatch<React.SetStateAction<{ id: number, nombre: string }[]>>;
     onSaveFlujo: (flujo: FlujoAprobacion) => Promise<void>;
     onDeleteFlujo: (id: string) => Promise<void>;
 }
@@ -50,10 +53,16 @@ export default function AdminWorkflows({
     setFlujos, 
     fasesInsumo, 
     setFasesInsumo,
+    areasMaestras,
+    setAreasMaestras,
     onSaveFlujo,
     onDeleteFlujo
 }: AdminWorkflowsProps) {
-    const [tab, setTab] = useState<'roles' | 'flujos' | 'insumos'>('flujos');
+    const [tab, setTab] = useState<'roles' | 'flujos' | 'insumos' | 'catalogos'>('flujos');
+    const [nuevaAreaNombre, setNuevaAreaNombre] = useState('');
+    const [areaEditandoId, setAreaEditandoId] = useState<number | null>(null);
+    const [areaEditandoNombre, setAreaEditandoNombre] = useState('');
+
     const [editandoFlujo, setEditandoFlujo] = useState<FlujoAprobacion | null>(null);
     const [editandoFase, setEditandoFase] = useState<FaseFluxoInsumo | null>(null);
 
@@ -103,6 +112,42 @@ export default function AdminWorkflows({
         }
     };
 
+    const manejarGuardarArea = async (nombre: string) => {
+        const res = await fetch('/api/maestros/areas', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nombre }),
+            credentials: 'include'
+        });
+        if (res.ok) {
+            const resData = await fetch('/api/maestros/areas', { credentials: 'include' });
+            setAreasMaestras(await resData.json());
+        }
+    };
+
+    const manejarEliminarArea = async (id: number) => {
+        if (!confirm('¿Eliminar esta área?')) return;
+        const res = await fetch(`/api/maestros/areas/${id}`, { 
+            method: 'DELETE',
+            credentials: 'include'
+        });
+        if (res.ok) {
+            setAreasMaestras(prev => prev.filter(a => a.id !== id));
+        }
+    };
+
+    const manejarEditarArea = async (id: number, nuevoNombre: string) => {
+        const res = await fetch(`/api/maestros/areas/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nombre: nuevoNombre }),
+            credentials: 'include'
+        });
+        if (res.ok) {
+            setAreasMaestras(prev => prev.map(a => a.id === id ? { ...a, nombre: nuevoNombre } : a));
+        }
+    };
+
     return (
         <div className="space-y-6 animate-in fade-in duration-500 pb-10">
             <header className="flex justify-between items-end">
@@ -134,9 +179,15 @@ export default function AdminWorkflows({
                 >
                     Flujos Insumos
                 </button>
+                <button
+                    onClick={() => setTab('catalogos')}
+                    className={`px-6 py-3 font-black uppercase text-[10px] tracking-widest border-b-4 transition-all ${tab === 'catalogos' ? 'border-business-orange text-business-orange' : 'border-transparent text-slate-400'}`}
+                >
+                    Catálogos Maestros
+                </button>
             </div>
 
-            <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-6">
+            <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-6 min-h-[400px]">
                 {/* --- TAB ROLES --- */}
                 {tab === 'roles' && (
                     <div className="space-y-8">
@@ -388,6 +439,100 @@ export default function AdminWorkflows({
                             </div>
                         )}
                     </>
+                )}
+                {tab === 'catalogos' && (
+                    <div className="space-y-8 animate-in slide-in-from-right-10">
+                        <div className="flex justify-between items-center">
+                            <div>
+                                <h2 className="text-lg font-black text-slate-900 uppercase">Catálogos Maestros</h2>
+                                <p className="text-slate-500 font-medium italic text-[10px]">Gestiona las listas compartidas del sistema.</p>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {/* Panel de Áreas */}
+                            <div className="border border-slate-100 rounded-3xl p-6 bg-slate-50/30 space-y-4">
+                                <div className="space-y-4">
+                                    {/* Campo para añadir nueva área */}
+                                    <div className="flex gap-2">
+                                        <input
+                                            type="text"
+                                            value={nuevaAreaNombre}
+                                            onChange={(e) => setNuevaAreaNombre(e.target.value)}
+                                            placeholder="Nombre de nueva área..."
+                                            className="flex-1 p-2 border border-slate-200 rounded-xl text-[11px] font-bold outline-none focus:ring-2 focus:ring-business-orange/20"
+                                            onKeyPress={(e) => {
+                                                if (e.key === 'Enter' && nuevaAreaNombre) {
+                                                    manejarGuardarArea(nuevaAreaNombre);
+                                                    setNuevaAreaNombre('');
+                                                }
+                                            }}
+                                        />
+                                        <button
+                                            onClick={() => {
+                                                if (nuevaAreaNombre) {
+                                                    manejarGuardarArea(nuevaAreaNombre);
+                                                    setNuevaAreaNombre('');
+                                                }
+                                            }}
+                                            className="p-2 bg-business-orange text-white rounded-xl hover:bg-business-orange/90 shadow-sm"
+                                        >
+                                            <Plus className="w-4 h-4" />
+                                        </button>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        {areasMaestras.map(a => (
+                                            <div key={a.id} className="flex justify-between items-center p-3 bg-white border border-slate-100 rounded-xl group hover:border-business-orange/30 transition-all">
+                                                {areaEditandoId === a.id ? (
+                                                    <input
+                                                        autoFocus
+                                                        type="text"
+                                                        value={areaEditandoNombre}
+                                                        onChange={(e) => setAreaEditandoNombre(e.target.value)}
+                                                        className="flex-1 p-1 border-b border-business-orange text-[11px] font-bold outline-none"
+                                                        onBlur={() => {
+                                                            if (areaEditandoNombre && areaEditandoNombre !== a.nombre) {
+                                                                manejarEditarArea(a.id, areaEditandoNombre);
+                                                            }
+                                                            setAreaEditandoId(null);
+                                                        }}
+                                                        onKeyPress={(e) => {
+                                                            if (e.key === 'Enter') {
+                                                                if (areaEditandoNombre && areaEditandoNombre !== a.nombre) {
+                                                                    manejarEditarArea(a.id, areaEditandoNombre);
+                                                                }
+                                                                setAreaEditandoId(null);
+                                                            }
+                                                        }}
+                                                    />
+                                                ) : (
+                                                    <span className="text-[11px] font-bold text-slate-700">{a.nombre}</span>
+                                                )}
+                                                
+                                                <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                                    {areaEditandoId !== a.id && (
+                                                        <button onClick={() => {
+                                                            setAreaEditandoId(a.id);
+                                                            setAreaEditandoNombre(a.nombre);
+                                                        }} className="p-1 text-slate-400 hover:text-business-orange">
+                                                            <Edit3 className="w-3.5 h-3.5" />
+                                                        </button>
+                                                    )}
+                                                    <button onClick={() => manejarEliminarArea(a.id)} className="p-1 text-slate-400 hover:text-rose-500">
+                                                        <Trash2 className="w-3.5 h-3.5" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        ))}
+                                        {areasMaestras.length === 0 && (
+                                            <p className="text-center text-[10px] text-slate-400 italic py-4">No hay áreas definidas.</p>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 )}
             </div>
         </div>

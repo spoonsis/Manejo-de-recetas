@@ -25,6 +25,7 @@ const notificacionesRoutes = require("./rutas/rutasNotificaciones");
 const workflowsRoutes = require("./rutas/rutasWorkflows");
 const uploadsRoutes = require("./rutas/rutasUploads");
 const usuariosRoutes = require("./rutas/rutasUsuarios");
+const maestrosRoutes = require("./rutas/rutasMaestros");
 
 const { authMiddleware } = require("./middlewares/authMiddleware");
 
@@ -58,6 +59,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use("/api/auth", authRoutes);
 
 // Rutas Protegidas (Requieren Login)
+app.use("/api/maestros", authMiddleware, maestrosRoutes);
 app.use("/api/usuarios", authMiddleware, (req, res, next) => {
     console.log(`[DEBUG] HIT /api/usuarios ${req.method} from ${req.ip}`);
     next();

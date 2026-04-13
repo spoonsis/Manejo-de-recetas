@@ -282,7 +282,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
           </div>
 
           <div className="flex gap-3 items-center">
-            {role === 'CALIDAD' && recetaActiva.estado === EstadoReceta.APROBADO && (
+            {(role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && recetaActiva.estado === EstadoReceta.APROBADO && (
               <PDFDownloadLink
                 document={<ExportarRecetaPDF receta={{ ...recetaActiva, ingredientesCategorizados: ingredientesCategorizados as any }} />}
                 fileName={`Receta_${recetaActiva.nombre || 'Sin_Nombre'}.pdf`}

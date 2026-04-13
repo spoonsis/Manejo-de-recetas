@@ -25,4 +25,19 @@ router.post("/fichas", validarEsquema(fichaSchema), async (req, res) => {
     }
 });
 
+// DELETE Eliminar una ficha tecnica
+router.delete("/fichas/:id", async (req, res) => {
+    try {
+        const success = await svc.eliminarFicha(req.params.id);
+        if (success) {
+            res.json({ success: true, message: "Ficha técnica eliminada con éxito." });
+        } else {
+            res.status(404).json({ error: "No se encontró la ficha técnica." });
+        }
+    } catch (e) {
+        console.error("Error DELETE /fichas/:id", e);
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
+    }
+});
+
 module.exports = router;

@@ -34,8 +34,7 @@ import { Card } from './components/ui/Card';
 import { Badge } from './components/ui/Badge';
 
 // --- Listas de Referencia ---
-const AREAS_PRODUCCION = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
-const AREAS_EMPAQUE = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
+// Ahora se cargan desde el backend: maestro_areas
 const MICROORGANISMOS_INICIALES = ["Salmonella spp", "Listeria monocytogenes", "Escherichia coli", "Mohos y Levaduras", "Staphylococcus aureus"];
 const PERMISOS_DISPONIBLES: Permiso[] = [
   'RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'APROBAR_COSTOS',
@@ -79,7 +78,7 @@ const insumosIniciales: Insumo[] = [
     tipoImpuesto: 'IVA 19%',
     proveedor: 'Molinos del Sur',
     codigoBarras: '7701234567890',
-    locales: true,
+    locales: 'Si',
     documentos: [],
     lote: true,
     alergenos: true,
@@ -161,6 +160,8 @@ export default function App() {
   const [flujos, setFlujos] = useState<FlujoAprobacion[]>([FLUJO_DEFAULT]);
   const [fasesInsumo, setFasesInsumo] = useState<FaseFluxoInsumo[]>(FASES_INSUMO_DEFAULT);
   const [maestroMicroorganismos, setMaestroMicroorganismos] = useState<string[]>(MICROORGANISMOS_INICIALES);
+  const [proveedores, setProveedores] = useState<any[]>([]);
+  const [areasMaestras, setAreasMaestras] = useState<{ id: number, nombre: string }[]>([]);
 
   // Tab Admin Interno
   const [adminTab, setAdminTab] = useState<'workflows' | 'usuarios'>('workflows');
@@ -267,7 +268,25 @@ export default function App() {
             await manejarGuardarFlujo(FLUJO_DEFAULT);
           }
         }
+        // 6. Cargar Proveedores SQL Server
+        const resProveedores = await fetch(`/api/proveedores`, { credentials: 'include' });
+        if (resProveedores.ok) {
+          setProveedores(await resProveedores.json());
+        }
 
+        // 7. Cargar Áreas Maestras
+        try {
+          const resAreas = await fetch(`/api/maestros/areas`, { credentials: 'include' });
+          if (resAreas.ok) {
+            const data = await resAreas.json();
+            console.log("✅ Áreas maestras cargadas:", data.length);
+            setAreasMaestras(data);
+          } else {
+            console.warn("⚠️ No se pudieron cargar las áreas maestras:", resAreas.status);
+          }
+        } catch (e) {
+          console.error("❌ Fallo crítico cargando áreas:", e);
+        }
       } catch (error) {
         console.error("Error cargando todos los catálogos:", error);
       } finally {
@@ -750,9 +769,27 @@ export default function App() {
         body: JSON.stringify(fichaFinal)
       });
     } catch (e) {
-      console.error("Error inactivando ficha en BD", e);
     }
   };
+
+  const manejarEliminarFicha = async (id: string) => {
+    if (!window.confirm("¿Está seguro de que desea eliminar permanentemente esta ficha técnica?")) return;
+
+    try {
+      const res = await fetch(`/api/local/fichas/${id}`, {
+        method: "DELETE",
+        credentials: 'include'
+      });
+      if (res.ok) {
+        setFichas((prev: any[]) => prev.filter((f: { id: string; }) => f.id !== id));
+      } else {
+        alert("Error al intentar eliminar la ficha técnica.");
+      }
+    } catch (e) {
+      console.error("Error eliminando ficha:", e);
+    }
+  };
+
   const recetasFiltradas = recetas.filter((r: { nombre: string; }) =>
     r.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase())
   );
@@ -980,13 +1017,14 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Panel recipes={recetas} insumos={insumos} role={rol} setView={(v: string) => navigate(v === 'panel' ? '/' : `/${v}`)} />} />
           <Route path="/libro" element={<VistaLibroRecetas recipes={recetasLibroUnicas} onSelect={(r: Receta) => setDetalleLibro(r)} />} />
-          <Route path="/inventario" element={<VistaInventario insumos={insumos} onSave={manejarGuardarInsumo} role={rol} onDelete={(id: string) => setInsumos((p: any[]) => p.filter((i: { id: string; }) => i.id !== id))} fasesConfig={fasesInsumo} />} />
+          <Route path="/inventario" element={<VistaInventario insumos={insumos} onSave={manejarGuardarInsumo} role={rol} onDelete={(id: string) => setInsumos((p: any[]) => p.filter((i: { id: string; }) => i.id !== id))} fasesConfig={fasesInsumo} proveedores={proveedores} />} />
           <Route path="/fichas" element={
             <VistaFichasTecnicas
               fichas={fichas}
               onEdit={(f) => setEditandoFicha(f)}
               onCreate={manejarCrearFicha}
               onInactivate={manejarInactivarFicha}
+              onDelete={manejarEliminarFicha}
               allRecipes={recetas}
             />
           } />
@@ -1042,6 +1080,8 @@ export default function App() {
                   setFlujos={setFlujos}
                   fasesInsumo={fasesInsumo}
                   setFasesInsumo={setFasesInsumo}
+                  areasMaestras={areasMaestras}
+                  setAreasMaestras={setAreasMaestras}
                   onSaveFlujo={manejarGuardarFlujo}
                   onDeleteFlujo={manejarEliminarFlujo}
                 />
@@ -1067,6 +1107,7 @@ export default function App() {
           onSave={manejarActualizarReceta}
           onSaveInsumo={manejarGuardarInsumo}
           role={rol}
+          areas={areasMaestras.map(a => a.nombre)}
         />
       )}
       {editandoFicha && (
@@ -1078,6 +1119,7 @@ export default function App() {
           role={rol}
           maestroMicroorganismos={maestroMicroorganismos}
           setMaestroMicroorganismos={setMaestroMicroorganismos}
+          areas={areasMaestras.map(a => a.nombre)}
         />
       )}
 

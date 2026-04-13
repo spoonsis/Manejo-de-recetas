@@ -10,10 +10,9 @@ import { optimizarPasosReceta } from './geminiService';
 import { useStore } from './useStore';
 
 // --- Listas de Referencia ---
-const AREAS_PRODUCCION = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
-const AREAS_EMPAQUE = ["Decoración", "Cocina", "Batidos", "Postres", "Pastas", "Empaque"];
+// Ahora se reciben como prop 'areas'
 
-export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role }: any) {
+export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role, areas = [] }: any) {
   const [datosForm, setDatosForm] = useState<Receta>(recipe);
   const [tabActiva, setTabActiva] = useState<'ficha' | 'pasos' | 'historial'>('ficha');
   const [nuevoPaso, setNuevoPaso] = useState('');
@@ -344,14 +343,14 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Warehouse className="w-2.5 h-2.5" /> Área que Produce</label>
                   <input list="areas-prod-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.areaProduce} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaProduce: e.target.value })} placeholder="Seleccionar..." />
                   <datalist id="areas-prod-datalist">
-                    {AREAS_PRODUCCION.map(a => <option key={a} value={a} />)}
+                    {areas.map(a => <option key={a} value={a} />)}
                   </datalist>
                 </div>
                 <div className="space-y-1">
                   <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Package className="w-2.5 h-2.5" /> Área que Empaca</label>
                   <input list="areas-emp-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaEmpaca: e.target.value })} placeholder="Seleccionar..." />
                   <datalist id="areas-emp-datalist">
-                    {AREAS_EMPAQUE.map(a => <option key={a} value={a} />)}
+                    {areas.map(a => <option key={a} value={a} />)}
                   </datalist>
                 </div>
               </div>

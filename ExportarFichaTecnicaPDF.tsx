@@ -328,8 +328,8 @@ const ExportarFichaTecnicaPDF = ({ ficha, receta, logoUrl = '/logo.png' }: Props
             </View>
             <View style={styles.metaBox}>
               <View style={styles.metaItem}>
-                <Text style={styles.metaLabel}>CODIGO:</Text>
-                <Text style={styles.metaValue}>{ficha.codigoCalidadPropio}</Text>
+                <Text style={styles.metaLabel}>CÓDIGO DE CALIDAD:</Text>
+                <Text style={styles.metaValue}>{ficha.codigoCalidadPropio || '---'}</Text>
               </View>
               <View style={styles.metaItem}>
                 <Text style={styles.metaLabel}>REVISION:</Text>
@@ -454,15 +454,20 @@ const ExportarFichaTecnicaPDF = ({ ficha, receta, logoUrl = '/logo.png' }: Props
             <View style={styles.charBox}><Text>Textura:</Text></View>
             <View style={[styles.charValue, { borderRight: 0 }]}><Text>{ficha.organolepticas?.textura}</Text></View>
             
-            <View style={styles.charBox}><Text>Altura:</Text></View>
+            <View style={styles.charBox}><Text>Altura (cm):</Text></View>
             <View style={styles.charValue}><Text>{ficha.fisicas?.altura}</Text></View>
-            <View style={styles.charBox}><Text>Diametro:</Text></View>
+            <View style={styles.charBox}><Text>Diametro (cm):</Text></View>
             <View style={[styles.charValue, { borderRight: 0 }]}><Text>{ficha.fisicas?.diametro}</Text></View>
             
-            <View style={styles.charBox}><Text>Largo:</Text></View>
+            <View style={styles.charBox}><Text>Largo (cm):</Text></View>
             <View style={styles.charValue}><Text>{ficha.fisicas?.largo}</Text></View>
-            <View style={styles.charBox}><Text>Ancho:</Text></View>
+            <View style={styles.charBox}><Text>Ancho (cm):</Text></View>
             <View style={[styles.charValue, { borderRight: 0 }]}><Text>{ficha.fisicas?.ancho}</Text></View>
+
+            <View style={styles.charBox}><Text>Humedad (%):</Text></View>
+            <View style={styles.charValue}><Text>{ficha.fisicas?.humedad}</Text></View>
+            <View style={styles.charBox}><Text>Acidez:</Text></View>
+            <View style={[styles.charValue, { borderRight: 0 }]}><Text>{ficha.fisicas?.acidezTotal}</Text></View>
           </View>
 
           {/* OTHERS */}

@@ -24,7 +24,7 @@ export interface Insumo {
   tipoImpuesto: string;
   proveedor: string;
   codigoBarras: string;
-  locales: boolean;
+  locales: string;
   documentos?: string[]; // Base64 o URLs de adjuntos
 
   // Fase 2: Calidad

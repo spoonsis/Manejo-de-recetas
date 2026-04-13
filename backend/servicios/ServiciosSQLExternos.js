@@ -65,9 +65,25 @@ async function obtenerCostoItem(fullname) {
     return result.recordset[0] ? result.recordset[0].averagecost : null;
 }
 
+/**
+ * Obtiene la lista de proveedores desde Azure SQL.
+ */
+async function obtenerProveedores() {
+    await poolConnect;
+    const result = await pool.request()
+        .query(`
+            SELECT DISTINCT [Nombre] AS nombre
+            FROM [dbo].[Proveedor]
+            WHERE [Nombre] IS NOT NULL
+            ORDER BY [Nombre]
+        `);
+    return result.recordset;
+}
+
 module.exports = {
     buscarItems,
     obtenerCostoItem,
     listarArticulos,
-    listarTablasAzure
+    listarTablasAzure,
+    obtenerProveedores
 };

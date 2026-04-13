@@ -19,6 +19,7 @@ async function inicializarTablas() {
                 areaEmpaca VARCHAR(255),
                 
                 descripcionTecnica TEXT,
+                declaracionIngredientes TEXT,
                 alergenos JSON,
                 usoIntencional TEXT,
                 consumidorObjetivo TEXT,
@@ -204,7 +205,13 @@ async function upsertFicha(datos) {
     }
 }
 
+async function eliminarFicha(id) {
+    const [result] = await pool.query("DELETE FROM fichas_tecnicas WHERE id = ?", [id]);
+    return result.affectedRows > 0;
+}
+
 module.exports = {
     obtenerFichas,
-    upsertFicha
+    upsertFicha,
+    eliminarFicha
 };

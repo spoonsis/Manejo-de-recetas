@@ -1,0 +1,679 @@
+[dotenv@17.3.1] injecting env (22) from .env -- tip: ÔÜÖ´©Å  override existing env vars with { override: true }
+Conectando a Azure SQL con estos datos:
+Conectado a Azure SQL ­ƒÄë
+Connected. Listing tables...
+Tables found: 168
+[
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "10TaxReportTable"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "AlertaAgente"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Bases_imponibles_Canal"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "CFacturasVentaTOT"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "classification"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "ConceptoPlanilla"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Config_Map_CanalesPago"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Config_Map_SeriesTipoLocal"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "CTiposDelivery"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "deparment"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_ALBVENTALINPROMOCIONES"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_CANAL"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_CLIENTE"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_DiasSemana"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_FranjasHorarias"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_LOCAL"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_Moneda"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_PRODUCTO"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_PROMOCIONES"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_TESORERIA"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_TiempoComida"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_TipoLocales"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_VENTAENCA"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "DIM_VENTAS"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "EmpleadoCatalogo"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "EmpleadoCentroExterno"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "EmpleadoNuevo"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "EmpleadoPlanilla"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "ETL_Control_Ventas"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "FACT_VENTA"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "HistoricoConceptoEmpleado"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "InterimTable_1e25d9e4-7faf-4a4c-a29a-5f8142f441f4"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "InterimTable_1f03de31-3c75-48b3-8084-e68095fb24f7"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "InterimTable_498c1037-6b61-4365-9d39-3c2f200f69de"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "InterimTable_fb2a1fa9-9d0d-4f92-bf58-bd36a796a101"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "inventariostest"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_Almacen"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_ArticulosLin"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_DIM_Articulo"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_DIM_FormasPago"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_FACTURASVENTA"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_Moviments"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_TraspasosCab"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_ICG_VENTASCAMPOSLIBRES"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_CUSTOMER"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_DATE"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_PRODUCT"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_RECEIPT"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_RECEIPT_DETAIL"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_TIME"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MYSQL_ST_DIM_TRANSACTION"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_MySQL_ST_DIM_VENDOR"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_Articulo"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_Clase"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_CuentaContable"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_Departamento"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_DireccionEnvio"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_Empleado"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_PeriodoContable"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_Transaccion"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_DIM_VentasEntrantes"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_FACT_ActividadContableRegistrada"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_NT_FACT_LineaTransaccion"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_SHP_DIM_AsociacionDeCuentaContableYPlantilla"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_SHP_DIM_PlantillaPresupuesto"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_SHP_DIM_PorcentajeObligacionesSocialesPpto"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_SHP_FACT_Presupuesto"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_SP_Evaluacion_Cliente_incognito"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_SP_Quejas"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_CATEGORIA_PRODUCTOS"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_DIM_Estructura_Vista_Master_Ppto"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_DIM_Estructura_Vista_PL_Industria"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_DIM_Estructura_Vista_Ppto_Consolidado"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_Metas"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_MetasIndustria"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "L_XLSX_MetasLocales"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "LT_ICG_DIM_Secciones"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Planilla"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "PoSGoals"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Proveedor"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Quincena"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "S_L_OPPER"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "salesTableData"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "sysdiagrams"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_15689_07c6ca9132d543cd814c836d96043503"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_4087_942aa5e5333b498fb0eb798f18cccb77"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_4119_7da08afe2e454b1baac4ae561c92d230"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_4129_3ac7596ad2354d4ea9dc23ead5423f8e"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_4231_76e0655b37ae4af980bcffda7805d74d"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_4386_2e4e76fe143840afbcea2a54a5c85e7d"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_4405_8b1dcbde1d1e433d9d5c1f5e7e825544"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5139_95b6d7c508e1465aa341a580e20cf8d1"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5159_507871dc2320411aa664be93230a8e1a"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5186_26128d202c404c71a572e14ece18d04d"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5198_fd8023ea72f441b6b93dccd1361533f9"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5200_9ec8dc07f8d6401eb88be8149e6b6f4e"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5234_8f3ced6085834b50b0514d80d7434cd5"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5268_fd66eef15d364e89b7026b9b44341402"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5276_92bd2629940342d7bef02b5adf10de32"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5281_f4deb21999cd438883ead576d92b8b6a"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5308_451845dac37d4114b6c7904686ecb95c"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5321_55115712efee465f96abe9fbd8a2760f"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5390_df315fa749a14f5886915c39df9164ea"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5409_3572b1c4d79447f0a46988ba46cf197c"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_5534_09f098e8967949c9bb913942ed45d278"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7145_893ad30b4550428e815140b9883601ba"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7368_f69dbcead86643399dd8545485ccf7e8"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7459_b1c8a4847c4244879fadad1177d291b7"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7480_49877c9432c7482096a0804ce5005400"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7606_1b07c2f432634f5cae1342ad2b8f7842"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7746_a7d06acf28ae4d6db9f6899d9bcf3844"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_7819_0ea620d4f0034adfb044ac3868f7cfa4"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_8153_e9240f630dad41588b728e666d4b70a3"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_8403_ecaa0a8cd3f3428a86bb337c215d8b34"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_9584_c5be90d7df96460da8b77cab20137a8b"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_9645_bcb8ea3544424db3bee2ea6f22842111"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_9656_37510f1501ef4e73b8c061a6d7404d9f"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_9745_f0eee837af2a4a7488f62199aa724806"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "T_NT_DIM_Empleado"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "TEMP"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "TransaccionesDiciembre2025"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Transaction_prueba"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "TransactionAccountingLine"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "User"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "UsuarioCentroCosto"
+  },
+  {
+    "TABLE_SCHEMA": "dbo",
+    "TABLE_NAME": "Ventas_Combos"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "action"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "agent"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "agent_instance"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "agent_version"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "configuration"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "EnumType"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "MetaInformation"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "scaleunitlimits"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "ScheduleTask"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "subscription"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "syncgroup"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "syncgroupmember"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "SyncObjectData"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "task"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "taskdependency"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "UIHistory"
+  },
+  {
+    "TABLE_SCHEMA": "dss",
+    "TABLE_NAME": "userdatabase"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "CookingTime"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "DetailSale"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "FinishedProductSale"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "GoalByYear"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "HeaderSale"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "HeaderSale2023"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "Payroll"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "PointOfSale"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "WaiterTaxReport"
+  },
+  {
+    "TABLE_SCHEMA": "dwh",
+    "TABLE_NAME": "WaiterTaxReportBK"
+  },
+  {
+    "TABLE_SCHEMA": "icg",
+    "TABLE_NAME": "restaurante"
+  },
+  {
+    "TABLE_SCHEMA": "icg",
+    "TABLE_NAME": "ventas"
+  },
+  {
+    "TABLE_SCHEMA": "icg",
+    "TABLE_NAME": "ventas_txt"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "CookingTime"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "DetailSale"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "FinishedProductSale"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "GoalByYear"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "HeaderSale"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "Payroll"
+  },
+  {
+    "TABLE_SCHEMA": "staging",
+    "TABLE_NAME": "WaiterTaxReport"
+  },
+  {
+    "TABLE_SCHEMA": "TaskHosting",
+    "TABLE_NAME": "Job"
+  },
+  {
+    "TABLE_SCHEMA": "TaskHosting",
+    "TABLE_NAME": "MessageQueue"
+  },
+  {
+    "TABLE_SCHEMA": "TaskHosting",
+    "TABLE_NAME": "MetaInformation"
+  },
+  {
+    "TABLE_SCHEMA": "TaskHosting",
+    "TABLE_NAME": "Schedule"
+  },
+  {
+    "TABLE_SCHEMA": "TaskHosting",
+    "TABLE_NAME": "ScheduleTask"
+  }
+]

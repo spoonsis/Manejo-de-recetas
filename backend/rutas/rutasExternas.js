@@ -4,7 +4,8 @@ const router = express.Router();
 const {
     listarTablasAzure,
     listarArticulos,
-    buscarItems
+    buscarItems,
+    obtenerProveedores
 } = require("../servicios/ServiciosSQLExternos");
 
 router.get("/items/buscar", async (req, res) => {
@@ -25,6 +26,15 @@ router.get("/tablas", async (req, res) => {
 router.get("/articulos", async (req, res) => {
     try { const data = await listarArticulos(); res.json(data); }
     catch (error) { res.status(500).json({ error: error.message }); }
+});
+
+router.get("/proveedores", async (req, res) => {
+    try {
+        const data = await obtenerProveedores();
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 });
 
 module.exports = router;

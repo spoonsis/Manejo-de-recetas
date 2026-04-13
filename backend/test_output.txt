@@ -1,0 +1,47 @@
+[dotenv@17.3.1] injecting env (22) from .env -- tip: ÔÜí´©Å secrets for agents: https://dotenvx.com/as2
+Conectando a Azure SQL con estos datos:
+Fetching vendors...
+Conectado a Azure SQL ­ƒÄë
+Error fetching vendors: RequestError: Invalid object name 'dbo.Vendor'.
+    at handleError (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\mssql\lib\tedious\request.js:384:15)
+    at Connection.emit (node:events:508:28)
+    at Connection.emit (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\tedious\lib\connection.js:1013:18)
+    at RequestTokenHandler.onErrorMessage (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\tedious\lib\token\handler.js:285:21)
+    at Readable.<anonymous> (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\tedious\lib\token\token-stream-parser.js:19:33)
+    at Readable.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)
+    at Readable.push (node:internal/streams/readable:391:5)
+    at nextAsync (node:internal/streams/from:194:22) {
+  code: 'EREQUEST',
+  originalError: Error: Invalid object name 'dbo.Vendor'.
+      at handleError (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\mssql\lib\tedious\request.js:382:19)
+      at Connection.emit (node:events:508:28)
+      at Connection.emit (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\tedious\lib\connection.js:1013:18)
+      at RequestTokenHandler.onErrorMessage (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\tedious\lib\token\handler.js:285:21)
+      at Readable.<anonymous> (C:\Users\balfaro\Desarrollos\gastroflow-pro---gesti├│n-de-recetas-y-costos\backend\node_modules\tedious\lib\token\token-stream-parser.js:19:33)
+      at Readable.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)
+      at Readable.push (node:internal/streams/readable:391:5)
+      at nextAsync (node:internal/streams/from:194:22) {
+    info: ErrorMessageToken {
+      name: 'ERROR',
+      handlerName: 'onErrorMessage',
+      number: 208,
+      state: 1,
+      class: 16,
+      message: "Invalid object name 'dbo.Vendor'.",
+      serverName: 'fascr-prd-sql-001',
+      procName: '',
+      lineNumber: 2
+    }
+  },
+  number: 208,
+  lineNumber: 2,
+  state: 1,
+  class: 16,
+  serverName: 'fascr-prd-sql-001',
+  procName: '',
+  precedingErrors: []
+}
