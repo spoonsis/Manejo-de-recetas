@@ -1,0 +1,53 @@
+{
+  "nombre": "Empaque Pastel De Pollo 1 pirex(4 porc) SPOON",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Maria Jose Rodriguez, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "01",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "PASTEL DE POLLO 4 PORCIONES",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "TAPA CONTENEDOR ALUMINIO",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "1952410",
+      "marca": "Mayca",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "702067",
+      "marca": "Cemusa",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "Una vez frio el pastel colocar la tapa y etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "registroCambios": "Importación inicial desde Excel"
+}

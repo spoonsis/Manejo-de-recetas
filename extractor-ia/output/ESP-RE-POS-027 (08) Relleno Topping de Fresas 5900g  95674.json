@@ -1,0 +1,63 @@
+{
+  "nombre": "Relleno topping de fresa 95674",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "08",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA KILO",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "20100116",
+      "marca": "Conexu",
+      "observaciones": null
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "SPOON",
+      "observaciones": "Para Relleno"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": null,
+      "observaciones": "Para Gelatina"
+    },
+    {
+      "nombre": "GELATINA PURA 1 kg",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "0510186",
+      "marca": "Mayca",
+      "observaciones": null
+    },
+    {
+      "nombre": "COLORANTE GEL SUPER RED 130 ml",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "10400009",
+      "marca": null,
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1, Hidratar y disolver la gelatina en agua caliente.",
+    "2, Mezclar con el relleno de fresa, colorante, el agua del relleno y agregar la gelatina disuelta",
+    "3, Utilizar de inmediato."
+  ],
+  "pesoTotalCantidad": 12400,
+  "pesoTotalUnidad": "GRAMOS",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 62,
+  "porcionesUnidad": "PORCIONES",
+  "registroCambios": "Importación inicial desde Excel. Revisión #8: Se agrega colorante. Se cambió el agua."
+}

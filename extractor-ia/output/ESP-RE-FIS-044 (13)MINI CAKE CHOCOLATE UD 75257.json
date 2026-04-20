@@ -1,0 +1,154 @@
+{
+  "nombre": "MINI CAKE CHOCOLATE UD 75257",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "FIGURAS",
+  "areaEmpaca": "FIGURAS",
+  "version": "13",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "11400066",
+      "marca": "NESTLÉ",
+      "observaciones": "para pegar a la orla"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 70g",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "907000266",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ:6 K)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "11400066",
+      "marca": "NESTLÉ",
+      "observaciones": "relleno"
+    },
+    {
+      "nombre": "RELLENO FUDGE SPOON (PAQ: 5000 G)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "20100163",
+      "marca": "FAS",
+      "observaciones": "boquilla plana, cubrir el borde"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "11400066",
+      "marca": "NESTLÉ",
+      "observaciones": "boquilla 17, hacer 3 colochos"
+    },
+    {
+      "nombre": "CHOCOLATE TULIPAN MARMOL (CAJA:150 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1210461",
+      "marca": "SOLUCIONES",
+      "observaciones": null
+    },
+    {
+      "nombre": "CHOCOLATE TRIAN OLEA PEQ (CAJA:250 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1070002",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "90200149",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "ORLA #4 AZUL REDONDA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950942",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "QUEQUERA PLAST 12 CENT (CAJA:250UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "121208",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702077",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702007",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "702174",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 0.1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950699",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "701096",
+      "marca": null,
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Cortar el mini cake por la mitad (eliminado la punta para nivelar) , rellenar con manjar. Hacer un circulo de manjar sobre la orla para inmobilizar el quequito. Pegar el mini cake en la orla.",
+    "2.- Con la boquilla lisa hacer líneas en todo el borde, de manera que se cubran todas la paredes hasta llegar al borde",
+    "3.- Con la boquilla pequeña # 17 hacer en el centro 3 colochos de manjar redondos en la parte superior.",
+    "4.- Colocar un tulipan y un triangulo veteado de manera horizantal",
+    "5.- Colocar el chocolate rallado en los espacios superiores sin rellenar.",
+    "6.- Tapar y etiquetar. Colocar los sellos de seguridad en lados opuestos, sobre uno de los sellos de seguridad pegar la cinta generica. La fecha de vencimiento, y en el lado inferior etiqueta de ingredientes."
+  ],
+  "pesoTotalCantidad": 175,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "registroCambios": "Importación inicial desde Excel. Versión 13: Actualizacion del codigo del fudge"
+}

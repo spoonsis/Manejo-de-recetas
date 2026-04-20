@@ -1,0 +1,71 @@
+{
+  "nombre": "Premezcla Pasta para Chilenas Spoon 95555",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "13",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "MARGARINA MULTIUSO",
+      "cantidad": 9000,
+      "unidad": "g",
+      "codigoNetSuite": "1210393",
+      "marca": "Numar",
+      "observaciones": null
+    },
+    {
+      "nombre": "AZUCAR POLVO P.REAL (PAQ=2.5 K)",
+      "cantidad": 1,
+      "unidad": "Bolsa",
+      "codigoNetSuite": "10100003",
+      "marca": "Pastelero Real",
+      "observaciones": "Equivalente a 2500g"
+    },
+    {
+      "nombre": "HARINA NACARINA",
+      "cantidad": 12000,
+      "unidad": "g",
+      "codigoNetSuite": "11200064",
+      "marca": "Nacarina",
+      "observaciones": null
+    },
+    {
+      "nombre": "PRESERVANTE 1047",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "116000001",
+      "marca": "Aseal",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "702226",
+      "marca": "Etiplast",
+      "observaciones": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "1950708",
+      "marca": "Plasticos P",
+      "observaciones": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Colocar en 1 bolsa 17*25 la margarina. Etiquetar.",
+    "2.- Colocar la harina, preservante en otra bolsa 17*25, enviar 1 bolsa de azucar en polvo entera.",
+    "3.- Etiquetar ambas bolsas."
+  ],
+  "pesoTotalCantidad": 23524,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "registroCambios": "Importación inicial desde Excel"
+}

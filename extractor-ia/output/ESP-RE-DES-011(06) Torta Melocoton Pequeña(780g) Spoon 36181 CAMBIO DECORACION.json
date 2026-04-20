@@ -1,0 +1,146 @@
+{
+  "nombre": "Torta Melocoton Pequeña(780g) Spoon 36181",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "06",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE MELOCOTON PERSONAL 180 g",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "907000233",
+      "marca": "SPOON",
+      "observaciones": "1,5 Ud"
+    },
+    {
+      "nombre": "ALMIBAR KILO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "908000021",
+      "marca": "Spoon",
+      "observaciones": "20g c/capa -3 capas-"
+    },
+    {
+      "nombre": "RELLENO DE LIMON SPOON KILO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "902000085",
+      "marca": "SPOON",
+      "observaciones": "1/4 Taza(75g) -2 capas-"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELO CON TOPING KILO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "20500039",
+      "marca": "SPOON",
+      "observaciones": "1/4 Taza(75g) -2 capas-"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "95717",
+      "marca": "Spoon",
+      "observaciones": "Encremar"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "95717",
+      "marca": "Spoon",
+      "observaciones": "Boquilla #61"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELO CON TOPING KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "20500039",
+      "marca": "Spoon",
+      "observaciones": "1/8 taza"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 0.5,
+      "unidad": "ud",
+      "codigoNetSuite": "10700013",
+      "marca": "CHOCOLATE SOLUTIONS",
+      "observaciones": null
+    },
+    {
+      "nombre": "ORLA CARTON 8\" (100 * PAQ )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950808",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "DOMO QUEQUERA 8\" ALTA (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "51400016",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "BASE QUEQUERA 8\" ALTA (CAJA:200 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "51400017",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702007",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "701096",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "703020",
+      "marca": "Mayca",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "Etiplast",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Partir el rosquete EN 3 PARTES iguales y humedecer cada una con el almibar.",
+    "2.- Rellenar 2 piezas de rosquete con relleno de limón, seguido con el relleno de melocotón",
+    "3.- Encremar la torta con la crema chantilly, No pasar peine, Haceunas olas en el borde de la superficie con la ayuda de la espatula.",
+    "4.- Hacer colochos formando un circulo en el centro, colocar el relleno de melo dentro del circulo. Decorar con 1/2 stick dorado.",
+    "5.- Colocar la torta en el domo, fechar, etiquetar.",
+    "6.- Guardar en camaras de refrigeración a 4ºC."
+  ],
+  "pesoTotalCantidad": 650,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "registroCambios": "Importación inicial desde Excel. Revisión 06: Cambio de decoracion"
+}

@@ -1,0 +1,113 @@
+{
+  "nombre": "Flan Tres Leches Redondo Mini 845g Spoon 32096",
+  "subsidiaria": "SERVICIOS DE PASTELERIA SA",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "09",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES redondo mini 150g",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "96292",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "MEZCLA PARA TRES LECHES PASTEURIZADA SPOON",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "95817",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "FLAN DE CARAMELO SPOON REDONDO MINI",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "95834",
+      "marca": "Spoon",
+      "observaciones": "1 unid"
+    },
+    {
+      "nombre": "CREMA CON MANJAR",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "95789",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "MANJAR DULCE LECHE",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "11400066",
+      "marca": "Nestle",
+      "observaciones": "Código secundario: 114000021"
+    },
+    {
+      "nombre": "CONT. 48 ON TRANSPA. TAPA PLANA (100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950672",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "0702123",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950705",
+      "marca": "Plasticos P",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA NESTLE LA LECHERA GOLD",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "51500031",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "0702069",
+      "marca": null,
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "Colocar en la base del contenedor el rosquete y mojar con la mezcla de leches pasteurizadas.",
+    "Colocar 20g de crema con manjar sobre el rosquete.",
+    "Montar con cuidado el flan sobre el rosquete, agregar todo el caramelo en el flan y se limpia el flan de caramelo.",
+    "Decorar con hilos de dulce de leche en fomar de enrejado sobre el flan.",
+    "Tapar el contenedor de tapa plana 48 onzas, fecha juliana, fecha de vencimiento, etiqueta nombre y codigo de barras, etiqueta Nestle La lechera."
+  ],
+  "pesoTotalCantidad": 845,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 5,
+  "porcionesUnidad": "Porciones",
+  "registroCambios": "Importación inicial desde Excel. Revision #9: Cambio de manjar"
+}

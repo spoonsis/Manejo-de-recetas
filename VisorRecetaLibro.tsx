@@ -20,23 +20,29 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
 
   const ingredientesCategorizados = useMemo(() => {
     const grupos = {
-      materiasPrimas: [] as IngredienteReceta[],
-      empaque: [] as IngredienteReceta[],
-      modi: [] as IngredienteReceta[]
+      ensamble: [] as IngredienteReceta[],
+      decoracion: [] as IngredienteReceta[],
+      empaque: [] as IngredienteReceta[]
     };
 
     recetaActiva.ingredientes.forEach((ing: IngredienteReceta) => {
-      if (ing.tipo === 'SEMIELABORADO') {
-        grupos.materiasPrimas.push(ing);
+      // Prioridad 1: Campo explícito 'seccionReceta'
+      if (ing.seccionReceta === 'ENSAMBLE') {
+        grupos.ensamble.push(ing);
+      } else if (ing.seccionReceta === 'DECORACION') {
+        grupos.decoracion.push(ing);
+      } else if (ing.seccionReceta === 'EMPAQUE') {
+        grupos.empaque.push(ing);
       } else {
+        // Fallback para datos antiguos o legacy basados en tipoMaterial
         const ins = insumos.find((i: any) => i.id === ing.idReferencia);
         const tipo = (ing.tipoMaterial || ins?.tipoMaterial || '').toUpperCase();
+        
         if (tipo.includes('EMPAQUE')) {
           grupos.empaque.push(ing);
-        } else if (tipo.includes('MODI')) {
-          grupos.modi.push(ing);
         } else {
-          grupos.materiasPrimas.push(ing);
+          // Todo lo demás cae en ensamble
+          grupos.ensamble.push(ing);
         }
       }
     });
@@ -72,7 +78,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               onClick={() => setTab(t as any)}
               className={`py-3 text-[10px] font-black uppercase tracking-widest border-b-4 transition-all ${tab === t ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-300'}`}
             >
-              {t === 'info' ? 'Ficha' : t === 'preparacion' ? 'Proceso' : 'Versiones'}
+              {t === 'info' ? 'Ficha' : t === 'preparacion' ? 'Preparación' : 'Versiones'}
             </button>
           ))}
         </div>
@@ -106,13 +112,13 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                       {[
-                        { label: 'Materias Primas & Semielaborados', data: ingredientesCategorizados.materiasPrimas },
-                        { label: 'Empaque', data: ingredientesCategorizados.empaque },
-                        { label: 'MODI', data: ingredientesCategorizados.modi }
+                        { label: 'Ensamble', data: ingredientesCategorizados.ensamble, color: 'text-indigo-600' },
+                        { label: 'Decoración', data: ingredientesCategorizados.decoracion, color: 'text-amber-600' },
+                        { label: 'Empaque', data: ingredientesCategorizados.empaque, color: 'text-blue-600' }
                       ].map(seccion => seccion.data.length > 0 && (
                         <React.Fragment key={seccion.label}>
                           <tr className="bg-slate-50/50">
-                            <td colSpan={5} className="px-4 py-1.5 text-[8px] font-black text-indigo-600 uppercase tracking-widest">{seccion.label}</td>
+                            <td colSpan={5} className={`px-4 py-1.5 text-[8px] font-black ${seccion.color} uppercase tracking-widest`}>{seccion.label}</td>
                           </tr>
                           {seccion.data.map((ing: { snapshotCostoUnitario: number; costoUnitario: number; id: any; nombre: any; codigoNetSuite: any; cantidad: any; unidad: any; marca: any; costoTotal: number; }) => {
                             const diff = ing.snapshotCostoUnitario ? ((ing.costoUnitario - ing.snapshotCostoUnitario) / ing.snapshotCostoUnitario) * 100 : 0;
@@ -154,7 +160,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                             </td>
                           </tr>
                           {/* Snapshot values for audit */}
-                          {ingredientesCategorizados.materiasPrimas.concat(ingredientesCategorizados.empaque, ingredientesCategorizados.modi).some((i: { snapshotCostoUnitario: any; }) => i.snapshotCostoUnitario) && (
+                          {ingredientesCategorizados.ensamble.concat(ingredientesCategorizados.decoracion, ingredientesCategorizados.empaque).some((i: { snapshotCostoUnitario: any; }) => i.snapshotCostoUnitario) && (
                             <tr className="bg-amber-50/30">
                               <td colSpan={5} className="px-4 py-1 text-[7px] font-bold uppercase text-amber-600 italic tracking-widest">Dato Histórico: Snapshot de costos capturado en aprobación</td>
                             </tr>
@@ -273,10 +279,10 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
             <div>
               <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Seguridad GastroFlow</p>
               <p className="text-[8px] font-bold text-slate-400 italic">
-                Auditado técnicamente el {recetaActiva.fechaRevision || 
-                 (recetaActiva.versiones && recetaActiva.versiones.length > 0 
-                   ? new Date(recetaActiva.versiones[recetaActiva.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR') 
-                   : 'Pendiente')}
+                Auditado técnicamente el {recetaActiva.fechaRevision ||
+                  (recetaActiva.versiones && recetaActiva.versiones.length > 0
+                    ? new Date(recetaActiva.versiones[recetaActiva.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR')
+                    : 'Pendiente')}
               </p>
             </div>
           </div>

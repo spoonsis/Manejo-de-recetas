@@ -1,0 +1,105 @@
+{
+  "nombre": "Torta Rect Decorada de Chocolate 2 Capas 8606g(50 porc)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Maria Jose Rodriguez, Chef",
+  "areaProduce": "ENSAMBLE / DECORACIÓN",
+  "areaEmpaca": "EMPAQUE",
+  "version": "02",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE PILLSBURY (2500g)",
+      "cantidad": 4500,
+      "unidad": "g",
+      "codigoNetSuite": "95189",
+      "marca": "Spoon",
+      "observaciones": "(2 Unidades)"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 4.5 KG )",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "Nestle",
+      "observaciones": null
+    },
+    {
+      "nombre": "RELLENO FUDGE (KILO)",
+      "cantidad": 1400,
+      "unidad": "g",
+      "codigoNetSuite": "0410151",
+      "marca": "Conexu",
+      "observaciones": "Encremar"
+    },
+    {
+      "nombre": "RELLENO FUDGE (KILO)",
+      "cantidad": 350,
+      "unidad": "Unids",
+      "codigoNetSuite": "0410151",
+      "marca": "Conexu",
+      "observaciones": "(Colocho Boquilla #22)"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 4.5 KG )",
+      "cantidad": 480,
+      "unidad": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "Nestle",
+      "observaciones": "(Colocho Boquilla #22)"
+    },
+    {
+      "nombre": "BASE 50 PORCIONES (PAQ=10 UNIDADES)",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "1950829",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "CAJA TROQUELADA # 25 ( 25*PAQ )",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "1950725",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "CINTA ADHESIVA",
+      "cantidad": 3,
+      "unidad": "m",
+      "codigoNetSuite": "703020",
+      "marca": "Mayca",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "0702007",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "SILICON",
+      "cantidad": 0.125,
+      "unidad": "Barra",
+      "codigoNetSuite": "5409017",
+      "marca": "Jimenez y T",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Partir solo 1 rosquete a lo largo para rellenar. Colocar el manjar y tapar con un rosquete entero, colocar manjar nuevamente y tapar con el medio rosquete restante.",
+    "2.- Colocar la torta en las bases pegadas con silicon.",
+    "3.- Encremar con el fudge y peinar los lados.",
+    "4.- Hacer enrejado con el dulce de leche encima en la superficie, hacer colocho de fudge en el borde.",
+    "5.- Colocar torta dentro de la caja, etiquetar y fechar. Guardar en camaras de refrigeración a 4ºC."
+  ],
+  "pesoTotalCantidad": 8606,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "registroCambios": "Importación inicial desde Excel"
+}

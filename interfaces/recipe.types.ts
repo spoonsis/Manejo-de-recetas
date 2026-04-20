@@ -26,6 +26,7 @@ export interface IngredienteReceta {
   marca?: string;
   observaciones?: string;
   tipoMaterial?: string;
+  seccionReceta?: 'ENSAMBLE' | 'DECORACION' | 'EMPAQUE';
   // Snapshot fields for audit
   snapshotCostoUnitario?: number;
   snapshotVersion?: number;
@@ -98,4 +99,7 @@ export interface Receta {
   areaProduce: string;
   areaEmpaca: string;
   fechaRevision?: string;
+  nombre_receta?: string;
+  codigo_netsuite?: string;
+  detalle_nombre_receta?: string;
 }

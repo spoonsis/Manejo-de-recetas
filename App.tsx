@@ -213,7 +213,7 @@ export default function App() {
         setInsumos(() => {
           return [
             ...nuevosInsumosNetSuite.map((ns: any) => ({
-              id: `ns_${ns.id}`,
+              id: ns.id,
               nombre: ns.nombre,
               tipo: 'NETSUITE',
               clase: TIPOS_MATERIAL[0], // 'Materia Prima'
@@ -228,7 +228,7 @@ export default function App() {
               source: 'EXTERNA'
             })),
             ...nuevosInsumosNuevos.map((loc: any) => ({
-              id: `loc_${loc.id}`,
+              id: loc.id,
               nombre: loc.nombre,
               tipo: 'LOCAL',
               clase: loc.tipo || TIPOS_MATERIAL[0], // Map from DB
@@ -391,6 +391,9 @@ export default function App() {
       costoUnitarioMP: 0,
       costoUnitarioEMP: 0,
       costoUnitarioMUDI: 0,
+      nombre_receta: '',
+      codigo_netsuite: '',
+      detalle_nombre_receta: '',
     };
     setEditandoReceta(nuevaReceta);
   };
@@ -600,16 +603,26 @@ export default function App() {
         snapshotCostos
       };
 
+      // Concatenación local para respuesta inmediata
+      const partCalidad = (codigoIngresado || currReceta.codigoCalidad || '').trim();
+      const partNombre = (currReceta.nombre_receta || currReceta.nombre || '').trim();
+      const partNS = (currReceta.codigo_netsuite || '').trim();
+      const detalleLocal = `${partCalidad} ${partNombre} ${partNS}`.replace(/\s+/g, ' ').trim();
+
       recetaFinal = {
-        ...recetaFinal,
+        ...currReceta,
         estado: siguienteEstado,
-        codigoCalidad: nuevaVersion.codigoCalidad,
+        codigoCalidad: codigoIngresado || currReceta.codigoCalidad,
         ingredientes: snapshotIngredientes,
-        totalMP: mp, totalEMP: emp, totalMUDI: mudi,
-        costoTotalBase: base, costoTotalFinal: final,
+        totalMP: mp,
+        totalEMP: emp,
+        totalMUDI: mudi,
+        costoTotalBase: base,
+        costoTotalFinal: final,
         costoUnitarioMP: mp / divisor,
         costoUnitarioEMP: emp / divisor,
         costoUnitarioMUDI: mudi / divisor,
+        detalle_nombre_receta: detalleLocal,
         versiones: [...currReceta.versiones, nuevaVersion],
         fechaRevision: new Date().toLocaleDateString('es-CR')
       };

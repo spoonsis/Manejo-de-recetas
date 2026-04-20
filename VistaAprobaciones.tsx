@@ -36,7 +36,9 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
 
               <div className="flex-1">
                 <div className="flex items-center gap-2">
-                  <h3 className="text-lg font-black text-slate-900 tracking-tight leading-tight">{r.nombre}</h3>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight leading-tight">
+                    {r.detalle_nombre_receta || r.nombre}
+                  </h3>
                   <button
                     onClick={() => onOpen(r)}
                     className="p-1.5 bg-business-mustard/10 text-business-orange rounded-lg hover:bg-business-orange hover:text-white transition-all shadow-sm"

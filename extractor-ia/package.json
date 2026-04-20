@@ -1,0 +1,17 @@
+{
+  "name": "gastroflow-extractor-ia",
+  "version": "1.0.0",
+  "description": "Extractor de recetas desde Excel usando IA para GastroFlow Pro",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "@google/genai": "^1.41.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0"
+  }
+}

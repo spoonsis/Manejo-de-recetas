@@ -1,0 +1,146 @@
+{
+  "nombre": "Torta dulce de leche Economica Industria 84105",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoracion",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 350 G",
+      "cantidad": 630,
+      "unidad": "g",
+      "codigoNetSuite": "907000287",
+      "marca": "FAS",
+      "observaciones": "2 ud"
+    },
+    {
+      "nombre": "ALMIBAR KILO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "908000021",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "96344",
+      "marca": "FAS",
+      "observaciones": "1 taza x/capa"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "95717",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "910000006",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "95717",
+      "marca": "FAS",
+      "observaciones": "colocho con boq #22"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "95718",
+      "marca": "FAS",
+      "observaciones": "colocho con boq #22 y marcador corazon"
+    },
+    {
+      "nombre": "CONFITILLO CORAZON MAVALERIO (PAQ:150G)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "107000012",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "908000032",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "121603",
+      "marca": "Mayca",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ TORTA GENERICA BUCCA PEQUEÑA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1952875",
+      "marca": "Litografia CR",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702007",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "701096",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "703020",
+      "marca": "Mayca",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Utilizar 2 rosquetes, humedecer cada uno y rellenar con 1 taza de crema con manjar esparcir bien",
+    "2.- Tapar con el otro rosquete.",
+    "3.- Colocar sobre la base de la quequera.",
+    "4.- Encremar con crema chantilly blanca y decorar con dulce ce leche para marmolear.",
+    "5.- Hacer colochos en los bordes acorde a la ficha. Hacer hilos de decoracion con ganache de chocolate oscuro.",
+    "6.- Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1030,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "registroCambios": "Importación inicial desde Excel. Referencia revisión 18 (Decoracion enamorados 2023)."
+}

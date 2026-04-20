@@ -218,14 +218,32 @@ interface Props {
 }
 
 const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
-  const ingredientesCategorizados = receta.ingredientesCategorizados || {
-    materiasPrimas: receta.ingredientes.filter((i: any) => {
-      const tipo = (i.tipoMaterial || '').toUpperCase();
-      return i.tipo === 'SEMIELABORADO' || (!tipo.includes('EMPAQUE') && !tipo.includes('MODI'));
-    }),
-    empaque: receta.ingredientes.filter((i: any) => (i.tipoMaterial || '').toUpperCase().includes('EMPAQUE')),
-    modi: receta.ingredientes.filter((i: any) => (i.tipoMaterial || '').toUpperCase().includes('MODI'))
-  };
+  const ingredientesCategorizados = receta.ingredientesCategorizados || (() => {
+    const grupos = {
+      ensamble: [] as any[],
+      decoracion: [] as any[],
+      empaque: [] as any[]
+    };
+
+    receta.ingredientes.forEach((ing: any) => {
+      if (ing.seccionReceta === 'ENSAMBLE') {
+        grupos.ensamble.push(ing);
+      } else if (ing.seccionReceta === 'DECORACION') {
+        grupos.decoracion.push(ing);
+      } else if (ing.seccionReceta === 'EMPAQUE') {
+        grupos.empaque.push(ing);
+      } else {
+        const tipo = (ing.tipoMaterial || '').toUpperCase();
+        if (tipo.includes('EMPAQUE')) {
+          grupos.empaque.push(ing);
+        } else {
+          grupos.ensamble.push(ing);
+        }
+      }
+    });
+
+    return grupos;
+  })();
 
   return (
     <Document>
@@ -242,7 +260,7 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
           <View style={styles.titleSection}>
             <Text style={styles.companyName}>SERVICIOS DE PASTELERIA S.A.</Text>
             <Text style={styles.docType}>Especificación de Receta</Text>
-            <Text style={styles.recipeName}>{receta.nombre}</Text>
+            <Text style={styles.recipeName}>{receta.detalle_nombre_receta || receta.nombre}</Text>
           </View>
           <View style={styles.metaSection}>
             <View style={styles.metaRow}>
@@ -296,39 +314,27 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
             <Text style={styles.colObs}>Obs.</Text>
           </View>
 
-          {/* MATERIAS PRIMAS */}
-          <View style={styles.categoryRow}>
-            <Text style={styles.categoryText}>Materias Primas & Semielaborados</Text>
-          </View>
-          {ingredientesCategorizados.materiasPrimas.map((ing: any, i: number) => (
-            <View key={i} style={styles.tableRow}>
-              <Text style={styles.colCode}>{ing.codigoNetSuite || '-'}</Text>
-              <Text style={styles.colDesc}>{ing.nombre}</Text>
-              <Text style={styles.colBrand}>{ing.marca || '-'}</Text>
-              <Text style={styles.colQty}>{ing.cantidad || 0}</Text>
-              <Text style={styles.colUnit}>{ing.unidad || 'g'}</Text>
-              <Text style={styles.colObs}>{ing.observaciones || '-'}</Text>
-            </View>
-          ))}
-
-          {/* EMPAQUE */}
-          {ingredientesCategorizados.empaque.length > 0 && (
-            <>
-              <View style={styles.categoryRow}>
-                <Text style={styles.categoryText}>Empaque</Text>
+          {[
+            { label: 'Ensamble', data: ingredientesCategorizados.ensamble, color: '#059669' },
+            { label: 'Decoración', data: ingredientesCategorizados.decoracion, color: '#d97706' },
+            { label: 'Empaque', data: ingredientesCategorizados.empaque, color: '#2563eb' }
+          ].map((seccion, idx) => seccion.data.length > 0 && (
+            <React.Fragment key={idx}>
+              <View style={[styles.categoryRow, { borderLeft: `3px solid ${seccion.color}` }]}>
+                <Text style={[styles.categoryText, { color: seccion.color }]}>{seccion.label}</Text>
               </View>
-              {ingredientesCategorizados.empaque.map((ing: any, i: number) => (
+              {seccion.data.map((ing: any, i: number) => (
                 <View key={i} style={styles.tableRow}>
                   <Text style={styles.colCode}>{ing.codigoNetSuite || '-'}</Text>
                   <Text style={styles.colDesc}>{ing.nombre}</Text>
                   <Text style={styles.colBrand}>{ing.marca || '-'}</Text>
                   <Text style={styles.colQty}>{ing.cantidad || 0}</Text>
-                  <Text style={styles.colUnit}>{ing.unidad || 'u'}</Text>
+                  <Text style={styles.colUnit}>{ing.unidad || '-'}</Text>
                   <Text style={styles.colObs}>{ing.observaciones || '-'}</Text>
                 </View>
               ))}
-            </>
-          )}
+            </React.Fragment>
+          ))}
         </View>
 
         {/* RENDIMIENTO COMPACTO EN GRILLA */}

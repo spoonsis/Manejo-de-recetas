@@ -136,8 +136,19 @@ async function upsertReceta(data) {
             mermaCantidad, mermaUnidad, sumaTotalInsumos, subsidiaria,
             elaboradoPor, aprobadoPor, areaProduce, areaEmpaca,
             flujoAprobacionId, costoUnitarioMP, costoUnitarioEMP, costoUnitarioMUDI,
-            ultimoRegistroCambios, fechaRevision
+            ultimoRegistroCambios, fechaRevision,
+            nombre_receta, codigo_netsuite
         } = data;
+
+        // Lógica de concatenación automática al aprobar
+        let detalle_nombre_receta = data.detalle_nombre_receta || null;
+        if (estado === 'APROBADO') {
+            const partCalidad = codigoCalidad ? codigoCalidad.trim() : '';
+            const partNombre = nombre ? nombre.trim() : '';
+            const partNS = codigo_netsuite ? codigo_netsuite.trim() : '';
+            
+            detalle_nombre_receta = `${partCalidad} ${partNombre} ${partNS}`.replace(/\s+/g, ' ').trim();
+        }
 
         await conn.query(`
             INSERT INTO recetas (
@@ -149,9 +160,10 @@ async function upsertReceta(data) {
                 mermaCantidad, mermaUnidad, sumaTotalInsumos, subsidiaria,
                 elaboradoPor, aprobadoPor, areaProduce, areaEmpaca,
                 flujo_aprobacion_id, costoUnitarioMP, costoUnitarioEMP, costoUnitarioMUDI,
-                ultimoRegistroCambios, fecha_revision
+                ultimoRegistroCambios, fecha_revision,
+                nombre_receta, codigo_netsuite, detalle_nombre_receta
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON DUPLICATE KEY UPDATE 
                 nombre=VALUES(nombre), estado=VALUES(estado), versionActual=VALUES(versionActual), 
                 pasos=VALUES(pasos), costoTotal=VALUES(costoTotal), tipoCosteo=VALUES(tipoCosteo), 
@@ -171,7 +183,10 @@ async function upsertReceta(data) {
                 costoUnitarioEMP=VALUES(costoUnitarioEMP),
                 costoUnitarioMUDI=VALUES(costoUnitarioMUDI),
                 ultimoRegistroCambios=VALUES(ultimoRegistroCambios),
-                fecha_revision=VALUES(fecha_revision)
+                fecha_revision=VALUES(fecha_revision),
+                nombre_receta=VALUES(nombre_receta),
+                codigo_netsuite=VALUES(codigo_netsuite),
+                detalle_nombre_receta=VALUES(detalle_nombre_receta)
         `, [
             id, nombre, estado, versionActual ?? 1, JSON.stringify(pasos || []), costoTotal ?? 0,
             esSemielaborado ? 1 : 0, tipoCosteo || 'GRAMO', mudi ?? 0, gif ?? 0,
@@ -182,7 +197,8 @@ async function upsertReceta(data) {
             mermaCantidad ?? null, mermaUnidad ?? null, sumaTotalInsumos ?? 0, subsidiaria ?? null,
             elaboradoPor ?? null, aprobadoPor ?? null, areaProduce ?? null, areaEmpaca ?? null,
             flujoAprobacionId ?? null, costoUnitarioMP ?? 0, costoUnitarioEMP ?? 0, costoUnitarioMUDI ?? 0,
-            ultimoRegistroCambios ?? null, fechaRevision ?? null
+            ultimoRegistroCambios ?? null, fechaRevision ?? null,
+            nombre_receta ?? null, codigo_netsuite ?? null, detalle_nombre_receta ?? null
         ]);
 
         // Limpiar ingredientes existentes de esta receta

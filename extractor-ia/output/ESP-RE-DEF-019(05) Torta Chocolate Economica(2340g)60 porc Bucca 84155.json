@@ -1,0 +1,128 @@
+{
+  "nombre": "Torta Chocolate Economica(2340g)60 porc Bucca 84155",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "05",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE PASTELERO REAL 1800g",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "903000045",
+      "marca": "FAS",
+      "observaciones": "Peso crudo 1800g"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 4.5 K)",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "Nestle",
+      "observaciones": "Medida alternativa: 1 Taza"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "95717",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "CREMA CHANTILLY TOP CREAM CHOCOLATE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "901000156",
+      "marca": "FAS",
+      "observaciones": "Medida alternativa: Colocho boquilla 195"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "908000032",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "CHOCOLATE OSCURO BLOSSOMS (KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "1200003",
+      "marca": "PMT",
+      "observaciones": null
+    },
+    {
+      "nombre": "BASE CARTON 30 PORCIONES (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950829",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "QUEQUERA RECTANGULAR 1/2 (CAJA:35 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "51400001",
+      "marca": "Export pmt",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702007",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "701096",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ TORTA GENERICA BUCCA GRANDE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "60100011",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "703020",
+      "marca": null,
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Partir el rosquete por la mitad y rellenar con manjar. Tapar. Colocar en una orla.",
+    "2.- Encremar con crema chantilly, peinar a los lados. Decorar con colochos con crema chantilly de chocolate Bucca.",
+    "3.- Decorar con rizos de chocolate sobre el colocho.",
+    "4.- Dejar caer el ganache a los lados, chorreando. Acorde a las fichas."
+  ],
+  "pesoTotalCantidad": 2250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "registroCambios": "Importación inicial desde Excel. Revisión #5: Actualizacion de procedimiento, de codigos, agregar boquilla, Cambio peso final"
+}

@@ -1,0 +1,211 @@
+{
+  "nombre": "Torta Moka(1300g) Spoon 36092",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Maria Jose Rodriguez, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "04",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE MELOCOTON PURATOS (360g)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "96270",
+      "marca": "Spoon",
+      "observaciones": "equivalente a 1/2"
+    },
+    {
+      "nombre": "ALMIBAR DE CAFÉ",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "CREMA MOKA PARA ENCREMAR",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "1/2 tz +/ 1/4 tz"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CAFE (21 Kg)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "95719",
+      "marca": "Spoon",
+      "observaciones": "1/3 tz"
+    },
+    {
+      "nombre": "ALMENDRAS CON CHOCOLATE",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "1/4 tz"
+    },
+    {
+      "nombre": "ROSQUETE MELOCOTON PURATOS (360g)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "96270",
+      "marca": "Spoon",
+      "observaciones": "equivalente a 1/2"
+    },
+    {
+      "nombre": "ALMIBAR DE CAFÉ",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "CREMA CHANTILLY CAFE (21 Kg)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "95719",
+      "marca": "Spoon",
+      "observaciones": "1/3 tz"
+    },
+    {
+      "nombre": "CREMA MOKA PARA ENCREMAR",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "1/2 tz +/ 1/4 tz"
+    },
+    {
+      "nombre": "ALMENDRAS CON CHOCOLATE",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "1/4 tz"
+    },
+    {
+      "nombre": "ROSQUETE MELOCOTON PURATOS (360g)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "96270",
+      "marca": "Spoon",
+      "observaciones": "equivalente a 1/2"
+    },
+    {
+      "nombre": "ALMIBAR DE CAFÉ",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "CREMA MOKA PARA ENCREMAR",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "Encremado"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CAFE (21 Kg)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "95719",
+      "marca": "Spoon",
+      "observaciones": "Boquilla 842"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO (4700g)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "96199",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "OLAS BLANCAS",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "1210459",
+      "marca": "Soluciones C",
+      "observaciones": null
+    },
+    {
+      "nombre": "BARQUILLO BETEADO DE CHOCOLATE",
+      "cantidad": 4,
+      "unidad": "Unids",
+      "codigoNetSuite": "0710295",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ALMENDRAS TOSTADAS (5.730 Kg)",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "95036",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "QUEQUERA 10\" MEDIA (25.5 * 12cm CAJA 70)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "1942315",
+      "marca": "Export pmt",
+      "observaciones": null
+    },
+    {
+      "nombre": "ORLA CARTON 10\" (100 * PAQ)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "1950692",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "ET. CINTA GENERICA P/ TORTA SPOON. (Grande)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "0702099",
+      "marca": "Litografia CR",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "0702069",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Utilizar 1 1/2 rosquetes, humedecer con almibar. Rellenar la primera capa con crema moka y almendras y crema de manjar.",
+    "2.- Colocar otro medio rosquete humedecido y rellenar crema moka y almendras y crema de manjar.",
+    "3.- Tapar con rosquete humedecido.",
+    "4.- Encremar con crema moka. Hacer el colocho con crema chantilly de café, con la boquilla 842 acorde a la fotografia.",
+    "5.- Hacer 18 colochos y colocar 4 barquillos de chocolate.",
+    "5.- Colcar en el centro chocolate rallado y olas de chocolate blanco, acorde a la fotografia.",
+    "6.- Colocar en una orla #10 y en una quequera 10 media. Etiquetar con nombre, fecha de vencimiento y spoon."
+  ],
+  "pesoTotalCantidad": 1300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "registroCambios": "Importación inicial desde Excel"
+}

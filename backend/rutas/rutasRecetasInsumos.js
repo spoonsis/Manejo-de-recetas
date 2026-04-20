@@ -87,7 +87,7 @@ router.get("/insumos-unificados", async (req, res) => {
 
         const listadoUnificado = [
             ...itemsNetSuite.map(ns => ({
-                id: `ns_${ns.id}`,
+                id: ns.id,
                 originalId: ns.id,
                 nombre: ns.nombre,
                 tipo: 'INSUMO',
@@ -97,7 +97,7 @@ router.get("/insumos-unificados", async (req, res) => {
                 unidad: ns.unidad || 'kg'
             })),
             ...insumosLocales.map(loc => ({
-                id: `loc_${loc.id}`,
+                id: loc.id,
                 originalId: loc.id,
                 nombre: loc.nombre,
                 tipo: 'INSUMO',
@@ -105,7 +105,7 @@ router.get("/insumos-unificados", async (req, res) => {
                 precio: Number(loc.precioCompra || loc.precioPorUnidad || 0)
             })),
             ...recetas.map(r => ({
-                id: `rec_${r.id}`,
+                id: r.id,
                 originalId: r.id,
                 nombre: r.nombre,
                 tipo: 'RECETA', // Tratadas como semielaborados

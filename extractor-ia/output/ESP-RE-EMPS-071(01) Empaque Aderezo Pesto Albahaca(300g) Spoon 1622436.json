@@ -1,0 +1,54 @@
+{
+  "nombre": "Empaque Aderezo Pesto Albahaca(300g) Spoon 1622436",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Andrea Zamora, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "01",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "PESTO ALBAHACA SPOON",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "95110",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 6X10X4  (KILO)",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "1950904",
+      "marca": "Plasticos P",
+      "observaciones": null
+    },
+    {
+      "nombre": "STICKER NOMBRE",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "0702067",
+      "marca": "Cemusa",
+      "observaciones": null
+    },
+    {
+      "nombre": "STICKER FECHA",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Pesar 300g de relleno de Aderezo Pesto Spoon en bolsa 6*10*4 cerrar.",
+    "2.- Etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 0.5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Bolsas",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,70 @@
+{
+  "nombre": "75213 Empaque Palitos De Queso 1 Topper(140 g) SPOON 44019",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "04",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "PASTA P/PALITOS DE QUESO (KILO)",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "906000033",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "PASTA P/PALITOS DE QUESO (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "906000033",
+      "marca": "FAS",
+      "observaciones": "Merma (palitos quebrados por manipulacion)"
+    },
+    {
+      "nombre": "CONTENEDOR CUADRADO POTE (CAJA=600UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1952873",
+      "marca": "Nova S",
+      "observaciones": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702077",
+      "marca": "Litografia CR",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA FECHA DE VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702067",
+      "marca": "Cemusa",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Empacar 140g de palitos de queso en un contenedor 460p.",
+    "2.- Etiquetar con etiqueta generica Spoon pequeña, fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 140,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1.16,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "registroCambios": "Importación inicial desde Excel"
+}

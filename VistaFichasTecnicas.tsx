@@ -101,9 +101,12 @@ export default function VistaFichasTecnicas({
                 <span className={`text-[9px] font-black px-3 py-1 rounded-full border shadow-sm ${f.estado === EstadoFicha.COMPLETA ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-amber-50 text-amber-600 border-amber-100'}`}>
                   {f.estado.replace('_', ' ')}
                 </span>
-                <span className="text-[10px] font-black text-slate-300">v{f.version}</span>
+                <div className="flex flex-col items-end">
+                  <span className="text-[10px] font-black text-slate-300">v{f.version}</span>
+                  {f.codigoCalidadPropio && <span className="text-[8px] font-bold text-slate-400 mt-0.5">{f.codigoCalidadPropio}</span>}
+                </div>
               </div>
-              <h3 className="text-lg font-black text-slate-900 group-hover:text-business-orange transition-colors uppercase leading-tight mb-1">{f.nombreReceta}</h3>
+              <h3 className="text-lg font-black text-slate-900 group-hover:text-business-orange transition-colors uppercase leading-tight mb-1">{recetaRelacionada ? recetaRelacionada.nombre : f.nombreReceta}</h3>
               <p className="text-[10px] font-black text-business-orange uppercase tracking-widest mb-3">{f.subsidiaria}</p>
               <div className="flex items-center gap-2 mb-4">
                 <img src={`https://ui-avatars.com/api/?name=${f.elaboradoPor}&background=F5EBE0&color=EF8E19`} className="w-5 h-5 rounded-full border" />
@@ -166,7 +169,7 @@ export default function VistaFichasTecnicas({
                 return (
                   <tr key={f.id} className="hover:bg-slate-50/50 transition-colors group">
                     <td className="px-6 py-3">
-                      <div className="font-black text-slate-900 text-sm">{f.nombreReceta}</div>
+                      <div className="font-black text-slate-900 text-sm">{recetaRelacionada ? recetaRelacionada.nombre : f.nombreReceta}</div>
                       <div className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">{f.subsidiaria}</div>
                     </td>
                     <td className="px-6 py-3 relative">
@@ -174,7 +177,10 @@ export default function VistaFichasTecnicas({
                       <span className={`text-[9px] font-black px-2 py-0.5 rounded uppercase border flex items-center w-fit ${f.estado === EstadoFicha.COMPLETA ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : f.estado === EstadoFicha.INACTIVA ? 'bg-rose-50 text-rose-500 border-rose-100' : 'bg-amber-50 text-amber-600 border-amber-100'}`}>
                         {f.estado.replace('_', ' ')}
                       </span>
-                      <div className="text-[10px] font-bold text-slate-400 mt-1">v{f.version}</div>
+                      <div className="flex items-center gap-1 mt-1">
+                        <span className="text-[10px] font-bold text-slate-400">v{f.version}</span>
+                        {f.codigoCalidadPropio && <span className="text-[8px] font-bold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">{f.codigoCalidadPropio}</span>}
+                      </div>
                     </td>
                     <td className="px-6 py-3">
                       <div className="flex items-center gap-2">

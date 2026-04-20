@@ -1,0 +1,102 @@
+{
+  "nombre": "BASE PREMEZCLA P/PASTA ALFAJOR 23023g 95613",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "10",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "MARGARINA BAKER TABLETA (CAJA: 25 K)",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "10100289",
+      "marca": "Numar",
+      "observaciones": null
+    },
+    {
+      "nombre": "HARINA HARISOL WINTER (SACO:25 KG)",
+      "cantidad": 12000,
+      "unidad": "g",
+      "codigoNetSuite": "0510107",
+      "marca": "Nacararina",
+      "observaciones": null
+    },
+    {
+      "nombre": "AZUCAR POLVO P.REAL (PAQ:2.5 Kg)",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "10100003",
+      "marca": "Pastelero Real",
+      "observaciones": null
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 23,
+      "unidad": "g",
+      "codigoNetSuite": "1212410",
+      "marca": "Aseal",
+      "observaciones": null
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950702",
+      "marca": "Plasticos P",
+      "observaciones": null
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "1950708",
+      "marca": "Plasticos P",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "0702123",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "403000007",
+      "marca": "Mayca",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "60100010",
+      "marca": "Etiplast",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Pesar en una bolsa 17*25 harina y preservante. Etiquetar con fecha de vencimiento.",
+    "2.- Pesar en otra bolsa 17*25 la margarina. Y Pesar en una bolsa 12*18 el azúcar en polvo."
+  ],
+  "pesoTotalCantidad": 23023,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "registroCambios": "Revisión #10: Cambio en las materias primas y marcas de mp"
+}

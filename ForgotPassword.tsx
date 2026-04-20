@@ -13,7 +13,7 @@ export default function ForgotPassword() {
         e.preventDefault();
         setLoading(true);
         setError('');
-        
+
         try {
             const res = await fetch('/api/auth/forgot-password', {
                 method: 'POST',
@@ -21,7 +21,7 @@ export default function ForgotPassword() {
                 body: JSON.stringify({ email })
             });
             const data = await res.json();
-            
+
             if (res.ok) {
                 setSuccess(true);
             } else {
@@ -37,7 +37,7 @@ export default function ForgotPassword() {
     return (
         <div className="min-h-screen bg-business-olive flex items-center justify-center p-4">
             <div className="bg-white w-full max-w-[400px] rounded-3xl shadow-2xl p-8 animate-in fade-in zoom-in duration-500 relative">
-                <button 
+                <button
                     onClick={() => navigate('/')}
                     className="absolute top-6 left-6 text-slate-400 hover:text-business-orange transition-colors"
                 >

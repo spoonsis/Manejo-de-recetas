@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque pechuga parrilla Cruda (1 unidad)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "03",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ADOBO PECHUGA PARRILLA (41940g)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "901000081",
+      "marca": "FAS",
+      "observaciones": null
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 6X6X4 (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "401000002",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702069",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702007",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "701096",
+      "marca": null,
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "Colocar 1 unidad de pechuga en una bolsa 6x6x4. Sellar",
+    "Etiquetar con nombre, # juliano, Fecha vencimiento."
+  ],
+  "pesoTotalCantidad": 165,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "registroCambios": "Importación inicial desde Excel. Actualización de códigos."
+}

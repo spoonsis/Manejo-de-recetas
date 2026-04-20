@@ -85,6 +85,7 @@ export interface FichaTecnica {
   requisitosLegales: string;
   imagenes: string[];
 
+  versionesAnteriores?: FichaTecnica[];
   historialCambios: RegistroCambioFicha[];
   fechaCreacion: string;
   ultimaModificacion: string;

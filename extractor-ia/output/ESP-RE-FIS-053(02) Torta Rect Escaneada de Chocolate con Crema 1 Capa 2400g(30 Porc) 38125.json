@@ -1,0 +1,105 @@
+{
+  "nombre": "Torta Rect Escaneada de Chocolate con Crema 1 Capa 2400g(30 Porc) 38125",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Maria Jose Rodriguez, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "02",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE RECT. 30 PORC. CHOCOLATE (1500g) PILLSBURY",
+      "cantidad": 1390,
+      "unidad": "g",
+      "codigoNetSuite": "95183",
+      "marca": "Spoon",
+      "observaciones": "Peso crudo 1500g"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 4.5 KG )",
+      "cantidad": 572,
+      "Boyd": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "Nestle",
+      "observaciones": null
+    },
+    {
+      "nombre": "CREMA CHANTILLY FIGURITAS (6000g)",
+      "cantidad": 345,
+      "unidad": "g",
+      "codigoNetSuite": "95716",
+      "marca": "Spoon",
+      "observaciones": "Encremar"
+    },
+    {
+      "nombre": "CREMA CHANTILLY FIGURITAS (6000g)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "95716",
+      "marca": "Spoon",
+      "observaciones": "Colocho"
+    },
+    {
+      "nombre": "LAMINA AZUCAR ESCANEADA",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "96266",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "CONFITURA DE COLORES",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "0804062",
+      "marca": null,
+      "observaciones": null
+    },
+    {
+      "nombre": "BASE CARTON 30 PORCIONES ( 25 * PAQ )",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "1950812",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "CAJA TROQUELADA # 25 ( 15*PAQ )",
+      "cantidad": 1,
+      "Boyd": "Unid",
+      "codigoNetSuite": "1950725",
+      "marca": "Estuardo",
+      "observaciones": null
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "0703020",
+      "marca": "Mayca",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1.- Partir el rosquete por la mitad y rellenar la capa con el relleno de dulce de leche.",
+    "2.- Colocar la otra tapa y encremar con la crema chantilly blanca, pasar el peine por los costados.",
+    "3.- Colocar la lámina escaneada y formar los colochos con la crema.",
+    "4.- Colocar la torta en la caja de cartón, fechar,etiquetar.",
+    "5.- Mantener en temperatura ambiente."
+  ],
+  "pesoTotalCantidad": 2400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -30,6 +30,9 @@ const recetaSchema = z.object({
     equipamiento: z.string().optional().nullable(),
     observaciones: z.string().optional().nullable(),
     codigoCalidad: z.string().optional().nullable(),
+    nombre_receta: z.string().optional().nullable(),
+    codigo_netsuite: z.string().optional().nullable(),
+    detalle_nombre_receta: z.string().optional().nullable(),
     ingredientes: z.array(z.any()).optional()
 }).passthrough();
 

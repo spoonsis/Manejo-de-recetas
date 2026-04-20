@@ -1,0 +1,111 @@
+{
+  "nombre": "Sopa Azteca 95822",
+  "subsidiary": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "19",
+  "estado": "BORRADOR",
+  "ingredientes": [
+    {
+      "nombre": "TOMATE PELADO ENTERO ROMA",
+      "cantidad": 15300,
+      "unidad": "g",
+      "codigoNetSuite": "109000135",
+      "marca": "Roma",
+      "observaciones": "(UND: 2.5 K)"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 15600,
+      "unidad": "g",
+      "codigoNetSuite": "95120",
+      "marca": "Spoon",
+      "observaciones": "( BOLSA = 5000g)"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 1740,
+      "unidad": "g",
+      "codigoNetSuite": "0101035",
+      "marca": "Presto",
+      "observaciones": null
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 1320,
+      "unidad": "g",
+      "codigoNetSuite": "0101115",
+      "marca": "Presto",
+      "observaciones": null
+    },
+    {
+      "nombre": "AJO MOLIDO PRESTO",
+      "cantidad": 48,
+      "unidad": "g",
+      "codigoNetSuite": "512319",
+      "marca": "Spoon",
+      "observaciones": null
+    },
+    {
+      "nombre": "OREGANO TONES",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "105000002",
+      "marca": "Tones",
+      "observaciones": null
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "0610236",
+      "marca": "PRIMA",
+      "observaciones": null
+    },
+    {
+      "nombre": "CHILE CHIPOTLE COSTEÑA",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "1010009",
+      "marca": "Costeña",
+      "observaciones": "(UND:2.9 K)"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "1212412",
+      "marca": "Aseal",
+      "observaciones": null
+    },
+    {
+      "nombre": "AZUCAR D.MARIA CORRIENTE",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "0510109",
+      "marca": "Divela",
+      "observaciones": null
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "0101073",
+      "marca": "FRESQUITA",
+      "observaciones": null
+    }
+  ],
+  "pasos": [
+    "1- Licuar todos los ingredientes juntos y luego agregar en una olla.",
+    "2- Llevar a hervor y dejar 2 minutos.",
+    "3- Sacar en bandejas y llevar a choque termico."
+  ],
+  "pesoTotalCantidad": 31020,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "registroCambios": "Revisión #19: Aumento en la tanda y rendimiento despues de corrida."
+}

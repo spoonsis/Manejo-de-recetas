@@ -10,7 +10,8 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
 
   const filtradas = useMemo(() => {
     return recipes.filter((r: any) =>
-      r.nombre.toLowerCase().includes(search.toLowerCase()) &&
+      (r.nombre.toLowerCase().includes(search.toLowerCase()) || 
+       (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(search.toLowerCase()))) &&
       (areaFilter === '' || r.areaProduce === areaFilter)
     );
   }, [recipes, search, areaFilter]);
@@ -53,7 +54,9 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
                   <span className="text-[8px] font-black uppercase tracking-widest px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded-md border border-emerald-100">Vigente</span>
                   <span className="text-[9px] font-black text-slate-300">v{r.versionActual}</span>
                 </div>
-                <h3 className="text-lg font-black text-slate-900 mb-1 group-hover:text-business-orange transition-colors leading-tight">{r.nombre}</h3>
+                <h3 className="text-lg font-black text-slate-900 mb-1 group-hover:text-business-orange transition-colors leading-tight">
+                  {r.detalle_nombre_receta || r.nombre}
+                </h3>
                 <div className="text-[8px] font-bold text-slate-400 uppercase mb-2">
                   Auditado: {r.fechaRevision || 
                             (r.versiones && r.versiones.length > 0 
@@ -88,7 +91,9 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
                 {filtradas.map((r: any) => (
                   <tr key={r.id} onClick={() => onSelect(r)} className="hover:bg-slate-50/50 transition-colors cursor-pointer group">
                     <td className="px-6 py-3">
-                      <div className="font-black text-slate-900 text-base leading-none">{r.nombre}</div>
+                      <div className="font-black text-slate-900 text-base leading-none">
+                        {r.detalle_nombre_receta || r.nombre}
+                      </div>
                       <div className="flex items-center gap-2 mt-1">
                         <span className="text-[9px] font-bold text-slate-400 uppercase">{r.areaProduce || 'Sin Área'}</span>
                         <span className="text-[8px] font-black text-indigo-400 uppercase bg-indigo-50 px-1.5 py-0.5 rounded">

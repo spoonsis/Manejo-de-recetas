@@ -17,8 +17,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
   const [tabActiva, setTabActiva] = useState<'ficha' | 'pasos' | 'historial'>('ficha');
   const [nuevoPaso, setNuevoPaso] = useState('');
   const [nombreTmp, setNombreTmp] = useState('');
-  const [cantidadIngrediente, setCantidadIngrediente] = useState(1);
-  const [unidadIngrediente, setUnidadIngrediente] = useState('kg');
+  const [cantidadIngrediente, setCantidadIngrediente] = useState();
+  const [unidadIngrediente, setUnidadIngrediente] = useState('g');
   const [esProductoNuevo, setEsProductoNuevo] = useState(false);
   const [isNew, setIsNew] = useState(false);
   const [codigo, setCodigo] = useState('');
@@ -29,6 +29,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
   const [nombreInterno, setNombreInterno] = useState('');
   const [idReferenciaInterno, setIdReferenciaInterno] = useState('');
   const [tipoMaterialIngrediente, setTipoMaterialIngrediente] = useState('');
+  const [seccionRecetaTmp, setSeccionRecetaTmp] = useState<'ENSAMBLE' | 'DECORACION' | 'EMPAQUE'>('ENSAMBLE');
   const [costoUnitarioTmp, setCostoUnitarioTmp] = useState(0);
 
   const [estaOptimizando, setEstaOptimizando] = useState(false);
@@ -151,7 +152,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
       descripcionIngrediente: descripcionDetalle,
       marca,
       observaciones,
-      tipoMaterial: tipoMaterialIngrediente
+      tipoMaterial: tipoMaterialIngrediente,
+      seccionReceta: seccionRecetaTmp
     };
 
     setDatosForm({ ...datosForm, ingredientes: [...datosForm.ingredientes, nuevoIng] });
@@ -167,6 +169,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
     setCantidadIngrediente(1);
     setUnidadIngrediente('kg');
     setTipoMaterialIngrediente('');
+    setSeccionRecetaTmp('ENSAMBLE');
     setCostoUnitarioTmp(0);
   };
 
@@ -255,23 +258,29 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
   const ingredientesCategorizados = useMemo(() => {
     const grupos = {
-      materiasPrimas: [] as IngredienteReceta[],
-      empaque: [] as IngredienteReceta[],
-      modi: [] as IngredienteReceta[]
+      ensamble: [] as IngredienteReceta[],
+      decoracion: [] as IngredienteReceta[],
+      empaque: [] as IngredienteReceta[]
     };
 
     datosForm.ingredientes.forEach((ing: IngredienteReceta) => {
-      if (ing.tipo === 'SEMIELABORADO') {
-        grupos.materiasPrimas.push(ing);
+      // Prioridad 1: Campo explícito 'seccionReceta'
+      if (ing.seccionReceta === 'ENSAMBLE') {
+        grupos.ensamble.push(ing);
+      } else if (ing.seccionReceta === 'DECORACION') {
+        grupos.decoracion.push(ing);
+      } else if (ing.seccionReceta === 'EMPAQUE') {
+        grupos.empaque.push(ing);
       } else {
+        // Fallback para datos antiguos o legacy basados en tipoMaterial
         const ins = insumos.find((i: any) => i.id === ing.idReferencia);
         const tipo = (ing.tipoMaterial || ins?.tipoMaterial || '').toUpperCase();
+
         if (tipo.includes('EMPAQUE')) {
           grupos.empaque.push(ing);
-        } else if (tipo.includes('MODI')) {
-          grupos.modi.push(ing);
         } else {
-          grupos.materiasPrimas.push(ing);
+          // Todo lo demás cae en ensamble si no tiene sección definida
+          grupos.ensamble.push(ing);
         }
       }
     });
@@ -290,7 +299,9 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               <FileText className="w-6 h-6" />
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">{datosForm.nombre || 'Nueva Receta / Plato'}</h2>
+              <h2 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
+                {datosForm.detalle_nombre_receta || datosForm.nombre || 'Nueva Receta / Plato'}
+              </h2>
               <div className="flex items-center gap-2 mt-1">
                 <span className={`text-[8px] font-black px-2 py-0.5 rounded-full border shadow-sm ${ESTILOS_ESTADO[datosForm.estado]}`}>
                   {ETIQUETAS_ESTADO[datosForm.estado]}
@@ -357,11 +368,22 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="lg:col-span-2 space-y-4">
-                  <div className="grid grid-cols-1 md:grid  gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest">Nombre del Plato / Receta</label>
                       <input type="text" disabled={!esChefEditable} value={datosForm.nombre} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, nombre: e.target.value })}
                         className="w-full p-1.5 border rounded-xl font-black text-md outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm" />
+                    </div>
+                    <div>
+                      <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest">Código NetSuite de la Receta</label>
+                      <input
+                        type="text"
+                        disabled={!esChefEditable}
+                        value={datosForm.codigo_netsuite || ''}
+                        onChange={(e) => setDatosForm({ ...datosForm, codigo_netsuite: e.target.value })}
+                        placeholder="Ej. 95822"
+                        className="w-full p-1.5 border rounded-xl font-bold text-sm outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm"
+                      />
                     </div>
                     {datosForm.codigoCalidad && (
                       <div className="relative">
@@ -369,6 +391,14 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         <div className="w-full p-2.5 border rounded-xl font-black text-lg bg-slate-100 text-slate-500 shadow-inner flex items-center justify-between">
                           {datosForm.codigoCalidad}
                           <ShieldCheck className="w-5 h-5 text-emerald-500" />
+                        </div>
+                      </div>
+                    )}
+                    {datosForm.detalle_nombre_receta && (
+                      <div className={datosForm.codigoCalidad ? "" : "md:col-span-2"}>
+                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest flex items-center gap-1">Nombre Detallado Final (Auto) <BadgeCheck className="w-2.5 h-2.5 text-emerald-500" /></label>
+                        <div className="w-full p-2.5 border border-emerald-100 rounded-xl font-black text-xs bg-emerald-50 text-emerald-900 shadow-inner">
+                          {datosForm.detalle_nombre_receta}
                         </div>
                       </div>
                     )}
@@ -476,15 +506,27 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">U.M.</label>
                         <select value={unidadIngrediente} onChange={(e: { target: { value: any; }; }) => setUnidadIngrediente(e.target.value)} className="w-full p-2 border-none rounded-lg bg-slate-800 font-bold text-white outline-none text-xs">{UNIDADES.map(u => <option key={u} value={u}>{u}</option>)}</select>
                       </div>
-                      <div className="md:col-span-2">
+                      <div className="md:col-span-1">
                         <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Tipo Material</label>
-                        <input list="tipo-material-list" placeholder="Ej. Materia Prima, Empaque..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={tipoMaterialIngrediente} onChange={(e: { target: { value: any; }; }) => setTipoMaterialIngrediente(e.target.value)} />
+                        <input list="tipo-material-list" placeholder="Ej. Materia Prima..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={tipoMaterialIngrediente} onChange={(e: { target: { value: any; }; }) => setTipoMaterialIngrediente(e.target.value)} />
                         <datalist id="tipo-material-list">
                           <option value="Materia Prima" />
                           <option value="Semielaborado" />
                           <option value="Empaque" />
                           <option value="MODI" />
                         </datalist>
+                      </div>
+                      <div className="md:col-span-1">
+                        <label className="text-[8px] font-black uppercase text-amber-500 block mb-0.5 tracking-widest">Sección Receta</label>
+                        <select
+                          className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs uppercase"
+                          value={seccionRecetaTmp}
+                          onChange={(e) => setSeccionRecetaTmp(e.target.value as any)}
+                        >
+                          <option value="ENSAMBLE">Ensamble</option>
+                          <option value="DECORACION">Decoración</option>
+                          <option value="EMPAQUE">Empaque</option>
+                        </select>
                       </div>
                     </div>
                     <div className="flex justify-between items-center pt-2 border-t border-slate-800">
@@ -513,14 +555,14 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
                       {[
-                        { label: 'Materias Primas & Semielaborados', data: ingredientesCategorizados.materiasPrimas },
-                        { label: 'Empaque', data: ingredientesCategorizados.empaque },
-                        { label: 'MODI', data: ingredientesCategorizados.modi }
+                        { label: 'Ensamble', data: ingredientesCategorizados.ensamble, color: 'text-emerald-600' },
+                        { label: 'Decoración', data: ingredientesCategorizados.decoracion, color: 'text-amber-600' },
+                        { label: 'Empaque', data: ingredientesCategorizados.empaque, color: 'text-blue-600' }
                       ].map(seccion => seccion.data.length > 0 && (
                         <React.Fragment key={seccion.label}>
 
                           <tr className="bg-slate-50/50">
-                            <td colSpan={esChefEditable ? 7 : 6} className="px-4 py-1.5 text-[8px] font-black text-emerald-600 uppercase tracking-widest">
+                            <td colSpan={esChefEditable ? 7 : 6} className={`px-4 py-1.5 text-[8px] font-black ${seccion.color} uppercase tracking-widest`}>
                               {seccion.label}
                             </td>
                           </tr>
@@ -568,7 +610,29 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                               </td>
 
                               <td className="px-4 py-2 text-center font-black text-slate-900 text-xs">
-                                {ing.cantidad} <span className="text-[8px] text-slate-400">{ing.unidad}</span>
+                                <div className="flex justify-center items-center gap-1">
+                                  {esChefEditable ? (
+                                    <input
+                                      type="number"
+                                      value={ing.cantidad}
+                                      onChange={(e) => {
+                                        const val = Number(e.target.value);
+                                        setDatosForm({
+                                          ...datosForm,
+                                          ingredientes: datosForm.ingredientes.map((i: any) =>
+                                            (i.id === ing.id || (i.nombre === ing.nombre && i.id === undefined)) ? { ...i, cantidad: val, costoTotal: (i.costoUnitario || 0) * val } : i
+                                          )
+                                        });
+                                      }}
+                                      className="w-20 p-1 border rounded bg-white text-center font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100"
+                                      step="0.001"
+                                      min="0"
+                                    />
+                                  ) : (
+                                    ing.cantidad
+                                  )}
+                                  <span className="text-[8px] text-slate-400">{ing.unidad}</span>
+                                </div>
                               </td>
 
                               {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') && (
