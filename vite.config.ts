@@ -9,7 +9,10 @@ export default defineConfig(({ mode }) => {
       port: 3000,      // frontend
       host: '0.0.0.0', // accesible desde la red
       proxy: {
-        '/api': 'http://localhost:3001' // redirige fetch a backend
+        '/api': {
+          target: env.VITE_API_URL || 'http://localhost:3001', // usa variable de entorno
+          changeOrigin: true
+        }
       }
     },
     plugins: [react()],
