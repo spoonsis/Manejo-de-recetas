@@ -746,7 +746,10 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
         'tipoImpuesto', 'proveedor', 'codigoBarras', 'locales', 'documentos',
         'lote', 'alergenos', 'descripcionAlergenos',
         'tipoAlmacenamiento', 'seccionAlisto', 'clasificacion',
-        'unidadConsumo', 'factorConversion', 'cantidadConvertida', 'cantidadCompra'
+        'unidadConsumo', 'factorConversion', 'cantidadConvertida', 'cantidadCompra',
+        'tipoUnidad', 'unidadBase', 'tipoRotacion', 'ciTipoArticulo', 
+        'metodoCalculo', 'categoriaCosto', 'tipoEstimacion', 'programaFiscal',
+        'registrado_netsuite', 'codigo_netsuite'
     ];
 
     const rolesDisponibles: Rol[] = ['CHEF', 'COSTOS', 'MKT', 'CALIDAD', 'COMPRAS', 'LOGISTICA', 'ADMIN'];
