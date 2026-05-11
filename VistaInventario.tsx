@@ -110,6 +110,11 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                                 <div className="font-black text-slate-800 text-[13px] leading-tight flex items-center gap-2">
                                                     {i.nombre || 'Sin Nombre'}
                                                     {i.source === 'EXTERNA' && <span className="text-[8px] bg-sky-100 text-sky-700 px-1.5 py-0.5 rounded uppercase tracking-wider font-bold">NetSuite</span>}
+                                                    {i.estado === EstadoInsumo.COMPLETADO && i.registrado_netsuite && (
+                                                        <span className="text-[8px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded uppercase tracking-wider font-bold flex items-center gap-0.5" title="Registrado en NetSuite">
+                                                            <ShieldCheck size={10} /> NS
+                                                        </span>
+                                                    )}
                                                 </div>
                                                 <div className="text-[9px] text-slate-400 font-bold uppercase mt-0.5 flex items-center gap-1.5">
                                                     <Tag size={9} className="text-business-orange" /> {i.proveedor || 'No Definido'}
