@@ -269,6 +269,26 @@ export default function App() {
             await manejarGuardarFlujo(FLUJO_DEFAULT);
           }
         }
+
+        // 5.5 Cargar Fases Insumo
+        const resFases = await fetch(`/api/local/workflows/insumos`, { credentials: 'include' });
+        if (resFases.ok) {
+          const dataFases = await resFases.json();
+          if (dataFases.length > 0) {
+            setFasesInsumo(dataFases);
+          } else {
+            console.log("Sembrando fases insumo default...");
+            for (const f of FASES_INSUMO_DEFAULT) {
+               await fetch(`/api/local/workflows/insumos`, {
+                 method: 'POST',
+                 headers: { 'Content-Type': 'application/json' },
+                 credentials: 'include',
+                 body: JSON.stringify(f)
+               });
+            }
+            setFasesInsumo(FASES_INSUMO_DEFAULT);
+          }
+        }
         // 6. Cargar Proveedores SQL Server
         const resProveedores = await fetch(`/api/proveedores`, { credentials: 'include' });
         if (resProveedores.ok) {

@@ -97,18 +97,46 @@ export default function AdminWorkflows({
     };
 
     // --- Fases Insumo Handlers ---
-    const guardarFase = (fase: FaseFluxoInsumo) => {
-        setFasesInsumo(prev => {
-            const existe = prev.find(f => f.id === fase.id);
-            if (existe) return prev.map(f => f.id === fase.id ? fase : f);
-            return [...prev, fase];
-        });
-        setEditandoFase(null);
+    const guardarFase = async (fase: FaseFluxoInsumo) => {
+        try {
+            const res = await fetch('/api/local/workflows/insumos', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
+                body: JSON.stringify(fase)
+            });
+            if (res.ok) {
+                setFasesInsumo(prev => {
+                    const existe = prev.find(f => f.id === fase.id);
+                    if (existe) return prev.map(f => f.id === fase.id ? fase : f);
+                    return [...prev, fase];
+                });
+                setEditandoFase(null);
+            } else {
+                alert("Error al guardar la fase en la base de datos.");
+            }
+        } catch (error) {
+            console.error("Error guardando fase:", error);
+            alert("Error de conexión al guardar fase.");
+        }
     };
 
-    const eliminarFase = (id: string) => {
+    const eliminarFase = async (id: string) => {
         if (confirm('¿Eliminar fase?')) {
-            setFasesInsumo(prev => prev.filter(f => f.id !== id));
+            try {
+                const res = await fetch(`/api/local/workflows/insumos/${id}`, {
+                    method: 'DELETE',
+                    credentials: 'include'
+                });
+                if (res.ok) {
+                    setFasesInsumo(prev => prev.filter(f => f.id !== id));
+                } else {
+                    alert("Error al eliminar la fase en la base de datos.");
+                }
+            } catch (error) {
+                console.error("Error eliminando fase:", error);
+                alert("Error de conexión al eliminar fase.");
+            }
         }
     };
 

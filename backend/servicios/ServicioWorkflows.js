@@ -78,8 +78,71 @@ async function eliminarFlujo(id) {
     }
 }
 
+async function obtenerFasesInsumo() {
+    const [fases] = await pool.query('SELECT * FROM fases_flujo_insumo ORDER BY orden ASC');
+    return fases.map(f => ({
+        ...f,
+        activo: Boolean(f.activo),
+        campos: typeof f.campos === 'string' ? JSON.parse(f.campos || "[]") : (f.campos || [])
+    }));
+}
+
+async function upsertFaseInsumo(fase) {
+    const conn = await pool.getConnection();
+    try {
+        await conn.beginTransaction();
+
+        await conn.query(`
+            INSERT INTO fases_flujo_insumo (id, orden, nombre, rolResponsable, campos, activo, descripcion)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            ON DUPLICATE KEY UPDATE 
+                orden=VALUES(orden),
+                nombre=VALUES(nombre),
+                rolResponsable=VALUES(rolResponsable),
+                campos=VALUES(campos),
+                activo=VALUES(activo),
+                descripcion=VALUES(descripcion)
+        `, [
+            fase.id, 
+            fase.orden, 
+            fase.nombre, 
+            fase.rolResponsable, 
+            JSON.stringify(fase.campos || []), 
+            fase.activo ? 1 : 0, 
+            fase.descripcion || null
+        ]);
+
+        await conn.commit();
+        return { success: true };
+    } catch (error) {
+        await conn.rollback();
+        console.error('Error in upsertFaseInsumo:', error);
+        throw error;
+    } finally {
+        conn.release();
+    }
+}
+
+async function eliminarFaseInsumo(id) {
+    const conn = await pool.getConnection();
+    try {
+        await conn.beginTransaction();
+        await conn.query('DELETE FROM fases_flujo_insumo WHERE id = ?', [id]);
+        await conn.commit();
+        return { success: true };
+    } catch (error) {
+        await conn.rollback();
+        throw error;
+    } finally {
+        conn.release();
+    }
+}
+
 module.exports = {
     obtenerFlujos,
     upsertFlujo,
-    eliminarFlujo
+    eliminarFlujo,
+    obtenerFasesInsumo,
+    upsertFaseInsumo,
+    eliminarFaseInsumo
 };
