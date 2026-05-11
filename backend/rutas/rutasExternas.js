@@ -37,5 +37,13 @@ router.get("/proveedores", async (req, res) => {
     }
 });
 
+router.get("/grupos-proceso", async (req, res) => {
+    try {
+        const data = await require("../servicios/ServiciosSQLExternos").obtenerGruposProceso();
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 module.exports = router;
-//

@@ -26,7 +26,9 @@ async function crearInsumoLocal(data) {
         tipoImpuesto, proveedor, codigoBarras, locales, documentos,
         lote, alergenos, descripcionAlergenos, tipoAlmacenamiento,
         seccionAlisto, clasificacion, unidadConsumo, factorConversion,
-        cantidadConvertida, cantidadCompra
+        cantidadConvertida, cantidadCompra,
+        tipoUnidad, unidadBase, tipoRotacion, ciTipoArticulo, 
+        metodoCalculo, categoriaCosto, tipoEstimacion, programaFiscal
     } = data;
 
     await pool.query(`
@@ -36,9 +38,11 @@ async function crearInsumoLocal(data) {
             tipoImpuesto, proveedor, codigoBarras, locales, documentos,
             lote, alergenos, descripcionAlergenos, tipoAlmacenamiento,
             seccionAlisto, clasificacion, unidadConsumo, factorConversion,
-            cantidadConvertida, cantidadCompra
+            cantidadConvertida, cantidadCompra,
+            tipoUnidad, unidadBase, tipoRotacion, ciTipoArticulo,
+            metodoCalculo, categoriaCosto, tipoEstimacion, programaFiscal
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON DUPLICATE KEY UPDATE
             nombre=VALUES(nombre), estado=VALUES(estado), marca=VALUES(marca), 
             tipoMaterial=VALUES(tipoMaterial), unidad=VALUES(unidad), unidadStock=VALUES(unidadStock),
@@ -51,7 +55,11 @@ async function crearInsumoLocal(data) {
             tipoAlmacenamiento=VALUES(tipoAlmacenamiento), seccionAlisto=VALUES(seccionAlisto), 
             clasificacion=VALUES(clasificacion), unidadConsumo=VALUES(unidadConsumo), 
             factorConversion=VALUES(factorConversion), cantidadConvertida=VALUES(cantidadConvertida), 
-            cantidadCompra=VALUES(cantidadCompra)
+            cantidadCompra=VALUES(cantidadCompra),
+            tipoUnidad=VALUES(tipoUnidad), unidadBase=VALUES(unidadBase), 
+            tipoRotacion=VALUES(tipoRotacion), ciTipoArticulo=VALUES(ciTipoArticulo), 
+            metodoCalculo=VALUES(metodoCalculo), categoriaCosto=VALUES(categoriaCosto), 
+            tipoEstimacion=VALUES(tipoEstimacion), programaFiscal=VALUES(programaFiscal)
     `, [
         id, nombre, estado || 'PENDIENTE_COMPRAS', source || 'INTERNA', marca || '',
         tipoMaterial || '', unidad || '', unidadStock || '',
@@ -62,8 +70,14 @@ async function crearInsumoLocal(data) {
         JSON.stringify(documentos || []), lote ? 1 : 0, alergenos ? 1 : 0, 
         descripcionAlergenos || '', tipoAlmacenamiento || '', seccionAlisto || '', 
         clasificacion || '', unidadConsumo || '', factorConversion || 1, 
-        cantidadConvertida || 0, cantidadCompra || 0
+        cantidadConvertida || 0, cantidadCompra || 0,
+        tipoUnidad || '', unidadBase || '', tipoRotacion || '', ciTipoArticulo || '',
+        metodoCalculo || '', categoriaCosto || '', tipoEstimacion || '', programaFiscal || ''
     ]);
+    
+    // Trigger cascade update on cost changes (if existing, marks parents pending)
+    await marcarRecetasPendientesRecursivo(id);
+    
     return { id, nombre };
 }
 
@@ -95,7 +109,10 @@ async function obtenerRecetas(page = 1, limit = 50) {
             ...ing,
             cantidad: Number(ing.cantidad),
             costoUnitario: Number(ing.costoUnitario),
-            costoTotal: Number(ing.costoTotal)
+            costoTotal: Number(ing.costoTotal),
+            costoEstructuralMP: ing.costoEstructuralMP != null ? Number(ing.costoEstructuralMP) : undefined,
+            costoEstructuralEMP: ing.costoEstructuralEMP != null ? Number(ing.costoEstructuralEMP) : undefined,
+            costoEstructuralMODI: ing.costoEstructuralMODI != null ? Number(ing.costoEstructuralMODI) : undefined
         }));
 
         r.versiones = historial.filter(h => h.receta_id === r.id).map(h => ({
@@ -104,7 +121,7 @@ async function obtenerRecetas(page = 1, limit = 50) {
         }));
 
         // Transformar numéricos
-        ['costoTotal', 'mudi', 'gif', 'totalMP', 'totalEMP', 'totalMUDI', 'costoTotalBase', 'costoTotalFinal', 'pesoTotalCantidad', 'tiempoPrepCantidad', 'porcionesCantidad', 'pesoPorcionCantidad', 'mermaCantidad', 'sumaTotalInsumos', 'costoUnitarioMP', 'costoUnitarioEMP', 'costoUnitarioMUDI'].forEach(k => {
+        ['costoTotal', 'mudi', 'gif', 'totalMP', 'totalEMP', 'totalMUDI', 'costoTotalBase', 'costoTotalFinal', 'pesoTotalCantidad', 'tiempoPrepCantidad', 'porcionesCantidad', 'pesoPorcionCantidad', 'mermaCantidad', 'sumaTotalInsumos', 'costoUnitarioMP', 'costoUnitarioEMP', 'costoUnitarioMUDI', 'tiempoProcesoMinutos', 'porcentajeDesecho', 'costoDesecho', 'tasaMUDI', 'tasaGIF'].forEach(k => {
             r[k] = Number(r[k] || 0);
         });
 
@@ -137,7 +154,8 @@ async function upsertReceta(data) {
             elaboradoPor, aprobadoPor, areaProduce, areaEmpaca,
             flujoAprobacionId, costoUnitarioMP, costoUnitarioEMP, costoUnitarioMUDI,
             ultimoRegistroCambios, fechaRevision,
-            nombre_receta, codigo_netsuite
+            nombre_receta, codigo_netsuite,
+            tiempoProcesoMinutos, porcentajeDesecho, costoDesecho, tasaMUDI, tasaGIF
         } = data;
 
         // Lógica de concatenación automática al aprobar
@@ -161,9 +179,10 @@ async function upsertReceta(data) {
                 elaboradoPor, aprobadoPor, areaProduce, areaEmpaca,
                 flujo_aprobacion_id, costoUnitarioMP, costoUnitarioEMP, costoUnitarioMUDI,
                 ultimoRegistroCambios, fecha_revision,
-                nombre_receta, codigo_netsuite, detalle_nombre_receta
+                nombre_receta, codigo_netsuite, detalle_nombre_receta,
+                tiempoProcesoMinutos, porcentajeDesecho, costoDesecho, tasaMUDI, tasaGIF
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON DUPLICATE KEY UPDATE 
                 nombre=VALUES(nombre), estado=VALUES(estado), versionActual=VALUES(versionActual), 
                 pasos=VALUES(pasos), costoTotal=VALUES(costoTotal), tipoCosteo=VALUES(tipoCosteo), 
@@ -186,7 +205,12 @@ async function upsertReceta(data) {
                 fecha_revision=VALUES(fecha_revision),
                 nombre_receta=VALUES(nombre_receta),
                 codigo_netsuite=VALUES(codigo_netsuite),
-                detalle_nombre_receta=VALUES(detalle_nombre_receta)
+                detalle_nombre_receta=VALUES(detalle_nombre_receta),
+                tiempoProcesoMinutos=VALUES(tiempoProcesoMinutos),
+                porcentajeDesecho=VALUES(porcentajeDesecho),
+                costoDesecho=VALUES(costoDesecho),
+                tasaMUDI=VALUES(tasaMUDI),
+                tasaGIF=VALUES(tasaGIF)
         `, [
             id, nombre, estado, versionActual ?? 1, JSON.stringify(pasos || []), costoTotal ?? 0,
             esSemielaborado ? 1 : 0, tipoCosteo || 'GRAMO', mudi ?? 0, gif ?? 0,
@@ -198,7 +222,8 @@ async function upsertReceta(data) {
             elaboradoPor ?? null, aprobadoPor ?? null, areaProduce ?? null, areaEmpaca ?? null,
             flujoAprobacionId ?? null, costoUnitarioMP ?? 0, costoUnitarioEMP ?? 0, costoUnitarioMUDI ?? 0,
             ultimoRegistroCambios ?? null, fechaRevision ?? null,
-            nombre_receta ?? null, codigo_netsuite ?? null, detalle_nombre_receta ?? null
+            nombre_receta ?? null, codigo_netsuite ?? null, detalle_nombre_receta ?? null,
+            tiempoProcesoMinutos ?? 0, porcentajeDesecho ?? 2, costoDesecho ?? 0, tasaMUDI ?? 77, tasaGIF ?? 83
         ]);
 
         // Limpiar ingredientes existentes de esta receta
@@ -223,7 +248,10 @@ async function upsertReceta(data) {
                 i.snapshotCostoUnitario ?? null,
                 i.snapshotVersion ?? null,
                 i.marca ?? null,
-                i.observaciones ?? null
+                i.observaciones ?? null,
+                i.costoEstructuralMP ?? null,
+                i.costoEstructuralEMP ?? null,
+                i.costoEstructuralMODI ?? null
             ]);
 
             await conn.query(`
@@ -231,7 +259,8 @@ async function upsertReceta(data) {
                     id, receta_id, tipo, idReferencia, nombre, cantidad, unidad, 
                     costoUnitario, costoTotal, codigo, codigoNetSuite, 
                     descripcionIngrediente, tipoMaterial, 
-                    snapshotCostoUnitario, snapshotVersion, marca, observaciones
+                    snapshotCostoUnitario, snapshotVersion, marca, observaciones,
+                    costoEstructuralMP, costoEstructuralEMP, costoEstructuralMODI
                 ) VALUES ?
             `, [ingValues]);
         }
@@ -254,6 +283,14 @@ async function upsertReceta(data) {
         }
 
         await conn.commit();
+        
+        // Trigger cascade update for parents of this recipe (subrecipe updated)
+        try {
+            await marcarRecetasPendientesRecursivo(id);
+        } catch (cascadeError) {
+            console.error('Error cascading pendings:', cascadeError);
+        }
+        
         return true;
     } catch (error) {
         await conn.rollback();
@@ -300,11 +337,29 @@ async function eliminarReceta(id) {
     }
 }
 
+async function marcarRecetasPendientesRecursivo(idReferencia, connParam = null) {
+    const conn = connParam || await pool.getConnection();
+    try {
+        const [parents] = await conn.query("SELECT DISTINCT receta_id FROM ingredientes_receta WHERE idReferencia = ?", [idReferencia]);
+        if (parents.length > 0) {
+            const parentIds = parents.map(p => p.receta_id);
+            await conn.query("UPDATE recetas SET estado = 'PENDIENTE_COSTOS' WHERE id IN (?) AND estado != 'PENDIENTE_COSTOS'", [parentIds]);
+            // Recursively update parents' parents
+            for (const pId of parentIds) {
+                await marcarRecetasPendientesRecursivo(pId, conn);
+            }
+        }
+    } finally {
+        if (!connParam) conn.release();
+    }
+}
+
 module.exports = { 
     obtenerInsumosLocales, 
     crearInsumoLocal, 
     obtenerRecetas, 
     upsertReceta, 
     guardarVersionHistorial,
-    eliminarReceta 
+    eliminarReceta,
+    marcarRecetasPendientesRecursivo
 };

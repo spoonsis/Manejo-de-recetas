@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera } from 'lucide-react';
+import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
 import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta } from './types';
@@ -8,7 +8,7 @@ import { useStore } from './useStore';
 
 export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose }: { recipe: Receta, allRecipes: Receta[], insumos: Insumo[], onClose: () => void }) {
   const { role } = useStore();
-  const [tab, setTab] = useState<'info' | 'preparacion' | 'historial'>('info');
+  const [tab, setTab] = useState<'info' | 'preparacion' | 'historial' | 'costeo'>('info');
   const [recetaActiva, setRecetaActiva] = useState<Receta>(recipe);
 
   // Filtramos todas las versiones físicas guardadas que tienen el mismo nombre
@@ -72,13 +72,13 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
 
         {/* Tabs */}
         <div className="flex border-b bg-white px-6 space-x-8">
-          {['info', 'preparacion', 'historial'].map((t) => (
+          {['info', 'preparacion', 'historial', ...(role === 'COSTOS' || role === 'ADMIN' ? ['costeo'] : [])].map((t) => (
             <button
               key={t}
               onClick={() => setTab(t as any)}
               className={`py-3 text-[10px] font-black uppercase tracking-widest border-b-4 transition-all ${tab === t ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-300'}`}
             >
-              {t === 'info' ? 'Ficha' : t === 'preparacion' ? 'Preparación' : 'Versiones'}
+              {t === 'info' ? 'Ficha' : t === 'preparacion' ? 'Preparación' : t === 'historial' ? 'Versiones' : 'Reporte Costos'}
             </button>
           ))}
         </div>
@@ -268,6 +268,264 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                   </div>
                 ))}
               </div>
+            </div>
+          )}
+
+          {tab === 'costeo' && (role === 'COSTOS' || role === 'ADMIN') && (
+            <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-[10px]">
+
+              {recetaActiva.tieneSEBruto && (
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-xl shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <AlertCircle className="w-5 h-5 text-amber-600" />
+                    <div>
+                      <h4 className="text-amber-800 font-bold text-xs uppercase">Datos Estructurales Pendientes (NetSuite)</h4>
+                      <p className="text-amber-700 text-xs">Uno o más ingredientes tipo Semielaborado (SE) en esta receta se registraron con costo bruto desde NetSuite sin sus componentes (MP, EMP, MODI). Por defecto, su precio total se agrupó en el <strong>TOTAL MATERIA PRIMA</strong>. Considere revisar tras la actualización de datos.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              {/* Estilo tabla TEAL oscuro (Materia Prima/Ensamble) */}
+              <div className="border border-teal-900 rounded-sm overflow-hidden bg-white">
+                <table className="w-full text-left uppercase whitespace-nowrap">
+                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                    <tr>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">MATERIA PRIMA SEMIELABORADOS</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Und Medida</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Costo Unitari</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Total Costo</th>
+                      <th className="px-2 py-1.5 text-center">Codigos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {ingredientesCategorizados.ensamble.concat(ingredientesCategorizados.decoracion).map((ing: any) => (
+                      <tr key={ing.id} className="hover:bg-slate-50 text-black font-bold">
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 font-medium">{ing.nombre}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right">{(ing.costoUnitario || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{(ing.costoTotal || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Estilo tabla TEAL oscuro (EMPAQUE) */}
+              <div className="border border-teal-900 rounded-sm overflow-hidden bg-white mt-2">
+                <table className="w-full text-left uppercase whitespace-nowrap">
+                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                    <tr>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">EMPAQUE</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Und Medida</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Costo Unitari</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Total Costo</th>
+                      <th className="px-2 py-1.5 text-center">Codigos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {ingredientesCategorizados.empaque.map((ing: any) => (
+                      <tr key={ing.id} className="hover:bg-slate-50 text-black font-bold">
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 font-medium">{ing.nombre}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right">{(ing.costoUnitario || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{(ing.costoTotal || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Bloques de Resumen - Mitad Derecha, etc. */}
+              <div className="flex flex-col md:flex-row gap-6 mt-6 items-start font-sans">
+                
+                {/* Cuadro Analítico: Costo Planta */}
+                <div className="w-full md:w-3/5 space-y-4">
+                  {/* Resumen Superior Izquierdo */}
+                  <div className="flex flex-col text-right pr-6 space-y-0.5">
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL MATERIA PRIMA</span><span className="font-black text-blue-700 w-20">{(recetaActiva.totalMP || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL EMPAQUE</span><span className="font-black text-blue-700 w-20">{(recetaActiva.totalEMP || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL MATERIAS P. + EMPAQUES</span><span className="font-black text-blue-700 w-20">{((recetaActiva.totalMP || 0)+(recetaActiva.totalEMP || 0)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL MODI</span><span className="font-black text-blue-700 w-20">{(recetaActiva.totalMUDI || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                  </div>
+
+                  {/* Inputs de gramos */}
+                  <div className="w-48 ml-auto border border-black p-1 text-right bg-slate-100 mt-2 space-y-0.5 shadow-sm">
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Gramos</span><span className="font-bold text-blue-700">{recetaActiva.pesoTotalCantidad}</span></div>
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-[9px] uppercase">Peso por Unidad</span><span className="font-bold text-blue-700">{recetaActiva.pesoPorcionCantidad}</span></div>
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Unidades Totales</span><span className="font-black">{recetaActiva.porcionesCantidad}</span></div>
+                  </div>
+
+                  {/* La Cinta Verde "Total Costo Planta" */}
+                  <div className="border border-black bg-white shadow-sm font-bold uppercase mt-4">
+                    <table className="w-full text-right text-xs">
+                      <tbody>
+                        <tr>
+                          <td className="text-blue-700 px-2 py-1 w-1/2">TOTAL MATERIAS P. + EMPAQUES</td>
+                          <td className="px-2 py-1">100.00%</td>
+                          <td className="px-2 py-1">{((recetaActiva.totalMP || 0)+(recetaActiva.totalEMP || 0)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                        </tr>
+                        <tr>
+                          <td className="text-black px-2 py-1">DESECHOS Y PERDIDAS</td>
+                          <td className="px-2 py-1 bg-slate-200">{(recetaActiva.porcentajeDesecho || 2).toFixed(2)}%</td>
+                          <td className="px-2 py-1">{(recetaActiva.costoDesecho || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                        </tr>
+                        <tr>
+                          <td className="text-black px-2 py-1 font-bold flex justify-end items-center gap-2">
+                             MANO OBRA DIRECTA <span className="bg-white border border-slate-300 px-2 py-0.5 text-[10px]">{recetaActiva.tiempoProcesoMinutos || 0}</span>
+                          </td>
+                          <td className="px-2 py-1 text-red-600 font-black">{(recetaActiva.tasaMUDI || 77).toFixed(2)}</td>
+                          <td className="px-2 py-1 font-medium">{((recetaActiva.tiempoProcesoMinutos || 0) * (recetaActiva.tasaMUDI || 77)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                        </tr>
+                        <tr className="bg-lime-300 border-t-2 border-black font-black">
+                          <td colSpan={2} className="px-2 py-1">TOTAL COSTO PLANTA</td>
+                          <td className="px-2 py-1 text-blue-800">
+                            {(recetaActiva.costoTotalFinal || recetaActiva.costoTotal || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+
+                {/* Gran Recuadro Turquesa (Costo Real Venta) */}
+                <div className="w-full md:w-2/5 flex justify-end">
+                  <div className="border-4 border-black bg-teal-100 p-2 shadow-xl inline-block text-[10px]">
+                    <div className="border border-black bg-white p-2">
+                      <table className="w-full text-right uppercase font-bold">
+                        <tbody>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">TOTAL MATERIA PRIMA + EMPAQUE</td>
+                            <td className="py-1">{(recetaActiva.totalMP + recetaActiva.totalEMP).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">MODI PLANTA</td>
+                            <td className="py-1">{(recetaActiva.totalMUDI).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">DESECHO</td>
+                            <td className="py-1">{(recetaActiva.costoDesecho || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-green-700 py-1 pr-3 font-black">COSTO PLANTA</td>
+                            <td className="py-1 bg-slate-800 text-white font-black text-center">{(recetaActiva.costoTotalFinal).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">% GIF</td>
+                            <td className="py-1">{(recetaActiva.gif || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr className="border-t-2 border-black">
+                            <td className="text-green-700 py-2 pr-3 font-black text-xs">PRECIO DE VENTA PLANTA A LOCAL</td>
+                            <td className="py-2 bg-slate-800 text-white font-black text-center flex items-center justify-center gap-1">
+                              <span className="text-[10px]">₡</span>
+                              {((recetaActiva.costoTotalFinal + (recetaActiva.gif || 0)) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})} <span className="text-green-400">GR</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-red-600 py-1 pr-3 font-black text-xs">UNIDAD</td>
+                            <td className="py-1 font-black">
+                              {((recetaActiva.costoTotalFinal + (recetaActiva.gif || 0)) / (recetaActiva.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="mt-2 text-[9px]">
+                      <p>MODI {recetaActiva.tasaMUDI || 77} COLONES X MIN</p>
+                      <p>GIF {recetaActiva.tasaGIF || 83} colones min</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tablas Costo por Gramo / Costo por Unidad (Abajo Izquierda) */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6">
+                <div>
+                  <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR GRAMO</h4>
+                  <table className="w-full text-right text-[10px] font-bold uppercase mb-6">
+                    <tbody>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL COSTO MATERIA PRIMA</td>
+                        <td className="py-1 w-16">{(recetaActiva.totalMP).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1 w-16">{recetaActiva.pesoTotalCantidad}</td>
+                        <td className="py-1 w-16 bg-olive-700 text-white border border-black text-center bg-[#8B8000]">{((recetaActiva.totalMP) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL COSTO UNIDAD MP+DESECHO+EMPAQUE</td>
+                        <td className="py-1">{(recetaActiva.totalMP + recetaActiva.totalEMP + (recetaActiva.costoDesecho || 0)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{recetaActiva.pesoTotalCantidad}</td>
+                        <td className="py-1 text-center">{((recetaActiva.totalMP + recetaActiva.totalEMP + (recetaActiva.costoDesecho || 0)) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MODI PREPARACION POR GRAMO</td>
+                        <td className="py-1">{((recetaActiva.tiempoProcesoMinutos || 0)*(recetaActiva.tasaMUDI || 77)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{recetaActiva.pesoTotalCantidad}</td>
+                        <td className="py-1 bg-olive-700 text-white border border-black text-center bg-[#8B8000]">{(((recetaActiva.tiempoProcesoMinutos || 0)*(recetaActiva.tasaMUDI || 77)) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MODI POR GRAMO</td>
+                        <td className="py-1">{(recetaActiva.totalMUDI).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{recetaActiva.pesoTotalCantidad}</td>
+                        <td className="py-1 bg-olive-700 text-white border border-black text-center bg-[#8B8000]">{((recetaActiva.totalMUDI) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL EMPAQUE POR GRAMO</td>
+                        <td className="py-1">{(recetaActiva.totalEMP).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{recetaActiva.pesoTotalCantidad}</td>
+                        <td className="py-1 bg-olive-700 text-white border border-black text-center bg-[#8B8000]">{((recetaActiva.totalEMP) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr className="border-2 border-black">
+                        <td colSpan={3} className="py-2 pr-2 text-center bg-[#8B8000]/10">TOTAL GRAMO MP+MODI</td>
+                        <td className="py-2 text-center bg-[#8B8000] text-white font-black">{((recetaActiva.totalMP + recetaActiva.totalMUDI) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div>
+                  <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR UNIDAD</h4>
+                  <table className="w-full text-right text-[10px] font-bold uppercase">
+                    <tbody>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL COSTO MATERIA PRIMA</td>
+                        <td className="py-1 w-16">{(recetaActiva.totalMP).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1 w-16">{recetaActiva.porcionesCantidad}</td>
+                        <td className="py-1 w-16 bg-[#8B8000] text-white border border-black text-center">{((recetaActiva.totalMP) / (recetaActiva.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL COSTO UNIDAD MP+DESECHO+EMPAQUE</td>
+                        <td className="py-1">{(recetaActiva.totalMP + recetaActiva.totalEMP + (recetaActiva.costoDesecho || 0)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{recetaActiva.porcionesCantidad}</td>
+                        <td className="py-1 border border-transparent text-center">{((recetaActiva.totalMP + recetaActiva.totalEMP + (recetaActiva.costoDesecho || 0)) / (recetaActiva.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MODI POR UNIDAD</td>
+                        <td className="py-1">{(recetaActiva.totalMUDI).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{recetaActiva.porcionesCantidad}</td>
+                        <td className="py-1 bg-[#8B8000] text-white border border-black text-center">{((recetaActiva.totalMUDI) / (recetaActiva.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
             </div>
           )}
         </div>

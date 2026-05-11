@@ -232,7 +232,9 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                 factorConversion: 0.001,
                                 cantidadConvertida: 1,
                                 precioPorUnidad: 0,
-                                cantidadCompra: 1
+                                cantidadCompra: 1,
+                                tipoRotacion: 'FEFO',
+                                ciTipoArticulo: 'Bienes'
                             })}
                             className="flex items-center gap-1.5 bg-business-orange text-white px-4 py-2 rounded-xl font-black uppercase text-[10px] shadow-lg hover:bg-business-orange/90 transition-all active:scale-95"
                         >
@@ -314,6 +316,22 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig, proveedores 
     const fasesActivas = fasesConfig.filter(f => f.activo).sort((a, b) => a.orden - b.orden);
     const [faseActivaId, setFaseActivaId] = useState<string>(fasesActivas[0]?.id || '');
     const [subiendoArchivo, setSubiendoArchivo] = useState(false);
+    const [gruposProceso, setGruposProceso] = useState<{nombre: string}[]>([]);
+
+    React.useEffect(() => {
+        const cargarGrupos = async () => {
+            try {
+                const res = await fetch('/api/grupos-proceso', { credentials: 'include' });
+                if (res.ok) {
+                    const data = await res.json();
+                    setGruposProceso(data);
+                }
+            } catch (error) {
+                console.error("Error cargando grupos de proceso:", error);
+            }
+        };
+        cargarGrupos();
+    }, []);
 
     React.useEffect(() => {
         if (!faseActivaId && fasesActivas.length > 0) {
@@ -393,7 +411,16 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig, proveedores 
     const esEditableActual = faseActual ? puedeEditarFase(faseActual) : false;
 
     const renderCampo = (campo: keyof Insumo) => {
-        const label = campo === 'clasificacion' ? 'GRUPO DE PROCESO DE ARTICULOS' : campo.replace(/([A-Z])/g, ' $1').toUpperCase();
+        let label = campo.replace(/([A-Z])/g, ' $1').toUpperCase();
+        if (campo === 'clasificacion') label = 'GRUPO DE PROCESOS DE ARTICULOS';
+        else if (campo === 'ciTipoArticulo') label = 'CI|TIPO DE ARTICULO';
+        else if (campo === 'tipoUnidad') label = 'TIPO DE UNIDAD';
+        else if (campo === 'unidadBase') label = 'UNIDAD DE BASE';
+        else if (campo === 'tipoRotacion') label = 'TIPO DE ROTACION';
+        else if (campo === 'metodoCalculo') label = 'METODO DE CALCULO';
+        else if (campo === 'categoriaCosto') label = 'CATEGORIA DE COSTO';
+        else if (campo === 'tipoEstimacion') label = 'TIPO DE ESTIMACION';
+        else if (campo === 'programaFiscal') label = 'PROGRAMA FISCAL';
 
         if (campo === 'locales') {
             return (
@@ -467,12 +494,13 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig, proveedores 
             );
         }
 
-        if (['unidad', 'unidadStock', 'unidadConsumo', 'tipoMaterial', 'tipoImpuesto'].includes(campo)) {
+        if (['unidad', 'unidadStock', 'unidadConsumo', 'tipoMaterial', 'tipoImpuesto', 'tipoRotacion'].includes(campo)) {
             let opciones: string[] = [];
             if (campo === 'unidad' || campo === 'unidadConsumo') opciones = UNIDADES;
             else if (campo === 'unidadStock') opciones = UNIDADES_STOCK;
             else if (campo === 'tipoMaterial') opciones = TIPOS_MATERIAL;
             else if (campo === 'tipoImpuesto') opciones = OPCIONES_IMPUESTO;
+            else if (campo === 'tipoRotacion') opciones = ['FEFO', 'LEFO'];
             
             return (
                 <div key={campo} className="space-y-1">
@@ -485,6 +513,25 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig, proveedores 
                     >
                         <option value="">Seleccione...</option>
                         {opciones.map(op => <option key={op} value={op}>{op}</option>)}
+                    </select>
+                </div>
+            );
+        }
+
+        if (campo === 'clasificacion') {
+            return (
+                <div key={campo} className="space-y-1">
+                    <label className="text-[9px] font-black text-slate-400 uppercase">{label}</label>
+                    <select
+                        value={datos[campo] as string || ''}
+                        onChange={e => handleFieldChange(campo, e.target.value)}
+                        disabled={!esEditableActual}
+                        className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-business-mustard/10 transition-all disabled:bg-slate-50 disabled:text-slate-400"
+                    >
+                        <option value="">Seleccione un grupo...</option>
+                        {gruposProceso.map((gp, idx) => (
+                            <option key={idx} value={gp.nombre}>{gp.nombre}</option>
+                        ))}
                     </select>
                 </div>
             );

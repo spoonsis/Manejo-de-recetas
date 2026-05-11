@@ -27,6 +27,10 @@ export interface IngredienteReceta {
   observaciones?: string;
   tipoMaterial?: string;
   seccionReceta?: 'ENSAMBLE' | 'DECORACION' | 'EMPAQUE';
+  // Desglose de costos editables para semielaborados
+  costoEstructuralMP?: number;
+  costoEstructuralEMP?: number;
+  costoEstructuralMODI?: number;
   // Snapshot fields for audit
   snapshotCostoUnitario?: number;
   snapshotVersion?: number;
@@ -68,6 +72,11 @@ export interface Receta {
   tipoCosteo: 'GRAMO' | 'UNIDAD';
   mudi: number;
   gif: number;
+  tiempoProcesoMinutos?: number;
+  porcentajeDesecho?: number;
+  costoDesecho?: number;
+  tasaMUDI?: number;
+  tasaGIF?: number;
 
   // Results (Calculated)
   totalMP: number;

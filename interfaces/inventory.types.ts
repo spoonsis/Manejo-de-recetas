@@ -37,6 +37,16 @@ export interface Insumo {
   seccionAlisto: string;
   clasificacion: string;
 
+  // Nuevos campos NetSuite
+  tipoUnidad?: string;
+  unidadBase?: string;
+  tipoRotacion?: string;
+  ciTipoArticulo?: string;
+  metodoCalculo?: string;
+  categoriaCosto?: string;
+  tipoEstimacion?: string;
+  programaFiscal?: string;
+
   // Cálculos antiguos compatibles
   unidadConsumo: string;
   factorConversion: number;

@@ -122,6 +122,46 @@
       "Extra": ""
     },
     {
+      "Field": "tiempoProcesoMinutos",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.00",
+      "Extra": ""
+    },
+    {
+      "Field": "porcentajeDesecho",
+      "Type": "decimal(5,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "2.00",
+      "Extra": ""
+    },
+    {
+      "Field": "costoDesecho",
+      "Type": "decimal(15,4)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.0000",
+      "Extra": ""
+    },
+    {
+      "Field": "tasaMUDI",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "77.00",
+      "Extra": ""
+    },
+    {
+      "Field": "tasaGIF",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "83.00",
+      "Extra": ""
+    },
+    {
       "Field": "totalMP",
       "Type": "decimal(15,4)",
       "Null": "YES",

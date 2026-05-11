@@ -105,7 +105,7 @@ const FASES_INSUMO_DEFAULT: FaseFluxoInsumo[] = [
   },
   {
     id: 'f3', orden: 3, nombre: 'Logística', rolResponsable: 'LOGISTICA', activo: true,
-    campos: ['tipoAlmacenamiento', 'seccionAlisto', 'clasificacion', 'locales']
+    campos: ['tipoAlmacenamiento', 'seccionAlisto', 'clasificacion', 'locales', 'tipoUnidad', 'unidadBase', 'tipoRotacion', 'ciTipoArticulo', 'metodoCalculo', 'categoriaCosto', 'tipoEstimacion', 'programaFiscal']
   }
 ];
 

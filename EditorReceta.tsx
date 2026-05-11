@@ -12,9 +12,9 @@ import { useStore } from './useStore';
 // --- Listas de Referencia ---
 // Ahora se reciben como prop 'areas'
 
-export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role, areas = [] }: any) {
+export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role, areas = [], onViewRecipe }: any) {
   const [datosForm, setDatosForm] = useState<Receta>(recipe);
-  const [tabActiva, setTabActiva] = useState<'ficha' | 'pasos' | 'historial'>('ficha');
+  const [tabActiva, setTabActiva] = useState<'ficha' | 'pasos' | 'historial' | 'costeo'>('ficha');
   const [nuevoPaso, setNuevoPaso] = useState('');
   const [nombreTmp, setNombreTmp] = useState('');
   const [cantidadIngrediente, setCantidadIngrediente] = useState();
@@ -185,15 +185,26 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
   const costeoProyectado = useMemo(() => {
     let mp = 0;
     let emp = 0;
-    let mudi = datosForm.mudi || 0;
+    let mudi_se = 0;
+    let gif_se = 0;
+    let tieneSEBruto = false;
 
-    datosForm.ingredientes.forEach((ing: { tipo: string; idReferencia: any; cantidad: number; tipoMaterial: any; costoUnitario?: number; costoTotal?: number; }) => {
+    datosForm.ingredientes.forEach((ing: { tipo: string; idReferencia: any; cantidad: number; tipoMaterial: any; costoUnitario?: number; costoTotal?: number; costoEstructuralMP?: number; costoEstructuralEMP?: number; costoEstructuralMODI?: number; }) => {
       if (ing.tipo === 'SEMIELABORADO') {
         const sub = subRecipes.find((r: any) => r.id === ing.idReferencia);
         if (sub) {
-          mp += (sub.costoUnitarioMP || 0) * ing.cantidad;
-          emp += (sub.costoUnitarioEMP || 0) * ing.cantidad;
-          mudi += (sub.costoUnitarioMUDI || 0) * ing.cantidad;
+          const divisorSub = sub.tipoCosteo === 'GRAMO' ? (sub.pesoTotalCantidad || 1) : (sub.porcionesCantidad || 1);
+          const costoUnitarioGIFSub = (sub.gif || 0) / divisorSub;
+
+          mp += (ing.costoEstructuralMP !== undefined ? ing.costoEstructuralMP : (sub.costoUnitarioMP || 0)) * ing.cantidad;
+          emp += (ing.costoEstructuralEMP !== undefined ? ing.costoEstructuralEMP : (sub.costoUnitarioEMP || 0)) * ing.cantidad;
+          mudi_se += (ing.costoEstructuralMODI !== undefined ? ing.costoEstructuralMODI : (sub.costoUnitarioMUDI || 0)) * ing.cantidad;
+          gif_se += costoUnitarioGIFSub * ing.cantidad;
+        } else {
+          // Si no existe subreceta pero el usuario digitó los valores
+          mp += (ing.costoEstructuralMP || 0) * ing.cantidad;
+          emp += (ing.costoEstructuralEMP || 0) * ing.cantidad;
+          mudi_se += (ing.costoEstructuralMODI || 0) * ing.cantidad;
         }
       } else {
         const ins = insumos.find((i: any) => i.id === ing.idReferencia);
@@ -201,29 +212,82 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
           const precioActualizado = Number(ins.precioPorUnidad || ins.precioCompra || 0);
           const costoUnitarioFinal = (ing.costoUnitario !== undefined && ing.costoUnitario !== null) ? Number(ing.costoUnitario) : precioActualizado;
           const costo = costoUnitarioFinal * (ing.cantidad || 0);
-          const tipo = (ing.tipoMaterial || ins.tipoMaterial || '').toUpperCase();
-          if (tipo.includes('EMPAQUE')) emp += costo;
-          else if (tipo.includes('MODI')) mudi += costo;
-          else mp += costo;
+
+          if (String(ins.id).toUpperCase().startsWith('SE') || (ing.tipoMaterial || ins.tipoMaterial || '').toUpperCase() === 'SEMIELABORADO') {
+            // Es un Semielaborado que viene desde NetSuite
+            const tieneDesgloseNetSuite = ins.costoEstructuralMP !== undefined || ins.costoEstructuralEMP !== undefined || ins.costoEstructuralMODI !== undefined;
+            const tieneDesgloseManual = ing.costoEstructuralMP !== undefined || ing.costoEstructuralEMP !== undefined || ing.costoEstructuralMODI !== undefined;
+
+            if (tieneDesgloseManual) {
+               mp += Number(ing.costoEstructuralMP || 0) * ing.cantidad;
+               emp += Number(ing.costoEstructuralEMP || 0) * ing.cantidad;
+               mudi_se += Number(ing.costoEstructuralMODI || 0) * ing.cantidad;
+               gif_se += Number(ins.costoEstructuralGIF || 0) * ing.cantidad;
+            } else if (tieneDesgloseNetSuite) {
+               mp += Number(ins.costoEstructuralMP || 0) * ing.cantidad;
+               emp += Number(ins.costoEstructuralEMP || 0) * ing.cantidad;
+               mudi_se += Number(ins.costoEstructuralMODI || 0) * ing.cantidad;
+               gif_se += Number(ins.costoEstructuralGIF || 0) * ing.cantidad;
+            } else {
+               // Fallback: al no haber desglose, encapsulamos el total completo temporalmente en MP
+               mp += costo; 
+               tieneSEBruto = true;
+            }
+          } else {
+             const tipo = (ing.tipoMaterial || ins.tipoMaterial || '').toUpperCase();
+             if (tipo.includes('EMPAQUE')) emp += costo;
+             else if (tipo.includes('MODI')) mudi_se += costo;
+             else mp += costo;
+          }
         }
       }
     });
 
-    const base = mp + emp + mudi;
-    const final = base + (datosForm.gif || 0);
+    const tiempoProceso = Number(datosForm.tiempoProcesoMinutos || 0);
+    const tasaMUDI = Number(datosForm.tasaMUDI || 77);
+    const tasaGIF = Number(datosForm.tasaGIF || 83);
+    const porcentajeDesecho = Number(datosForm.porcentajeDesecho || 2);
+
+    const mudi_propio = tiempoProceso * tasaMUDI;
+    const gif_propio = tiempoProceso * tasaGIF;
+    
+    // Desecho sobre acumulado de MP (incluyendo MP de Semielaborados porque ya está acumulado en "mp")
+    const costoDesecho = mp * (porcentajeDesecho / 100);
+
+    const mudi_total = mudi_se + mudi_propio;
+    const gif_total = gif_se + gif_propio;
+
+    const base = mp + emp + mudi_total + costoDesecho;
+    const final = base + gif_total;
     const divisor = datosForm.tipoCosteo === 'GRAMO' ? (datosForm.pesoTotalCantidad || 1) : (datosForm.porcionesCantidad || 1);
 
     return {
       totalMP: mp,
       totalEMP: emp,
-      totalMUDI: mudi,
+      totalMUDI: mudi_total,
+      gif: gif_total,
+      tiempoProcesoMinutos: tiempoProceso,
+      costoDesecho: costoDesecho,
+      porcentajeDesecho: porcentajeDesecho,
       costoTotalBase: base,
       costoTotalFinal: final,
       costoUnitarioMP: mp / divisor,
       costoUnitarioEMP: emp / divisor,
-      costoUnitarioMUDI: mudi / divisor
+      costoUnitarioMUDI: mudi_total / divisor,
+      tieneSEBruto
     };
-  }, [datosForm.ingredientes, datosForm.mudi, datosForm.gif, datosForm.tipoCosteo, datosForm.pesoTotalCantidad, datosForm.porcionesCantidad, insumos, subRecipes]);
+  }, [
+    datosForm.ingredientes, 
+    datosForm.tiempoProcesoMinutos, 
+    datosForm.tasaMUDI, 
+    datosForm.tasaGIF, 
+    datosForm.porcentajeDesecho, 
+    datosForm.tipoCosteo, 
+    datosForm.pesoTotalCantidad, 
+    datosForm.porcionesCantidad, 
+    insumos, 
+    subRecipes
+  ]);
 
   // Cálculo automático de Suma de Insumos y Merma basado en ingredientes
   const depIng = JSON.stringify(datosForm.ingredientes.map((i: any) => ({ id: i.idReferencia, qty: i.cantidad })));
@@ -321,7 +385,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
           {[
             { id: 'ficha', label: 'Receta' },
             { id: 'pasos', label: 'Preparación' },
-            { id: 'historial', label: 'Versiones' }
+            { id: 'historial', label: 'Versiones' },
+            ...(role === 'COSTOS' || role === 'ADMIN' ? [{ id: 'costeo', label: 'Reporte Costos' }] : [])
           ].map((t) => (
             <button
               key={t.id}
@@ -584,7 +649,26 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                               <td className="px-4 py-2">
                                 <div className="flex flex-col">
-                                  <span className="font-black text-slate-800 text-xs">{ing.nombre}</span>
+                                  <span className="font-black text-slate-800 text-xs">
+                                    {ing.tipo === 'SEMIELABORADO' ? (
+                                      <button 
+                                        className="text-emerald-700 hover:text-emerald-500 hover:underline flex items-center gap-1 cursor-pointer text-left text-xs font-black transition-colors" 
+                                        onClick={(e) => { 
+                                          e.preventDefault(); 
+                                          if (onViewRecipe) {
+                                            onViewRecipe(ing.idReferencia);
+                                          } else {
+                                            alert(`Trazabilidad: La receta origen de ${ing.nombre} se puede abrir desde el libro de recetas.`);
+                                          }
+                                        }}
+                                        title="Abrir receta origen"
+                                      >
+                                        <Layers className="w-3.5 h-3.5" /> {ing.nombre}
+                                      </button>
+                                    ) : (
+                                      ing.nombre
+                                    )}
+                                  </span>
                                   <span className="text-[9px] text-slate-400 italic mt-0.5">
                                     {ing.descripcionIngrediente || 'Sin detalle'}
                                   </span>
@@ -638,23 +722,73 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                               {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') && (
                                 <td className="px-4 py-2 text-right font-bold text-slate-400 text-xs">
                                   {(esCostosEditable || esChefEditable) ? (
-                                    <input
-                                      type="number"
-                                      value={ing.costoUnitario !== undefined && ing.costoUnitario !== null ? ing.costoUnitario : ""}
-                                      placeholder="0.00"
-                                      onChange={(e) => {
-                                        const val = Number(e.target.value);
-                                        setDatosForm({
-                                          ...datosForm,
-                                          ingredientes: datosForm.ingredientes.map((i: any) =>
-                                            i.id === ing.id ? { ...i, costoUnitario: val, costoTotal: val * (i.cantidad || 0) } : i
-                                          )
-                                        });
-                                      }}
-                                      className="w-24 p-1 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100"
-                                      step="0.01"
-                                      min="0"
-                                    />
+                                    ((ing.tipo === 'SEMIELABORADO' || (ing.codigoNetSuite || '').toUpperCase().startsWith('SE') || (ing.tipoMaterial || '').toUpperCase() === 'SEMIELABORADO') && role === 'COSTOS') ? (
+                                      <div className="flex flex-col gap-1 w-32 ml-auto">
+                                        <div className="flex justify-between items-center text-[8px] gap-1">
+                                          <span className="text-slate-400">MP:</span>
+                                          <input type="number" disabled={!esCostosEditable} placeholder="0.00" value={ing.costoEstructuralMP !== undefined ? ing.costoEstructuralMP : ""} onChange={(e) => {
+                                            const val = Number(e.target.value);
+                                            setDatosForm({
+                                              ...datosForm,
+                                              ingredientes: datosForm.ingredientes.map((i: any) =>
+                                                i.id === ing.id ? { ...i, costoEstructuralMP: val, costoUnitario: val + (i.costoEstructuralEMP||0) + (i.costoEstructuralMODI||0), costoTotal: (val + (i.costoEstructuralEMP||0) + (i.costoEstructuralMODI||0)) * (i.cantidad || 0) } : i
+                                              )
+                                            });
+                                          }} className="w-16 p-0.5 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-100" />
+                                        </div>
+                                        <div className="flex justify-between items-center text-[8px] gap-1">
+                                          <span className="text-slate-400">EMP:</span>
+                                          <input type="number" disabled={!esCostosEditable} placeholder="0.00" value={ing.costoEstructuralEMP !== undefined ? ing.costoEstructuralEMP : ""} onChange={(e) => {
+                                            const val = Number(e.target.value);
+                                            setDatosForm({
+                                              ...datosForm,
+                                              ingredientes: datosForm.ingredientes.map((i: any) =>
+                                                i.id === ing.id ? { ...i, costoEstructuralEMP: val, costoUnitario: (i.costoEstructuralMP||0) + val + (i.costoEstructuralMODI||0), costoTotal: ((i.costoEstructuralMP||0) + val + (i.costoEstructuralMODI||0)) * (i.cantidad || 0) } : i
+                                              )
+                                            });
+                                          }} className="w-16 p-0.5 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-100" />
+                                        </div>
+                                        <div className="flex justify-between items-center text-[8px] gap-1">
+                                          <span className="text-slate-400">MODI:</span>
+                                          <input type="number" disabled={!esCostosEditable} placeholder="0.00" value={ing.costoEstructuralMODI !== undefined ? ing.costoEstructuralMODI : ""} onChange={(e) => {
+                                            const val = Number(e.target.value);
+                                            setDatosForm({
+                                              ...datosForm,
+                                              ingredientes: datosForm.ingredientes.map((i: any) =>
+                                                i.id === ing.id ? { ...i, costoEstructuralMODI: val, costoUnitario: (i.costoEstructuralMP||0) + (i.costoEstructuralEMP||0) + val, costoTotal: ((i.costoEstructuralMP||0) + (i.costoEstructuralEMP||0) + val) * (i.cantidad || 0) } : i
+                                              )
+                                            });
+                                          }} className="w-16 p-0.5 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-100" />
+                                        </div>
+                                        <div className="text-right text-[9px] font-black mt-0.5 border-t border-slate-200 pt-0.5">
+                                          {((ing.costoEstructuralMP||0) + (ing.costoEstructuralEMP||0) + (ing.costoEstructuralMODI||0)).toLocaleString('es-CR', {style: 'currency', currency: 'CRC'})}
+                                        </div>
+                                      </div>
+                                    ) : (
+                                      (ing.tipo === 'SEMIELABORADO' || (ing.codigoNetSuite || '').toUpperCase().startsWith('SE') || (ing.tipoMaterial || '').toUpperCase() === 'SEMIELABORADO') ? (
+                                        <span className="font-black text-slate-600">
+                                          {((ing.costoEstructuralMP||0) + (ing.costoEstructuralEMP||0) + (ing.costoEstructuralMODI||0)).toLocaleString('es-CR', {style: 'currency', currency: 'CRC'})}
+                                        </span>
+                                      ) : (
+                                        <input
+                                          type="number"
+                                          value={ing.costoUnitario !== undefined && ing.costoUnitario !== null ? ing.costoUnitario : ""}
+                                          placeholder="0.00"
+                                          onChange={(e) => {
+                                            const val = Number(e.target.value);
+                                            setDatosForm({
+                                              ...datosForm,
+                                              ingredientes: datosForm.ingredientes.map((i: any) =>
+                                                i.id === ing.id ? { ...i, costoUnitario: val, costoTotal: val * (i.cantidad || 0) } : i
+                                              )
+                                            });
+                                          }}
+                                          className="w-24 p-1 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100"
+                                          step="0.01"
+                                          min="0"
+                                        />
+                                      )
+                                    )
                                   ) : (
                                     (ing.costoUnitario ?? 0).toLocaleString('es-CR', {
                                       style: 'currency',
@@ -837,39 +971,59 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                       </select>
                     </div>
 
-                    {/* MODI */}
+                    {/* Tiempo de Proceso */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> MODI</label>
-                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.mudi || 0} onChange={(e) => setDatosForm({ ...datosForm, mudi: Number(e.target.value) })} />
+                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Proceso (Min)</label>
+                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tiempoProcesoMinutos || 0} onChange={(e) => setDatosForm({ ...datosForm, tiempoProcesoMinutos: Number(e.target.value) })} />
                     </div>
 
-                    {/* GIF (Solo visible para COSTOS/ADMIN) */}
+                    {/* % Desecho */}
+                    <div className="space-y-1">
+                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> % Desecho</label>
+                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.porcentajeDesecho ?? 2} onChange={(e) => setDatosForm({ ...datosForm, porcentajeDesecho: Number(e.target.value) })} step="0.1" />
+                    </div>
+
+                    {/* Tasas MUDI / GIF (Solo visible para COSTOS/ADMIN) */}
                     {(role === 'COSTOS' || role === 'ADMIN') && (
-                      <div className="space-y-1">
-                        <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Factory className="w-2.5 h-2.5" /> GIF (Fijo)</label>
-                        <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.gif || 0} onChange={(e) => setDatosForm({ ...datosForm, gif: Number(e.target.value) })} />
-                      </div>
+                      <>
+                        <div className="space-y-1">
+                          <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> Tasa MODI (x Min)</label>
+                          <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tasaMUDI ?? 77} onChange={(e) => setDatosForm({ ...datosForm, tasaMUDI: Number(e.target.value) })} />
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Factory className="w-2.5 h-2.5" /> Tasa GIF (x Min)</label>
+                          <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tasaGIF ?? 83} onChange={(e) => setDatosForm({ ...datosForm, tasaGIF: Number(e.target.value) })} />
+                        </div>
+                      </>
                     )}
                   </div>
 
                   {/* Resultados de Costeo (Solo visibles para COSTOS) */}
                   {(role === 'COSTOS' || role === 'ADMIN') && (
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-5 bg-emerald-50/50 rounded-[2rem] border border-emerald-100 border-dashed animate-in fade-in zoom-in duration-500">
+                    <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 p-5 bg-emerald-50/50 rounded-[2rem] border border-emerald-100 border-dashed animate-in fade-in zoom-in duration-500">
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo MP ({datosForm.tipoCosteo})</p>
-                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.costoUnitarioMP || 0).toFixed(4)}</p>
+                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Mat. + Emp.</p>
+                        <p className="text-sm font-black text-emerald-900">₡{((costeoProyectado.totalMP || 0) + (costeoProyectado.totalEMP || 0)).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo EMP ({datosForm.tipoCosteo})</p>
-                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.costoUnitarioEMP || 0).toFixed(4)}</p>
+                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Desecho ({datosForm.porcentajeDesecho ?? 2}%)</p>
+                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.costoDesecho || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Costo MODI ({datosForm.tipoCosteo})</p>
-                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.costoUnitarioMUDI || 0).toFixed(4)}</p>
+                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">M.O.D.</p>
+                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.totalMUDI || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Costo Total Final</p>
+                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">G.I.F.</p>
+                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.gif || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
+                      </div>
+                      <div className="space-y-1 bg-white p-2 rounded-xl shadow-sm border border-emerald-100">
+                        <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Total Planta</p>
                         <p className="text-xl font-black text-emerald-600 leading-none">{(costeoProyectado.costoTotalFinal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p>
+                      </div>
+                      <div className="space-y-1 bg-slate-900 p-2 rounded-xl shadow-sm border border-slate-800">
+                        <p className="text-[7px] font-black text-emerald-400 uppercase tracking-widest">Costo / {datosForm.tipoCosteo}</p>
+                        <p className="text-xl font-black text-white leading-none">₡{((costeoProyectado.costoTotalFinal || 0) / (datosForm.tipoCosteo === 'GRAMO' ? (datosForm.pesoTotalCantidad || 1) : (datosForm.porcionesCantidad || 1))).toLocaleString('es-CR', { maximumFractionDigits: 4 })}</p>
                       </div>
                     </div>
                   )}
@@ -959,6 +1113,304 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   <div className="py-12 text-center text-slate-300 font-black uppercase tracking-widest text-xs italic">No existen registros históricos para esta fórmula</div>
                 )}
               </div>
+            </div>
+          )}
+
+          {tabActiva === 'costeo' && (role === 'COSTOS' || role === 'ADMIN') && (
+            <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-[10px] bg-slate-50 p-4 border rounded-2xl">
+              
+              {costeoProyectado.tieneSEBruto && (
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-xl shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <AlertCircle className="w-5 h-5 text-amber-600" />
+                    <div>
+                      <h4 className="text-amber-800 font-bold text-xs uppercase">Datos Estructurales Pendientes (NetSuite)</h4>
+                      <p className="text-amber-700 text-xs">Uno o más ingredientes tipo Semielaborado (SE) provienen de NetSuite y aún no cuentan con los campos desglosados (MP, EMP, MODI) en la base de datos externa. Por defecto, su precio total (AverageCost) se está agrupando de forma bruta en el <strong>TOTAL MATERIA PRIMA</strong>. Una vez se actualice NetSuite, los costos se redistribuirán automáticamente.</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Estilo tabla TEAL oscuro (Materia Prima/Ensamble) */}
+              <div className="border border-teal-900 rounded-sm overflow-hidden bg-white">
+                <table className="w-full text-left uppercase whitespace-nowrap">
+                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                    <tr>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">MATERIA PRIMA SEMIELABORADOS</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Und Medida</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Costo Unitari</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Total Costo</th>
+                      <th className="px-2 py-1.5 text-center">Codigos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {ingredientesCategorizados.ensamble.concat(ingredientesCategorizados.decoracion).map((ing: any, idx: number) => {
+                      const esSemi = ing.tipo === 'SEMIELABORADO' || (ing.codigoNetSuite || '').toUpperCase().startsWith('SE') || (ing.tipoMaterial || '').toUpperCase() === 'SEMIELABORADO';
+                      const costoUni = esSemi ? (ing.costoEstructuralMP !== undefined ? ing.costoEstructuralMP : 0) : (ing.costoUnitario || 0);
+                      return (
+                      <tr key={idx} className="hover:bg-slate-50 text-black font-bold">
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 font-medium">{ing.nombreInterno || ing.nombre} {esSemi ? '(Solo MP)' : ''}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right">
+                          {esSemi && esCostosEditable ? (
+                            <input type="number" placeholder="0.00" value={ing.costoEstructuralMP !== undefined ? ing.costoEstructuralMP : ""} onChange={(e) => {
+                              const val = Number(e.target.value);
+                              setDatosForm({
+                                ...datosForm,
+                                ingredientes: datosForm.ingredientes.map((i: any) =>
+                                  i.id === ing.id ? { ...i, costoEstructuralMP: val, costoUnitario: val + (i.costoEstructuralEMP||0) + (i.costoEstructuralMODI||0), costoTotal: (val + (i.costoEstructuralEMP||0) + (i.costoEstructuralMODI||0)) * (i.cantidad || 0) } : i
+                                )
+                              });
+                            }} className="w-20 p-1 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100" />
+                          ) : (
+                            costoUni.toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                          )}
+                        </td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{(costoUni * ing.cantidad).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                      </tr>
+                    )})}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Estilo tabla TEAL oscuro (EMPAQUE) */}
+              <div className="border border-teal-900 rounded-sm overflow-hidden bg-white mt-2">
+                <table className="w-full text-left uppercase whitespace-nowrap">
+                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                    <tr>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">EMPAQUE</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600">Und Medida</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Costo Unitari</th>
+                      <th className="px-2 py-1.5 border-r border-teal-600 text-right">Total Costo</th>
+                      <th className="px-2 py-1.5 text-center">Codigos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {ingredientesCategorizados.empaque.map((ing: any, idx: number) => (
+                      <tr key={`emp-${idx}`} className="hover:bg-slate-50 text-black font-bold">
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 font-medium">{ing.nombreInterno || ing.nombre}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right">{(ing.costoUnitario || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{((ing.costoUnitario || 0) * ing.cantidad).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                      </tr>
+                    ))}
+                    {/* Add Semielaborado EMP costs dynamically */}
+                    {ingredientesCategorizados.ensamble.concat(ingredientesCategorizados.decoracion).filter((ing: any) => (ing.tipo === 'SEMIELABORADO' || (ing.codigoNetSuite || '').toUpperCase().startsWith('SE') || (ing.tipoMaterial || '').toUpperCase() === 'SEMIELABORADO') && ing.costoEstructuralEMP > 0).map((ing: any, idx: number) => (
+                      <tr key={`semi-emp-${idx}`} className="hover:bg-slate-50 text-black font-bold bg-teal-50/50">
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 font-medium">{ing.nombreInterno || ing.nombre} (Solo EMP)</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic">{ing.cantidad}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right">
+                          {esCostosEditable ? (
+                            <input type="number" placeholder="0.00" value={ing.costoEstructuralEMP !== undefined ? ing.costoEstructuralEMP : ""} onChange={(e) => {
+                              const val = Number(e.target.value);
+                              setDatosForm({
+                                ...datosForm,
+                                ingredientes: datosForm.ingredientes.map((i: any) =>
+                                  i.id === ing.id ? { ...i, costoEstructuralEMP: val, costoUnitario: (i.costoEstructuralMP||0) + val + (i.costoEstructuralMODI||0), costoTotal: ((i.costoEstructuralMP||0) + val + (i.costoEstructuralMODI||0)) * (i.cantidad || 0) } : i
+                                )
+                              });
+                            }} className="w-20 p-1 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100" />
+                          ) : (
+                            (ing.costoEstructuralEMP || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                          )}
+                        </td>
+                        <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{((ing.costoEstructuralEMP || 0) * ing.cantidad).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Bloques de Resumen - Mitad Derecha */}
+              <div className="flex flex-col md:flex-row gap-6 mt-6 items-start font-sans">
+                
+                {/* Cuadro Analítico: Costo Planta */}
+                <div className="w-full md:w-3/5 space-y-4">
+                  <div className="flex flex-col text-right pr-6 space-y-0.5">
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL MATERIA PRIMA</span><span className="font-black text-blue-700 w-20">{(costeoProyectado.totalMP || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL EMPAQUE</span><span className="font-black text-blue-700 w-20">{(costeoProyectado.totalEMP || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL MATERIAS P. + EMPAQUES</span><span className="font-black text-blue-700 w-20">{((costeoProyectado.totalMP || 0)+(costeoProyectado.totalEMP || 0)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                    <div className="flex justify-end gap-4"><span className="font-bold">TOTAL MODI</span><span className="font-black text-blue-700 w-20">{(costeoProyectado.totalMUDI || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</span></div>
+                  </div>
+
+                  {/* Inputs de gramos */}
+                  <div className="w-48 ml-auto border border-black p-1 text-right bg-slate-100 mt-2 space-y-0.5 shadow-sm">
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Gramos</span><span className="font-bold text-blue-700">{datosForm.pesoTotalCantidad}</span></div>
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-[9px] uppercase">Peso por Unidad</span><span className="font-bold text-blue-700">{datosForm.pesoPorcionCantidad}</span></div>
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Unidades Totales</span><span className="font-black">{datosForm.porcionesCantidad}</span></div>
+                  </div>
+
+                  {/* Cinta Verde Total Costo */}
+                  <div className="border border-black bg-white shadow-sm font-bold uppercase mt-4">
+                    <table className="w-full text-right text-xs">
+                      <tbody>
+                        <tr>
+                          <td className="text-blue-700 px-2 py-1 w-1/2">TOTAL MATERIAS P. + EMPAQUES</td>
+                          <td className="px-2 py-1">100.00%</td>
+                          <td className="px-2 py-1">{((costeoProyectado.totalMP || 0)+(costeoProyectado.totalEMP || 0)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                        </tr>
+                        <tr>
+                          <td className="text-black px-2 py-1">DESECHOS Y PERDIDAS</td>
+                          <td className="px-2 py-1 bg-slate-200">{(costeoProyectado.porcentajeDesecho || 2).toFixed(2)}%</td>
+                          <td className="px-2 py-1">{(costeoProyectado.costoDesecho || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                        </tr>
+                        <tr>
+                          <td className="text-black px-2 py-1 font-bold flex justify-end items-center gap-2">
+                             MANO OBRA DIRECTA <span className="bg-white border border-slate-300 px-2 py-0.5 text-[10px]">{costeoProyectado.tiempoProcesoMinutos || 0}</span>
+                          </td>
+                          <td className="px-2 py-1 text-red-600 font-black">{(datosForm.tasaMUDI || 77).toFixed(2)}</td>
+                          <td className="px-2 py-1 font-medium">{((costeoProyectado.tiempoProcesoMinutos || 0) * (datosForm.tasaMUDI || 77)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                        </tr>
+                        <tr className="bg-lime-300 border-t-2 border-black font-black">
+                          <td colSpan={2} className="px-2 py-1">TOTAL COSTO PLANTA</td>
+                          <td className="px-2 py-1 text-blue-800">
+                            {(costeoProyectado.costoTotalFinal || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="w-full md:w-2/5 flex justify-end">
+                  <div className="border-4 border-black bg-teal-100 p-2 shadow-xl inline-block text-[10px]">
+                    <div className="border border-black bg-white p-2">
+                      <table className="w-full text-right uppercase font-bold">
+                        <tbody>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">TOTAL MATERIA PRIMA + EMPAQUE</td>
+                            <td className="py-1">{(costeoProyectado.totalMP + costeoProyectado.totalEMP).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">MODI PLANTA</td>
+                            <td className="py-1">{(costeoProyectado.totalMUDI).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">DESECHO</td>
+                            <td className="py-1">{(costeoProyectado.costoDesecho || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-green-700 py-1 pr-3 font-black">COSTO PLANTA</td>
+                            <td className="py-1 bg-slate-800 text-white font-black text-center">{(costeoProyectado.costoTotalFinal).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr>
+                            <td className="text-blue-800 py-1 pr-3">% GIF</td>
+                            <td className="py-1">{(costeoProyectado.gif || 0).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
+                          </tr>
+                          <tr className="border-t-2 border-black">
+                            <td className="text-green-700 py-2 pr-3 font-black text-xs">PRECIO DE VENTA PLANTA A LOCAL</td>
+                            <td className="py-2 bg-slate-800 text-white font-black text-center flex items-center justify-center gap-1">
+                              <span className="text-[10px]">₡</span>
+                              {((costeoProyectado.costoTotalFinal + (costeoProyectado.gif || 0)) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})} <span className="text-green-400">GR</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="text-red-600 py-1 pr-3 font-black text-xs">UNIDAD</td>
+                            <td className="py-1 font-black">
+                              {((costeoProyectado.costoTotalFinal + (costeoProyectado.gif || 0)) / (datosForm.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="mt-2 text-[9px]">
+                      <p>MODI {datosForm.tasaMUDI || 77} COLONES X MIN</p>
+                      <p>GIF {datosForm.tasaGIF || 83} colones min</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tablas Costo por Gramo / Unidad */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6">
+                <div>
+                  <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR GRAMO</h4>
+                  <table className="w-full text-right text-[10px] font-bold uppercase mb-6">
+                    <tbody>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MATERIA PRIMA</td>
+                        <td className="py-1 w-16">{(costeoProyectado.totalMP).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1 w-16">{datosForm.pesoTotalCantidad || 1}</td>
+                        <td className="py-1 w-16 bg-[#8B8000] text-white border border-black text-center">{((costeoProyectado.totalMP) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MP+DESECHO+EMPAQUE</td>
+                        <td className="py-1">{(costeoProyectado.totalMP + costeoProyectado.totalEMP + costeoProyectado.costoDesecho).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{datosForm.pesoTotalCantidad || 1}</td>
+                        <td className="py-1 text-center">{((costeoProyectado.totalMP + costeoProyectado.totalEMP + costeoProyectado.costoDesecho) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">MODI PREPARACION POR GRAMO</td>
+                        <td className="py-1">{((costeoProyectado.tiempoProcesoMinutos)*(datosForm.tasaMUDI || 77)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{datosForm.pesoTotalCantidad || 1}</td>
+                        <td className="py-1 bg-[#8B8000] text-white border border-black text-center">{(((costeoProyectado.tiempoProcesoMinutos)*(datosForm.tasaMUDI || 77)) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MODI POR GRAMO</td>
+                        <td className="py-1">{(costeoProyectado.totalMUDI).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{datosForm.pesoTotalCantidad || 1}</td>
+                        <td className="py-1 bg-[#8B8000] text-white border border-black text-center">{((costeoProyectado.totalMUDI) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL EMPAQUE POR GRAMO</td>
+                        <td className="py-1">{(costeoProyectado.totalEMP).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{datosForm.pesoTotalCantidad || 1}</td>
+                        <td className="py-1 bg-[#8B8000] text-white border border-black text-center">{((costeoProyectado.totalEMP) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr className="border-2 border-black">
+                        <td colSpan={3} className="py-2 pr-2 text-center bg-[#8B8000]/10">TOTAL GRAMO MP+MODI</td>
+                        <td className="py-2 text-center bg-[#8B8000] text-white font-black">{((costeoProyectado.totalMP + costeoProyectado.totalMUDI) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div>
+                  <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR UNIDAD</h4>
+                  <table className="w-full text-right text-[10px] font-bold uppercase">
+                    <tbody>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL COSTO MATERIA PRIMA</td>
+                        <td className="py-1 w-16">{(costeoProyectado.totalMP).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1 w-16">{datosForm.porcionesCantidad || 1}</td>
+                        <td className="py-1 w-16 bg-[#8B8000] text-white border border-black text-center">{((costeoProyectado.totalMP) / (datosForm.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL UNIDAD MP+DESECHO+EMPAQUE</td>
+                        <td className="py-1">{(costeoProyectado.totalMP + costeoProyectado.totalEMP + costeoProyectado.costoDesecho).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{datosForm.porcionesCantidad || 1}</td>
+                        <td className="py-1 border border-transparent text-center">{((costeoProyectado.totalMP + costeoProyectado.totalEMP + costeoProyectado.costoDesecho) / (datosForm.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                      <tr><td colSpan={4} className="h-2"></td></tr>
+                      <tr>
+                        <td className="py-1 pr-2">TOTAL MODI POR UNIDAD</td>
+                        <td className="py-1">{(costeoProyectado.totalMUDI).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                        <td className="py-1">{datosForm.porcionesCantidad || 1}</td>
+                        <td className="py-1 bg-[#8B8000] text-white border border-black text-center">{((costeoProyectado.totalMUDI) / (datosForm.porcionesCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2})}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
             </div>
           )}
 

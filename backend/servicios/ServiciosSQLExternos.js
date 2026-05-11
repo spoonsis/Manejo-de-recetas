@@ -85,5 +85,21 @@ module.exports = {
     obtenerCostoItem,
     listarArticulos,
     listarTablasAzure,
-    obtenerProveedores
+    obtenerProveedores,
+    obtenerGruposProceso
 };
+
+/**
+ * Obtiene la lista de grupos de proceso (clasificación) desde Azure SQL.
+ */
+async function obtenerGruposProceso() {
+    await poolConnect;
+    const result = await pool.request()
+        .query(`
+            SELECT DISTINCT ci_grupo_procesos AS nombre
+            FROM l_nt_dim_articulo
+            WHERE ci_grupo_procesos IS NOT NULL
+            ORDER BY ci_grupo_procesos
+        `);
+    return result.recordset;
+}
