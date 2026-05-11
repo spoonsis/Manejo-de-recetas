@@ -33,8 +33,6 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
     const [filtroEstado, setFiltroEstado] = useState<string>('TODOS');
     const [tabActiva, setTabActiva] = useState<'INTERNA' | 'EXTERNA'>('EXTERNA');
 
-    const [tabActiva, setTabActiva] = useState<'INTERNA' | 'EXTERNA'>('EXTERNA');
-
     React.useEffect(() => {
         if (editandoId) {
             const insumo = insumos.find(i => i.id === editandoId);
