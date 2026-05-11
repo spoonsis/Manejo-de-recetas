@@ -167,6 +167,33 @@ export default function App() {
   const [adminTab, setAdminTab] = useState<'workflows' | 'usuarios'>('workflows');
 
   const [mostrarNotificaciones, setMostrarNotificaciones] = useState(false);
+  const [editandoInsumoId, setEditandoInsumoId] = useState<string | null>(null);
+
+  const manejarClickNotificacion = (n: Notificacion) => {
+    if (!n.leida) marcarNotificacionLeida(n.id);
+    
+    const titulo = n.titulo.toLowerCase();
+    
+    if (titulo.includes('insumo')) {
+        navigate('/inventario');
+        setEditandoInsumoId(n.referenciaId || null);
+    } else if (titulo.includes('aprobada') && titulo.includes('receta')) {
+        navigate('/libro');
+        const receta = recetas.find(r => r.id === n.referenciaId);
+        if (receta) setDetalleLibro(receta);
+    } else if (titulo.includes('revisión') || titulo.includes('pendient')) {
+        navigate('/aprobaciones');
+        const receta = recetas.find(r => r.id === n.referenciaId);
+        if (receta) setEditandoReceta(receta);
+    } else if (titulo.includes('rechazada') && titulo.includes('receta')) {
+        navigate('/recetas');
+        const receta = recetas.find(r => r.id === n.referenciaId);
+        if (receta) setEditandoReceta(receta);
+    }
+    
+    setMostrarNotificaciones(false);
+    setIsSidebarOpen(false);
+  };
 
   useEffect(() => {
     rehidratarSesion();
@@ -994,7 +1021,7 @@ export default function App() {
                   ) : (
                     <div className="divide-y divide-slate-100 p-2 space-y-2">
                       {notificaciones.map(n => (
-                        <div key={n.id} onClick={() => !n.leida && marcarNotificacionLeida(n.id)} className={`p-4 rounded-2xl cursor-pointer transition-colors ${!n.leida ? 'bg-business-mustard/10 hover:bg-business-mustard/20' : 'opacity-70 hover:bg-business-beige'}`}>
+                        <div key={n.id} onClick={() => manejarClickNotificacion(n)} className={`p-4 rounded-2xl cursor-pointer transition-colors ${!n.leida ? 'bg-business-mustard/10 hover:bg-business-mustard/20' : 'opacity-70 hover:bg-business-beige'}`}>
                           <div className="flex items-start gap-3">
                             <div className={`mt-0.5 w-2 h-2 rounded-full shrink-0 ${!n.leida ? 'bg-business-orange shadow-[0_0_8px_rgba(239,142,25,0.5)]' : 'bg-transparent'}`}></div>
                             <div className="flex-1 min-w-0">
@@ -1051,7 +1078,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Panel recipes={recetas} insumos={insumos} role={rol} setView={(v: string) => navigate(v === 'panel' ? '/' : `/${v}`)} />} />
           <Route path="/libro" element={<VistaLibroRecetas recipes={recetasLibroUnicas} onSelect={(r: Receta) => setDetalleLibro(r)} />} />
-          <Route path="/inventario" element={<VistaInventario insumos={insumos} onSave={manejarGuardarInsumo} role={rol} onDelete={(id: string) => setInsumos((p: any[]) => p.filter((i: { id: string; }) => i.id !== id))} fasesConfig={fasesInsumo} proveedores={proveedores} />} />
+          <Route path="/inventario" element={<VistaInventario insumos={insumos} onSave={manejarGuardarInsumo} role={rol} onDelete={(id: string) => setInsumos((p: any[]) => p.filter((i: { id: string; }) => i.id !== id))} fasesConfig={fasesInsumo} proveedores={proveedores} editandoId={editandoInsumoId} onClearEdit={() => setEditandoInsumoId(null)} />} />
           <Route path="/fichas" element={
             <VistaFichasTecnicas
               fichas={fichas}

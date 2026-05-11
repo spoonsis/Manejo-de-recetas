@@ -23,13 +23,29 @@ interface VistaInventarioProps {
     role: Rol;
     fasesConfig: FaseFluxoInsumo[];
     proveedores: any[];
+    editandoId?: string | null;
+    onClearEdit?: () => void;
 }
 
-export default function VistaInventario({ insumos, onSave, onDelete, role, fasesConfig, proveedores }: VistaInventarioProps) {
+export default function VistaInventario({ insumos, onSave, onDelete, role, fasesConfig, proveedores, editandoId, onClearEdit }: VistaInventarioProps) {
     const [editando, setEditando] = useState<Insumo | null>(null);
     const [terminoBusqueda, setTerminoBusqueda] = useState('');
     const [filtroEstado, setFiltroEstado] = useState<string>('TODOS');
     const [tabActiva, setTabActiva] = useState<'INTERNA' | 'EXTERNA'>('EXTERNA');
+
+    const [tabActiva, setTabActiva] = useState<'INTERNA' | 'EXTERNA'>('EXTERNA');
+
+    React.useEffect(() => {
+        if (editandoId) {
+            const insumo = insumos.find(i => i.id === editandoId);
+            if (insumo) {
+                setEditando(insumo);
+                if (insumo.source === 'EXTERNA') setTabActiva('EXTERNA');
+                else setTabActiva('INTERNA');
+                if (onClearEdit) onClearEdit();
+            }
+        }
+    }, [editandoId, insumos, onClearEdit]);
 
     // Calcular progreso dinámico basado en la configuración de fases
     const calcularProgreso = (i: Insumo) => {
@@ -112,7 +128,7 @@ export default function VistaInventario({ insumos, onSave, onDelete, role, fases
                                                     {i.source === 'EXTERNA' && <span className="text-[8px] bg-sky-100 text-sky-700 px-1.5 py-0.5 rounded uppercase tracking-wider font-bold">NetSuite</span>}
                                                     {i.estado === EstadoInsumo.COMPLETADO && i.registrado_netsuite && (
                                                         <span className="text-[8px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded uppercase tracking-wider font-bold flex items-center gap-0.5" title="Registrado en NetSuite">
-                                                            <ShieldCheck size={10} /> NS
+                                                            <ShieldCheck size={10} /> NS {i.codigo_netsuite}
                                                         </span>
                                                     )}
                                                 </div>
