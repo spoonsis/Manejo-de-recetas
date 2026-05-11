@@ -228,6 +228,7 @@ export default function App() {
               source: 'EXTERNA'
             })),
             ...nuevosInsumosNuevos.map((loc: any) => ({
+              ...loc,
               id: loc.id,
               nombre: loc.nombre,
               tipo: 'LOCAL',
@@ -235,8 +236,8 @@ export default function App() {
               unidadMedida: loc.unidadReceta || 'Unidad',
               precioCompra: Number(loc.precioCompra || loc.precioPorUnidad || 0),
               rendimiento: loc.rendimiento || 100,
-              alergenos: [],
-              temporada: 'Todo el año',
+              alergenos: loc.alergenos || [],
+              temporada: loc.temporada || 'Todo el año',
               estado: loc.estado || EstadoInsumo.COMPLETADO,
               merma: loc.merma || 0,
               source: 'INTERNA'

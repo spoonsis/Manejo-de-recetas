@@ -28,7 +28,8 @@ async function crearInsumoLocal(data) {
         seccionAlisto, clasificacion, unidadConsumo, factorConversion,
         cantidadConvertida, cantidadCompra,
         tipoUnidad, unidadBase, tipoRotacion, ciTipoArticulo, 
-        metodoCalculo, categoriaCosto, tipoEstimacion, programaFiscal
+        metodoCalculo, categoriaCosto, tipoEstimacion, programaFiscal,
+        codigo_netsuite, registrado_netsuite
     } = data;
 
     await pool.query(`
@@ -40,9 +41,10 @@ async function crearInsumoLocal(data) {
             seccionAlisto, clasificacion, unidadConsumo, factorConversion,
             cantidadConvertida, cantidadCompra,
             tipoUnidad, unidadBase, tipoRotacion, ciTipoArticulo,
-            metodoCalculo, categoriaCosto, tipoEstimacion, programaFiscal
+            metodoCalculo, categoriaCosto, tipoEstimacion, programaFiscal,
+            codigo_netsuite, registrado_netsuite
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON DUPLICATE KEY UPDATE
             nombre=VALUES(nombre), estado=VALUES(estado), marca=VALUES(marca), 
             tipoMaterial=VALUES(tipoMaterial), unidad=VALUES(unidad), unidadStock=VALUES(unidadStock),
@@ -59,7 +61,8 @@ async function crearInsumoLocal(data) {
             tipoUnidad=VALUES(tipoUnidad), unidadBase=VALUES(unidadBase), 
             tipoRotacion=VALUES(tipoRotacion), ciTipoArticulo=VALUES(ciTipoArticulo), 
             metodoCalculo=VALUES(metodoCalculo), categoriaCosto=VALUES(categoriaCosto), 
-            tipoEstimacion=VALUES(tipoEstimacion), programaFiscal=VALUES(programaFiscal)
+            tipoEstimacion=VALUES(tipoEstimacion), programaFiscal=VALUES(programaFiscal),
+            codigo_netsuite=VALUES(codigo_netsuite), registrado_netsuite=VALUES(registrado_netsuite)
     `, [
         id, nombre, estado || 'PENDIENTE_COMPRAS', source || 'INTERNA', marca || '',
         tipoMaterial || '', unidad || '', unidadStock || '',
@@ -72,7 +75,8 @@ async function crearInsumoLocal(data) {
         clasificacion || '', unidadConsumo || '', factorConversion || 1, 
         cantidadConvertida || 0, cantidadCompra || 0,
         tipoUnidad || '', unidadBase || '', tipoRotacion || '', ciTipoArticulo || '',
-        metodoCalculo || '', categoriaCosto || '', tipoEstimacion || '', programaFiscal || ''
+        metodoCalculo || '', categoriaCosto || '', tipoEstimacion || '', programaFiscal || '',
+        codigo_netsuite || '', registrado_netsuite ? 1 : 0
     ]);
     
     // Trigger cascade update on cost changes (if existing, marks parents pending)

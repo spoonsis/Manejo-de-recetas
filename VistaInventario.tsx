@@ -605,6 +605,52 @@ function EditorInsumo({ insumo, onClose, onSave, role, fasesConfig, proveedores 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{faseActual.campos.map(campo => renderCampo(campo))}</div>
                         </div>
                     )}
+
+                    {datos.estado === EstadoInsumo.COMPLETADO && (role === 'COSTOS' || role === 'ADMIN') && (
+                        <div className="space-y-6 animate-in slide-in-from-right-2 duration-300 mt-6 pt-6 border-t border-slate-100">
+                            <div className="flex items-center gap-3 p-4 bg-sky-50/50 rounded-2xl border border-sky-100">
+                                <Package className="w-5 h-5 text-sky-600" />
+                                <div>
+                                    <h3 className="text-sm font-black text-slate-900">Integración NetSuite</h3>
+                                    <p className="text-[10px] font-medium text-sky-700">Registrar código ERP (Exclusivo para COSTOS)</p>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
+                                <div className="space-y-1">
+                                    <label className="text-[9px] font-black text-slate-400 uppercase">CÓDIGO NETSUITE</label>
+                                    <input 
+                                        type="text" 
+                                        value={datos.codigo_netsuite || ''} 
+                                        onChange={e => handleFieldChange('codigo_netsuite', e.target.value)} 
+                                        disabled={!!datos.registrado_netsuite}
+                                        placeholder="Ej: NS-12345"
+                                        className="w-full p-2.5 bg-white border border-slate-200 rounded-xl font-bold text-slate-700 text-xs outline-none focus:ring-4 focus:ring-sky-500/10 transition-all disabled:bg-slate-50 disabled:text-slate-400" 
+                                    />
+                                </div>
+                                <div>
+                                    {datos.registrado_netsuite ? (
+                                        <div className="p-2.5 bg-emerald-100 text-emerald-700 font-bold text-xs rounded-xl flex items-center justify-center gap-2 border border-emerald-200 w-full h-full">
+                                            <ShieldCheck className="w-4 h-4" /> Registrado en NetSuite
+                                        </div>
+                                    ) : (
+                                        <button 
+                                            onClick={() => {
+                                                if (!datos.codigo_netsuite) {
+                                                    alert("Debe ingresar el código de NetSuite primero.");
+                                                    return;
+                                                }
+                                                onSave({ ...datos, registrado_netsuite: true });
+                                            }} 
+                                            disabled={!datos.codigo_netsuite}
+                                            className="w-full p-2.5 bg-sky-600 text-white font-black uppercase text-[10px] rounded-xl shadow-md hover:bg-sky-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 h-full"
+                                        >
+                                            <Save className="w-3.5 h-3.5" /> Registrar en NetSuite
+                                        </button>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="p-6 border-t bg-slate-50/80 flex justify-end gap-3 rounded-b-[2rem]">

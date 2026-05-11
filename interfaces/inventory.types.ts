@@ -46,6 +46,8 @@ export interface Insumo {
   categoriaCosto?: string;
   tipoEstimacion?: string;
   programaFiscal?: string;
+  registrado_netsuite?: boolean;
+  codigo_netsuite?: string;
 
   // Cálculos antiguos compatibles
   unidadConsumo: string;
