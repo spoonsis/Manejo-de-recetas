@@ -113,7 +113,12 @@ export default function AdminWorkflows({
                 });
                 setEditandoFase(null);
             } else {
-                alert("Error al guardar la fase en la base de datos.");
+                let errorMsg = "";
+                try {
+                    const err = await res.json();
+                    errorMsg = err.error || err.message || JSON.stringify(err);
+                } catch(e) {}
+                alert("Error al guardar la fase en la base de datos. Detalle: " + errorMsg);
             }
         } catch (error) {
             console.error("Error guardando fase:", error);
