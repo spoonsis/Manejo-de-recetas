@@ -210,7 +210,7 @@ export default function App() {
       setLoadingData(true);
       try {
         // 1. Cargar Recetas Paginadas iniciales
-        const resRecetas = await fetch(`/api/local/recetas?page=1&limit=50`, { credentials: 'include' });
+        const resRecetas = await fetch(`/api/local/recetas?page=1&limit=2000`, { credentials: 'include' });
         if (resRecetas.ok) {
           const resJson = await resRecetas.json();
           if (resJson.stats) {
