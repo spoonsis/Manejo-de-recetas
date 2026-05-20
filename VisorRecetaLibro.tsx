@@ -60,14 +60,14 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
             <div>
               <h2 className="text-2xl font-black text-slate-900 tracking-tight leading-tight">{recetaActiva.nombre}</h2>
               <div className="flex items-center gap-2 mt-1">
-                <span className={`text-[8px] font-black px-2 py-0.5 rounded-full border ${ESTILOS_ESTADO[recetaActiva.estado]}`}>
+                <span className={`text-sm font-black px-2 py-0.5 rounded-full border ${ESTILOS_ESTADO[recetaActiva.estado]}`}>
                   {ETIQUETAS_ESTADO[recetaActiva.estado].toUpperCase()}
                 </span>
-                <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest bg-white border px-2 py-0.5 rounded-md">v{recetaActiva.versionActual}</span>
+                <span className="text-xs font-black text-slate-600 uppercase tracking-widest bg-white border px-2 py-0.5 rounded-md">v{recetaActiva.versionActual}</span>
               </div>
             </div>
           </div>
-          <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-all"><X className="w-6 h-6 text-slate-400" /></button>
+          <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-all"><X className="w-6 h-6 text-slate-600" /></button>
         </div>
 
         {/* Tabs */}
@@ -76,7 +76,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
             <button
               key={t}
               onClick={() => setTab(t as any)}
-              className={`py-3 text-[10px] font-black uppercase tracking-widest border-b-4 transition-all ${tab === t ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-300'}`}
+              className={`py-3 text-sm font-black uppercase tracking-widest border-b-4 transition-all ${tab === t ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-700'}`}
             >
               {t === 'info' ? 'Ficha' : t === 'preparacion' ? 'Preparación' : t === 'historial' ? 'Versiones' : 'Reporte Costos'}
             </button>
@@ -89,19 +89,19 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
             <div className="space-y-8 animate-in fade-in">
               {/* Resumen Administrativo */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 bg-slate-50 border rounded-2xl">
-                <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Subsidiaria</p><p className="font-bold text-xs">{recetaActiva.subsidiaria}</p></div>
-                <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Elaborado Por</p><p className="font-bold text-xs">{recetaActiva.elaboradoPor || '---'}</p></div>
-                <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Aprobado Por</p><p className="font-bold text-xs">{recetaActiva.aprobadoPor || '---'}</p></div>
-                <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Producción</p><p className="font-bold text-xs">{recetaActiva.areaProduce || 'Cocina Central'}</p></div>
-                <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Empaque</p><p className="font-bold text-xs">{recetaActiva.areaEmpaca || 'Línea 1'}</p></div>
+                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Subsidiaria</p><p className="font-bold text-xs">{recetaActiva.subsidiaria}</p></div>
+                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Elaborado Por</p><p className="font-bold text-xs">{recetaActiva.elaboradoPor || '---'}</p></div>
+                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Aprobado Por</p><p className="font-bold text-xs">{recetaActiva.aprobadoPor || '---'}</p></div>
+                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Producción</p><p className="font-bold text-xs">{recetaActiva.areaProduce || 'Cocina Central'}</p></div>
+                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Empaque</p><p className="font-bold text-xs">{recetaActiva.areaEmpaca || 'Línea 1'}</p></div>
               </div>
 
               {/* Matriz de Ingredientes */}
               <div className="space-y-3">
                 <h3 className="text-base font-black text-slate-900 uppercase tracking-tight flex items-center gap-2"><Calculator className="w-4 h-4 text-indigo-600" /> Composición</h3>
                 <div className="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
-                  <table className="w-full text-left text-[10px]">
-                    <thead className="bg-slate-50 text-slate-400 font-black uppercase tracking-widest border-b">
+                  <table className="w-full text-left text-sm">
+                    <thead className="bg-slate-50 text-slate-600 font-black uppercase tracking-widest border-b">
                       <tr>
                         <th className="px-4 py-2">Ingrediente</th>
                         <th className="px-4 py-2 text-center">Cant / Unidad</th>
@@ -118,7 +118,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                       ].map(seccion => seccion.data.length > 0 && (
                         <React.Fragment key={seccion.label}>
                           <tr className="bg-slate-50/50">
-                            <td colSpan={5} className={`px-4 py-1.5 text-[8px] font-black ${seccion.color} uppercase tracking-widest`}>{seccion.label}</td>
+                            <td colSpan={5} className={`px-4 py-1.5 text-sm font-black ${seccion.color} uppercase tracking-widest`}>{seccion.label}</td>
                           </tr>
                           {seccion.data.map((ing: { snapshotCostoUnitario: number; costoUnitario: number; id: any; nombre: any; codigoNetSuite: any; cantidad: any; unidad: any; marca: any; costoTotal: number; }) => {
                             const diff = ing.snapshotCostoUnitario ? ((ing.costoUnitario - ing.snapshotCostoUnitario) / ing.snapshotCostoUnitario) * 100 : 0;
@@ -126,14 +126,14 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                               <tr key={ing.id} className="hover:bg-slate-50 transition-colors">
                                 <td className="px-4 py-2">
                                   <div className="font-black text-slate-800 text-xs">{ing.nombre}</div>
-                                  <div className="text-[8px] text-slate-400 uppercase font-black tracking-widest">{ing.codigoNetSuite}</div>
+                                  <div className="text-sm text-slate-600 uppercase font-black tracking-widest">{ing.codigoNetSuite}</div>
                                 </td>
                                 <td className="px-4 py-2 text-center font-black">{ing.cantidad} {ing.unidad}</td>
-                                <td className="px-4 py-2 text-center text-slate-500 font-medium italic text-[9px]">{ing.marca || 'N/A'}</td>
+                                <td className="px-4 py-2 text-center text-slate-700 font-medium italic text-xs">{ing.marca || 'N/A'}</td>
                                 <>
                                   <td className="px-4 py-2 text-right">
                                     <div className="flex flex-col items-end">
-                                      <span className="font-bold text-slate-400">{ing.costoUnitario.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
+                                      <span className="font-bold text-slate-600">{ing.costoUnitario.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
                                       {ing.snapshotCostoUnitario && (
                                         <span className="text-[7px] font-black text-indigo-400 uppercase">Audit: {(ing.snapshotCostoUnitario || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</span>
                                       )}
@@ -154,7 +154,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                             );
                           })}
                           <tr className="bg-slate-50/20">
-                            <td colSpan={4} className="px-4 py-1 text-right text-[8px] font-bold text-slate-400 uppercase">Subtotal {seccion.label}</td>
+                            <td colSpan={4} className="px-4 py-1 text-right text-sm font-bold text-slate-600 uppercase">Subtotal {seccion.label}</td>
                             <td className="px-4 py-1 text-right font-black text-slate-600 text-xs">
                               {seccion.data.reduce((s: any, i: { costoTotal: any; }) => s + i.costoTotal, 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
                             </td>
@@ -168,7 +168,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                         </React.Fragment>
                       ))}
                       <tr className="bg-slate-50 font-black text-indigo-600 border-t-2 border-indigo-100">
-                        <td colSpan={4} className="px-4 py-3 uppercase text-[9px] tracking-widest">COSTO TOTAL PRODUCCIÓN</td>
+                        <td colSpan={4} className="px-4 py-3 uppercase text-xs tracking-widest">COSTO TOTAL PRODUCCIÓN</td>
                         <td className="px-4 py-3 text-right text-base">
                           {recetaActiva.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
                         </td>
@@ -181,15 +181,15 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               {/* Datos de Rendimiento */}
               <div className="p-4 bg-slate-50 border border-slate-100 rounded-3xl">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <div><p className="text-[8px] text-emerald-500 font-black uppercase mb-0.5">Insumos Totales</p><p className="font-bold text-xs text-slate-700">{recetaActiva.sumaTotalInsumos ? `${recetaActiva.sumaTotalInsumos} g` : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Peso Total</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoTotalCantidad ? `${recetaActiva.pesoTotalCantidad} ${recetaActiva.pesoTotalUnidad}` : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Merma</p><p className="font-bold text-xs text-rose-500">{recetaActiva.mermaCantidad !== undefined && recetaActiva.mermaCantidad !== null ? `${recetaActiva.mermaCantidad} g` : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Porciones</p><p className="font-bold text-xs text-slate-700">{recetaActiva.porcionesCantidad ? `${recetaActiva.porcionesCantidad} ${recetaActiva.porcionesUnidad}` : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Peso Porción</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoPorcionCantidad ? `${recetaActiva.pesoPorcionCantidad} ${recetaActiva.pesoPorcionUnidad}` : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Tiempo Prep.</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tiempoPrepCantidad ? `${recetaActiva.tiempoPrepCantidad} ${recetaActiva.tiempoPrepUnidad}` : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">Tipo Costeo</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tipoCosteo || '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">MODI</p><p className="font-bold text-xs text-slate-700">{recetaActiva.mudi !== undefined ? recetaActiva.mudi : '---'}</p></div>
-                  <div><p className="text-[8px] text-slate-400 font-black uppercase mb-0.5">GIF (Fijo)</p><p className="font-bold text-xs text-slate-700">{recetaActiva.gif !== undefined ? recetaActiva.gif : '---'}</p></div>
+                  <div><p className="text-sm text-emerald-500 font-black uppercase mb-0.5">Insumos Totales</p><p className="font-bold text-xs text-slate-700">{recetaActiva.sumaTotalInsumos ? `${recetaActiva.sumaTotalInsumos} g` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Peso Total</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoTotalCantidad ? `${recetaActiva.pesoTotalCantidad} ${recetaActiva.pesoTotalUnidad}` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Merma</p><p className="font-bold text-xs text-rose-500">{recetaActiva.mermaCantidad !== undefined && recetaActiva.mermaCantidad !== null ? `${recetaActiva.mermaCantidad} g` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Porciones</p><p className="font-bold text-xs text-slate-700">{recetaActiva.porcionesCantidad ? `${recetaActiva.porcionesCantidad} ${recetaActiva.porcionesUnidad}` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Peso Porción</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoPorcionCantidad ? `${recetaActiva.pesoPorcionCantidad} ${recetaActiva.pesoPorcionUnidad}` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Tiempo Prep.</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tiempoPrepCantidad ? `${recetaActiva.tiempoPrepCantidad} ${recetaActiva.tiempoPrepUnidad}` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Tipo Costeo</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tipoCosteo || '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">MODI</p><p className="font-bold text-xs text-slate-700">{recetaActiva.mudi !== undefined ? recetaActiva.mudi : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">GIF (Fijo)</p><p className="font-bold text-xs text-slate-700">{recetaActiva.gif !== undefined ? recetaActiva.gif : '---'}</p></div>
                 </div>
               </div>
 
@@ -199,7 +199,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                   <div><p className="text-[7px] font-black text-indigo-400 uppercase tracking-widest mb-0.5">Costo MP ({recetaActiva.tipoCosteo})</p><p className="text-sm font-black text-indigo-900">₡{Number(recetaActiva.costoUnitarioMP || 0).toFixed(4)}</p></div>
                   <div><p className="text-[7px] font-black text-indigo-400 uppercase tracking-widest mb-0.5">Costo EMP ({recetaActiva.tipoCosteo})</p><p className="text-sm font-black text-indigo-900">₡{Number(recetaActiva.costoUnitarioEMP || 0).toFixed(4)}</p></div>
                   <div><p className="text-[7px] font-black text-indigo-400 uppercase tracking-widest mb-0.5">Costo MODI ({recetaActiva.tipoCosteo})</p><p className="text-sm font-black text-indigo-900">₡{Number(recetaActiva.costoUnitarioMUDI || 0).toFixed(4)}</p></div>
-                  <div className="border-t border-indigo-100 md:border-t-0 md:border-l pl-0 md:pl-4 pt-4 md:pt-0"><p className="text-[7px] font-black text-slate-500 uppercase tracking-widest mb-0.5">Costo Total Planta</p><p className="text-base font-black text-indigo-600 leading-none">{Number(recetaActiva.costoTotalFinal || recetaActiva.costoTotal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
+                  <div className="border-t border-indigo-100 md:border-t-0 md:border-l pl-0 md:pl-4 pt-4 md:pt-0"><p className="text-[7px] font-black text-slate-700 uppercase tracking-widest mb-0.5">Costo Total Planta</p><p className="text-base font-black text-indigo-600 leading-none">{Number(recetaActiva.costoTotalFinal || recetaActiva.costoTotal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
                 </div>
               </div>
             </div>
@@ -240,16 +240,16 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                     <div className={`bg-white border rounded-2xl p-5 shadow-sm group-hover:shadow-md transition-all ${v.id === recetaActiva.id ? 'ring-2 ring-indigo-600' : ''}`}>
                       <div className="flex justify-between items-start mb-4">
                         <div>
-                          <p className="text-[9px] text-slate-400 font-black uppercase tracking-widest">Estado: {ETIQUETAS_ESTADO[v.estado]}</p>
+                          <p className="text-xs text-slate-600 font-black uppercase tracking-widest">Estado: {ETIQUETAS_ESTADO[v.estado]}</p>
                           <p className="text-base font-black text-slate-900 mt-0.5">ID Único: {v.id}</p>
                         </div>
                         <div className="flex gap-2">
                           {v.id === recetaActiva.id ? (
-                            <span className="bg-indigo-600 text-white px-3 py-1.5 rounded-full text-[8px] font-black uppercase flex items-center gap-1"><Eye className="w-3 h-3" /> Visualizando</span>
+                            <span className="bg-indigo-600 text-white px-3 py-1.5 rounded-full text-sm font-black uppercase flex items-center gap-1"><Eye className="w-3 h-3" /> Visualizando</span>
                           ) : (
                             <button
                               onClick={() => setRecetaActiva(v as any)}
-                              className="bg-slate-900 text-white px-3 py-1.5 rounded-full text-[8px] font-black uppercase hover:bg-indigo-600 transition-all"
+                              className="bg-slate-900 text-white px-3 py-1.5 rounded-full text-sm font-black uppercase hover:bg-indigo-600 transition-all"
                             >
                               Ver esta versión
                             </button>
@@ -257,12 +257,12 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                         </div>
                       </div>
                       <div className="p-4 bg-slate-50 rounded-xl">
-                        <p className="text-[9px] text-slate-400 font-black uppercase mb-1">Resumen de Cambios:</p>
+                        <p className="text-xs text-slate-600 font-black uppercase mb-1">Resumen de Cambios:</p>
                         <p className="text-slate-600 text-sm font-medium leading-snug italic">"{v.ultimoRegistroCambios || 'Sin descripción detallada'}"</p>
                       </div>
                       <div className="mt-4 flex gap-6">
-                        <div><p className="text-[8px] text-slate-400 font-bold uppercase">Costo Total</p><p className="text-sm font-black text-slate-800">{v.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
-                        <div><p className="text-[8px] text-slate-400 font-bold uppercase">Ing.</p><p className="text-sm font-black text-slate-800">{v.ingredientes.length}</p></div>
+                        <div><p className="text-sm text-slate-600 font-bold uppercase">Costo Total</p><p className="text-sm font-black text-slate-800">{v.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
+                        <div><p className="text-sm text-slate-600 font-bold uppercase">Ing.</p><p className="text-sm font-black text-slate-800">{v.ingredientes.length}</p></div>
                       </div>
                     </div>
                   </div>
@@ -272,7 +272,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
           )}
 
           {tab === 'costeo' && (role === 'COSTOS' || role === 'ADMIN') && (
-            <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-[10px]">
+            <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-sm">
 
               {recetaActiva.tieneSEBruto && (
                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-xl shadow-sm">
@@ -289,7 +289,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               {/* Estilo tabla TEAL oscuro (Materia Prima/Ensamble) */}
               <div className="border border-teal-900 rounded-sm overflow-hidden bg-white">
                 <table className="w-full text-left uppercase whitespace-nowrap">
-                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                  <thead className="bg-teal-700 text-white font-black text-xs">
                     <tr>
                       <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
                       <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">MATERIA PRIMA SEMIELABORADOS</th>
@@ -309,7 +309,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                         <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right">{(ing.costoUnitario || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{(ing.costoTotal || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                        <td className="px-2 py-1 text-center text-sm">{ing.codigoNetSuite || 'NUEVO'}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -319,7 +319,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               {/* Estilo tabla TEAL oscuro (EMPAQUE) */}
               <div className="border border-teal-900 rounded-sm overflow-hidden bg-white mt-2">
                 <table className="w-full text-left uppercase whitespace-nowrap">
-                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                  <thead className="bg-teal-700 text-white font-black text-xs">
                     <tr>
                       <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
                       <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">EMPAQUE</th>
@@ -339,7 +339,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                         <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right">{(ing.costoUnitario || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{(ing.costoTotal || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                        <td className="px-2 py-1 text-center text-sm">{ing.codigoNetSuite || 'NUEVO'}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -362,7 +362,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                   {/* Inputs de gramos */}
                   <div className="w-48 ml-auto border border-black p-1 text-right bg-slate-100 mt-2 space-y-0.5 shadow-sm">
                     <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Gramos</span><span className="font-bold text-blue-700">{recetaActiva.pesoTotalCantidad}</span></div>
-                    <div className="flex justify-between border-b border-white"><span className="font-bold text-[9px] uppercase">Peso por Unidad</span><span className="font-bold text-blue-700">{recetaActiva.pesoPorcionCantidad}</span></div>
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Peso por Unidad</span><span className="font-bold text-blue-700">{recetaActiva.pesoPorcionCantidad}</span></div>
                     <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Unidades Totales</span><span className="font-black">{recetaActiva.porcionesCantidad}</span></div>
                   </div>
 
@@ -382,7 +382,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                         </tr>
                         <tr>
                           <td className="text-black px-2 py-1 font-bold flex justify-end items-center gap-2">
-                             MANO OBRA DIRECTA <span className="bg-white border border-slate-300 px-2 py-0.5 text-[10px]">{recetaActiva.tiempoProcesoMinutos || 0}</span>
+                             MANO OBRA DIRECTA <span className="bg-white border border-slate-300 px-2 py-0.5 text-sm">{recetaActiva.tiempoProcesoMinutos || 0}</span>
                           </td>
                           <td className="px-2 py-1 text-red-600 font-black">{(recetaActiva.tasaMUDI || 77).toFixed(2)}</td>
                           <td className="px-2 py-1 font-medium">{((recetaActiva.tiempoProcesoMinutos || 0) * (recetaActiva.tasaMUDI || 77)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
@@ -401,7 +401,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
 
                 {/* Gran Recuadro Turquesa (Costo Real Venta) */}
                 <div className="w-full md:w-2/5 flex justify-end">
-                  <div className="border-4 border-black bg-teal-100 p-2 shadow-xl inline-block text-[10px]">
+                  <div className="border-4 border-black bg-teal-100 p-2 shadow-xl inline-block text-sm">
                     <div className="border border-black bg-white p-2">
                       <table className="w-full text-right uppercase font-bold">
                         <tbody>
@@ -428,7 +428,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                           <tr className="border-t-2 border-black">
                             <td className="text-green-700 py-2 pr-3 font-black text-xs">PRECIO DE VENTA PLANTA A LOCAL</td>
                             <td className="py-2 bg-slate-800 text-white font-black text-center flex items-center justify-center gap-1">
-                              <span className="text-[10px]">₡</span>
+                              <span className="text-sm">₡</span>
                               {((recetaActiva.costoTotalFinal + (recetaActiva.gif || 0)) / (recetaActiva.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})} <span className="text-green-400">GR</span>
                             </td>
                           </tr>
@@ -441,7 +441,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                         </tbody>
                       </table>
                     </div>
-                    <div className="mt-2 text-[9px]">
+                    <div className="mt-2 text-xs">
                       <p>MODI {recetaActiva.tasaMUDI || 77} COLONES X MIN</p>
                       <p>GIF {recetaActiva.tasaGIF || 83} colones min</p>
                     </div>
@@ -453,7 +453,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6">
                 <div>
                   <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR GRAMO</h4>
-                  <table className="w-full text-right text-[10px] font-bold uppercase mb-6">
+                  <table className="w-full text-right text-sm font-bold uppercase mb-6">
                     <tbody>
                       <tr>
                         <td className="py-1 pr-2">TOTAL COSTO MATERIA PRIMA</td>
@@ -499,7 +499,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
 
                 <div>
                   <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR UNIDAD</h4>
-                  <table className="w-full text-right text-[10px] font-bold uppercase">
+                  <table className="w-full text-right text-sm font-bold uppercase">
                     <tbody>
                       <tr>
                         <td className="py-1 pr-2">TOTAL COSTO MATERIA PRIMA</td>
@@ -535,8 +535,8 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
           <div className="flex items-center gap-3">
             <ShieldCheck className="w-5 h-5 text-emerald-500" />
             <div>
-              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Seguridad GastroFlow</p>
-              <p className="text-[8px] font-bold text-slate-400 italic">
+              <p className="text-xs font-black text-slate-600 uppercase tracking-widest">Seguridad GastroFlow</p>
+              <p className="text-sm font-bold text-slate-600 italic">
                 Auditado técnicamente el {recetaActiva.fechaRevision ||
                   (recetaActiva.versiones && recetaActiva.versiones.length > 0
                     ? new Date(recetaActiva.versiones[recetaActiva.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR')
@@ -550,7 +550,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               <PDFDownloadLink
                 document={<ExportarRecetaPDF receta={{ ...recetaActiva, ingredientesCategorizados: ingredientesCategorizados as any }} />}
                 fileName={`Receta_${recetaActiva.nombre || 'Sin_Nombre'}.pdf`}
-                className="px-6 py-2.5 bg-slate-900 text-white font-black uppercase text-[10px] tracking-widest rounded-xl shadow-lg hover:bg-slate-800 transition-all flex items-center gap-2"
+                className="px-6 py-2.5 bg-slate-900 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg hover:bg-slate-800 transition-all flex items-center gap-2"
               >
                 {({ loading }) => (
                   <>
@@ -561,7 +561,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               </PDFDownloadLink>
             )}
 
-            <button onClick={onClose} className="px-8 py-2.5 bg-white border border-slate-200 text-slate-400 font-black uppercase text-[10px] rounded-xl shadow-sm hover:bg-slate-50 active:scale-95 transition-all">
+            <button onClick={onClose} className="px-8 py-2.5 bg-white border border-slate-200 text-slate-600 font-black uppercase text-sm rounded-xl shadow-sm hover:bg-slate-50 active:scale-95 transition-all">
               Cerrar Consulta
             </button>
           </div>

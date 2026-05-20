@@ -109,7 +109,7 @@ export default function GestionUsuarios() {
                         <Users className="w-6 h-6 text-business-orange" />
                         Control de Acceso y Usuarios
                     </h2>
-                    <p className="text-slate-500 font-medium text-[11px] mt-0.5">Gestiona los permisos y el personal con acceso al sistema.</p>
+                    <p className="text-slate-700 font-medium text-sm mt-0.5">Gestiona los permisos y el personal con acceso al sistema.</p>
                 </div>
                 <Button onClick={() => setShowAddModal(true)} className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800">
                     <UserPlus className="w-4 h-4 mr-2" /> Nuevo Usuario
@@ -119,7 +119,7 @@ export default function GestionUsuarios() {
             <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
                 <div className="p-4 border-b border-slate-100 bg-slate-50/50 flex items-center gap-4">
                     <div className="relative flex-1 max-w-md">
-                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-600" />
                         <input
                             type="text"
                             placeholder="Buscar por nombre, usuario o email..."
@@ -132,7 +132,7 @@ export default function GestionUsuarios() {
 
                 <div className="overflow-x-auto">
                     <table className="w-full text-left">
-                        <thead className="bg-slate-50 text-slate-400 text-[9px] font-black uppercase tracking-widest border-b">
+                        <thead className="bg-slate-50 text-slate-600 text-xs font-black uppercase tracking-widest border-b">
                             <tr>
                                 <th className="px-6 py-4">Usuario</th>
                                 <th className="px-6 py-4">Rol</th>
@@ -146,12 +146,12 @@ export default function GestionUsuarios() {
                                 <tr>
                                     <td colSpan={5} className="px-6 py-12 text-center">
                                         <Loader2 className="w-8 h-8 animate-spin text-business-orange mx-auto mb-2" />
-                                        <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Cargando Personal...</span>
+                                        <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Cargando Personal...</span>
                                     </td>
                                 </tr>
                             ) : filteredUsers.length === 0 ? (
                                 <tr>
-                                    <td colSpan={5} className="px-6 py-12 text-center text-slate-400 font-medium italic text-sm">
+                                    <td colSpan={5} className="px-6 py-12 text-center text-slate-600 font-medium italic text-sm">
                                         No se encontraron usuarios que coincidan con la búsqueda.
                                     </td>
                                 </tr>
@@ -164,7 +164,7 @@ export default function GestionUsuarios() {
                                             </div>
                                             <div>
                                                 <div className="font-black text-slate-900 text-sm leading-tight">{u.nombreCompleto}</div>
-                                                <div className="text-[10px] text-slate-400 font-bold flex items-center gap-1.5 mt-0.5">
+                                                <div className="text-sm text-slate-600 font-bold flex items-center gap-1.5 mt-0.5">
                                                     <Mail className="w-2.5 h-2.5" /> {u.email}
                                                     <span className="text-slate-200">|</span>
                                                     <span className="lowercase">@{u.nombreUsuario}</span>
@@ -173,7 +173,7 @@ export default function GestionUsuarios() {
                                         </div>
                                     </td>
                                     <td className="px-6 py-4">
-                                        <div className="flex items-center gap-2 font-black text-[10px] uppercase tracking-wider text-slate-600">
+                                        <div className="flex items-center gap-2 font-black text-sm uppercase tracking-wider text-slate-600">
                                             <Shield className="w-3.5 h-3.5 text-business-orange/60" />
                                             {u.rol}
                                         </div>
@@ -184,7 +184,7 @@ export default function GestionUsuarios() {
                                         </Badge>
                                     </td>
                                     <td className="px-6 py-4">
-                                        <div className="text-[10px] font-bold text-slate-400 uppercase">
+                                        <div className="text-sm font-bold text-slate-600 uppercase">
                                             {u.ultimoAcceso ? new Date(u.ultimoAcceso).toLocaleString() : 'NUNCA'}
                                         </div>
                                     </td>
@@ -192,7 +192,7 @@ export default function GestionUsuarios() {
                                         <button
                                             onClick={() => toggleUserStatus(u.id)}
                                             title={u.activo ? "Inactivar Usuario" : "Activar Usuario"}
-                                            className={`p-2 rounded-lg transition-all ${u.activo ? 'text-slate-300 hover:text-rose-500 hover:bg-rose-50' : 'text-emerald-400 hover:text-emerald-600 hover:bg-emerald-50'}`}
+                                            className={`p-2 rounded-lg transition-all ${u.activo ? 'text-slate-700 hover:text-rose-500 hover:bg-rose-50' : 'text-emerald-400 hover:text-emerald-600 hover:bg-emerald-50'}`}
                                         >
                                             {u.activo ? <UserX className="w-4 h-4" /> : <UserCheck className="w-4 h-4" />}
                                         </button>
@@ -212,17 +212,17 @@ export default function GestionUsuarios() {
                         <div className="p-6 border-b flex justify-between items-center bg-slate-50">
                             <div>
                                 <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight leading-tight">Registrar Nuevo Usuario</h3>
-                                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-0.5 italic">GastroFlow Pro Security</p>
+                                <p className="text-sm font-bold text-slate-600 uppercase tracking-widest mt-0.5 italic">GastroFlow Pro Security</p>
                             </div>
                             <button onClick={() => setShowAddModal(false)} className="p-2 hover:bg-white rounded-full transition-colors group">
-                                <X className="w-5 h-5 text-slate-400 group-hover:text-rose-500" />
+                                <X className="w-5 h-5 text-slate-600 group-hover:text-rose-500" />
                             </button>
                         </div>
 
                         <form onSubmit={handleCreateUser} className="p-8 space-y-6">
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-1.5">
-                                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Usuario (ID)</label>
+                                    <label className="text-sm font-black text-slate-600 uppercase tracking-widest ml-1">Usuario (ID)</label>
                                     <input
                                         required
                                         className="w-full p-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none transition-all"
@@ -232,7 +232,7 @@ export default function GestionUsuarios() {
                                     />
                                 </div>
                                 <div className="space-y-1.5">
-                                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Rol del Sistema</label>
+                                    <label className="text-sm font-black text-slate-600 uppercase tracking-widest ml-1">Rol del Sistema</label>
                                     <select
                                         className="w-full p-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none appearance-none"
                                         value={newUser.rol}
@@ -244,7 +244,7 @@ export default function GestionUsuarios() {
                             </div>
 
                             <div className="space-y-1.5">
-                                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Nombre Completo</label>
+                                <label className="text-sm font-black text-slate-600 uppercase tracking-widest ml-1">Nombre Completo</label>
                                 <input
                                     required
                                     className="w-full p-3 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-xs focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none transition-all"
@@ -255,9 +255,9 @@ export default function GestionUsuarios() {
                             </div>
 
                             <div className="space-y-1.5">
-                                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Correo Electrónico</label>
+                                <label className="text-sm font-black text-slate-600 uppercase tracking-widest ml-1">Correo Electrónico</label>
                                 <div className="relative">
-                                    <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                                    <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-700" />
                                     <input
                                         type="email"
                                         required
@@ -270,9 +270,9 @@ export default function GestionUsuarios() {
                             </div>
 
                             <div className="space-y-1.5">
-                                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Contraseña Temporal</label>
+                                <label className="text-sm font-black text-slate-600 uppercase tracking-widest ml-1">Contraseña Temporal</label>
                                 <div className="relative">
-                                    <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                                    <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-700" />
                                     <input
                                         type="password"
                                         required

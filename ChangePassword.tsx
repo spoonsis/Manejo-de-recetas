@@ -75,9 +75,9 @@ export default function ChangePassword() {
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="space-y-1">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Contraseña Actual / Temporal</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Contraseña Actual / Temporal</label>
                         <div className="relative group">
-                            <KeyRound className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
+                            <KeyRound className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="password"
                                 value={currentPassword}
@@ -89,9 +89,9 @@ export default function ChangePassword() {
                     </div>
 
                     <div className="space-y-1">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Nueva Contraseña Segura</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Nueva Contraseña Segura</label>
                         <div className="relative group">
-                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-emerald-500 transition-colors" />
+                            <Lock className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-emerald-500 transition-colors" />
                             <input
                                 type="password"
                                 value={newPassword}
@@ -103,9 +103,9 @@ export default function ChangePassword() {
                     </div>
 
                     <div className="space-y-1">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Confirmar Nueva Contraseña</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Confirmar Nueva Contraseña</label>
                         <div className="relative group">
-                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-emerald-500 transition-colors" />
+                            <Lock className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-emerald-500 transition-colors" />
                             <input
                                 type="password"
                                 value={confirmPassword}
@@ -133,7 +133,7 @@ export default function ChangePassword() {
                     <button
                         type="button"
                         onClick={() => navigate('/')}
-                        className="w-full text-slate-400 text-xs font-bold uppercase hover:text-slate-600 mt-2"
+                        className="w-full text-slate-600 text-xs font-bold uppercase hover:text-slate-600 mt-2"
                     >
                         Cancelar y Volver
                     </button>

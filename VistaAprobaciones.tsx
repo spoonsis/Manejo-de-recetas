@@ -14,7 +14,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
     <div className="space-y-6 animate-in slide-in-from-left duration-500">
       <header className="mb-4">
         <h2 className="text-xl font-black text-slate-900 tracking-tight uppercase">Centro de Aprobaciones</h2>
-        <p className="text-slate-500 font-medium italic text-[10px]">Perfil activo: {role}</p>
+        <p className="text-slate-700 font-medium italic text-sm">Perfil activo: {role}</p>
       </header>
 
       <div className="grid gap-3">
@@ -31,7 +31,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
 
             <div className="flex items-start gap-3 flex-1">
               <div className="p-3 bg-slate-50 rounded-xl border group-hover:bg-business-mustard/10 transition-colors">
-                <FileText className="w-6 h-6 text-slate-400 group-hover:text-business-orange" />
+                <FileText className="w-6 h-6 text-slate-600 group-hover:text-business-orange" />
               </div>
 
               <div className="flex-1">
@@ -48,13 +48,13 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                 </div>
 
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-slate-900 text-white rounded-full">
+                  <span className="text-xs font-black uppercase px-3 py-1 bg-slate-900 text-white rounded-full">
                     Costo: {r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
                   </span>
-                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-business-mustard/10 text-business-orange border border-business-mustard/20 rounded-full">
+                  <span className="text-xs font-black uppercase px-3 py-1 bg-business-mustard/10 text-business-orange border border-business-mustard/20 rounded-full">
                     Fase: {ETIQUETAS_ESTADO[r.estado as EstadoReceta]}
                   </span>
-                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-slate-50 text-slate-400 border rounded-full">
+                  <span className="text-xs font-black uppercase px-3 py-1 bg-slate-50 text-slate-600 border rounded-full">
                     v{r.versionActual}
                   </span>
                 </div>
@@ -65,7 +65,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
               {role === 'COSTOS' && r.estado === EstadoReceta.PENDIENTE_COSTOS && (
                 <button
                   onClick={() => onRefreshCosts(r.id)}
-                  className="w-full flex items-center justify-center gap-2 py-3 bg-business-orange text-white rounded-xl font-black text-[9px] uppercase shadow-md hover:bg-business-orange/90 active:scale-95 transition-all border border-business-orange group"
+                  className="w-full flex items-center justify-center gap-2 py-3 bg-business-orange text-white rounded-xl font-black text-xs uppercase shadow-md hover:bg-business-orange/90 active:scale-95 transition-all border border-business-orange group"
                 >
                   <RefreshCw className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform duration-500" />
                   Refrescar Costos
@@ -80,7 +80,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                         <Lock className="w-3.5 h-3.5" />
                       </div>
                       <div>
-                        <p className="text-[8px] font-black uppercase text-slate-400 tracking-widest flex items-center gap-1">
+                        <p className="text-sm font-black uppercase text-slate-600 tracking-widest flex items-center gap-1">
                           Certificación Vigente <ShieldCheck className="w-2.5 h-2.5" />
                         </p>
                         <p className="font-black text-emerald-800 text-lg tracking-tight leading-none mt-0.5">
@@ -90,7 +90,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                     </div>
                   ) : (
                     <>
-                      <label className="text-[9px] font-black uppercase text-slate-400 tracking-widest">
+                      <label className="text-xs font-black uppercase text-slate-600 tracking-widest">
                         QC Pass Certification
                       </label>
                       <input
@@ -118,7 +118,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                       setCodigoCalidadInput(prev => { const next = { ...prev }; delete next[r.id]; return next; });
                     }}
                     disabled={!r.codigoCalidad && !codigoCalidadInput[r.id]?.trim()}
-                    className="w-full py-3 bg-emerald-600 text-white rounded-xl font-black uppercase text-[10px] tracking-widest shadow-md hover:bg-emerald-700 active:scale-95 disabled:opacity-30 transition-all flex items-center justify-center gap-2 group border border-emerald-500"
+                    className="w-full py-3 bg-emerald-600 text-white rounded-xl font-black uppercase text-sm tracking-widest shadow-md hover:bg-emerald-700 active:scale-95 disabled:opacity-30 transition-all flex items-center justify-center gap-2 group border border-emerald-500"
                   >
                     <Save className="w-4 h-4" /> Certificar
                   </button>
@@ -126,13 +126,13 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                   <div className="flex gap-2">
                     <button
                       onClick={() => onApprove(r.id, role)}
-                      className="flex-1 py-3 bg-business-olive text-white rounded-xl font-black uppercase text-[10px] tracking-widest shadow-lg shadow-business-olive/20 flex items-center justify-center gap-2 hover:bg-business-olive/90 active:scale-95 transition-all"
+                      className="flex-1 py-3 bg-business-olive text-white rounded-xl font-black uppercase text-sm tracking-widest shadow-lg shadow-business-olive/20 flex items-center justify-center gap-2 hover:bg-business-olive/90 active:scale-95 transition-all"
                     >
                       <BadgeCheck className="w-4 h-4" /> Aprobar Revisión
                     </button>
                     <button
                       onClick={() => onReject(r.id, role)}
-                      className="flex-1 bg-white border border-rose-100 text-rose-600 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-rose-50 active:scale-95 transition-all flex items-center justify-center gap-2"
+                      className="flex-1 bg-white border border-rose-100 text-rose-600 py-3 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-rose-50 active:scale-95 transition-all flex items-center justify-center gap-2"
                     >
                       <X className="w-4 h-4" /> Rechazar
                     </button>
@@ -157,10 +157,10 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                   <h3 className="text-lg font-black text-slate-900 tracking-tight leading-tight">{f.nombreReceta}</h3>
                 </div>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-full">
+                  <span className="text-xs font-black uppercase px-3 py-1 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-full">
                     {f.estado.replace('_', ' ')}
                   </span>
-                  <span className="text-[9px] font-black uppercase px-3 py-1 bg-slate-50 text-slate-400 border rounded-full">
+                  <span className="text-xs font-black uppercase px-3 py-1 bg-slate-50 text-slate-600 border rounded-full">
                     v{f.version}
                   </span>
                 </div>
@@ -169,7 +169,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
             <div className="flex flex-col gap-4 min-w-[280px] lg:border-l lg:pl-6 border-slate-100">
               <button
                 onClick={() => onApproveFicha(f)}
-                className="w-full py-3 bg-slate-900 text-white rounded-xl font-black uppercase text-[10px] tracking-widest shadow-md hover:bg-slate-800 active:scale-95 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 bg-slate-900 text-white rounded-xl font-black uppercase text-sm tracking-widest shadow-md hover:bg-slate-800 active:scale-95 transition-all flex items-center justify-center gap-2"
               >
                 <Eye className="w-4 h-4" /> Revisar y Certificar
               </button>
@@ -178,7 +178,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
         ))}
 
         {pendingRecipes.length === 0 && (!pendingFichas || pendingFichas.length === 0) && (
-          <div className="text-center p-20 bg-white border-2 border-dashed rounded-[3rem] text-slate-300 font-black uppercase tracking-widest">
+          <div className="text-center p-20 bg-white border-2 border-dashed rounded-[3rem] text-slate-700 font-black uppercase tracking-widest">
             <BadgeCheck className="w-16 h-16 mx-auto mb-4 opacity-5" />
             0 Pendientes
           </div>

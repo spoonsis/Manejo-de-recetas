@@ -58,7 +58,7 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                         <Users className="w-8 h-8 text-indigo-600" />
                         Directorio de Usuarios
                     </h2>
-                    <p className="text-slate-500 font-medium">Gestiona el acceso y los roles del personal.</p>
+                    <p className="text-slate-700 font-medium">Gestiona el acceso y los roles del personal.</p>
                 </div>
                 <button
                     onClick={manejarCrearNuevo}
@@ -70,11 +70,11 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
 
             {/* Barra de Búsqueda */}
             <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-3">
-                <Search className="w-5 h-5 text-slate-400" />
+                <Search className="w-5 h-5 text-slate-600" />
                 <input
                     type="text"
                     placeholder="Buscar por nombre, email o rol..."
-                    className="flex-1 outline-none font-medium text-slate-700 placeholder:text-slate-300"
+                    className="flex-1 outline-none font-medium text-slate-700 placeholder:text-slate-700"
                     value={busqueda}
                     onChange={e => setBusqueda(e.target.value)}
                 />
@@ -93,21 +93,21 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                                 />
                                 <div>
                                     <h3 className="font-black text-slate-900 leading-tight">{usuario.nombreCompleto}</h3>
-                                    <p className="text-xs font-bold text-slate-400 mt-1">@{usuario.nombreUsuario}</p>
+                                    <p className="text-xs font-bold text-slate-600 mt-1">@{usuario.nombreUsuario}</p>
                                 </div>
                             </div>
-                            <div className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider ${usuario.activo ? 'bg-emerald-100 text-emerald-600' : 'bg-rose-100 text-rose-600'}`}>
+                            <div className={`px-3 py-1 rounded-full text-sm font-black uppercase tracking-wider ${usuario.activo ? 'bg-emerald-100 text-emerald-600' : 'bg-rose-100 text-rose-600'}`}>
                                 {usuario.activo ? 'Activo' : 'Inactivo'}
                             </div>
                         </div>
 
                         <div className="space-y-3 pl-1">
-                            <div className="flex items-center gap-2 text-xs font-medium text-slate-500">
+                            <div className="flex items-center gap-2 text-xs font-medium text-slate-700">
                                 <ShieldCheck className="w-4 h-4 text-indigo-500" />
                                 <span className="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded-lg font-bold">{usuario.rol}</span>
                             </div>
-                            <div className="flex items-center gap-2 text-xs font-medium text-slate-500">
-                                <span className="text-slate-300">Email:</span> {usuario.email}
+                            <div className="flex items-center gap-2 text-xs font-medium text-slate-700">
+                                <span className="text-slate-700">Email:</span> {usuario.email}
                             </div>
                         </div>
 
@@ -144,18 +144,18 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                                     <h3 className="text-xl font-black text-slate-900">
                                         {editandoUsuario.id ? 'Editar Perfil' : 'Nuevo Usuario'}
                                     </h3>
-                                    <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Credenciales y Acceso</p>
+                                    <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">Credenciales y Acceso</p>
                                 </div>
                             </div>
                             <button onClick={() => setEditandoUsuario(null)} className="p-2 hover:bg-slate-200 rounded-full transition">
-                                <X className="w-6 h-6 text-slate-400" />
+                                <X className="w-6 h-6 text-slate-600" />
                             </button>
                         </div>
 
                         <div className="p-8 overflow-y-auto space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Nombre Completo</label>
+                                    <label className="text-sm font-black uppercase text-slate-600 tracking-wider">Nombre Completo</label>
                                     <input
                                         className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none"
                                         value={editandoUsuario.nombreCompleto}
@@ -164,7 +164,7 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Nombre de Usuario</label>
+                                    <label className="text-sm font-black uppercase text-slate-600 tracking-wider">Nombre de Usuario</label>
                                     <input
                                         className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none"
                                         value={editandoUsuario.nombreUsuario}
@@ -173,7 +173,7 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Correo Electrónico</label>
+                                    <label className="text-sm font-black uppercase text-slate-600 tracking-wider">Correo Electrónico</label>
                                     <input
                                         type="email"
                                         className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none"
@@ -183,7 +183,7 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Rol de Sistema</label>
+                                    <label className="text-sm font-black uppercase text-slate-600 tracking-wider">Rol de Sistema</label>
                                     <select
                                         className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl font-bold text-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none"
                                         value={editandoUsuario.rol}
@@ -233,7 +233,7 @@ export default function AdminUsers({ usuarios, setUsuarios, rolesDisponibles }: 
                         <div className="p-6 border-t bg-slate-50 flex justify-end gap-3">
                             <button
                                 onClick={() => setEditandoUsuario(null)}
-                                className="px-6 py-3 rounded-xl font-bold text-slate-500 hover:bg-slate-200 transition"
+                                className="px-6 py-3 rounded-xl font-bold text-slate-700 hover:bg-slate-200 transition"
                             >
                                 Cancelar
                             </button>

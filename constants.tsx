@@ -42,7 +42,7 @@ export const ETIQUETAS_ESTADO: Record<string, string> = {
   RECHAZADO_CALIDAD: 'Rechazado Calidad',
 };
 export const ESTILOS_ESTADO_INSUMO: Record<EstadoInsumo, string> = {
-  [EstadoInsumo.PENDIENTE_COMPRAS]: 'bg-slate-100 text-slate-500 border-slate-200',
+  [EstadoInsumo.PENDIENTE_COMPRAS]: 'bg-slate-100 text-slate-700 border-slate-200',
   [EstadoInsumo.PENDIENTE_CALIDAD]: 'bg-purple-50 text-purple-600 border-purple-100',
   [EstadoInsumo.PENDIENTE_LOGISTICA]: 'bg-blue-50 text-blue-600 border-blue-100',
   [EstadoInsumo.COMPLETADO]: 'bg-emerald-50 text-emerald-600 border-emerald-100',

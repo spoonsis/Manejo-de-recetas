@@ -93,14 +93,14 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
                         <ChefHat className="w-7 h-7" />
                     </div>
                     <h3 className="text-2xl font-black text-slate-900">Bienvenido</h3>
-                    <p className="text-slate-500 text-sm font-medium mt-1">Ingresa a Maestro de Recetas</p>
+                    <p className="text-slate-700 text-sm font-medium mt-1">Ingresa a Maestro de Recetas</p>
                 </div>
 
                 <form onSubmit={handleLogin} className="space-y-5">
                     <div className="space-y-1.5">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Usuario</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Usuario</label>
                         <div className="relative group">
-                            <User className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
+                            <User className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="text"
                                 value={username}
@@ -113,9 +113,9 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
                     </div>
 
                     <div className="space-y-1.5">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Contraseña</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Contraseña</label>
                         <div className="relative group">
-                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
+                            <Lock className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="password"
                                 value={password}
@@ -137,7 +137,7 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
                     <div className="flex items-center justify-between pt-2">
                         <label className="flex items-center gap-2 cursor-pointer">
                             <input type="checkbox" className="w-3.5 h-3.5 rounded border-slate-300 text-business-orange focus:ring-business-mustard/20" />
-                            <span className="text-xs font-bold text-slate-500">Recordarme</span>
+                            <span className="text-xs font-bold text-slate-700">Recordarme</span>
                         </label>
                         <button type="button" onClick={() => navigate('/forgot-password')} className="text-xs font-bold text-business-orange hover:text-business-olive bg-transparent border-none">
                             ¿Olvidaste tu contraseña?
@@ -153,7 +153,7 @@ export default function Login({ onLogin }: { onLogin: (usuario: Usuario) => void
                     </button>
                 </form>
 
-                <p className="text-center text-[10px] text-slate-400 font-medium mt-8">
+                <p className="text-center text-sm text-slate-600 font-medium mt-8">
                     &copy; 2026 GastroFlow Pro
                 </p>
             </div>

@@ -367,17 +367,17 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 {datosForm.detalle_nombre_receta || datosForm.nombre || 'Nueva Receta / Plato'}
               </h2>
               <div className="flex items-center gap-2 mt-1">
-                <span className={`text-[8px] font-black px-2 py-0.5 rounded-full border shadow-sm ${ESTILOS_ESTADO[datosForm.estado]}`}>
+                <span className={`text-sm font-black px-2 py-0.5 rounded-full border shadow-sm ${ESTILOS_ESTADO[datosForm.estado]}`}>
                   {ETIQUETAS_ESTADO[datosForm.estado]}
                 </span>
-                <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest bg-slate-50 border px-2 py-0.5 rounded-md">
+                <span className="text-sm font-black text-slate-600 uppercase tracking-widest bg-slate-50 border px-2 py-0.5 rounded-md">
                   v{datosForm.versionActual}
                 </span>
               </div>
             </div>
           </div>
           <button onClick={onClose} className="p-2 hover:bg-slate-100 rounded-full transition-all">
-            <X className="w-6 h-6 text-slate-400" />
+            <X className="w-6 h-6 text-slate-600" />
           </button>
         </div>
 
@@ -391,7 +391,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
             <button
               key={t.id}
               onClick={() => setTabActiva(t.id as any)}
-              className={`py-3 text-[10px] font-black uppercase tracking-widest border-b-4 transition-all whitespace-nowrap ${tabActiva === t.id ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-slate-300 hover:text-slate-400'}`}
+              className={`py-3 text-sm font-black uppercase tracking-widest border-b-4 transition-all whitespace-nowrap ${tabActiva === t.id ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-slate-700 hover:text-slate-600'}`}
             >
               {t.label}
             </button>
@@ -404,27 +404,27 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               {/* --- ENCABEZADO ADMINISTRATIVO --- */}
               <div className="grid grid-cols-1 md:grid-cols-5 gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
                 <div className="space-y-1">
-                  <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Building2 className="w-2.5 h-2.5" /> Subsidiaria</label>
-                  <input type="text" disabled className="w-full p-2 border rounded-lg font-black text-slate-500 bg-slate-100 outline-none text-[10px]" value={datosForm.subsidiaria} />
+                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Building2 className="w-2.5 h-2.5" /> Subsidiaria</label>
+                  <input type="text" disabled className="w-full p-2 border rounded-lg font-black text-slate-700 bg-slate-100 outline-none text-sm" value={datosForm.subsidiaria} />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Users className="w-2.5 h-2.5" /> Elaborado por</label>
-                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.elaboradoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, elaboradoPor: e.target.value })} placeholder="Creador..." />
+                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Users className="w-2.5 h-2.5" /> Elaborado por</label>
+                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.elaboradoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, elaboradoPor: e.target.value })} placeholder="Creador..." />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><BadgeCheck className="w-2.5 h-2.5" /> Aprobado por</label>
-                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.aprobadoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, aprobadoPor: e.target.value })} placeholder="Aprobación..." />
+                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><BadgeCheck className="w-2.5 h-2.5" /> Aprobado por</label>
+                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.aprobadoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, aprobadoPor: e.target.value })} placeholder="Aprobación..." />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Warehouse className="w-2.5 h-2.5" /> Área que Produce</label>
-                  <input list="areas-prod-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.areaProduce} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaProduce: e.target.value })} placeholder="Seleccionar..." />
+                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Warehouse className="w-2.5 h-2.5" /> Área que Produce</label>
+                  <input list="areas-prod-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.areaProduce} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaProduce: e.target.value })} placeholder="Seleccionar..." />
                   <datalist id="areas-prod-datalist">
                     {areas.map(a => <option key={a} value={a} />)}
                   </datalist>
                 </div>
                 <div className="space-y-1">
-                  <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Package className="w-2.5 h-2.5" /> Área que Empaca</label>
-                  <input list="areas-emp-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaEmpaca: e.target.value })} placeholder="Seleccionar..." />
+                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Package className="w-2.5 h-2.5" /> Área que Empaca</label>
+                  <input list="areas-emp-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaEmpaca: e.target.value })} placeholder="Seleccionar..." />
                   <datalist id="areas-emp-datalist">
                     {areas.map(a => <option key={a} value={a} />)}
                   </datalist>
@@ -435,12 +435,12 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 <div className="lg:col-span-2 space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest">Nombre del Plato / Receta</label>
+                      <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest">Nombre del Plato / Receta</label>
                       <input type="text" disabled={!esChefEditable} value={datosForm.nombre} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, nombre: e.target.value })}
                         className="w-full p-1.5 border rounded-xl font-black text-md outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm" />
                     </div>
                     <div>
-                      <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest">Código NetSuite de la Receta</label>
+                      <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest">Código NetSuite de la Receta</label>
                       <input
                         type="text"
                         disabled={!esChefEditable}
@@ -452,8 +452,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     </div>
                     {datosForm.codigoCalidad && (
                       <div className="relative">
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest flex items-center gap-1">Código QC <Lock className="w-2.5 h-2.5" /></label>
-                        <div className="w-full p-2.5 border rounded-xl font-black text-lg bg-slate-100 text-slate-500 shadow-inner flex items-center justify-between">
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest flex items-center gap-1">Código QC <Lock className="w-2.5 h-2.5" /></label>
+                        <div className="w-full p-2.5 border rounded-xl font-black text-lg bg-slate-100 text-slate-700 shadow-inner flex items-center justify-between">
                           {datosForm.codigoCalidad}
                           <ShieldCheck className="w-5 h-5 text-emerald-500" />
                         </div>
@@ -461,7 +461,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     )}
                     {datosForm.detalle_nombre_receta && (
                       <div className={datosForm.codigoCalidad ? "" : "md:col-span-2"}>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest flex items-center gap-1">Nombre Detallado Final (Auto) <BadgeCheck className="w-2.5 h-2.5 text-emerald-500" /></label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest flex items-center gap-1">Nombre Detallado Final (Auto) <BadgeCheck className="w-2.5 h-2.5 text-emerald-500" /></label>
                         <div className="w-full p-2.5 border border-emerald-100 rounded-xl font-black text-xs bg-emerald-50 text-emerald-900 shadow-inner">
                           {datosForm.detalle_nombre_receta}
                         </div>
@@ -471,7 +471,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <div className="md:col-span-2">
-                      <label className="text-[8px] font-black uppercase text-slate-400 block mb-1 tracking-widest flex items-center gap-1">Flujo de Aprobación</label>
+                      <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest flex items-center gap-1">Flujo de Aprobación</label>
                       <select
                         disabled={!esChefEditable}
                         className="w-full p-1.5 border rounded-xl font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-sm text-slate-700"
@@ -490,12 +490,12 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 </div>
 
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 h-fit space-y-3">
-                  <h4 className="text-[8px] font-black uppercase text-slate-400 tracking-widest">Categorización</h4>
+                  <h4 className="text-sm font-black uppercase text-slate-600 tracking-widest">Categorización</h4>
                   <div className="flex items-center gap-3">
                     <input type="checkbox" disabled={!esChefEditable} checked={datosForm.esSemielaborado} onChange={(e: { target: { checked: any; }; }) => setDatosForm({ ...datosForm, esSemielaborado: e.target.checked })} className="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" id="semielaborado" />
                     <label htmlFor="semielaborado" className="cursor-pointer select-none">
-                      <p className="font-black text-amber-900 uppercase text-[10px] tracking-tighter">Semielaborado</p>
-                      <p className="text-[8px] text-slate-500 mt-0 font-bold uppercase tracking-tighter italic">En transformación</p>
+                      <p className="font-black text-amber-900 uppercase text-sm tracking-tighter">Semielaborado</p>
+                      <p className="text-sm text-slate-700 mt-0 font-bold uppercase tracking-tighter italic">En transformación</p>
                     </label>
                   </div>
                 </div>
@@ -508,7 +508,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   <div className="space-y-3 p-4 bg-slate-900 rounded-2xl border shadow-xl">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
                       <div className="md:col-span-1">
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Insumo / SubReceta</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Insumo / SubReceta</label>
                         <input
                           list="netsuite-datalist"
                           value={codigoNetSuite}
@@ -528,7 +528,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </datalist>
                       </div>
                       <div>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Tipo Insumo</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Tipo Insumo</label>
                         <input
                           disabled
                           className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-emerald-400 text-xs text-center uppercase tracking-widest cursor-not-allowed"
@@ -536,16 +536,16 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         />
                       </div>
                       <div>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Marca</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Marca</label>
                         <input placeholder="Marca" className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={marca} onChange={(e: { target: { value: any; }; }) => setMarca(e.target.value)} />
                       </div>
                       <div>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Descripción</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Descripción</label>
                         <input placeholder="Descripción..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={descripcionDetalle} onChange={(e: { target: { value: any; }; }) => setDescripcionDetalle(e.target.value)} />
                       </div>
                       {(!codigoNetSuite || esProductoNuevo) && (
                         <div>
-                          <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest flex items-center gap-1">Costo Unitario <span className="text-rose-500">*</span></label>
+                          <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest flex items-center gap-1">Costo Unitario <span className="text-rose-500">*</span></label>
                           <input type="number" placeholder="0.00" className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={costoUnitarioTmp} onChange={(e) => setCostoUnitarioTmp(Number(e.target.value))} />
                         </div>
                       )}
@@ -553,26 +553,26 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     {esProductoNuevo && (
                       <div className="bg-rose-500/10 border border-rose-500/20 p-2 rounded-lg mt-2 mb-2 flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 text-rose-400" />
-                        <span className="text-[9px] font-bold text-rose-300">
+                        <span className="text-xs font-bold text-rose-300">
                           Estás creando un Insumo Nuevo. Asegúrate de proporcionar una <strong className="text-white">Descripción</strong> clara. Este insumo se guardará posteriormente en tu catálogo al guardar.
                         </span>
                       </div>
                     )}
                     <div className="grid grid-cols-1 md:grid-cols-6 gap-3">
                       <div className="md:col-span-2">
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Observaciones</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Observaciones</label>
                         <input placeholder="Notas..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={observaciones} onChange={(e: { target: { value: any; }; }) => setObservaciones(e.target.value)} />
                       </div>
                       <div>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Cant.</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Cant.</label>
                         <input type="number" value={cantidadIngrediente} onChange={(e: { target: { value: any; }; }) => setCantidadIngrediente(Number(e.target.value))} className="w-full p-2 border-none rounded-lg font-black text-emerald-300 bg-slate-800 text-xs" />
                       </div>
                       <div>
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">U.M.</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">U.M.</label>
                         <select value={unidadIngrediente} onChange={(e: { target: { value: any; }; }) => setUnidadIngrediente(e.target.value)} className="w-full p-2 border-none rounded-lg bg-slate-800 font-bold text-white outline-none text-xs">{UNIDADES.map(u => <option key={u} value={u}>{u}</option>)}</select>
                       </div>
                       <div className="md:col-span-1">
-                        <label className="text-[8px] font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Tipo Material</label>
+                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Tipo Material</label>
                         <input list="tipo-material-list" placeholder="Ej. Materia Prima..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={tipoMaterialIngrediente} onChange={(e: { target: { value: any; }; }) => setTipoMaterialIngrediente(e.target.value)} />
                         <datalist id="tipo-material-list">
                           <option value="Materia Prima" />
@@ -582,7 +582,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </datalist>
                       </div>
                       <div className="md:col-span-1">
-                        <label className="text-[8px] font-black uppercase text-amber-500 block mb-0.5 tracking-widest">Sección Receta</label>
+                        <label className="text-sm font-black uppercase text-amber-500 block mb-0.5 tracking-widest">Sección Receta</label>
                         <select
                           className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs uppercase"
                           value={seccionRecetaTmp}
@@ -597,17 +597,17 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     <div className="flex justify-between items-center pt-2 border-t border-slate-800">
                       <div className="flex items-center gap-2">
                         <input type="checkbox" id="es-nuevo-v4" className="w-3.5 h-3.5 rounded text-rose-500 accent-rose-500 cursor-pointer" checked={esProductoNuevo} onChange={(e: { target: { checked: any; }; }) => setEsProductoNuevo(e.target.checked)} />
-                        <label htmlFor="es-nuevo-v4" className="text-[8px] font-black uppercase text-slate-400 cursor-pointer tracking-wider">Insumo Nuevo</label>
+                        <label htmlFor="es-nuevo-v4" className="text-sm font-black uppercase text-slate-600 cursor-pointer tracking-wider">Insumo Nuevo</label>
                       </div>
-                      <button onClick={agregarIngrediente} className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-black text-[9px] uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">AÑADIR LINEA</button>
+                      <button onClick={agregarIngrediente} className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-black text-xs uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">AÑADIR LINEA</button>
 
                     </div>
                   </div>
                 )}
 
                 <div className="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
-                  <table className="w-full text-left text-[10px]">
-                    <thead className="bg-slate-50 text-slate-400 font-black uppercase tracking-widest">
+                  <table className="w-full text-left text-sm">
+                    <thead className="bg-slate-50 text-slate-600 font-black uppercase tracking-widest">
                       <tr className="border-b">
                         <th className="px-4 py-2">Insumo / Descripción</th>
                         <th className="px-4 py-2 text-center">Códigos</th>
@@ -627,7 +627,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         <React.Fragment key={seccion.label}>
 
                           <tr className="bg-slate-50/50">
-                            <td colSpan={esChefEditable ? 7 : 6} className={`px-4 py-1.5 text-[8px] font-black ${seccion.color} uppercase tracking-widest`}>
+                            <td colSpan={esChefEditable ? 7 : 6} className={`px-4 py-1.5 text-sm font-black ${seccion.color} uppercase tracking-widest`}>
                               {seccion.label}
                             </td>
                           </tr>
@@ -669,10 +669,10 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                                       ing.nombre
                                     )}
                                   </span>
-                                  <span className="text-[9px] text-slate-400 italic mt-0.5">
+                                  <span className="text-xs text-slate-600 italic mt-0.5">
                                     {ing.descripcionIngrediente || 'Sin detalle'}
                                   </span>
-                                  <span className="text-[8px] text-emerald-500 font-bold mt-0.5 bg-emerald-50 px-1.5 py-0.5 rounded w-fit">
+                                  <span className="text-sm text-emerald-500 font-bold mt-0.5 bg-emerald-50 px-1.5 py-0.5 rounded w-fit">
                                     {ing.observaciones || 'Sin obs.'}
                                   </span>
                                 </div>
@@ -680,16 +680,16 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                               <td className="px-4 py-2 text-center">
                                 <div className="flex flex-col gap-0.5 items-center">
-                                  <span className="text-[8px] font-black bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 uppercase">
+                                  <span className="text-sm font-black bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 uppercase">
                                     Cód: {ing.codigoICG || '-'}
                                   </span>
-                                  <span className="text-[8px] font-black bg-emerald-50 px-1.5 py-0.5 rounded text-emerald-600 uppercase">
+                                  <span className="text-sm font-black bg-emerald-50 px-1.5 py-0.5 rounded text-emerald-600 uppercase">
                                     ID/NS: {ing.codigoNetSuite || '-'}
                                   </span>
                                 </div>
                               </td>
 
-                              <td className="px-4 py-2 text-center font-bold text-slate-600 uppercase text-[9px]">
+                              <td className="px-4 py-2 text-center font-bold text-slate-600 uppercase text-xs">
                                 {ing.marca || '-'}
                               </td>
 
@@ -715,17 +715,17 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                                   ) : (
                                     ing.cantidad
                                   )}
-                                  <span className="text-[8px] text-slate-400">{ing.unidad}</span>
+                                  <span className="text-sm text-slate-600">{ing.unidad}</span>
                                 </div>
                               </td>
 
                               {(role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF') && (
-                                <td className="px-4 py-2 text-right font-bold text-slate-400 text-xs">
+                                <td className="px-4 py-2 text-right font-bold text-slate-600 text-xs">
                                   {(esCostosEditable || esChefEditable) ? (
                                     ((ing.tipo === 'SEMIELABORADO' || (ing.codigoNetSuite || '').toUpperCase().startsWith('SE') || (ing.tipoMaterial || '').toUpperCase() === 'SEMIELABORADO') && role === 'COSTOS') ? (
                                       <div className="flex flex-col gap-1 w-32 ml-auto">
-                                        <div className="flex justify-between items-center text-[8px] gap-1">
-                                          <span className="text-slate-400">MP:</span>
+                                        <div className="flex justify-between items-center text-sm gap-1">
+                                          <span className="text-slate-600">MP:</span>
                                           <input type="number" disabled={!esCostosEditable} placeholder="0.00" value={ing.costoEstructuralMP !== undefined ? ing.costoEstructuralMP : ""} onChange={(e) => {
                                             const val = Number(e.target.value);
                                             setDatosForm({
@@ -736,8 +736,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                                             });
                                           }} className="w-16 p-0.5 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-100" />
                                         </div>
-                                        <div className="flex justify-between items-center text-[8px] gap-1">
-                                          <span className="text-slate-400">EMP:</span>
+                                        <div className="flex justify-between items-center text-sm gap-1">
+                                          <span className="text-slate-600">EMP:</span>
                                           <input type="number" disabled={!esCostosEditable} placeholder="0.00" value={ing.costoEstructuralEMP !== undefined ? ing.costoEstructuralEMP : ""} onChange={(e) => {
                                             const val = Number(e.target.value);
                                             setDatosForm({
@@ -748,8 +748,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                                             });
                                           }} className="w-16 p-0.5 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-100" />
                                         </div>
-                                        <div className="flex justify-between items-center text-[8px] gap-1">
-                                          <span className="text-slate-400">MODI:</span>
+                                        <div className="flex justify-between items-center text-sm gap-1">
+                                          <span className="text-slate-600">MODI:</span>
                                           <input type="number" disabled={!esCostosEditable} placeholder="0.00" value={ing.costoEstructuralMODI !== undefined ? ing.costoEstructuralMODI : ""} onChange={(e) => {
                                             const val = Number(e.target.value);
                                             setDatosForm({
@@ -760,7 +760,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                                             });
                                           }} className="w-16 p-0.5 border rounded bg-white text-right font-black text-slate-900 outline-none focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-100" />
                                         </div>
-                                        <div className="text-right text-[9px] font-black mt-0.5 border-t border-slate-200 pt-0.5">
+                                        <div className="text-right text-xs font-black mt-0.5 border-t border-slate-200 pt-0.5">
                                           {((ing.costoEstructuralMP||0) + (ing.costoEstructuralEMP||0) + (ing.costoEstructuralMODI||0)).toLocaleString('es-CR', {style: 'currency', currency: 'CRC'})}
                                         </div>
                                       </div>
@@ -816,7 +816,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                                         ingredientes: datosForm.ingredientes.filter((i: { id: any }) => i.id !== ing.id)
                                       })
                                     }
-                                    className="p-1.5 text-slate-300 hover:text-rose-500 transition-all opacity-0 group-hover:opacity-100"
+                                    className="p-1.5 text-slate-700 hover:text-rose-500 transition-all opacity-0 group-hover:opacity-100"
                                   >
                                     <Trash2 className="w-3.5 h-3.5" />
                                   </button>
@@ -829,7 +829,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                           <tr className="bg-slate-50/20">
                             <td
                               colSpan={role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF' ? 5 : 4}
-                              className="px-4 py-1.5 text-right text-[8px] font-bold text-slate-400 uppercase tracking-widest"
+                              className="px-4 py-1.5 text-right text-sm font-bold text-slate-600 uppercase tracking-widest"
                             >
                               Subtotal {seccion.label}
                             </td>
@@ -857,7 +857,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                       <tr className="bg-slate-50 border-t-2 border-emerald-100">
                         <td
                           colSpan={role === 'COSTOS' || role === 'ADMIN' || role === 'CHEF' ? 5 : 4}
-                          className="px-6 py-4 font-black text-slate-400 uppercase tracking-widest text-[9px]"
+                          className="px-6 py-4 font-black text-slate-600 uppercase tracking-widest text-xs"
                         >
                           Costo Producción Bruto
                         </td>
@@ -887,7 +887,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     <div className="p-2 bg-emerald-600 text-white rounded-xl shadow-md"><Dna className="w-4 h-4" /></div>
                     <div>
                       <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Rendimiento y Producción</h4>
-                      <p className="text-[8px] font-bold text-slate-500 uppercase tracking-widest italic opacity-75">Indicadores técnicos de salida</p>
+                      <p className="text-sm font-bold text-slate-700 uppercase tracking-widest italic opacity-75">Indicadores técnicos de salida</p>
                     </div>
                   </div>
 
@@ -896,13 +896,13 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Peso Total Obtenido */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5" /> Peso Total</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5" /> Peso Total</label>
                       <div className="flex gap-1.5">
                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.pesoTotalCantidad || ''} onChange={(e) => {
                           const val = Number(e.target.value);
                           setDatosForm({ ...datosForm, pesoTotalCantidad: val, pesoPorcionCantidad: val * (datosForm.porcionesCantidad || 0), mermaCantidad: (datosForm.sumaTotalInsumos || 0) - val });
                         }} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.pesoTotalUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoTotalUnidad: e.target.value })}>
+                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.pesoTotalUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoTotalUnidad: e.target.value })}>
                           {['g', 'kg', 'L', 'ml'].map(u => <option key={u} value={u}>{u}</option>)}
                         </select>
                       </div>
@@ -910,29 +910,29 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Merma */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> Merma</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> Merma</label>
                       <div className="flex gap-1.5">
                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.mermaCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, mermaCantidad: Number(e.target.value) })} />
-                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-500 text-[10px] flex items-center justify-center w-12">g</span>
+                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-700 text-sm flex items-center justify-center w-12">g</span>
                       </div>
                     </div>
                     {/* Suma Total Insumos */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-500" /> Insumos Totales</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-500" /> Insumos Totales</label>
                       <div className="flex gap-1.5">
                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.sumaTotalInsumos || ''} onChange={(e) => {
                           const val = Number(e.target.value);
                           setDatosForm({ ...datosForm, sumaTotalInsumos: val, mermaCantidad: val - (datosForm.pesoTotalCantidad || 0) });
                         }} />
-                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-500 text-[10px] flex items-center justify-center w-12">g</span>
+                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-700 text-sm flex items-center justify-center w-12">g</span>
                       </div>
                     </div>
                     {/* Cantidad de Porciones */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Layers className="w-2.5 h-2.5" /> Porciones</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Layers className="w-2.5 h-2.5" /> Porciones</label>
                       <div className="flex gap-1.5">
                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.porcionesCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, porcionesCantidad: Number(e.target.value), pesoPorcionCantidad: (datosForm.pesoTotalCantidad || 0) * Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.porcionesUnidad || 'porciones'} onChange={(e) => setDatosForm({ ...datosForm, porcionesUnidad: e.target.value })}>
+                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.porcionesUnidad || 'porciones'} onChange={(e) => setDatosForm({ ...datosForm, porcionesUnidad: e.target.value })}>
                           <option value="porciones">porciones</option>
                           <option value="unidades">tandas</option>
 
@@ -942,10 +942,10 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Peso por Porción */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-400" /> Peso X Porción</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-400" /> Peso X Porción</label>
                       <div className="flex gap-1.5">
                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.pesoPorcionCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionCantidad: Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.pesoPorcionUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionUnidad: e.target.value })}>
+                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.pesoPorcionUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionUnidad: e.target.value })}>
                           {['g', 'kg', 'L', 'ml'].map(u => <option key={u} value={u}>{u}</option>)}
                         </select>
                       </div>
@@ -953,10 +953,10 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Tiempo de Preparación */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Prep.</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Prep.</label>
                       <div className="flex gap-1.5">
                         <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tiempoPrepCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepCantidad: Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.tiempoPrepUnidad || 'min'} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepUnidad: e.target.value })}>
+                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.tiempoPrepUnidad || 'min'} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepUnidad: e.target.value })}>
                           {['min', 'horas'].map(u => <option key={u} value={u}>{u}</option>)}
                         </select>
                       </div>
@@ -964,8 +964,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Tipo Costeo */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Coins className="w-2.5 h-2.5" /> Tipo Costeo</label>
-                      <select disabled={!esChefEditable && !esCostosEditable} className="w-full p-2 border rounded-xl font-bold bg-white outline-none text-[10px]" value={datosForm.tipoCosteo || 'GRAMO'} onChange={(e) => setDatosForm({ ...datosForm, tipoCosteo: e.target.value as any })}>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Coins className="w-2.5 h-2.5" /> Tipo Costeo</label>
+                      <select disabled={!esChefEditable && !esCostosEditable} className="w-full p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.tipoCosteo || 'GRAMO'} onChange={(e) => setDatosForm({ ...datosForm, tipoCosteo: e.target.value as any })}>
                         <option value="GRAMO">Por Gramo</option>
                         <option value="UNIDAD">Por Unidad</option>
                       </select>
@@ -973,13 +973,13 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Tiempo de Proceso */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Proceso (Min)</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Proceso (Min)</label>
                       <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tiempoProcesoMinutos || 0} onChange={(e) => setDatosForm({ ...datosForm, tiempoProcesoMinutos: Number(e.target.value) })} />
                     </div>
 
                     {/* % Desecho */}
                     <div className="space-y-1">
-                      <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> % Desecho</label>
+                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> % Desecho</label>
                       <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.porcentajeDesecho ?? 2} onChange={(e) => setDatosForm({ ...datosForm, porcentajeDesecho: Number(e.target.value) })} step="0.1" />
                     </div>
 
@@ -987,11 +987,11 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     {(role === 'COSTOS' || role === 'ADMIN') && (
                       <>
                         <div className="space-y-1">
-                          <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> Tasa MODI (x Min)</label>
+                          <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> Tasa MODI (x Min)</label>
                           <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tasaMUDI ?? 77} onChange={(e) => setDatosForm({ ...datosForm, tasaMUDI: Number(e.target.value) })} />
                         </div>
                         <div className="space-y-1">
-                          <label className="text-[8px] font-black uppercase text-slate-400 tracking-widest block flex items-center gap-1"><Factory className="w-2.5 h-2.5" /> Tasa GIF (x Min)</label>
+                          <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Factory className="w-2.5 h-2.5" /> Tasa GIF (x Min)</label>
                           <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tasaGIF ?? 83} onChange={(e) => setDatosForm({ ...datosForm, tasaGIF: Number(e.target.value) })} />
                         </div>
                       </>
@@ -1002,19 +1002,19 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   {(role === 'COSTOS' || role === 'ADMIN') && (
                     <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 p-5 bg-emerald-50/50 rounded-[2rem] border border-emerald-100 border-dashed animate-in fade-in zoom-in duration-500">
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Mat. + Emp.</p>
+                        <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Mat. + Emp.</p>
                         <p className="text-sm font-black text-emerald-900">₡{((costeoProyectado.totalMP || 0) + (costeoProyectado.totalEMP || 0)).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">Desecho ({datosForm.porcentajeDesecho ?? 2}%)</p>
+                        <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Desecho ({datosForm.porcentajeDesecho ?? 2}%)</p>
                         <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.costoDesecho || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">M.O.D.</p>
+                        <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">M.O.D.</p>
                         <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.totalMUDI || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest">G.I.F.</p>
+                        <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">G.I.F.</p>
                         <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.gif || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1 bg-white p-2 rounded-xl shadow-sm border border-emerald-100">
@@ -1037,21 +1037,21 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               <div className="flex justify-between items-center bg-emerald-600 p-4 rounded-3xl shadow-md text-white">
                 <div className="flex items-center gap-3">
                   <Sparkles className="w-6 h-6" />
-                  <div><h4 className="text-sm font-black uppercase tracking-tight">IA Culinary Engine</h4><p className="text-[10px] opacity-80">Refina tus procesos con inteligencia artificial gastronómica.</p></div>
+                  <div><h4 className="text-sm font-black uppercase tracking-tight">IA Culinary Engine</h4><p className="text-sm opacity-80">Refina tus procesos con inteligencia artificial gastronómica.</p></div>
                 </div>
                 <button onClick={async () => {
                   setEstaOptimizando(true);
                   const opt = await optimizarPasosReceta(datosForm.nombre, datosForm.ingredientes.map((i: { nombre: any; }) => i.nombre));
                   if (opt) setDatosForm({ ...datosForm, pasos: opt });
                   setEstaOptimizando(false);
-                }} disabled={estaOptimizando || !datosForm.nombre} className="bg-white text-emerald-600 px-4 py-1.5 rounded-xl font-black text-[9px] uppercase shadow-sm transition-all disabled:opacity-50">{estaOptimizando ? 'Procesando...' : 'Optimizar Pasos'}</button>
+                }} disabled={estaOptimizando || !datosForm.nombre} className="bg-white text-emerald-600 px-4 py-1.5 rounded-xl font-black text-xs uppercase shadow-sm transition-all disabled:opacity-50">{estaOptimizando ? 'Procesando...' : 'Optimizar Pasos'}</button>
               </div>
 
               <div className="space-y-3">
                 {esChefEditable && (
                   <div className="flex gap-3 p-3 border-2 border-dashed border-slate-200 bg-slate-50 rounded-2xl items-center">
                     <textarea rows={2} className="flex-1 p-2.5 bg-white border border-slate-200 rounded-xl outline-none font-medium text-xs resize-none focus:ring-2 focus:ring-emerald-100" placeholder="Describe el siguiente proceso técnico..." value={nuevoPaso} onChange={(e: { target: { value: any; }; }) => setNuevoPaso(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey && nuevoPaso) { e.preventDefault(); setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} />
-                    <button onClick={() => { if (nuevoPaso) { setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} className="px-5 py-2.5 bg-slate-900 text-white rounded-xl font-black uppercase text-[9px] tracking-widest hover:bg-emerald-600 transition-all shadow-sm">Añadir</button>
+                    <button onClick={() => { if (nuevoPaso) { setDatosForm({ ...datosForm, pasos: [...datosForm.pasos, nuevoPaso] }); setNuevoPaso(''); } }} className="px-5 py-2.5 bg-slate-900 text-white rounded-xl font-black uppercase text-xs tracking-widest hover:bg-emerald-600 transition-all shadow-sm">Añadir</button>
                   </div>
                 )}
 
@@ -1068,7 +1068,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     </div>
                   ))}
                   {datosForm.pasos.length === 0 && (
-                    <div className="text-center py-4 text-slate-400 font-medium text-[10px] uppercase tracking-widest border-2 border-dashed border-slate-100 rounded-2xl">
+                    <div className="text-center py-4 text-slate-600 font-medium text-sm uppercase tracking-widest border-2 border-dashed border-slate-100 rounded-2xl">
                       Aún no hay pasos en la preparación.
                     </div>
                   )}
@@ -1088,36 +1088,36 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               <div className="space-y-4">
                 {datosForm.versiones.slice().reverse().map((v: { numeroVersion: any; fechaAprobacion: any; aprobadoPorCostos: any; codigoCalidad: any; registroCambios: any; }, i: any) => (
                   <div key={i} className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-3 bg-emerald-600 text-white font-black text-[9px] uppercase tracking-widest rounded-bl-2xl">Certificado</div>
+                    <div className="absolute top-0 right-0 p-3 bg-emerald-600 text-white font-black text-xs uppercase tracking-widest rounded-bl-2xl">Certificado</div>
                     <div className="flex items-center gap-4 mb-6">
                       <div className="p-3 bg-slate-100 rounded-xl group-hover:bg-emerald-100 transition-colors"><BadgeCheck className="w-6 h-6 text-emerald-600" /></div>
-                      <div><h4 className="text-xl font-black text-slate-900">Versión {v.numeroVersion}</h4><p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mt-0.5">Auditado el {v.fechaAprobacion}</p></div>
+                      <div><h4 className="text-xl font-black text-slate-900">Versión {v.numeroVersion}</h4><p className="text-xs font-black text-slate-600 uppercase tracking-widest mt-0.5">Auditado el {v.fechaAprobacion}</p></div>
                     </div>
                     <div className="grid grid-cols-2 gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
                       <div>
-                        <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">ID Auditor Costos</p>
+                        <p className="text-sm font-black text-slate-600 uppercase tracking-widest mb-1">ID Auditor Costos</p>
                         <p className="font-bold text-sm text-slate-600">{v.aprobadoPorCostos || 'S/D'}</p>
                       </div>
                       <div>
-                        <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">Código QC de Control</p>
+                        <p className="text-sm font-black text-slate-600 uppercase tracking-widest mb-1">Código QC de Control</p>
                         <p className="font-black text-emerald-600 text-sm">{v.codigoCalidad || 'S/D'}</p>
                       </div>
                       <div className="col-span-2 pt-3 border-t border-slate-200">
-                        <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1.5">Registro de Cambios</p>
-                        <p className="text-xs font-medium text-slate-500 italic">"{v.registroCambios || 'Sin cambios registrados'}"</p>
+                        <p className="text-sm font-black text-slate-600 uppercase tracking-widest mb-1.5">Registro de Cambios</p>
+                        <p className="text-xs font-medium text-slate-700 italic">"{v.registroCambios || 'Sin cambios registrados'}"</p>
                       </div>
                     </div>
                   </div>
                 ))}
                 {datosForm.versiones.length === 0 && (
-                  <div className="py-12 text-center text-slate-300 font-black uppercase tracking-widest text-xs italic">No existen registros históricos para esta fórmula</div>
+                  <div className="py-12 text-center text-slate-700 font-black uppercase tracking-widest text-xs italic">No existen registros históricos para esta fórmula</div>
                 )}
               </div>
             </div>
           )}
 
           {tabActiva === 'costeo' && (role === 'COSTOS' || role === 'ADMIN') && (
-            <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-[10px] bg-slate-50 p-4 border rounded-2xl">
+            <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-sm bg-slate-50 p-4 border rounded-2xl">
               
               {costeoProyectado.tieneSEBruto && (
                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-xl shadow-sm">
@@ -1134,7 +1134,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               {/* Estilo tabla TEAL oscuro (Materia Prima/Ensamble) */}
               <div className="border border-teal-900 rounded-sm overflow-hidden bg-white">
                 <table className="w-full text-left uppercase whitespace-nowrap">
-                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                  <thead className="bg-teal-700 text-white font-black text-xs">
                     <tr>
                       <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
                       <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">MATERIA PRIMA SEMIELABORADOS</th>
@@ -1171,7 +1171,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                           )}
                         </td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{(costoUni * ing.cantidad).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                        <td className="px-2 py-1 text-center text-sm">{ing.codigoNetSuite || 'NUEVO'}</td>
                       </tr>
                     )})}
                   </tbody>
@@ -1181,7 +1181,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               {/* Estilo tabla TEAL oscuro (EMPAQUE) */}
               <div className="border border-teal-900 rounded-sm overflow-hidden bg-white mt-2">
                 <table className="w-full text-left uppercase whitespace-nowrap">
-                  <thead className="bg-teal-700 text-white font-black text-[9px]">
+                  <thead className="bg-teal-700 text-white font-black text-xs">
                     <tr>
                       <th className="px-2 py-1.5 border-r border-teal-600">Unidades</th>
                       <th className="px-2 py-1.5 border-r border-teal-600 w-1/2">EMPAQUE</th>
@@ -1201,7 +1201,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         <td className="px-2 py-1 border-r border-slate-200 text-center italic capitalize">{ing.unidad || 'UND'}</td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right">{(ing.costoUnitario || 0).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{((ing.costoUnitario || 0) * ing.cantidad).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                        <td className="px-2 py-1 text-center text-sm">{ing.codigoNetSuite || 'NUEVO'}</td>
                       </tr>
                     ))}
                     {/* Add Semielaborado EMP costs dynamically */}
@@ -1227,7 +1227,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                           )}
                         </td>
                         <td className="px-2 py-1 border-r border-slate-200 text-right font-black">{((ing.costoEstructuralEMP || 0) * ing.cantidad).toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-                        <td className="px-2 py-1 text-center text-[8px]">{ing.codigoNetSuite || 'NUEVO'}</td>
+                        <td className="px-2 py-1 text-center text-sm">{ing.codigoNetSuite || 'NUEVO'}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -1249,7 +1249,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   {/* Inputs de gramos */}
                   <div className="w-48 ml-auto border border-black p-1 text-right bg-slate-100 mt-2 space-y-0.5 shadow-sm">
                     <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Gramos</span><span className="font-bold text-blue-700">{datosForm.pesoTotalCantidad}</span></div>
-                    <div className="flex justify-between border-b border-white"><span className="font-bold text-[9px] uppercase">Peso por Unidad</span><span className="font-bold text-blue-700">{datosForm.pesoPorcionCantidad}</span></div>
+                    <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Peso por Unidad</span><span className="font-bold text-blue-700">{datosForm.pesoPorcionCantidad}</span></div>
                     <div className="flex justify-between border-b border-white"><span className="font-bold text-xs uppercase">Unidades Totales</span><span className="font-black">{datosForm.porcionesCantidad}</span></div>
                   </div>
 
@@ -1269,7 +1269,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </tr>
                         <tr>
                           <td className="text-black px-2 py-1 font-bold flex justify-end items-center gap-2">
-                             MANO OBRA DIRECTA <span className="bg-white border border-slate-300 px-2 py-0.5 text-[10px]">{costeoProyectado.tiempoProcesoMinutos || 0}</span>
+                             MANO OBRA DIRECTA <span className="bg-white border border-slate-300 px-2 py-0.5 text-sm">{costeoProyectado.tiempoProcesoMinutos || 0}</span>
                           </td>
                           <td className="px-2 py-1 text-red-600 font-black">{(datosForm.tasaMUDI || 77).toFixed(2)}</td>
                           <td className="px-2 py-1 font-medium">{((costeoProyectado.tiempoProcesoMinutos || 0) * (datosForm.tasaMUDI || 77)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})}</td>
@@ -1286,7 +1286,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 </div>
 
                 <div className="w-full md:w-2/5 flex justify-end">
-                  <div className="border-4 border-black bg-teal-100 p-2 shadow-xl inline-block text-[10px]">
+                  <div className="border-4 border-black bg-teal-100 p-2 shadow-xl inline-block text-sm">
                     <div className="border border-black bg-white p-2">
                       <table className="w-full text-right uppercase font-bold">
                         <tbody>
@@ -1313,7 +1313,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                           <tr className="border-t-2 border-black">
                             <td className="text-green-700 py-2 pr-3 font-black text-xs">PRECIO DE VENTA PLANTA A LOCAL</td>
                             <td className="py-2 bg-slate-800 text-white font-black text-center flex items-center justify-center gap-1">
-                              <span className="text-[10px]">₡</span>
+                              <span className="text-sm">₡</span>
                               {((costeoProyectado.costoTotalFinal + (costeoProyectado.gif || 0)) / (datosForm.pesoTotalCantidad || 1)).toLocaleString('es-CR', {minimumFractionDigits:2, maximumFractionDigits:2})} <span className="text-green-400">GR</span>
                             </td>
                           </tr>
@@ -1326,7 +1326,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </tbody>
                       </table>
                     </div>
-                    <div className="mt-2 text-[9px]">
+                    <div className="mt-2 text-xs">
                       <p>MODI {datosForm.tasaMUDI || 77} COLONES X MIN</p>
                       <p>GIF {datosForm.tasaGIF || 83} colones min</p>
                     </div>
@@ -1338,7 +1338,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6">
                 <div>
                   <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR GRAMO</h4>
-                  <table className="w-full text-right text-[10px] font-bold uppercase mb-6">
+                  <table className="w-full text-right text-sm font-bold uppercase mb-6">
                     <tbody>
                       <tr>
                         <td className="py-1 pr-2">TOTAL MATERIA PRIMA</td>
@@ -1384,7 +1384,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                 <div>
                   <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR UNIDAD</h4>
-                  <table className="w-full text-right text-[10px] font-bold uppercase">
+                  <table className="w-full text-right text-sm font-bold uppercase">
                     <tbody>
                       <tr>
                         <td className="py-1 pr-2">TOTAL COSTO MATERIA PRIMA</td>
@@ -1419,7 +1419,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
         <div className="p-4 md:p-5 border-t bg-white flex flex-col md:flex-row justify-between items-center gap-4 shrink-0">
           <div className="flex items-center gap-3">
             <div className={`w-2 h-2 ${esCostosEditable ? 'bg-emerald-500' : 'bg-emerald-500'} rounded-full animate-pulse`}></div>
-            <p className="text-[10px] font-black text-slate-300 uppercase tracking-widest">
+            <p className="text-sm font-black text-slate-700 uppercase tracking-widest">
               GastroFlow Pro | Gestión {esCostosEditable ? 'de Costos' : 'Inmutable'}
             </p>
           </div>
@@ -1428,24 +1428,24 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               <>
                 <button
                   onClick={onClose}
-                  className="flex-1 md:flex-none px-6 py-2.5 bg-white border border-slate-200 text-slate-500 font-black uppercase text-[10px] tracking-widest rounded-xl shadow-sm hover:bg-slate-50 transition-all"
+                  className="flex-1 md:flex-none px-6 py-2.5 bg-white border border-slate-200 text-slate-700 font-black uppercase text-sm tracking-widest rounded-xl shadow-sm hover:bg-slate-50 transition-all"
                 >
                   Salir de Edición
                 </button>
                 <button
                   onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.PENDIENTE_COSTOS })}
-                  className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-[10px] tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all"
+                  className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all"
                 >
                   Guardar Avance de Costos
                 </button>
               </>
             ) : (
               <>
-                <button onClick={onClose} className="flex-1 md:flex-none px-6 py-2.5 bg-white border border-slate-200 text-slate-400 font-black uppercase text-[10px] tracking-widest rounded-xl shadow-sm hover:bg-slate-50 transition-all">Cerrar</button>
+                <button onClick={onClose} className="flex-1 md:flex-none px-6 py-2.5 bg-white border border-slate-200 text-slate-600 font-black uppercase text-sm tracking-widest rounded-xl shadow-sm hover:bg-slate-50 transition-all">Cerrar</button>
                 {esChefEditable && (
                   <>
-                    <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.BORRADOR })} className="flex-1 md:flex-none px-6 py-2.5 bg-slate-100 text-slate-500 font-black uppercase text-[10px] tracking-widest rounded-xl shadow-sm hover:bg-slate-200 transition-all">Borrador</button>
-                    <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.PENDIENTE_COSTOS })} className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-[10px] tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all">Enviar a Revisión</button>
+                    <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.BORRADOR })} className="flex-1 md:flex-none px-6 py-2.5 bg-slate-100 text-slate-700 font-black uppercase text-sm tracking-widest rounded-xl shadow-sm hover:bg-slate-200 transition-all">Borrador</button>
+                    <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.PENDIENTE_COSTOS })} className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all">Enviar a Revisión</button>
                   </>
                 )}
               </>

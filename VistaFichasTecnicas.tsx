@@ -38,12 +38,12 @@ export default function VistaFichasTecnicas({
             <FlaskConical className="w-8 h-8 text-business-orange" />
             Repositorio de Fichas Técnicas
           </h1>
-          <p className="text-slate-500 font-medium text-sm mt-1 italic">Certificación legal, física y microbiológica de productos terminados.</p>
+          <p className="text-slate-700 font-medium text-sm mt-1 italic">Certificación legal, física y microbiológica de productos terminados.</p>
         </div>
 
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
           <div className="relative flex-1 sm:w-64">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-600" />
             <input 
               type="text" 
               placeholder="Buscar por nombre, código..."
@@ -55,11 +55,11 @@ export default function VistaFichasTecnicas({
 
           <div className="flex items-center gap-3">
             <div className="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex gap-0.5">
-              <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
-              <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-400 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
+              <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-600 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
+              <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-600 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
             </div>
             {(role === 'CHEF' || role === 'ADMIN') && (
-              <button onClick={onCreate} className="flex items-center gap-2 bg-business-orange text-white px-5 py-2.5 rounded-xl font-black uppercase text-[10px] tracking-widest shadow-lg hover:bg-business-orange/90 transition-all justify-center whitespace-nowrap">
+              <button onClick={onCreate} className="flex items-center gap-2 bg-business-orange text-white px-5 py-2.5 rounded-xl font-black uppercase text-sm tracking-widest shadow-lg hover:bg-business-orange/90 transition-all justify-center whitespace-nowrap">
                 <Plus className="w-4 h-4" /> Iniciar Ficha
               </button>
             )}
@@ -96,32 +96,32 @@ export default function VistaFichasTecnicas({
           const recetaRelacionada = allRecipes.find(r => r.id === f.recetaId);
           return (
             <div key={f.id} className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 group hover:shadow-xl transition-all flex flex-col relative overflow-hidden">
-              {f.estado === EstadoFicha.INACTIVA && <div className="absolute top-0 right-0 p-2 bg-rose-500 text-white font-black text-[8px] uppercase tracking-widest rounded-bl-xl">Archivada</div>}
+              {f.estado === EstadoFicha.INACTIVA && <div className="absolute top-0 right-0 p-2 bg-rose-500 text-white font-black text-sm uppercase tracking-widest rounded-bl-xl">Archivada</div>}
               <div className="flex justify-between items-start mb-4">
-                <span className={`text-[9px] font-black px-3 py-1 rounded-full border shadow-sm ${f.estado === EstadoFicha.COMPLETA ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-amber-50 text-amber-600 border-amber-100'}`}>
+                <span className={`text-xs font-black px-3 py-1 rounded-full border shadow-sm ${f.estado === EstadoFicha.COMPLETA ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-amber-50 text-amber-600 border-amber-100'}`}>
                   {f.estado.replace('_', ' ')}
                 </span>
                 <div className="flex flex-col items-end">
-                  <span className="text-[10px] font-black text-slate-300">v{f.version}</span>
-                  {f.codigoCalidadPropio && <span className="text-[8px] font-bold text-slate-400 mt-0.5">{f.codigoCalidadPropio}</span>}
+                  <span className="text-sm font-black text-slate-700">v{f.version}</span>
+                  {f.codigoCalidadPropio && <span className="text-sm font-bold text-slate-600 mt-0.5">{f.codigoCalidadPropio}</span>}
                 </div>
               </div>
               <h3 className="text-lg font-black text-slate-900 group-hover:text-business-orange transition-colors uppercase leading-tight mb-1">{recetaRelacionada ? recetaRelacionada.nombre : f.nombreReceta}</h3>
-              <p className="text-[10px] font-black text-business-orange uppercase tracking-widest mb-3">{f.subsidiaria}</p>
+              <p className="text-sm font-black text-business-orange uppercase tracking-widest mb-3">{f.subsidiaria}</p>
               <div className="flex items-center gap-2 mb-4">
                 <img src={`https://ui-avatars.com/api/?name=${f.elaboradoPor}&background=F5EBE0&color=EF8E19`} className="w-5 h-5 rounded-full border" />
                 <div className="flex flex-col">
-                  <span className="text-[8px] font-black text-slate-400 uppercase leading-none">Elaborado</span>
-                  <span className="text-[9px] font-bold text-slate-600">{f.elaboradoPor}</span>
+                  <span className="text-sm font-black text-slate-600 uppercase leading-none">Elaborado</span>
+                  <span className="text-xs font-bold text-slate-600">{f.elaboradoPor}</span>
                 </div>
               </div>
               <div className="flex gap-2 mt-auto">
-                <button onClick={() => onEdit(f)} className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-900 text-white rounded-xl font-black uppercase text-[10px] hover:bg-slate-800 transition-all">
+                <button onClick={() => onEdit(f)} className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-900 text-white rounded-xl font-black uppercase text-sm hover:bg-slate-800 transition-all">
                   <Edit3 className="w-3.5 h-3.5" /> Gestionar
                 </button>
                 <button onClick={() => onDelete(f.id)} className="flex items-center justify-center p-2.5 bg-rose-50 text-rose-500 rounded-xl hover:bg-rose-500 hover:text-white transition-all shadow-sm group/del relative">
                   <Trash2 className="w-4 h-4" />
-                  <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-[8px] text-white px-2 py-1 rounded opacity-0 group-hover/del:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Eliminar</span>
+                  <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-sm text-white px-2 py-1 rounded opacity-0 group-hover/del:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Eliminar</span>
                 </button>
                 {f.estado === EstadoFicha.COMPLETA && (role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && (
                   <PDFDownloadLink
@@ -132,7 +132,7 @@ export default function VistaFichasTecnicas({
                     {({ loading }: any) => (
                       <>
                         {loading ? <RefreshCw className="w-4 h-4 animate-spin" /> : <Printer className="w-4 h-4" />}
-                        <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-[8px] text-white px-2 py-1 rounded opacity-0 group-hover/pdf:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Imprimir Ficha</span>
+                        <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-sm text-white px-2 py-1 rounded opacity-0 group-hover/pdf:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Imprimir Ficha</span>
                       </>
                     )}
                   </PDFDownloadLink>
@@ -146,7 +146,7 @@ export default function VistaFichasTecnicas({
       <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
-            <thead className="bg-slate-50 border-b border-slate-100 text-slate-400 font-black uppercase">
+            <thead className="bg-slate-50 border-b border-slate-100 text-slate-600 font-black uppercase">
               <tr>
                 <th className="px-6 py-3 tracking-widest">Nombre / Subsidiaria</th>
                 <th className="px-6 py-3 tracking-widest">Estado / Versión</th>
@@ -170,16 +170,16 @@ export default function VistaFichasTecnicas({
                   <tr key={f.id} className="hover:bg-slate-50/50 transition-colors group">
                     <td className="px-6 py-3">
                       <div className="font-black text-slate-900 text-sm">{recetaRelacionada ? recetaRelacionada.nombre : f.nombreReceta}</div>
-                      <div className="text-[9px] font-bold text-slate-400 uppercase mt-0.5">{f.subsidiaria}</div>
+                      <div className="text-xs font-bold text-slate-600 uppercase mt-0.5">{f.subsidiaria}</div>
                     </td>
                     <td className="px-6 py-3 relative">
                       {f.estado === EstadoFicha.INACTIVA && <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-1.5 h-6 bg-rose-500 rounded-r"></div>}
-                      <span className={`text-[9px] font-black px-2 py-0.5 rounded uppercase border flex items-center w-fit ${f.estado === EstadoFicha.COMPLETA ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : f.estado === EstadoFicha.INACTIVA ? 'bg-rose-50 text-rose-500 border-rose-100' : 'bg-amber-50 text-amber-600 border-amber-100'}`}>
+                      <span className={`text-xs font-black px-2 py-0.5 rounded uppercase border flex items-center w-fit ${f.estado === EstadoFicha.COMPLETA ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : f.estado === EstadoFicha.INACTIVA ? 'bg-rose-50 text-rose-500 border-rose-100' : 'bg-amber-50 text-amber-600 border-amber-100'}`}>
                         {f.estado.replace('_', ' ')}
                       </span>
                       <div className="flex items-center gap-1 mt-1">
-                        <span className="text-[10px] font-bold text-slate-400">v{f.version}</span>
-                        {f.codigoCalidadPropio && <span className="text-[8px] font-bold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">{f.codigoCalidadPropio}</span>}
+                        <span className="text-sm font-bold text-slate-600">v{f.version}</span>
+                        {f.codigoCalidadPropio && <span className="text-sm font-bold bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded">{f.codigoCalidadPropio}</span>}
                       </div>
                     </td>
                     <td className="px-6 py-3">
@@ -190,12 +190,12 @@ export default function VistaFichasTecnicas({
                     </td>
                     <td className="px-6 py-3 text-center">
                       <div className="flex items-center justify-center gap-2">
-                        <button onClick={() => onEdit(f)} className="px-3 py-1.5 bg-slate-100 text-slate-600 hover:bg-slate-900 hover:text-white rounded-lg font-black uppercase text-[10px] transition-all flex items-center gap-1 shadow-sm">
+                        <button onClick={() => onEdit(f)} className="px-3 py-1.5 bg-slate-100 text-slate-600 hover:bg-slate-900 hover:text-white rounded-lg font-black uppercase text-sm transition-all flex items-center gap-1 shadow-sm">
                           <Edit3 className="w-3.5 h-3.5" /> Gestionar
                         </button>
                         <button onClick={() => onDelete(f.id)} className="p-1.5 bg-rose-50 text-rose-500 hover:bg-rose-500 hover:text-white rounded-lg transition-all shadow-sm group/del relative flex items-center justify-center">
                           <Trash2 className="w-3.5 h-3.5" />
-                          <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-[8px] text-white px-2 py-1 rounded opacity-0 group-hover/del:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">Eliminar</span>
+                          <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-sm text-white px-2 py-1 rounded opacity-0 group-hover/del:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">Eliminar</span>
                         </button>
                         {f.estado === EstadoFicha.COMPLETA && (role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && (
                           <PDFDownloadLink
@@ -206,7 +206,7 @@ export default function VistaFichasTecnicas({
                             {({ loading }: any) => (
                               <>
                                 {loading ? <RefreshCw className="w-4 h-4 animate-spin" /> : <Printer className="w-4 h-4" />}
-                                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-[8px] text-white px-2 py-1 rounded opacity-0 group-hover/pdf:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">Imprimir</span>
+                                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-sm text-white px-2 py-1 rounded opacity-0 group-hover/pdf:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">Imprimir</span>
                               </>
                             )}
                           </PDFDownloadLink>

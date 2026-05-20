@@ -39,17 +39,17 @@ export default function ForgotPassword() {
             <div className="bg-white w-full max-w-[400px] rounded-3xl shadow-2xl p-8 animate-in fade-in zoom-in duration-500 relative">
                 <button
                     onClick={() => navigate('/')}
-                    className="absolute top-6 left-6 text-slate-400 hover:text-business-orange transition-colors"
+                    className="absolute top-6 left-6 text-slate-600 hover:text-business-orange transition-colors"
                 >
                     <ArrowLeft className="w-5 h-5" />
                 </button>
 
                 <div className="text-center mb-8 mt-4">
-                    <div className="w-12 h-12 bg-slate-100 rounded-xl mx-auto flex items-center justify-center mb-4 text-slate-400">
+                    <div className="w-12 h-12 bg-slate-100 rounded-xl mx-auto flex items-center justify-center mb-4 text-slate-600">
                         <ShieldCheck className="w-7 h-7" />
                     </div>
                     <h3 className="text-2xl font-black text-slate-900 leading-tight">Recuperar Acceso</h3>
-                    <p className="text-slate-500 text-[11px] font-medium mt-2 max-w-[250px] mx-auto">
+                    <p className="text-slate-700 text-sm font-medium mt-2 max-w-[250px] mx-auto">
                         Ingresa el correo asociado a tu cuenta para recibir un enlace seguro de recuperación.
                     </p>
                 </div>
@@ -69,9 +69,9 @@ export default function ForgotPassword() {
                 ) : (
                     <form onSubmit={handleSubmit} className="space-y-5">
                         <div className="space-y-1.5">
-                            <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Correo Electrónico</label>
+                            <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Correo Electrónico</label>
                             <div className="relative group">
-                                <Mail className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
+                                <Mail className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                                 <input
                                     type="email"
                                     value={email}

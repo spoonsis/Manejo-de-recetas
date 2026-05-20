@@ -58,7 +58,7 @@ export default function ResetPassword() {
                         <CheckCircle2 className="w-8 h-8" />
                     </div>
                     <h3 className="text-2xl font-black text-slate-900">¡Contraseña Actualizada!</h3>
-                    <p className="text-slate-500 text-sm font-medium">Tu cuenta ha sido protegida. Ahora puedes iniciar sesión con tus nuevas credenciales.</p>
+                    <p className="text-slate-700 text-sm font-medium">Tu cuenta ha sido protegida. Ahora puedes iniciar sesión con tus nuevas credenciales.</p>
                     <button
                         onClick={() => navigate('/')}
                         className="w-full bg-slate-900 text-white py-3.5 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-slate-800 transition-all shadow-lg"
@@ -78,16 +78,16 @@ export default function ResetPassword() {
                         <ShieldCheck className="w-7 h-7" />
                     </div>
                     <h3 className="text-2xl font-black text-slate-900">Nueva Contraseña</h3>
-                    <p className="text-slate-500 text-xs font-medium mt-2">
+                    <p className="text-slate-700 text-xs font-medium mt-2">
                         Crea una contraseña segura para restablecer tu acceso.
                     </p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-1.5">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Nueva Contraseña</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Nueva Contraseña</label>
                         <div className="relative group">
-                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
+                            <Lock className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="password"
                                 value={newPassword}
@@ -101,9 +101,9 @@ export default function ResetPassword() {
                     </div>
 
                     <div className="space-y-1.5">
-                        <label className="text-[10px] font-black uppercase text-slate-400 tracking-wider ml-1">Confirmar Contraseña</label>
+                        <label className="text-sm font-black uppercase text-slate-600 tracking-wider ml-1">Confirmar Contraseña</label>
                         <div className="relative group">
-                            <Lock className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
+                            <Lock className="w-4 h-4 text-slate-600 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-business-orange transition-colors" />
                             <input
                                 type="password"
                                 value={confirmPassword}
