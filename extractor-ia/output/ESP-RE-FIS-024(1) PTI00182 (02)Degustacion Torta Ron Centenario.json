@@ -1,0 +1,162 @@
+{
+  "nombre": "PTI00182 Degustacion Torta Ron Centenario",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 300g",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00450",
+      "marca": "FAS",
+      "observaciones": "12 GRAMOS UNIDAD",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR RON CENTENARIO",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00588",
+      "marca": "FAS",
+      "observaciones": "10 GRAMOS UNIDAD",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHOCORON",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00589",
+      "marca": "FAS",
+      "observaciones": "10 GRAMOS BOQUILLA 804 LISA ARTECO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO CHOCOLATE RALLADO OSCURO",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "2 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "8 GRAMOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "2 GRAMOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO CHOCOLATE RALLADO OSCURO",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "2 GRAMOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA REGALIA BUCCA",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10337",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 10,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA SIX PACK MUSMANNI (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la Borona de Rosquette, el almibar, relleno chocorron y agregar el chocolate rallado oscuro.",
+    "Colocar la Chantilly Blanca, el Café con Agua, y el procesado de chocolate rallado.",
+    "Tapar y etiquetar, fechar."
+  ],
+  "pesoTotalCantidad": 828,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 828,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 284,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

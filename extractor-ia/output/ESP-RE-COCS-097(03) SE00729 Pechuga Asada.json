@@ -1,0 +1,101 @@
+{
+  "nombre": "SE00729 Pechuga Asada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pollo Dshpch Filet S/R Td",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10016",
+      "marca": "PIPASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pasta Ajo",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Saborizante de Humo",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10912",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 550,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Consome Concen. De Res",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Plástico Autoaderible 1/ 12*2000",
+      "cantidad": 100,
+      "unidad": "CM",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Limpiar las pechugas: reitrar el centro que puede contener hueso y desechar. Obtendremos dos mitades de pechuga.",
+    "Mezclar con el aceite, los condimentos, la sal y el preservante hasta homogenoe.",
+    "Agregar a las pechugas y adobar. Tapar y dejar al menos 2 horas en refrigeracion.",
+    "Hornear en programacion pollo asado en el rational.",
+    "retirar del horno y hacer choque temrico"
+  ],
+  "pesoTotalCantidad": 6800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 6800,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2025,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

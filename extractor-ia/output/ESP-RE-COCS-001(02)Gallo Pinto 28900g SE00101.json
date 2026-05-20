@@ -1,0 +1,147 @@
+{
+  "nombre": "Gallo Pinto",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE DE OLIVA PLAST",
+      "cantidad": 580,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 580,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FRIJOLES PARA GALLO PINTO",
+      "cantidad": 8300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00102",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LISANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION ARROZ BLANCO PRECOCIDO",
+      "cantidad": 15000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00103",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "FERSQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 560,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Calentar bien los aceites",
+    "Agregar el ajo y luego la cebolla, chile dulce, apio, freir hasta dorar",
+    "Adicionar los frijoles, la salsa lizano y sofreir un poco cuidado con el caldo (escurrir bien los frijoles). Agregarle 400 gramos de caldo de frijoles, la sal, el preservante",
+    "Agregar el arroz. Calentar hasta minimo 75 ºC",
+    "Agregar el culantro y mezlcar.",
+    "Enviar a choque termico."
+  ],
+  "pesoTotalCantidad": 28900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 0,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 72.25,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5500,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

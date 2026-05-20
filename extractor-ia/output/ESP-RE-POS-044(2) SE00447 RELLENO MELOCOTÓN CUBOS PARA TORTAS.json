@@ -1,0 +1,55 @@
+{
+  "nombre": "RELLENO MELOCOTÓN CUBOS PARA TORTAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MELOCOTON EN CUBOS COUNTREE (UND:3 K)",
+      "cantidad": 37800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10039",
+      "marca": "COUNTREE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 76,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abrir las latas de melocotón, en una centrifugadora colocar 6 tarros x 5 minutos",
+    "Colocar el melocoton drenado en un tina y agregar el preservante.",
+    "Debe quedar bien mezclado y sin grumos de preservante",
+    "Tapar, etiquetar y guardar."
+  ],
+  "pesoTotalCantidad": 35422,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 35422,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2454,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

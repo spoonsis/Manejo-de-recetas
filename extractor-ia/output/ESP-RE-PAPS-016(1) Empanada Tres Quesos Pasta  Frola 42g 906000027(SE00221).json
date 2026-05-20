@@ -1,0 +1,82 @@
+{
+  "nombre": "Empanada Tres Quesos Pasta Frola 42g 906000027(SE00221)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RUEDA FROLA EMPANADA TRES QUESOS",
+      "cantidad": 60,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00222",
+      "marca": "FAS",
+      "observaciones": "1440 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO TRES QUESOS KILO",
+      "cantidad": 1080,
+      "unidad": "g",
+      "codigoNetSuite": "SE00223",
+      "marca": "FAS",
+      "observaciones": "18 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "FAS",
+      "observaciones": "CAJA:2 Kg",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "PLANTA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": "KILO",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar las ruedas en la mesa con harina y rellenar con 18g de relleno de quesos Spoon. Hacer forma de empanada con cresta.",
+    "Debe quedar en forma de emoanda con cresta, Colocar en latas engrasadas. Refrigerar de un dia para otro. Pintar y hornear.",
+    "Primera opción Horneo Dicte 2 a 175°C por 23 minutos, Dicte 1 a 185°C por 45 min, Dicte 3 a 180°C por 32 min",
+    "Segunda opción Horneo Vulcan 375°F por 23 minutos."
+  ],
+  "pesoTotalCantidad": 2520,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "Empandas",
+  "pesoPorcionCantidad": 42,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 115,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

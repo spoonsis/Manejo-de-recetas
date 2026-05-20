@@ -1,0 +1,45 @@
+{
+  "nombre": "Merengue Para Suspiro Con Claras Deshidratadas 5205g SE00022",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA SUSPIRO CLARAS DESHID KILO",
+      "cantidad": 9771,
+      "unidad": "g",
+      "codigoNetSuite": "SE00023",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 3250,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la clara de huevo y el agua, batir en globo en velocidad 4 durante 30 segundos.",
+    "Agregar el azucar y batir en velocidad 2 por 30 segundos.",
+    "Tapar con bolsa, subir a velocidad 4 y batir por 3 minutos."
+  ],
+  "pesoTotalCantidad": 11250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 11250,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1771,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

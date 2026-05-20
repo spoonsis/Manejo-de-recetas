@@ -1,0 +1,63 @@
+{
+  "nombre": "Mezcla cuatro leches chocolate",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO CHOCOLATE EASY SP",
+      "cantidad": 850,
+      "unidad": "g",
+      "codigoNetSuite": "SE00431",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BETTERCREAM CHOCOLATE",
+      "cantidad": 380,
+      "unidad": "g",
+      "codigoNetSuite": "MP10084",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 820,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 10,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en un bowl de acero inoxidable el rosquete, gastar primero los rosquetes defectuosos.",
+    "Humedecer con la mezcla de tres leches y la crema de chocolate. Mezclar ligeramente y utilizar inmediatamente.",
+    "Tapar con plastico autoadhesivo en caso de no utilizar inmediatamente."
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

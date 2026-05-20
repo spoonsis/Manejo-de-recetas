@@ -1,0 +1,44 @@
+{
+  "nombre": "CORTE COSTILLAS DE HOJALDRE",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA DE HOJALDRE",
+      "cantidad": 5760,
+      "unidad": "g",
+      "codigoNetSuite": "SE00129",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA ESTANDAR",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10004",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Laminar la pasta virgen en la Rondo la Pasta hojaldre hasta 3,3 mm de espesror con ayuda de la laminadora Rondo.",
+    "Cortar rectangulos de 5,5cm * 9 cm. Con ayuda de una rondana."
+  ],
+  "pesoTotalCantidad": 5760,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 192,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 30,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 120,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

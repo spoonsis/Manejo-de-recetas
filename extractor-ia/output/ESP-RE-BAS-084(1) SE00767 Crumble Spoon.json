@@ -1,0 +1,71 @@
+{
+  "nombre": "SE00767 Crumble Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Silver Cake",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "Silver",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar  Industrial",
+      "cantidad": 1150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Nucleo Vainilla Dawn",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10493",
+      "marca": "Dawn",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Margarina Bloque",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10530",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En la batidora con paleta agregar todos los ingredientes y mezclar hasta incorporar.",
+    "Llevar a hornos por 15 minutos a 180ºC"
+  ],
+  "pesoTotalCantidad": 3500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 3500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 380,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

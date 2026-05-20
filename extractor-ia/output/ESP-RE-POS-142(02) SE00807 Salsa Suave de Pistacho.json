@@ -1,0 +1,137 @@
+{
+  "nombre": "Cake Box de Pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.4,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "416g (26g x ud), 2 Unidades por postre",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "15g x rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo con Chocolate Blanco",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "15g x postre (1 sola capa)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Suave de Pistacho",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "40g xcapa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Pasionata Verde",
+      "cantidad": 480,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Suave de Pistacho",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "PISTACHO TOSTADO",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "SE00738",
+      "marca": "FAS",
+      "observaciones": "3 g x unidad",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Cake Box Cuadradro",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA NUEVA CAKE BOX",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete arrollado en 20 porciones, (4 cuadros de manera vertical y 15 cuadros de manera horizontal) quitandole excesos de los laterales.",
+    "En cada empaque colocar un cuadrado de rosquete, humedecer con el almibar, colocar la salsa suave de pistacho, la crema pasionata verde y el caramelo con chocolate blanco.",
+    "Colocar otro rosquete, humedecer con el almibar, agregar la crema pasionata verde.",
+    "Decorar con salsa suave de pistacho en toda la superficie y colocar (lado, de esquina a esquina)",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 2048,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 256,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 16,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,155 @@
+{
+  "nombre": "Ensamble Torta de queso y manjar de olla",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO QUESO Y CONDENSADA",
+      "cantidad": 1220,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Fas",
+      "observaciones": "1 unidad",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "Fas",
+      "observaciones": "Encremado",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Empaque salsa de ron",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Fas",
+      "observaciones": "1/3 de taza",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Trozos chocolate blanco",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Chocolate Soluction",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Mezcla Sirope manjar Dulce Leche",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "Fas",
+      "observaciones": "BORDE",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": "HILOS",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "96344",
+      "marca": "FAS",
+      "observaciones": "Boquilla lisa",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "121603",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950692",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "703020",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "701096",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL TEMPORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Se monta la torta, se encrema con la crema beige de manera lisa con la espatula.",
+    "En la parte inferior de la torta, realizar un linea con el sirope de manjar y alisar nuevamente hacieno un degradado.",
+    "Hacer con el lustre una corona dejando el centro hueco, para colocar la salsa de ron y que no se desborde.",
+    "Colocar los trozos de chocolate blanco en un borde de la torta y luego al borde hacer hilos de manjar.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 75,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

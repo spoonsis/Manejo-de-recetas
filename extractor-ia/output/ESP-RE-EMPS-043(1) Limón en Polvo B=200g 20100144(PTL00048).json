@@ -1,0 +1,62 @@
+{
+  "nombre": "Limón en Polvo B=200g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "RESOCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 6 X 10 KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En una bolsa 6x10 colocar 200 gramos de limón en polvo",
+    "Hacer nudo y colocar etiqueta con nombre y fecha de vencimiento"
+  ],
+  "pesoTotalCantidad": 200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

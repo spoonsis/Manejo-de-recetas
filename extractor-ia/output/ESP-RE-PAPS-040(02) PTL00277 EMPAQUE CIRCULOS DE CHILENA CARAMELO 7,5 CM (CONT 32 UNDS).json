@@ -1,0 +1,80 @@
+{
+  "nombre": "PTL00277 EMPAQUE CIRCULOS DE CHILENA CARAMELO 7,5 CM (CONT:32 UNDS)",
+  "subsidiaria": null,
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE CIRCULO Galleta Mini Chilena Caramelo",
+      "cantidad": 705,
+      "unidad": "g",
+      "codigoNetSuite": "SE00780",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ORLA N°3 DORADA (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10353",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONT.48 ON TRAN.TAPA PLANA (CAJA:200UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10075",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 32 unidades de galletas en el contenedor 48oz tapa plana, 8 unidades en cada esquina, agregar 8 orlas, 2 en cada esquina",
+    "Etiquetar con codigo y descripción de ingredientes, vencimiento y juliano."
+  ],
+  "pesoTotalCantidad": 705,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "caja",
+  "pesoPorcionCantidad": 705,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

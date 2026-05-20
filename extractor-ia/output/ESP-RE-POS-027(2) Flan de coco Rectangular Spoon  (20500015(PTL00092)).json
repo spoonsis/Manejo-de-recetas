@@ -1,0 +1,73 @@
+{
+  "nombre": "Flan de coco Rectangular Spoon (20500015(PTL00092))",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CARAMELO PARA FLAN 900 GRS SPOON",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00048",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/FLAN COCO SPOON",
+      "cantidad": 1400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00199",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEN. LBH 692 PRALINE (200 unds)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10076",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el caramelo en la base del molde, de manera que quede la mayor parte del fondo cubierto.",
+    "Dosificar la mezcla de flan. Hornear a baño maria por 90minutos tapado y 5 min destapados",
+    "Enfriar, desmoldar, empacar y etiquetar con nombre, fecha de vencimiento, etiqueta la Lechera Gold",
+    "Actualizacion de Etiquetas"
+  ],
+  "pesoTotalCantidad": 1260,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1260,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 240,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

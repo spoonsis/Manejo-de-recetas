@@ -1,0 +1,72 @@
+{
+  "nombre": "ROSQUETE CHOCOLATE DAWN 480g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO CHOCOLATE DAWN",
+      "cantidad": 39000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00342",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1095,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Plastico Autoaderible 1/ 18*2000",
+      "cantidad": 17,
+      "unidad": "metros",
+      "codigoNetSuite": "EM10259",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 480g de mezcla en moldes engrasados. Hornear en Dicte 1 o 2 a 185°C por 58 min",
+    "Enfriar y colocar en latas limpias, colocar 12 unidades por lata, dejarlas en el coche y rapearlas, dejando solamente la bandeja superior en bolsa plastica.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 38690,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 81,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 480,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 310,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

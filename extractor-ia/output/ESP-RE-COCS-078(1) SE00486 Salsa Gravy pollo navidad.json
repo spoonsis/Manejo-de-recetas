@@ -1,0 +1,92 @@
+{
+  "nombre": "SE00486 Salsa Gravy pollo navidad",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 850,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO BLANCO PETER CABERNET SAU (UND:5L)",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO RESULTADO DE LA COCCION",
+      "cantidad": 4300,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 500,
+      "unidad": "",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la olla la lactocrema y el azucar y dejar que el azucar se derrita y cambie un poco su color a mas oscuro",
+    "Luego deglasear lo anterior con el vino blanco y dejar que se incorporen.",
+    "Colar el liquido resultante de la coccion del pollo y agregar a la olla.",
+    "Disolver el almidon y preservante en el agua, para llevar a la olla cuando este en hervor.",
+    "Pasar a enfriamiento en bandejas metalicas."
+  ],
+  "pesoTotalCantidad": 6700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 84,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 80,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 710,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

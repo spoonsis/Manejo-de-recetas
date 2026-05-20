@@ -1,0 +1,54 @@
+{
+  "nombre": "Pie Limon (para Porcionar) 1 Unid 975g SE00279",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHESSE CAKE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO P/PIE LIMON SPOON",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00278",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "colocar dentro del molde desarmable redondo engrasado, las boronas de galletas o base.presionar y hornear a 350º por 5",
+    "enfriar el molde a temperatura ambiente y rellenar con el Relleno de limón y yemas.",
+    "llevar al horno. Sacar y enfriar"
+  ],
+  "pesoTotalCantidad": 975,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 975,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

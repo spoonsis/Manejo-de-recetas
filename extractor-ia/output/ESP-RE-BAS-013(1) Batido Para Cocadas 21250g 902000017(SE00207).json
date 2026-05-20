@@ -1,0 +1,108 @@
+{
+  "nombre": "Batido Para Cocadas 21250g 902000017(SE00207)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO (CAJA:10 K)",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 28400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCO RALLADO (PAQ: 1 K)",
+      "cantidad": 3350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10145",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON ABUELO RESERVA (UND: LITRO)",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10580",
+      "marca": "ABUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VAINILLA OSCURA (UND: 3.78 L)",
+      "cantidad": 165,
+      "unidad": "g",
+      "codigoNetSuite": "MP10385",
+      "marca": "MALUQUER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO (UND: 8.34 K)",
+      "cantidad": 1680,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GELATINA PURA (PAQ:1 k)",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Hidratar la gelatina con agua caliente. Mezclar el coco con el huevo, ron y vainillA, en el bowl de la batidora mezclar con globo por 5 minutos a velocidad 1.",
+    "2.- Colocar en bowl de batidora, la leche condensada, huevo, ron, vainilla, yema. Bair en velocidad 1 e ir agregando poco a poco la gelatina hidratada. Batir por 1 min.",
+    "3.- Agregar el coco rallado y seguir batiendo por 5 min en velocidad 1."
+  ],
+  "pesoTotalCantidad": 38700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 5,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 4300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 275,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

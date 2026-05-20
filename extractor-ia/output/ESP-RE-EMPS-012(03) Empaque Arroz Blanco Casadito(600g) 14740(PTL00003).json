@@ -1,0 +1,70 @@
+{
+  "nombre": "Empaque Arroz Blanco Casadito(600g) 14740(PTL00003)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ARROZ BLANCO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00110",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 8X12 Transparente",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10037",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA PREIMP. 2 5/8 * 1 15/16",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "AS00021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 600 G de arroz  en bolsa 8x12. Etiquetar"
+  ],
+  "pesoTotalCantidad": 600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,53 @@
+{
+  "nombre": "Crema con Sirope Kolita",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "3",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 943,
+      "unidad": "kg",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SIROPE KOLITA",
+      "cantidad": 57,
+      "unidad": "g",
+      "codigoNetSuite": "MP10359",
+      "marca": "MUNDIAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE ARTIFICIAL ROSADO F225 (LITRO)",
+      "cantidad": 0.2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10149",
+      "marca": "Azteck",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar la crema chantilly blanca spoon ya montada (temperatura maxima 18°) con los colorantes, hatsa que quede homogeneo",
+    "Mantener en refrigeración hasta su uso."
+  ],
+  "pesoTotalCantidad": 17580,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 17580,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

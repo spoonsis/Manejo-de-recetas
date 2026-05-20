@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00796 Flan Spoon Plancha",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mezcla Flan Caramelo Spoon",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00619",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo Para Flan 900 grs Spoon",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00048",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Agregar en el molde de plancha, 120g de caramelo , colocar 1800g de la mezcla de flan y cada molde en bandeja a baño maria, tapar con otra bandeja y llevar a hornear.",
+    "Hornear por 80 minutos en el Marshall, sacar y llevar a enfriamiento."
+  ],
+  "pesoTotalCantidad": 1800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1800,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 160,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

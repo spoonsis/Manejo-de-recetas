@@ -1,0 +1,155 @@
+{
+  "nombre": "Cheesecake Pie de Pecanas",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postre",
+  "areaEmpaca": "Postre",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": "Base y borde",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO PIE DE PECANAS",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "11900028",
+      "marca": "Nueces Industriales",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHEESECAKE Y MANJAR",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "0310099",
+      "marca": "FAS",
+      "observaciones": "Boquilla Wilton #61",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "TOPPING CARAMELO Y PECANA",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "ETIQUETA IMPRES SPOON GRANDE V-272 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA (UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\" (CAJA:100 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "Exp PMT",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "1.- Colocar dentro del molde desarmable redondo 21 cm ,previamente ensagrasado la base de galleta presionar y hornear a 175°C por 7 min en el Argental, a 175°C por 8 min en el Dicte 1 y Dicte 2, a 170°C en el Dicte 3 y a 175°C por 7 min en el Marshal",
+    "2.- Una vez fria la galleta, agregar el relleno de pecanas y las pecanas sobre el relleno de pecanas. Hornear por 30 min aprox. Enfriar",
+    "3.- Agregar la el relleno de cheesecake y manjar, emparejar con ayuda de una espatula. Enfriar por 6 horas como minimo.",
+    "4.- Desmoldar con ayuda de una espatula, Pegar a la orla con manjar, decorar con colocho de crema de manjar en el borde y topping de caramelo y pecanas en el centro.",
+    "5.- Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1555,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1555,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

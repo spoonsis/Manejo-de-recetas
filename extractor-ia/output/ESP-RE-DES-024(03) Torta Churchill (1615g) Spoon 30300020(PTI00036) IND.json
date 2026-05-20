@@ -1,0 +1,192 @@
+{
+  "nombre": "Torta Churchill (1615g) Spoon 30300020(PTI00036) IND",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 320G",
+      "cantidad": 418,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": "1/4 TAZA C/ CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO (KILO)",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA C/ CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE POLVO INDUSTRIAL (SACO:25 KG)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10234",
+      "marca": "DOS PINOS",
+      "observaciones": "1/4 TAZA C/ CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES Y KOLITA (LITRO)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00250",
+      "marca": "FAS",
+      "observaciones": "100 GRAMOS POR CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BLANCA C/SIROPE KOLITA KILO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00251",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 842",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "LECHE POLVO INDUSTRIAL (SACO:25 KG)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10234",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Sirope Rojo Bucca",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "SE00633",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO (KILO)",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE TRIAN OLEAJE GRD (CAJA:200 UN)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10131",
+      "marca": "CARMAFINA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA IMPRES SPOON GRANDE V-272 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete a la mitad, utilizar 1 1/2, humedecer todas las capas con mezcla de leche y colita.",
+    "Rellenar ambas capas con leche condensada, ganache de chocolate blanco y leche en polvo.",
+    "Decorar con crema beidge, teñir los lados con colorante rojo.",
+    "Hacer colochos en forma de flor uzando la boquilla 842 en la mitad superior de la torta, en la otra mitad colocar el ganache.",
+    "Decorar con leche en polvo acorde a la ficha.",
+    "Colocar la torta dentro del domo, etiquetar con etiqueta Spoon, nombre del producto y codigo de barras, fecha juliana y fecha de vencimiento, etiqueta Nestle La Lechera GOLD."
+  ],
+  "pesoTotalCantidad": 1291,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1291,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 161,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

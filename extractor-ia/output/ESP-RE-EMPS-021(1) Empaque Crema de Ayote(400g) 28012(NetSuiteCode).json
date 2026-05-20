@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Crema de Ayote (200g)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA DE AYOTE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00137",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA PLASTICA  6X10x4 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "EM10044",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 200g de crema en una bolsa plastica6*10*4",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "seg",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unids",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

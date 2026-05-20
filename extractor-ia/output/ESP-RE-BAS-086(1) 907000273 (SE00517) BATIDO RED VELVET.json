@@ -1,0 +1,72 @@
+{
+  "nombre": "BATIDO RED VELVET",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA RED VELVET",
+      "cantidad": 6665,
+      "unidad": "g",
+      "codigoNetSuite": "MP10627",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1650,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17  L)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO (CAJA:10 K)",
+      "cantidad": 2350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 18,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar el huevo, agua y aceite en la batidora, añadir la pre mezcla y batir con paleta 1 minuto en velocidad 1.",
+    "Limpiar los bordes y batir 4 minutos en velocidad 2 (media).",
+    "Utilizar de inmediato."
+  ],
+  "pesoTotalCantidad": 12018,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 12018,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 665,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

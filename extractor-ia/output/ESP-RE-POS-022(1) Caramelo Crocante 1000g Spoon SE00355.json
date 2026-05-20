@@ -1,0 +1,55 @@
+{
+  "nombre": "Caramelo Crocante 1000g Spoon SE00355",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR REFINO INDUSTRIAL",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10078",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12X18 TRANSPARENTE",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10120",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Derretir el azucar hasta tomar color caramelo. Tener cuidado de no quemar.",
+    "Retirar del fuego y colocar en una blonda de teflon, dejar enfriar.",
+    "Partir con un maso, trozos pequeños.",
+    "Enviar a figuras."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

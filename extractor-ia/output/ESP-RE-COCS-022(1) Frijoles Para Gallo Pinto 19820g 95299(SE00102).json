@@ -1,0 +1,54 @@
+{
+  "nombre": "Frijoles Para Gallo Pinto",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FRIJOLES NEGROS",
+      "cantidad": 9000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10195",
+      "marca": "DON PEDRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 32800,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 180,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar 10 bolsas de frijoles en olla. Tapar y dejar cocinar por 2 horas aprox",
+    "Cocinar hasta que esten firmes pero cocidos.",
+    "Mantener en botes de acero inoxidable en refrigeración. Con un poco de caldo para que pinten el pinto del dia siguiente"
+  ],
+  "pesoTotalCantidad": 19820,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 19820,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2135,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

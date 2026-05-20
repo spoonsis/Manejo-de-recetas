@@ -1,0 +1,81 @@
+{
+  "nombre": "SE00817 RELLENO DE FRAMBUESA ENTERA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 1516,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Frambuesa Congelada",
+      "cantidad": 3464,
+      "unidad": "g",
+      "codigoNetSuite": "MP10896",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almidon Modificado",
+      "cantidad": 217,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 433,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "Para almidon",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el azucar, el agua, el preservante y la mitad de la frambuesa.",
+    "Cuando todo este disuelto y empieze a hervir, agregar el almidon y dejar que espese sin dejar de mover,apagar y agregar la otra mitad de la frambuesa y revolver hasta incorporar. (Esto deja la frambuesa más entera)",
+    "Dejar enfria y guardar."
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1019,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

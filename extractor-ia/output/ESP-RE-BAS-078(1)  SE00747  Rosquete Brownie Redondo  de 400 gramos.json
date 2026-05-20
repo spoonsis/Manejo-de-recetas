@@ -1,0 +1,71 @@
+{
+  "nombre": "Rosquete Brownie Redondo de 400 gramos",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Batido Brownie Sin Pecana",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00746",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES (29800g)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00701",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 1.5,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1.5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Papel Mantequilla",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Dosificar 400g de batidoen molde engrasado y con papel mantequilla y hornear por 30 min.",
+    "Enfriar, desmoldar.Tapar, Etiquetar con fecha de vencimiento y etiqueta con nombre"
+  ],
+  "pesoTotalCantidad": 7600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 19,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 400,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

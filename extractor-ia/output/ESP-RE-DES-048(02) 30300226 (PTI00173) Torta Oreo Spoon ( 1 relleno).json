@@ -1,0 +1,182 @@
+{
+  "nombre": "Torta Oreo Spoon ( 1 relleno)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 530g",
+      "cantidad": 440,
+      "unidad": "g",
+      "codigoNetSuite": "SE00736",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA CREMA CHOCOLATE C/AGUA (KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00477",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS POR CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA OREO",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "SE00513",
+      "marca": "FAS",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "3/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA OREO BAÑADA EN CHOCOLATE BLANCO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00514",
+      "marca": "FAS",
+      "observaciones": "3/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA OREO",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00513",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "ESPEJO",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO ENTERA",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "MP10617",
+      "marca": "FAS",
+      "observaciones": "1 UND ENTERA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO BAÑADA EN CHOCOLATE BLANCO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00514",
+      "marca": "FAS",
+      "observaciones": "2/3 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO MOLIDA",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10619",
+      "marca": "OREO",
+      "observaciones": "BORDE",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA OREO GRANDE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10327",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Se utilizan 2 mitades de rosquete. Humedecer cada tapa con 50g de mezcla de chocolate con agua",
+    "Rellenar con ganache luego con crema de oreo y al final con galleta con chocolate blanco.",
+    "Encremar dejar bordes lizos. Con ayuda de espatula subir un poco los bordes.",
+    "Hacer un espejo con el ganache, colocar galleta con chocolate blanco en el centro, decorar con 1 galleta oreo en el centro y 3 partidas con la mano.",
+    "Colocar la torta dentro del domo, etiquetar con etiqueta Spoon, nombre del producto y codigo de barras, fecha juliana y fecha de vencimiento. Etiqueta oreo."
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6.5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 86,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

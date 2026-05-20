@@ -1,0 +1,72 @@
+{
+  "nombre": "907000337 ( SE00393) Rosquete nucleo vainilla Dawn Redondo 80g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO VAINILLA DAWN",
+      "cantidad": 24000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00444",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1675,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 16,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 16,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 16,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 70g de mezcla en los moldes previamente engrasados.",
+    "Hornear en cualquiera de los Dicte a 175°C por 30 a 32 minutos.",
+    "Enfriar y empacar 40 unidades por lata, cubrir con bolsa y etiquetar con fecha de produccion."
+  ],
+  "pesoTotalCantidad": 23450,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 50,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 293,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 80,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

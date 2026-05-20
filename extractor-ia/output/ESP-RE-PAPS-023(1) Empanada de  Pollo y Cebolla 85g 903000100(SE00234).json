@@ -1,0 +1,91 @@
+{
+  "nombre": "EMPANADA DE POLLO Y CEBOLLA 85g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RUEDAS PASTA FROLA PARA EMPANADA POLLO Y CEBOLLA",
+      "cantidad": 60,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00235",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE POLLO Y CEBOLLA 400G STB",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00236",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "DEBEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pintar los bordes con agua, rellenar con 40g de relleno de pollo y cebolla. Cerrar y sellar los bordes.",
+    "Doblar los lados hacia adentro y posteriormente el centro formando un sobre. Refrigerar un mínimo de 4 horas.",
+    "Pintar con yema. Punzar al centro de la empanada.",
+    "Reposar en refrigeración. Pintar y Hornear en el Dicte a 185°C por 40 minutos o Dicte 3 a 180°C por 30 min"
+  ],
+  "pesoTotalCantidad": 5100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 85,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 131,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

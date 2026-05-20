@@ -1,0 +1,127 @@
+{
+  "nombre": "30800095(PTI00081)Tres leches familiar Bucca bandeja aluminio Temporada Papá 2026",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 4,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE 3 LECHES BUCCA 280G",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "SE00295",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES FAS",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00296",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "Boquilla #22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Virutas de chocolate azul",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10925",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Mostacho grande de chocolate",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10756",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Mediana Tres Leches",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10406",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Bañar el rosquete con la mezcla de leches y dejar que absorba.",
+    "Encremar con ayuda de una espatula y realizar en todo el costado colocho pequeño con la boquilla #22.",
+    "Colocar los trocitos de chocolate azul en todo el centro y colocar el mostacho arriba en la esquina izquierda.",
+    "Tapar y etiquetar con codigo y nombre, vencimiento y Lote"
+  ],
+  "pesoTotalCantidad": 1050,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1050,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 33,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

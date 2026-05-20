@@ -1,0 +1,43 @@
+{
+  "nombre": "SE00838 Salsa frambuesa arandano con brillo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SALSA DE FRAMBUESA Y ARANDANO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00542",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BRILLO GLIT",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10089",
+      "marca": null,
+      "observaciones": "(UND:5 KILOS)",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Mezclar la salsa con el brillo, y utilizar de esta forma en la decoracion de las tortas."
+  ],
+  "pesoTotalCantidad": 800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 80,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

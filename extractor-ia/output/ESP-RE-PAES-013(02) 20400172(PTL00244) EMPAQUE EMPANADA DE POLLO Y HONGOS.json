@@ -1,0 +1,72 @@
+{
+  "nombre": "EMPAQUE EMPANADA DE POLLO Y HONGOS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPANADA POLLO Y HONGOS",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00185",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA BLANCA MEDIANAS (100 X PAQ)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10017",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12X18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 5 unidades en una caja mediana y poner caja tapa",
+    "Colocar dentro de una bolsa 12*18, sellar. Etiquetar con nombre y lote.",
+    "La caja puede venir con impreseion de nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 425,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 5,
+  "porcionesUnidad": "Empanadas",
+  "pesoPorcionCantidad": 85,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

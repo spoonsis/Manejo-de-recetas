@@ -1,0 +1,150 @@
+{
+  "nombre": "Ensamble Tamal de Pollo (1 Tamal) 95945 ( SE00568)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MASA PARA TAMALES DE POLLO 46300g",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00564",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE PIPIAN 2000g",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00560",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA DE ARROZ PARA TAMALES 6500g",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00557",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE POLLO TAMALES 3000g",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00566",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chile Morron Lata",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "MP10121",
+      "marca": "RONALD",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceituna C/Pimiento",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10057",
+      "marca": "IBARRA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CIRUELA (CAJA:10 Kg)",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10057",
+      "marca": "INDUSTRIAS A",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "para la cocción",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PABILO ROLLO VERDE",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10292",
+      "marca": "DISTRIBUIDOR OCT",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HOJA TAMAL KILO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10635",
+      "marca": "JUANA ZENEIDA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "LIMPIEZA DE HOJAS"
+    },
+    {
+      "nombre": "SOLUCION DE CLORO (KILO)",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "SE00567",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "LIMPIEZA DE HOJAS"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "LIMPIEZA DE HOJAS"
+    }
+  ],
+  "pasos": [
+    "Limpiar las mesas de trabajo, con trapos limpios y solución supreme. Desinfectar con paños limpios y solución sanitizante",
+    "Cubrir las superficies de trabajo con bolsas plásticas limpias",
+    "Limpiar las hojas de plátano (por ambos lados) con paños limpios humedecidos con agua (estos paños deven cambiarse constantemente), luego sesinfectar las hojas por ambos lados con solucion 50 ppm",
+    "Colocar las hojas de plátano sobre la mesa, agregar la masa con ayuda de la dosificadora, agregar el pipian y el arroz con petit pois y zanahoria",
+    "Agregar el pollo, presionar para que se mantenga en el centro",
+    "Tomar una tira de chile morrón, una aceituna y una ciruela y agregar presionando",
+    "Envolver el tamal con la hoja y amarrar con hilo color verde",
+    "Llenar la marmita con 36 litros de agua, agregar 125 piñas (250 tamales aprox) y cocinar por 25 minutos, desde que el agua hierve 100°C",
+    "Inmediatamente después de la cocción, retirar de la marmita y colocar en bandejas (25 piñas por bandeja) (temp interna no debe ser menor a 75°C), transportar en carromato al área de empaque y enfriar en el chiller. Se debe enfriar a 5° en menos de 4 horas, a 20° en menos de 2 horas"
+  ],
+  "pesoTotalCantidad": 280,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 140,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 280,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 24,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

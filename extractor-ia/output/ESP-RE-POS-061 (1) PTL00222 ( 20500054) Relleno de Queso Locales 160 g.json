@@ -1,0 +1,111 @@
+{
+  "nombre": "SE00664 Relleno de Queso Locales 160 g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO CREMA PANADERO (CAJA: 5 K)",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "AZUCAR GLASS MOLIDA (PAQ: 4 K)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10041",
+      "marca": "Ciabata",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Jugo Limon",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10224",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Crema el Queso Crema con el Batidor de Globo , junto con la Condensada , el Jugo Limon a velocidad 1 por 3 minutos",
+    "Unir el azucar en polvo con con el limon en polvo y preservante agregar a la mezcla anterior mezclar por 2 minutos hasta imcorporar uniformemente",
+    "Agregar la Crema Chantilly Blanca y mezclr hasta que la mezcla este uniforme por el lapso de 3 minutos a velocidad 2",
+    "Bajar del batidor y dosificar acorde a la necesidad inmediatamente.",
+    "Colocar en la Tina y Etiquetar y Fechar",
+    "Enviar a empaque"
+  ],
+  "pesoTotalCantidad": 6000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 6000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 549,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

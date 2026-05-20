@@ -1,0 +1,92 @@
+{
+  "nombre": "Arroz blanco precocido Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA SA",
+  "elaboradoPor": "María José Rodríguez, Chef",
+  "areaProduce": null,
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ARROZ PRECOCIDO TIO PELON (2 KG)",
+      "cantidad": 8000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Tio pelon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD ( 17 LTS )",
+      "cantidad": 500,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA ( 500 GRS )",
+      "cantidad": 96,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Sol",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA ( 1 KILO )",
+      "cantidad": 2000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Hassidim",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO MOLIDO",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 10000,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSPARENTE",
+      "cantidad": 3.5,
+      "unidad": "Unidades",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la olla arrocera el aceite a calentar. Una vez caliente agregar el ajo molido y la cebolla picada sofreir por 5 minutos.",
+    "Agregar luego el arroz, agua y sal mezclar bien con la cebolla y ajo. Dejar cocinar por 40 minutos.",
+    "El arroz debe quedar completamente cocido y seco.",
+    "Colocar en una palangana y llevarlo a shock termico hasta que este frio.",
+    "Empacar frio en blosas de 5 kilos cada una."
+  ],
+  "pesoTotalCantidad": 17600,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 3.5,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

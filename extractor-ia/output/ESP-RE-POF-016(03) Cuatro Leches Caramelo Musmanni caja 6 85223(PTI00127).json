@@ -1,0 +1,109 @@
+{
+  "nombre": "Cuatro Leches Caramelo Musmanni caja 6 85223(PTI00127)",
+  "subsidiaria": "Musmanni",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA P/CUATRO LECHES",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00304",
+      "marca": "FAS",
+      "observaciones": "130g x ud, 1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "20g x ud, BOQUILLA #842",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "20g x ud, BOQUILLA #852",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA SIX PACK MUSMANNI (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Combo Pack Doble Uso 8 Onz",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10073",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 7,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Logo Musmanni",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10128",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "SELLO DE SEGURIDAD",
+      "cantidad": 12,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 7,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el empaque transparente. Colocar la mezcla de cuatro leches, decorar con colocho de crema con boquilla 2C.",
+    "Hacer un colocho de manjar suave en el centro con boquilla 2C",
+    "Tapar. Etiquetar con nombre y fecha de vencimiento y etiqueta.",
+    "Empacar 6 unidades en la caja sixpack con etiqueta con nombre y vencimiento."
+  ],
+  "pesoTotalCantidad": 990,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "caja",
+  "pesoPorcionCantidad": 990,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

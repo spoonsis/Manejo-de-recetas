@@ -1,0 +1,72 @@
+{
+  "nombre": "902000048(SE00301) Ensamble de Tres Leches (154g) FAS KFC (rosquete Individual)",
+  "subsidiaria": "KFC",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES SOUFLE (43G) KFC",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00302",
+      "marca": "FAS",
+      "observaciones": "34 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LA LECHERA TRES LECHES",
+      "cantidad": 840,
+      "unidad": "g",
+      "codigoNetSuite": "MP10383",
+      "marca": "NESTLE",
+      "observaciones": "1/2 TAZA (105g)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "(15g x unidad)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTENEDOR kfc 8 oz CARTON NUEVO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10458",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 13/16 * 1 7/8",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el sticker con nombre,ingredientes, alergenos y dia juliano en la base de los contenedores",
+    "Colocar cada rosquete redondo en el empaque y luego las leches",
+    "Colocar la crema lisa,limpiar los bordes del contenedor."
+  ],
+  "pesoTotalCantidad": 1232,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 154,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

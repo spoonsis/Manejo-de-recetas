@@ -1,0 +1,54 @@
+{
+  "nombre": "SE00758 Mezcla de Almibar de Leches",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 2510,
+      "unidad": null,
+      "codigoNetSuite": "SE000005",
+      "marca": "FAS",
+      "observaciones": "(32.733 Kg)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAFÉ INSTANTANEO",
+      "cantidad": 45,
+      "unidad": null,
+      "codigoNetSuite": "MP10091",
+      "marca": "Nescafé",
+      "observaciones": "( 500 GRS )",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 2510,
+      "unidad": null,
+      "codigoNetSuite": "MP10024",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Del almibar, colocar 100 de almibar a calentar y agregarle el café instantaneo para disolverlo de mejor manera.",
+    "Agregarlo al demas almibar con la leche Evaporada y mezclar hasta que quede bien incorporado.",
+    "Utilizar inmediatamente"
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 65,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

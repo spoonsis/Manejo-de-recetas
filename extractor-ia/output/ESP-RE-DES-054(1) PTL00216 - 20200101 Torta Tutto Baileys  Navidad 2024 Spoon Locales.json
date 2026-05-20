@@ -1,0 +1,185 @@
+{
+  "nombre": "Torta Tutto Baileys Navidad 2024 Spoon Locales",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 450 G",
+      "cantidad": 420,
+      "unidad": "g",
+      "codigoNetSuite": "SE00655",
+      "marca": "FAS",
+      "observaciones": "MITAD",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES C/BAILEYS",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA POR CAPA",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "GANACHE BAILEYS",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00087",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "MOUSSE CHOCOLATE DE LECHE",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1 TAZA Y MEDIA",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "CARAMELO CROCANTE BAÑADO CHOCOLATE DE LECHE",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00467",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "CREMA BEIDGE",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 127 WLTON",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MONEDA COLOR DORADA CHOCOLATE 5,5",
+      "cantidad": 9,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "3 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MONEDA COLOR ROJO NAVIDACHOCOLATE 5,5",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "2 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BARRA DE TUTTO BAILEYS",
+      "cantidad": 42,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "1 TABLETA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA NAVIDAD TUTTO BAILEYS",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el Rosquette a la mitad Colocar la mitad del Rosquete",
+    "Bañar con la leche de Baileys",
+    "Colocar el Ganache de Baileys",
+    "Colocar la Mousse de chocolate leche con Avellana",
+    "Agregar el Caramelo Crocante Bañado chocolate De Leche",
+    "Colocar la Otra mitad del Rosquette",
+    "Cubrir con la crema de Forma Liza , y colocar la crema Doble Chocolate en las paredes",
+    "Con la Boquilla 127 Cubrir las lineas de la Torta y colocar los cuadros de chocolate y a un costado colocar las monedas de Forma Intercalada"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 54,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

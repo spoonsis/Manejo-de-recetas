@@ -1,0 +1,103 @@
+{
+  "nombre": "Arrollado Leche Condensada Pequeño(2000) Spoon 20500006(PTL00088)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 3750,
+      "unidad": "g",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "5 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 2650,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "530 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 2040,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "6 GRAMOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 3400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "10 GRAMOS , BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CAPSULA # 3 LOGO (UND)",
+      "cantidad": 340,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10068",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA BLANCA  PEQUEÑAS (UND)",
+      "cantidad": 68,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10055",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 34,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ 1 1/4 X 3/4",
+      "cantidad": 68,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": "2x unidad",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Limpiar los excesos del rosquete y extender para huntar el manjar.",
+    "Arrollar de afuera hacia adentro cada plancha, deben salir 4 rollos de cada plancha",
+    "Partir cada rollo para que salgan 17 unidades de cada uno, quitar los sobros de las puntas de ambos lados",
+    "Bañar en almíbar cada arrollado, cada uno se lleva un promedio de 6 gr. Colocar en su capsula #3 logo cada uno. Colocar 10 unidades en la caja correspondiente.",
+    "Usar la boquilla 22 y colocar el manjar en la manga, decorar haciendo un colocho en forma circular. Aplicar un promedio de 10 g por unidad. Deben salir 68 unidades por plancha.",
+    "Tapar, fechar y colocar nombre.",
+    "Guardar en cámaras de refrigeración."
+  ],
+  "pesoTotalCantidad": 10710,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 75,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 34,
+  "porcionesUnidad": "cajas",
+  "pesoPorcionCantidad": 315,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1130,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

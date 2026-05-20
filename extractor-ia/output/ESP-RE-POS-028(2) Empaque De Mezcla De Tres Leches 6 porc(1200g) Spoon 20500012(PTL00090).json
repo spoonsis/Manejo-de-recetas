@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque De Mezcla De Tres Leches 6 porc(1200g) Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA",
+      "cantidad": 1200,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 1200g de mezcla de tres leches en un bolsa 12x18 corriente.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

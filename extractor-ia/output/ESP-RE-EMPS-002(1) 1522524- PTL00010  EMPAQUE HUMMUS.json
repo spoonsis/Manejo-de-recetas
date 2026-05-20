@@ -1,0 +1,62 @@
+{
+  "nombre": "EMPAQUE HUMMUS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HUMMUS",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00319",
+      "marca": "FAS",
+      "observaciones": "100 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 5x8 TRANSPARENTE KILO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10010",
+      "marca": "PLASTICOS P",
+      "observaciones": "1 KILO",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": "1 UND",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": "1 ROLLO",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 100 g de hummus en una bolsa 5*8.",
+    "etiquetar"
+  ],
+  "pesoTotalCantidad": 100,
+  "pesoTotalUnidad": "GRAMOS",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "MIN",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "PORCIONES",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "GRAMOS",
+  "mermaCantidad": 0,
+  "mermaUnidad": "GRAMOS",
+  "registroCambios": "Importación inicial desde Excel"
+}

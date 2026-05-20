@@ -1,0 +1,73 @@
+{
+  "nombre": "Empaque Queque Seco Rectangular con Pasas 680g 6 porc",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE QQ SECO C/PASAS (750g)",
+      "cantidad": 4080,
+      "unidad": "g",
+      "codigoNetSuite": "SE00348",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA DE CELOFAN 6*9",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "EM10243",
+      "marca": "ALIM TEC",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 36,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA BLANCA PEQUEÑA",
+      "cantidad": 6,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ROLLO SEGURIDAD ROJO",
+      "cantidad": 36,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10139",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Una vez horneado el queque, dejar enfriar y cortar los extremos y porcionar luego en 6 partes iguales.",
+    "Colocar en las bolsas.",
+    "Sellar las bolsas y hacer dobles que se pega con el sello spoon, colocar lote.",
+    "Colocar 6 porciones en una caja blanca pequeña"
+  ],
+  "pesoTotalCantidad": 4080,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Cajas",
+  "pesoPorcionCantidad": 680,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

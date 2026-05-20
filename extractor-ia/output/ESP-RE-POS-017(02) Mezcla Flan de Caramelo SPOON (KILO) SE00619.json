@@ -1,0 +1,90 @@
+{
+  "nombre": "Mezcla Flan de Caramelo SPOON (KILO) SE00619",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 26000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA (UND: 1 L)",
+      "cantidad": 14000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 4600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 4600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GELATINA PURA (PAQ:1 K)",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes del flan en el vaso de la licuadora y licuar por 3 minutos en velocidad alta hasta que todo se mezcle bien",
+    "Después de mezclar, dosifiquen en la olla.",
+    "Usar de inmediato y pesar 500gr de mezcla por cada molde, mezclar con un batidor cada 5 minutos para evitar que la condensada se separe."
+  ],
+  "pesoTotalCantidad": 50000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 50000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 440,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

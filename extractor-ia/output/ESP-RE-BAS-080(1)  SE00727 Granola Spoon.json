@@ -1,0 +1,108 @@
+{
+  "nombre": "SE00727 Granola Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Sirope Karo Dark",
+      "cantidad": 3600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10360",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sirope Maple",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10504",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AVENA INTEGRAL",
+      "cantidad": 6000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10775",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almendra Entera",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10591",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ARANDANOS DESHIDRATADOS",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10689",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Papel Mantequilla",
+      "cantidad": 10,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Tostar la avena previamente.",
+    "Mezclar todos los ingredientes y distribuir en 10 bandejas con el papel mantequilla.",
+    "Llevar al horno a 180ºC por alrededor de 15 minutos."
+  ],
+  "pesoTotalCantidad": 14400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "porc",
+  "pesoPorcionCantidad": 14400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1980,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,182 @@
+{
+  "nombre": "Mini Cake de Oreo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 100g",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00394",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA CREMA CHOCOLATE CON AGUA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00477",
+      "marca": null,
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA OREO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00513",
+      "marca": "FAS",
+      "observaciones": "1 Cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA OREO BAÑADA CHOCOLATE BLANCO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00514",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA OREO",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00513",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO ENTERA 1/12 UD",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10617",
+      "marca": "FAS",
+      "observaciones": "1 tapa",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO BAÑADA CHOCOLATE BLANCO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00514",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortas rosquete a la mitad y Humedecer cada tapa con mezcla de chocolate con agua",
+    "Rellenar con ganache de chocolate luego con crema de oreo y al final con galleta con chocolate blanco.",
+    "Encremar con la crema de oreo",
+    "Colocar en el centro el ganache oscuro, colocar la galleta con chocolate blanco y por ultimo una tapa de galleta ore.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 190,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 190,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 12,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,46 @@
+{
+  "nombre": "SE00832 Crema chantilly Roja Clara Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BLANCA BUCCA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL SUPER RED",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Sacar la crema blanca Bucca de la camara (temperatura maxima 18° ya batida).",
+    "Agregar el colorante, mezclar a mano, hasta que este completamente homogeneo.",
+    "Colocar plastico para tapar y etiquetar.",
+    "Volver a guardar en la camara hasta su uso."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

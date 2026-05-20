@@ -1,0 +1,172 @@
+{
+  "nombre": "MINI CAKE CARAMELO UD",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "Para pegar",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 80g",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00393",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "HUMEDECER",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE DE RELLENO CARAMELO SPOON",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BUTTERCREAM DE MANJAR",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00501",
+      "marca": "FAS",
+      "observaciones": "1/8 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO DE MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00699",
+      "marca": "NUECES INDUST",
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA #2B",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CARAMELO CON BRILLO",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00502",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO DE MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00699",
+      "marca": "FAS",
+      "observaciones": "1 cucharada",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": "M Y L",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la panza para nivelar), humeder los rosquetes con mezcla de tres leches y rellenar con caramelo, chocolate blanco y macadamia. Hacer un circulo de manjar sobre la orla para inmobilizar el quequito. Pegar el mini cake en la orla.",
+    "Con una manga y con la boquilla #48 cubrir todo el costado, de manera que se cubran todas la paredes hasta llegar al borde y alisar la parte superior con una espatula.",
+    "Colocar el Caramelo con brillo y Colocar la macadamia caramilizada con chocolate",
+    "Tapar y etiquetar. Colocar los sellos de seguridad en lados opuestos sobre uno de los sello de seguridad pegamos la cinta generica. La fecha de vencimiento, y en el lado inferior etiqueta de ingredientes."
+  ],
+  "pesoTotalCantidad": 190,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 190,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 32,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

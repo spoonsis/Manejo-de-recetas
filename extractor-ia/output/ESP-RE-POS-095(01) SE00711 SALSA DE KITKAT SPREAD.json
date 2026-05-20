@@ -1,0 +1,43 @@
+{
+  "nombre": "SE00711 SALSA DE KITKAT SPREAD",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Kit Kat Untable",
+      "cantidad": 7500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10658",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 7700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Agregar todos los ingredientes a la batidora e incorporar."
+  ],
+  "pesoTotalCantidad": 15000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 15000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 200,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,90 @@
+{
+  "nombre": "Premezcla Stroussel Chiverre SE00675",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes",
+  "areaProduce": "PREMEZCLAS",
+  "areaEmpaca": "BATIDOS",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Silver Cake",
+      "cantidad": 73,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "Fachasa",
+      "observaciones": null,
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 114,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "COCENTRADO VAINILLA DAWN",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10493",
+      "marca": "DAWN",
+      "observaciones": null,
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "Margarina Baker Tableta",
+      "cantidad": 46,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "BAKER",
+      "observaciones": null,
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En una bolsa pesar el azucar, concentrado y harina silver.",
+    "En otra bolsa colocar la margarina y meter dentro de la primer bolsa.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 275,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 275,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

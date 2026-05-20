@@ -1,0 +1,52 @@
+{
+  "nombre": "SALSA DE CARAMELO SALADO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Empaque Relleno De Caramelo Marmita",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA (UND)",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SABORIZANTE CARAMELO SALADO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10758",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Agregar todo a la batidora y batir hasta incorporar."
+  ],
+  "pesoTotalCantidad": 5700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 5700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 105,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

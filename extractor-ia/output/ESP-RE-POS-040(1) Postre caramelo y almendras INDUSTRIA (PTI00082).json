@@ -1,0 +1,155 @@
+{
+  "nombre": "Postre caramelo y almendras",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Relleno De Caramelo Marmita",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "CONEXU",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE CHEESE CAKE ACIDO 9000 g",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00297",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE DE DULCE LECHE (4800g)",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00298",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BRITTLE DE ALMENDRAS",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00299",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ETIQUETA IMPRES SPOON GRANDE V-272 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA (UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\" (CAJA:100 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar dentro del molde desarmable redondo 21 cm ,previamente ensagrasado la base de galleta presionar y hornear a 175°C por 7 min en el Argental, a 175°C por 8 min en el Dicte 1 y Dicte 2, a 170°C en el Dicte 3 y a 175°C por 7 min en el Marshal",
+    "Una vez fria la galleta, agregar 120g de caramelo (debe quedar en el centro sin llegar a los bordes para evitar que se salga una vez desmoldado)dosificar 600g de mezcla de cheesecake. Dejar enfriar al menos 6 horas en Refrigeracion",
+    "Desmoldar, y luego alisar con espatula los bordes",
+    "Pegar a la orla con manjar, decorar con ganache en el hacinedo espejo y dejar chorrear un poco. sobre este ganache colocar el brittle de almednras.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 190,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,129 @@
+{
+  "nombre": "Tres Leches  Tradicional Cuadrado  1 Unid (780g) Bucca 81063(PTI00112)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES 4 PORC",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00094",
+      "marca": "FAS",
+      "observaciones": "crudo 230 g",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "SPOON-IND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "SPOON-IND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA SIROPE MANJAR DULCE LECHE",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TULIPAN NEGRO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "MP10133",
+      "marca": "KAROL",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CEREZA ROJA C/TALLO",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "MP10109",
+      "marca": "DELI´S",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Bandeja 94121 24 Onz",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10305",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA MEDIANA TRES LECHES",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10406",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Sacar el rosquete horneaedo del molde cuadrado.",
+    "Colocar el rosquete dentro del empaque tipo bandeja acrílico",
+    "Bañar el rosquete con la mezcla de tres leches por abajo y por arriba.",
+    "Encremar y decorar con el sirope de dulce de leche con agua formando olas, colocar el colocho de crema en todo el borde.",
+    "En una esquina el tulipan de chocolate y 2 cherries.",
+    "Guardar en camaras de refrigeracion a 4ºC, despues de colocar la fecha de produccion y vencimiento."
+  ],
+  "pesoTotalCantidad": 780,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 780,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 55,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

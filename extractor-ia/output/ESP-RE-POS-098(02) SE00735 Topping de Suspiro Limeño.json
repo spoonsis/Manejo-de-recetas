@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00735 Topping de Suspiro Limeño",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SUSPIRO LIMEÑO",
+      "cantidad": 924,
+      "unidad": "g",
+      "codigoNetSuite": "SE00475",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 83,
+      "unidad": null,
+      "codigoNetSuite": "MP10024",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar el suspiro limeño con leche evaporada, mezclando bien hasta que quede completamente incorpordado.",
+    "Usar inmediatamente"
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 7,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

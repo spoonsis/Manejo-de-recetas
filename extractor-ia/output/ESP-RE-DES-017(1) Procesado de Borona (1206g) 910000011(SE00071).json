@@ -1,0 +1,64 @@
+{
+  "nombre": "Procesado de Borona",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA DAWN 320G",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 40,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar los rosquetes en una bandeja limpia, en pedazos y bien separados unos de otros",
+    "Hornear por 25 minutos a 175°C en el Marshall o 20 minutos a 300°F en el Vulcan. Sacar y enfriar",
+    "Colocar el producto en el procesador y procesar por impulsos hasta formar la borona o deshacer el rosquete",
+    "Colocar en baldes sellados y sanitizados. No procesar grandes cantidades para evitar la formación de moho"
+  ],
+  "pesoTotalCantidad": 1206,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 1206,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 294,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

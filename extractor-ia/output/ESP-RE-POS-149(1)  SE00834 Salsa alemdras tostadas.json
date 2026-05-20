@@ -1,0 +1,53 @@
+{
+  "nombre": "Salsa almendras tostadas",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Trasvasado de leche condensada cocinada",
+      "cantidad": 5300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMENDRA TOSTADA PEQUEÑA",
+      "cantidad": 2300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00833",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno Suspiro Limeño",
+      "cantidad": 7500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00475",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Quebrar previamente la almendra un poco.",
+    "Luego colocar todos los ingredientes en la batidora y mezclar."
+  ],
+  "pesoTotalCantidad": 15000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 15000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

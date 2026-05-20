@@ -1,0 +1,117 @@
+{
+  "nombre": "Humus De Garbanzo 1600g SE00319",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GARBANZOS",
+      "cantidad": 1040,
+      "unidad": "g",
+      "codigoNetSuite": "MP10201",
+      "marca": "TOÑOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE SESAMO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10054",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON PLANTA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST .5 LIT",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "COTOOLIVA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONDIMENTO COMINO",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10158",
+      "marca": "MCCORMICK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YOGURT BATIDO NATURAL",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10394",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 30,
+      "unidad": "CM",
+      "codigoNetSuite": "EM10252",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes menos el yogurt, en la licuadora y licuar hasta que quede homogeneo.",
+    "Agregar el Yogurth y Licuar",
+    "Colocar en un Recipiente"
+  ],
+  "pesoTotalCantidad": 3200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidades",
+  "pesoPorcionCantidad": 3200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 91,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

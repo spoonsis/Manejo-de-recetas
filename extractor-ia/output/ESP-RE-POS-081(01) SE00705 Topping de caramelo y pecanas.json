@@ -1,0 +1,52 @@
+{
+  "nombre": "SE00705 Topping de caramelo y pecanas",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SALSA DE CARAMELO PARA PECANAS",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00706",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Brillo Glit",
+      "cantidad": 3200,
+      "unidad": "g",
+      "codigoNetSuite": "410118",
+      "marca": "GLIT",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PECANA TOSTADA",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00707",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes con ayuda de una paleta hasta homogenea en velocidad 1."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 200,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,81 @@
+{
+  "nombre": "Enchilada de Carne con Papa 903000127(SE00179)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CUADRO HOJALDRE ENCHILADA PAPA Y CARNE",
+      "cantidad": 60,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00180",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO PAPA C/CARNE ENCHILADA KILO",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00181",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": "CAJA:2 Kg",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "HARISOL",
+      "observaciones": "KILO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "ESOSA",
+      "observaciones": "CAJA= 1000 UND",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar los cuadros en la mesa con harina y rellenar cada cadro con el relleno de papa y carne, sellar acorde a la ficha. Refrigerar de un dia a otro.",
+    "Pintar con yema y colocar en una lata engrasada.",
+    "Hornear en Dicte 1 y Dicte 2 a 185°C por 45 min o Dicte 3 a 180°C por 50 min"
+  ],
+  "pesoTotalCantidad": 2460,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 615,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 32,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

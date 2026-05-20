@@ -1,0 +1,158 @@
+{
+  "nombre": "Torta Bucca Genérica Pequeña",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Bettercream Doble Chocolate",
+      "cantidad": 4,
+      "unidad": "gramos",
+      "codigoNetSuite": "MP10006",
+      "marca": "Bettercream",
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 1.5,
+      "unidad": "unidad",
+      "codigoNetSuite": "SE00454",
+      "marca": "EASY",
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "Almibar de Cacique",
+      "cantidad": 195,
+      "unidad": "gramos",
+      "codigoNetSuite": "Nuevo",
+      "marca": "Cacique",
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 160,
+      "unidad": "gramos",
+      "codigoNetSuite": "SE00024",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "Procesado Chocolate Rallado Oscuro",
+      "cantidad": 70,
+      "unidad": "gramos",
+      "codigoNetSuite": "SE00392",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca",
+      "cantidad": 170,
+      "unidad": "gramos",
+      "codigoNetSuite": "SE00010",
+      "marca": "Spoon-Ind",
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "Pelado Chocolate Cacique",
+      "cantidad": 0,
+      "unidad": "gramos",
+      "codigoNetSuite": "Nuevo",
+      "marca": "Cacique",
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 25,
+      "unidad": "gramos",
+      "codigoNetSuite": "SE00001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SemiElaborados"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "121603",
+      "marca": null,
+      "observaciones": "(CAJA:50)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA # 10 BUCCA",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "1952875",
+      "marca": "BUCCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ET. TORTA BUCCA GENERICA PEQUEÑA",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "2172411",
+      "marca": "BUCCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "0702007",
+      "marca": null,
+      "observaciones": "(ROLLO)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "0702069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL DIA DEL PADRE",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "Nuevo",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1062,
+  "pesoTotalUnidad": "gramos",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 1062,
+  "pesoPorcionUnidad": "gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

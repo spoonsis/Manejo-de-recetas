@@ -1,0 +1,131 @@
+{
+  "nombre": "Batido Queque Navideño 33150g (902000012) SE00535",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA QUEQUE NAVIDEÑO",
+      "cantidad": 23460,
+      "unidad": "g",
+      "codigoNetSuite": "SE00536",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO (CAJA:10 K)",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DULCE GRANULADO (UND=900GR)",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10552",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MERMELADA NARANJA UJARRAS",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10252",
+      "marca": "UJARRAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VAINILLA OSCURA (UND: 3.78 L)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10385",
+      "marca": "MALUQUER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE NARANJA TB (CAJA: 12 UND)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10598",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RECORTE QUEQUE NAVIDEÑO",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON FLOR DE CAÑA 4 AÑOS",
+      "cantidad": 1125,
+      "unidad": "g",
+      "codigoNetSuite": "MP10721",
+      "marca": "FLOR DE CAÑA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dejar marinando las frutas que vienen en la pre mezcla (fruta confitada, ciruelas, pasas, higos, cerezas) con los 1125 gramos de ron, de un dia para otro en un bote cubierto con plastico adhesivo.",
+    "Colocar 1800g de dulce granulado en una olla con 500g de agua. Llevar a fuego y dejar derretir moviendo cada cierto tiempo para evitar se queme.",
+    "Derretir 3700g de margarina.",
+    "Una vez derretida el dulce granulado colar y pesar en un molde 2100g de dulce granulado con el jugo de naranja, jalea de naranja, agua, la vainilla y la margarina derretida 3600g , reservar en un bote.",
+    "Para empezar el batido colocar en una batidora grande los huevos con el azúcar, batir por 5 minutos en velocidad 4 y bajar luego la velocidad a 3 y batir por 7 minutos mas.  La mezcla debe estar esponjosa y haber duplicado su volumen.",
+    "Bajar a velocidad 1 y agregar la mitad de la mezcla de liquidos, adicionar luego el harina y dejar que se mezcle bien por 1 minuto. Limpiar fondo y bordes, Adicionar la mitad restante de los liquidos. Agregar de ultimo las frutas y las almendras, batir por 1 minuto mas las frutas deben quedar bien mezcladas.",
+    "No batir más, Limpiar los bordes con una espatula para que todo se mezcle bien.",
+    "La mezcla debe quedar homogenea."
+  ],
+  "pesoTotalCantidad": 30065,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 30065,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3750,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,202 @@
+{
+  "nombre": "Ensamble de Hershey's Kisses Industria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela, chef",
+  "areaProduce": "Decoracion",
+  "areaEmpaca": "Decoracion",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 400g",
+      "cantidad": 335,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": "ud Partido a la mitad",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "50 g por tapa",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "MOUSSE DE CHOCOLATE DE LECHE",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1 Taza",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Rosquete Brownie Redondo de 450 gramos",
+      "cantidad": 430,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1 unidad",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "1/3 Taza",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Semi Sweet Chocolate Chips",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Hershey's",
+      "observaciones": "1/3 taza",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Encremado",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Crema Bettercream Doble Chocolate",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "Richt",
+      "observaciones": "Paredes",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "Para decoracion",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Rosquete Brownie Redondo de 450 gramos",
+      "cantidad": 215,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1/2 media Unidad por torta",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Hershey's Kisses",
+      "cantidad": 12,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": "Hershey's",
+      "observaciones": null,
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Edicion Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10314",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Partir el Rosquette por la mitad y bañar con la leche ambas tapas ,Colocar la mousse sobre una capa y el Rosquete de Brownie",
+    "Sobre el rosquete de Brownie colocar el ganache de chocolate y exparsir uniformemente, luego agregar los Semi Sweet chocolate",
+    "Tapar con la otra mitad del rosquette",
+    "Tapizar con la Crema Beige y con la Crema Doble chocolate pasar el peine",
+    "Con la mitad del Rosquete de Brownie de 450 ( utilizar solamente para decorar 215 gramos ) y partirlo uniformemente para decorar en el centro en trozos de la torta ya encremada",
+    "Sobre el Brownie Colocar el Ganache de chocolate en hilos y a los costados 12 besitos de Hershey's Kisses",
+    "Tapar ,Fechar ,Etiquetar"
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 70,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,228 @@
+{
+  "nombre": "Torta Chocofresa Grande",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "05",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN  360g",
+      "cantidad": 303,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN  360g",
+      "cantidad": 303,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FUDGE CHOCOLATE SPOON",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "SUSPIRO QUEBRADO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00019",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FUDGE CHOCOLATE SPOON",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FUDGE CHOCOLATE SPOON",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "3era CAPA RELLENO"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "3era CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "3era CAPA RELLENO"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO (SPOON-IND)(24875g",
+      "cantidad": 205,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO BORONA CHOCOLATE",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00506",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TOPPIN DE SALSA DE FRESA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00703",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCOLATE",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" (100 * PAQ)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir 2 rosquetes por la mitad y proceder a rellenar con 1/2 taza de fudge,  1/2 taza de relleno chocofresa, 1/2 Taza de relleno de fresa",
+    "Tapar con medio rosquete y colocar 1/2 taza de fudge, 1/2 taza de relleno chocofresa, 1/2 taza de relleno de fresa. Seguido desuspiro",
+    "Colocar encima medio rosquete y rellenar con 1/2 taza de fudge y 1/2 taza de relleno chocofresa, 1/2 Taza de relleno de fresa. Tapar con el ultimo 1/2 rosquete. Colocar sobre una orla.",
+    "Encremar la torta con la crema chantilly de chocolate, y Marmolear con cream Liquida a los bordes",
+    "Colocar el toppin de fresa y colocar la borona acorde a la foto",
+    "Colocar la torta decorada en el domo acrílico, etiquetar con logo; nombre, ingredientes, código, día juliano, fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 1849,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "pesoPorcionCantidad": 1849,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 167,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

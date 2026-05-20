@@ -1,0 +1,64 @@
+{
+  "nombre": "Rosquete Easy Chocolate BC 200g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO EASY CHOCOLATE BC",
+      "cantidad": 48500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00440",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES (29800g)",
+      "cantidad": 3960,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 9,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Plastico Autoaderible 1/ 18*2000",
+      "cantidad": 17,
+      "unidad": "metros",
+      "codigoNetSuite": "EM10259",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 200g de mezcla en moldes engrasados.",
+    "Hornear por 55 minutos en el Horno Dicte2 o Dicte 1 a 185°C",
+    "Enfriar y colocar en latas limpias, 22 unidades por lata.",
+    "Dejar en el coche y rapear todo el coche, dejando solo la ultima lata con bolsa transparente."
+  ],
+  "pesoTotalCantidad": 47520,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 60,
+  "tiempoPrepUnidad": "MIN",
+  "porcionesCantidad": 238,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 980,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

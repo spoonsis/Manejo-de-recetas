@@ -1,0 +1,53 @@
+{
+  "nombre": "Procesado de Chocolate Rallado Oscuro",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CHOCOLATE SEMI AMARGO 54% (PAQ 5 k)",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10492",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pasar el chocolate por la maquina ralladora de queso.",
+    "Colocar en topper plasticos, etiquetar. Refigerar por 4 horas antes de usar."
+  ],
+  "pesoTotalCantidad": 4700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 4700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

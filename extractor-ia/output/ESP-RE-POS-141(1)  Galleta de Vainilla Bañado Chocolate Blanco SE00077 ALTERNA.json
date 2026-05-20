@@ -1,0 +1,45 @@
+{
+  "nombre": "Galleta de Vainilla Bañado Chocolate Blanco SE00077 ALTERNA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chefn",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Galleta Artesana Clasica",
+      "cantidad": 1250,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "POZUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA DE CHOCOLATE BLANCO",
+      "cantidad": 2250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL",
+      "observaciones": "( .250 g )",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate y mezclar con las galletas partidas en pedazos de 0,5cm aproximadamente.",
+    "Mezclar la galleta con el chocolate derretido, de manera que toda la galleta quede cubierta.",
+    "Colocar la mezcla en una lata con teflon y enfriar."
+  ],
+  "pesoTotalCantidad": 3500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "Tortas",
+  "pesoPorcionCantidad": 350,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

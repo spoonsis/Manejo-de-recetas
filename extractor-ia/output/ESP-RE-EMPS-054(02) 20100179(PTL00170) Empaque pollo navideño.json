@@ -1,0 +1,71 @@
+{
+  "nombre": "Empaque pollo navideño",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COCCION PECHUGA NAVIDAD",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00485",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA GRAVY POLLO NAVIDAD",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00486",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Transparente  6 X 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "ALIMENTOS T",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 130g de coccion de pollo con 80g de salsa gravy en una bolsa 6x10",
+    "Hacer nudo. Etiquetar"
+  ],
+  "pesoTotalCantidad": 210,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1.5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 210,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

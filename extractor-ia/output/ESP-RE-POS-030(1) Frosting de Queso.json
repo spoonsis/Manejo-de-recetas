@@ -1,0 +1,55 @@
+{
+  "nombre": "Frosting de Queso",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO CREMA",
+      "cantidad": 2350,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "DOS PINOS",
+      "observaciones": "3.6 Kg",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA NESTLE CHILE",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "NESTLE",
+      "observaciones": "4.5 KILOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": "PAQ=5 KILO",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En un bowl grande, colocar el queso crema, la leche condensada y el preservante.",
+    "Usando el batidor de globo, batir por 30 segundos en velocidad 1, para unir los ingredientes.",
+    "Subir la velocidad a 3, y batir por 1 y 1/2 minutos.",
+    "Refrigerar inmediatamente a 4ºC."
+  ],
+  "pesoTotalCantidad": 3125,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 25,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 125,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 28,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

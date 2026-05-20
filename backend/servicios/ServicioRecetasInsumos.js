@@ -116,7 +116,8 @@ async function obtenerRecetas(page = 1, limit = 50) {
             costoTotal: Number(ing.costoTotal),
             costoEstructuralMP: ing.costoEstructuralMP != null ? Number(ing.costoEstructuralMP) : undefined,
             costoEstructuralEMP: ing.costoEstructuralEMP != null ? Number(ing.costoEstructuralEMP) : undefined,
-            costoEstructuralMODI: ing.costoEstructuralMODI != null ? Number(ing.costoEstructuralMODI) : undefined
+            costoEstructuralMODI: ing.costoEstructuralMODI != null ? Number(ing.costoEstructuralMODI) : undefined,
+            seccionReceta: ing.seccionReceta
         }));
 
         r.versiones = historial.filter(h => h.receta_id === r.id).map(h => ({
@@ -255,7 +256,8 @@ async function upsertReceta(data) {
                 i.observaciones ?? null,
                 i.costoEstructuralMP ?? null,
                 i.costoEstructuralEMP ?? null,
-                i.costoEstructuralMODI ?? null
+                i.costoEstructuralMODI ?? null,
+                i.seccionReceta || 'ENSAMBLE'
             ]);
 
             await conn.query(`
@@ -264,7 +266,8 @@ async function upsertReceta(data) {
                     costoUnitario, costoTotal, codigo, codigoNetSuite, 
                     descripcionIngrediente, tipoMaterial, 
                     snapshotCostoUnitario, snapshotVersion, marca, observaciones,
-                    costoEstructuralMP, costoEstructuralEMP, costoEstructuralMODI
+                    costoEstructuralMP, costoEstructuralEMP, costoEstructuralMODI,
+                    seccionReceta
                 ) VALUES ?
             `, [ingValues]);
         }

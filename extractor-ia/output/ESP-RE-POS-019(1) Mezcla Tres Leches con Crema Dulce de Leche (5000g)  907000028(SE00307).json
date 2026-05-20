@@ -1,0 +1,62 @@
+{
+  "nombre": "Mezcla Tres leches con crema de dulce de leche",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 4500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BETTER DULCE LECHE RICH (UND:4 K)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10165",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLASTICO AUTOAD (UND: 18 * 2000 M)",
+      "cantidad": 10,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar en una olla la crema de dulce de leche junto con la mezcla de tres leches.",
+    "Utilizar de inmediato, en caso que sobre cubrir con plastico adhesivo y etiquetar con fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

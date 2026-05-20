@@ -1,0 +1,61 @@
+{
+  "nombre": "Empaque Pollo Ensalada Locales(160g)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COCCION DE POLLO DESMENUZADO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00139",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 160g de pollo demenuzado en una bolsa corriente 8*12. Etiquetar"
+  ],
+  "pesoTotalCantidad": 160,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "seg",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "bolsa",
+  "pesoPorcionCantidad": 160,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,64 @@
+{
+  "nombre": "Crema Naranja Bucca SE00401",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Blanca Bucca",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": "Rich´s",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Super Red",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": "American Colors",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Egg Yellow",
+      "cantidad": 13,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": null,
+      "codigoNetSuite": "EM10005",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Sacar la crema blanca Bucca de la camara (temperatura maxima 18° ya batida).",
+    "Agregar los colorantes, mezclar a mano, hasta que este completamente homogeneo.",
+    "Colocar plastico para tapar y etiquetar.",
+    "Volver a guardar en la camara hasta su uso."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 23,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,120 @@
+{
+  "nombre": "SE00469 Mezcla para cheesecake chocolate Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO CREMA PANADERO (CAJA: 5 K)",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 1900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE HOMOGENIZADA TB 3.5% (CAJA: 12 UND)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10045",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR GLASS MOLIDA (PAQ: 4 K)",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "MP10041",
+      "marca": "CIABATA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GELATINA PURA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 740,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRIPLE SEC 750 ml",
+      "cantidad": 125,
+      "unidad": "g",
+      "codigoNetSuite": "MP10042",
+      "marca": "SALICSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Hidratar la gelatina en agua temperatura ambiente por 4 minutos",
+    "Colocar en el tazón de la batidora el queso crema, la leche condensada, azúcar en polvo, batir con el globo en veloc. 1 por 30 segundos, luego subir velocidad a 3 por  4 minutos",
+    "Incorporar a la mezcla la leche y el triple sec, bajar la velocidad.",
+    "Llevar la gelatina al microondas por 3,5 minutos para disolver ",
+    "Batir la mezcla por 3 minutos en veloc. 1, agregar  la crema chantilly batida y la gelatina disuelta  y pasada por colador. Luego agregar el ganache y mezclar un poco para formar vetas",
+    "Bajar del batidor y dosificar acorde a la necesidad inmediatamente."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 58,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,80 @@
+{
+  "nombre": "PTL000200 - 20400167 Porcion Queque Seco de Limon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE LIMON 750G",
+      "cantidad": 4320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00626",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE GLASS LIMON",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00673",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA DE CELOFAN 6*9",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "EM10243",
+      "marca": "ALIM TEC",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 36,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA BLANCA PEQUEÑA",
+      "cantidad": 6,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ROLLO SELLO SEGURIDAD ROJO",
+      "cantidad": 36,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10139",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete en 6 unidades y empacar en la bolsa celofan y sellar. Colocar 5 unidades por caja",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 4320,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "unidades",
+  "pesoPorcionCantidad": 830,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 678,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,143 @@
+{
+  "nombre": "Relleno Pollo Lapiz 8925g 95669(SE00318)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "APIO PICADO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR INDUSTRIAL",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 48,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON PLANTA",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 18,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 47,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA HELLMANNS",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "HELLMANNS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCIÓN POLLO RECORTE",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE 1/100 UD",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "ESOSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes en una palangana grande. Los ingredientes deben quedar completamente mezclados entre si.",
+    "Empacar, etiquetar y mantener en refrigeración."
+  ],
+  "pesoTotalCantidad": 9000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 13,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 9000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 282,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

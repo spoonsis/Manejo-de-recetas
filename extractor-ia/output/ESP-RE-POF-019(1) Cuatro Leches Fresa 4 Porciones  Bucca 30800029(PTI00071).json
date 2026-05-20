@@ -1,0 +1,108 @@
+{
+  "nombre": "Cuatro Leches Fresa 4 Porciones Bucca 30800029(PTI00071)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE SOUFLE CUADRADO (90G)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00283",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SABORIZANTE FRESA BOSQUE",
+      "cantidad": 0.01,
+      "unidad": "g",
+      "codigoNetSuite": "MP10342",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA FRESA KILO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONT.24 ONZ.TAPA PLANA (PAQ=100)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10074",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ET. BUCCA DULCE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10111",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el contenedor el rosquete, bañar con las leches pasteurizadas saborizadas con saborizante de fresas del boque.",
+    "Colocar crema chantilly y decorar encima con la salsa de fresa, marmolear.",
+    "Etiquetar con fecha de vencimiento, nombre del producto, codigo de barras y etiqueta Bucca."
+  ],
+  "pesoTotalCantidad": 330,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 330,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

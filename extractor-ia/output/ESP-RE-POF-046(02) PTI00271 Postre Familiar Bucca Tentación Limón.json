@@ -1,0 +1,126 @@
+{
+  "nombre": "Postre Familiar Bucca Tentación Limón",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Base"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Base"
+    },
+    {
+      "nombre": "Relleno blanco de Limon",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00754",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "Colocho Boquilla# 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Empaque Toping de Lemon Court",
+      "cantidad": 220,
+      "unidad": "g",
+      "codigoNetSuite": "SE00756",
+      "marca": null,
+      "observaciones": "1 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BANDEJA ALUM DESE 6 PORC #4040",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TENTACIÓN DE LIMON PIREX",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10491",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En el molde de alimunio con la base de galleta ya horneada, colocar el relleno blanco de limon y enfriar minimo 4 horas.",
+    "Colocar encima del relleno, el toping de lemon court y realizar colochos con la boquilla #4FT por todos los bordes.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 930,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 930,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 26,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

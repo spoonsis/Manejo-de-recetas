@@ -1,0 +1,44 @@
+{
+  "nombre": "RUEDA HOJALDRE EMPANADA DE POLLO PEQUEÑA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA DE HOJALDRE",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00129",
+      "marca": "FAS",
+      "observaciones": "25 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA ESTANDAR",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10004",
+      "marca": "HARISOL",
+      "observaciones": "0,8 GRAMOS",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Laminar la pasta de hojaldre en la laminadora Rondo a 3.9 de grosor.",
+    "Cortar ruedas de 8,5 cm de diametro."
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 25,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 45,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

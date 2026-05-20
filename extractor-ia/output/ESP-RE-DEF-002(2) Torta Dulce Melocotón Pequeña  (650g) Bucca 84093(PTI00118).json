@@ -1,0 +1,164 @@
+{
+  "nombre": "Torta Dulce Melocotón Pequeña (650g) Bucca 84093(PTI00118)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 170G",
+      "cantidad": 226,
+      "unidad": "g",
+      "codigoNetSuite": "SE00451",
+      "marca": "FAS",
+      "observaciones": "1 1/2 ROSQUETE",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR (KILO)",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "3 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELOCOTON BUCCA KILO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00089",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA(2 CAPAS)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "2 CIRCULOS BOQUILLA#22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELOCOTON BUCCA KILO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00089",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BORONA P/DECORAR KILO",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "SE00071",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA #8 BUCCA (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10086",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA BASE CON DOMO 9 ALTA (CAJA:50 UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA DULCE DE MELOCOTON PEQUEÑA",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10397",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "Cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Utilizar 1 1/2 rosquetes, humedecer con almibar con ayuda de una brocha (2 brochazos cada capa 15g c/una) rellenar con melocoton y crema entre las capas. (dos capas de relleno)",
+    "Encremar la torta. Formar 2 circulos de colochos al borde y en el crentro el relleno de melocoton Bucca.",
+    "Agregar la borona sobre el colocho",
+    "Colocar la torta en el domo.",
+    "Colocar la tapa, etiqueta"
+  ],
+  "pesoTotalCantidad": 657,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 657,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

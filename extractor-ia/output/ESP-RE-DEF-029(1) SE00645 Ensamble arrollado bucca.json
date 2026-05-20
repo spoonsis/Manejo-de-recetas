@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00645 Ensamble arrollado bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO ARROLLADO BUCCA",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00644",
+      "marca": "FAS",
+      "observaciones": "4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO CHOCOLATE RALLADO OSCURO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "2/3 TAZA",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Bañar la plancha de arrollado con el almibar.",
+    "Luego colocar el relleno de arrollado bucca, y por ultimo agregar el chocolate rallado por toda la superficie.",
+    "Enrrollar la plancha a lo ancho y cortr en 3 arrollados."
+  ],
+  "pesoTotalCantidad": 1160,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 3.012987013,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 385,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 290,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

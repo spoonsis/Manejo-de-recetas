@@ -1,0 +1,94 @@
+{
+  "nombre": "Cheesecake Fresa Porcion 15 Unidades (75045(PTI00095)(PTI00095))",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE GALLETA P/CHESSE CAKE",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHEESECAKE",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00042",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "RELLENO O ENSAMBLE"
+    },
+    {
+      "nombre": "RELLENO TOPPING FRESAS",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00043",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BURBUJA PLASTICA 5",
+      "cantidad": 15,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10051",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 15,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 15,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ET. BUCCA DULCE",
+      "cantidad": 15,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10111",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el molde de aluminio rectangular, base de galleta cheese cake.",
+    "Hornear por 10 minutos, sacar y enfriar.",
+    "Colocar encima la mezcla de cheese cake.",
+    "Enfriar en cámaras a 4ºC.",
+    "Colocar encima el topping de fresa con la gelatina, llevar a cámaras de refrigeración a 4°C.",
+    "Porcionar en 15, empacar, etiquetar y fechar.",
+    "Guardar en cámaras de refrigeración a 4ºC."
+  ],
+  "pesoTotalCantidad": 2600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 15,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 173,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 150,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

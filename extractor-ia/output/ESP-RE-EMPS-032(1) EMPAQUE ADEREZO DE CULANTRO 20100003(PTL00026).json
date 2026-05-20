@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Aderezo de Culantro 20100003(PTL00026)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ADEREZO CULANTRO 2400G 10UND",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00136",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 6*10*4 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Introducir 240g de aderezo en una bolsa 6*10*4 y hacer un nudo.",
+    "Etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 240,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "seg",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 240,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

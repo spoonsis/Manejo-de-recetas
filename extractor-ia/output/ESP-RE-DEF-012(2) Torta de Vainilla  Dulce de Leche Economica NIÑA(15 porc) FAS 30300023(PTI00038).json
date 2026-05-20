@@ -1,0 +1,117 @@
+{
+  "nombre": "Torta de Vainilla con dulce de leche 15 Por NIÑA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Maria Jose Rodriguez, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA PASTELERO REAL",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "(crudo 650)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DULCE DE LECHE LA CIABATTA",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "La Ciabatta",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA TOP BASE CHANTILLY",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "(Encremar)",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA TOP BASE CHANTILLY",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Spoon",
+      "observaciones": "(Colocho Boquilla #842)",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "COLORANTE PASTA 4 ONZ",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "0807003",
+      "marca": "American Colors",
+      "observaciones": "(Electric blue) (Lemon Yellow)",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA 10\" BAJA",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "1942318",
+      "marca": "Export pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" ",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "1950692",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "0702012",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ET. TORTA BUCCA GENERICA",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "2172411",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "0702069",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad y rellenar con manjar. Tapar. Colocar en una orla.",
+    "Encremar con crema chantilly, peinar a los lados. Decorar con colochos con crema chantilly de color morado y lila.",
+    "Empacar en quequera, etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

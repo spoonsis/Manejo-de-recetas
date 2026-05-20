@@ -1,0 +1,98 @@
+{
+  "nombre": "Relleno Frio Carne Peruano 905000004 SE00231",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina Fría",
+  "areaEmpaca": "Cocina Fría",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RELLENO CARNE P/LASAGNA KILO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00232",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA CHILE AJI (PAQ:1 KILO)",
+      "cantidad": 32,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COMINO (UND:454G)",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10158",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITUNA VERDE C/PIMIENTO (UND:180g)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10057",
+      "marca": "INV KOPRAN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASAS (CAJAS:13.6KG)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10561",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAN MOLIDO (PAQ:5 K)",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10276",
+      "marca": "ESTRUCTURA DE JADE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 30,
+      "unidad": "CM",
+      "codigoNetSuite": null,
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes en un bowl.",
+    "Cubrir con plastico adesivo y etiquetar"
+  ],
+  "pesoTotalCantidad": 1250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1250,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 55,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,63 @@
+{
+  "nombre": "Empaque Relleno Limon(500g) Spoon 1522347(PTL00007)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RELLENO LIMON LOCALES",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00616",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abrir la bolsa de relleno de limon y proceder a empacar en bolsas.",
+    "Colocar la bolsa en la pesa, tarar y dosificar 500 gr en cada una, cerrar.",
+    "Etiquetar, fechar y guardar en camaras de refrigeración a 4ºC."
+  ],
+  "pesoTotalCantidad": 500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "Segundos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Bolsa",
+  "pesoPorcionCantidad": 500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

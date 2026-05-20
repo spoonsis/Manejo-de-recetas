@@ -1,0 +1,80 @@
+{
+  "nombre": "Salsa Mostanera 830g BUCCA SE00224",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MAYONESA",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10578",
+      "marca": "PROEXA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA HELLMANNS",
+      "cantidad": 165,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "FRENCHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "MARÍA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "AYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12X18 TRANSPARENTE",
+      "cantidad": 1,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes con la ayuda de un batidor hasta que todos los ingredientes bien unidos.",
+    "Colocar la mezcla en una bolsa y utilizar."
+  ],
+  "pesoTotalCantidad": 830,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 830,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

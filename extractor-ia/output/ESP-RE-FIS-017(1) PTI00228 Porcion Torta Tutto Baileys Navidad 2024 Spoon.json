@@ -1,0 +1,212 @@
+{
+  "nombre": "PTI00228 Porcion Torta Tutto Baileys Navidad 2024 Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela, chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquette Vainilla 260",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00611",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Mezcla Tres Leches C/Baileys",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": "CADA CAPA",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Ganache Baileys",
+      "cantidad": 95,
+      "unidad": "g",
+      "codigoNetSuite": "SE00087",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 105,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Caramelo Crocante Bañado chocolate De Leche",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "SE00467",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 105,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Encremado",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Boquilla 102",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Empaque Fudge De Chocolate",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "Boquilla 102",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Monedas Color Rojo Navidad Chocolate peq",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "MP10725",
+      "marca": "MAYCA",
+      "observaciones": "1 unidad por porcio",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Tutto Baileys Edicion Especial",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "MP10720",
+      "marca": "Mayca",
+      "observaciones": "1 uni por Porcion",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 6,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 6,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA DE TEMPORADA NAVIDAD",
+      "cantidad": 6,
+      "unidad": "UD",
+      "codigoNetSuite": null,
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Edicion Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10314",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el Rosquette y Humedecer con la Mezcla de Tres Leches Baileys",
+    "Colocar el Ganache y Cubrir todo el Rosquette",
+    "Agregar la Mousse y expasir uniformemente",
+    "Agregar el Caramelo Crocante de Forma Uniforme",
+    "Colocar la Otra Capa de Mousse",
+    "Colocar la Crema Beige",
+    "Con la Boquilla 102 Colocar la crema Beige y el Fudge",
+    "Colocar de Ultimo media Moneda de Color Rojo  , y una unidad de Chocolate Tutto Baileys Cuadritos"
+  ],
+  "pesoTotalCantidad": 760,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 125,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 88,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

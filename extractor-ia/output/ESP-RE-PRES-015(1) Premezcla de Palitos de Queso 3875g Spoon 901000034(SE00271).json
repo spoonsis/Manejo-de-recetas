@@ -1,0 +1,98 @@
+{
+  "nombre": "Premezcla de Palitos de Queso 3875g Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA HARISOL WINTER",
+      "cantidad": 2950,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": "HARISOL WINTER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL INDUSTRIA (SACO:25 Kg)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10027",
+      "marca": "ATLANTIDA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MARGARINA BAKER TABLETA (CAJA: 25 K)",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "BAKER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSPARENTE",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en una bolsa 12*18 harina, sal y preservante. Etiquetar con fecha de produccion y alerjeno",
+    "Pesar en una bolsa 12*18 la margarina. Etiquetar con fecha de producción, colocar junto con la harina"
+  ],
+  "pesoTotalCantidad": 3875,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 3875,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 1,
+  "pesoPorcionUnidad": "Tanda",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

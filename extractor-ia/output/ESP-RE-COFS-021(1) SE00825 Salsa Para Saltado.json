@@ -1,0 +1,125 @@
+{
+  "nombre": "SE00825 Salsa Para Saltado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina Fría",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Ajo Pelado",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite De Oliva",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "COTOLIVA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo Limon Planta",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Perejil Desinfectado",
+      "cantidad": 155,
+      "unidad": "g",
+      "codigoNetSuite": "MP10296",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 660,
+      "unidad": null,
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Soya Lee Kum Kee",
+      "cantidad": 580,
+      "unidad": null,
+      "codigoNetSuite": "MP10521",
+      "marca": "LEE KUM KEE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Chile Aji Planta",
+      "cantidad": 180,
+      "unidad": null,
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todo el ajo en la licuadora junto con la sal, jugo de limon, agregar El aceite, y licuar por pulsos, para simular ajo picado. Colocar en una palangana",
+    "Licuar el perejil con el agua, ají y salsa de soya, por pulso. Debe quedar el perejil como si hubiera sido picado. Se Licua el perejil SOLO con el aceite. Colocar en la palanagana con la mezcla anterior, mezclar con ayuda de un batidor de globo."
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 92,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

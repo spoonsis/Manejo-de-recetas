@@ -1,0 +1,128 @@
+{
+  "nombre": "RELLENO ARANDANO FRAMBUESA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FRESA CONGELADA BEGRO (PAQ:1 K)",
+      "cantidad": 13000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10191",
+      "marca": "BEGRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MORA FRESCA (1 KG)",
+      "cantidad": 2800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10549",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ARANDANO CONGELADO (2.5 K)",
+      "cantidad": 2800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10548",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SMOOBEES BLUEBERRY 1 KG",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10687",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONCENTRADO FRAMBUESA (946 ML)",
+      "cantidad": 5600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10547",
+      "marca": "ISLAND OASIS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 5600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO (BOLSA:1000G)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 32,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO (SACO:25 K)",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLASTICO AUTOAD (UND: 18 * 2000 M)",
+      "cantidad": 1,
+      "unidad": "m",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la fresa, mora, pulpa de frambuesa, azúcar, limon en polvo, y preservante.",
+    "Cocinar a fuego alto hasta hervir, mover cada 5 minutos para evitar que el relleno se pegue en el fondo de la olla.",
+    "Una vez que el relleno este hirviendo agregar el almidon disuelto en el agua. Y los smoobies",
+    "Hervir hasta que el relleno este bien espeso y con la textura deseada.",
+    "Enfriar y colocar en baldes, cubir con plastico y rotular."
+  ],
+  "pesoTotalCantidad": 33000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "g",
+  "pesoPorcionCantidad": 33000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3612,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

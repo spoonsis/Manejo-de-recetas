@@ -1,0 +1,99 @@
+{
+  "nombre": "PTI00224 Tres leches ronpope 4 porciones KFC",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES SOUFFLE 90G KFC",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00658",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES RON KFC",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00646",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CANELA EN POLVO",
+      "cantidad": 0.2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "BADIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONT.24 ONZ.TAPA PLANA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10074",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA KFC 4 PORCIONES NAIVDAD ROMPOPE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10405",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA 25/8 X 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Encremar con la crema chantilly blanca, por ultimo espolvorear la canela.",
+    "Tapar.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 320,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 320,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,64 @@
+{
+  "nombre": "Batido Easy queque vainilla SP",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA EASY QUEQUE VAINILLA SP",
+      "cantidad": 26655,
+      "unidad": "g",
+      "codigoNetSuite": "SE00435",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO ESPECIAL INNOV (CAJA:10 K)",
+      "cantidad": 4450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 9680,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 8200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en la batidora y batir con paleta.",
+    "Batir por 1 minutos en velocidad 1.",
+    "Luego batir por 5 minutos a velocidad 2.",
+    "Pasar a dosificar."
+  ],
+  "pesoTotalCantidad": 47730,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 47730,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 650,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

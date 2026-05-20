@@ -1,0 +1,64 @@
+{
+  "nombre": "Batido De Tres Leches",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE PREMEZCLA P/ROSQUETE TRES LECHES",
+      "cantidad": 9636,
+      "unidad": "g",
+      "codigoNetSuite": "SE00037",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA (UND)",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO (CAJA:10 K)",
+      "cantidad": 6800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE MIXO",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10315",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora grande harina, azúcar, preservante, polvo de hornear y huevos.",
+    "Batir en velocidad 1 por 20 segundos, limpiando los bordes.",
+    "Subir a velocidad 4 y batir por 4 minutos. Bajar luego la velocidad a 2 y se adiciona la leche, batir por 1 minuto.",
+    "Pesar de inmediato según se requiera."
+  ],
+  "pesoTotalCantidad": 18300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 18300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 36,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

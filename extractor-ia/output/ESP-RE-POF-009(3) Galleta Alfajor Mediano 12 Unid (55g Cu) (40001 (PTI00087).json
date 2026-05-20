@@ -1,0 +1,91 @@
+{
+  "nombre": "Galleta Alfajor Mediano",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Marta Beeche M",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "3",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "TAPAS DE ALFAJOR",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR EN POLVO",
+      "cantidad": 18,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "La Ciabatta",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAPSULA # 5 BLANCA",
+      "cantidad": 12,
+      "unidad": "Unids",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA BLANCA MEDIANAS",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10017",
+      "marca": "Gosaca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTE",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Rellenar las tapas de alfajor, con 25g cada uno. Tapar.",
+    "Espolvorear con azúcar en polvo.",
+    "Colocar en capsulas e introducir 12 unidades en una caja. Tapar con otra caja.",
+    "Etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 678,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 12,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 55,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

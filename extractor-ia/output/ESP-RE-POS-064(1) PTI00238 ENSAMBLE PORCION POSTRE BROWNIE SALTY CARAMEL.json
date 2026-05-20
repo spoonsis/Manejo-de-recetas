@@ -1,0 +1,130 @@
+{
+  "nombre": "ENSAMBLE PORCION POSTRE BROWNIE SALTY CARAMEL",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY CHOCOLATE BC 320G",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "SE00449",
+      "marca": "FAS",
+      "observaciones": "1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE MANJAR Y QUESO",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00202",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 18,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ROSQUETE REDONDO BROWNIE CASERO 250g",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00200",
+      "marca": "FAS",
+      "observaciones": "1/10 UND C/ PORC",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 1.5,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "KAROL LEDEZMA",
+      "observaciones": "1/4 UND C /PORC",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 18,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "PARA PEGAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Armar el molde.",
+    "Colocar medio rosquete de chocolate en la base del molde.",
+    "Encima del rosquete, colocar el relleno de manjar y queso. Dejar enfriar al menos 6 horas, ideal de un día para el otro.",
+    "Desmoladar con ayuda de una espatula, alisar los bordes con espatula (con agua caliente) y cortarlo en 6 unidades.",
+    "Para la decoración, Calentar la bolsa de caramelo por 2 minutos, agregarlo encima en forma de hilo, agragar los trozos de brownie y por ultimo en froma de hilo agregar el ganache de chocolate oscuro.",
+    "Por ultimo colocar 1/4 de stick y colocar encima.",
+    "Cerrar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1044,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 174,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 34,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

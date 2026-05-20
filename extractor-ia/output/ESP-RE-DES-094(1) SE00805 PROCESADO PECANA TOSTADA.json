@@ -1,0 +1,36 @@
+{
+  "nombre": "SE00805 PROCESADO PECANA TOSTADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pecana Tostada",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00707",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    }
+  ],
+  "pasos": [
+    "Pasar por la trituradora la pecana tostada.",
+    "Colocarla en una tina azul y taparla.",
+    "Utilizar inmediatamete"
+  ],
+  "pesoTotalCantidad": 980,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 980,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

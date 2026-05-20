@@ -74,7 +74,8 @@ async function importRecipes() {
                     codigoNetSuite: ing.codigoNetSuite || null,
                     marca: ing.marca || '',
                     observaciones: ing.observaciones || null,
-                    tipoMaterial: ing.nombre?.toUpperCase().includes('EMPAQUE') ? 'Empaque' : 'Materia Prima'
+                    tipoMaterial: ing.nombre?.toUpperCase().includes('EMPAQUE') ? 'Empaque' : 'Materia Prima',
+                    seccionReceta: ing.seccion ? ing.seccion.toUpperCase() : 'ENSAMBLE'
                 };
             });
 
@@ -90,7 +91,7 @@ async function importRecipes() {
                 nombre_receta: manualData["Nombre Receta (NetSuite)"] || rawData.nombre,
                 codigo_netsuite: manualData["Código NetSuite (Receta)"] || rawData.codigoNetSuiteReceta || "",
                 estado: 'APROBADO', // Registro directo como aprobado
-                versionActual: Number(rawData.version || 1),
+                versionActual: Number.isNaN(Number(rawData.version)) ? 1 : Number(rawData.version || 1),
                 pasos: rawData.pasos || [],
                 esSemielaborado: false,
                 tipoCosteo: 'GRAMO',
@@ -98,15 +99,15 @@ async function importRecipes() {
                 elaboradoPor: rawData.elaboradoPor?.split(',')[0] || '',
                 areaProduce: rawData.areaProduce || '',
                 areaEmpaca: rawData.areaEmpaca || '',
-                pesoTotalCantidad: Number(manualData["Peso Total (g)"] ?? rawData.pesoTotalCantidad ?? 0),
+                pesoTotalCantidad: Number.isNaN(Number(manualData["Peso Total (g)"] ?? rawData.pesoTotalCantidad)) ? 0 : Number(manualData["Peso Total (g)"] ?? rawData.pesoTotalCantidad ?? 0),
                 pesoTotalUnidad: rawData.pesoTotalUnidad || 'g',
-                tiempoPrepCantidad: Number(rawData.tiempoPrepCantidad || 0),
+                tiempoPrepCantidad: Number.isNaN(Number(rawData.tiempoPrepCantidad)) ? 0 : Number(rawData.tiempoPrepCantidad || 0),
                 tiempoPrepUnidad: rawData.tiempoPrepUnidad || 'min',
-                porcionesCantidad: Number(manualData["Porciones"] ?? rawData.porcionesCantidad ?? 1),
+                porcionesCantidad: Number.isNaN(Number(manualData["Porciones"] ?? rawData.porcionesCantidad)) ? 1 : Number(manualData["Porciones"] ?? rawData.porcionesCantidad ?? 1),
                 porcionesUnidad: rawData.porcionesUnidad || 'ud',
-                pesoPorcionCantidad: Number(manualData["Peso por Porción (g)"] ?? rawData.pesoPorcionCantidad ?? 0),
+                pesoPorcionCantidad: Number.isNaN(Number(manualData["Peso por Porción (g)"] ?? rawData.pesoPorcionCantidad)) ? 0 : Number(manualData["Peso por Porción (g)"] ?? rawData.pesoPorcionCantidad ?? 0),
                 pesoPorcionUnidad: rawData.pesoPorcionUnidad || 'g',
-                mermaCantidad: Number(manualData["Merma"] ?? rawData.mermaCantidad ?? 0),
+                mermaCantidad: Number.isNaN(Number(manualData["Merma"] ?? rawData.mermaCantidad)) ? 0 : Number(manualData["Merma"] ?? rawData.mermaCantidad ?? 0),
                 mermaUnidad: rawData.mermaUnidad || '%',
                 totalMP: mp,
                 totalEMP: emp,

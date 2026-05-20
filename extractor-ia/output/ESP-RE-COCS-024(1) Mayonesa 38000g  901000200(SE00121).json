@@ -1,0 +1,119 @@
+{
+  "nombre": "Mayonesa Spoon (901000200(SE00121))",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA HELLMANNS",
+      "cantidad": 810,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "HELLMANNS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA (PAQ: 5 K)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (PAQ: 1 KILO)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO (UND:3.7 L)",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 375,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 31000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE LIMON",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colcocar en el bowl de la batidora las yemas, mostaza, piemienta, ajo, sal, salsa lizano, preservante. Batir con ayuda del globo por 4 min, en velocidad media.",
+    "Agredar el aceite en forma de hilo poco a poco. Mientras se continua batiendo en velocidad media.",
+    "Agregar el jugo de limón en froma de hilo. Mientras se sigue batiendo. Debe quedar homogeneo.",
+    "Retirar de la batidora y colocar en bandejas",
+    "Se debe hacer choque térmico antes de empacar alcazando una temperatura menor a los 5°C"
+  ],
+  "pesoTotalCantidad": 37400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 40,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 37400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 460,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

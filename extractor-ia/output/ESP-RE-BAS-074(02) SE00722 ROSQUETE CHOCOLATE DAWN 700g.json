@@ -1,0 +1,146 @@
+{
+  "nombre": "PTI00153 Torta chocolate Spoon (1 Relleno)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 600g",
+      "cantidad": 510,
+      "unidad": "g",
+      "codigoNetSuite": "SE00464",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRASVASADO LECHE CONDENSADA COCINADA",
+      "cantidad": 460,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": "1 1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 280,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUIILA 2D",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO RIZOS",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00465",
+      "marca": "FAS",
+      "observaciones": "2 CUCHARADAS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "CHOCOLATE SOLUTIONS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SPOON GRANDE V-272",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Se utilizan 2 mitades de rosquete.",
+    "Rellenar con leche condensada cocinada, tapar. Colocar sobre la orla.",
+    "Encremar con el fudge de chocolate y pasar el peine metalico a los costados.",
+    "Decorar con colocho de fudge en borde. Colocar chocolate rallado en la superficie y decorar con 1 stick dorado partido por la mitad.",
+    "Colocar la torta dentro del domo, etiquetar con etiqueta Spoon, nombre del producto y codigo de barras, fecha juliana y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 1300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6.5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "pesoPorcionCantidad": 1300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 41,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

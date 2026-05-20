@@ -1,0 +1,92 @@
+{
+  "nombre": "SE00687 Salsa de Whisky Red Label",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Cocina Caliente",
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar  Industrial",
+      "cantidad": 3750,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "Fas",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Gourmet Pro",
+      "cantidad": 6100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "Rich",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Whiskey Red Label",
+      "cantidad": 2850,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "CHIVAS REGAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Aceal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua (PLANTA)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema",
+    "Incorporar el azucar hasta que tome un color estilo caramelo.",
+    "Se agrega la Crema Gourmet y el mangar, mezclando hasta que agarre un punto denso.",
+    "Por ultimo se le incorpora el agua y el ron hasta que espece.",
+    "Dejar enfriar, empacar y etiquetar."
+  ],
+  "pesoTotalCantidad": 12760,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 12760,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 6965,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

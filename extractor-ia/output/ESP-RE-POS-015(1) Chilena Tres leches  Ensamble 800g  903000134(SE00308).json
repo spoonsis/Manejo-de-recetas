@@ -1,0 +1,61 @@
+{
+  "nombre": "Chilena Tres leches Ensamble 800g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE GALLETA P/TRES LECHES CHILENA",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00309",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA 6 KG )",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 1,
+      "unidad": "m",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Una vez frías las galletas rellenar con 200g de manjar de manera que quede bien parejo. Pasar al departamento de ensamble de tres leches chilena."
+  ],
+  "pesoTotalCantidad": 800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 3,
+  "porcionesUnidad": "Tres leches",
+  "pesoPorcionCantidad": 266,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

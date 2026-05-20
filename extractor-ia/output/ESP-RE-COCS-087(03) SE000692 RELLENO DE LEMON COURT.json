@@ -1,0 +1,108 @@
+{
+  "nombre": "RELLENO DE LEMON COURT",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 3750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almidon Modificado",
+      "cantidad": 440,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 4180,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "Agua para almidon",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Limones Maya",
+      "cantidad": 20,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10240",
+      "marca": "LA PERLA",
+      "observaciones": "RALLADURA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo De Limon Mesino",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10680",
+      "marca": "LA PERLA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aceal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Yema De Huevo Pasteurizada",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en una olla, excepto el amidon disuelto en la otra parte del agua.",
+    "Cuando todo este completamente disuelto y cominze a hervir, incorporamos el almidon y dejamos que espese sin dejar de mover.",
+    "Se deja enfriar, guardar y etiquetar."
+  ],
+  "pesoTotalCantidad": 12288,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 12288,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 122,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

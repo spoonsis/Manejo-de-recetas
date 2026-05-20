@@ -1,0 +1,62 @@
+{
+  "nombre": "Salsa de maracuya",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Maracuya Congelada",
+      "cantidad": 3600,
+      "unidad": null,
+      "codigoNetSuite": "MP10423",
+      "marca": "Inpak",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 1000,
+      "unidad": null,
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 200,
+      "unidad": null,
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 500,
+      "unidad": null,
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la maracuya congelada con el azucar y llevar a hervor.",
+    "Espesar con el almidon disuelto en agua."
+  ],
+  "pesoTotalCantidad": 4300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 4300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1000,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

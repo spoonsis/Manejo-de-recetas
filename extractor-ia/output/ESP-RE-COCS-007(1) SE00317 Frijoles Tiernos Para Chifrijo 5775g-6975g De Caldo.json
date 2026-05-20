@@ -1,0 +1,191 @@
+{
+  "nombre": "SE00317 Frijoles Tiernos Para Chifrijo 5775g-6975g De Caldo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FRIJOLES TIERNOS",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10197",
+      "marca": "ADAPECS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO",
+      "cantidad": 310,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "1/500 G",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 425,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 155,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JARRETE PICADO",
+      "cantidad": 1550,
+      "unidad": "g",
+      "codigoNetSuite": "MP10219",
+      "marca": "COOPEMONTECILLOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POSTA DE CERDO",
+      "cantidad": 385,
+      "unidad": "g",
+      "codigoNetSuite": "MP10305",
+      "marca": "COOPEMONTECILLOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE RES",
+      "cantidad": 78,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA CHILE AJI PLANTA",
+      "cantidad": 78,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMILLO FRESCO ROLLO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10378",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE",
+      "cantidad": 62,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLINO",
+      "cantidad": 195,
+      "unidad": "g",
+      "codigoNetSuite": "MP10107",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 5800,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE CALDO DE POLLO 5000G",
+      "cantidad": 3225,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO",
+      "cantidad": 115,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SOPA OLLA CARNE MAGGI",
+      "cantidad": 155,
+      "unidad": "g",
+      "codigoNetSuite": "MP10362",
+      "marca": "MAGGY",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 270,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "ANCHOR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Colocar en una olla el ajo en pasta, cebolla picada, apio picado, chile dulce picado, cebollino picado, tomillo fresco, posta de cerdo picado, achiote, salsa chile peruano, frijoles tiernos, agua (reservar un poco para disolver la sopa olla de carne, preservante y el almidon) , caldo de pollo, y sazonador consome de res. Colocar el hueso de jarrete.",
+    "2.- Cocinar por 45 min aprox desde que hierva. (hasta que el frijol este suave pero entero)",
+    "3.- Agregar el almidon, preservante y la sopa olla de carne disuelos en un poco de agua. Agregar a la coccion anterior. Mezclar de manera que no se formen grumos. Hervir.",
+    "4.- Retirar la costilla y picar la parte de carne y regresar a los frijoles",
+    "5.- Colar los frijoles, hacer choque termico al caldo y a los frijoles"
+  ],
+  "pesoTotalCantidad": 5775,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 5775,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 11586,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,175 @@
+{
+  "nombre": "Ragú a la boloñesa",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CARNE MOLIDA 80-20",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10099",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOCINETA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10372",
+      "marca": null,
+      "observaciones": "PAQ:2 KILOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "CINTA AZUL",
+      "observaciones": "PAQ:KILO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMILLO FRESCO ROLLO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10378",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": "PAQ:500GR",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ZANAHORIA TIRAS",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10399",
+      "marca": "PRESTO",
+      "observaciones": "PAQ:500G",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMATE PELADO ENTERO",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10376",
+      "marca": "PRESTO",
+      "observaciones": "UND: 2.89 K",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA GALÓN",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "OLD CALIFORNIA",
+      "observaciones": "UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO BLANCO PETER CABERNET SAU",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": "DOS PINOS",
+      "observaciones": "UND:5L",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "PETER VELA",
+      "observaciones": "UND:5 L",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE RES",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "MAYCA",
+      "observaciones": "PAQ=5 KILO",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1. En una olla colocamos el aceite de oliva y agregamos el tocino picado. Cuando este empiece a botar su grasa agregamos las cebollas picadas. Sofreimos hasta que queden transparentes.",
+    "2. Agregar la zanahoria picada y el apio picado y rehogamos aprox. 5 minutos.",
+    "3. Añadir la carne molida, salpimentar y mezclar bien.",
+    "4. Cuando el color de la carne haya cambiado a marrón, agregar la leche, dejar que se evapore y agregar la nuez moscada.",
+    "5. Desglasar con el vino blanco y una vez que se haya evaporado el alcohol, agregar el tomate licuado",
+    "6. Una vez que la salsa haya hervido, cubrir de agua, poner a fuego medio y reducir hasta que se haya evaporado el líquido.",
+    "7. Pasar en bandejas a choque termico para ser empacado."
+  ],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 60,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 3000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2657,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

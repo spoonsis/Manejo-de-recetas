@@ -1,0 +1,129 @@
+{
+  "nombre": "90100395 (SE00485) Cocciòn Pechuga navidad 2023",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FILET CORTE MARIPOSA PLANTA",
+      "cantidad": 39000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00508",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA DE AJO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE MORRON ASADO (UND:2.9 K)",
+      "cantidad": 7050,
+      "unidad": "g",
+      "codigoNetSuite": "MP10121",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 155,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA ( PAQ: 5000 g )",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO (UND: 156 G)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA EN POLVO (PAQ: KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HOJA DE LAUREL (UND:43g)",
+      "cantidad": 67,
+      "unidad": "g",
+      "codigoNetSuite": "MP10209",
+      "marca": "MCCORMICK",
+      "observaciones": null,
+      "seccion": "LIQUIDOS SEGUNDA COCCION"
+    },
+    {
+      "nombre": "VINO BLANCO PETER CABERNET SAU (UND:5L)",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": "PETER VELA",
+      "observaciones": null,
+      "seccion": "LIQUIDOS SEGUNDA COCCION"
+    },
+    {
+      "nombre": "CALDO POLLO RECORTE",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "LIQUIDOS SEGUNDA COCCION"
+    }
+  ],
+  "pasos": [
+    "Adobar las pechugas con sal, consome. Abrir la pechuga y rellenar con la zanahoria y el cebollin , envolver y colocar en bandejas formando lineas, dejar espacio entre cada fila.",
+    "Colocar en los espacios el tomate cortado en cuartos",
+    "Colocar sobre toda la bandeja la cebolla, el ajo y laurel.",
+    "Cocinar en Rational en progrmacion pollo ventana navideña.",
+    "Cuando el horno suene colocar los liquidos y seguir cocinando.",
+    "Enviar a enfriar para posterior cortar en rebanadas (al menos 5 rebanadas deben pesar 125g)"
+  ],
+  "pesoTotalCantidad": 32592,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 100,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 145,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 225,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30096,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

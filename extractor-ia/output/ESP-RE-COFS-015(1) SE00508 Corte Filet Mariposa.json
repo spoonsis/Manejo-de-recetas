@@ -1,0 +1,36 @@
+{
+  "nombre": "SE00508 Corte Filet Mariposa",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "POLLO DSHPCH FILET S/R TD",
+      "cantidad": 12500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10016",
+      "marca": "PIPASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Cortar la pechuga por la mitad, retirar lo excesos de pellejo, grasa o alguna presencia de hueso y cartilago.",
+    "Formar el corte mariposa, darle un peso de 150g +/- 10g. Los recortes sin presencia de hueso, cartilago o grasa; se deben reservar para coccion de pollo mechado.",
+    "Refrigerar."
+  ],
+  "pesoTotalCantidad": 7500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 163,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1625,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

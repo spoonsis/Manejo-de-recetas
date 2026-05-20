@@ -1,0 +1,136 @@
+{
+  "nombre": "Cuatro leches fresa Bucca caja 6 (85239(PTI00132)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA CUATRO LECHES",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00304",
+      "marca": "FAS",
+      "observaciones": "130 GRAMOS C/U, 1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA FRESA",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": "(2000 gr), 20 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA",
+      "cantidad": 198,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "33 GRAMOS C/U, BOQUILLA #842",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA SIX PACK MUSMANNI",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": null,
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE",
+      "cantidad": 25,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": "2*100 MTS",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "VASO 9oz P/SUNDAE TS9",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10105",
+      "marca": null,
+      "observaciones": "(PAQ=50 UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA VASO 9oz P/SUNDAE",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10181",
+      "marca": null,
+      "observaciones": "(PAQ=50 UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 7,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA",
+      "cantidad": 7,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": "2 5/8X1 15/16",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA CUATRO LECHES DE FRESA",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10464",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "SELLO DE SEGURIDAD",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": "1 1/4 * 3/4",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el empaque transparente. Colocar 130g mezcla de cuatro leches, decorar con colocho de crema con boquilla 2C.",
+    "Colocar salsa de fresa en el centro.",
+    "Tapar. Etiquetar con nombre y fecha de vencimiento y etiqueta.",
+    "Colocar 6 unidades en la caja sixpack, sellar con cinta y etiquetar con nombre y vencimiento."
+  ],
+  "pesoTotalCantidad": 1098,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "caja",
+  "pesoPorcionCantidad": 1098,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

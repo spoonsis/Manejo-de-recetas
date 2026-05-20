@@ -1,0 +1,52 @@
+{
+  "nombre": "Empaque glass limon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GLASEADO DE LIMON",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00628",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Transparente  6 X 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Empacar en una bolsa 6x10 100g de glaseado de limon."
+  ],
+  "pesoTotalCantidad": 100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidades",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

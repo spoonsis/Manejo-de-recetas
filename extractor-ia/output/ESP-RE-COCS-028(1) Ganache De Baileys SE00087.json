@@ -1,0 +1,73 @@
+{
+  "nombre": "GANACHE BAILEYS SE00087",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA PRESTIGE GRAND (UND=4 K)",
+      "cantidad": 7050,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE BLANCO (PAQ:5 K)",
+      "cantidad": 11400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BAILEYS (BOTELLA=1 LITRO)",
+      "cantidad": 3450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10406",
+      "marca": "BAILEYS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 20,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla la crema Prestige a 55 grados . Calentar",
+    "Agregar el chocolate en trozos. Mezclar hasta que se derrita el chocolate.",
+    "Agregar el Baileys.",
+    "Colocar en bandejas, hacer choque térmico."
+  ],
+  "pesoTotalCantidad": 21000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDAS",
+  "pesoPorcionCantidad": 21000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 900,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

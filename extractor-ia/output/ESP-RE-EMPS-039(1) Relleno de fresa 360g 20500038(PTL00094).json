@@ -1,0 +1,65 @@
+{
+  "nombre": "Relleno de fresa 360g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RELLENO DE FRESA PLANTA",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00027",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Emp",
+    "Una vez fria la galleta, dosificar en el molde 800g de mezcla de cheesecake. Dejar enfriar al menos 6 horas en Refrigeracion",
+    "Desmoldar con ayuda de una espatula.",
+    "Pegar a la orla con manjar.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 360,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 360,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

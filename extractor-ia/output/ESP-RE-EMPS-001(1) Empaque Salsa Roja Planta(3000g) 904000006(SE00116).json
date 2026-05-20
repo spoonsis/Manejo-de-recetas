@@ -1,0 +1,61 @@
+{
+  "nombre": "Empaque Salsa Roja Planta (3000g) 904000006(SE00116)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SALSA ROJA SPOON (33 Kg)",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00111",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA CORRIENTE 12*18",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10125",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 3000 g de relleno en una bolsa corriente 12*18. Utilizar doble bolsa. Etiquetar"
+  ],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 3000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

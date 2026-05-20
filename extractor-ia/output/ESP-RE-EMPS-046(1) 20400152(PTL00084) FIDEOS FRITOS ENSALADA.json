@@ -1,0 +1,62 @@
+{
+  "nombre": "FIDEOS FRITOS ENSALADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FIDEOS FRITOS PARA ENSALADA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00194",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA BUCCA PALMERITAS (10*20CM)( KILO )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10222",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 10g de fideos fritos en la bolsa palmeritas.",
+    "Sellar en la maquina y etiquetar con nombre y vencimiento."
+  ],
+  "pesoTotalCantidad": 10,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 0.5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,64 @@
+{
+  "nombre": "Relleno chocoron",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "PRESTIGE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE LECHE",
+      "cantidad": 3800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10001",
+      "marca": "NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON CENTENARIO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10684",
+      "marca": "CENTENARIO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Montar la crema prestige (3000g) a punto de chantilly.",
+    "Derretir el chocolate de leche con 2000g de prestige y agregar a la prestige montada y mezclar hasta incoporar.",
+    "Por ultimo agregar el ron y mezclar hasta incorporar.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 9400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 9400,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 200,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

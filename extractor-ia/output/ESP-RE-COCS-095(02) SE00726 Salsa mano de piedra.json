@@ -1,0 +1,71 @@
+{
+  "nombre": "SE00726 Salsa mano de piedra",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mostaza Hellmanns",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "Hellmans",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO COCCION MANO PIEDRA",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el caldo resultante de la coccion de la mano de piedra junto con la pasta de tomate, preservante y la mostaza.",
+    "Llevar a hervor y espesar con el almidon disuelto en agua."
+  ],
+  "pesoTotalCantidad": 620,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 80,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 150,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

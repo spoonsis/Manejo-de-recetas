@@ -1,0 +1,172 @@
+{
+  "nombre": "PTI00200 Porcion de Torta Pie de Limon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 5,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Vainilla Dawn 300g",
+      "cantidad": 375,
+      "unidad": "g",
+      "codigoNetSuite": "SE00450",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "60 GRAMOS X CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE MANTEQUILLA Y QUESO LIMON",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00255",
+      "marca": "FAS",
+      "observaciones": "130 GRAMOS X CAPA, 3/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA VAINILLA BAÑO CHOCO BLANCO KILO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "35GRAMOS X CAPA, 1/8 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BEIDGE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA MARIA CON CHOCOLATE BLANCO",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE AMARILLO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00481",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "CHOCOLATE S",
+      "observaciones": "1/2 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "AMAPOLA",
+      "cantidad": 0.2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10357",
+      "marca": "UNIVERSAL A",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CEREZA ROJA C/TALLO",
+      "cantidad": 26,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MAYCA",
+      "observaciones": "6 ud",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Partir cada rosquete  en 3 partes, humedecer cada capa con mezcla de tres leches.",
+    "2.- Ditribuir en dos capas de: relleno de mantequilla y queso limon, galleta con chocolate.",
+    "3.- Encremar la torta con crema chantilly Beidge, decorar con galleta con chocolate blanco en el borde, ganache amarillo en el centro tipo espiral. Espolvorear amapola en el centro y colocar 1 cereza en el centro de la porcion  y 1 stick acorde a la fotografia.",
+    "4.- Cortar , Tapar, etiquetar, fechar con nombre, día juliano, fecha de vencimiento y Sticker V-272 Spoon."
+  ],
+  "pesoTotalCantidad": 918,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 153,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 311,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

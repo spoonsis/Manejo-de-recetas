@@ -1,0 +1,53 @@
+{
+  "nombre": "Crema Chocolate con Agua(1100g)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCO (UND:4 K)",
+      "cantidad": 673,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 336,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Con la ayuda de una espatula de goma mezclar la crema con el agua en un bowl de acero inoxidable.",
+    "Usar inmediatamente o guardar en tupper con tapa. Cámaras de refrigeración a 4°. Vida util 1 dias."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 9,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

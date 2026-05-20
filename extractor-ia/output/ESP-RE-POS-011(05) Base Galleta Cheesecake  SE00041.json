@@ -1,0 +1,71 @@
+{
+  "nombre": "Base Galleta Cheesecake SE00041",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "05",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GALLETA YEMITA (KILO)",
+      "cantidad": 4222,
+      "unidad": "g",
+      "codigoNetSuite": "MP10555",
+      "marca": "POZUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CORTE GALLETA CHILENA GRANDE",
+      "cantidad": 745,
+      "unidad": "g",
+      "codigoNetSuite": "SE00204",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR REFINO",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00226",
+      "marca": "VICTORIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema. No hervir.",
+    "Mezclar la galletas procesada con el azucar y la lactocrema, en batidora con paleta, hasta homogeneo."
+  ],
+  "pesoTotalCantidad": 8000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 8000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 177,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

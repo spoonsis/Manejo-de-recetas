@@ -1,0 +1,147 @@
+{
+  "nombre": "Salsa Blanca SPOON SE00109",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ = 1 KILO )",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NUEZ MOSCADA MOLIDA",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10013",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA BLANCA MOLIDA",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10014",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA GOURMET PRO 1/1 LITRO",
+      "cantidad": 30400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "Gourmet",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA (UND)",
+      "cantidad": 11250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA (UND: 1 L)",
+      "cantidad": 13000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO (COCINA)",
+      "cantidad": 57,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO BLANCO PETER CABERNET SAU (UND:5L)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": "PETTER VELA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la lactocrema en una olla con los ajos, sofreir y mover, agregar la cebolla, mover freir por 10 min. Hasta que la cebolla cristalice.",
+    "Agregar la pimienta, sal y nuez moscada para soltar sus aromas. Freir por 5 min mas.",
+    "Agregar a la olla, la crema versatie, leche evaporada y la leche (guardar un poco para disolver el almidon), dejar hervir.",
+    "Disolver el almidón modificado, preservante en polvo, con el resto de la leche blanca, mover con globo de mano",
+    "Hervir por 5 min aprox. Una vez llegado a 75ºC. Apagar. Agregar el vino. Mover y sacar para que no se evapore.",
+    "Llevar a choque térmico y guardar en cámaras de refrigeración a 4º, minimo 24 horas después para usar"
+  ],
+  "pesoTotalCantidad": 55215,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 55215,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5242,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

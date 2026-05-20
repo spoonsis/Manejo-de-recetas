@@ -1,0 +1,83 @@
+{
+  "nombre": "Mezcla para Tres Leches Pasteurizada SE00031",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE 2% PASTEURIZADA (UND)",
+      "cantidad": 12230,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA (LITRO)",
+      "cantidad": 17430,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 17430,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 14000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 1475,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Disolver completamente el preservante en un litro de leche estandar empleando el homogenizador manual.",
+    "Colocar en un bolw con una paleta manual, la leche fluida, la leche evaporada, el litro de leche con el preservante ya disuelto, el azúcar, la crema prestige líquida y la leche condensada.",
+    "Dosificar la mezcla pasteurizada en recipientes de acero inoxidable previamente lavado de acuerdo a INS-LMP-019 Recipiente para el Almacenamiento de Leche Pasteurizada, tapar el recipiente hermeticamente y reservar hasta su uso.",
+    "Identificar los recipientes con nombre del producto, fecha de producción y responsable.",
+    "Esta mezcla tiene una vida útil de 2 días envasada en recipientes de acero inoxidable herméticamente cerrados y mantenida en refrigeración 0ºC y 5ªC. Terminado el proceso proceder a la limpieza del equipo y a la sanitización."
+  ],
+  "pesoTotalCantidad": 62500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 11,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 62500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 205,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

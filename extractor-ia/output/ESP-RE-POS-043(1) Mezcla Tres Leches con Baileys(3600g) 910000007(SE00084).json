@@ -1,0 +1,80 @@
+{
+  "nombre": "Mezcla Tres Leches con Baileys",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LICOR DE BAILEYS",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10406",
+      "marca": "BAILEYS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO (pre mezclas)",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 20,
+      "unidad": "Cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar en un bote de acero inoxidable mezcla de tres leches, preservante, el agua y el baileys.",
+    "Si sobra tiene 1 dia de vida util"
+  ],
+  "pesoTotalCantidad": 3600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "Tortas",
+  "pesoPorcionCantidad": 3600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

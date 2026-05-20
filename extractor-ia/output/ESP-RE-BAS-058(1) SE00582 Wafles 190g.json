@@ -1,0 +1,71 @@
+{
+  "nombre": "Batido Waffles",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "COCINA",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA PANQUEQUES MAIZENA",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10681",
+      "marca": "MAIZENA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche 2% Pasteurizada",
+      "cantidad": 1700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Huevo Liquido Refrigerado",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema y luego mezclar todos los ingredientes hasta incorporar.",
+    "Se puede utilizar la batidora con globo a velocidad baja."
+  ],
+  "pesoTotalCantidad": 3800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 20,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 190,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 150,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

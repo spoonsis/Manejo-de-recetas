@@ -1,0 +1,329 @@
+{
+  "nombre": "Relleno Cajeta",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE POLVO INDUSTRIAL (SACO:25 KG)",
+      "cantidad": 30,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0310145",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA"
+    },
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 1.5,
+      "unidad": "UND",
+      "codigoNetSuite": "SE00454",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES Y KOLITA (LITRO)",
+      "cantidad": 150,
+      "unidad": "Gramo",
+      "codigoNetSuite": "907000026",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "Relleno Cajeta",
+      "cantidad": 240,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "Relleno Crema-Pinito",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 190,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00504",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 180,
+      "unidad": "Gramo",
+      "codigoNetSuite": "910000018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "Crema Chantilly Roja Claro",
+      "cantidad": 30,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "Sirope Rojo Bucca",
+      "cantidad": 4,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00633",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 20,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "121603",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA # 10 BUCCA (UND)",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "1952875",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0702007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta especial Mamá 2026",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "nuevo",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 1.5,
+      "unidad": "und",
+      "codigoNetSuite": "SE00454",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES Y KOLITA (LITRO)",
+      "cantidad": 150,
+      "unidad": "Gramo",
+      "codigoNetSuite": "907000026",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Relleno Cajeta",
+      "cantidad": 240,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Relleno Crema-Pinito",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 190,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00504",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 180,
+      "unidad": "Gramo",
+      "codigoNetSuite": "910000018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Crema Chantilly Roja Claro",
+      "cantidad": 30,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Sirope Rojo Bucca",
+      "cantidad": 4,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00633",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 20,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 1.5,
+      "unidad": "UND",
+      "codigoNetSuite": "SE00454",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES Y KOLITA (LITRO)",
+      "cantidad": 150,
+      "unidad": "Gramo",
+      "codigoNetSuite": "907000026",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Relleno Cajeta",
+      "cantidad": 240,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Relleno Crema-Pinito",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 190,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00504",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 180,
+      "unidad": "Gramo",
+      "codigoNetSuite": "910000018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Crema Chantilly Roja Claro",
+      "cantidad": 30,
+      "unidad": "Gramo",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Sirope Rojo Bucca",
+      "cantidad": 4,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00633",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 20,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1350,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 1350,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": 50.86,
+  "mermaUnidad": "Gramos",
+  "registroCambios": "Importación inicial desde Excel"
+}

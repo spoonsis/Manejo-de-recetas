@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Relleno de Queso Locales 160 g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela,Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Relleno de Queso Locales 160 g",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00664",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA AL 6x10x4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 160 g de Relleno de Queso Locales en la Bolsa 6 x 10 y hacer nudo",
+    "Fechar,Etiquetar ,y colocar fecha de Vencimiento"
+  ],
+  "pesoTotalCantidad": 160,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 160,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

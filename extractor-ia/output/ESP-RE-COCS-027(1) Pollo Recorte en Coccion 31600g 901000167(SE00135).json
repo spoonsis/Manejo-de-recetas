@@ -1,0 +1,109 @@
+{
+  "nombre": "Pollo Recorte en Coccion",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA",
+      "cantidad": 56000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "AYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RECORTE FILET Nº1358",
+      "cantidad": 50000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10016",
+      "marca": "PIPASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ZANAHORIA ENTERA",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10018",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE POLLO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA=100 GUANTES)",
+      "cantidad": 2,
+      "unidad": "unidades",
+      "codigoNetSuite": "AS00020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 800,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la sarten basculante el agua, pollo, zanahorias, consome, sal, ajo y culantro.",
+    "Cocinar por 60 min aprox a fuego alto hasta que todas las pechugas esten bien cocidas. (80ºC)",
+    "Mechar pollo en maquina y pasar a empaque",
+    "Enfriar"
+  ],
+  "pesoTotalCantidad": 31600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 41,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 22650,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

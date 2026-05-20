@@ -1,0 +1,135 @@
+{
+  "nombre": "Relleno De Palmito Pastel 29100g SE00130",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA GOURMET PRO 1/1 LITRO",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "GOURMET",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA BLANCA  MOLIDA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10014",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PALMITO CRUDO KILO",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10267",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAN CUADRADO BLANCO 1/22 REB",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10035",
+      "marca": "ESCULTURAS DE JADE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Saltear en la lactocrema la cebolla, el ajo y el palmito picado.",
+    "2.- Agregar la leche y la crema gourmet con la sal, pimienta y preservante y llevar a hervor. Cocer por 2 minutos mientras hierve.",
+    "3.- Agregar el almidon disuelto en agua y espesar. Por ultimo agregar el pan en cuadritos y revolver hasta incorporar."
+  ],
+  "pesoTotalCantidad": 11000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 11000,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": 680,
+  "mermaUnidad": null,
+  "registroCambios": "Revision #2: Correccion en el peso de la pimienta."
+}

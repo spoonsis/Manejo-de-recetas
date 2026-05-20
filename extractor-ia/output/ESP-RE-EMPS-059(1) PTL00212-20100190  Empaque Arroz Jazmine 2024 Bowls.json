@@ -1,0 +1,73 @@
+{
+  "nombre": "SE00620 Coccion de Arroz Jazmine 2024 Bowls",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela, chef",
+  "areaProduce": "Cocina Caliente",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Arroz Jazmine",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10711",
+      "marca": "Goya",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua planta",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Edicion Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10314",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar el Aceite , la sal y el Arroz jazmin sofreir por 3 min",
+    "Agregar el Agua y Colocar la olla a fuego medio hasta evaporar el agua",
+    "Tapar y dejar a que el arroz reviente y duplique su tamaño .",
+    "Retirar del Fuego , Colocar en bandejas y darle choque termico"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 35,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

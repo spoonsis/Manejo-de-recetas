@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00296 Mezcla tres leches FAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JARABE TRES LECHES GOLDENDIPT",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10218",
+      "marca": "KERRY",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Bañar el rosquete con la mezcla de leches fas y dejar que absorba.",
+    "Encremar y marmolear con el manjar.",
+    "Tapar y etiquetar con codigo y nombre, vencimiento y Lote"
+  ],
+  "pesoTotalCantidad": 2280,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2280,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 25,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

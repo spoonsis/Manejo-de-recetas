@@ -1,0 +1,113 @@
+{
+  "nombre": "Empaque cerdo navideño chipotle",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "POSTA DE CERDO KILO",
+      "cantidad": 29000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0210096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "SAZONADOR CHIPOTLE",
+      "cantidad": 185,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NUEVO",
+      "marca": "MAGGI",
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PAPRIKA",
+      "cantidad": 80,
+      "unidad": "Gramos",
+      "codigoNetSuite": "10500",
+      "marca": null,
+      "observaciones": "(UND:454g)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "DEMIGLACE",
+      "cantidad": 250,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NUEVO",
+      "marca": "KNORR",
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 360,
+      "unidad": "Mililitros",
+      "codigoNetSuite": "10100050",
+      "marca": "CAPULLO",
+      "observaciones": "(UND:17 L)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 250,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0512319",
+      "marca": null,
+      "observaciones": "(PAQ: 1 KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 80,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100131",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 80,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100131",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 20000,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 20000,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

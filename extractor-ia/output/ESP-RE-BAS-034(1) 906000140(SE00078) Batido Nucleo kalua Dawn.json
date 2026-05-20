@@ -1,0 +1,75 @@
+{
+  "nombre": "Batido Nucleo kalua Dawn",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZLCA BATIDO NUCLEO VAINILLA DAWN",
+      "cantidad": 13547,
+      "unidad": "g",
+      "codigoNetSuite": "SE00443",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PREMEZCLA BATIDO KALUA",
+      "cantidad": 5820,
+      "unidad": "g",
+      "codigoNetSuite": "SE00079",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO ( CAJA: 10 K)",
+      "cantidad": 7697,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 2960,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE MIXTO (UND:17 K)",
+      "cantidad": 855,
+      "unidad": "g",
+      "codigoNetSuite": "MP10315",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En un poco de agua disolver el café instantaneo.",
+    "Colocar el huevo, agua, posterior agregar los ingredientes secos.",
+    "Batir por 1 min en velocidad 1. Con globo.",
+    "Batir 7 min en velocidad 3.",
+    "Bajar a velocidad 1 y Agregar el café. Batir por 1 min.",
+    "Al final agregar la galleta, pecana entera ( ambas deben partirse un poco de manera manual, golpenado la galleta y la pecana), mezclar en veolidad baja (1) hasta homogenea por 1 min. Aproximadamente con globo."
+  ],
+  "pesoTotalCantidad": 30000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 30000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 877,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

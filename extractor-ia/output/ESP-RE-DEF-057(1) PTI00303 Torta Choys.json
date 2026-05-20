@@ -1,0 +1,191 @@
+{
+  "nombre": "PTI00303 Torta Choys",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 430,
+      "unidad": "g",
+      "codigoNetSuite": "SE00454",
+      "marca": "FAS",
+      "observaciones": "1,5 de rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce de Caramelo",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00846",
+      "marca": "FAS",
+      "observaciones": "100g x capa, 1 taza c/ tapa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Dulce Leche La Ciabata",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "LA CIABATA",
+      "observaciones": "50g x capa, 1/3 taza c/ tapa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Chocolate con mani y arroz inflado",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00847",
+      "marca": null,
+      "observaciones": "30g x capa, 1/4 taza c/ tapa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "COLOCHO Boquilla 7FT",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Mezcla mani y arroz inflado",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00849",
+      "marca": "FAS",
+      "observaciones": "BORDES",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "HILOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "HILOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache De Dulce Leche",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00298",
+      "marca": "FAS",
+      "observaciones": "HILOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Pelado Chocolate Choclate Choys",
+      "cantidad": 26,
+      "unidad": "g",
+      "codigoNetSuite": "SE00845",
+      "marca": "FAS",
+      "observaciones": "13g cada chocolate, 2 unidades",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Quequera Red Base/Domo 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "Export pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla # 10 Bucca",
+      "cantidad": 1,
+      "unidad": "UD",
+      "codigoNetSuite": "EM10084",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "Nueva",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortas los rosquete utilizando 1,5 de rosquete y humedecerlos con las leches con agua.",
+    "Coloca medio rosquete, agregar el dulce de leche, la crema dulce de caramelo, el chocolate con mani y arroz inflado, colocar otra mitad de rosquete, agrega dulce de leche, crema de dulce de leche, el chooclate con mani y arroz inflado y tapar con la ultima mitad de rosquete.",
+    "Encrema con la crema dulce y colocarle en la parte inferior de la torta la mezcla de mani y arroz inflado.",
+    "Realizar el colocho en el centro como muestra la imagen, hacer hilos con el ganache oscuro, del lado contrario hacer hilos con el ganache blanco y denuevo de lado contrario hacer hilos con el ganache dulce y colocar los dos chocolate choys en el centro.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1220,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1220,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": -64,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

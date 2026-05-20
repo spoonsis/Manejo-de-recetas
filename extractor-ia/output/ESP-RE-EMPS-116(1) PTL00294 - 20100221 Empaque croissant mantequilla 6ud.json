@@ -1,0 +1,90 @@
+{
+  "nombre": "PTL00294 - 20100221 Empaque croissant mantequilla 6ud",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CROISSANT MINI MANTEQUILLA",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10934",
+      "marca": "PANAMAR",
+      "observaciones": "18 unidades",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Papel Mantequilla",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caja Blanca Pequeña",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10055",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Colocar los croissants en la bandeja con papel mantequilla y llevar al horno por 15 minutos a 180ªC. Dejar enfriar.",
+    "2.- Empacar 6 unidades en la caja mediana con tapa y metido en una bolsa.",
+    "3. Empacar"
+  ],
+  "pesoTotalCantidad": 360,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 3,
+  "porcionesUnidad": "cajas",
+  "pesoPorcionCantidad": 140,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 90,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

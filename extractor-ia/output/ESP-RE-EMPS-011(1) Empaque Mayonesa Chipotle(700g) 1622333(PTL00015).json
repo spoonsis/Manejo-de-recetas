@@ -1,0 +1,61 @@
+{
+  "nombre": "Empaque Mayonesa Chipotle",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MAYONESA CHIPOTLE (1515g)",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00120",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8x12x4 TRANSPARENTE",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Amarillo",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en bolsas 8x12x4, 700g de aderezo."
+  ],
+  "pesoTotalCantidad": 700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "seg",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "bolsa",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

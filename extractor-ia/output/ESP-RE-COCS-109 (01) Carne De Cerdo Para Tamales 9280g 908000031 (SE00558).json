@@ -1,0 +1,182 @@
+{
+  "nombre": "Carne De Cerdo Para Tamales 9280g 908000031 (SE00558)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "POSTA DE CERDO",
+      "cantidad": 15600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10305",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE ENTERO KILO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10117",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ:KILO)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO (PAQ:250g)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO (PAQ:1 KILO)",
+      "cantidad": 104,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO ALSERRO (PAQ: 1 K)",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA (UND:454g)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL (BOLSA=5000g)",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 20000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO",
+      "cantidad": 32,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "DESPUES DE SACAR EL CERDO COCIDO"
+    },
+    {
+      "nombre": "PAPRIKA (UND:454g)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "DESPUES DE SACAR EL CERDO COCIDO"
+    },
+    {
+      "nombre": "EMPAQUE SAL PLANTA",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DESPUES DE SACAR EL CERDO COCIDO"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 20000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DESPUES DE SACAR EL CERDO COCIDO"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "PLASTICO AUTOADHERIBLE 18X2000",
+      "cantidad": 360,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "ESOSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en una olla grande",
+    "Cocinar por aprox 2 horas, desde que el agua hierve, la carne debe quedar suave pero no desmenuzada",
+    "Colocar la carne en bandejas y pasar a enfriar para poder cortar",
+    "Agregar al caldo restante mas la otra parte del agua, cosnsome, paprika y sal. Hervir",
+    "Picar en cubos de 1,5 cm aprox UTILIZAR GUANTES, pasar a empaque"
+  ],
+  "pesoTotalCantidad": 9280,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 40,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 9280,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 28045,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

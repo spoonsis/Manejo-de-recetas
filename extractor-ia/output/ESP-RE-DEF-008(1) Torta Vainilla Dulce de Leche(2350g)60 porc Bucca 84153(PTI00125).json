@@ -1,0 +1,145 @@
+{
+  "nombre": "Torta Vainilla Dulce de Leche",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY QUEQUE VAINILLA 1800G SP",
+      "cantidad": 1650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00099",
+      "marca": "FAS",
+      "observaciones": "(PESO CRUDO 1800G)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DULCE LECHE LA CIABATA (UND:5 K )",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 340,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY AMARILLA PLANCHA 9792G",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00100",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 195",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY VERDE OSCURO PLANCHA9792",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00064",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 195",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BASE CARTON 30 PORCIONES UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10306",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RECTANGULAR 1/2 (CAJA:35 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10293",
+      "marca": "EXPORT PTM",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 X 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ TORTA GENERICA BUCCA GRANDE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10118",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad y rellenar con 3/4 taza de manjar. Tapar. Colocar en una orla.",
+    "Encremar con crema chantilly, peinar a los lados. Decorar con colochos con boquilla 195 y con boquilla 195 colochos verdes.",
+    "Decorar con viruta sobre el colocho.",
+    "Tapar y etiquetar con lote, vencimiento, Nombre"
+  ],
+  "pesoTotalCantidad": 2350,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2350,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 128,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

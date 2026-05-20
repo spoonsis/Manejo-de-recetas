@@ -1,0 +1,190 @@
+{
+  "nombre": "Torta Pie de Limon (1500g) 30300025(PTI00039)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 320G",
+      "cantidad": 418,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "80 GRAMOS 3 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE MANTEQUILLA Y QUESO LIMON",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00255",
+      "marca": "FAS",
+      "observaciones": "1 TAZA POR CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA VAINILLA BAÑO CHOCO BLANCO KILO",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA - 2 CAPAS (65g x capa)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BEIDGE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA MARIA CON CHOCOLATE BLANCO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE AMARILLO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00481",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE TULIPAN MARMOL",
+      "cantidad": 2,
+      "unidad": "Unidad",
+      "codigoNetSuite": "MP10133",
+      "marca": "CHOCOLATE S",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "AMAPOLA",
+      "cantidad": 0.2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10357",
+      "marca": "UNIVERSAL A",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CEREZA ROJA C/TALLO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MAYCA",
+      "observaciones": "1 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\"  (100 * PAQ)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SPOON GRANDE V-272",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSP. 1/ 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLATS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Partir cada rosquete por la mitad, humedecer cada capa con mezcla de tres leches.",
+    "2.- Ditribuir en dos capas de: relleno de mantequilla, queso limon y galleta con chocolate.",
+    "3.- Encremar la torta con crema chantilly Beidge, decorar con galleta con chocolate blanco en el borde, con ayuda de una espatula colocar el ganache blanco en el centro tipo espiral. Espolvorear amapola en el centro y colocar 1 cereza en el centro de la torta y 2 tulipanes acorde a la fotografia.",
+    "4.- Tapar, etiquetar, fechar con nombre, lote, fecha de vencimiento y Sticker V-272 Spoon."
+  ],
+  "pesoTotalCantidad": 1387,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1387,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 98,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

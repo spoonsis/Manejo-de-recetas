@@ -1,0 +1,71 @@
+{
+  "nombre": "EMPAQUE DE CARNE PREMIUM (carne mechada) FAS CAJA 4 UNDS PTI00020",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPANADA CARNE MECHADA FAS",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00229",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA MEDIANA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10321",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12X18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Despues del choque térmico, empacar 4 unidades en una caja blanca mediana",
+    "Cubrir con bolsa 12*18 y sellar. Etiquetar con nombre de producto, fecha de vencimienta y número juliano"
+  ],
+  "pesoTotalCantidad": 340,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Cajas",
+  "pesoPorcionCantidad": 340,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,50 @@
+{
+  "nombre": "RELLENO DE SALSA DE MORA",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Bolsa 8X12 Transparente",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 240,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 240,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,125 @@
+{
+  "nombre": "Premezcla Easy vainilla BC",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EASY VAINILLA BC",
+      "cantidad": 4600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10491",
+      "marca": "Puratos",
+      "observaciones": null,
+      "seccion": "Ingredientes Base"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (SACO:50 K)",
+      "cantidad": 11000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "Layca",
+      "observaciones": null,
+      "seccion": "Ingredientes Base"
+    },
+    {
+      "nombre": "HARINA SILVER CAKE (SACO: 25K)",
+      "cantidad": 7500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "Fhacasa",
+      "observaciones": null,
+      "seccion": "Ingredientes Base"
+    },
+    {
+      "nombre": "Harina Harisol Winter",
+      "cantidad": 1900,
+      "unidad": null,
+      "codigoNetSuite": "MP10036",
+      "marca": "Fhacasa",
+      "observaciones": null,
+      "seccion": "Ingredientes Base"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ingredientes Base"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (PAQ:2.5 K)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "Fleishman",
+      "observaciones": null,
+      "seccion": "Ingredientes Base"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materiales de Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSP 20x30x2000",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10258",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materiales de Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materiales de Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSPARENTE KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materiales de Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materiales de Empaque"
+    }
+  ],
+  "pasos": [
+    "En una bolsa 20x30 empacar el nucleo easy con el harina. En una bolsa 17x25 empacar el azucar, y etiquetar.",
+    "En la otra bolsa 8x12 empacar el preservante, polvo de hornear. Colocar en la misma bolsa del harina."
+  ],
+  "pesoTotalCantidad": 25350,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 25350,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

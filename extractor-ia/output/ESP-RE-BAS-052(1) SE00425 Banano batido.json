@@ -1,0 +1,34 @@
+{
+  "nombre": "SE00425 Banano batido",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BANANO ( UND)",
+      "cantidad": 6500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10484",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora con globo el banano y batir hasta formar un purè ( el banano debe estar lo mas maduro posible)."
+  ],
+  "pesoTotalCantidad": 4060,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 4060,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2440,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

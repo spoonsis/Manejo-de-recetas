@@ -1,0 +1,154 @@
+{
+  "nombre": "PTI00300 Degustacion Postre Velvet frutos rojos",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Red Velvet 300g",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00519",
+      "marca": null,
+      "observaciones": "5g x ud (0.05 ud)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE QUESO VELVET",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00769",
+      "marca": null,
+      "observaciones": "20g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": null,
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FRAMBUESA Y ARANDANO",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00541",
+      "marca": null,
+      "observaciones": "25g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 108,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": null,
+      "observaciones": "6g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FRAMBUESA Y ARANDANO",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00541",
+      "marca": null,
+      "observaciones": "20g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca Lisa Bopp Brillante",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10443",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar de base trozos de rosquete velvet",
+    "Colocar manjar, luego salsa frambuesa y arandano y cubrir con el mousse",
+    "Decorar con un beso de manjar y salsa de frambuesa y arandano.",
+    "Tapar y etiquetar los vasos, y colocar 18ud en caja six pack musmanni"
+  ],
+  "pesoTotalCantidad": 1540,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "vasitos",
+  "pesoPorcionCantidad": 85,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 8,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

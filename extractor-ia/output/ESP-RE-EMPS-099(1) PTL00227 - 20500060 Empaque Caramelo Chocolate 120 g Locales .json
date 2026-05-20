@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Caramelo Chocolate 120 g Locales",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Caramelo Crocante bañado con chocolate de leche",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00467",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA AL 6x10x4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 120 g de Caramelo Crocante en la Bolsa 6 x 10 y hacer nudo",
+    "Fechar, Etiquetar y colocar fecha de Vencimiento"
+  ],
+  "pesoTotalCantidad": 120,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,108 @@
+{
+  "nombre": "PTI00195 EMPAQUE Y DECORACION MUFFIN DE CHOCOLATE KIT KAT (1 unidad) NAVIDAD",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFFIN DE CHOCOLATE KIT KAT",
+      "cantidad": 78,
+      "unidad": "g",
+      "codigoNetSuite": "SE00402",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PERLAS PEQUEÑASDORADAS",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10889",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PERLAS PEQUEÑAS ROJAS",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10888",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE 1 UNIDAD DN 665 DARNEL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10342",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA MUFFIN KIT KAT INDIV NAVIDEÑA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10480",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En el contenedor colocar 1 muffin de chocolate",
+    "Agregar el ganache oscuro con ayuda de una bolsa, colocar perlas pequeñas doradas y rojas y colocar en el centro 1/2 unidad de barra del kit kat.",
+    "Cerrar y etiquetar"
+  ],
+  "pesoTotalCantidad": 85,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 85,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 8,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

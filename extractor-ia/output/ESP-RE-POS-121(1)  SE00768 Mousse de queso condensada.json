@@ -1,0 +1,82 @@
+{
+  "nombre": "Mousse de queso condensada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Prestige Grand",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "Prestige",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Trasvasado de leche condensada cocinada",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Gelatina Pura",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Montar la prestige a punto de chantilly.",
+    "Luego agregar el queso crema, leche condensada cocinada y canela y mezclar hasta incorporar.",
+    "Hidratar la gelatina en agua y agregar a la mezcla anterior.",
+    "Dosificar de inmediato."
+  ],
+  "pesoTotalCantidad": 6400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 6400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 340,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

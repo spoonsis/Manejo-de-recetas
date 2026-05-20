@@ -1,0 +1,61 @@
+{
+  "nombre": "SE00840 chocolate semiamargo con caramelo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Caramelo Crocante",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00355",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chocolate Semi Amargo 54%",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10492",
+      "marca": "NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10016",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10120",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Quebrar el caramelo y bañarlo con el chocolate derretido."
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

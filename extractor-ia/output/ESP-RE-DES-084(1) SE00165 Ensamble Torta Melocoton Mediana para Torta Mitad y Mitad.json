@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00165 Ensamble Torta Melocoton Mediana para Torta Mitad y Mitad",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 320g",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": "1,5 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR (KILO)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS - 3 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE LIMÓN",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "SE00008",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA - 2 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELOCOTON CUBOS PARA TORTA",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00446",
+      "marca": "FAS",
+      "observaciones": "3/4 TAZA - 2 CAPAS",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Utilizar 1 1/2 rosquete. Partir el rosquete por la mitad y humedecer cada capa.",
+    "Rellenar 3 tapas de rosquete con el relleno de limón, seguido del relleno de melocoton en cubos esparcir y por ultimo topping; colocar la ultima tapa de rosquete.",
+    "Cortas con un cuchillo a la mitad"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "Tanda",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

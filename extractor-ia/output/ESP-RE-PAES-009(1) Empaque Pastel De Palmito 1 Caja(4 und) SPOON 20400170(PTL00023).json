@@ -1,0 +1,71 @@
+{
+  "nombre": "Empaque Pastel De Palmito 1 Caja (4 und)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTEL DE PALMITO PERSONAL (UND)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00128",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA BLANCA MEDIANAS (100 X PAQ)",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10017",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una caja blanca 4 unidades, tapar con otra caja e introdicir en una bolsa",
+    "Etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1.5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "Caja",
+  "pesoPorcionCantidad": 125,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

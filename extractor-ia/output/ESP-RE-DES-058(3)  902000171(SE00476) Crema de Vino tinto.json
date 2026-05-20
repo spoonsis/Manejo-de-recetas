@@ -1,0 +1,72 @@
+{
+  "nombre": "Crema de Vino tinto",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "DECORACIÓN",
+  "areaEmpaca": "DECORACION",
+  "version": "3",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA AMBIENTE",
+      "cantidad": 899,
+      "unidad": "g",
+      "codigoNetSuite": "MP10586",
+      "marca": "Puratos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO TINTO TORO",
+      "cantidad": 118,
+      "unidad": "g",
+      "codigoNetSuite": "MP10587",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la top crem la crema, agua y preservante y el vino tinto",
+    "La crema deben estar a 5°C liquida, batir por 8 minutos, una vez batida (18° temperatura maxima) retirar.",
+    "Guardar en tinas palsticas rotuladas en camara fria hasta su uso."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 27,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

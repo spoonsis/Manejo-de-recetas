@@ -1,0 +1,46 @@
+{
+  "nombre": "Corte Galleta Chilena Grande 143g 906000002(SE00204)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA TORTA CHILENA SPOON KILO",
+      "cantidad": 1001,
+      "unidad": "g",
+      "codigoNetSuite": "SE00177",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1-. Laminar la masa hasta 4 mm con ayuda e la maquina, hacer huecos con el zorro. En la laminadora Rondo a 2.8, en la laminadora Kemplex 3.",
+    "2-. Cortar con cortador redondo de 21,5 cm diametro y colocar los 7 circulos en la bandeja",
+    "3-. Llevar al horno en Dicte 1 por 23 min a 170°C o Dicte 2 por 22 a 24 min a 170°C.",
+    "4-. Enfriar."
+  ],
+  "pesoTotalCantidad": 1001,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 7,
+  "porcionesUnidad": "Galletas",
+  "pesoPorcionCantidad": 135,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

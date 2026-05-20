@@ -1,0 +1,90 @@
+{
+  "nombre": "SE00616 Relleno limon locales",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 19850,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO",
+      "cantidad": 330,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "RESOCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BENZOATO SODIO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10083",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMONES MAYA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10240",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "ANCHOR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora la leche condensada, el limón en polvo, preservante y jugo de limon , batir con el globo a velocidad 1 por 1 minuto.",
+    "Limpiar los bordes, batir por 2 min en velocidad 2.",
+    "Enviar a empaque en botes, cubiertos con plastico."
+  ],
+  "pesoTotalCantidad": 21200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 21200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,77 @@
+{
+  "nombre": "Empaque empanada de quesos Spoon",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "1210443",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "AGUA PLANTA",
+      "cantidad": 40,
+      "unidad": "ml",
+      "codigoNetSuite": "10415",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "RUEDA FROLA EMPANADA TRES QUESOS",
+      "cantidad": 60,
+      "unidad": "unidades",
+      "codigoNetSuite": "903000161",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semi-elaborados"
+    },
+    {
+      "nombre": "RELLENO TRES QUESOS KILO",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "905000012",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semi-elaborados"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "902000019",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semi-elaborados"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "90100137",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semi-elaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 2940,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "unidades",
+  "pesoPorcionCantidad": 49,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

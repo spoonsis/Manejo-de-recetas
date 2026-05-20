@@ -1,0 +1,80 @@
+{
+  "nombre": "PREMEZCLA P/GALLETA FIGURA 901000020(SE00333)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA TRIGO NACARINA (SACO: 25 K)",
+      "cantidad": 18000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10051",
+      "marca": "NACARINA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR GLASS MOLIDA (PAQ: 4 K)",
+      "cantidad": 6400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10041",
+      "marca": "LA CIABATA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la bolsa 17x25 el azucar en polvo y en la otra bolsa colocar los 18kg de harina con el preservante. Etiquetar con nombre y alerjeno",
+    "La lactocrema se pesa en el departamento de pastas."
+  ],
+  "pesoTotalCantidad": 24436,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 24436,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

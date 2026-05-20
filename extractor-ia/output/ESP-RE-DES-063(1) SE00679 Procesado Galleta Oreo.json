@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00679 Procesado Galleta Oreo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Galleta Oreo Entera 1/12 UD",
+      "cantidad": 120,
+      "unidad": "und",
+      "codigoNetSuite": "MP10617",
+      "marca": null,
+      "observaciones": "12 unidades x tubo",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Bolsa 17X25 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abrir los paquete de galleta oreo y colocar en la procesadora",
+    "Una vez molida la galleta, guardarla en una bolsa 17*25 transparante",
+    "Sellar y etiquetar con fecha de vencimiento y lote."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 80,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

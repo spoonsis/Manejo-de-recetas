@@ -1,0 +1,125 @@
+{
+  "nombre": "SE00580 Carne mechada wrap",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COCCIÓN CARNE MECHADA",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00182",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO 250 GRS",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA TOMATE",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10356",
+      "marca": "BANQUETE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE RES",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 8.4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Saltear en el aceite la cebolla, ajo y chile dulce, luego agregar la carne.",
+    "Agregar la salsa inglesa, salsa de tomate, agua, consome y culantro, dar temperatura y pasar a enfriamiento."
+  ],
+  "pesoTotalCantidad": 5600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18.7,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 580,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

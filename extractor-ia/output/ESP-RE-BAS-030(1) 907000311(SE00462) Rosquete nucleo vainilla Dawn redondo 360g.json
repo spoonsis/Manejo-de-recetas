@@ -1,0 +1,72 @@
+{
+  "nombre": "907000311(SE00462) Rosquete nucleo vainilla Dawn redondo 360g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO VAINILLA DAWN",
+      "cantidad": 24000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00444",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 360g de mezcla en los moldes previamente engrasados.",
+    "Hornear por 31 minutos en el Dicte 1 a 170°C, en el Dicte 2 por 38 minutos a 170°C y en el Marshall por 26 minutos a 175°C.",
+    "Enfriar, desmoldar, colocar 12 rosquetes por lata, etiquetar con nombre y fecha de producción."
+  ],
+  "pesoTotalCantidad": 23400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 14,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 65,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 360,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 600,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

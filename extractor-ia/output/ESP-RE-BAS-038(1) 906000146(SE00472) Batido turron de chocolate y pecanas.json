@@ -1,0 +1,63 @@
+{
+  "nombre": "Batido turron de chocolate y pecanas",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA PARA TURRON DE CHOCOLATE Y PECANAS",
+      "cantidad": 3400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00471",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CLARA DE HUEVO (CAJA:5 K)",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "MP10141",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO (UND: 8.34 K)",
+      "cantidad": 440,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Batir los huevos a velocidad 3 hasta que crezcan por 15 minutos",
+    "Bajar la velocidad a 2 y aadicionar la lactocrema derretida tibia.",
+    "Agregar el azucar rapidamente en velocidad 1 y batir por 10 segundos. Agregar la harina y las pecanas."
+  ],
+  "pesoTotalCantidad": 5040,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 280,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 180,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

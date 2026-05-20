@@ -1,0 +1,172 @@
+{
+  "nombre": "PTI00179 Degustación Postre de Capas de Limón y Fresa",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Arrollado 1000 grs",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "5g x ud, 1 unidad ( plancha)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar con limon",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00689",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno De Fresa Espesa",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00354",
+      "marca": "FAS",
+      "observaciones": "20g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00695",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Relleno de Lemon Court",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "SE00693",
+      "marca": "FAS",
+      "observaciones": "15g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo Bañado en Chocolate Blanco",
+      "cantidad": 108,
+      "unidad": "g",
+      "codigoNetSuite": "SE00691",
+      "marca": "FAS",
+      "observaciones": "6g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mousse de queso y limon",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00694",
+      "marca": "FAS",
+      "observaciones": "20g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Trozos chocolate blanco",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "MP10754",
+      "marca": "Chocolate Soluction",
+      "observaciones": "4g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca Lisa Bopp Brillante",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10443",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar de base trozos de rosquete de arrollado, colocar el almibar y majarlo un poco.",
+    "Colocar la crema pasionata, el relleno de lemon court, el relleno de fresa espesa, el caramelo con chocolate blanco, la mousse de limon y por ultimo con dos trozos pequeños de chocolate blanco.",
+    "Tapar todos los vasitos, y colocar la etiqueta de regalia.",
+    "Cerrar, sellar y etiquetar la caja"
+  ],
+  "pesoTotalCantidad": 1584,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "caja",
+  "pesoPorcionCantidad": 88,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 36,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

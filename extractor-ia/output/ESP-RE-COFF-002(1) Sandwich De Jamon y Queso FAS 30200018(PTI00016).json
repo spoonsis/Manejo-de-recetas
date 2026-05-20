@@ -1,0 +1,109 @@
+{
+  "nombre": "Sandwich trenza de jamon y queso FAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PAN TRENZA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10278",
+      "marca": "FAS",
+      "observaciones": "( PAQ = 10 UND)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JAMON COCIDO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10217",
+      "marca": "ZAR",
+      "observaciones": "(PAQ:250g), 1 REBANADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO AMARILLO REBANADO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10577",
+      "marca": "NESTLE",
+      "observaciones": "1 REBANADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA MOSTANERA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00224",
+      "marca": "FAS",
+      "observaciones": "(830g) BUCCA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ET. BUCCA DULCE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10111",
+      "marca": "CEMUSA",
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BANDEJA NEGRA DELI PLASTICA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10186",
+      "marca": null,
+      "observaciones": "(CAJA: 200 U)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": "(ROLLO)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLASTICO P PALETIZAR 18X1500",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10251",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Separar los papeles plasticos de las rebanadas de queso y partir cada rebanada por la mitad. Cortar tambien el jamon por la mitad.",
+    "Cortar el pan trenza por la mitad horizontalmente",
+    "Colocar luego sobre la tapa de la base el queso y el jamon. Tapar el pan con la tapa superior del pan. Colcoar en una bandeja de esterefon junto con una cremerita de aderezo.",
+    "Envolver el pan con papel adeherente de manera que este todo cubierto. Pegar Stiker de nombre del producto y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 120,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00787 Flan Spoon 600g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mezcla Flan Caramelo Spoon",
+      "cantidad": 8400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00619",
+      "marca": null,
+      "observaciones": "650gc/u",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo Para Flan 900 grs Spoon",
+      "cantidad": 1120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00048",
+      "marca": null,
+      "observaciones": "80gc/u",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Agregar en un molde redondo grande 80g de caramelo , colocar 600g de la mezcla y en bandejas los moldes, y vaciar el agua en la bandeja,  llevar al horno en baño maria, tapar con otra bandeja y llevar a hornear.",
+    "Hornear por 70 minutos en el Marshall. Sacar. Fuera del horno dejar enfriar. Llevar al chiller por una hora para\n el choque termico"
+  ],
+  "pesoTotalCantidad": 8400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 13,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 650,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

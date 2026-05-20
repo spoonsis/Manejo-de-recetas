@@ -1,0 +1,144 @@
+{
+  "nombre": "Premezcla Batido de Zanahoria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Maria Jose Rodriguez, Chef",
+  "areaProduce": "Producción",
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BICARBONATO DE SODIO (PAQ:2.5 K)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "503000036",
+      "marca": "Pastelero",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (PAQ:2.5 K)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "10100046",
+      "marca": "Royal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CANELA EN POLVO BADIA (UND: 1.82 K)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "10100122",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL INDUSTRIA (SACO:25 Kg)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "5000001",
+      "marca": "Atlantida",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROPIONATO DE CALCIO",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "0512262",
+      "marca": "Crystal Pro",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACIDO SORBICO",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "0512261",
+      "marca": "Beyco",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MP10075,Azucar Caramelo",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "10100045",
+      "marca": "Zukra",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "510301",
+      "marca": "Maria",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PECANA ENTERA (CAJA:13.6 K)",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "510262",
+      "marca": "Nueces Ind",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950702",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Bolsa 17X25 Transparente",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "1950708",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "60100010",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "0702123",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Pesar en una bolsa 17x25 harina, polvo de hornear, bicarnonato, sal, canela y preservantes. Etiquetar",
+    "Pesar en otra bolsa 17x 25 los azucares juntos. Etiquetar.",
+    "Pesar en una bolsa 12x 18 la pecana."
+  ],
+  "pesoTotalCantidad": 5400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 5400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

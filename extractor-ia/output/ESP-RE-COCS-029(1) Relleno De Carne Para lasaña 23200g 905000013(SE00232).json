@@ -1,0 +1,183 @@
+{
+  "nombre": "Relleno De Carne Para lasaña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ZANAHORIA TIRAS",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10399",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO ALSERRO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMATE LICUADO LATA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10375",
+      "marca": "DIVELA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 220,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO TINTO PETER CABERNET SAUV",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10587",
+      "marca": "PETTER VELLA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMILLO FRESCO (KILO)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10378",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO (UND: 156 G)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "TONES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 22,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARNE MOLIDA RES PREMIUM",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10100",
+      "marca": "R&S",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Calentar el aceite y agregar el ajo, cebolla picada y chile dulce picado.  Agregar la carne y freir hasta cocido.",
+    "Agregar los condimentos, salsa lizano, azúcar, y tomate licuado, preservante.",
+    "Licuar el vino tinro con la zanahoria y agregar a la olla.",
+    "Dejar cocinar y reducir el liquido por aproximadamente 40 minutos.",
+    "Una vez que este relativamente reducido el liquido agregar el almidon modificado disuelto en un poco de vino.",
+    "Dejar cocinar por 5 minutos mas hasta que el relleno espese."
+  ],
+  "pesoTotalCantidad": 23200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 23200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1324,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

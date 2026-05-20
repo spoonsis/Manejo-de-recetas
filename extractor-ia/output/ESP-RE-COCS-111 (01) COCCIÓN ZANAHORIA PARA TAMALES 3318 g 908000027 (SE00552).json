@@ -1,0 +1,81 @@
+{
+  "nombre": "COCCIÓN ZANAHORIA PARA TAMALES",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "COCINA",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ZANAHORIA EN TROZOS (PAQ=2Kg)",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10653",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "PARA COCCIÓN",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "PARA LICUAR",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 2,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el agua junto con la zanahoria y cocinar, aproximadamente por 45 min aprox, debe quedar suave, drenar y reservar 1000 g de caldo",
+    "Licuar la zanahoria cocida, junto con el kilo de caldo reservado",
+    "Empacar en doble bolsa 17x25, hacer nudo y etiquetar con nombre y fecha"
+  ],
+  "pesoTotalCantidad": 3318,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 3318,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2082,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

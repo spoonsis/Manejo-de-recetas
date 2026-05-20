@@ -1,0 +1,108 @@
+{
+  "nombre": "Tres leches familiar Bucca bandeja aluminio",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "09",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE 3 LECHES BUCCA 280G",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "SE00295",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES FAS",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00296",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Mediana Tres Leches",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10406",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Bañar el rosquete con la mezcla de leches fas y dejar que absorba.",
+    "Encremar y marmolear con la salsa de fresa y agregar el confitillo de corazon",
+    "Tapar y etiquetar con codigo y nombre, vencimiento y Lote"
+  ],
+  "pesoTotalCantidad": 1050,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1050,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 33,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

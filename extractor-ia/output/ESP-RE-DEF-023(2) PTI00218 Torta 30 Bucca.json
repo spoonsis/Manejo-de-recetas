@@ -1,0 +1,135 @@
+{
+  "nombre": "Torta 30 Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA EASY SP 1000G",
+      "cantidad": 950,
+      "unidad": "g",
+      "codigoNetSuite": "SE00638",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA BUCCA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY AZUL PASTEL BUCCA",
+      "cantidad": 40,
+      "unidad": null,
+      "codigoNetSuite": "SE00639",
+      "marca": null,
+      "observaciones": "BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY AMARILLA BUCCA",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "SE00640",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHIPS DE COLORES CORDILLERA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10726",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Quequera Rectangular 1/4 (PCQB500R)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10427",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE CARTON 15 PORCIONES (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10033",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA VAINILLA BUCCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10390",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "CM",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad y rellenar con 3 tazas ( medida 1 taza) de la crema chantilly dulce leche. Colocar sobre la orla.",
+    "Encremar con la crema blanca lisa, y hacer colochos con la boquilla 22 con la crema azul pastel arriba y amarilla abajo, y en el borde la confitura de colores.",
+    "Empacar en quequera, etiquetar con nombre, ingredientes, código, fecha de vencimiento, día juliano."
+  ],
+  "pesoTotalCantidad": 1400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 25,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

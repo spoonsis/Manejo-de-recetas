@@ -1,0 +1,98 @@
+{
+  "nombre": "Relleno De Tres Quesos 3000g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO PARMESANO RALLADO KILO",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA HARISOL WINTER (BOLSA:5000G)",
+      "cantidad": 225,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 23,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIG (UND:13.6 K)",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO RICOTTA",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10326",
+      "marca": "BUFALA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en un bowl los quesos, harina, sal, huevo, preservante, mezclar con una cuchara hasta que todo quede homogeneo.",
+    "Cubrir con papel plastico y pasar a empaque."
+  ],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 124,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

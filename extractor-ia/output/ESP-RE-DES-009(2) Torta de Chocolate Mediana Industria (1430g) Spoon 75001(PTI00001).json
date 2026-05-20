@@ -1,0 +1,164 @@
+{
+  "nombre": "Torta de Chocolate Mediana Industria (1430g) Spoon 75001(PTI00001)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 530g",
+      "cantidad": 660,
+      "unidad": "g",
+      "codigoNetSuite": "SE00002",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 125,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 4.5 K)",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "COLOCHO BOQUILLA 61",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARRADA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "CHOCOLATE SOLUTIONS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM 10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM 10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SPOON GRANDE V-272",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM 10006",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM 10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": "LOTE Y TRAZA",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA R-153",
+      "cantidad": 1,
+      "unidad": null,
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Se utilizan tres mitades de rosquete.",
+    "Rellenar 2 tapas: 1 con el manjar y la otra con fudge y tapar con la tercera. Colocar sobre la orla.",
+    "Encremar con el fudge de chocolate y pasar el peine metalico a los costados.",
+    "Decorar con colocho de manjar en el borde exterior de la torta, rellenar con ganache haciendo un espejo. Decorar con 1 stick dorado y chocolate RALLADO, acorde a la foto",
+    "Colocar la torta dentro del domo, etiquetar con etiqueta Spoon, nombre del producto y codigo de barras, fecha juliana y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 1449,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6.5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "pesoPorcionCantidad": 1449,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 97,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

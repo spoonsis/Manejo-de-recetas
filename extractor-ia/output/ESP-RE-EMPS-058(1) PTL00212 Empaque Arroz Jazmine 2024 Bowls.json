@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Arroz Jazmine 2024 Bowls",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Coccion de Arroz Jazmine 2024 Bowls",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00620",
+      "marca": "GOYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Transparente 6 X 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "KILOGRAMOS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 300 g de Arroz Jazmin",
+    "Etiquetar y Fechar"
+  ],
+  "pesoTotalCantidad": 300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

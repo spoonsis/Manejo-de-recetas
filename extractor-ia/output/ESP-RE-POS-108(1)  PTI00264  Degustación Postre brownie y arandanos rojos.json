@@ -1,0 +1,163 @@
+{
+  "nombre": "Degustación Postre brownie y arandanos rojos",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE BROWNIE 400G",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00668",
+      "marca": "FAS",
+      "observaciones": "5g x ud, 1/4 de unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA FUDGE",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00749",
+      "marca": "FAS",
+      "observaciones": "20g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOPPING ARANDANOS ROJOS",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00748",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE BERRIES",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00750",
+      "marca": "FAS",
+      "observaciones": "35g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Fudge De Chocolate",
+      "cantidad": 108,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "6g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOPPING ARANDANOS ROJOS",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00748",
+      "marca": "FAS",
+      "observaciones": "20g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE BROWNIE 400G",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "SE00668",
+      "marca": "Fas",
+      "observaciones": "4g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca Lisa Bopp Brillante",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10443",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar de base trozos de brownie",
+    "Colocar la salsa de fudge, toping de arandanos y tapar con el mousse berries, luego decorar con un beso de fudge, toping de arandanos y brownie en trozos.",
+    "Tapar todos los vasitos, y colocar la etiqueta de regalia.",
+    "Cerrar, sellar y etiquetar la caja"
+  ],
+  "pesoTotalCantidad": 1584,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "vasitos",
+  "pesoPorcionCantidad": 88,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 36,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

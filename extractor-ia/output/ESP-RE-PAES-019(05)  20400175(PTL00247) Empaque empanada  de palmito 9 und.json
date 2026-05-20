@@ -1,0 +1,72 @@
+{
+  "nombre": "20400175(PTL00247) Empaque empanada de palmito 9 und",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "05",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPANADA DE PALMITO 55 g UND",
+      "cantidad": 9,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00193",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 0.5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Blanca Pequeña",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar 9 unidades en una caja pequeña",
+    "Introducir en bolsa 12*18 y sellar.",
+    "Etiquetar la caja con lote y nombre del producto (impresa o con etiqueta)."
+  ],
+  "pesoTotalCantidad": 450,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 9,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 50,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

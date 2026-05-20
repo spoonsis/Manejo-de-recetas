@@ -1,0 +1,46 @@
+{
+  "nombre": "Corte Circulo Galleta Mini Chilena Caramelo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA ALFAJOR CARAMELO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00779",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Estirar la masa con ayuda de la maquina hasta 4 mm de espesor",
+    "Cortar con ayuda de un cortador redondo (7,5 cm diametro) (26 gramos c/u)",
+    "Colocar sobre una bandeja",
+    "Hornear Dicte 1 o 2 a 155° por 30 min"
+  ],
+  "pesoTotalCantidad": 150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 5,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 26,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

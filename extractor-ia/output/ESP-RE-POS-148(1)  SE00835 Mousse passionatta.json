@@ -1,0 +1,72 @@
+{
+  "nombre": "Mousse passionatta",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 3500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10755",
+      "marca": "Puratos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 3500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Gelatina Pura",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la passionatta con el queso crema y preservante, batir hasta montar.",
+    "Hidratar la gelatina en agua y colocar a la mezcla anterior, batir hasta incorporar.",
+    "Utilizar de inmediato."
+  ],
+  "pesoTotalCantidad": 8500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 21,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 410,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 110,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

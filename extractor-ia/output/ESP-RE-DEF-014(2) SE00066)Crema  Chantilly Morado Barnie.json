@@ -1,0 +1,64 @@
+{
+  "nombre": "Crema Chantilly Morado Barnie",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE EXOTIC PURPLE",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10155",
+      "marca": "MASTER PACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE ARTIFICIAL ROSADO F225 (LITRO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10149",
+      "marca": "AZTECK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Sacar la crema blanca spoon de la camara (temperatura maxima 18° ya batida).",
+    "Agregar el colorante, mezclar a mano, hasta que este completamente homogeneo.",
+    "Colocar platico para tapar y etiquetar.",
+    "Volver a guardar en la camara hasta su uso."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

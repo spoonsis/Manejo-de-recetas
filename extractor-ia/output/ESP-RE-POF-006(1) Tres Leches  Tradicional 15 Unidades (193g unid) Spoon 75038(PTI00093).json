@@ -1,0 +1,108 @@
+{
+  "nombre": "Tres Leches Tradicional",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES 750g",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00035",
+      "marca": "FAS",
+      "observaciones": "43 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": "120 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 2C -852",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BURBUJA I-3 ALTA (CAJA:250 UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10050",
+      "marca": "SMP",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete en 15 cuadritos",
+    "Colocar cada porcion en el empaque y dosificar 120 g de tres leches, decorar con la crema chantilly.",
+    "Tapar, etiquetar, fechar y guardar en camaras de refrigeración a 4ºC"
+  ],
+  "pesoTotalCantidad": 193,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 15,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 193,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

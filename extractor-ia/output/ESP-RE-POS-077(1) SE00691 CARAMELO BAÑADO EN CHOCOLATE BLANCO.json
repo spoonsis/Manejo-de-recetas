@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00691 CARAMELO BAÑADO EN CHOCOLATE BLANCO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Cobertura Chocolate Blanco Nacional",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "Cordillera",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo Crocante",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00355",
+      "marca": "Victoria",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Una ves que tenemos el caramelo en la blonda seco, lo procesamos.",
+    "Derretimos el chocolate blanco en microondas o a baño maria y lo mezclamos con el caramelo picado y extendemos en una placa.",
+    "Procesamos, se empaca, se etiqueta y se guarda."
+  ],
+  "pesoTotalCantidad": 1950,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1950,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

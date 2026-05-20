@@ -1,0 +1,122 @@
+{
+  "nombre": "Arrollado chocolate FAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PLANCHA ARROLLADO 1800G",
+      "cantidad": 850,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 192,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SPRINKLES CHOCO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "MP10709",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 105,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SPRINKLES CHOCO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10709",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA PREIMP. 2 5/8 * 1 15/16",
+      "cantidad": 2,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO",
+      "cantidad": 2,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "EMPAQUE PARA ARROLLADO",
+      "cantidad": 2,
+      "unidad": "uds",
+      "codigoNetSuite": "NUEVO",
+      "marca": "MACROCOMERCIAL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 2,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 2,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1252,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 2,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 626,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

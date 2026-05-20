@@ -1,0 +1,43 @@
+{
+  "nombre": "RUEDA FROLA EMPANADA TRES QUESOS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA FROLA (26100GR)",
+      "cantidad": 1440,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA ESTANDAR ( 25 KG )",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10004",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Laminar la pasta a 1,3 de grosor si es virgen o 1,1 si es recorte, cortar con un cortador de 9,5cm de diametro. Utilizar harina para evitar que se pegue."
+  ],
+  "pesoTotalCantidad": 1440,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 24,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 45,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,89 @@
+{
+  "nombre": "EMPAQUE CHOWDER DE POLLO SPOON",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "POLLO RECORTE COCCION KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCIÓN CHOWDER DE POLLO SPOON",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00366",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCIÓN CHOWDER DE POLLO SPOON",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00366",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 6 X 10 KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA VENCE (ROLLO:1000 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10125",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una bolsa 6X10, 20 gramos de pollo desmenuzado, 60 gramos vegetales y 120 gramos de caldo y hacer nudo",
+    "Etiquetar con nombre, # juliano y fecha de vencimiento"
+  ],
+  "pesoTotalCantidad": 200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1.5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

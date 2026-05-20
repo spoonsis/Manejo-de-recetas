@@ -1,0 +1,72 @@
+{
+  "nombre": "ROSQUETE CHOCOLATE DAWN 220g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO CHOCOLATE DAWN",
+      "cantidad": 39000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00342",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 2655,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Pesar 220g de mezcla en los moldes previamente engrasados.",
+    "2.- Hornear en el Horno Dicte 1 o 2 a 185°C por 46 min.",
+    "3.- Enfriar y empacar 16 unidades por lata, cubrir con bolsa y etiquetar con fecha de produccion. "
+  ],
+  "pesoTotalCantidad": 38920,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 140,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 177,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 220,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 80,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

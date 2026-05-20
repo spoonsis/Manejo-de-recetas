@@ -1,0 +1,70 @@
+{
+  "nombre": "Premezcla Batido Rosquete Souffle 6034g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Producción",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "TEGRAL CHIFFON",
+      "cantidad": 6000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10565",
+      "marca": "Puratos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (2.5 KG)",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "Fleishman",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Unidades",
+      "codigoNetSuite": "EM10016",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "Unidades",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una bolsa 12*18 la pre mezcla, el polvo de hornear y el preservante. Etiquetar con fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 6034,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 6034,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

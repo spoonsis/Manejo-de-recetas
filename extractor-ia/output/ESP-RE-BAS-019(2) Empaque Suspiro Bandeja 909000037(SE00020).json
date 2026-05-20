@@ -1,0 +1,72 @@
+{
+  "nombre": "Empaque Suspiro Bandeja 909000037(SE00020)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SUSPIRO BANDEJA KILO",
+      "cantidad": 7900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00021",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Una vez fríos desmoldar 6 bandejas en una bolsa, etiquetada con fecha de vencimiento.",
+    "Pasar por la trituradora y almacenar en tines azules",
+    "Etiquetar cada caja con fecha de vencimiento y lote."
+  ],
+  "pesoTotalCantidad": 7900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 7900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

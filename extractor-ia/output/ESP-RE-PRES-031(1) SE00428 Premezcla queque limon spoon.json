@@ -1,0 +1,98 @@
+{
+  "nombre": "SE00428 Premezcla queque limon spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "NÚCLEO VAINILLA EASY SP 20%",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10490",
+      "marca": "FACHASSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA SILVER CAKE",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACTI EGG",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "MP10517",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 4450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17X25 TRANSPARENTE",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 17x25 todos los ingredientes.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 110,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

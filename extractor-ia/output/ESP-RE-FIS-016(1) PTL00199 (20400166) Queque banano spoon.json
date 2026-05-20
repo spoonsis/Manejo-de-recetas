@@ -1,0 +1,71 @@
+{
+  "nombre": "Queque banano spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE BANANO 900G",
+      "cantidad": 5040,
+      "unidad": "g",
+      "codigoNetSuite": "SE00625",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA DE CELOFAN 6*9",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "EM10243",
+      "marca": "ALIM TEC",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 36,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA BLANCA PEQUEÑA",
+      "cantidad": 6,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ROLLO SELLO SEGURIDAD ROJO",
+      "cantidad": 36,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10139",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar los rosquetes en 6 unidades y empacar en la bolsa celofan y sellar. Se empacan 6 unidades por caja.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 5040,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "CAJA",
+  "pesoPorcionCantidad": 840,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 14,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

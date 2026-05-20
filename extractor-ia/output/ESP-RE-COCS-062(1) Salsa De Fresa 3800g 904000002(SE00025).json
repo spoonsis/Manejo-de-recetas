@@ -1,0 +1,56 @@
+{
+  "nombre": "Salsa De Fresa",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA ESPESA",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00354",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL,SUPER RED (130ML)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": "LAS TORRES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SMOOBEES BLUEBERRY 1 KG",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10687",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar el relleno en la licuadora con las gotas rojas y los smoobees.",
+    "Presionar ligeramente EN PULSACIONES para obtener una masa homogénea.",
+    "No licuar continuamente para no incorporar aire al relleno perdiendo su color.",
+    "Llevar a empaque.",
+    "Guardar en cámaras de refrigeración a 4ºC"
+  ],
+  "pesoTotalCantidad": 4300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 4300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 205,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,34 @@
+{
+  "nombre": "Rosquete banano 100g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO QUEQUE BANANO",
+      "cantidad": 16000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00426",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Dosificar 100g de batido en los moldes mini previamente engrasados y llevar al horno a 180ºC por 15 minutos."
+  ],
+  "pesoTotalCantidad": 16000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 160,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

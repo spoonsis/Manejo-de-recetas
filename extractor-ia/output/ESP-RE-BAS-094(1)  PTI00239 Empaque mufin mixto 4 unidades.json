@@ -1,0 +1,89 @@
+{
+  "nombre": "PTI00239 Empaque mufin mixto 4 unidades",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFIN PIÑA 90G",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00674",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MUFIN CHIVERRE 90G",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00677",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Burbuja 4 Cup Cake",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10341",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Muffin Mixto 4 und",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10430",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 2 unidades de mufin de piña y  dos unidades de mufin de chiverre.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 360,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 260,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

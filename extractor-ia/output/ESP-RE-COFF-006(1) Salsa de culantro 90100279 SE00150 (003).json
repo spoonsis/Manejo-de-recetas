@@ -1,0 +1,128 @@
+{
+  "nombre": "Salsa de culantro SE00150",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO 250 GRS",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE CALDO DE POLLO RECORTE",
+      "cantidad": 1400,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA GOURMET PRO 1/1 LITRO",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CURRY POLVO",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10551",
+      "marca": "MCCORMICK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Sudar la cebolla y el ajo en el aceite, hasta cristalizar.",
+    "Licuar el culantro con el caldo de pollo (reservar un poco de caldo para disolver el almidon)",
+    "Agregar el licuado a la olla con la cebolla y el ajo. Agregar la versatie, sal, curry. Hervir",
+    "Disolver el almidon y el preservante en el caldo restante. Agregar a la mezcla anterior y hervir por 2 min.",
+    "Pasar a empaque, rotulado en bandejas."
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 453,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

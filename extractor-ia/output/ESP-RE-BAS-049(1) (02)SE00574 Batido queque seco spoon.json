@@ -1,0 +1,93 @@
+{
+  "nombre": "SE00574 Batido queque seco spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA QUEQUE SECO",
+      "cantidad": 2320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00347",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CLARA DE HUEVO ( CAJA: 5 K)",
+      "cantidad": 845,
+      "unidad": "g",
+      "codigoNetSuite": "MP10141",
+      "marca": "WHOLESOME",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO (CAJA: 8.34 K)",
+      "cantidad": 455,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON ABUELO RESERVA (UND: LITRO)",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10580",
+      "marca": "ABUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE NARANJA TB",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10598",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VAINILLA OSCURA (UND: 3.78 L)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10385",
+      "marca": "MALUQUER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora la lactocrema (1100g) partida en pedazos  junto con el azúcar, preservante de la pre mezcla.",
+    "En velocidad 3, batir por 10 minutos. Levantar el bowl de la batidora para lograr que el globo bata hasta el fondo y limpiar bordes.",
+    "Agregar las yemas poco a poco, batir por 1 minuto. Limpiar bordes  batir por 5 minutos mas.",
+    "En un bowl por aparte batir las claras a punto nieve en velocidad 3.",
+    "Pesar en un bowl los liqudos ron, jugo de naranja, vainilla.",
+    "Bajar la velocidad a 1 y adicionar la mitad de las claras a la mezcla de lactocrema, agregar la mitad del harina con polvo de hornear de la pre mezcla. Adicionar luego la mitad de los liquidos,  limpiar los bordes."
+  ],
+  "pesoTotalCantidad": 5100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 51,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 40,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,44 @@
+{
+  "nombre": "Topping de Lemon Court",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Empaque Relleno de Lemon Court",
+      "cantidad": 809,
+      "unidad": null,
+      "codigoNetSuite": "SE00693",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar con limon",
+      "cantidad": 238,
+      "unidad": null,
+      "codigoNetSuite": "SE00689",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar el relleno de Lemon Court con el almibar de limon, hasta que quede completamente incorporado.",
+    "Utilizar inmediatamente"
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 47,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

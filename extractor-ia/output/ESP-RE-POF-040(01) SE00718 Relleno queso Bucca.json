@@ -1,0 +1,44 @@
+{
+  "nombre": "Relleno queso Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Blanca Bucca",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Cremar el queso crema con globo y luego agregar la chantilly e incorporar.",
+    "Refrigerar."
+  ],
+  "pesoTotalCantidad": 6900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 6900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

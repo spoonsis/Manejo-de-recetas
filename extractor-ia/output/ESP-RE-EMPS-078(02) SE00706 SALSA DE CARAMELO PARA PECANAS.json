@@ -1,0 +1,91 @@
+{
+  "nombre": "SE00706 SALSA DE CARAMELO PARA PECANAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR REFINADA",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00226",
+      "marca": "FAS",
+      "observaciones": "BOLSA:1500g",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sirope Maple",
+      "cantidad": 3000,
+      "unidad": null,
+      "codigoNetSuite": "MP10504",
+      "marca": "EL ANGEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA MARMITA 14 x 20 (KILO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10307",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Derretir el azucar sin dejar de mezclar, agregar la lactocrema en trozos. Hasta derretir.",
+    "2.- Agregar la miel de maple, preservante y la leche evaporada.",
+    "3.- Dejar hervir un poco hasta que empieze a espesar. (Verificar consistencia con baño invertido )",
+    "4.- Sacar de la olla ne bolsas termicas de aprox 5 kg."
+  ],
+  "pesoTotalCantidad": 10700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2320,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

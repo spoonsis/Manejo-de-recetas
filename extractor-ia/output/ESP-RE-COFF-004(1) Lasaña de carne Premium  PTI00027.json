@@ -1,0 +1,101 @@
+{
+  "nombre": "Lasaña de carne Premium PTI00027",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA LASAGÑA",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10023",
+      "marca": "PASTA Y BASTA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE CARNE PARA LASAÑA",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "SE00232",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA BLANCA SPOON",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "SE00109",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO RALLADO RICO DOS PINOS",
+      "cantidad": 225,
+      "unidad": "g",
+      "codigoNetSuite": "MP10029",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANDEJA ALUMINIO 4040 (6 PORC)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10014",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA BAND ALUM 4040 (6 PORC)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Agregar en la base 1/8 tz de salsa blanca para que peguen la pasta, agregar 1 hojas de pasta (usar molde de 6 porc aluminio)",
+    "Agregar 1/2 taza salsa blanca, 1 taza rasa de carne lasaña.",
+    "Repetir el paso 2 por 2 veces mas.",
+    "Agregar 1 hoja de pasta, 1/2 tazas de salsa blanco, y 2 tazas de queso rayado",
+    "Porcionar en 6 porciones, tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "porciones",
+  "pesoPorcionCantidad": 1850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,293 @@
+{
+  "nombre": "Almendra tostadas pequeña",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "DEDOS DE SEÑORA",
+      "cantidad": 122,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 180,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00005",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "MOUSSE PASSIONATTA",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "SALSA ALMENDRA TOSTADA",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "Rosquete de Arrollado",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "SE00652",
+      "marca": null,
+      "observaciones": "de 80 g",
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "GANACHE DE DULCE LECHE",
+      "cantidad": 45,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00298",
+      "marca": null,
+      "observaciones": "4800g",
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "ALMEDRA TOSTADA PEQUEÑA",
+      "cantidad": 110,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "ORLA #9 DORADA",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "1950693",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\"",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "51400021",
+      "marca": null,
+      "observaciones": "CAJA:100 U",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "701096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702007",
+      "marca": null,
+      "observaciones": "ROLLO",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA DE TEMPORADA",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 180,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00005",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "MOUSSE PASSIONATTA",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "SALSA ALMENDRA TOSTADA",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Rosquete de Arrollado",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "SE00652",
+      "marca": null,
+      "observaciones": "de 80 g",
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "GANACHE DE DULCE LECHE",
+      "cantidad": 45,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00298",
+      "marca": null,
+      "observaciones": "4800g",
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "ALMEDRA TOSTADA PEQUEÑA",
+      "cantidad": 110,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 180,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00005",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MOUSSE PASSIONATTA",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "SALSA ALMENDRA TOSTADA",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Rosquete de Arrollado",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "SE00652",
+      "marca": null,
+      "observaciones": "de 80 g",
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "GANACHE DE DULCE LECHE",
+      "cantidad": 45,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00298",
+      "marca": null,
+      "observaciones": "4800g",
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "PECANA TOSTADA",
+      "cantidad": 110,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MODI PREPARACION",
+      "cantidad": 1,
+      "unidad": "N/A",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1400,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 1400,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

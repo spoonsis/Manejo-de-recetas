@@ -1,0 +1,127 @@
+{
+  "nombre": "PICADILLO DE CHAYOTE SPOON",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO MOLIDO PRESTO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ= 1 KILO)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO (PAQ=500g)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO (PAQ:500gr)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHAYOTE PICADO (PAQ:1 KILO)",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10113",
+      "marca": "FRESH PACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE (UND:850g)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": "LOS PATITOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA (UND:454g)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "BADÍA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO (250g)",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En una olla pesar el aceite con el ajo y rostizar, agregar la cebolla, el chile dulce y el apio y hacer un sofrito.",
+    "Agregar el chayote y los condimentos achiote, paprika y sal. Mezclar bien y cocinar hasta obtener aldente",
+    "Por último agregar el culantro.",
+    "Colocar en bandejas y pasar a choque térmico antes de empacar"
+  ],
+  "pesoTotalCantidad": 10240,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 10240,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3042,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

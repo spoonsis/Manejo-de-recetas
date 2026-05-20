@@ -1,0 +1,46 @@
+{
+  "nombre": "COSTILLAS HOJALDRE SIN RELLENO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE COSTILLAS PASTA HOJALDRE UND",
+      "cantidad": 192,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00209",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una placa engrasada y refrigerar por 24 horas.",
+    "Pintar con yema con una brocha.",
+    "Hornear en el Dicte 1, Dicte 2 o Dicte 3 a 185°C por 60 minutos.",
+    "Tambien se pueden Hornear en el Vulcan a 325°F por 40 minutos."
+  ],
+  "pesoTotalCantidad": 5760,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 192,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 30,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 140,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,118 @@
+{
+  "nombre": "Relleno De Pastel De Pollo 20375g 909000003(SE00133)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COCCION POLLO RECORTE",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ:KILO)",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (KILO)",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PETI PIOS CON ZANAHORIA",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10298",
+      "marca": "LAMBWESTON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CURRY POLVO (UND:454 G)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10551",
+      "marca": "MCCORMICK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA BLANCA SPOON",
+      "cantidad": 5300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00109",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 22,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 120,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema a fuego fuerte, agregar ajo la cebolla y dorar bien. Agregar la sal y curry dejar cocinar por 15 minutos.",
+    "Añadir luego petit pois y cocinar por 5 minutos a fuego alto. Mesclar bien y agregar la salsa blanca.",
+    "Dejar hervir por 5 minutos mas y añadir por ultimo el pollo desmenuzado.",
+    "Cocinar por 10 minutos revolviendo bien la mezcla y retirar del fuego."
+  ],
+  "pesoTotalCantidad": 20735,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 20735,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3371,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

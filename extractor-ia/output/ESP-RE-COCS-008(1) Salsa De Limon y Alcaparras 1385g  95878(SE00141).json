@@ -1,0 +1,164 @@
+{
+  "nombre": "Salsa De Limon y Alcaparras 1385g 95878(SE00141)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17  L)",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (KILO)",
+      "cantidad": 17,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALCAPARRAS",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10062",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO CREMA PANADERO",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE LIMON",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA GOURMET PRO 1/1 LITRO",
+      "cantidad": 560,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "Gourmet",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA GALÓN (UND)",
+      "cantidad": 290,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ENELDO SECO",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10184",
+      "marca": "TONES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 52,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO TORO TETRA BRIK BLANCO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": "TORO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Freir la cebolla y el ajo en el aceite por 4 min",
+    "Agregar las alcaparras picadas, queso crema licuado con el caldo, eneldo,leche,Gourmet (guardar un poco para disolver el almidon y el preservante). llevar 80°C max, pare evitar que se separe la grasa)",
+    "Agregar la sal y el almidon mas preservante disuelto en la crema. ( llevar 80°C max, pare evitar que se separe la grasa)",
+    "Apagar y agregar el vino blanco y el limon",
+    "Enfriar en bandejas (NO EN BOTES)"
+  ],
+  "pesoTotalCantidad": 2400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 20,
+  "porcionesUnidad": "porc",
+  "pesoPorcionCantidad": 120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 162,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

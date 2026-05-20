@@ -1,0 +1,99 @@
+{
+  "nombre": "SE00648 Ensamble tres leches ronpope KFC",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES SOUFLE (25G) KFC",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00647",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES RON KFC",
+      "cantidad": 640,
+      "unidad": "g",
+      "codigoNetSuite": "SE00646",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 KG)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CANELA EN POLVO",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "BADIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTENEDOR CON TAPA KFC 8 OZ(CAJA:240 U)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10240",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA KFC INDIVIDUAL NAVIDAD ROMPOPE",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10404",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el rosquete en el empaque y bañar con 80g de mezcla de leches ron kfc.",
+    "Con boquilla redonda hacer un circulo al borde y luego lineas de lado a lado con la crema, por ultimo espolvorear la canela.",
+    "Tapar."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 125,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

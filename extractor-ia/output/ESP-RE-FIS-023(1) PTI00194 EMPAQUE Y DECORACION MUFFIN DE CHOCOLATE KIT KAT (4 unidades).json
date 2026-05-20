@@ -1,0 +1,90 @@
+{
+  "nombre": "PTI00194 EMPAQUE Y DECORACION MUFFIN DE CHOCOLATE KIT KAT (4 unidades)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFFIN DE CHOCOLATE KIT KAT",
+      "cantidad": 260,
+      "unidad": "g",
+      "codigoNetSuite": "SE00402",
+      "marca": "FAS",
+      "observaciones": "4 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "5 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE LECHE",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10001",
+      "marca": "FAS",
+      "observaciones": "10 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BIOFUSION BURBUJA P/ CUPCAKE 4 ESPACIOS 100 UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10341",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA KITKAT GRANDE ROLLO 500 UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10343",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el Ganache Oscuro bañado en el muffing en forma de Hilo",
+    "Agregar los trozos de chocolate de leche",
+    "Incorporar en el empaque. Etiquetar"
+  ],
+  "pesoTotalCantidad": 280,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 70,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 40,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

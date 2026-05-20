@@ -1,0 +1,181 @@
+{
+  "nombre": "PTI00217 Torta Nucita FAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA DAWN 300G",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00450",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FRESA NUCITA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00630",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO NUCITA CHOCOLATE",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00631",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCOLATE",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SIROPE ROJO BUCCA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00633",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY FRESA BUCCA",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00632",
+      "marca": "FAS",
+      "observaciones": "2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO (SPOON-IND)(24875G",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BEIDGE",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA # 10 BUCCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10084",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA NUCITA ROLLO /500 UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10389",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar los rosquete por la mitad y rellenar la primer capa con el relleno de fresa nucita y la segunda con el de chocolate. Colocar en la orla",
+    "Encremar con la crema blanca bucca y marmolear abajo con doble chocolate y arriba con sirope rojo, debe quedar lisa.",
+    "Con la boquilla 2CS hacer colochos rosados en el borde y de chocolate adentro, y al centro con crema chantilly blanco.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

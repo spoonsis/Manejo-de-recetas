@@ -1,0 +1,202 @@
+{
+  "nombre": "Ensamble y Decoración Torta de Kalua Original",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO KALUA DAWN 280G",
+      "cantidad": 373,
+      "unidad": "g",
+      "codigoNetSuite": "SE00453",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LICOR DE CAFE CON ALMIBAR",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00075",
+      "marca": "FAS",
+      "observaciones": "50G C/CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "110G 1/3 TAZA X CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BLANCA SPOON CON CAFÉ",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00076",
+      "marca": "FAS",
+      "observaciones": "20G 1/4 TAZA C/CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA VAINILLA/ CHOCOLATE BLANCO(KILO)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "15G 1/8 TAZA C/CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BLANCA SPOON CON CAFÉ",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00076",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 10",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "BOQUILLA 22 colocho",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE TRIAN OLEAJE GRD (CAJA:200 UN)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10131",
+      "marca": "KAROL",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA VAINILLA/ CHOCOLATE BLANCO(KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA DULCE LECHE C/AGUA (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00038",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA DULCE LECHE C/AGUA (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00038",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 8\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\"",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "GRACOPACK",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA IMP. SPOON MEDIANA V-273",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10024",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "STICKER TORTA KAHLUA (ROLLO: 1000 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10299",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad, humedecer los rosquetes con mezcla de kalua con almibar. (60g c/ tapa)",
+    "Rellenar con manjar. crema de café y luego con galleta bañada de chocolate. Tapar con una tapa de rosquete",
+    "Rellenar con manjar. crema de café y luego con galleta bañada de chocolate. Tapar con una tapa de rosquete. Usar espatula redonda para trasladar la torta ensamblada si fuese necesario.",
+    "Encremar la torta con crema chantilly de café, colocar mezcla de dulce de leche con agua para marmolear el borde con ayuda de una esaptula",
+    "Hacer colocho con crema blanca en la mitad de superficie, alternando con colocho de manjar. Acorde a la foto.",
+    "Decorar con galleta bañada en chocolate haciendo una linea en la mitad. En la otra mitad sin colocho marmolear con mezcla de dulce de leche con agua. Y decorar con 2 triangulos de chocolate",
+    "Tapar con la quequera. Etiquetar con nombre, vencimiento, lote y etiqueta Spoon, etiqueta Kalua."
+  ],
+  "pesoTotalCantidad": 970,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 970,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 44,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,37 @@
+{
+  "nombre": "Caramelo para Flan 900g Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE AZUCAR INDUSTRIAL",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "VICTORIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "colocar en la hornilla un sartén limpio, prender a llama media",
+    "colocar el kilo de azúcar refinada y mover de vez en cuando hasta obtener que el azúcar se derrita por completo",
+    "verter sobre los moldes a utilizar inmediatamente",
+    "producto que se debe de manejar con sumo cuidado, peligroso una quemadura, no se guarda se aplica de inmediato"
+  ],
+  "pesoTotalCantidad": 900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

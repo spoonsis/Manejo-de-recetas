@@ -1,0 +1,82 @@
+{
+  "nombre": "Media Luna Chocolate Leche Und Bolsita 100g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "POSTRES",
+  "areaEmpaca": "POSTRES",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GALLETA MEDIA LUNA BAÑADO CHOCOLATE",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00273",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARTULINA KRAFT 2.5 X 31 -8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10071",
+      "marca": "CENTINELA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 76X24X210 (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10190",
+      "marca": "CENTINELA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA GALLETA MEDIA LUNA CHOCO LECHE NAVIDAD",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10424",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Introducir 15 unidades (100g) de media lunas dentro de la bolsa, doblar y sellar en la máquina selladora",
+    "Sellar con etiqueta de LOGO Y NOMBRE en el frente",
+    "Etiquetar con fecha de vencimiento en un costado; y etiqueta con nombre y descripción de ingredientes en la parte trasera",
+    "Mantener en temp ambiente"
+  ],
+  "pesoTotalCantidad": 100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,209 @@
+{
+  "nombre": "PTI00274 MINI CAKE Hersheys Kisses",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 4.5 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 100g",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00394",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "10g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE DE CHOCOLATE DE LECHE",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1 Cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Troceado de Brownie",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00774",
+      "marca": "FAS",
+      "observaciones": "1/8 de taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Semi Sweet Chocolate Chips",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10674",
+      "marca": "Hershey's",
+      "observaciones": "1/2 cuharadita",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Encremado",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Bettercream Doble Chocolate",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "Richt",
+      "observaciones": "Marmolear",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Troceado de Brownie",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00774",
+      "marca": "FAS",
+      "observaciones": "1/9 de unidad, Cortado en Trozos",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Pelado Hershey's Kisses",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00669",
+      "marca": "Hershey's",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA MINI CAKE HERSHEYS",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10496",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la punta para nivelar) pegar la primera tapa a la base con ayuda del manjar y humedecer cada capa con leche pausterizada.",
+    "Rellenar con mousse de chocolate de leche, trozos de brawnie, semi sweet y con ayunda de una bolsa colocar hilos de ganache oscuro y tapar",
+    "En una manga colocar la crema beige para realizar un encremado, con ayuda de una bolsa colocar el bettercream de chocolate y con una espatula hacer un moimiento para arriba para realizar un estilo marmoleado.",
+    "Realizar con el ganache un espejo en la parte superior  y colocar trozos de brawnies encima estilo torre y colocar un Hershery´s Kisses en el centro.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 220,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 220,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 14,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

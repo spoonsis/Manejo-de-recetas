@@ -1,0 +1,88 @@
+{
+  "nombre": "SE00406 Premezcla Queque seco vainilla Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA SILVER CAKE",
+      "cantidad": 5170,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "FACHASSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR INDUSTRIAL",
+      "cantidad": 10780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCENTRADO VAINILLA DAWN",
+      "cantidad": 6050,
+      "unidad": "g",
+      "codigoNetSuite": "MP10493",
+      "marca": "DAWN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 20x30x2000",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10258",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar todos los ingredientes en la bolsa y etiquetar."
+  ],
+  "pesoTotalCantidad": 22000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 22000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

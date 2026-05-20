@@ -1,0 +1,50 @@
+{
+  "nombre": "Batido Vainilla Easy BC",
+  "subsidiaria": "Servicios de Pastelería S.A.",
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "03 provisional",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Huevo Liquido Refrigerado",
+      "cantidad": 208.7,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 30.43,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Premezcla Vainilla Easy BC",
+      "cantidad": 0.55109,
+      "unidad": "KILOGRAMOS",
+      "codigoNetSuite": "SE00436",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": null,
+  "pesoTotalUnidad": null,
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": null,
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

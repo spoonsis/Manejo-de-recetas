@@ -1,0 +1,35 @@
+{
+  "nombre": "SE00707 PECANA TOSTADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "06",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "11900028",
+      "marca": "Nueces Industriales",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la pecana en bandejas y hornear por 5 min a 175°C.",
+    "Enfriar y utilizar de inmediato"
+  ],
+  "pesoTotalCantidad": 9800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 9800,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 200,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,83 @@
+{
+  "nombre": "Batido Para Canastas y Tartaleta 6650g 95709(SE00218)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PRE MEZCLA PARA CANASTITA Y TARTALETA",
+      "cantidad": 6250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00219",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO PASTEURIZADO INNOVO 1/10K",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL ( 25KG )",
+      "cantidad": 7200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17*25",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la Lactocrema en el bowl junto con el azucar en polvo, suavizar en velocidad 1 por 1 minuto. Utilizar la paleta.",
+    "Agregar luego el harina y mezclar a velocidad 1 por 2 minutos. Mezclar hasta arenar.",
+    "Agregar luego los liquidos y batir en velocidad 1 por 1 minuto.",
+    "Subir la velocidad a 2 y mezclar por 30 segundos.",
+    "Retirar la mezcla y colocar la pasta en la bolsa 17*25."
+  ],
+  "pesoTotalCantidad": 15850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 15850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2000,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

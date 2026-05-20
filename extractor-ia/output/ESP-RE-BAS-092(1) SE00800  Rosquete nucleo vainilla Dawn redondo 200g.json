@@ -1,0 +1,128 @@
+{
+  "nombre": "TORTA DE CUMPLEAÑOS LOCAL",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "40g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Trasvasado de leche condensada cocinada",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": "180g x capa, 1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo con chocolate blanco",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "40g x capa, 1/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 120,
+      "unidad": null,
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 35,
+      "unidad": null,
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA#5CS",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Trozos de Chocolate de colores",
+      "cantidad": 15,
+      "unidad": null,
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "ORLA CARTON 8\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA Y DOMO G50CT ALTA #9",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir los rosquetes, mojar con la leche pausterizada, agregar el trasvasado de leche condensada cocinada y el caramelo con chocolate, colocar la otra capa se moja con las leches pasusterizadas, el trasvasado de leche cocinada, el caramelo con chocolate.",
+    "Por ultimo tapar con rosquete tambien mojado con las leches pausterizadas.",
+    "Encremar con la crema beige dejandola lisa.",
+    "Realizar el colocho con crema biege con la boquilla #5CS y en colocho colocar trozos de chocolate de colores",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1315,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1315,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 17,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

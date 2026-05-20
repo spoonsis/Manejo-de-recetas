@@ -1,0 +1,92 @@
+{
+  "nombre": "Empanada  Pollo Grande De Pasta de Hojaldre 115g 906000004(SE00217)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA HOJALDRE KILO",
+      "cantidad": 13650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00129",
+      "marca": "FAS",
+      "observaciones": "65 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO POLLO EMPANADA 41000g",
+      "cantidad": 10500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00216",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 7,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "ESOSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Laminar la pasta de hojaldre, a 3.9 de grosor en la laminadora Rondo.",
+    "Cortar  circulos de 11 cm de diametro.",
+    "Rellenar cada rueda con relleno de pollo empanda spoon(50 g).",
+    "Pegar los bordes con huevo y marcar con ayuda de el marcador sellador para empanada. Colocar en latas.",
+    "Pintar las empandas y hornear en Dicte 1 y 2 a 185º C por 60 min o Dicte 3 a 180°C por 50 min"
+  ],
+  "pesoTotalCantidad": 24150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 84,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 210,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 115,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 918,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

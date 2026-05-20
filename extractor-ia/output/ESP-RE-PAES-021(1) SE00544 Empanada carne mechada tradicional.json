@@ -1,0 +1,82 @@
+{
+  "nombre": "Empanada carne mechada tradicional",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RUEDA PASTA FROLA 14 DIAMETRO",
+      "cantidad": 3900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00184",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CARNE MECHADA",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00543",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 0.25,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00183",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Rellenar cada rueda con 50g de relleno, mojar los bordes con agua y cerrar.",
+    "Transferir a bandejas con papel mantequilla.",
+    "Refrigerar las empanadas por 6 horas. Pintar con yema y espolvorear con oregano",
+    "Horno en el Dicte 1 a 170°C por 35 minutos."
+  ],
+  "pesoTotalCantidad": 6900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 115,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

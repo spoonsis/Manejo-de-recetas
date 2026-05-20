@@ -1,0 +1,117 @@
+{
+  "nombre": "Premezcla Batido Tamales 7509 g 901000019 (SE00555)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "PREMEZCLAS",
+  "areaEmpaca": "PREMEZCLAS",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MASECA GRANEL",
+      "cantidad": 6827,
+      "unidad": "g",
+      "codigoNetSuite": "MP10629",
+      "marca": "MASECA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL INDUSTRIA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10027",
+      "marca": "ATLANTIDA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 23,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE ROJO TRITURADO",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10599",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar la Maseca en una bolsa 17*25.",
+    "Pesar en una bolsa 8x12 el consomé, sal, azúcar, pimienta negra molida y pimiento rojo quebrado.",
+    "Introducir dentro de la bolsa de Maseca, hacer nudo y etiquetar con nombre y fecha"
+  ],
+  "pesoTotalCantidad": 7508,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 7508,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

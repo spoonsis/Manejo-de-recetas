@@ -1,0 +1,80 @@
+{
+  "nombre": "Aderezo Albahaca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON",
+      "cantidad": 2550,
+      "unidad": "g",
+      "codigoNetSuite": "SE00458",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALBAHACA KILO",
+      "cantidad": 510,
+      "unidad": "g",
+      "codigoNetSuite": "MP10061",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 510,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 100,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Licuar la albahaca con mayonesa, preservante y agua por 2 minutos hasta hasta que la albahaca se licue bien.",
+    "Colocar en un bowl de acero inoxidable, mezclar con una espatula de manera que quede bien mezclado."
+  ],
+  "pesoTotalCantidad": 3500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 3500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 70,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,108 @@
+{
+  "nombre": "Premezcla para Galletas Media Luna 18320g 901000021(SE00276)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MARGARINA BAKER TABLETA (CAJA: 25 K)",
+      "cantidad": 5550,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "NUMAR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR GLASS MOLIDA (PAQ: 4 K)",
+      "cantidad": 4350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10041",
+      "marca": "LA CIABATA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA TRIGO NACARINA (SACO: 25 K)",
+      "cantidad": 7700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10051",
+      "marca": "NACARINA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar la margarina  en una bolsa 17*25. Etiquetar con fecha de vencimiento y alerjeno",
+    "Pesar el azúcar en polvo en una bolsa 12*18.",
+    "Pesar la harina con el preservante en una bolsa 17*25 e introducir el azúcar. Etiquetar con nombre y alerjeno"
+  ],
+  "pesoTotalCantidad": 17620,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 210,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 17620,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

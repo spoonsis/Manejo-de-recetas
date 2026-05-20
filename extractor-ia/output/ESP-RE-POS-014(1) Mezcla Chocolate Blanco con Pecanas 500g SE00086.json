@@ -1,0 +1,62 @@
+{
+  "nombre": "Mezcla Chocolate Blanco con Pecanas 500gSE00086",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "NUEZ PECANA QUEBRADURA (CAJA:10 Kg)",
+      "cantidad": 215,
+      "unidad": "g",
+      "codigoNetSuite": "MP10264",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA DE CHOCOLATE BLANCO",
+      "cantidad": 315,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 1,
+      "unidad": "m",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate en el microondas y mezclar con las pecanas.",
+    "Colocar en un teflon y enfriar en refriferacion."
+  ],
+  "pesoTotalCantidad": 500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "Tortas",
+  "pesoPorcionCantidad": 50,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

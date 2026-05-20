@@ -1,0 +1,118 @@
+{
+  "nombre": "Arrollado navideño Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE ARROLLADO BUCCA",
+      "cantidad": 385,
+      "unidad": "g",
+      "codigoNetSuite": "SE00645",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA BUCCA",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY ROJA BUCCA",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00642",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY VERDE BUCCA",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00643",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10",
+      "cantidad": 1,
+      "unidad": "UD",
+      "codigoNetSuite": "EM10009",
+      "marca": "X",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TRONCO DE ROMPOPE ROLLO DE 1000 UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10407",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Encremar el arrollado dejando las puntas libres, hacer forma de tronco y marmolear con el manjar con agua.",
+    "Hacer colochos de crema verde y de crema roja.",
+    "Colocar en el empaque rectangular.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 510,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 510,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,98 @@
+{
+  "nombre": "Salsa de mostaza naranja",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON",
+      "cantidad": 570,
+      "unidad": "g",
+      "codigoNetSuite": "SE00458",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA HELLMANNS",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "HELLMANS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE NARANJA TB",
+      "cantidad": 225,
+      "unidad": "g",
+      "codigoNetSuite": "MP10598",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA DIJON GRANULADA",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "MP10257",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NARANJA CRIOLLA",
+      "cantidad": 0.5,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10895",
+      "marca": "LA PERLA",
+      "observaciones": "SOLO LA RALLADURA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 1.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Saborizante Naranja A-0191",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10344",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes en un bowl de acero inoxidables con ayuda de un batidor de mano.",
+    "Tapar."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 22,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

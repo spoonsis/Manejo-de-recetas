@@ -1,0 +1,172 @@
+{
+  "nombre": "Mini Cake Baileys",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE MINICAKE VAINILLA DAWN 35G",
+      "cantidad": 32,
+      "unidad": "g",
+      "codigoNetSuite": "SE00288",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES C/BAILEYS LITRO",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CREMA MOKA C/BAILEYS (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00085",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA CHOCOLATE BLANCO C/PECANA (KILO)",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "SE00086",
+      "marca": null,
+      "observaciones": "2 CUCHARADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 17",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE BAILEYS (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00087",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA 100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": "M Y L",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 0.1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la punta para nivelar), humeder los rosquetes con mezcla de leche y rellenar con manjar, relleno moka y chocopecana. Hacer un circulo de manjar sobre la base para inmobilizar el quequito. Pegar el mini cake en la base.",
+    "Con la boquilla pequeña #17 hacer líneas en todo el costado, de manera que se cubran todas la paredes hasta llegar al borde",
+    "Hacer colocho con la crema dulce y en el centro colocar el ganache de baileys, y con el ganache de chocolate hacer un punto.",
+    "Tapar y etiquetar. Colocar los sellos de seguridad en lados opuestos, sobre uno de los sellos de seguridad pegar la cinta generica. La fecha de vencimiento, y en el lado inferior etiqueta de ingredientes."
+  ],
+  "pesoTotalCantidad": 115,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 115,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 9,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

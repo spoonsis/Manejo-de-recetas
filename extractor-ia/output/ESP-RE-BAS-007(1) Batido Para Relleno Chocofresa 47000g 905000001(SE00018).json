@@ -1,0 +1,109 @@
+{
+  "nombre": "Batido Para Relleno Chocofresa 47000g 905000001(SE00018)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 10800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR GLASS MOLIDA (PAQ: 4 K)",
+      "cantidad": 10800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10041",
+      "marca": "CIABATA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047",
+      "cantidad": 27,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JALEA FRESA (UND:5 K)",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10216",
+      "marca": "TRICOPILIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTES NITRILO AZUL (CAJA:100 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00021",
+      "marca": "ESOSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 240,
+      "unidad": "Cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 4,
+      "unidad": "Bolsas",
+      "codigoNetSuite": "AS00028",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Batir la lactocrema junto con el azúcar a velocidad 2 por 3 minutos.",
+    "Subir la velocidad a 3 y batir por 6 minutos, limpiar los bordes. Bajar la velocidad a 1 y adicionar el emulsificante(Emulcol) y el preservante, teniendo cuidado de no salgan del bowl, limpiar bordes, mezclar por 2 min.",
+    "Bajar la velocidad a 1 y agregar la jale Mezclar por 2 minutos hasta que la fresa este bien mezclada.",
+    "Colocar en Bolsa"
+  ],
+  "pesoTotalCantidad": 26300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 26300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 327,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

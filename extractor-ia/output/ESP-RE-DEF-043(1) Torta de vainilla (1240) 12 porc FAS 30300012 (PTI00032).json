@@ -1,0 +1,175 @@
+{
+  "nombre": "Torta de vainilla (1240) 12 porc FAS 30300012 (PTI00032)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Dulce Leche La Ciabata",
+      "cantidad": 285,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "LA CIABATTA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Mezcla Sirope manjar Dulce Leche",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Borona P/Decorar",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00071",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Quequera Chilena",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10023",
+      "marca": "Export pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Papel Encerado 12 X 10 1/500 UD",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10090",
+      "marca": "Logan",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Praline",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10062",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Masterpack"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Masterpack"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Masterpack"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Masterpack"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 100,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10011",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Masterpack"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete en la mitad y rellenar con dulce de leche.",
+    "Encremar con crema chantilly, pasar un peine a los costados.",
+    "Distribuir 40g de sirope de dulce de leche en la superficie, con una espatula dibujar una espiral en la parte superior de la torta.",
+    "Porcionar en 12 porciones iguales, separar con papel encerado.",
+    "Distribuir borana en el borde superior de la torta.",
+    "Colocar dentro de una quequera, etiquetar con nombre, fecha vencimiento en congelado y dia juliano.",
+    "Introducir en caja Praline, etiquetar con nombre, fecha de vencimiento en congelado, # juliano"
+  ],
+  "pesoTotalCantidad": 1070,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 9,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1070,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 104,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

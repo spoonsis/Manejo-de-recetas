@@ -1,0 +1,128 @@
+{
+  "nombre": "Porcion Torta Selva Negra",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Easy queque chocolate BC 1100G",
+      "cantidad": 1020,
+      "unidad": "g",
+      "codigoNetSuite": "SE00672",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR KILO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON KILO",
+      "cantidad": 528,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 842",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADITA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CEREZA ROJA C/TALLO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MAYCA",
+      "observaciones": "1/4 CEREZA POR UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BURBUJA I-3 ALTA (CAJA:250 UND)",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10050",
+      "marca": "INIX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA SELVA NEGRA BUCCA PORCION",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10388",
+      "marca": "ETIQUETAS MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar cada plancha por la mitad de manera transversal.",
+    "Rellenar una mitad de rosquete con 1 taza de manjar de leche condensada.Tapar con la otra mitad.",
+    "Humedecer con almibar. Cortar 24 porciones con dimensiones aproximadas (6unidades a lo largox 4 unidades a lo ancho)",
+    "Decorar con lineas de crema usando boquilla 842 y de manera posterior distribuir en la superficie el chocolate rallado.",
+    "Cerrar el contenedor.El etiquetado del producto debe llevar nombre, ingredientes,código, día juliano, fecha de vencimiento y etiqueta Bucca"
+  ],
+  "pesoTotalCantidad": 1909,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 24,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 83,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 149,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

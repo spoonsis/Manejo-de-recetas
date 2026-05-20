@@ -1,0 +1,45 @@
+{
+  "nombre": "SE00326 Galleta Media Luna Bañado Chocolate Oscuro",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE GALLETA MEDIA LUNA",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00274",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE DARK MONEDAS",
+      "cantidad": 480,
+      "unidad": "g",
+      "codigoNetSuite": "MP10125",
+      "marca": "BELCOLADE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate oscuro en el microondas en interbalos de tiempo para evitar que se queme. Dejar enfriar un poco.",
+    "Colocar papel encerado en latas y sobre este colocar las galletas media luna bañadas con el chocolate de leche derretido. ( se debe bañar solo la mitad)",
+    "Dejar enfriar las galletas con ayuda del aire acondicionado."
+  ],
+  "pesoTotalCantidad": 1092,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7.5,
+  "tiempoPrepUnidad": "MIN",
+  "porcionesCantidad": 156,
+  "porcionesUnidad": "Galletas",
+  "pesoPorcionCantidad": 7,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 168,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,73 @@
+{
+  "nombre": "Pasta Para Galletas Media Luna",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA P/GALLETAS MEDIA LUNA",
+      "cantidad": 17620,
+      "unidad": "g",
+      "codigoNetSuite": "SE00276",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cremar el azucar con la margarina en velocidad 2 por 2 minutos.",
+    "Agregar las yemas y la leche y poner la maquina en velocidad 1 por 1 minuto, luego meter la mano para revolver bien sacando de abajo hacia arriba, dejar otro minuto en velocidad 1",
+    "Luego agregar la harina y batir 30 segundos en velocidad 1, parar para revolver de abajo a arriba ( repetir la acción 2 veces). Por ultimo poner 30 segudnos en velocidad 2.",
+    "Meter en bolsa y llevar a refrigeración por 24 horas, sacar y trabajar."
+  ],
+  "pesoTotalCantidad": 19300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 19300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 232,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

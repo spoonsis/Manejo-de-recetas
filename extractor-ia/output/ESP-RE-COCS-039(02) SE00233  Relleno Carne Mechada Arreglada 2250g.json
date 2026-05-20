@@ -1,0 +1,162 @@
+{
+  "nombre": "Relleno Carne Mechada Arreglada 2250g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE DE OLIVA",
+      "cantidad": 28,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "VIGO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCIÓN CARNE MECHADA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00182",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA CHILE AJI PLANTA",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO COCCION CARNE MECHADA ARREGLADA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA ROJA SPOON",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00111",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 28,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA RED GOLD",
+      "cantidad": 21,
+      "unidad": "g",
+      "codigoNetSuite": "MP10259",
+      "marca": "FRENCH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "MP10031",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO 250 GRS",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar a fuego fuerte una olla grande y agregarle el aceite. Una vez caliente agregar el ajo molido, cebolla, chile dulce y apio.",
+    "Cocinar por 10 minutos hasta que se doren ligermente y agregar el chile picante, lizano, mostaza y salsa roja y el caldo. Dejar hervir.",
+    "Una vez hervido añadir la carne, culantro y la sal, mezclar bien. Colocar en bandejas y enfriar."
+  ],
+  "pesoTotalCantidad": 2470,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2470,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 328,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

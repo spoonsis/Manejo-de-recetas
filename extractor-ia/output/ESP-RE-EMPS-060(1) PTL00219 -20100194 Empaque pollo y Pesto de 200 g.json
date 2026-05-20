@@ -1,0 +1,140 @@
+{
+  "nombre": "Empaque pollo y Pesto de 200 g",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ALBAHACA KILO",
+      "cantidad": 50,
+      "unidad": "gramos",
+      "codigoNetSuite": "101260",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 50,
+      "unidad": "gramos",
+      "codigoNetSuite": "0512319",
+      "marca": null,
+      "observaciones": "(PAQ: 1 KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST",
+      "cantidad": 150,
+      "unidad": "mililitros",
+      "codigoNetSuite": "910311",
+      "marca": null,
+      "observaciones": "(UND:5 L)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 3,
+      "unidad": "gramos",
+      "codigoNetSuite": "1212412",
+      "marca": null,
+      "observaciones": "(PAQ=5 KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 2,
+      "unidad": "gramos",
+      "codigoNetSuite": "0610236",
+      "marca": null,
+      "observaciones": "(PAQ: 5 K)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "QUESO PARMERSANO",
+      "cantidad": 50,
+      "unidad": "gramos",
+      "codigoNetSuite": "0310116",
+      "marca": null,
+      "observaciones": "(KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 150,
+      "unidad": "gramos",
+      "codigoNetSuite": "909000009",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 2,
+      "unidad": "gramos",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 150,
+      "unidad": "gramos",
+      "codigoNetSuite": "909000009",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 2,
+      "unidad": "gramos",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 150,
+      "unidad": "gramos",
+      "codigoNetSuite": "909000009",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 2,
+      "unidad": "gramos",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 450,
+  "pesoTotalUnidad": "gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 450,
+  "pesoPorcionUnidad": "gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

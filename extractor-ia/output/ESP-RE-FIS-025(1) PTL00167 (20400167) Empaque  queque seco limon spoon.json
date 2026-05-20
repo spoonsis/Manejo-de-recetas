@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque queque seco limon spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE LIMON 140G",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00573",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA BLANCA MEDIANAS (100 X PAQ)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10017",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 6 unidades en caja blanca con tapa.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 780,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "CAJA",
+  "pesoPorcionCantidad": 780,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

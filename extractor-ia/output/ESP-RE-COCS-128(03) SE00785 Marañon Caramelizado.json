@@ -1,0 +1,53 @@
+{
+  "nombre": "Marañon Caramelizado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Marmita",
+  "areaEmpaca": "Marmita",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MARAÑON TOSTADO",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10916",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 3200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en marmita a 215°C con calor en dos planchas por 20 minutos. Agitacion a 25 en ambos sentidos 15 segundos",
+    "A los 20 minutos agregar el agua y agitar por 5 minutos mas o cuando el azucar empiece a derretirse un poco de nuevo"
+  ],
+  "pesoTotalCantidad": 7040,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 7040,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 560,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

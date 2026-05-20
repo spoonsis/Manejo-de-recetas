@@ -1,0 +1,90 @@
+{
+  "nombre": "SE00402 MUFFIN DE CHOCOLATE KIT KAT",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO CHOCOLATE DAWN",
+      "cantidad": 1300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00342",
+      "marca": "FAS",
+      "observaciones": "65 GRAMOS C/MUFFIN",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "KITKAT RELLE&COB CHOC NPRO 6X1.01KG BR",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10658",
+      "marca": "FAS",
+      "observaciones": "10 GRAMOS C/MUFFIN",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NATAXUL",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10673",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAPSULA # 5 BLANCA",
+      "cantidad": 20,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 65g de batido en cada capsula. Cobre en el centro del mufing 10 de relleno spread de kit kat.",
+    "Hornear 170°C por 20 min.",
+    "Enfriar y guardar en bolsa con bandeja con 25 unidades cada lata. Etiquetada."
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 20,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 75,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

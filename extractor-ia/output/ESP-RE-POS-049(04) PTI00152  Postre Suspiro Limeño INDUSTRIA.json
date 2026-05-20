@@ -1,0 +1,181 @@
+{
+  "nombre": "PTI00152 Postre Suspiro Limeño INDUSTRIA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": "(UND:17 L)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TURRON DE CHOCOLATE Y PECANAS",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00473",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHEESE CAKE DE DULCE DE LECHE",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00474",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SUSPIRO LIMEÑO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00475",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PECANA ENTERA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": "NUECES IND",
+      "observaciones": "(CAJA:13.6 K)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Topping de Suspiro Limeño",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00735",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PECANA ENTERA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": "NUECES IND",
+      "observaciones": "(CAJA:13.6 K)",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA DE VINO TINTO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00476",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CANELA EN POLVO BADIA",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "BADIA",
+      "observaciones": "(UND: 1.82 K)",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "MAYCA",
+      "observaciones": "(UND )",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\"",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "EXP PMT",
+      "observaciones": "(CAJA:100 U)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": "(ROLLO)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SPOON SUSPIRO LIMEÑO",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10368",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engrasar el molde y colocar en el molde el turron, sobre este verter la mezcla de cheesecake.",
+    "Luego con la taza de medida (1/2 taza) colocar el suspiro limeño y la pecana picada gruesa, refrigerar minimo por 4 horas.",
+    "Desmoldar, pegar la base con un poco de manjar, decorar con crema de vino tinto en el borde primero haciendo un circulo y luego colocho, en el centro colocar suspiro y alizar, sobre este las pecanas picadas gruesas y sobre el colocho y por ultimo la canela en polvo.",
+    "Empacar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1070,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1070,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 51,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

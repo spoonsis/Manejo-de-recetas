@@ -1,0 +1,127 @@
+{
+  "nombre": "Queque Seco Con Pasas 750g 95345(SE00348)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA QUEQUE SECO",
+      "cantidad": 2320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00347",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL ( 25KG )",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CLARA DE HUEVO ( CAJA: 5 K)",
+      "cantidad": 845,
+      "unidad": "g",
+      "codigoNetSuite": "MP10141",
+      "marca": "WHOLESOME",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO (CAJA: 8.34 K)",
+      "cantidad": 455,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON ABUELO RESERVA (UND: LITRO)",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10580",
+      "marca": "ABUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE NARANJA TB LITRO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10598",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VAINILLA OSCURA (UND: 3.78 L)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10385",
+      "marca": "MALUQUER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASAS ( CAJAS 13.6KG)",
+      "cantidad": 325,
+      "unidad": "g",
+      "codigoNetSuite": "MP10561",
+      "marca": "NUECES INDUST",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Papel Mantequilla",
+      "cantidad": 7,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Enharinar las pasas con 1/2 taza de harina de la pre mezcla.",
+    "Colocar en la batidora la lactocrema (1100g) partida en pedazos  junto con el azúcar, preservante de la pre mezcla.",
+    "En velocidad 3, batir por 10 minutos. Levantar el bowl de la batidora para lograr que el globo bata hasta el fondo y limpiar bordes.",
+    "Agregar las yemas poco a poco, batir por 1 minuto. Limpiar bordes  batir por 5 minutos mas.",
+    "En un bowl por aparte batir las claras a punto yogurt o cinta en velocidad 3.",
+    "Pesar en un bowl los liqudos ron, jugo de naranja, vainilla.",
+    "Bajar la velocidad a 1 y adicionar la mitad de las claras a la mezcla de lactocrema, agregar la mitad del harina con polvo de hornear de la pre mezcla. Adicionar luego la mitad de los liquidos,  limpiar los bordes.",
+    "Adicionar luego la mitad de los polvos, luego la otra mitad de los liquidos,  limpiar los bordes. Agregar por ultimo la otra mitad de las claras.",
+    "Subir a velocidad 2 y batir por 1 min.",
+    "Limpiar los bordes y batir 30 segundos en velocidad 2 subiendo el bowl.",
+    "Pesar en moldes engrasados y adicionar 46g de pasas a cada molde, mezclar ligeramente con una espatula las pasas. Realizar un hueco en forma de canal en el centro del queque y a lo largo de el.",
+    "Hornear en el Vulcan a 300°F por 55/60 minutos.",
+    "Desmoldar tibios sobre latas limpias, dejar enfriar y empacar."
+  ],
+  "pesoTotalCantidad": 5250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 7,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 750,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 215,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

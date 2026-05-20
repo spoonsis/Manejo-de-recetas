@@ -1,0 +1,35 @@
+{
+  "nombre": "SE00809 Coco Tostado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Coco Rallado",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10145",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en un sarten el coco, hasta que empieze a tostarse (Que apenas quede dorado, sin quemarse)",
+    "Apartar y dejar enfriar."
+  ],
+  "pesoTotalCantidad": 980,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanta",
+  "pesoPorcionCantidad": 980,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

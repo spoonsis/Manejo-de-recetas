@@ -1,0 +1,110 @@
+{
+  "nombre": "Cerdo navideño chipotle coccion",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "POSTA DE CERDO",
+      "cantidad": 29000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10305",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAZONADOR CHIPOTLE MAGGI",
+      "cantidad": 185,
+      "unidad": "g",
+      "codigoNetSuite": "MP10717",
+      "marca": "MAGGIE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DEMIGLACE KNORR",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10716",
+      "marca": "KNORR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR  INDUSTRIAL",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 4700,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Limpiar la carne del exceso de grasa y cortar en tiras largas como del tamaño de un lomito. Humectarlas con el aceite y el ajo.",
+    "Espolvorear por todas las piezas la mezcla de sazonador de chipotle, paprika, sal, azucar y demiglace.",
+    "Antes de llevar al horno agregar el caldo de pollo en las bandejas.",
+    "Llevar al horno en programacion coccion cerdo navideño 2024",
+    "Enviar a enfriamiento para posteriormente cortar en rebanadas ( 5 rebanadas deberian pesar 130g )"
+  ],
+  "pesoTotalCantidad": 20000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 100,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 154,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 130,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15005,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

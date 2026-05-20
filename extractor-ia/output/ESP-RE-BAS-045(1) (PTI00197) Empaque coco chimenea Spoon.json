@@ -1,0 +1,71 @@
+{
+  "nombre": "PTI00197 Empaque coco chimenea Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete coco chimenea Spoon",
+      "cantidad": 630,
+      "unidad": "g",
+      "codigoNetSuite": "SE00409",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\"",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10125",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la quequera 9 el queque y tapar.",
+    "Etiquetar con nombre y codigo, vencimiento y lote"
+  ],
+  "pesoTotalCantidad": 630,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 630,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

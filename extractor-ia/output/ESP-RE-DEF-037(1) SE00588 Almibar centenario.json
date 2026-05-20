@@ -1,0 +1,52 @@
+{
+  "nombre": "Almibar centenario",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "DECORACIÓN",
+  "areaEmpaca": "DECORACIÓN",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Almibar",
+      "cantidad": 700,
+      "unidad": null,
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON CENTENARIO 4 AÑOS",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "CENTENARIO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAFÉ INSTANTANEO (PAQ: 500 G)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10091",
+      "marca": "NESCAFE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes y utilizar."
+  ],
+  "pesoTotalCantidad": 980,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 980,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

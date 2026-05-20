@@ -1,0 +1,72 @@
+{
+  "nombre": "SE00655 Rosquete nucleo vainilla Dawn Redondo 400 g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO VAINILLA DAWN",
+      "cantidad": 24820,
+      "unidad": "g",
+      "codigoNetSuite": "SE00444",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 533,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 450 g de mezcla en los moldes previamente engrasados.",
+    "Hornear por Dicte 1 o 2 a 175°C por 50 min",
+    "Enfriar, desmoldar, colocar 12 rosquetes por lata, etiquetar con nombre y fecha de producción."
+  ],
+  "pesoTotalCantidad": 24000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 53,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 450,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 820,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,71 @@
+{
+  "nombre": "Empaque Frijoles Tiernos Chifrijo(850g) 1520456(PTL00004)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FRIJOLES TIERNOS P/CHIFRIJO (4600g)",
+      "cantidad": 385,
+      "unidad": "g",
+      "codigoNetSuite": "SE00317",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE FRIJOLES TIERNOS P/CHIFRIJO",
+      "cantidad": 465,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRASPARENTE 9x14x2000 (KILO)",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "EM10241",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA PREIMP. 2 5/8 * 1 15/16",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "EM10005",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en una bolsa 9x14  385g de frijoles tiernos con 465g de caldo.",
+    "Cerrar y etiquetar."
+  ],
+  "pesoTotalCantidad": 850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "SEG.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

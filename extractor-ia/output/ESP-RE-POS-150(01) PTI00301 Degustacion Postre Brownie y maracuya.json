@@ -1,0 +1,154 @@
+{
+  "nombre": "Degustacion Postre Brownie y maracuya",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE REDONDO BROWNIE CASERO 250G",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00200",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Fudge De Chocolate",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE MARACUYA",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00765",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE REDONDO BROWNIE CASERO 250G",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00200",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 108,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE MARACUYA",
+      "cantidad": 360,
+      "unidad": "g",
+      "codigoNetSuite": "SE00764",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca Lisa Bopp Brillante",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10443",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar de base trozos de brownie",
+    "Colocar fudge y luego la salsa de maracuya, e incrustar el brownie",
+    "Decorar con un beso de crema y la salsa de maracuya",
+    "Tapar y etiquetar los vasos, y colocar 18ud en caja six pack musmanni"
+  ],
+  "pesoTotalCantidad": 1540,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "vasitos",
+  "pesoPorcionCantidad": 85,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 8,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

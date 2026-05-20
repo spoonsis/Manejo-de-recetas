@@ -1,0 +1,43 @@
+{
+  "nombre": "SE00843 Relleno de fresa frambuesa con brillo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RELLENO DE FRESA FRAMBUESA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00836",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Brillo Glit",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10089",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar ambos ingredientes y utilizar."
+  ],
+  "pesoTotalCantidad": 1850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 1850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

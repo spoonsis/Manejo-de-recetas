@@ -1,0 +1,107 @@
+{
+  "nombre": "Pre mezcla Pasta Hojaldre 95614(SE00131)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA ESTANDAR",
+      "cantidad": 18000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10004",
+      "marca": "HARISOL",
+      "observaciones": "9000 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MARGARINA HOJALDRE OLMECA",
+      "cantidad": 12000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10052",
+      "marca": "OLMECA",
+      "observaciones": "CAJA: 13.61 K; 3000 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL INDUSTRIA",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10027",
+      "marca": "ATLANTIDA",
+      "observaciones": "SACO:25 Kg; 150 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 44,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": "22 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17X25 TRANSPARENTE",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": null,
+      "observaciones": "(UND)",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en bolsa 17x25 la harina, preservante y la sal.",
+    "Etiquetar con fecha vencimiento y alerjeno"
+  ],
+  "pesoTotalCantidad": 30344,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 30344,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

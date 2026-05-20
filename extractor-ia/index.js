@@ -39,13 +39,13 @@ async function processFile(filePath) {
 
     // 3. Llamar a IA con reintentos
     let text = '';
-    let retries = 3;
-    let delay = 3000; // Iniciar con 3 segundos
+    let retries = 5;
+    let baseDelay = 5000; 
 
     while (retries > 0) {
       try {
         const response = await ai.models.generateContent({
-          model: 'gemini-3-flash-preview',
+          model: 'gemini-2.5-flash',
           contents: `${systemPrompt}\n\n${userPrompt}`
         });
         text = response.text;
@@ -54,9 +54,15 @@ async function processFile(filePath) {
         retries--;
         if (retries === 0) throw error;
         
-        console.warn(`⚠️ Aviso: API ocupada o error temporal. Reintentando en ${delay/1000}s... (Quedan ${retries} intentos)`);
-        await sleep(delay);
-        delay *= 2; // Espera exponencial
+        let waitTime = baseDelay * (6 - retries); // 5s -> 10s -> 15s -> 20s
+        // Si el error de Google nos dice exactamente cuánto esperar, tomamos ese tiempo
+        const match = error.message?.match(/Please retry in (\d+(\.\d+)?)s/i);
+        if (match && match[1]) {
+            waitTime = (parseFloat(match[1]) + 2) * 1000; // Le sumamos 2 segundos extra de seguridad
+        }
+
+        console.warn(`⚠️ Aviso: Error o API ocupada (${error.status || '503'}). Reintentando en ${(waitTime/1000).toFixed(1)}s...`);
+        await sleep(waitTime);
       }
     }
 
@@ -96,7 +102,7 @@ async function main() {
 
   for (const file of excelFiles) {
     await processFile(path.join(INPUT_DIR, file));
-    await sleep(1000); // Pausa de 1s entre archivos para cortesía con la API
+    await sleep(4000); // Pausa de 4s entre archivos para no superar el límite gratuito (15 peticiones por minuto)
   }
 
   console.log("\n✨ Proceso terminado.");

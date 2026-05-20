@@ -1,0 +1,57 @@
+{
+  "nombre": "Leche condensada cocinada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LATA LECHE CONDENSADA",
+      "cantidad": 204,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10477",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 60000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 208,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Retirar las etiquetas de cada lata de leche condensada",
+    "Colocar las latas en la marmita (sin aspas). Cerrar a presion.",
+    "Cocinar en programa \"Leche Cocinada\"",
+    "Retirar con mucho cuidado el tapon para liberar presion. Luego que ya este liberada toda la presion, proceder a abrir la olla.",
+    "Con ayuda de una pinza o guantes colocar las latas en una caja esperar a que se sequen, Etiquetar con fecha de vencimiento.",
+    "Empacar en las mismas cajas en las que llegaron y etiquetar con fecha de vencimeinto la caja tambien"
+  ],
+  "pesoTotalCantidad": 80580,
+  "pesoTotalUnidad": "ud",
+  "tiempoPrepCantidad": 75,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4.25,
+  "porcionesUnidad": "cajas",
+  "pesoPorcionCantidad": 18960,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 60000,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

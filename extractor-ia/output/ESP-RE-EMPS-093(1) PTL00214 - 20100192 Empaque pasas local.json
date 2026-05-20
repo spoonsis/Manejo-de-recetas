@@ -1,0 +1,62 @@
+{
+  "nombre": "PTL00214 - 20100192 Empaque pasas local",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pasas",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10561",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Transparente 6 X 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "En la bolsa 6x10 empacar 100g de pasas y cerrar con nudo.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

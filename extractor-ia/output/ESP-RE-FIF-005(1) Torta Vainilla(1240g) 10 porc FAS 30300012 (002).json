@@ -1,0 +1,148 @@
+{
+  "nombre": "Torta de vainilla",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA BC 700G",
+      "cantidad": 654,
+      "unidad": "g",
+      "codigoNetSuite": "SE00438",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DULCE LECHE LA CIABATA",
+      "cantidad": 285,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "LA CIABATTA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA SIROPE MANJAR DULCE LECHE",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BORONA P/DECORAR",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00071",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA CHILENA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10023",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL ENCERADO 12 X 10 1/500 UD",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10090",
+      "marca": "LOGAN",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSP. 1/ 2*100 MTS",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA PRALINE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete en la mitad y rellenar con dulce de leche.",
+    "Encremar con crema chantilly, pasar un peine a los costados.",
+    "Distribuir 40g de sirope de dulce de leche en la superficie, con una espatula dibujar una espiral en la parte superior de la torta.",
+    "Porcionar en 10 porciones iguales, separar con papel encerado.",
+    "Distribuir borana en el borde superior de la torta.",
+    "Colocar dentro de una quequera, etiquetar con nombre, fecha vencimiento en congelado y dia juliano.",
+    "Introducir en caja Praline, etiquetar con nombre, fecha de vencimiento en congelado, # juliano"
+  ],
+  "pesoTotalCantidad": 1070,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 9,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1070,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 104,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

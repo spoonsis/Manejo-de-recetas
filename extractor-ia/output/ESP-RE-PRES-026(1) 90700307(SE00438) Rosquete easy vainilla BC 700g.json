@@ -1,0 +1,72 @@
+{
+  "nombre": "90700307(SE00438) Rosquete easy vainilla BC 700g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO EASY VAINILLA BC",
+      "cantidad": 46000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00437",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1300,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 12,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 12,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 12,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar en moldes engrasados 700g de mezcla.",
+    "Hornear por 50 minutos en el Dicte 1 a 175°C, en el Dicte 2 por 40 minutos a 175°C, en el Argental por 40 minutos a 175°C, en el Marshall por 40 minutos a 175°C, en el vulcan a 325°F por 50 minutos y en el Curitiba a 130°C por 50.",
+    "Enfriar, desmoldar y empacar 12 unidades por lata, cubrir con bolsa plastica. Etiqueta nombre y fecha."
+  ],
+  "pesoTotalCantidad": 45500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 50,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 65,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 500,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,176 @@
+{
+  "nombre": "Torta flan flor de caña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete vainilla Dawn 400g",
+      "cantidad": 375,
+      "unidad": "g",
+      "codigoNetSuite": "SE00789",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "ALMIBAR FLOR DE CAÑA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00788",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "FLAN SPOON 700G",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00787",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "SEMILLAS BAÑADAS BELCOLADE",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "SE00786",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA RON",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00784",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 220,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "SEMILLAS BAÑADAS BELCOLADE",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00786",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA TORTA FLOR DE CAÑA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1650,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1650,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 125,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

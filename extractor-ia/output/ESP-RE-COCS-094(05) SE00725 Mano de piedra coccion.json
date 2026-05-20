@@ -1,0 +1,108 @@
+{
+  "nombre": "Mano de piedra coccion",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "05",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mano Piedra",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10244",
+      "marca": "Retana",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pasta Ajo",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "Presto",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pimienta Negra Molida",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Paprika",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Oregano",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE CALDO DE POLLO 5000G",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Consome Concen. De Res",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En una bandeja colocar la carne mano de piedra partida a la mitad para hacer dos tiras largas.",
+    "Adobar primero con el aceite y ajo, y luego agregar los secos por encima.",
+    "Luego colocar el caldo de pollo y llevar al horno rational en la programacion de cerdo navideño 2024-"
+  ],
+  "pesoTotalCantidad": 1065,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 7,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 150,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1522,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

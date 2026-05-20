@@ -1,0 +1,47 @@
+{
+  "nombre": "SE00322 Pie de Almendras y Pecanas personal",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA DE PIÑA",
+      "cantidad": 6000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00323",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO PARA TARTA DE ALMENDRAS KILO",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00324",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "laminar la pasta piña a 2,6 en la laminadora Rondo",
+    "Cortar círculos de 12cm de circunferncia.",
+    "Colocar la pasta sobre aros de english muffin engrasados de 9cm.",
+    "Colocar 100g de relleno.",
+    "Hornear."
+  ],
+  "pesoTotalCantidad": 14000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 75,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 100,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 140,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

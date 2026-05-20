@@ -1,0 +1,46 @@
+{
+  "nombre": "Pasta Alfajor y Chilena 23660g 903000082(SE00460)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE PREMEZCLA P/PASTA ALFAJOR (23.360g)",
+      "cantidad": 23023,
+      "unidad": "g",
+      "codigoNetSuite": "SE00461",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 245,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "AYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En el tazón de la batidora H600 colocar la margarina, harina y azúcar de la pre mezcla",
+    "Batir con la paleta los ingredientes por 1 min en velocidad 1 incorporando el agua poco a poco.",
+    "Subir a velocidad 2 hasta obtener una masa suave, no hulosa y homogenea. Batir por 5 minutos mas.",
+    "Sacar la masa del tazón de la batidora y colocar en un bowl de acero inoxidable, utilizar al momento."
+  ],
+  "pesoTotalCantidad": 23123,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 23123,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 145,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

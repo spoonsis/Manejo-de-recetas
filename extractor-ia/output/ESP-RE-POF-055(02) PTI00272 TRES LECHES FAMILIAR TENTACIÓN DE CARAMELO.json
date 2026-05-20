@@ -1,0 +1,108 @@
+{
+  "nombre": "TRES LECHES FAMILIAR TENTACIÓN DE CARAMELO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE 3 LECHES BUCCA 280G",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "SE00295",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla de Tres Leche con Caramelo",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00760",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Sirope manjar Dulce Leche",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA TRES LECHES CARAMELO PIREX",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10469",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Bañar el rosquete con la mezcla de Tres Leches de caramelo y majar para que absorba.",
+    "Encremar con la crema blanca, agregar el sirope de dulce de leche, agregar de esquina a esquina y marmolear haciendo un pequeño relieve.",
+    "Colocar la tapa, cerrar y etiquetar."
+  ],
+  "pesoTotalCantidad": 950,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 950,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 24,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

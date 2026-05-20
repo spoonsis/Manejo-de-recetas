@@ -1,0 +1,99 @@
+{
+  "nombre": "Pre mezcla Rosquete tres leches SE00037",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (SACO:50 K)",
+      "cantidad": 4500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA TRIGO NACARINA (SACO: 25 K)",
+      "cantidad": 2475,
+      "unidad": "g",
+      "codigoNetSuite": "MP10051",
+      "marca": "NACARINA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA SILVER CAKE",
+      "cantidad": 2475,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "FHACASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (2.5 KG)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "FLEISHMAN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP (KILO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en una bolsa 17*25 la harina, polvo de hornear y preservante.",
+    "Pesar en otra bolsa 17*25 el azúcar, introducir la bolsa anterior en esta.",
+    "Etiquetar con nombre y alerjeno"
+  ],
+  "pesoTotalCantidad": 9636,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 9636,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

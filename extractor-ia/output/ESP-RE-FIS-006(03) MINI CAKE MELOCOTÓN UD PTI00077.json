@@ -1,0 +1,163 @@
+{
+  "nombre": "MINI CAKE MELOCOTÓN UD PTI00077",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 80g",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00393",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE LIMON SPOON KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00008",
+      "marca": "FAS",
+      "observaciones": "1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELOCOTON CUBOS PARA TORTA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00446",
+      "marca": "FAS",
+      "observaciones": "1/8 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 2B",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELO CON TOPING",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00009",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE TRIAN OLEA  PEQ (CAJA:250 UND)",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10130",
+      "marca": "Karol",
+      "observaciones": "1 UNIDAD",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 0.1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la panza para nivelar), humeder los rosquetes con almibar y rellenar con relleno de limón y relleno de melocotón. Hacer un circulo de manjar sobre la base para inmobilizar el quequito. Pegar el mini cake en la base.",
+    "Con una manga y con la boquilla #48 cubrir todo  el costado, de manera que se cubran todas la paredes hasta llegar al borde y alisar la parte superior con una espatula.",
+    "Terminar con 1 cda de topping de melocotón y 1 triangulo oleaje.",
+    "Tapar y etiquetar. Colocar los sellos de seguridad en lados opuestos, sobre uno de los sellos de seguridad pegar la cinta generica. La fecha de vencimiento,  y en el lado inferior etiqueta de ingredientes."
+  ],
+  "pesoTotalCantidad": 173,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 173,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

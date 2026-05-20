@@ -1,0 +1,137 @@
+{
+  "nombre": "PTL00260 - 20200111Torta Rosanna Pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO PISTACHO",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00742",
+      "marca": "Fas",
+      "observaciones": "1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA VERDE PISTACHO",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "SE00741",
+      "marca": "Fas",
+      "observaciones": "Encremado",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA DE PISTACHO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00739",
+      "marca": "Fas",
+      "observaciones": "1/3 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PISTACHO TOSTADO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00738",
+      "marca": "Fas",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PLACA CHOCOLATE ROSANNA",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "MP10887",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Torta Rossana Pistacho",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10471",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Desmoldar el disco de pistacho en la orla 10.",
+    "Encremar de forma lisa con la crema verde pistacho y formar un hueco al centro para colocar la salsa",
+    "Colocar la salsa de pistacho al centro y en todo el borde agregar el pistacho tostado.",
+    "En un costado colocar la placa de Rosanna pistacho.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1460,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 160,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

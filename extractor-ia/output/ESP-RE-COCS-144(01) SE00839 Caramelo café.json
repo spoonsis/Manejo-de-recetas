@@ -1,0 +1,65 @@
+{
+  "nombre": "SE00839 Caramelo café",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Marmitas",
+  "areaEmpaca": "Marmitas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR REFINADA VICTORIA ( 1 KG )",
+      "cantidad": 27000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10078",
+      "marca": "VICTORIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL ( 25KG )",
+      "cantidad": 4455,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA (LITRO)",
+      "cantidad": 41000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Café Instantaneo",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10091",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colcoar el azucar en la marmita, encender en programacion \"caramelo\"",
+    "Cuando la marmita lo indique, agregar la lactocrema en cubos.",
+    "Cuando la marmita lo indique agregar la leche con el café instantaneo",
+    "Cocinar hasta que se termine el programa, cuidar que no se riegue.",
+    "Preparase para el proceso de empaque."
+  ],
+  "pesoTotalCantidad": 44500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 44500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 27955,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

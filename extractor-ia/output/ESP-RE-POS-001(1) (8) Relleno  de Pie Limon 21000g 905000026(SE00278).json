@@ -1,0 +1,81 @@
+{
+  "nombre": "Relleno de Pie Limon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 19850,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO",
+      "cantidad": 520,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "RESOCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BENZOATO SODIO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10083",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMONES MAYA",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10240",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora la leche condensada, el limón en polvo, batir con el globo a velocidad 2 por 2 minutos.",
+    "Limpiar los bordes, bajar la velocidad 1 y y agregar el benzoato disuelto en agua caliente, mezclar por 30 segundos.",
+    "Añadir de ultimo las yemas a velocidad 1 y luego subir a velocidad 2 y mezclar por 1 minuto. Usar de inmediato."
+  ],
+  "pesoTotalCantidad": 21200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 21200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

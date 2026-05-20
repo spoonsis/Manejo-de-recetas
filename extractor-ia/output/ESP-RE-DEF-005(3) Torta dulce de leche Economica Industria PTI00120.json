@@ -1,0 +1,157 @@
+{
+  "nombre": "Torta dulce de leche Economica Industria PTI00120",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 566,
+      "unidad": "g",
+      "codigoNetSuite": "SE00454",
+      "marca": "FAS",
+      "observaciones": "2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR KILO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA DULCE DE LECHE BUCCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10394",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Utilizar 2 rosquetes, humedecer cada uno y rellenar con 1 taza de crema con manjar esparcir bien",
+    "Tapar con el otro rosquete.",
+    "Colocar sobre la base de la quequera.",
+    "Encremar con crema chantilly blanca y decorar con dulce ce leche para marmolear.",
+    "Agregar el sirope dulce en el centro y esparcir quedando tipo espejo",
+    "Hacer colochos en los bordes acorde a la ficha. Hacer hilos de decoracion con ganache de chocolate oscuro.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 973,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 973,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 108,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

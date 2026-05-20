@@ -1,0 +1,45 @@
+{
+  "nombre": "Queso Parmesano Rallado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO PARMERSANO",
+      "cantidad": 4390,
+      "unidad": "g",
+      "codigoNetSuite": "MP10324",
+      "marca": "GRAND´OR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Retirar el plastico al bloque de queso, cortar cada bloque en 4 partes para que sea mas facil poder procesarlo en la maquina.",
+    "Con mucho cuidado pasar cada pedaso por la maquina ralladora",
+    "Colocar en una bolsa 17 x 25. Mantener en refrigeracion."
+  ],
+  "pesoTotalCantidad": 4390,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 4390,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": 0,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

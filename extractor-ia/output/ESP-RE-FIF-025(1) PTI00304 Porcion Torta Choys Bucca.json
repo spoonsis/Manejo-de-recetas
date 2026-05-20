@@ -1,0 +1,173 @@
+{
+  "nombre": "PTI00304 Porcion Torta Choys Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA SP 1400G",
+      "cantidad": 1215,
+      "unidad": "g",
+      "codigoNetSuite": "SE00455",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 380,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "190g c/ capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Dulce Leche La Ciabata",
+      "cantidad": 310,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "LA CIABATA",
+      "observaciones": "1 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce de Caramelo",
+      "cantidad": 175,
+      "unidad": "g",
+      "codigoNetSuite": "SE00846",
+      "marca": "FAS",
+      "observaciones": "2 tazas",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Chocolate con mani y arroz inflado",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00847",
+      "marca": "FAS",
+      "observaciones": "1 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 432,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA #842 / 18g c/ porcion",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "Hilos 6g c/ porcion",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "Hilos 6g c/ porcion",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache De Dulce Leche",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00298",
+      "marca": "FAS",
+      "observaciones": "Hilos 6g c/ porcion",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Mezcla mani y arroz inflado",
+      "cantidad": 48,
+      "unidad": "g",
+      "codigoNetSuite": "SE00849",
+      "marca": "FAS",
+      "observaciones": "2g c/ porcion",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Pelado Chocolate Choclate Choys",
+      "cantidad": 156,
+      "unidad": "g",
+      "codigoNetSuite": "SE00845",
+      "marca": "FAS",
+      "observaciones": "1/2 ud c/ porcion 13g cada chocolate",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BURBUJA I-3 ALTA (CAJA:250 UND)",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10050",
+      "marca": "INIX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA PORCION CHOYS BUCCA",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar cada plancha por la mitad de manera transversal. Humeder con mezcla de tres lechas cada tapa.",
+    "Rellenar una mitad de rosquete con dulce de leche La Ciabatta, crema con caramelo y procesado de chocolate mani y arroz tostado.",
+    "Tapar con la otra mitad del rosquete, Cortar 24 porciones con dimensiones aproximadas (6unidades a lo largox 4 unidades a lo ancho)",
+    "Decorar cada porcion, con lineas de crema usando boquilla 842, hacer hilos de ganache de chocolate, luego hilos de ganache balnco y al final hilos de ganache dulce.",
+    "Cerrar el contenedor. Etiquetar"
+  ],
+  "pesoTotalCantidad": 2640,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 24,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 110,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 608,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

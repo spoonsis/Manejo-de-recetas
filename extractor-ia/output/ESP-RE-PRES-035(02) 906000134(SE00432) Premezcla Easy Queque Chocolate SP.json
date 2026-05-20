@@ -1,0 +1,64 @@
+{
+  "nombre": "907000284(SE00431) Batido Easy queque chocolate SP",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA EASY QUEQUE CHOCOLATE SP",
+      "cantidad": 25300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00432",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO ESPECIAL INNOV (CAJA:10 K)",
+      "cantidad": 8900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 7200,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 8200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en la batidora y batir con paleta.",
+    "Batir por 3 minutos en velocidad 1.",
+    "Luego batir por 7 minutos a velocidad 2.",
+    "Pasar a dosificar."
+  ],
+  "pesoTotalCantidad": 49000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 11,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 49000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 600,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

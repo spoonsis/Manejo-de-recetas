@@ -1,0 +1,55 @@
+{
+  "nombre": "Corte Galleta Media Luna 5g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA P/GALLETAS MEDIA LUNA (KILO)",
+      "cantidad": 936,
+      "unidad": "g",
+      "codigoNetSuite": "SE00275",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "RONDOMAT: Laminar la pasta a 3,5 mm de grosor.",
+    "RONDO DOGE Laminar la pasta a 2,9 mm de grosor.",
+    "Cortar en forma de media lunas y colocar en la bandeja con el papel mantequilla.",
+    "Hornear a 120 - 125 °C en horno Curitiba por 25 minutos."
+  ],
+  "pesoTotalCantidad": 936,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 11,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 156,
+  "porcionesUnidad": "Galletas",
+  "pesoPorcionCantidad": 6,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

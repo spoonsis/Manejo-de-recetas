@@ -1,0 +1,22 @@
+{
+  "nombre": "EMPANADA DE PIÑA",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [],
+  "pasos": [],
+  "pesoTotalCantidad": null,
+  "pesoTotalUnidad": null,
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": null,
+  "porcionesUnidad": null,
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

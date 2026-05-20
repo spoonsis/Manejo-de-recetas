@@ -1,0 +1,147 @@
+{
+  "nombre": "SE00733 Crema de brocoli y queso",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "Cocina Caliente",
+  "areaEmpaca": "Empaque",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pasta Ajo",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cebolla Picada",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Floretes de Brocoli Loc",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10597",
+      "marca": "BEGRO",
+      "observaciones": "Para Sudar y Luego Licuar",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Floretes de Brocoli Loc",
+      "cantidad": 1900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10597",
+      "marca": "BEGRO",
+      "observaciones": "Para picar y cocinar dentro",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 2750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA QUESO CHEDDAR BLANDO",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10884",
+      "marca": "CHEF MATE / NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 13,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pimienta Blanca Molida",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10014",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Edicion Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10314",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Sudar la cebolla y el ajo y el brocoli ( Sudar ) en el aceite hasta que la cebolla este cristalizada.",
+    "Licuar lo anterior con el brocoli y el caldo",
+    "Regresar a la olla, agregar el brocoli picado y llevar a hervir agregar la sal y pimienta.",
+    "Agregar la salsa de queso, mezclar con un batidor.",
+    "Disolver el almidon y el preservante en la leche evaporada , agregarlo a la olla hervir",
+    "Colocar en bandejas y darle choque termico y pasar a empaque"
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3413,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

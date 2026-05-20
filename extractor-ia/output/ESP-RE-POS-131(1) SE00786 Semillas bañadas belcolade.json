@@ -1,0 +1,52 @@
+{
+  "nombre": "SE00786 Semillas bañadas belcolade",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MARAÑON CARAMELIZADO",
+      "cantidad": 3700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00785",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BELCOLADE CARAMELO",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10917",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chocolate blanco",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "Cordillera",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el belcolade caramelo y bañar las semillas, dejar enfriar."
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": -600,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

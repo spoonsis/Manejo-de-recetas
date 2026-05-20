@@ -1,0 +1,130 @@
+{
+  "nombre": "Salsa De Pipian 34000g SE00554",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 20000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 4500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA TOMATE",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": "RED PACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR REFINO",
+      "cantidad": 980,
+      "unidad": "g",
+      "codigoNetSuite": "SE00226",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 28,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ENCURTIDO EN MOSTAZA",
+      "cantidad": 3150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10655",
+      "marca": "TIO PELÓN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANTEQUILLA MANI",
+      "cantidad": 3700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10582",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "PLASTICO AUTOADHERIBLE 18X2000",
+      "cantidad": 300,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla caliente el aceite, añadir la cebolla y el chile dulce y cristalizar",
+    "Agregar la pasta de tomate, junto con el azúcar y preservante, dejar cocinar por 5 min, mezclar bien",
+    "Incorporar la salsa lizano, mover constantemente",
+    "Licuar el incurtido y agregar a la olla, mezclar y dejar hervir",
+    "Por último agregar la mantequilla de maní y mezclar bien, dejar hervir y apagar la olla",
+    "Colocar en bandejas, cubrir con plástico, etiquetar con nombre",
+    "Pasar a empaque para chóque térmico"
+  ],
+  "pesoTotalCantidad": 34000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 34000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 358,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

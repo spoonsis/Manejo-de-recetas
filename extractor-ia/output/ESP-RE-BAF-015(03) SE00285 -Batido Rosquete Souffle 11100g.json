@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00285 -Batido Rosquete Souffle 11100g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA P/BATIDO ROSQ SOUFFLE",
+      "cantidad": 6034,
+      "unidad": "g",
+      "codigoNetSuite": "SE00286",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Huevo Liquido Refrigerado",
+      "cantidad": 5300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora el huevo, adicionar la pre mezcla y batir en velocidad 1 por 1 minuto con paleta. Limpiar bordes.",
+    "Subir la velocidad maxima durante 4 min con paleta."
+  ],
+  "pesoTotalCantidad": 10320,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 10320,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 234,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

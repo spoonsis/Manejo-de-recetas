@@ -1,0 +1,82 @@
+{
+  "nombre": "SE00683 Ensamble Disco Queso y condensada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 320g",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": "1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar whisky",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00685",
+      "marca": "FAS",
+      "observaciones": "80g por capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE QUESO Y CONDENSADA",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00684",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE LECHE CONDENSADA COCINADA",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00688",
+      "marca": "FAS",
+      "observaciones": "1/3 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE BLANCO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE QUESO Y CONDENSADA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00684",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Se corta el rosquete a la mitad, se coloca en un molde de aluminio desmoldable (molde pie de limon) y se moja con 100g de almibar en cada tapa.",
+    "Se coloca en la base del rosquete la primer capa de mousse de queso y condensada, luego al centro la salsa de condensada cocinada.",
+    "Se le agrega el chocolate blanco con caramelo bien exparcido y se le coloca la otra parte del mousse de queso y condensada.",
+    "Por ultimo se tapa con la otra mitad del rosquete y se dejar enfiar por al menos 6 horas."
+  ],
+  "pesoTotalCantidad": 830,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 830,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

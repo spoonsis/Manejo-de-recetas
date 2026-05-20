@@ -1,0 +1,126 @@
+{
+  "nombre": "Adobo pechuga parrilla 901000081(SE00146)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FILET CORTE MARIPOSA",
+      "cantidad": 40000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00508",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA (PAQ: 5 K)",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO (UND:3.7 L)",
+      "cantidad": 880,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (KILO)",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO (UND: 156 G)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "MC CORMICK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 42,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 300,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "Esosa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocarlas las pechugas en un bowl grande.",
+    "Agregarles sal, pimienta, salsa inglesa, ajo molido, oregano, aceite preservante. No debe quedar ninguna pechuga sin adobar.",
+    "Refrigerar."
+  ],
+  "pesoTotalCantidad": 41500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 263,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 158,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 423,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,53 @@
+{
+  "nombre": "907000322(SE00473) Rosquete De Turron De chocolate y pecana 280g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO TURRON DE CHOCOLATE Y PECANAS",
+      "cantidad": 5040,
+      "unidad": "g",
+      "codigoNetSuite": "SE00472",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES (29800g)",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL ENCERADO 10X10 (PAQ * 500)",
+      "cantidad": 18,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10090",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 280g en moldes engrasados y con papel engrasado en la base.",
+    "Hornear en el Marshall a 170°C por 28 minutos."
+  ],
+  "pesoTotalCantidad": 5040,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 280,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

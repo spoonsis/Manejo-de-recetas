@@ -1,0 +1,155 @@
+{
+  "nombre": "Bite In a Box de Chocomani",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.06,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "46g, 2 unidades x postre 23g x unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "10 g capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "35g x capa, 2 capas",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Chocolate con Mani",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00822",
+      "marca": "FAS",
+      "observaciones": "1 sola capa, 1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno Mantequilla de Mani",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00823",
+      "marca": "FAS",
+      "observaciones": "1 sola capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ganache oscuro suave",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00819",
+      "marca": "FAS",
+      "observaciones": "1 sola capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ganache oscuro suave",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "SE00819",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Mani Tostado",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "SE00820",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Empaque Cuchareable Rectangular",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10499",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BITE IN A BOX CHOCO MANI",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "Nuevo",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete arrollado (6cm de ancho x 11,5cm de largo)",
+    "En cada empaque colocar un cuadrado de rosquete, humedecer con ayuda de una bolsa la leche, con ayuda de una manga, colocar el caramelo, el relleno de mantequilla de mani, el ganache suave y el chocolate con mani.",
+    "Colocar otro rosquete, humedecer con la leche, colocar el caramelo",
+    "Decorar con hilos de crema dulce, hilos de ganache y colocar el mani tostado de esquina a esquina",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 182,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 182,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

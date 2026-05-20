@@ -1,0 +1,64 @@
+{
+  "nombre": "SE00506 - 907000335 Procesado de Borona de Chocolate",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Chocolate 400 grs Spoon",
+      "cantidad": 1095,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 40,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar los rosquetes en una bandeja limpia, en pedazos y bien separados unos de otros",
+    "Hornear por 25 minutos a 175°C en el Marshall o 20 minutos a 300°F en el Vulcan. Sacar y enfriar",
+    "Colocar el producto en el procesador y procesar por impulsos hasta formar la borona o deshacer el rosquete",
+    "Colocar en baldes sellados y sanitizados. No procesar grandes cantidades para evitar la formación de moho"
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 95,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

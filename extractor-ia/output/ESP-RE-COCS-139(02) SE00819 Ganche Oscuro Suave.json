@@ -1,0 +1,46 @@
+{
+  "nombre": "SE00819 Ganche Oscuro Suave",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCO 4K",
+      "cantidad": 3222,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "Richs",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE SEMI AMARGO 54% (PAQ 5 k)",
+      "cantidad": 1264,
+      "unidad": "g",
+      "codigoNetSuite": "MP10492",
+      "marca": "NACIONAL DE CHOCOLATES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la crema de chocolate en una olla y calentar hasta 55 grados hasta hervir.",
+    "Añadir el chocolate, mezclar bien hasta derretir completamente el chocolate.",
+    "Pasar el ganache caliente por un colador para evitar que queden grumos de chocolate.",
+    "Colocar en cheffing de acero y enfriar."
+  ],
+  "pesoTotalCantidad": 4000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 4000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 486,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,50 @@
+{
+  "nombre": "Empaque rollos de espinaca y queso",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LAMINADO PASTA HOJALDRE (KILO)",
+      "cantidad": 600,
+      "unidad": "unidad",
+      "codigoNetSuite": "906000014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO ESPINACA Y QUESO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "902000019",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "unidades",
+  "pesoPorcionCantidad": 110,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 51.97,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

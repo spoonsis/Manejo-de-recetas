@@ -1,0 +1,135 @@
+{
+  "nombre": "Tres Leches Cuadrada Melocotón Unid(200g) Spoon 75041(PTI00094)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES 750g",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00035",
+      "marca": "FAS",
+      "observaciones": "43 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "SABORIZANTE MELO (KILO)",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10567",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "EMPAQUE TOPPING MELOCOTON",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00012",
+      "marca": "FAS",
+      "observaciones": "20 GRAMOS / PORCION",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "20 GRAMOS / PORCION Boquilla 2C",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BURBUJA I-3 ALTA (CAJA:250 UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10050",
+      "marca": "SMP",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete en 15 cuadritos, mezclar la mezlca de tres leches pasteurizada con el saborizante.",
+    "Colocar cada porcion en el empaque y dosificar 120 g de mezcla de tres leches, decorar con la crema chantilly (boquilla 2C) formando 4hileras. Colocar en hileras el topping de melo encima en forma decorativa (3 hileras)",
+    "Tapar,etiquetar,fechar y guardar en camaras de refrigeración a 4ºC."
+  ],
+  "pesoTotalCantidad": 2940,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 15,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 196,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

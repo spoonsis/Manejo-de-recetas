@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Empanada De Pollo GD 1 Caja(10 und) SPOON 42028(PTL00119)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPANADA POLLO HOJALDRE GDE",
+      "cantidad": 10,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00217",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA BLANCA MEDIANAS (100 X PAQ)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10017",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": "10 UND",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": "1 UND",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": "1 UND",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Enfriar y empacar 10 unidades en una caja mediana.",
+    "2.- Cubrir con una bolsa 12*18, sellar. Etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 1020,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 102,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

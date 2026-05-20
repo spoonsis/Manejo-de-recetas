@@ -1,0 +1,72 @@
+{
+  "nombre": "Masa De Tamal Vegetariano 65g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PRE MEZCLA TAMAL VEGETARIANO",
+      "cantidad": 355,
+      "unidad": "g",
+      "codigoNetSuite": "SE00416",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LICUADO PARA TAMAL VEGETARIANO",
+      "cantidad": 436,
+      "unidad": "g",
+      "codigoNetSuite": "SE00415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 196,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO",
+      "cantidad": 1050,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el licuado, lactocrema, pasta de aji y caldo de pollo.",
+    "Una vez que la mezcla hierve se le agrega la premezcla poco a poco y se mezcla con un batidor de globo.",
+    "Hervir por 4 minutos y retirar del fuego."
+  ],
+  "pesoTotalCantidad": 1885,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 29,
+  "porcionesUnidad": "Tamales",
+  "pesoPorcionCantidad": 65,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 154,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

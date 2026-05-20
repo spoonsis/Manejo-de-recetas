@@ -1,0 +1,53 @@
+{
+  "nombre": "SE00386 TRASVASADO LECHE CONDENSADA COCINADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA COCINADA DURA",
+      "cantidad": 43,
+      "unidad": "Latas",
+      "codigoNetSuite": "SE00572",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA MARMITA 14 x 20 (KILO)",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10307",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abril las latas de leche condensada y con ayuda de una espatula colocar el contenido en bolsas de 4 kg.",
+    "hacer nudo y etiquetar"
+  ],
+  "pesoTotalCantidad": 16000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "bolsas",
+  "pesoPorcionCantidad": 4000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 985,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

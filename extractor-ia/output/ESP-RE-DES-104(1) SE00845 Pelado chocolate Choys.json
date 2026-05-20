@@ -1,0 +1,54 @@
+{
+  "nombre": "SE00845 Pelado chocolate Choys",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Chocolate Choys de Maiz Inflado",
+      "cantidad": 364,
+      "unidad": "g",
+      "codigoNetSuite": "MP10947",
+      "marca": "NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pelar los chocolate choys y Separar en una bandeja.",
+    "Tapar, Etiquetar con fecha de vencimiento y etiqueta con nombre.",
+    "Llevar al Frio hasta Utilizar"
+  ],
+  "pesoTotalCantidad": 360,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 360,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

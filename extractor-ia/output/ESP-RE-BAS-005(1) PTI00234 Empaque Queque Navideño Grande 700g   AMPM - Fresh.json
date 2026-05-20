@@ -1,0 +1,90 @@
+{
+  "nombre": "Empaque Queque Navideño Grande 700g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUEQUE NAVIDEÑO GRANDE 700 g",
+      "cantidad": 29400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00534",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA AL VACIO 10X15 (UND)",
+      "cantidad": 42,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10038",
+      "marca": "ALIMENTOS T",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAJA QUEQUE NAVIDEÑO GRANDE",
+      "cantidad": 42,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10309",
+      "marca": "GOZAKA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA #7",
+      "cantidad": 42,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10303",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ROLLO POS 16\" 1067 MTS",
+      "cantidad": 1260,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10295",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "STICKER AZUL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10296",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Ya humedos los queques empacar cada uno en la orla y bolsa al vacio 10*15. Sellar con 7 de vacio.",
+    "Colocar el queque en la caja y cerrarla, luego poner en la bolsa termoencongible y sellar con calor",
+    "Etiquetar las cajas con fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 29400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 90,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 42,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

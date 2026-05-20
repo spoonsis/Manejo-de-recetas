@@ -1,0 +1,54 @@
+{
+  "nombre": "RELLENO DE MARACUYA CHILENA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MARACUYA",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10753",
+      "marca": "INPACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todo en la marmita, y darle coccion hasta que tome punto",
+    "Sacar y colocar en bandejas para enfriar.",
+    "Hacer choque termico. Tapado"
+  ],
+  "pesoTotalCantidad": 5250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 5250,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1756,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

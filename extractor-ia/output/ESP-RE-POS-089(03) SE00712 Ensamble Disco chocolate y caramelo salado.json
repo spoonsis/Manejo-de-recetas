@@ -1,0 +1,82 @@
+{
+  "nombre": "SE00712 Ensamble Disco chocolate y caramelo salado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 360g",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Tres Leches Con Crema De Dulce Leche",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00307",
+      "marca": "FAS",
+      "observaciones": "100 por capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE CARAMELO SALADO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00710",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE LECHE Y SAL",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00713",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Se corta el rosquete a la mitad, se coloca en un molde de aluminio desmoldable (molde pie de limon) y se moja con 100g de la mezcla de leches en cada tapa.",
+    "Se coloca en la base del rosquete la primer capa de mousse de chocolate, usando manga, se debe hacer aros en los bordes, dejando el centro libre libre, luego al centro la salsa de caramelo salado y el chocolate con caramelo. Cuidando que la salsa de caramelo quede dentro del hueco del centro para evitar que se salga.",
+    "Se tapa con la otra parte del mousse de chocolate, usando la manga",
+    "Por ultimo se tapa con la otra mitad del rosquete y se dejar enfiar por al menos 6 horas."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,77 @@
+{
+  "nombre": "Masa hojaldre 95001(SE00129)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PRE MEZCLA PASTA HOJALDRE",
+      "cantidad": 30344,
+      "unidad": "g",
+      "codigoNetSuite": "SE00131",
+      "marca": "FAS",
+      "observaciones": "(Incluye margarina para empaste 3000g  (Son 4 bolsas)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 6000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HIELO EN CUBITOS",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA HARISOL WINTER (25k)",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA PREIMP. 2 5/8 * 1 15/16",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Masa virgen",
+    "Batidora H600: Agregar en un bowl de batidroa la Premezcla (sin la mantequilla), el agua y el hielo. Batir en velocidad 1 por 7 min, luego en velocidad 2 por 30 min, hastas desarrollo del gluten.",
+    "Batidora China: Agregar en un bowl de batidroa la Premezcla (sin la mantequilla), el agua y el hielo. Batir en velocidad 1 por 5 min, luego en velocidad 2 por 22 min, hastas desarrollo del gluten.",
+    "Una vez que la masa esta desarrollada, cortarla en 4 pedazos de 7300 g cada uno. Colocar en 4 bandejas enharinadas cada pedazo de pasta. Refrigerar tapada, en el caso de no usarse de inmediato.",
+    "Estirar cada pedazo (1/4 de 7300g) de masa virgen y colocar 3000g de margarina a cada uno, la margarina debe quedar totalmente estirada a lo ancho de todo el pedazo de pasta y uniforma. Doblar por la mitad.",
+    "Dar una primera vuelta doble en la laminadora. llevar a reposar en refrigeración por 2 horas.",
+    "Despues de reposada la masa laminar y dar 3 vueltas dobles en la laminadora. Estirar con harina para evitar que se pegue. Y reposar 2 horas como minimo para uso inmediato.",
+    "Rotular con sticker de fecha y cubrir con un manto de tela. Mantener en refrigeración, utilizar el mismo dia o al dia siguiente, la lata debe anhairnarse."
+  ],
+  "pesoTotalCantidad": 40800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 55,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "Pastas",
+  "pesoPorcionCantidad": 10200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 544,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

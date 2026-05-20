@@ -1,0 +1,64 @@
+{
+  "nombre": "Crema Amarilla Plancha 905000065 (SE00100)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW (UND)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": "Master Pack",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL LEMON YELLOW (UND)",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10156",
+      "marca": "Master Pack",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "",
+      "codigoNetSuite": "EM10005",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Sacar la crema blanca Bucca de la camara (temperatura maxima 18° ya batida).",
+    "Agregar los colorantes, mezclar a mano, hasta que este completamente homogeneo.",
+    "Colocar plastico para tapar y etiquetar.",
+    "Volver a guardar en la camara hasta su uso."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

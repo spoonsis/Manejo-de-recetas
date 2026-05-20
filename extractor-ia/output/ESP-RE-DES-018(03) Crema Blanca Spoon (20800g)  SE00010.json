@@ -1,0 +1,74 @@
+{
+  "nombre": "Crema Blanca Spoon (20800g) SE00010",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BETTERCREME SUPREMO (UND:4 K)",
+      "cantidad": 12800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10047",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND (UND:4 K)",
+      "cantidad": 3200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "AYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 33,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abrir los galones de crema y verter dentro de la top cream. (Temperatura 5° liquida )",
+    "Disolver el preservante en el agua. Agregar a la top cream.",
+    "Batir por 17 minutos. Una ves lista (Temperatura 18° batida) Colocar en una tina plastica, tapar.",
+    "Etiquetar con nombre y fecha de vencimiento.",
+    "Mantener en refrigeración hasta su uso."
+  ],
+  "pesoTotalCantidad": 16597,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 17,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 16597,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 215,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

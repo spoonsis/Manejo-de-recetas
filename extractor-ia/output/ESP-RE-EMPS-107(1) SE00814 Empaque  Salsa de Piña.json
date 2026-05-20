@@ -1,0 +1,119 @@
+{
+  "nombre": "Cake Box Piña Colada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.4,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "416g (26g x ud)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "15g x rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno Piña y Coco",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "100g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Passionata de Coco",
+      "cantidad": 640,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "40g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Coco Tostado con Chocolate Blanco",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "15g x capa (1 capa)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Coco Tostado",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "1 g x capa",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Topping Piña y Coco",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "20g x capa",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete arrollado en 20 porciones, (4 cuadros de manera vertical y 15 cuadros de manera horizontal) quitandole excesos de los laterales.",
+    "En cada empaque colocar un cuadrado de rosquete, humedecer con el almibar, colocar el relleno Piña con Coco, despues la crema passionata de coco y el coco tostado con chocolate blanco.",
+    "Colocar otro rosquete, humedecer con el almibar, agregar relleno de piña con coco y la crema passionata de coco y por ultimo la crema passionato de coco.",
+    "Decorar (de manera inclinada) con el Topiing de Piña y coco y por ultimo colocar el coco tostado",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 2680,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 335,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 504,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

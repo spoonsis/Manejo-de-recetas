@@ -1,0 +1,34 @@
+{
+  "nombre": "SE00676 Batido Stroussel chiverre",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "BATIDOS",
+  "areaEmpaca": "BATIDOS",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA STROUSSEL CHIVERRE",
+      "cantidad": 275,
+      "unidad": "g",
+      "codigoNetSuite": "SE00675",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en la batidora con paleta y mezclar hasta incorporar."
+  ],
+  "pesoTotalCantidad": 275,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 275,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

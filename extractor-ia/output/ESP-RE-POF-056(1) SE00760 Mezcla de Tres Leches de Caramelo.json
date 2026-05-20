@@ -1,0 +1,118 @@
+{
+  "nombre": "Tres Leche de Caramelo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE 3 LECHES BUCCA 250G",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "SE00295",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla de Tres Leche con Caramelo",
+      "cantidad": 630,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chocolate Blanco Rallado",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00033",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": "Hilos (Calentar un poco)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplast",
+      "observaciones": "Lote",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ CIRCULO BUCCA DULCE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10111",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Bañar el rosquete con la mezcla de Tres Leches de caramelo y majar para que absorba.",
+    "Encremar con la crema blanca y realizar lineaas con el manjar de esquina a esquina y marmolear.",
+    "Colocar el chocolate blanco rallado por todos los bordes.",
+    "Colocar la tapa, cerrar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1014,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1014,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 6,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

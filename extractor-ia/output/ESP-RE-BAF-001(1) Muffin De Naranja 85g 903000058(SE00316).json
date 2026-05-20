@@ -1,0 +1,90 @@
+{
+  "nombre": "Muffin De Naranja 85g 903000058(SE00316)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO VAINILLA EASY SP",
+      "cantidad": 46500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00434",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MERMELADA NARANJA UJARRAS (UND: 4.5 K)",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "MP10252",
+      "marca": "UJARRAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SABORIZANTE NARANJA A-0191 KILO",
+      "cantidad": 48,
+      "unidad": "g",
+      "codigoNetSuite": "MP10344",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAPSULA # 10 BLANCA (PAQ:500 UND)",
+      "cantidad": 550,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10067",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 14,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 14,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 14,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar el batido ya listo con el saborizante y la mermelada de naranja.",
+    "Colocar la mezcla en las capsulas, hornear en el Marshall a 170°C por 35 minutos.",
+    "Una vez frios desmoldar 40 por lata cubrir con bolsa, etiquetar con fecha de producción."
+  ],
+  "pesoTotalCantidad": 46778,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 550,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 85,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 90,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

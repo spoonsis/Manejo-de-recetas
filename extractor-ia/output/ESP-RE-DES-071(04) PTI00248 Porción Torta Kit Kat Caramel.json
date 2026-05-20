@@ -1,0 +1,138 @@
+{
+  "nombre": "Porción Torta Kit Kat Caramel",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO MANJAR Y MOUSSE",
+      "cantidad": 810,
+      "unidad": "g",
+      "codigoNetSuite": "SE00714",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "5 g x unidad (PARA PEGAR)",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "SALSA KIT KAT UNTABLE ESPESA",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "SE00716",
+      "marca": "FAS",
+      "observaciones": "12g x unidad",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "MANJAR CON SABOR DE CARAMELO",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "SE00715",
+      "marca": "FAS",
+      "observaciones": "4g x unidad (HILOS)",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "KITKAT CARAMEL",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10757",
+      "marca": "NESTLE",
+      "observaciones": "6 cuadritos (1 1/2 barra)",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANG ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Porción Torta Kit Kat Caramel",
+      "cantidad": null,
+      "unidad": null,
+      "codigoNetSuite": "EM10446",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Desmoldar el disco de manjar y mousse, con una espatula y agua caliente alisar los bordes.",
+    "Tapizar la superficie con la crema baige, porcionar en 6 unidades.",
+    "Colocar la salsa de kit kat untable espesa en toda la superficie (se puede ayudar con una bolsa).",
+    "Hacer hilos cruzados con el manjar con sabor de caramelo.",
+    "Colocar en la burbuja triangular el manjar para pegar y colocar la porción",
+    "Tapar cada unidad y etiquetar."
+  ],
+  "pesoTotalCantidad": 920,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 153,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 141,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

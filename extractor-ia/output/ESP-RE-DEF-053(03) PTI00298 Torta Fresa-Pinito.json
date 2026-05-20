@@ -1,0 +1,184 @@
+{
+  "nombre": "PTI00298 Torta Fresa-Pinito",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 430,
+      "unidad": "g",
+      "codigoNetSuite": "SE00454",
+      "marca": "FAS",
+      "observaciones": "1,5 de rosquete ",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES Y KOLITA (LITRO)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00250",
+      "marca": "FAS",
+      "observaciones": "50g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno Cajeta",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00830",
+      "marca": "FAS",
+      "observaciones": "85g x capa, 1/3 Taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno Crema-Pinito",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00831",
+      "marca": "FAS",
+      "observaciones": "40g x capa, 1/2 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FRESA NATURAL",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": "75g x capa, 1/4 Taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Chantilly Roja Claro",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00832",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 6CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Sirope Rojo Bucca",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "SE00633",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "1/8 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "LECHE POLVO PINITO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10940",
+      "marca": "PINITO",
+      "observaciones": "1/4 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Quequera Red  Base/Domo 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "Export pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Orla # 10 Bucca",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10084",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta especial Mamá 2026",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10523",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar los rosquete y humedecer con la mezcla de tres leches y kolita.",
+    "Colocar la primera mitad de rosquere humedecido, agrega el relleno de cajeta, el relleno de fresa y la crema-pinito.",
+    "Colocar otra mitad de rosquere humedecido, agregar el relleno de cajeta, el relleno de fresa y la crema-pinito.",
+    "Tapar con la ultima mitad de rosquete humedecido y encremar con crema beige.",
+    "Realizar marmoleo con el sirope rojo y pasar peine.",
+    "En la superficie colocar el ganache blanco y encima colocar la leche en polvo.",
+    "Realizar un colocho en todo el alredecor con la boquilla 6CS en forma de roseta."
+  ],
+  "pesoTotalCantidad": 1100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 159,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,164 @@
+{
+  "nombre": "Salsa Roja 31750g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE DE OLIVA",
+      "cantidad": 340,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "COTO OLIVA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA TOMATE",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": "REDPACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA PLANTA",
+      "cantidad": 9500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PEREJIL DESINFECTADO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10296",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA",
+      "cantidad": 590,
+      "unidad": "g",
+      "codigoNetSuite": "MP10031",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "DOÑA MARIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "TONES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA SA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMATE LICUADO LATA",
+      "cantidad": 16400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10375",
+      "marca": "DIVELA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "PRIMA SA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HOJAS DE LAUREL",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10209",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Calentar el aceite, agregar ajo, cebolla por aproximadamente 10 minutos, deben dorarse ligeramente.",
+    "Agregar la pasta de tomate, el azúcar y cocer por 3 minutos.",
+    "Agregar los tomates, el agua, el laurel, perejil, oregano, pimienta y sal.",
+    "Cocinar por aproximadamente 25 minutos, hasta que la salsa hierva.",
+    "Agregar el almidor modificado y dejar cocinar hasta que la salsa espese. Por 10 minutos aproximadamente"
+  ],
+  "pesoTotalCantidad": 31750,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 31750,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 2118,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

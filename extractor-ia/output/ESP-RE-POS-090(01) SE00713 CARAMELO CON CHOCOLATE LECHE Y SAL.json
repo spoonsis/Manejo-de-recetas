@@ -1,0 +1,164 @@
+{
+  "nombre": "Torta Kit Kat Caramel",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO CHOCOLATE Y CARAMELO SALADO",
+      "cantidad": 1160,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Fas",
+      "observaciones": "1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "Fas",
+      "observaciones": "Encremado",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": "MARMOLEADO",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Crema Bettercream Doble Chocolate",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICH",
+      "observaciones": "MARMOLEADO",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "SALSA KITKAT",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE LECHE Y SAL",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Fas",
+      "observaciones": "1/4 TAZA",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "KITKAT CARAMEL",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "NESTLE",
+      "observaciones": "1 UNIDAD; 4 CUADROS",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "boquilla redonda",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL TEMPORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Se monta la torta, se encrema con la crema beidge y se marmolea con el sirope de dulce de leche, haciendo lineas hacia arriba.",
+    "Hacer con el lustre una corona dejando el centro hueco, para colocar la salsa de kitkat",
+    "Luego al borde colocar el caramelo con chocolate salado.",
+    "Colocar los kitkat partidos en cuadros ( 4 cuadros) en un borde.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

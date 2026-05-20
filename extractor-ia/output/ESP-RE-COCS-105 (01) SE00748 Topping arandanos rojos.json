@@ -1,0 +1,81 @@
+{
+  "nombre": "SE00748 Topping arandanos rojos",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Arandanos Congelados Rojos",
+      "cantidad": 5700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10688",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 2900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1450,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 430,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla los arandanos rojos junto con el azucar y el primer agua.",
+    "Cuando llega a hervor espesar con el almidon disuelto en agua.",
+    "Pasar a enfriamiento"
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 625,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

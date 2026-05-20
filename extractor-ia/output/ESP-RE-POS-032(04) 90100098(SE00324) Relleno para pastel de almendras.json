@@ -1,0 +1,136 @@
+{
+  "nombre": "Relleno para pastel de almendras",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1630,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR MORENO",
+      "cantidad": 1630,
+      "unidad": "g",
+      "codigoNetSuite": "MP10076",
+      "marca": "ZUCRA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR REFINADA",
+      "cantidad": 1910,
+      "unidad": "g",
+      "codigoNetSuite": "SE00226",
+      "marca": "VICTORIA",
+      "observaciones": "BOLSA:1500g",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "SOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SIROPE KARO DARK",
+      "cantidad": 1910,
+      "unidad": "g",
+      "codigoNetSuite": "MP10573",
+      "marca": "KARO",
+      "observaciones": "UND: 3.78 K",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 1310,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "DEBEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 415,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMENDRA FILETEADA",
+      "cantidad": 815,
+      "unidad": "g",
+      "codigoNetSuite": "MP10066",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": "CAJA: 11,34KG",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA YEMITA",
+      "cantidad": 550,
+      "unidad": "g",
+      "codigoNetSuite": "MP10555",
+      "marca": "POZUELO",
+      "observaciones": "KILO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CORTE LÁMINAS MIL HOJAS",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00210",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 13/16 * 1 7/8",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Procesar la galleta pozuelo con la sal, almidon, preservante y azucares en la batidora hasta molerla en trozos pequeños",
+    "Derretir la lactocrema a fuego medio hasta llevarla a 65ºC-75ºC , es importante no dejarla llegar a hervor",
+    "Luego a la mezcla de galleta agregar el sirope, huevo y mezclar, ir agregando la lactocrema derretida de a pocos hasta incorporar todo",
+    "Repartir el relleno en dos bandejas con cantidaes iguales. Dividir la almendra entre las bandejas (en cantidades iguales). Y agregarle la almendra laminada encima. Tapar la bandeja y rotular."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 13,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tortas",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 210,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

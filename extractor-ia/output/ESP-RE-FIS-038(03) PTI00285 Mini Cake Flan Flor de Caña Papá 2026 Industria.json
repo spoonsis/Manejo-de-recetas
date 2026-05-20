@@ -1,0 +1,184 @@
+{
+  "nombre": "Mini Cake Flan Flor de Caña Papá 2026 Industria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 70g",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00795",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR FLOR DE CAÑA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00788",
+      "marca": "FAS",
+      "observaciones": "15g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FLAN SPOON PLANCHA",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00796",
+      "marca": "FAS",
+      "observaciones": "1/50 ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO SEMILLAS BAÑADAS BELCOLADE",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00827",
+      "marca": "FAS",
+      "observaciones": "1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA RON",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00784",
+      "marca": "FAS",
+      "observaciones": "1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Boquilla 2B",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO SEMILLAS BAÑADAS BELCOLADE",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00827",
+      "marca": "FAS",
+      "observaciones": "2 cucharadas",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "C",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA DE TEMPORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "Nuevo",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortale la panza al rosquete y cortar por la mitad",
+    "Desmoldar la plan de flan, cortar en 4cm x 4cm",
+    "Pegar con manjar a la base la mitad del rsoquete, humedecer con el almibar flor de caña, colocar el caramelo, la crema de ron, el trozo de flan y las nueces.",
+    "Tapar con la otra mitad de rosquete humedecido",
+    "En una manga colocar sirope de dulce de leche y colocar la crema beige y encremar y cubir la parte superior.",
+    "Con ayuda de una bolsa y la crema de dulce de leche hacer estil circulos en la parte superior, colocar las nueces en el centro.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

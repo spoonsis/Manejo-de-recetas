@@ -1,0 +1,208 @@
+{
+  "nombre": "ENSAMBLE TRIFFLE DE LIMON Y FRESA INDUSTRIA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Arrollado 80gr",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00652",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Relleno Fresa Natural",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "SE00503",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Empaque Relleno Lemon Court",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Caramelo Bañado en Chocolate Blanco",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "1/3 de taza",
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Rosquete Arrollado 80gr",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00652",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Relleno Fresa Natural",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "SE00503",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Empaque Relleno Lemon Court",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Boquilla# 804 Colocho",
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Relleno Fresa Natural",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00503",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Brillo Glit",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10089",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Rodajas de Limon deshidratadas",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "BOWL TRANSPARENTE DARNEL C/ TAPA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": "DARNEL",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL POSTRE DIA DEL PADRE SPOON",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "En el empaque, colocar la primera capa del rosquete, se moja con el almibar, se le coloca el relleno de fresa natural, se pone la crema pasionata, despues el relleno de lemon court, todos los rellenos expandiendolos bien hasta el borde para que se noten todas las capas y por ultimo el caramelo bañado en chocolate blanco.",
+    "En la segunda capa, se coloca el otro rosquete, se moja con el almibar, se le coloca el relleno de fresa natural, se pone la crema pasionata, y por ultimo el relleno de lemon court dejandolo bien liso, expandiendo nuevamente todos los rellenos hasta el borde para que se noten todas sus capas.",
+    "Se hacen los colochos con la boquilla #804 en todo el borde, en el centro colocamos la fresa natural y encima el brillo, colocamos a un lado las tres rodajas de limon deshidrataso.",
+    "Tapamos y etiquetamos."
+  ],
+  "pesoTotalCantidad": 1250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "pesoPorcionCantidad": 1250,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

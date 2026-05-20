@@ -1,0 +1,144 @@
+{
+  "nombre": "SE00341 Premezcla Batido Nucleo Chocolate Dawn",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (SACO:50 K)",
+      "cantidad": 10028,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA SILVER CAKE",
+      "cantidad": 3800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "FAHACASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA VERDE",
+      "cantidad": 2012,
+      "unidad": "g",
+      "codigoNetSuite": "MP10479",
+      "marca": "FAHACASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (PAQ:2.5 K)",
+      "cantidad": 134,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "FLEISHMAN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCOA DUTCH PROCESS",
+      "cantidad": 573,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "DUTCH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GOMA XANTANA",
+      "cantidad": 92,
+      "unidad": "g",
+      "codigoNetSuite": "MP10203",
+      "marca": "MABAKER & CHEF",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCENTRADO CHOCOLATE DAWN",
+      "cantidad": 5278,
+      "unidad": "g",
+      "codigoNetSuite": "MP10482",
+      "marca": "DAWN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACTI EGG",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10517",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSPARENTE KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En una bolsa 17x25 empacar el azucar. Etiquetar",
+    "En una bolsa 17x25 empacar las harinas, concentrado, la cocoa y la goma. Etiquetar",
+    "En una bolsa 8*12 pesar el polvo de hornear y el preservante. Colcoarla dentro de la bolsa de harinas."
+  ],
+  "pesoTotalCantidad": 21997,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 21997,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

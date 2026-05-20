@@ -1,0 +1,71 @@
+{
+  "nombre": "SE00736 ROSQUETE CHOCOLATE DAWN 530g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO CHOCOLATE DAWN",
+      "cantidad": 39000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00342",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1095,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 530g de mezcla en moldes engrasados. Hornear en Dicte 1 o 2 a 185°C por 58 min",
+    "Enfriar y colocar en latas limpias, 12 unidades por lata, envolver en bolsa plastica y etiquetar con fecha de producción."
+  ],
+  "pesoTotalCantidad": 38690,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 73,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 530,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 310,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

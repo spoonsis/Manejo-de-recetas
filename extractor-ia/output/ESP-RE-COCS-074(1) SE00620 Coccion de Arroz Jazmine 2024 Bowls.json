@@ -1,0 +1,72 @@
+{
+  "nombre": "Coccion de Arroz Jazmine 2024 Bowls",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ARROZ JAZMINE",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10711",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA PLANTA",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar el Aceite , la sal, el agua, preservante y el arroz jazmine en bandejas Chef & Dish (maxima 3 tandas por bandeja)",
+    "Cocinar en Rational. Programacion \"Arroz Jazmine\".",
+    "Retirar del horno , Colocar en bandejas y darle choque termico."
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 337,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

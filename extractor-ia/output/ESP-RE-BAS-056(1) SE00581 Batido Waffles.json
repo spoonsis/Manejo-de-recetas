@@ -1,0 +1,80 @@
+{
+  "nombre": "SE00581 Batido Waffles",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA WAFLES MAIZENA",
+      "cantidad": 4700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10681",
+      "marca": "MAIZENA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 4500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 395,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 790,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 11,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar todos los ingredientes hasta incorporar.",
+    "Se puede utilizar la batidora con globo a velocidad baja."
+  ],
+  "pesoTotalCantidad": 11000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 11000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 396,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

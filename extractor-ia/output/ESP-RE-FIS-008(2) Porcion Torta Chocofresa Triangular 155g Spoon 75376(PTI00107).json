@@ -1,0 +1,200 @@
+{
+  "nombre": "Porcion Torta Chocofresa Triangular 155g Spoon 75376(PTI00107)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "Para pegar",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 400g",
+      "cantidad": 335,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FUDGE KILO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "CONEXU",
+      "observaciones": "1/3 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQ RELLENO DE FRESA NATURAL",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "SUSPIRO QUEBRADO 7650 g",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00019",
+      "marca": "FAS",
+      "observaciones": "1/2 Taza",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "RELLENO FUDGE KILO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "CONEXU",
+      "observaciones": "1/2 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "EMPAQ RELLENO DE FRESA NATURAL",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO (SPOON-IND)(24875g",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA DE CHOCOLATE LIQUIDA P/MARMOLEAR",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00049",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE TRIAN OLEA PEQ (CAJA:250 UND)",
+      "cantidad": 9,
+      "unidad": "g",
+      "codigoNetSuite": "MP10130",
+      "marca": "CHOCOLATE SOLUTIONS",
+      "observaciones": "6 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete en 3 partes iguales, rellenar la primera capa con fudge, relleno chocofresa, relleno de fresa y suspiro. Tapar con una capa de rosquete.",
+    "Rellenar la segunda capa con fudge y relleno de chocofresa y relleno de fresa. Tapar con la tercer capa de rosquete.",
+    "Decorar arriba con crema de chocolate, teñir con crema líquida de chocolate. Cortar las 6 porciones y decorar cada una con 1 triangulo marmoleado.",
+    "Colocar en manjar en la base del empaque y acomodar la porción.",
+    "Colocar en el empaque manjar,colocar la porción, cerrar, asegurarlo con sello de seguridad,etiquetar con nombre, fecha de vencimiento y la cuchara Spoon."
+  ],
+  "pesoTotalCantidad": 966,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 166,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 118,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

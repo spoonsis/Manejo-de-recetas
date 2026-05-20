@@ -1,0 +1,81 @@
+{
+  "nombre": "Base Galleta Cheesecake SE00041",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 15,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GALLETA SODA MOLIDA (PAQ:1 KILO)",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10523",
+      "marca": "POZUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALLETA YEMITA (KILO)",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10555",
+      "marca": "POZUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Corte Galleta Chilena Grande",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00204",
+      "marca": "FAS",
+      "observaciones": "RECORTE DE CHILENA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR GLASS MOLIDA (PAQ: 4 K)",
+      "cantidad": 1400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10041",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema. No hervir.",
+    "Mezclar todos los ingredientes en un bowl con el azucar en polvo.",
+    "Mezclar la galletas procesada con el azucar y la lactocrema, en batidora con paleta, hasta homogeneo."
+  ],
+  "pesoTotalCantidad": 9000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 9000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 410,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

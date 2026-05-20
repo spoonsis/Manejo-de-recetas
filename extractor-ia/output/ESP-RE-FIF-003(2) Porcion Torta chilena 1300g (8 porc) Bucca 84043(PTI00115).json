@@ -1,0 +1,123 @@
+{
+  "nombre": "Porcion Torta chilena 1300g (8 porc) Bucca 84043(PTI00115)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE GALLETA CHILENA GRANDE",
+      "cantidad": 520,
+      "unidad": "g",
+      "codigoNetSuite": "SE00204",
+      "marca": "FAS",
+      "observaciones": "4 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA (6 KG )",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "200 x CAPA  3/4 de taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA LIMON BUCCA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00277",
+      "marca": "FAS",
+      "observaciones": "2 tazas",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "680 PARA BASE",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar con Agua",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00533",
+      "marca": "NESTLE",
+      "observaciones": "PARA DECORACION",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA CHILENA BUCCA PORCION",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10387",
+      "marca": "ETIQUETAS MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8X12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la primer galleta de chilena en el plato de aluminio",
+    "Distribuir 200g de manjar con una manga en toda la galleta, repetir esta operacion alternando galletas y manjar (terminar con galleta)",
+    "Distribuir 100g de merengue de limon Bucca y dibujar una espiral con la espatula partiendo del centro hacia el exterior",
+    "Llevar al chiller por 4 horas antes de porcionar.",
+    "Porcionar la torta chilena fria en 8piezas.",
+    "Colocar en la base externa de los empaque triangulares etiqueta con ingredientes y fecha de vencimiento, en el lado interno  5g de hilos de manjar.",
+    "Colocar cada porcion de chilena.",
+    "Dibujar hilos delgados con manjar",
+    "Tapar y colocar en la parte superior etiqueta bucca y a los lados sellos de seguridad"
+  ],
+  "pesoTotalCantidad": 1280,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 160,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

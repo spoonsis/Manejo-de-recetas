@@ -1,0 +1,72 @@
+{
+  "nombre": "ROSQUETE CHOCOLATE DAWN 300g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier tong, Chef",
+  "areaProduce": "Pastelería",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO CHOCOLATE DAWN",
+      "cantidad": 39000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00342",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 9,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 9,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 2085,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 9,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 300g de mezcla en los moldes previamente engrasados.",
+    "Hornear en el Horno Dicte 1 a 150°C por 50 minutos",
+    "Enfriar y empacar 16 unidades por lata, cubrir con bolsa y etiquetar con fecha de produccion."
+  ],
+  "pesoTotalCantidad": 38400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 140,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 128,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 600,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

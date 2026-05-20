@@ -1,0 +1,73 @@
+{
+  "nombre": "90100303 (SE00559) Cocción Pollo Achotado Tamal de Pollo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COCCION POLLO RECORTE",
+      "cantidad": 6600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": "LOS PATITOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Pasar el pollo recorte una vez cocinado por la máquina mechadora, deben quedar trozos grandes NO MUY MOLIDO",
+    "Colocar en una olla el aceite junto con el achiote, mezclar hasta derretir",
+    "Agregar el caldo de pollo junto con los trozos de pollo y mezclar de forma envolvente",
+    "Colocar en bandejas, cubrir, etiquetar y pasar a empaque para choque térmico"
+  ],
+  "pesoTotalCantidad": 7000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 7000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1025,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

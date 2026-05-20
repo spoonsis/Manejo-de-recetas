@@ -1,0 +1,45 @@
+{
+  "nombre": "SE00652 Rosquete de Arrollado de 80 g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO ARROLLADO SPOON 80G",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00452",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En Molde Mini Colocar Papel de Horneo y engrasar y agregar 80 gramos de la mezcla de Batido de Arrollado Spoon",
+    "Hornear por un lapso de ?? a un tiempo de ?? En Horno ??",
+    "Desmoldar y dejar enfriar"
+  ],
+  "pesoTotalCantidad": 80,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 80,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,84 @@
+{
+  "nombre": "Crema Chocolate Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA PRESTIGE GRAND (UND:4 K)",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BETTERCREME SUPREMO (UND:4 K)",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10047",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCO (UND:4 K)",
+      "cantidad": 16000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abrir los galones de crema y verter dentro de la maquina.",
+    "Dosilver el preservante en el agua",
+    "Agregar el agua debidamente pesada.",
+    "Batir por 22 minutos. Mantener en refigeración 5°C líquida",
+    "Guardar en tuppers sanitizados con tapa y etiquetados y guardar en camara hasta su uso. (18° temperatura maxima ya batida)",
+    "En caso de sobrantes guardar, etiquetar, no más de 24 horas."
+  ],
+  "pesoTotalCantidad": 23875,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 22,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Top Cream",
+  "pesoPorcionCantidad": 23875,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 240,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

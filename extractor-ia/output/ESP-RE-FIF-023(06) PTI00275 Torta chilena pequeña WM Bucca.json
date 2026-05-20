@@ -1,0 +1,154 @@
+{
+  "nombre": "PTI00275 Torta chilena pequeña WM Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "06",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Corte Galleta Chilena Grande 120g FAS 19.5cms",
+      "cantidad": 480,
+      "unidad": "g",
+      "codigoNetSuite": "SE00763",
+      "marca": "FAS",
+      "observaciones": "4 galletas",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "CIABATTA",
+      "observaciones": "120g c/capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BLANCA SUPREMO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00670",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BLANCA SUPREMO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00670",
+      "marca": "FAS",
+      "observaciones": "4ft",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Virutas de chocolate azul",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10925",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Mostacho grande de chocolate",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10756",
+      "marca": null,
+      "observaciones": "1 unidad",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "Para pegar",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 1,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10326",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA DOMO 10 BAJO",
+      "cantidad": 1,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10456",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Orla # 10 Bucca",
+      "cantidad": 1,
+      "unidad": null,
+      "codigoNetSuite": "EM10084",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Torta Chilena Bucca",
+      "cantidad": 1,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10369",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": "lote",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": "vencimiento",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la primer galleta de chilena en el plato de aluminio",
+    "Distribuir 120g de manjar en toda la galleta, repetir esta operacion alternando galletas y manjar (terminar con galleta)",
+    "Encremar con la chantilly blanca, colocar ganache y realizar un estilo espiral, hacer colocho en el borde con la boquilla 4ft y al centro colocar los trocitos de chocolate y el mostacho como muestra la imagen.",
+    "Tapar y etiquetar con nombre, vencimiento y juliano"
+  ],
+  "pesoTotalCantidad": 615,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 615,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

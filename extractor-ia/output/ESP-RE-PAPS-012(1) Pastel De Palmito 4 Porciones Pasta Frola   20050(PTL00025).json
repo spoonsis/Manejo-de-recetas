@@ -1,0 +1,100 @@
+{
+  "nombre": "Pastel De Palmito 4 Porciones Pasta Frola  20050(PTL00025)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA FROLA (KILO)",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO PALMITO P/PASTEL (KILO)",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00130",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA=2 Kg)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BANDEJA  ALUMINIO A-42 (4PORC) ( 500 UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10030",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTE.ALUMI A-42 (4 POR) (CAJA:500)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10097",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Rondo doge: Laminar la pasta a 1,3 mm de grosor forrando la base del molde engrasado rellenar con 450 g de relleno.",
+    "Cubrir con 5 tiras a un lado y hacia el otro lado 5 tiras en diagonal, pintar con yemas.",
+    "Hornear en el Dicte 1 o Dicte 2 a una temperatura de 180°c por un tiempo de 50 minutos. (usar el mismo dia o al dia siguiente).",
+    "Enfriar. Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 800,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 40,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

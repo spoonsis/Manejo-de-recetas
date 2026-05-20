@@ -1,0 +1,62 @@
+{
+  "nombre": "EMPAQUE PAPA PARA TAMALES 6900 g 901000189 (SE00563)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COCCIÓN PAPA PARA TAMALES 6900 g",
+      "cantidad": 6900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00551",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Empacar en bolsa 17x25, hacer nudo y etiquetar con nombre y fecha",
+    "Mantener en refrigeración hasta que se vaya a utilizar"
+  ],
+  "pesoTotalCantidad": 6900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 6900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

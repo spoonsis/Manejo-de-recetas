@@ -1,0 +1,117 @@
+{
+  "nombre": "Cuatro Leches Chocolate 1 Unid (215g) Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA P/CUATRO LECHES CHOCOLATE (KILO)",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "SE00313",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON (17000g)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00315",
+      "marca": "FAS",
+      "observaciones": "Boquilla #852",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO DE CHOCOLATE RALLADO OSCURO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "VASO 9oz SUNDA TS9 PAQ:50(CAJA:1000 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10105",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA VASO 9oz P/SUN PAQ:50 (CAJA:2000UN)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10181",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA CUATRO LECHES CHOCOLATE BUCCA PORCION",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10383",
+      "marca": "ETIQUETAS MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Sello Seguridad",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el vaso la mezcla de cuatro leches chocolate",
+    "Con la ayuda de una manga colocar un colocho redondo de crema chantilly chocolate Bucca,decorar encima con trocitos de cobertura choco",
+    "Etiquetar con fecha de vencimiento, nombre del producto, sellos de seguridad de cada lado y encima de uno de ellos colocar etiqueta Bucca, Lote, Etiqueta con nombre y codigo de barras."
+  ],
+  "pesoTotalCantidad": 215,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 215,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

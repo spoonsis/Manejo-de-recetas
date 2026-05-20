@@ -1,0 +1,46 @@
+{
+  "nombre": "Corte Galleta Alfajor Mediano 15g 906000012(SE00303)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA ALFAJOR Y CHILENA BUCCA KILO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00460",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Estirar la masa con ayuda de la maquina hasta 5 mm de espesor",
+    "Cortar con ayuda de un cortador redondo (6 cm diametro) (15 gramos c/u)",
+    "Colocar sobre una bandeja con harina",
+    "Hornear por 25 min en el Dicte 1 a 175 ºC, o en el Curitiba a 125°C por 25 min"
+  ],
+  "pesoTotalCantidad": 150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 15,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

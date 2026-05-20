@@ -1,0 +1,118 @@
+{
+  "nombre": "Porción Torta de Whisky y Dulce de Leche",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "DISCO TORTA QUESO Y dulce de leche",
+      "cantidad": 774,
+      "unidad": "g",
+      "codigoNetSuite": "SE00696",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Empaque salsa de Whisky Red Label",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00686",
+      "marca": "FAS",
+      "observaciones": "25g x porción",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Trozos chocolate blanco",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10754",
+      "marca": "Chocolate Soluction",
+      "observaciones": "4g x porción",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": "4g x porción (Para pegar)",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Porcion Torta Whisky Dulce de Leche",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10442",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Desmoldar el disco de queso y manjar, con una espatula y agua caliente alisar los bordes.",
+    "Tapizar la superficie con la crema baige, porcionar en 6 unidades, colocar en la burbuja triangular el manjar y pegar la porción.",
+    "Colocar la salsa de wisky chivas en toda la superficie (se puede ayudar con una bolsa) colocar en el centro 2 trozos pequeños de chocolate blanco.",
+    "Cerrar, colocar etiqueta de seguridad, despues la cinta especial de la porción y por ultimo la etiqueta de ingredientes"
+  ],
+  "pesoTotalCantidad": 923,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "porciones",
+  "pesoPorcionCantidad": 153,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 199,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

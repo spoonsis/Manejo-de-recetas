@@ -1,0 +1,158 @@
+{
+  "nombre": "Empaque crema brocoli y queso",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pasta Ajo",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10019",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Cebolla Picada",
+      "cantidad": 500,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 100,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Floretes de Brocoli Loc",
+      "cantidad": 3900,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10597",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 2750,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10024",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "SALSA QUESO CHEDDAR BLANDO",
+      "cantidad": 1450,
+      "unidad": "Gramos",
+      "codigoNetSuite": "Nuevo",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 13,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Pimienta Blanca Molida",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 120,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100129",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 80,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 120,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100129",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 80,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 120,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100129",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 80,
+      "unidad": "Gramo",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MODI PREPARACION",
+      "cantidad": 1,
+      "unidad": "N/A",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

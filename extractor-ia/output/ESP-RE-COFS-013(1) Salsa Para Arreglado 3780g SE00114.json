@@ -1,0 +1,90 @@
+{
+  "nombre": "Salsa Para Arreglado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SALSA TOMATE",
+      "cantidad": 3020,
+      "unidad": "g",
+      "codigoNetSuite": "MP10356",
+      "marca": "BANQUETE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 415,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA HELLMANNS",
+      "cantidad": 415,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "HELLMANNS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TABASCO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10363",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 100,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA PREIMP. 2 5/8 * 1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mesclar en un balde de acero inoxidable todos los ingredientes con ayuda de un batidor.",
+    "Mezclar por 5 minutos hasta que todo este completamente homogeneo.",
+    "Etiquetar con nombre y fecha de vencimiento. Mantener en refrigeración."
+  ],
+  "pesoTotalCantidad": 3780,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 3780,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 90,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

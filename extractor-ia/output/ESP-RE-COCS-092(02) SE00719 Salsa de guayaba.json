@@ -1,0 +1,98 @@
+{
+  "nombre": "SE00719 Salsa de guayaba",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO GUAYABA TRICOPILIA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10763",
+      "marca": "TRICOPILIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Super Red",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SABORIZANTE GUAYABA MADURA",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10765",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el azucar, primer agua, relleno de guayaba, colorante, saborizante, preservante y llevar a hervor.",
+    "Luego agregar el almidon disuelto en agua y espesar."
+  ],
+  "pesoTotalCantidad": 600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 65,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

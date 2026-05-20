@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Chao Ming (30g)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CHAO MING",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00142",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA (10*20CM) BUCCA PALMERITAS",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10222",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar 30 g de chao ming frio en una bolsa de celofan.",
+    "Sellar con la bolsa. Etiquetar con fecha de vencimiento y nombre de producto."
+  ],
+  "pesoTotalCantidad": 30,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Minuto",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Bolsa",
+  "pesoPorcionCantidad": 30,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

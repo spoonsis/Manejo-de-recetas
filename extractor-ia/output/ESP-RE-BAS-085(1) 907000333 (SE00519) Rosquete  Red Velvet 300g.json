@@ -1,0 +1,72 @@
+{
+  "nombre": "Rosquete Red Velvet 300g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "1",
+  "estado": "PROVISIONAL",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO RED VELVET",
+      "cantidad": 12000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00517",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar 300g de mezcla en los moldes previamente engrasados.",
+    "Hornear en cualquiera de los Dicte a 175°C por 45 a 50 minutos.",
+    "Enfriar y empacar en lata, cubrir con bolsa y etiquetar con fecha de produccion."
+  ],
+  "pesoTotalCantidad": 11700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 16,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 39,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

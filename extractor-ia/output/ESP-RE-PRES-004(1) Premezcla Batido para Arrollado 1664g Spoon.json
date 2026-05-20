@@ -1,0 +1,102 @@
+{
+  "nombre": "Pre Mezcla Arrollado Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA HARISOL WINTER",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": "NACARINA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 680,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "FLEISHMAN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8X12 TRANSPARENTE",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 5X8 TRANSPARENTE",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10010",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar todos los ingredientes por separado.",
+    "En la bosa 8*12 pesar la harina.",
+    "En la bolsa 8*12 pesar el azucar.",
+    "En la bolsa 5*8 pesar el preservante y el la otra el polvo de hornear.",
+    "Colocar todas las bolsas dentro de la bolsa del azucar.",
+    "Etiquetar con fecha de vencimiento y alerjeno"
+  ],
+  "pesoTotalCantidad": 1220,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1220,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 7,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

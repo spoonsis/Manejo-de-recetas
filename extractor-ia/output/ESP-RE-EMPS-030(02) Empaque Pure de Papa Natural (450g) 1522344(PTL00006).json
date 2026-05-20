@@ -1,0 +1,61 @@
+{
+  "nombre": "Empaque Pure de Papa Natural (450g) 1522344(PTL00006)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PURE DE PAPA NATURAL",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00112",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 8X12 Transparente",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10037",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 450g de pure de papa en una bolsa 8x12, etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 450,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "seg.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 450,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

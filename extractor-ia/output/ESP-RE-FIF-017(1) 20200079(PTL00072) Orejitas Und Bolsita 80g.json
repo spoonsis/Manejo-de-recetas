@@ -1,0 +1,82 @@
+{
+  "nombre": "Orejitas Und Bolsita 80g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE OREJITAS DULCES (KILO)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00272",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARTULINA KRAFT 2.5 X 31 -8 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10071",
+      "marca": "CENTINELA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 76X24X210 (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10190",
+      "marca": "CENTINELA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA OREJITAS DE NAVIDAD ROLLO 500",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10422",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Introducir 80g de orejitas dentro de la bolsa, doblar y sellar en la máquina selladora por la naturaleza del producto pueden ir quebraduras",
+    "Sellar con etiqueta de LOGO Y NOMBRE en el frente",
+    "Etiquetar con fecha de vencimiento en un costado; y etiqueta con nombre y descripción de ingredientes en la parte trasera",
+    "Mantener en temp ambiente"
+  ],
+  "pesoTotalCantidad": 80,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 80,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

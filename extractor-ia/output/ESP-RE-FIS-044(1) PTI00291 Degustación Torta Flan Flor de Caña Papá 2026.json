@@ -1,0 +1,172 @@
+{
+  "nombre": "PTI00291 Degustación Torta Flan Flor de Caña Papá 2026",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete vainilla Dawn 400g",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00789",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR FLOR DE CAÑA",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00788",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FLAN SPOON PLANCHA",
+      "cantidad": 216,
+      "unidad": "g",
+      "codigoNetSuite": "SE00787",
+      "marca": "FAS",
+      "observaciones": "12g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "8g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SEMILLAS BAÑADAS BELCOLADE",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00786",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA RON",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00784",
+      "marca": "FAS",
+      "observaciones": "8g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "10g x ud, Colocho Boquilla #22",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 9,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "0,5g x ud",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en cada contenedor trozos de rosquete, agregar el almibar y majar un poquito.",
+    "Colocar con ayuda de una bolsa el caramelo, la crema de ron, trozos de flan y trozos de semillas.",
+    "Realizar el colocho con la crema y hilos con la crema dulce.",
+    "Tapar, guardar 18 contenedores en la caja, sellar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1152,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 64,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 81,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,89 @@
+{
+  "nombre": "SE00579 Aderezo Cesar",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON PLANTA",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA DIJON GRANULADA",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10257",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MAYONESA SPOON PLANTA",
+      "cantidad": 3300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00121",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO PARMESANO RALLADO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ANCHOA FILETEADA TROZOS",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10067",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la licuadora pasta de ajo, jugo limon, mostaza, queso parmesano, preservante y anchoas y mezclar hasta incorporar.",
+    "Luego con batidor mezclar a mano con la mayonesa"
+  ],
+  "pesoTotalCantidad": 4000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 13.33333333,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 230,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,165 @@
+{
+  "nombre": "Relleno Pollo crepa 905000003(SE00238)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 790,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": "(UND:17 L)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 630,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA VERSATIE",
+      "cantidad": 2442,
+      "unidad": "g",
+      "codigoNetSuite": "MP10485",
+      "marca": "RICH",
+      "observaciones": "(UND: L)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA",
+      "cantidad": 1258,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": "(UND)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA BLANCA JULIANA",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10104",
+      "marca": "PRESTO",
+      "observaciones": "(PAQ: KILO)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HONGO FRESCO REBANADO",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10212",
+      "marca": null,
+      "observaciones": "MP10212 HONGO FRESCO REBANADO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA FRENCH",
+      "cantidad": 950,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "FRENCH",
+      "observaciones": "(2.95 L)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA TOMATE BANQUETE",
+      "cantidad": 950,
+      "unidad": "g",
+      "codigoNetSuite": "MP10356",
+      "marca": "BANQUETE",
+      "observaciones": "(PAQ:2 KG)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 950,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCIÓN POLLO RECORTE",
+      "cantidad": 14000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR",
+      "cantidad": 590,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": "(KILO)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": "(PAQ=5 KILO)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En una olla grande, a fuego medio coloque el aceite y la mantequilla.",
+    "Agrege la cebolla cortada en plumas, y los hongos laminados, sal, pimienta, preservante.",
+    "Una vez que la cebolla este dorada agrege la mostaza , la salsa de tomate y la salsa inglesa. Hervir.",
+    "Agrege la harina disuelta en la versatie y leche removiendo constantemente. Hervir.",
+    "Agregar el pollo removiendo hasta que hierva.",
+    "Dejar enfriar y remover bien."
+  ],
+  "pesoTotalCantidad": 27763,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 27763,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1017,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,98 @@
+{
+  "nombre": "Espinaca Salteada 770g 908000008(SE00148)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ESPINACA EN HOJA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10186",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINCHOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO EN PASTA",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "SOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1-Freir la espinaca lavada y desinfectada, en una sarten con lactocrema, cebolla, ajo en pasta, preservante. Saszonar con sal, pimienta",
+    "2, Para lasañas no se empaca se pasa directamente en bandeja enfriadas previamente"
+  ],
+  "pesoTotalCantidad": 770,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 770,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 414,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

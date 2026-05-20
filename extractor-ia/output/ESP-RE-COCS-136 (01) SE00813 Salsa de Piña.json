@@ -1,0 +1,54 @@
+{
+  "nombre": "SE00813 Salsa de Piña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Piña",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10564",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1. En una olla, colocar la la piña con la azucar hasta que la azucar de disuelva.",
+    "3, Dejar enfriar y empacar.",
+    "4, Guardar en cámaras de refrigeración a 4ºC"
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanta",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1604,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

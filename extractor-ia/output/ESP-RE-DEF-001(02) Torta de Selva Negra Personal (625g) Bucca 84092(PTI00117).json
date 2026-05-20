@@ -1,0 +1,184 @@
+{
+  "nombre": "Torta de Selva Negra Personal (625g) Bucca 84092(PTI00117)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE 240 GRS BUCCA",
+      "cantidad": 310,
+      "unidad": "g",
+      "codigoNetSuite": "SE00080",
+      "marca": "FAS",
+      "observaciones": "1,5 ROSQUETE",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR KILO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "2 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA FRESA KILO",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BLANCA C/GALLETA CHOCO (KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00081",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 42,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA #22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CEREZAS CON TALLO (1/2 GALON) **",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MAYCA",
+      "observaciones": "1 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA #8 BUCCA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10086",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA BASE CON DOMO 9 ALTA (CAJA:50 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA SELVA NEGRA PEQUEÑA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10399",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir cada rosquete por la mitad, utilizar 1 1/2 unidad. Bañar la primer y ultima capa con almíbar.",
+    "Sobre la primera tapa colocar manjar.",
+    "En otra tapa adicionar la salsa de fresa y la crema. Tapar. Colocar sobra la orla.",
+    "Encremar la torta y pasar el peine por los costados, hacer colochos con la manga usando la boquilla #22",
+    "Hacer una cuadrícula con 6 líneas en cada lado de ganache oscuro.",
+    "Colocar una cereza en el centro del pastel y distribuir la ralladura de chocolate en la parte interna de los colochos.",
+    "Colocar la torta en su domo. Etiquetar con Nombre, ingredientes, código, etiqueta Bucca, día juliano, fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 650,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 650,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 23,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

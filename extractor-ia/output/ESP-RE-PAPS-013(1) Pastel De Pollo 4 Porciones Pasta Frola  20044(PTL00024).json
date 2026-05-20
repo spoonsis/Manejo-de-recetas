@@ -1,0 +1,99 @@
+{
+  "nombre": "Pastel de pollo 4 porciones",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA FROLA (KILO)",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO POLLO P/PASTEL (KILO)",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "SE00133",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA=2 Kg)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BANDEJA ALUMINIO A-42 (4PORC) ( 500 UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10030",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTE.ALUMI A-42 (4 POR) (CAJA:500)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10097",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Laminadora Rondo Doge: Laminar la pasta a 1,3 mm de grosor y forrar la base del molde engrasada, rellenar con 450g de relleno.",
+    "Cubrir con 4 tiras por cada lado (8 tiras en total), laminadas a 1,3 de grosor y 3 cm de ancho, pintar con yema y hornear en el Dicte 1 o Dicte2 a 170°C por 50 minutos (hornear el mismo dia o el dia siguiente).",
+    "Enfriar. Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 800,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

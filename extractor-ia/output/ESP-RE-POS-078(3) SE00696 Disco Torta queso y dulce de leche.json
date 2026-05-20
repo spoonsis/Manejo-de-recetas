@@ -1,0 +1,74 @@
+{
+  "nombre": "SE00696 Disco Torta queso y dulce de leche",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "3",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 260g",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": "1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Trasvasado de leche condensada cocinada",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar con Wisky Red Label",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "SE00685",
+      "marca": "FAS",
+      "observaciones": "70x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE QUESO Y CONDENSADA",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00684",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO CARAMELO CON CHOCOLATE BLANCO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00720",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Cortar y colocar por la mitad en un molde desmoldable y humedecer con el almibar con ron, cada tapa de rosquete",
+    "Colocar con ayuda de una manga el trasvasado de leche condensada cocinada, sobre una mitad del rosquete.",
+    "Agregar la Mousse sobre el manjar y exparcir uniformemente",
+    "Agregar el Caramelo con chocolate blanco en todo el mousse y colocar la segunda tapa del rosquete mojado con el almibar.",
+    "Dejar enfriar minimo 4 horas."
+  ],
+  "pesoTotalCantidad": 774,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 774,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 6,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

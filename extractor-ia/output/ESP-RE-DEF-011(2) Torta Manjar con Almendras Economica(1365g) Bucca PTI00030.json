@@ -1,0 +1,155 @@
+{
+  "nombre": "Torta Manjar con Almendras Economica",
+  "subsidiaria": "Bucca",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY QUEQUE VAINILLA SP 400G",
+      "cantidad": 740,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00433",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR (KILO)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND 20800g",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SEMILLAS ALMENDRAS TOSTADAS (KILO)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00058",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND 20800g",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "COLOCHO BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA # 10 BUCCA UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10084",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA DE MANJAR CON ALMENDRA BUCCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10395",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar 1 rosquete por la mitad. El otro lo dejaremos enteros.",
+    "Humedecer solamente el rosquete entero lo humedeceremos con 60g.",
+    "Colocar en la orla medio rosquete , rellenar con 1/3 tz manjar, colocar un roquete entero humedecido, rellenar esta otra capa con 1/3 tz manjar. Tapar con medio roquete.",
+    "Encremar, no es necesario que quede muy cubierto los bordes. Cubiri con almendras tostadas los bordes. Hacer colocho de crema chantilly con boquilla 17, y colocho manjar con boquilla 17.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1246,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1246,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 19,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

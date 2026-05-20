@@ -1,0 +1,81 @@
+{
+  "nombre": "SE00812 Relleno de Piña y Coco",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Piña",
+      "cantidad": 3570,
+      "unidad": "g",
+      "codigoNetSuite": "MP10564",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar  Industrial",
+      "cantidad": 71,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Coco Tostado",
+      "cantidad": 428,
+      "unidad": "g",
+      "codigoNetSuite": "SE00809",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema de Coco",
+      "cantidad": 714,
+      "unidad": "g",
+      "codigoNetSuite": "MP10924",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En una olla, colocar la la piña con la azucar hasta que la azucar de disuelva.",
+    "Despues colocar, el coco tostado, la crema de coco, la canela y dejar que espese un poco.",
+    "Dejar enfriar y empacar."
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanta",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 215,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

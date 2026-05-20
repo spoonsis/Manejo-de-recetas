@@ -1,0 +1,62 @@
+{
+  "nombre": "PTL00195 Empaque Tamal Mudo 24031",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "TAMAL VEGETARIANO",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00418",
+      "marca": "FAS",
+      "observaciones": "2 PIÑAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Transparente 9 X 14 X 2000",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10241",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Introducir dos piñas en una bolsa 8x12, anudar.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 540,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "bolsa",
+  "pesoPorcionCantidad": 540,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

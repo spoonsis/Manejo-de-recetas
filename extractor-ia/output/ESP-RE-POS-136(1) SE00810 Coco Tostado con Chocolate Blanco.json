@@ -1,0 +1,46 @@
+{
+  "nombre": "SE00810 Coco Tostado con Chocolate Blanco",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Coco Tostado",
+      "cantidad": 500,
+      "unidad": "",
+      "codigoNetSuite": "SE00809",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cobertura Chocolate Blanco Nacional",
+      "cantidad": 1000,
+      "unidad": "",
+      "codigoNetSuite": "MP10143",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate blanco y mezclar con el coco tostado.",
+    "Exparcir y refrigerar",
+    "Mantenerlo refrigerado hasta utilizar",
+    "Empacar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1450,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanta",
+  "pesoPorcionCantidad": 1450,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

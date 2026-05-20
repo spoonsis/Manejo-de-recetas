@@ -1,0 +1,95 @@
+{
+  "nombre": "Empaque seco individual spoon",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0310107",
+      "marca": null,
+      "observaciones": "CAJA:25 KG",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "CLARA DE HUEVO",
+      "cantidad": 845,
+      "unidad": "Gramos",
+      "codigoNetSuite": "11300009",
+      "marca": null,
+      "observaciones": "CAJA:5 K",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "YEMA DE HUEVO",
+      "cantidad": 455,
+      "unidad": "Gramos",
+      "codigoNetSuite": "11300011",
+      "marca": null,
+      "observaciones": "UND: 8.34 K",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "RON ABUELO RESERVA",
+      "cantidad": 250,
+      "unidad": "Mililitros",
+      "codigoNetSuite": "10200088",
+      "marca": null,
+      "observaciones": "UND: LITRO",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "JUGO DE NARANJA TB",
+      "cantidad": 250,
+      "unidad": "Mililitros",
+      "codigoNetSuite": "0810288",
+      "marca": null,
+      "observaciones": "CAJA:12 UND",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "VAINILLA OSCURA",
+      "cantidad": 20,
+      "unidad": "Mililitros",
+      "codigoNetSuite": "118000004",
+      "marca": null,
+      "observaciones": "UND: 3.78 L",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PREMEZCLA QUEQUE SECO",
+      "cantidad": 2320,
+      "unidad": "Gramos",
+      "codigoNetSuite": "95345",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "PREMEZCLA QUEQUE SECO",
+      "cantidad": 2320,
+      "unidad": "Gramos",
+      "codigoNetSuite": "95345",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 5100,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 5100,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": 223.44,
+  "mermaUnidad": "Gramos",
+  "registroCambios": "Importación inicial desde Excel"
+}

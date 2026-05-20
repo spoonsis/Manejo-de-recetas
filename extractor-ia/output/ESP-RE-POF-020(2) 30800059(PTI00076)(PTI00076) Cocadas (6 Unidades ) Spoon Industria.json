@@ -1,0 +1,83 @@
+{
+  "nombre": "Cocadas (6 Unidades )",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PLANCHA COCADITAS (4300g)",
+      "cantidad": 4072,
+      "unidad": "g",
+      "codigoNetSuite": "SE00206",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAPSULA # 3 LOGO (100 * PAQ)",
+      "cantidad": 63,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10068",
+      "marca": "ESTUARDO",
+      "observaciones": "1 PLANCHA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTENEDOR 24OZ TAPA PLANA",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10074",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 11,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar los bordes de la plancha de cocada.",
+    "Partir pedazos de 4cm X 4,5cm aproximadamente. De largo sale 9 filas y de largo y 7 filas de ancho.",
+    "Colocar 6 unidades con el coco para arriba en un contenedor 24oz tapa plana",
+    "Sellar el contenedor con la etiqueta spoon pequeña",
+    "Etiquetar con fecha de vencimiento, codigo y fecha juliano"
+  ],
+  "pesoTotalCantidad": 11,
+  "pesoTotalUnidad": "Cajas",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 63,
+  "porcionesUnidad": "unid",
+  "pesoPorcionCantidad": 6,
+  "pesoPorcionUnidad": "Unids",
+  "mermaCantidad": 4,
+  "mermaUnidad": "Unids",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,165 @@
+{
+  "nombre": "Torta Mitad y Mitad",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Ensamble Torta Chocolate 1 relleno para Torta Mitad y Mitad",
+      "cantidad": 515,
+      "unidad": "g",
+      "codigoNetSuite": "SE00164",
+      "marca": null,
+      "observaciones": "1/2 unidad",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Ensamble Torta Melocoton Mediana para Torta Mitad y Mitad",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00165",
+      "marca": null,
+      "observaciones": "1/2 unidad",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Para pegar Tortas",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "DECORACION_TORTA_MELOCOTON"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": "MARMOLEAR MANGA",
+      "seccion": "DECORACION_TORTA_MELOCOTON"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 127",
+      "seccion": "DECORACION_TORTA_MELOCOTON"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 225,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION_TORTA_CHOCOLATE"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "Boquilla #127",
+      "seccion": "DECORACION_TORTA_CHOCOLATE"
+    },
+    {
+      "nombre": "QUEQUERA RED  BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA SPOON GRANDE V-272",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "LITOGRAFIA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Con ayuda de una espatula y manjar pegar ambas mitades (colocar crema en medio de las dos mitades para que se peguen). Sobre una orla de carton",
+    "Decoracion de mitad Chocolate:Encremar de fudge la mitad de chocolate (con ayuda de una manga y boquilla cubirir el borde y la superficie) y con el peine del lado más ancho peinar la mitad de la torta de chocolate y dejando bien parejo la superficie, para que no se vea ninguna parte de la torta (A la hora de encremar tener cuidado de no manchar la otra mitad)",
+    "Con ayuda de una espatura realizar lineas en la parte superior de la torta y con la boquilla #127 realizar un choloco en el costado de la mitad de la torta chooclate.",
+    "Decoracion de mitad Melocoton Encremar la crema beige la mitad de chocolate (con ayuda de una manga y boquilla cubirir el borde y la superficie) y con el peine del lado más ancho peinar la mitad de la torta de melocotón, y dejando bien pareja la parte superior, para que no se vea ninguna parte de la torta ( A la hora de encremar tener cuiado de no manchar la otra mitad)",
+    "En una manga colocar de manera lineal el siropo de dulce de leche y colocar la crema beige, realizar el cholocho con la boquilla #127 en todo el costado de mitad de la torta de melocotón.",
+    "Tapar y etiquetar con cinta, nombre, Lote y fecha vencimiento."
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 1500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 75,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

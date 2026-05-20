@@ -1,0 +1,162 @@
+{
+  "nombre": "PTI00244 Degustación Torta Hersheys Kisses",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Chocolate Dawn 600g",
+      "cantidad": 234,
+      "unidad": "g",
+      "codigoNetSuite": "SE00464",
+      "marca": "FAS",
+      "observaciones": "13g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 126,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "7g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE DE CHOCOLATE DE LECHE",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "15g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Rosquete Brownie Redondo  de 400 gramos",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00668",
+      "marca": "FAS",
+      "observaciones": "8g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "8g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Semi Sweet Chocolate Chips",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "MP10674",
+      "marca": "Hershey's",
+      "observaciones": "8g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "4g x ud, Colocho Boquilla #4FT",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en cada contenedor trozos de rosquete chocolate, agregar la leche pausterizada y majar un poquito.",
+    "Agregar el mousse con ayuda de una manga, colocar trozoz pequeños del Rosquete de Brownie, los semi sweet, el ganache en forma de hilos y por ultimo el colocho.",
+    "Tapar, guardar 18 contenedores en la caja, sellar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1008,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 56,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 18,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

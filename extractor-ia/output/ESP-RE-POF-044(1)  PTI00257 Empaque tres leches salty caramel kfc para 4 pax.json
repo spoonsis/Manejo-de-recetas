@@ -1,0 +1,68 @@
+{
+  "nombre": "Empaque tres leches salty caramel",
+  "subsidiaria": "KFC",
+  "elaboradoPor": null,
+  "areaProduce": "Planta",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SABORIZANTE CARAMELO SALADO",
+      "cantidad": 10,
+      "unidad": "Gramo",
+      "codigoNetSuite": "MP10758",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 7500,
+      "unidad": "Gramo",
+      "codigoNetSuite": "907000001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 7500,
+      "unidad": "Gramo",
+      "codigoNetSuite": "907000001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 7500,
+      "unidad": "Gramo",
+      "codigoNetSuite": "907000001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MODI PREPARACION",
+      "cantidad": 1,
+      "unidad": "N/A",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "Gramo",
+  "tiempoPrepCantidad": 77,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "raciones",
+  "pesoPorcionCantidad": 2500,
+  "pesoPorcionUnidad": "Gramo",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

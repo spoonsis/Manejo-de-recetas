@@ -1,0 +1,98 @@
+{
+  "nombre": "ADEREZO ORIENTAL",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "JENGIBRE ENTERO KILO",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "MP10220",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINAGRE VINO DE ARROZ (UND:3.785)",
+      "cantidad": 840,
+      "unidad": "g",
+      "codigoNetSuite": "MP10390",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE SESAMO",
+      "cantidad": 380,
+      "unidad": "g",
+      "codigoNetSuite": "MP10054",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINAGRE BALSAMICO ROLAND (UND:5 L)",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "MP10387",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA HOISIN (UND:2.27 K)",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10353",
+      "marca": "LEEKUMKEE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Licuar todos los ingredinetes hasta que quede una mezcla homogenea. El jengibre debe quedar bien licuado",
+    "Enviar a empaque en bowls con plástico y rotulados."
+  ],
+  "pesoTotalCantidad": 2400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 240,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 103,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

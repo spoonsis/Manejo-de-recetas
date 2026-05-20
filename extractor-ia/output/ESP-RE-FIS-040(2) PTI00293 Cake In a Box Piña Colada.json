@@ -1,0 +1,155 @@
+{
+  "nombre": "PTI00293 Cake Box In a Piña Colada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.09,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "72g, 2 Unidades por postre de 36g cada ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "15g x rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno Piña y Coco",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00812",
+      "marca": "FAS",
+      "observaciones": "80g x capa, 1/3 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Passionata de Coco",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00811",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Coco Tostado con Chocolate Blanco",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "(1 capa), 1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.0105,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "8,4g MERMA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chips de Coco Caramelizado",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10733",
+      "marca": null,
+      "observaciones": "5g x capa",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Salsa Piña Con Brillo",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Cereza Roja C/Tallo",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10109",
+      "marca": null,
+      "observaciones": "4g x capa",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Empaque Cake In Box Cuadrado",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10500",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Cake In a Box Piña Colada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "Nuevo",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete arrollado en 20 porciones, (4 cuadros de manera vertical y 15 cuadros de manera horizontal, 10,5cm x 10,5cm) quitandole excesos de los laterales.",
+    "En cada empaque colocar un cuadrado de rosquete, humedecer con ayuda de una bolsa el almibar, colocar el relleno Piña con Coco, despues con una manga colocar la crema passionata de coco y el coco tostado con chocolate blanco.",
+    "Colocar otro rosquete, humedecer con el almibar, agregar relleno de piña con coco y con una manga la crema passionata de coco y por ultimo con ayuda de una bolsa la salsa de piña con brillo",
+    "Colocar de esquina a esquina los chips de coco caramelizados y la cereza en el medio hundiendola un poco",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 456,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 456,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

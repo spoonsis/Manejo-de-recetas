@@ -1,0 +1,126 @@
+{
+  "nombre": "SE00424 Premezcla queque banano spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "BATIDOS",
+  "areaEmpaca": "BATIDOS",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Harisol Hojaldre",
+      "cantidad": 3180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10206",
+      "marca": "Fachasa",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Polvo Hornear",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "Fleishman",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bicarbonato De Sodio",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10085",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Nuez Moscada Molida",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10013",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Caramelo",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10075",
+      "marca": "Layca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 1250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Bolsa 17X25 Transparente",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Roja Letra Alerjeno",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 12x18 el harina, polvo de hornear, bicarbonato, nuez moscada y preservante.",
+    "En una bolsa 17x25 pesar el azucar caramelo y en otra la lactocrema.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 6680,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 6680,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 18,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,81 @@
+{
+  "nombre": "SE00769 Mousse queso velvet",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "POSTRES",
+  "areaEmpaca": "POSTRES",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 3000,
+      "unidad": null,
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 10,
+      "unidad": null,
+      "codigoNetSuite": "MP10239",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 2000,
+      "unidad": null,
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Condensada",
+      "cantidad": 1000,
+      "unidad": null,
+      "codigoNetSuite": "MP10050",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1100,
+      "unidad": null,
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Gelatina Pura",
+      "cantidad": 80,
+      "unidad": null,
+      "codigoNetSuite": "MP10043",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar el queso crema con la leche condensada y el polvo de limon y cremar con globo.",
+    "Luego agregar la crema chantilly e incorporar a la mezcla anterior.",
+    "Hidratar la gelatina en agua y agregar a la mezcla anterior."
+  ],
+  "pesoTotalCantidad": 6800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 19,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 360,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 390,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

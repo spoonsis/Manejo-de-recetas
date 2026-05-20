@@ -1,0 +1,154 @@
+{
+  "nombre": "PTI00262 Degustación Torta Manzana y Canela Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 350 G",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00454",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR CANELA EN POLVO",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "10g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "15g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO MANZANA CUBITOS (und:19 lbs)",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10630",
+      "marca": "MAYCA",
+      "observaciones": "25g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "5g x ud Boquilla #4FT",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": "0,2 g x ud",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en cada vasito, primero el rosquete, despues el almibar y majarlo un poco.",
+    "Agregar con ayuda de una manga el manjar y el relleno de manzana",
+    "Realizar con una manga y la boquilla 4FT el colocho en el centro.",
+    "Tapar, guardar 18 unidades, sellar la caja y etiquetar la planta."
+  ],
+  "pesoTotalCantidad": 1170,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1170,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

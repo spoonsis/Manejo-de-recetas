@@ -1,0 +1,46 @@
+{
+  "nombre": "SE00640 Crema Amarilla Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BLANCA BUCCA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Sacar la crema blanca bucca de la camara (temperatura maxima 18° ya batida).",
+    "Agregar el colorante, mezclar a mano, hasta que este completamente homogeneo.",
+    "Colocar platico para tapar y etiquetar.",
+    "Volver a guardar en la camara hasta su uso."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

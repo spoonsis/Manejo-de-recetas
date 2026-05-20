@@ -1,0 +1,91 @@
+{
+  "nombre": "Disco de Porción Pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 260g",
+      "cantidad": 215,
+      "unidad": "g",
+      "codigoNetSuite": "SE00611",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE DE PISTACHO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00743",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE PISTACHO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00740",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE BLANCO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE TURRON DE ALMENDRA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00509",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE PISTACHO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00740",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Se corta el rosquete a la mitad, se coloca en un molde de aluminio desmoldable (molde pie de limon) y se moja con 70g de leche en cada tapa.",
+    "Se coloca en la base del rosquete, ganache de pistacho con ayuda de una bolsa, el caramelo con chocolate blanco y trozos del rosquete de turron y colocar la mousse de pistacho.",
+    "Tapar con la otra mitad de rosquete previamente mojado.",
+    "Dejar enfiar por al menos 6 horas."
+  ],
+  "pesoTotalCantidad": 795,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 795,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

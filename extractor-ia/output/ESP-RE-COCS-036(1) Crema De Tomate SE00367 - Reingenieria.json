@@ -1,0 +1,128 @@
+{
+  "nombre": "Crema De Tomate SE00367",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA AJO (KILO)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ = 1 KILO )",
+      "cantidad": 1875,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO (PAQ = 500 G)",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 195,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMATE PELADO ENTERO",
+      "cantidad": 9375,
+      "unidad": "g",
+      "codigoNetSuite": "MP10376",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA TOMATE OLD CALI (UND:3.14 K)",
+      "cantidad": 660,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": "OLD CALI",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 4650,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10485",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 285,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En un chef & dish colocar los chileS, cebolla, ajo, aceite, mezclar y esparcir el azucár para q se caramelice y colocar en horno en programación de verduras asadas.",
+    "Licuar lo anterior junto con el caldo de pollo, tomate pelado y pasta de tomate.",
+    "Llevar a una olla hasta hervir ",
+    "Agregar la versatie. Hervir, Revisar punto de sal, y agregar de ser necesario",
+    "Colocar en bandejas y pasar a empaque"
+  ],
+  "pesoTotalCantidad": 15000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 15000,
+  "porcionesUnidad": "1 tanda",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4350,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

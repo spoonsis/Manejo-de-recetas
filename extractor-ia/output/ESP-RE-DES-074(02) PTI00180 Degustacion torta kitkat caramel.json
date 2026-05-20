@@ -1,0 +1,172 @@
+{
+  "nombre": "PTI00180 Degustacion torta kitkat caramel",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 360g",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": "10g x vasito, 1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Tres Leches Con Crema De Dulce Leche",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00307",
+      "marca": "FAS",
+      "observaciones": "10g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "30g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE LECHE Y SAL",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00713",
+      "marca": "FAS",
+      "observaciones": "10g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE CARAMELO SALADO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00710",
+      "marca": "FAS",
+      "observaciones": "5g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "Fas",
+      "observaciones": "5g x vasito, BOQUILLA #22",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA KITKAT",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00711",
+      "marca": "Fas",
+      "observaciones": "5g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE LECHE Y SAL",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "SE00713",
+      "marca": "FAS",
+      "observaciones": "2g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1. Colocar en cada vasito, primero el rosquete, despues el las leches y majarlo un poco.",
+    "2. Agregar el mousse de chocolate, despues salsa de caramelo salado y el caramelo con chocolate de leche y sal.",
+    "3. Decorar con la crema beige y la salsa de kitkat por ultimo colocarle el caramelo con chocolate de leche y sal.",
+    "4. Tapar, etiquetar."
+  ],
+  "pesoTotalCantidad": 1350,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "vasitos",
+  "pesoPorcionCantidad": 75,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 36,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

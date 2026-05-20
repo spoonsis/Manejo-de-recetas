@@ -1,0 +1,100 @@
+{
+  "nombre": "Premezcla Batido para QQ seco spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA HARISOL HOJALDRE (SACO: 25 K)",
+      "cantidad": 1260,
+      "unidad": "g",
+      "codigoNetSuite": "MP10206",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR REFINO INDUSTRIAL (SACO:50 K)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10078",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (2.5 KG)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "FLEISHMAN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S(PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 5x8 TRANSP (KILO) **",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10010",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una bolsa 5*8 el preservante.",
+    "Colocar en una bolsa 5*8 el polvo de hornear.",
+    "Colocar en otra bolsa 12*18 el azucar. Etiquetar con fecha de vencimiento.",
+    "Pesar en una bolsa 12*18 la harina y colocar todas las bolsas anteriores dentro de esta. Etiquetar con fecha y alerjeno"
+  ],
+  "pesoTotalCantidad": 2320,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 90,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 2320,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

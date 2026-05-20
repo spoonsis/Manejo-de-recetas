@@ -1,0 +1,203 @@
+{
+  "nombre": "Postre Brownie salty caramel INDUSTRIA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY CHOCOLATE BC 350G",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "SE00449",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO SALTY CARAMEL",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00516",
+      "marca": "CONEXU",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE REDONDO BROWNIE CASERO 250G",
+      "cantidad": 225,
+      "unidad": "g",
+      "codigoNetSuite": "SE00200",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE DE LECHE PROCESADO",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "SE00201",
+      "marca": "NUEVO",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE MANJAR Y QUESO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00202",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON (17000g)",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 882",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 28,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADA  30ML",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ROSQUETE REDONDO BROWNIE CASERO 250g",
+      "cantidad": 112,
+      "unidad": "g",
+      "codigoNetSuite": "SE00200",
+      "marca": "FAS",
+      "observaciones": "PESO COCIDO",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MONEDAS MARMOLEADAS (CAJA:240 UND)",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10253",
+      "marca": "KAROL LEDEZMA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "KAROL LEDEZMA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "COCOA DUTCH PROCESS",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "DUTCH PROCESS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "PARA PEGAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ETIQUETA IMPRES SPOON GRANDE V-272 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Armar el molde.",
+    "Colocar medio rosquete de chocolate en la base del molde.",
+    "Calentar las bolsas de caramelo en microondas por 2 min. Colocar el caramelo salado en el puro centro con ayuda de una manga, y sobre el caramelo colocar el 1 rosquete brownie, y sobre él, el chocolate de leche procesado.",
+    "Colocar el relleno de manjar y queso. Alisar la superficie. Enfriar al menos 6 horas, hasta cortar. Ideal de un dia para el otro.",
+    "Desmoldar con ayuda de una espatula, alisar bordes con espatula (con agua caliente), hacer colochos de crema chocolate; en el borde acorde a la foto, espolvorear cocoa en el colocho con ayuda de un colador y pegarlo a la base de carton con ayuda de manjar.",
+    "Para la decoracion:. Colcoar el ganache de chocolate en el centro y sobre el ganache los pedazos de brownie cocido.",
+    "Decorar con 1 stick dorado partido por la mitad, 3 colochos de chocolate.",
+    "Tapar y etiquetar,Nombre,Fecha Vencimiento,Lote,"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 162,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

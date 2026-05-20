@@ -1,0 +1,53 @@
+{
+  "nombre": "Mezcla de arroz con salsa blanca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "Cocina Fría",
+  "areaEmpaca": "Cocina Fría",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ARROZ BLANCO PRECOCIDO",
+      "cantidad": 7000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00103",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SALSA BLANCA SPOON",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00108",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PEREJIL DESINFECTADO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10296",
+      "marca": "Fresquita",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar el arroz junto con la salsa blanca y el perejil picado. Usar una espatula o mezlcar en batidora con Paleta. Tambien se puede mezclar con la mano usando guantes",
+    "Utilizar de inmediato"
+  ],
+  "pesoTotalCantidad": 15000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 15000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

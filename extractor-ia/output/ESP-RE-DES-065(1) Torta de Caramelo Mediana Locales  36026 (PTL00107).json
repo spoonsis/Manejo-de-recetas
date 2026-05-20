@@ -1,0 +1,209 @@
+{
+  "nombre": "Torta de Caramelo Mediana Locales 36026 (PTL00107)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 360G",
+      "cantidad": 418,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "70 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "1era capa"
+    },
+    {
+      "nombre": "BUTTERCREAM DE MANJAR",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00501",
+      "marca": null,
+      "observaciones": "1/2 TAZA",
+      "seccion": "1era capa"
+    },
+    {
+      "nombre": "PROCESADO MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00699",
+      "marca": null,
+      "observaciones": "1/2 TAZA",
+      "seccion": "1era capa"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "2nda capa"
+    },
+    {
+      "nombre": "BUTTERCREAM DE MANJAR",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00501",
+      "marca": null,
+      "observaciones": "1/2 TAZA",
+      "seccion": "2nda capa"
+    },
+    {
+      "nombre": "PROCESADO MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00699",
+      "marca": null,
+      "observaciones": "1/2 TAZA",
+      "seccion": "2nda capa"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CARAMELO CON BRILLO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00502",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00699",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": "MARMOLEAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE TULIPAN MARMOL",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "MP10133",
+      "marca": "CHOCOLATE SOLUTIONS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" (100 * PAQ)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SPOON GRANDE V-272",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10006",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Utilizar uno y medio rosquetes, humedecer con mezcla de tres leches con agua.",
+    "Rellenar con caramelo, buttercream de manjar y macadamia caramelizada con chocolate blanco, ambas capas.",
+    "Encremar con crema chantilly y tenir los lados con dulce de leche. Marmolear la superficie con caramelo con brillo y hacer un espiral acorde a la fotografia.",
+    "Decorar la suerficie con el procesado de macadamia caramelizada con chocolate blanco, acorde a la fotografia y un tulipan en el centro.",
+    "Colocar la torta dentro del domo, etiquetar con etiqueta Spoon, nombre del producto y codigo de barras, fecha juliana y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 1375,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1375,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 84,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

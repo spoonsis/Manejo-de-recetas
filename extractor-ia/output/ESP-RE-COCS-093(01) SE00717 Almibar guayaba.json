@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00717 Almibar guayaba",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Almibar",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SABORIZANTE GUAYABA MADURA",
+      "cantidad": 0.1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10765",
+      "marca": "ASTEK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Colocar en una olla el azucar, primer agua, relleno de guayaba, colorante, saborizante y llevar a hervor.",
+    "2.- Luego agregar el almidon disuelto en agua y espesar."
+  ],
+  "pesoTotalCantidad": 400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

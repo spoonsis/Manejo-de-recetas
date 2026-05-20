@@ -1,0 +1,80 @@
+{
+  "nombre": "EMPAQUE EMPANADA DE PIÑA PASTA FROLA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "PASTAS",
+  "areaEmpaca": "PASTAS",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Empanada de Piña",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00420",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Caja Blanca Mini",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10054",
+      "marca": "Litgrafia CR",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Bolsa 8X12 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Enfriar y empacar 4 unidades en caja blanca mini e intrducir en un bolsa 8*12 y sellar.",
+    "Etiquetar con nombre, numero de juliano y fecha de vencimiento "
+  ],
+  "pesoTotalCantidad": 160,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "cajas",
+  "pesoPorcionCantidad": 40,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

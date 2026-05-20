@@ -1,0 +1,99 @@
+{
+  "nombre": "PREMEZCLA P/PASTA CHILENA SPOON 901000014(SE00178)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MARGARINA BAKER TABLETA (CAJA: 25 K)",
+      "cantidad": 9000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "NUMAR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR POLVO P.REAL (PAQ:2.5 Kg)",
+      "cantidad": 1,
+      "unidad": "Bolsa",
+      "codigoNetSuite": "MP10049",
+      "marca": "PASTELERO REAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA TRIGO NACARINA (SACO: 25 K)",
+      "cantidad": 12000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10051",
+      "marca": "NACARINA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en 1 bolsa 17*25 la margarina. Etiquetar con nombre y alerjeno",
+    "Colocar la harina, preservante en otra bolsa 17*25, enviar 1 bolsa de azucar en polvo entera.",
+    "Etiquetar ambas bolsas con nombre y alerjeno."
+  ],
+  "pesoTotalCantidad": 23524,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 210,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 23524,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

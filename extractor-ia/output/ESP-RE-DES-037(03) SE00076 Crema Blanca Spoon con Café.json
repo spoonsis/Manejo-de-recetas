@@ -1,0 +1,59 @@
+{
+  "nombre": "BATIDO SUPER ESPONJA KALUA",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA PASTEL SUPER ESPONJA",
+      "cantidad": 15875,
+      "unidad": "Gramo",
+      "codigoNetSuite": "0510304",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIG",
+      "cantidad": 11112,
+      "unidad": "Gramo",
+      "codigoNetSuite": "1210441",
+      "marca": null,
+      "observaciones": "UND:13.6 K",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 4762,
+      "unidad": "Mililitro",
+      "codigoNetSuite": "9999",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PREMEZCLA SUPER ESPONJA KALUA",
+      "cantidad": 8252,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 40000,
+  "pesoTotalUnidad": "Gramo",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 40000,
+  "pesoPorcionUnidad": "Gramo",
+  "mermaCantidad": 892.16,
+  "mermaUnidad": "Gramo",
+  "registroCambios": "Importación inicial desde Excel"
+}

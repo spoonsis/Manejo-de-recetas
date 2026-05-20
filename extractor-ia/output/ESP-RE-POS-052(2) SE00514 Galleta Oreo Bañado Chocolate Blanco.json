@@ -1,0 +1,64 @@
+{
+  "nombre": "SE00514 Galleta Oreo Bañado Chocolate Blanco",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Galleta Oreo Entera 1/12 UD",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10617",
+      "marca": "POZUELO",
+      "observaciones": "8 paquetes (12 ud x tubo)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE BLANCO (PAQ:5 K)",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 1,
+      "unidad": "metro",
+      "codigoNetSuite": "EM10259",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate en microondas, con cuidado de no quemar.",
+    "Abriar los tubos de galleta oreo, colocarlos en el palangana y Mezclar la galleta con el chocolate derretido, de manera que toda la galleta quede cubierta.",
+    "Colocar la mezcla en una lata con teflon y enfriar.",
+    "Etiquetar , Emplasticar"
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7.3,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 200,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

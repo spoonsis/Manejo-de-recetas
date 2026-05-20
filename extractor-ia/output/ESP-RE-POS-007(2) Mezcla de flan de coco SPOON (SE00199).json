@@ -1,0 +1,110 @@
+{
+  "nombre": "Mezcla de flan de coco SPOON (SE00199)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 7700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA",
+      "cantidad": 4040,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 740,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 1360,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GELATINA PURA",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCO RALLADO",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "MP10145",
+      "marca": "NUECES IND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar el huevo, yemas, leche evaporada y leche condensada en el vaso de la licuadora y licuar por 3 minutos en velocidad alta hasta que todo se mezcle bien mezclado.",
+    "En caso de aumentar volumenes de producción usar una olla grande, licuar los huevos con un poco de la evaporada y colocar todo en olla, usar globo",
+    "agregar el coco rallado y mezclar",
+    "Usar de inmediato y pesar según necesidad.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 14000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 14000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 386,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

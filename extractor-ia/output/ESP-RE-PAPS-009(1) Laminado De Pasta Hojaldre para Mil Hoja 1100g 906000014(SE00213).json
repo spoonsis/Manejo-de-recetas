@@ -1,0 +1,63 @@
+{
+  "nombre": "Laminado De Pasta Hojaldre para Mil Hoja 1100g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "05",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA HOJALDRE RECORTE",
+      "cantidad": 11800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00129",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BATIDO DE PASTA HOJALDRE DEBIL",
+      "cantidad": 11800,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA HARISOL WINTER (25k)",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": "Harisol",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 9,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Laminar la pasta hojaldre a 1,3 de grosor con harina para evitar que se pegue.",
+    "Colocar en una lata con papel mantequilla y pasar el zorro. Dejar reposar como minimo 12 horas en congelado",
+    "Hornear en el Dicte 1 a 180°c por 40 minutos o en el Dicte 2 a 180°C por 40 minutos."
+  ],
+  "pesoTotalCantidad": 9900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 9,
+  "porcionesUnidad": "Laminas",
+  "pesoPorcionCantidad": 1100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1900,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,239 @@
+{
+  "nombre": "PTL00179 ENSAMBLE Y DECORACIÓN DE TORTA VAINILLA Y FRUTOS ROJOS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA DAWN 320 G",
+      "cantidad": 260,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE VAINILLA DAWN 320 G",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00448",
+      "marca": "FAS",
+      "observaciones": "1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "RELLENO DE LIMON SPOON KILO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00008",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "RELLENO FRAMBUESA Y ARANDANO",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "SE00541",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "GALLETA VAINILLA BAÑO CHOCO BLANCO KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "1era CAPA RELLENO"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "RELLENO DE LIMON SPOON KILO",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00008",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "RELLENO FRAMBUESA Y ARANDANO",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00541",
+      "marca": "FAS",
+      "observaciones": "2/3 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "GALLETA VAINILLA BAÑO CHOCO BLANCO KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "2nda CAPA RELLENO"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "3era CAPA RELLENO"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA DE FRAMBUESA ARANDANO CON BRILLO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00838",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA DE FRAMBUESA Y ARANDANO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "EM10037",
+      "marca": "FAS",
+      "observaciones": "Para Bordes",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA VAINILLA BAÑO CHOCO BLANCO KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00077",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON 10\"  (100 * PAQ)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Partir los rosquetes de vainilla a la mitad, utilizar 3 medios discos.",
+    "Humedecer las 3 tapas de rosquete con mezcla de tres leches.",
+    "Rellenar la primera capa con  1/4 taza de manjar, 1/4  de relleno de limon, 1/2 taza de relleno de frambuesa y moras,y 1/4 cucharadas de galleta con chocolate blanco.",
+    "Rellenar la segunda capa con 1/4 taza de manjar, 1/4  de relleno de limon,2/3 taza de relleno de frambuesa y moras, y 1/4 taza galleta con chocolate blanco.",
+    "Tapar con el ultimo disco de rosquete.",
+    "Encremar con crema chantily beidge y hacer efecto con la espatula, difuminando la salsa a los lados acorde a la fotografia.",
+    "Colocar en la parte supeior sobre la salsa y el brillo, al centro colocar la galleta con chocolate blanco.",
+    "Etiquetar con los stckers y fechas requeridas."
+  ],
+  "pesoTotalCantidad": 1420,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1420,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 130,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

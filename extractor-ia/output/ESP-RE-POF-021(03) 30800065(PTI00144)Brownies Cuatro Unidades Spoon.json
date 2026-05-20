@@ -1,0 +1,109 @@
+{
+  "nombre": "Brownies Cuatro Unidades Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE BROWNIE CASERO 2000g",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00330",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "3g X unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO CHOCOLATE RALLADO OSCURO",
+      "cantidad": 48,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "2g x unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAPSULA # 5 BLANCA (PAQ:1000 UND)",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10069",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONT.24 ONZ.TAPA PLANA (PAQ:100 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10074",
+      "marca": "GOSACA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA 25/8 X 15/16",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir la plancha en 24 rectangulos de 2,5cm y 11cm, utilizar cuchillo con agua caliente para evitar que se pegue",
+    "Colocar los rectangulos en su capsula, luego colocar las 4 unidades en el contenedor y proceder a decorar con el ganache haciendo hilos encima",
+    "Decorar espolvoreando La ralladura oscura sobre cada uno de los brownies, y tapar.",
+    "Etiquetar con fecha de vencimiento, cinta spoon pequeña y etiqueta con codigo y nombre,lote."
+  ],
+  "pesoTotalCantidad": 1710,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 285,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

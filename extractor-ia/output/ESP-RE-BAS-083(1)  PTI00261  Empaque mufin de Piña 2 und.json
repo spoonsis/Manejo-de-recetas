@@ -1,0 +1,91 @@
+{
+  "nombre": "Mufin de piña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Pastas",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Batido Queque Seco Vainilla",
+      "cantidad": 19000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00411",
+      "marca": "FAS",
+      "observaciones": "70g unidad",
+      "seccion": "Muffin"
+    },
+    {
+      "nombre": "RELLENO DE PIÑA PARA EMPANADA KILO",
+      "cantidad": 5440,
+      "unidad": "g",
+      "codigoNetSuite": "SE00419",
+      "marca": "FAS",
+      "observaciones": "20g unidad",
+      "seccion": "Muffin"
+    },
+    {
+      "nombre": "COCO HEBRA",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "MP10750",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Muffin"
+    },
+    {
+      "nombre": "CAPSULA # 10 BLANCA (PAQ:500 UND)",
+      "cantidad": 270,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10067",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar primero 35g de batido en la capsula.",
+    "Luego colocar los 20g de relleno de piña y cerrar con los 35g de batido faltantes. Luego colocar los 2 gramos de coco hebra sobre el mufin.",
+    "Llevar al horno a 180ºC por 20 minutos.",
+    "colocar en bandejar."
+  ],
+  "pesoTotalCantidad": 24440,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 55,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 270,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 90,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 540,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

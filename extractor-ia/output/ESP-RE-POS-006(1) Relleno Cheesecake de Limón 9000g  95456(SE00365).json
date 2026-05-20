@@ -1,0 +1,83 @@
+{
+  "nombre": "Relleno Cheesecake de Limón 9000g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO CREMA PANADERO (CAJA: 5 K)",
+      "cantidad": 470,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "PANADERO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GELATINA PURA",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO ( BULTO 25 KG )",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "RESOCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Cremar el queso crema con la leche condensada en velocidad 2 por 1 minutos",
+    "Agregar la crema chantilly y batir hasta incorporar.",
+    "Hidratar la gelatina en el agua e incorporar a la mezcla anterior.",
+    "Luego incorporar el polvo de limon disuelto en un poco del agua.",
+    "Utilizar de inmediato."
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 205,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,53 @@
+{
+  "nombre": "(SE00295) Rosquete tres leches bucca 280g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO TRES LECHES SPOON KILO",
+      "cantidad": 18300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00036",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1800,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANDEJA ALUM DESE 6 PORC #4040",
+      "cantidad": 64,
+      "unidad": "und",
+      "codigoNetSuite": "EM10014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 280g de mezcla en un molde aluminio familiar y hornear en el Argental a 175°C por 22 minutos, Marshall 175°C por 14 minutos y Dicte1 a 170°C por 15 minutos.",
+    "-Dejar enfriar y pasar a postres"
+  ],
+  "pesoTotalCantidad": 18000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 64,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 280,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

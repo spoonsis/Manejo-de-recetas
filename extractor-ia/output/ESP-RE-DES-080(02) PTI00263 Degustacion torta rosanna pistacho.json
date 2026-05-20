@@ -1,0 +1,172 @@
+{
+  "nombre": "PTI00263 Degustacion torta rosanna pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 360g",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": "10g x vasito, 1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHES PASTEURIZADA CON AGUA",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "10g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE PISTACHO",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "SE00740",
+      "marca": "FAS",
+      "observaciones": "30g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA PISTACHO",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00739",
+      "marca": "FAS",
+      "observaciones": "10g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE BLANCO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "5g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA VERDE PISTACHO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00741",
+      "marca": "Fas",
+      "observaciones": "5g x vasito, BOQUILLA #22",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE PISTACHO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00739",
+      "marca": "Fas",
+      "observaciones": "5g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PISTACHO TOSTADO",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "SE00738",
+      "marca": "FAS",
+      "observaciones": "2g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en cada vasito, primero el rosquete, despues el las leches y majarlo un poco.",
+    "Agregar la salsa de pistacho, chocolate con caramelo y encima el mousse",
+    "Decorar con la crema verde y la salsa de pistacho por ultimo colocarle el pistacho tostado.",
+    "Tapar, etiquetar."
+  ],
+  "pesoTotalCantidad": 1350,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "caja",
+  "pesoPorcionCantidad": 1355,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 36,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

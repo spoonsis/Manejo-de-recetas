@@ -1,0 +1,52 @@
+{
+  "nombre": "SE00630 Relleno fresa nucita",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "POSTRES",
+  "areaEmpaca": "POSTRES",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "PRESTIGE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NUCITA EMPAQUE",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "MP10714",
+      "marca": "NUCITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL SUPER RED",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "montar la crema prestige a punto chantilly, luego agregar el relleno de nucita fresa y el colorante super red e incoporar bien."
+  ],
+  "pesoTotalCantidad": 930,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 930,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 21,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

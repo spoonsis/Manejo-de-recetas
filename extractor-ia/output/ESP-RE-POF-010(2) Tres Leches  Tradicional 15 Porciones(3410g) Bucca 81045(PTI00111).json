@@ -1,0 +1,137 @@
+{
+  "nombre": "Tres Leches Tradicional",
+  "subsidiaria": "Bucca",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES 750 GRS",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "SE00035",
+      "marca": "FAS",
+      "observaciones": "1 PLANCHA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Tres Leches Pasteurizada",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": "7 1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 675,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "COLOCHO 45 GRAMOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA SIROPE MANJAR DULCE LECHE",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": "5 GRAMOS C/U",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CEREZA ROJA C/TALLO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MAYCA",
+      "observaciones": "7 1/2 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10011",
+      "marca": "SOLUCIONES C",
+      "observaciones": "3 3/4 UND",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)",
+      "cantidad": 195,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BURBUJA PLASTICA 5",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10051",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO ROSADO",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10123",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TRES LECHES BUCCA PORCION",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10386",
+      "marca": "ETIQUETAS MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "partir el rosquete en cuadritos  8 x 6 cm",
+    "colocar el rosquete dentro del empaque",
+    "bañar el rosquete con la mezcla de tres leches Pasteurizada",
+    "Decorar colocando la crema en el centro y  adicionar encima el manjar con agua formando olas. Hacer colochos de crema alrededor, al centro las cherries con tallo",
+    "guardar en camaras de refrigeracion  a 4º despues de colocar la fecha de produccion y vencimiento"
+  ],
+  "pesoTotalCantidad": 3410,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 15,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 227,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

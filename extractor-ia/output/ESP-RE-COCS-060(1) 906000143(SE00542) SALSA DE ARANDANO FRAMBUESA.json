@@ -1,0 +1,86 @@
+{
+  "nombre": "RELLENO ARANDANO FRAMBUESA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "Premezcla",
+  "areaEmpaca": "Premezcla",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FRAMBUESA CONGELADA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PULPA DE FRAMBUESA CONGELADA",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (SACO:50 K)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "510301",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO (SACO:25 K)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "510215",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO (SACO:25 KG)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "101132",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "1212412",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1700,
+  "porcionesUnidad": "g",
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 262,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

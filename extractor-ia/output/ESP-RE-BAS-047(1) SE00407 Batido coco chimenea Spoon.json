@@ -1,0 +1,72 @@
+{
+  "nombre": "SE00407 Batido coco chimenea Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA QUEQUE SECO VAINILLA SPOON",
+      "cantidad": 22000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00406",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 7766,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 7128,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 5170,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCO RALLADO",
+      "cantidad": 2200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10145",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora con paleta, todos los ingredientes y mezclar 2 minutos en velocidad 1.",
+    "Luego subir a velocidad 2 y batir por 5 minutos.",
+    "Dosificar."
+  ],
+  "pesoTotalCantidad": 44000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 44000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 264,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

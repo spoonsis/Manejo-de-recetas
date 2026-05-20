@@ -1,0 +1,138 @@
+{
+  "nombre": "Pie Limón Pequeño Industria 30800004(PTI00065)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO P/PIE LIMON (KILO)",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00278",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "LIMONES MAYA (UND)",
+      "cantidad": 0.125,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10240",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Romo Redondo 8 Baja",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10229",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Orla #8 Dorada 16cm",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10463",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA IMPRES SPOON MEDIANA V-273 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10024",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engrasar molde, Colocar galleta en la base, horner por 10 min.",
+    "Colocar sobre la base de galleta horneada fria el Relleno de limón.",
+    "Llevar al horno por 15 minutos.a 120-130º. Sacar y enfriar en el cuarto frio.",
+    "Desmoldar y colocar el manjar de leche sobre la orla y colocar el pie.",
+    "Colocar la crema en la manga y hacer besitos sobre la superficie, seguidos para que no se vea el relleno y colocar la rayadura de limón.",
+    "Guardar en domo, etiquetar con cinta spoon, etiquetar con codigo y nombre, vencimiento,Lote."
+  ],
+  "pesoTotalCantidad": 700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

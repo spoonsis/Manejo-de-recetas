@@ -1,0 +1,110 @@
+{
+  "nombre": "Lasaña De Carne 1 pirex Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA P/LASAG",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10023",
+      "marca": "PASTA Y BASTA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RAGU A LA BOLOÑESA",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00115",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA ROJA SPOON (31750g)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00116",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO PARMESANO RALLADO KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO PARMESANO RALLADO KILO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANDEJA ALUM DESE 6 PORC #4040",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10014",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040 (800 UNDS)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Agregar 1 hoja de pasta, 2 tazas rasa de carne lasaña.",
+    "Agregar 1 hoja de pasta, 2 tazas rasa de carne lasaña.",
+    "Agregar 1 hoja de pasta, 2 tazas rasa de carne lasaña.",
+    "Agregar 1 hoja de pasta, 1/2 tazas de salsa roja, y 1/2 taza queso parmesano rayado",
+    "Porcionar en 6 porciones, tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1840,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1840,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 95,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

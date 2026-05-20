@@ -1,0 +1,176 @@
+{
+  "nombre": "Torta Ron Chocolate Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 310 G",
+      "cantidad": 430,
+      "unidad": "g",
+      "codigoNetSuite": "SE00454",
+      "marca": "FAS",
+      "observaciones": "1,5 de rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar de Ron Centenario",
+      "cantidad": 195,
+      "unidad": "g",
+      "codigoNetSuite": "SE00790",
+      "marca": "FAS",
+      "observaciones": "65g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "75g x capa, 1 Taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Chocolate Rallado Oscuro",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "35g x capa, 1/4 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "Boquilla 7FT",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Bettercream Doble Chocolate",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": null,
+      "observaciones": "Marmolear",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Procesado Chocolate Rallado Oscuro",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "1/8 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "Goteo Bordes",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Quequera Red Base/Domo 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "Export pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla # 10 Bucca",
+      "cantidad": 1,
+      "unidad": "UD",
+      "codigoNetSuite": "EM10084",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ET. TORTA BUCCA GENERICA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10112",
+      "marca": "Litografia CR",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL DIA DEL PADRE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar los rosquetes por la mitad.Utilizar 1,5 rosquetes. Mojar cada uno con almíbar de cacique.",
+    "Rellenar la primera capa con 1 taza de chantilly de chocolate y 1/4 de taza de procesado de chocolate.",
+    "Colocar otra mitad de rosquete humedecidoy rellenar la primera capa con 1 taza de chantilly de chocolate y 1/4 de taza de procesado de chocolate.",
+    "Colocar sobre la base de la quequera.",
+    "Encrema con crema blanca y marmolear con el bettercream de chocolate y pasar el peine.",
+    "Colocar tambien bettercream doble chocolae en la parte superior, extenderlo y realizar con ayuda de una espatula una espiral.",
+    "Realizar el colocho con la boquilla 7FT y colocar Tres Chocolates de cacique en el centro como muestra la imagen.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1062,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1062,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 22,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,63 @@
+{
+  "nombre": "COCCIÓN PAPA PARA TAMALES (SE00551)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PAPA EN TROZOS (PAQ: 2 K)",
+      "cantidad": 7000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10279",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 6500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "PARA COCCIÓN",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el agua junto con la papa y cocinar, aproximadamente por 45 min aprox, debe quedar suave y drenar",
+    "Majar la papa en la batidora con el globo o paleta",
+    "Colocar en bandeja etiquetar y pasar a chóque térmico ( si no se usara de inmediato."
+  ],
+  "pesoTotalCantidad": 6900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 6900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 6600,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

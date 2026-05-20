@@ -1,0 +1,63 @@
+{
+  "nombre": "Batido Para Empanada De Piña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PRE MEZCLA PASTA PIÑA",
+      "cantidad": 5262,
+      "unidad": "g",
+      "codigoNetSuite": "SE00325",
+      "marca": "FAS",
+      "observaciones": "1 TANDA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA GOIRMET PRO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "GOURMET",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA",
+      "cantidad": null,
+      "unidad": null,
+      "codigoNetSuite": "EM10125",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar en la batidora la margarina (1800g), harina y azucar en polvo. Batir por 3 minutos a velocidad 1.",
+    "Agregar la cremadulce y batir por 4 minutos a velocidad 1 hasta que la mezcla quede homogenea.",
+    "Utilizar la pasta de inmediato. En caso que sobre, guardar en una bolsa con nombre y fecha de producción."
+  ],
+  "pesoTotalCantidad": 6162,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 6162,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

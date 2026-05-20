@@ -1,0 +1,131 @@
+{
+  "nombre": "Empaque Topping Arandanos Azul y Rojo",
+  "subsidiaria": "Locales",
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Arandano Congelado",
+      "cantidad": 1540,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Arandanos Congelados Rojos",
+      "cantidad": 1540,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "LIMON NATURAL GALON",
+      "cantidad": 760,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 45,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 1150,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100131",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 380,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100129",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLASTICO AUTOAD (UND: 18 * 2000 M)",
+      "cantidad": 1,
+      "unidad": "Centimetros",
+      "codigoNetSuite": "512000002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 1150,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100131",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 380,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100129",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 1150,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100131",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 380,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100129",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "Gramo",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "Gramo",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

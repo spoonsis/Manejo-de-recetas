@@ -1,0 +1,119 @@
+{
+  "nombre": "Flan Tres Leches Redondo Mini 845g Spoon 32096(PTL00100)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES redondo mini 150g",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00045",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA PARA TRES LECHES PASTEURIZADA SPOON",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FLAN DE CARAMELO SPOON REDONDO MINI",
+      "cantidad": 483,
+      "unidad": "g",
+      "codigoNetSuite": "SE00046",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR DULCE LECHE",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONT. 48 ON TRANSPA. TAPA PLANA (100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10075",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8X12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la base del molde el rosquete y mojar con la mezcla de leches pasteurizadas.",
+    "Colocar 10g de crema con manjar sobre el rosquete.",
+    "Montar con cuidado el flan sobre el rosquete, agregar todo el caramelo en el flan.",
+    "Decorar con hilos de dulce de leche en fomar de enrejado sobre el flan.",
+    "Tapar el empaque y etiquetar con fecha de vencimiento y nombre del producto, etiqueta spoon,Lote"
+  ],
+  "pesoTotalCantidad": 845,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 845,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 73,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

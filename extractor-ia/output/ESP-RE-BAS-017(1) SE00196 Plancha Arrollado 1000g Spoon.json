@@ -1,0 +1,62 @@
+{
+  "nombre": "Plancha Arrollado (1000g)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO ARROLLADO SPOON",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00452",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP (KILO) **",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA",
+      "cantidad": 3,
+      "unidad": "Pliegos",
+      "codigoNetSuite": "EM10018",
+      "marca": "TIPS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES (29800g)",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en el molde engrasado con papel encerado la mezcla de arrollado.",
+    "Hornear en el Argental a 170°C por 15 Minutos"
+  ],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 3,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

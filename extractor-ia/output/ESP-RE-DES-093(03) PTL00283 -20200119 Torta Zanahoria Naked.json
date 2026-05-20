@@ -1,0 +1,147 @@
+{
+  "nombre": "PTL00283 -20200119 Torta Zanahoria Naked",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Acetato Duro",
+      "cantidad": null,
+      "unidad": "g",
+      "codigoNetSuite": "EM10466",
+      "marca": "FAS",
+      "observaciones": "55cm",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Rosquete Zanahoria 190g",
+      "cantidad": 570,
+      "unidad": "g",
+      "codigoNetSuite": "SE00804",
+      "marca": "FAS",
+      "observaciones": "3 unidades",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Trasvasado leche condensada para naked",
+      "cantidad": 560,
+      "unidad": "g",
+      "codigoNetSuite": "SE00842",
+      "marca": "FAS",
+      "observaciones": "280g x capa, 1 Taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Relleno de Queso y Leche Condensada",
+      "cantidad": 224,
+      "unidad": "g",
+      "codigoNetSuite": "SE00806",
+      "marca": "FAS",
+      "observaciones": "112g x capa, 1/2 Taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Procesado Pecana Tostada",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00805",
+      "marca": "FAS",
+      "observaciones": "30g x capa, 1/4 Taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Relleno de Queso y Leche Condensada",
+      "cantidad": 112,
+      "unidad": "g",
+      "codigoNetSuite": "SE00806",
+      "marca": "FAS",
+      "observaciones": "1/2 Taza",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Procesado Pecana Tostada",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00805",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "ORLA CARTON  8\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA Y DOMO G50CT ALTA #9",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10494",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar 1 rosquete de Zanahoria humedecerlo con almibar, colocar el acetato alrededor, agregar trasvasado de leche condensada cocinada, relleno de queso y leche condensada y pecanas tostadas.",
+    "Colocar otro rosquete de Zanahoria humedecido con almibar, agregar otra capa de trasvasadade leche condensada cocinada, relleno de queso y leche condensada y pecanas tostadas.",
+    "Tapar con el ultimo rosquete de Zanahoria humedecido.",
+    "Encremar con la crema beige, dejando la parte superior sin crema, colocar la boronada de zanahoria en la parte inferior de la torta.",
+    "En la parte superior de la torta colocar el relleno de queso y leche condensada ralizando un estilo espejo y colocar los trozos pecana tostada en todo el borde.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1620,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1620,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 26,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

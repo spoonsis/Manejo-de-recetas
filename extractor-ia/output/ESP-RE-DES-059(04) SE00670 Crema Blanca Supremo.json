@@ -1,0 +1,75 @@
+{
+  "nombre": "SE00670 Crema Blanca Supremo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoracoración",
+  "areaEmpaca": "Decoración",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BETTERCREME SUPREMO (UND:4 K)",
+      "cantidad": 16150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10047",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "AYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW  (UND= 130 ML)",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": "MASTER PACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplas",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Abrir los galones de bettercreme supremo y verter dentro de la top cream, reservando un poco.",
+    "Disolver el preservante con el colorante en el  agua, mezclando bien, dejandolo sin grumos (Si hace falta disolver, agregar un poco del bettercream supremo para terminar de disolver)",
+    "Batir por 15 minutos",
+    "Una vez lista retirar (Temperatura adecuada 15° a 16°) y colocar en una tina plastica y tapar con plastico",
+    "Etiquetar con nombre y fecha de vencimiento.",
+    "Mantener en refrigeración, hasta su uso."
+  ],
+  "pesoTotalCantidad": 16264,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 16263,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

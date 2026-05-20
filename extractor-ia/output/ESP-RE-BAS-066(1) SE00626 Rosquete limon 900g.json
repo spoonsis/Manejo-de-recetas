@@ -1,0 +1,44 @@
+{
+  "nombre": "Rosquete limon 900g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO QUEQUE LIMON",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00429",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES (29800g)",
+      "cantidad": 520,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Pesar 900g de batido en los moldes previamente engrasados.",
+    "Llevar al horno a 180ºC 35 minutos."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 11,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

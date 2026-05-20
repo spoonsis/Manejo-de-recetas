@@ -1,0 +1,35 @@
+{
+  "nombre": "PASTA TORTA CHILENA SPOON KILO SE00177",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA P/PASTA CHILENA SPOON",
+      "cantidad": 23524,
+      "unidad": "g",
+      "codigoNetSuite": "SE00178",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la margarina, azucar y harina y preservante. Batir en velocidad 1 por 3 minutos, con ayuda de la paleta.",
+    "Utilizar de inmediato."
+  ],
+  "pesoTotalCantidad": 23300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 23300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 224,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,174 @@
+{
+  "nombre": "Postre pie de limon y arandanos Local",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA FEUILLETINE",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00794",
+      "marca": "FAS",
+      "observaciones": "1 UD",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO P/PIE LIMON SPOON",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00278",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ARANDANOS AZULES CONGELADOS",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10548",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Boquilla 4ft",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA ARANDANOS AZULES",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00791",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA ARANDANOS LICUADA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00792",
+      "marca": "FAS",
+      "observaciones": "BORDE",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA (UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\" (CAJA:100 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TEMPORADA",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el molde aceitado la base de galleta feuilletine y llevar al horno.",
+    "Dosificar la mezcla de pie de limon y los arandanos azules, procurando que queden dentro pero no al borde.",
+    "Llevar al horno.",
+    "Desmoldar luego de enfriamiento en la quequera 9.",
+    "Decorar con colocho de crema beidge boquilla 4ft dejando un espacio al borde para la salsa licuada.",
+    "Al centro colocar la salsa de arandanos. Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1560,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1560,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

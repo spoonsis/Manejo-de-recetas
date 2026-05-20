@@ -1,0 +1,91 @@
+{
+  "nombre": "Mousse de berries",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 1850,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Condensada",
+      "cantidad": 2225,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Topping arandanos rojos",
+      "cantidad": 2600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00748",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Prestige Grand",
+      "cantidad": 2600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "Prestige",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Gelatina Pura",
+      "cantidad": 88,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1185,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En la batidora agregar la prestige con el queso crema y batir hasta crecer.",
+    "Luego agregar el topping de arandanos rojos junto con la leche condensada y preservante e incoporar",
+    "Hidratar la gelatina en agua y agregar a la mezcla anterior",
+    "Dosificar de inmediato"
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 548,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

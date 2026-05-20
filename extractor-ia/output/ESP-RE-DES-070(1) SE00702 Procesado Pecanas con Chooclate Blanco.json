@@ -1,0 +1,36 @@
+{
+  "nombre": "SE00702 Procesado Pecanas con Chooclate Blanco",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mezcla Chocolate Blanco con Pecana",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00086",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Pasar por la trituradora la mezcla de pecanas con chocolate blanco.",
+    "Guardar en un tina azul con tapa.",
+    "Usar las etiquetas que traen de postres."
+  ],
+  "pesoTotalCantidad": 500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

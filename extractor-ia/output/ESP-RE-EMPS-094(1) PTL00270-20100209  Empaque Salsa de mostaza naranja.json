@@ -1,0 +1,104 @@
+{
+  "nombre": "Salsa de mostaza naranja",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MOSTAZA",
+      "cantidad": 170,
+      "unidad": "Gramo",
+      "codigoNetSuite": "MP10258",
+      "marca": "HELLMANNS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE NARANJA TB",
+      "cantidad": 225,
+      "unidad": "Gramo",
+      "codigoNetSuite": "MP10598",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA GRANULADA",
+      "cantidad": 55,
+      "unidad": "Gramo",
+      "codigoNetSuite": "MP10257",
+      "marca": "DIJON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NARANJA CRIOLLA",
+      "cantidad": 0.5,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 1.5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "1212412",
+      "marca": null,
+      "observaciones": "(PAQ=5 KILO)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 570,
+      "unidad": "Gramo",
+      "codigoNetSuite": "909000009",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 570,
+      "unidad": "Gramo",
+      "codigoNetSuite": "909000009",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 570,
+      "unidad": "Gramo",
+      "codigoNetSuite": "909000009",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MODI PREPARACION",
+      "cantidad": 1,
+      "unidad": "N/A",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "Gramo",
+  "tiempoPrepCantidad": 77,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "Gramo",
+  "mermaCantidad": 32.72,
+  "mermaUnidad": "Gramo",
+  "registroCambios": "Importación inicial desde Excel"
+}

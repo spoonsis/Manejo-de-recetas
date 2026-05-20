@@ -1,0 +1,61 @@
+{
+  "nombre": "Empaque Salsa Tamarindo(210g)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "SALSA TAMARINDO",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "SE00124",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 6 X 10 (KILO)",
+      "cantidad": 1,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10044",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar bolsas de 210g de salsa tamarindo en una bolsa 6*10 etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 210,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "seg.",
+  "porcionesCantidad": 15,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 210,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

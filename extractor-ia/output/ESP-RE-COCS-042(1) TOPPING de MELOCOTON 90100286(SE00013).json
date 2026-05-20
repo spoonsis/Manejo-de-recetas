@@ -1,0 +1,121 @@
+{
+  "nombre": "TOPPING de MELOCOTON",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MELOCOTON EN CUBOS COUNTREE (UND:3 K)",
+      "cantidad": 29760,
+      "unidad": "g",
+      "codigoNetSuite": "MP10039",
+      "marca": "COUNTREE",
+      "observaciones": "DRENADO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "(Almibar (del melocoton)**",
+      "cantidad": 260,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "MONACO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO ( 25 KG )",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GOMA XANTAN (KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10203",
+      "marca": "BALTIMORE SPICE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BENZOATO SODIO (PAQ:2.5 K)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10083",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ESTABILIZANTE PARA FRUTAS (97178)",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10553",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON (KILO)",
+      "cantidad": 620,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (BOLSAS:1500g)",
+      "cantidad": 11240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW  (UND= 130 ML)",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL ELECTRIC ORANGE (UND=130m)",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10153",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Abrir las latas de melocoton, drenar en un colador. Reservar un poco de almibar.",
+    "Licuar el melocoton. (dejar medio mal licuado)",
+    "Mezclar muy bien los secos: el estabilizante, preservaNte, goma Xantan y azucar.",
+    "Colocar en una olla de acero inox, el melocoton y la mezcla del estabiliante, azucar, bensoato de sodio y goma Xantan.",
+    "Cocinar a fuego medio sin parar mezclar hasta que hierva.",
+    "Mezclar el jugo de limon, almibar con el almidon y agregarselo a la mezcla. Agregar colorantes.",
+    "Esperar a que hierva y espese, enviar a choque termico"
+  ],
+  "pesoTotalCantidad": 40000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 80,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 40000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2656,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

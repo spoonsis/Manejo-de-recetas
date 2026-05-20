@@ -1,0 +1,44 @@
+{
+  "nombre": "Corte Canasta Redondas Para Automercado 30g 906000050(SE00327)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA TARTALETA/CANASTA",
+      "cantidad": 588,
+      "unidad": "g",
+      "codigoNetSuite": "SE00218",
+      "marca": "FAS",
+      "observaciones": "42 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOALLA KLENEEX COCINA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": "TORK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Con ayuda de la cuchara mediana porcionar bolillos 42g de masa cruda cada una.",
+    "Colocar en la maquina tartaletera por 3 min.a 250 ºC. Usar los moldes redondos medianos"
+  ],
+  "pesoTotalCantidad": 390,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 13,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 30,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 198,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

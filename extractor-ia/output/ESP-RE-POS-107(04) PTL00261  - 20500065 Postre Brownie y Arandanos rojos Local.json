@@ -1,0 +1,194 @@
+{
+  "nombre": "PTL00261 - 20500065 Postre Brownie y Arandanos rojos Local",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "4",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Rosquete Brownie Redondo de 400 gramos",
+      "cantidad": 395,
+      "unidad": "g",
+      "codigoNetSuite": "SE00747",
+      "marca": "FAS",
+      "observaciones": "1 UD",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE BERRIES",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00750",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA FUDGE",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00749",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOPPING ARANDANOS ROJOS",
+      "cantidad": 105,
+      "unidad": "g",
+      "codigoNetSuite": "SE00748",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOUSSE BERRIES",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00750",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Fudge De Chocolate",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "Boquilla 804",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TOPPING ARANDANOS ROJOS",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00748",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ROSQUETE BROWNIE 400G",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00668",
+      "marca": "FAS",
+      "observaciones": "1/2 UNIDAD",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA FUDGE",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00749",
+      "marca": "FAS",
+      "observaciones": "HILOS SOBRE BROWNIE",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA (UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\" (CAJA:100 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TEMPORADA",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10472",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engrasar el molde y colocar el brownie entero como base",
+    "Luego dosificar 300g de mousse de berries dejando un hueco al centro.",
+    "En el hueco del centro agregar la salsa de fudge y encima de ella el topping de arandanos rojos.",
+    "Luego dosificar los otros 200g de mousse de berries y llevar a enfriamiento por minimo 4 horas.",
+    "Desmoldar en la orla 9 y decorar con colochos de fudge al borde con boquilla 804.",
+    "Al centro colocar el topping de arandanos rojos y pegado al colocho colocar el medio brownie partido en trozos.",
+    "Con la salsa de fudge hacer hilos sobre el brownie .",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 81,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

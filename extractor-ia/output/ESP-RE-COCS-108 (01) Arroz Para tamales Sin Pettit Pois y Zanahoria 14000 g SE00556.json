@@ -1,0 +1,99 @@
+{
+  "nombre": "Arroz Para tamales Sin Pettit Pois y Zanahoria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "EMPAQUE",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQIUTA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": "LOS PATITOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ARROZ TIO PELON 96%",
+      "cantidad": 5400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10071",
+      "marca": "TIO PELON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 14,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 7560,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una bolsa 12x18 2000g de pipian",
+    "Hacer nudo",
+    "Etiquetar con nombre y fecha de vencimiento, mantener en refrigeración hasta su uso"
+  ],
+  "pesoTotalCantidad": 14000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 14000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 814,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

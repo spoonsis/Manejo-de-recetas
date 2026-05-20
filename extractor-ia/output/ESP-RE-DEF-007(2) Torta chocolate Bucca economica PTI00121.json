@@ -1,0 +1,166 @@
+{
+  "nombre": "Torta chocolate Bucca economica PTI00121",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY CHOCOLATE BC 350G",
+      "cantidad": 640,
+      "unidad": "g",
+      "codigoNetSuite": "SE00449",
+      "marca": "FAS",
+      "observaciones": "2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON KILO",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON KILO",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON KILO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCO (UND:4 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "GATO",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "HILOS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONFITILLO CORAZON MAVALERIO (PAQ:150G)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10532",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10084",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA CHOCOLATE BUCCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10398",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Usar 2 rosquetes, Rellenar un  rosquete 1 taza de crema de chocolate y esparcir bien.",
+    "Tapar.",
+    "Colocar sobre la base de la quequera.",
+    "Encremar con crema chantilly de chocolate, colocar crema doble chocolate en los bordes para marmolear, acorde a la fotografía.",
+    "Hacer colochos con crema de chocolate, en el centro de la superficie hacer un gato con ganache de chocolate oscuro, colocar 5 monedas de chocolate marmoleado sobre el colocho y una en el centro del gato #",
+    "Por ultimo hacer hilos de ganache de chocolate blanco en toda la superficie.",
+    "Tapar la torta y etiquetar con etiqueta bucca, nombre del producto, codigo de barras y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 92,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

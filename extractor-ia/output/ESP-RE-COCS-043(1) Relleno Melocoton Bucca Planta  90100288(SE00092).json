@@ -1,0 +1,73 @@
+{
+  "nombre": "Relleno Melocoton Bucca Planta",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MELOCOTON EN CUBOS COUNTREE (UND:3 K)",
+      "cantidad": 15000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10039",
+      "marca": "COUNTREE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO ( 25 KG )",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 (PAQ=5 KILOS)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW (UND=4.5 OZ)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colcoar en una olla el melocoton picado, junto con el preservante. Hervir",
+    "Disolver el almidon en el agua y agregar mezclando constantemente para evitar que se formen grumos.",
+    "Hervir, Agregar el colorante mezclar bien.",
+    "Retirar y colocar en bandejas, enviar a efriar."
+  ],
+  "pesoTotalCantidad": 16000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 4000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1332,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

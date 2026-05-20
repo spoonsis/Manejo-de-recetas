@@ -1,0 +1,80 @@
+{
+  "nombre": "SE00766 Relleno de manzana",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANZANA PICADA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10625",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla con el azucar y la canela y llevar a hervor por 1 minuto.",
+    "Espesar con el almidon disuelto en agua y pasar a enfriamiento."
+  ],
+  "pesoTotalCantidad": 1360,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 1360,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 145,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

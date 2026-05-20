@@ -1,0 +1,139 @@
+{
+  "nombre": "TORTA FRAMBUESA LOCAL",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 200g",
+      "cantidad": 342,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "2ud Rosquetes",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Trasvasado de leche condensada cocinada",
+      "cantidad": 330,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": "180g x capa, 1/3 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Relleno de Frambuesa",
+      "cantidad": 249,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "83g x capa, 1/3 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo con chocolate blanco",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "40g xcapa, 1/4 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Rosada",
+      "cantidad": 196,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Empaque Relleno de Frambuesa",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "ORLA CARTON 8\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA Y DOMO G50CT ALTA #9",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVA",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortas los dos rosquetes a la mitad y humedecerlos con las leches pausterizadas.",
+    "En la primera mitad del rosquete previamente humedecido, colocar la leche condensada cocinada, el relleno de frambuesa y el caramelo bañado en chocolate blanco.",
+    "Colocar la segunda mitad de rosquete humedecido, la lechecondensada cocinada, el relleno de frambuesa y el caramelo bañado en chocolate blanco.",
+    "Colocar la tercera mitad de rosquete humedecido, la lechecondensada cocinada, el relleno de frambuesa, el caramelo bañado en chocolate blanco y por ultimo tapar con la ultima mitad de rosquete humedecido",
+    "Colocar en la orla y encrema con la crema rosada, dejando un borde alto en la superficie de la torta(estilo pisina)",
+    "Colocar el relleno de frambuesa y forma un estilo espiral.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1406,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1406,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 16,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

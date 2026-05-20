@@ -1,0 +1,154 @@
+{
+  "nombre": "Porcion Torta Chocolate Triangular 170g Spoon 75377(PTI00108)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Andrea Zamora, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 4.5 K)",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "NESTLÉ",
+      "observaciones": "Para pegar la base",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE SPOON RED  (400g)",
+      "cantidad": 335,
+      "unidad": "g",
+      "codigoNetSuite": "95805",
+      "marca": "FAS",
+      "observaciones": "1 Unidad,,,Descripción del producto especifica 440g…es incorrecto.",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 4.5 K)",
+      "cantidad": 215,
+      "unidad": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "NESTLÉ",
+      "observaciones": "3/4 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 4.5 KG )",
+      "cantidad": 215,
+      "unidad": "g",
+      "codigoNetSuite": "1112431",
+      "marca": "Nestle",
+      "observaciones": "3/4 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FUDGE KILO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "0410151",
+      "marca": "CONEXU",
+      "observaciones": "1/2 Taza Para Superficie",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BARQUILLO VETEADO (CAJA:1085 UND)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "10700028",
+      "marca": "KARMA FINA",
+      "observaciones": "6 Uds",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO (KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "908000045",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTEN.TRIANGULAR BAJO 11X5 200 UND",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "1950683",
+      "marca": "MACROCOMERCIAL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "LOGO OVALADO SPOON PEQ  (ROLLO=1000 U)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "60100027",
+      "marca": "LITOGRAFÍA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "0702007",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "0702067",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "0702069",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "1950705",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "702174",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete en 3 partes iguales. Rellenar ambas capas con manjar.",
+    "Cubrir la parte de arriba con fudge, hacer linear cruzadas de ganache blanco. Marcar las porciones y decorar cada una con 1 barquillo de chocolate.",
+    "Cortar en 6 triangulos iguales y colocar en contenedores con manjar en la base. Cerrar el empaque.",
+    "Asegurarlo con sello de seguridad,etiquetar con nombre,ingredientes, código, fecha de vencimiento, día juliano y etiqueta de la cuchara Spoon."
+  ],
+  "pesoTotalCantidad": 918,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 153,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 62,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

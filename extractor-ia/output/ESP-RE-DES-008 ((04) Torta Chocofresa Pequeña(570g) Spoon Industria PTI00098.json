@@ -1,0 +1,183 @@
+{
+  "nombre": "Torta Chocofresa Pequeña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 220g",
+      "cantidad": 281,
+      "unidad": "g",
+      "codigoNetSuite": "SE00463",
+      "marca": "FAS",
+      "observaciones": "1.5 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO DE FUDGE CHOCOLATE SPOON",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA (75G) X 2 RELLENOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA (45G) X 2 RELLENOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQ RELLENO DE FRESA NATURAL",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA (90G) X 2 RELLENOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SUSPIRO QUEBRADO 7650 g",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00019",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA (2DO RELLENO SOLAMENTE)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO (SPOON-IND)(24875g",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO (SPOON-IND)(24875g",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 127",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO BORONA CHOCOLATE",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00506",
+      "marca": "FAS",
+      "observaciones": "1 Cucharradita",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TOPPIN DE SALSA DE FRESA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00703",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCOLATE",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 8\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\"",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "GRACOPACK",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 X 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA IMP. SPOON MEDIANA V-273 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10024",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad, usaremos uno y medio, rellenar dos con relleno de fudge. Esparcir bien con ayuda de una espatula.",
+    "Colocar encima del fudge el relleno de chocofresa y esparcir bien con espatula, colocar el relleno de fresa y solamente en uno de los rellenos agregar encima el suspiro triturado. Tapar con la otra tapa del rosquete.",
+    "Encremar la torta con la crema chantilly de chocolate,y marmolear con crema liquida los bordes.",
+    "Decorar con la boquilla #127 colocho de crema chantilly todo el borde, Colocar en el centro el toppin de salsa de fresa",
+    "Decorar con virtuta de chocolate. Acrode a la fotografia.",
+    "Colocar en el domo. Tapar y Etiquetar con nombre, ingredientes, lote y fecha"
+  ],
+  "pesoTotalCantidad": 911,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 911,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 18,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

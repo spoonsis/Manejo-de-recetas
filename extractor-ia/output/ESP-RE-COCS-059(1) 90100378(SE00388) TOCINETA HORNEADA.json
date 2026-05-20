@@ -1,0 +1,45 @@
+{
+  "nombre": "TOCINETA HORNEADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "TOCINETA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10372",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar las tiras de tocineta sobre una rejilla grill, deben quedar bien estiradas.",
+    "Cocinar en horno Rational.",
+    "colocar en bandejas bien escurridas y enfriar"
+  ],
+  "pesoTotalCantidad": 325,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 325,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 676,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

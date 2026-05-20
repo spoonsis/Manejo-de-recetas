@@ -1,0 +1,100 @@
+{
+  "nombre": "SE00755 Toping Lemon Court",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 4345,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almidon Modificado",
+      "cantidad": 692,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 4822,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 1230,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "Para almidon",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Limones Maya",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10240",
+      "marca": "LA PERLA",
+      "observaciones": "Ralladura",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "Aceal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Egg Yellow",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En una olla agregar, el azucar, el agua, el limon en polvo, el preservante, la ralladura de limon y el colorante Egg Yellow, y revolver constantemente.",
+    "Una vez que empieze a hervir, se agrega el almidon (previamente disuelto en el agua) nunca dejando de revolver para que no se apelote la mezcla.",
+    "Luego de espezar, apartar del fuego y dejar enfriar.",
+    "Ya frio, empacar y etiquetar."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1120,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

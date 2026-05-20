@@ -1,0 +1,72 @@
+{
+  "nombre": "Mezcla tres leches chocolate FAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 4300,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JARABE TRES LECHES GOLDENDIPT",
+      "cantidad": 1450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10218",
+      "marca": "KERRY",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCOA DUTCH PROCESS",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "DUCH PROCESS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 14.25438596,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Disolver la cocoa en un poco de agua caliente, primero. En la batidora colocar el agua, el polvo de tres leches, la leche condesada, coca disuelta y el preservante.",
+    "Batir por dos minutos a velocidad 2.",
+    "Utilizar de inmediato"
+  ],
+  "pesoTotalCantidad": 6500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 6500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 129,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

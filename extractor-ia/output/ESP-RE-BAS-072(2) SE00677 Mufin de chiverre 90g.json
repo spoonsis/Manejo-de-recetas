@@ -1,0 +1,100 @@
+{
+  "nombre": "SE00677 Mufin de chiverre 90g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Pastas",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Batido Queque Seco Vainilla",
+      "cantidad": 19000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00411",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHIVERRE 5 kg",
+      "cantidad": 5440,
+      "unidad": "g",
+      "codigoNetSuite": "MP10676",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BATIDO STROUSEL CHIVERRE",
+      "cantidad": 1350,
+      "unidad": "g",
+      "codigoNetSuite": "SE00676",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante Nataxul 7703",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "MP10673",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAPSULA # 10 BLANCA (PAQ:500 UND)",
+      "cantidad": 270,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10067",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar primero 35g de batido en la capsula.",
+    "Luego colocar los 20g de chiverre y cerrar con los 35g de batido faltantes. Luego colocar los 5g de strousel sobre el mufin",
+    "Llevar al horno a 180ºC por 20 minutos.",
+    "colocar en bandejar y rociar con el preservante nataxul"
+  ],
+  "pesoTotalCantidad": 24440,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 55,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 270,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 90,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1350,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,165 @@
+{
+  "nombre": "Torta Kit Kat Caramel Locales",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": 4,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO CHOCOLATE Y CARAMELO SALADO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00712",
+      "marca": "Fas",
+      "observaciones": "1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "Fas",
+      "observaciones": "Encremado",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "MEZCLA SIROPE DULCE LECHE KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": "MARMOLEADO",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Crema Bettercream Doble Chocolate",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICH",
+      "observaciones": "MARMOLEADO",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "SALSA KITKAT",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00711",
+      "marca": "FAS",
+      "observaciones": "1/3 taza",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE LECHE Y SAL",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00713",
+      "marca": "Fas",
+      "observaciones": "1/4 TAZA",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "KITKAT CARAMEL",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "MP10757",
+      "marca": "NESTLE",
+      "observaciones": "4 CUADROS",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "Colocho boquilla redonda",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla Carton 10 Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca Lisa Bopp Brillante",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10443",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA TORTA KIT KAT CARAMEL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10445",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Se monta la torta, se encrema con la crema beidge y se marmolea con el sirope de dulce de leche y crema de chocolate dejando dos franjas en el borde (1 de dulce de leche y otra de chocolate.",
+    "Hacer con el lustre una corona dejando el centro hueco, para colocar la salsa de kitkat",
+    "Luego al borde colocar el caramelo con chocolate salado.",
+    "Colocar los kitkat partidos en cuadros ( 4 cuadros) en un borde.",
+    "Con la boquilla redonda hacer colochos alrededor de la torta.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1250,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 120,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

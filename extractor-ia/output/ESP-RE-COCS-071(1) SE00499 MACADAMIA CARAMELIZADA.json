@@ -1,0 +1,54 @@
+{
+  "nombre": "MACADAMIA CARAMELIZADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR REFINO INDUSTRIAL",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10078",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MACADAMIA #7",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10243",
+      "marca": "NUECES IND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el azucar a punto caramelo claro, agregar la lactocrema, mezclar",
+    "Agregar la macadamia picada al sartén y cocinar hasta que el azúcar se disuelva, colocar en un teflón.",
+    "Procesar en la maquina y utilizar."
+  ],
+  "pesoTotalCantidad": 1300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

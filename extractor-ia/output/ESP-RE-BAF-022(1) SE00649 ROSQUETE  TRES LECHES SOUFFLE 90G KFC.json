@@ -1,0 +1,64 @@
+{
+  "nombre": "SE00649 ROSQUETE TRES LECHES SOUFFLE 90G KFC",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO SOUFFLE (KILO)",
+      "cantidad": 11100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00285",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1375,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 90X32.5 x 265 mm",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10277",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engrasar moldes individuales cuadrados pequeños.",
+    "Pesar 90g en cada molde",
+    "Hornear.",
+    "Empacar 18 ud por lata, etiquetar, embolsar y etiquetar con vencimiento y lote"
+  ],
+  "pesoTotalCantidad": 11000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 122,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 90,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

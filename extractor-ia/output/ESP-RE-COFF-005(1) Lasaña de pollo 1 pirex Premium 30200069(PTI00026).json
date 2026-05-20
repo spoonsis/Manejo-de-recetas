@@ -1,0 +1,110 @@
+{
+  "nombre": "Lasaña de pollo 1 pirex Premium 30200069(PTI00026)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA P/LASAG/(PAQ:1 KG)",
+      "cantidad": 420,
+      "unidad": "g",
+      "codigoNetSuite": "MP10023",
+      "marca": "PASTA Y BASTA",
+      "observaciones": "4 LAMINAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION POLLO RECORTE (KILO)",
+      "cantidad": 420,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SALSA BLANCA SPOON KILO",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "SE00108",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION SALSA ROJA SPOON (31750g)",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "SE00116",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO RALLADO RICO DOS PINO SP (PAQ:2 K)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10029",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANDEJA ALUM #4040 (CAJA:250UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10014",
+      "marca": "Nova S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA BAND ALUM 4040 (CAJA:250 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": "Nova S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar 1/8 de salsa blanca en la base del pyrex de aluminio rectangular de 6 porciones.",
+    "Colocar 1 hoja de pasta, Esparcir 1/2 tz de salsa blanca junto con 1/2 taza de salsa roja. Adicionar 1 taza de pollo y esparcir bien.",
+    "Repetir el pao 2, 2 veces mas. (total 3 rellenos)",
+    "Colocar 1 hoja de pasta encima, Esparcir 1/2 tz de salsa blanca junto con 1/2 taza de salsa roja. Adicionar el queso rallado.",
+    "Marcar en 6 porciones y tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "pirez",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 90,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

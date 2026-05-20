@@ -1,0 +1,63 @@
+{
+  "nombre": "Empaque Almendras Laminadas Tostadas (500g) 95607(PTL00125)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ALMENDRA FILETEADA (11,34KG * CAJA)",
+      "cantidad": 11340,
+      "unidad": "g",
+      "codigoNetSuite": "MP10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8x12*4 TRANSPARENTE",
+      "cantidad": 22,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 22,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 22,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Llevar a tostar al horno en latas. Las almendras deben quedar bien tostadas y crocantes.",
+    "Una vez frias empacar en bolsas 8*12*4 500 g.",
+    "Etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 11270,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 16,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

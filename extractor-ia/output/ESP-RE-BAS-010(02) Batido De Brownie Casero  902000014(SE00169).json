@@ -1,0 +1,91 @@
+{
+  "nombre": "Batido De Brownie Casero",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Premezcla Para Brownie Casero",
+      "cantidad": 16200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00170",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 1400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Margarina Baker Tableta",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "BAKER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Vainilla Oscura",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10385",
+      "marca": "VAINOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Huevo Liquido Refrigerado",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Yema De Huevo Pasteurizada",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En el agua hirviendo derretir los chocolates, vainilla, agregar el aceite y la margarina y colocar en la batidora",
+    "Agregar el huevo y la yema y mezclar a velocidad 1 por 1 minuto.",
+    "Luego agregar los ingredientes secos e incorporar a velocidad 2 por 1 minuto.",
+    "Agregar el azucar y la pecana y mezclar a velocidad 1 por 1 minuto."
+  ],
+  "pesoTotalCantidad": 20600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "Moldes",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

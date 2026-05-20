@@ -1,0 +1,82 @@
+{
+  "nombre": "SE00008 Relleno de Limón Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 65505,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMON EN POLVO ( BULTO 25 KG )",
+      "cantidad": 1056,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": "RESOCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BENZOATO DE SODIO",
+      "cantidad": 66,
+      "unidad": "g",
+      "codigoNetSuite": "MP10083",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 214,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "ANCHOR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Disolver el preservante en agua hirviendo. Colocar en la batidora la leche condensada, el limón en polvo, preservante , batir con el globo a velocidad 1 por 1 minuto.",
+    "Limpiar los bordes, batir por 2 min en velocidad 2.",
+    "Enviar a empaque en botes, cubiertos con plastico.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 65000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 27,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 65000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1000,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

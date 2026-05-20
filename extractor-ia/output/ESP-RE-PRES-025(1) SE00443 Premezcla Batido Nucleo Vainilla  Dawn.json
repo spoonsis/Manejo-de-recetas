@@ -1,0 +1,154 @@
+{
+  "nombre": "SE00443 Premezcla Batido Nucleo Vainilla  Dawn",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (SACO:50 K)",
+      "cantidad": 5820,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CLARA DE HUEVO DESHIDRATADA",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10142",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA SILVER CAKE",
+      "cantidad": 3622,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "FAHACASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCENTRADO VAINILLA DAWN",
+      "cantidad": 3492,
+      "unidad": "g",
+      "codigoNetSuite": "MP10493",
+      "marca": "DAWN",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GOMA XANTANA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10481",
+      "marca": "MABAKER & CHEF",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 38,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CMC",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10494",
+      "marca": "UNIVERSAL DE ALIMENTOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE POLVO INDUSTRIAL (SACO:25 KG)",
+      "cantidad": 518,
+      "unidad": "g",
+      "codigoNetSuite": "MP10234",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BICARBONATO DE SODIO (PAQ:2.5 K)",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "MP10085",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACTI EGG",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10517",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSPARENTE KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1, En una bolsa 17x25 empacar el azucar. Etiquetar",
+    "2, En una bolsa 17x25 empacar las harinas, concentrado,cmc, leche en polvo y la goma. Clara de huevo, acti egg. Etiquetar",
+    "3, En una bolsa 8*12 pesar el preservante y el bicarbonato (se debe pesar justo antes de su uso)",
+    "4, En una bolsa 8*12 pesar la clara"
+  ],
+  "pesoTotalCantidad": 14195,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 14195,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

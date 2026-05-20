@@ -1,0 +1,54 @@
+{
+  "nombre": "MOUSSE DE CHOCOLATE DE LECHE",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GANACHE DE CHOCOLATE DURO PARA MOUSSE",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00734",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND (UND:4 K)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Batir la crema hasta punto yogurt con globo en velocidad alta.",
+    "Agregar el ganache y el preservante a la crema batida en velocidad media hasta homogeneo.",
+    "Utilizar de inmediato"
+  ],
+  "pesoTotalCantidad": 4200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 4200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 208,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

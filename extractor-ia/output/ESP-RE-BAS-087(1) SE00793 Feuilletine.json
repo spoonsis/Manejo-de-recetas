@@ -1,0 +1,73 @@
+{
+  "nombre": "SE00793 Feuilletine",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Silver Cake",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10478",
+      "marca": "Silver",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "Laica",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Clara De Huevo",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10141",
+      "marca": "Innovo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Papel Mantequilla",
+      "cantidad": 40,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materiales"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en la batidora y batir solo hasta incorporar.",
+    "En las bandejas con papel mantequilla colocar 1000g de mezcla por bandeja y distribuir por toda la bandeja para que sea una capa fina de mezcla.",
+    "Llevar al horno a 180ºC por 15 minutos, o hasta que el producto tome un color caramelo oscuro.",
+    "Dejar enfriar"
+  ],
+  "pesoTotalCantidad": 40000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 40000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

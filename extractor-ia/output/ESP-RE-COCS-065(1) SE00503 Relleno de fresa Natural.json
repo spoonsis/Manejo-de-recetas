@@ -1,0 +1,109 @@
+{
+  "nombre": "SE00503 Relleno de fresa Natural",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FRESA PICADA (KILO)",
+      "cantidad": 23000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10193",
+      "marca": "BEGRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 62,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO ( 25 KG )",
+      "cantidad": 1350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10026",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL SUPER RED",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": "AMERICOLOR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE ROJO (50ML)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10509",
+      "marca": "ANCLA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (BOLSAS:1500g)",
+      "cantidad": 7130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON (KILO)",
+      "cantidad": 920,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 571,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Lavar y desinfectar la fresa. Cortar la fresa con la maquina, Colocar la fresa en la olla junto con el azucar, y el colorante. Hervir",
+    "Mezclar el almidon con el preservante y el agua, juego de limon .Disolver el la mezcla de Liquidos super bien Agregar a la mezcla anterior. Hervir a Fuego Medio",
+    "No Mezclar tanto para no desbaratar la Fresa",
+    "Colocar en bandejas y hacer choque termico."
+  ],
+  "pesoTotalCantidad": 30000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "bolsas",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2470,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

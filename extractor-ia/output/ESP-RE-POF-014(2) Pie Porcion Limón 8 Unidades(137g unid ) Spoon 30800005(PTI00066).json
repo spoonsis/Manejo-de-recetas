@@ -1,0 +1,119 @@
+{
+  "nombre": "Pie Porcion Limón 8 Unidades(137g unid ) Spoon 30800005(PTI00066)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PIE LIMON PARA PORCIONAR",
+      "cantidad": 955,
+      "unidad": "g",
+      "codigoNetSuite": "SE00279",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 125,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LIMONES MAYA (UND)",
+      "cantidad": 0,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10240",
+      "marca": "PRESTO",
+      "observaciones": "RALLADURA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": "MACRO C",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Desmoldar Marcar el pie de limon con el cortador de 8 porciones.",
+    "Cortar 8 porciones.",
+    "colocar en forma de zig zag el manjar en la base",
+    "Introducir la porcion. Decorar con crema chantilly con boqiulla 2C, y ralladura de limon cada porcion.",
+    "Cerrar y etiquetar: etiqueta con lote,a medio lado, en la base etiqueta con ingredientes y codigo de barras.Asegurar la porcion con sello de seguridad y sobre esta cinta pequeña spoon."
+  ],
+  "pesoTotalCantidad": 1110,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 125,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

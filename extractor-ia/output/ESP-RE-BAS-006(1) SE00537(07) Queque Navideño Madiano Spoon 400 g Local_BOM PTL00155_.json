@@ -1,0 +1,257 @@
+{
+  "nombre": "Queque Navideño Madiano Spoon 400 g",
+  "subsidiaria": "Empresa principal : Servicios de Pastelería S.A.",
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Triple Sec",
+      "cantidad": 52,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10042",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manteca Max Pan",
+      "cantidad": 5.03,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10003",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Harina Estandar Fhacasa",
+      "cantidad": 1.007,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Huevo Liquido Refrigerado",
+      "cantidad": 33.26,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Dulce Granulado",
+      "cantidad": 23.948,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10552",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mermelada Naranja",
+      "cantidad": 3.328,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10252",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Vainilla Oscura",
+      "cantidad": 2.396,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10385",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo de Naranja TB",
+      "cantidad": 6.652,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10598",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ron Plata Especial",
+      "cantidad": 14.968,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10340",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Margarina Baker Tableta",
+      "cantidad": 49.20864,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10040",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Moreno",
+      "cantidad": 21.2784,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10076",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almendra Entera Pequeña",
+      "cantidad": 46.54728,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10644",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Harina Trigo Nacarina",
+      "cantidad": 64.49976,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Polvo Hornear",
+      "cantidad": 1.82208,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10304",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bicarbonato De Sodio",
+      "cantidad": 1.46328,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10085",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cocoa Dutch Process",
+      "cantidad": 0.79872,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10146",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 0.34632,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Nuez Moscada Molida",
+      "cantidad": 0.29328,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Clavo de Olor Molido",
+      "cantidad": 0.53352,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10600",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jengibre Molido",
+      "cantidad": 0.39936,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10221",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 3.7908,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Fruta Confitada",
+      "cantidad": 13.30056,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10554",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pasas",
+      "cantidad": 32.58216,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10561",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Higos En Almibar",
+      "cantidad": 19.28472,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10409",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ciruela",
+      "cantidad": 23.2752,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10645",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cereza Confitada",
+      "cantidad": 32.58216,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10646",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

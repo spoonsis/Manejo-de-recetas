@@ -1,0 +1,119 @@
+{
+  "nombre": "Aderezo De Vinagreta De Albahaca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE DE OLIVA",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "COTOLIVA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINAGRE BALSAMICO TINTO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10388",
+      "marca": "ISLEÑA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINAGRE BLANCO PROEXA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10389",
+      "marca": "PROEXA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO PARMESANO RALLADO",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALBAHACA KILO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10061",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Desinfectar la albahaca.",
+    "Colocar el aceite en una olla y calentar, adicionar la albahaca y cocinar por 3 minutos.",
+    "Colocar luego todos los ingredientes a licuar, hasta que la mezcla quede bien liza y homogenea.",
+    "Colocar en un balde de acero inoxidable, cubrir con plastico y etiquetar con nombre.",
+    "Pasar a empaque."
+  ],
+  "pesoTotalCantidad": 8400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 16,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 8400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 25,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

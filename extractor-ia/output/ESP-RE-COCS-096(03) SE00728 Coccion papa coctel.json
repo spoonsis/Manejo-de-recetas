@@ -1,0 +1,54 @@
+{
+  "nombre": "SE00728 Coccion papa coctel",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PAPA COCTEL MINI",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10280",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Plástico Autoaderible 1/ 18*2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Colocar las papas en bandejas y llevar al Rational en programacion ¨papa coctel 2026¨.",
+    "2.- Programacion 100% humedad a 130°C por 30 minutos.",
+    "3.- Sacar y llevar a enfriamiento"
+  ],
+  "pesoTotalCantidad": 860,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 860,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 140,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

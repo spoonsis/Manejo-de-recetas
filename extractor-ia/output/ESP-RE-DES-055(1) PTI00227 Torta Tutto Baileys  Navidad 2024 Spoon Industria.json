@@ -1,0 +1,202 @@
+{
+  "nombre": "Torta Tutto Baileys Navidad 2024 Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela, chef",
+  "areaProduce": "Decoracion",
+  "areaEmpaca": "Decoracion",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquette Melo 400 g",
+      "cantidad": 340,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "Partido a la mitad",
+      "seccion": "EMSABLE"
+    },
+    {
+      "nombre": "Mezcla Tres Leches C/Baileys",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": "1/3 Taza por capa",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Ganache Baileys",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00087",
+      "marca": "FAS",
+      "observaciones": "1/3 Taza",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1 taza y media",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Caramelo Crocante Bañado chocolate De Leche",
+      "cantidad": 86,
+      "unidad": "g",
+      "codigoNetSuite": "SE00467",
+      "marca": "FAS",
+      "observaciones": "1/2 Taza",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Encremado",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Decorado, Boquilla 127 Wilton",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Empaque Fudge De Chocolate",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "Decorado, Boquilla 127 Wilton",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Monedas Color Rojo Navidad Chocolate 7,5",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "1 unidad",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Moneda Color Dorada Chocolate 7,5",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "1 unidad",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Moneda Color Dorada Chocolate 5,5",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "2 unidad",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Moneda Color Rojo NavidaChocolate 5,5",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "2 unidad",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Edicion Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10314",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar (un) Rosquete entero",
+    "Rellenar con leche condensada cocinada y Agregarle al Rosquete y Exparsir bien en el Rosquete a su centro y costado,y agregar la galleta con chocolate",
+    "Colocar el otro Rosquete",
+    "Encremar con crema beige y cubrir el rosquete de forma liza los costados",
+    "Con Ayuda de la boquilla 6CS hacer los colochos",
+    "Colocar los chips de colores en el centro de la torta y sobre los colochos,y tapar",
+    "Tapar, etiquetar con la etiqueta especial fecha de vencimiento, Colocar lote, y etiqueta de ingredientes."
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 54,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

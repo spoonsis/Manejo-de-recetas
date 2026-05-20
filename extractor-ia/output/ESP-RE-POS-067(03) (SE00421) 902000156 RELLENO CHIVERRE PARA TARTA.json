@@ -1,0 +1,118 @@
+{
+  "nombre": "RELLENO CHIVERRE PARA TARTA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Pastas",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Galleta Yemita",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10555",
+      "marca": "Pozuelo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 530,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR MORENO",
+      "cantidad": 530,
+      "unidad": "g",
+      "codigoNetSuite": "MP10076",
+      "marca": "Zucra",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "Sol",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "Prima",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIG (UND:13.6 K)",
+      "cantidad": 670,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "Debel",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SIROPE KARO DARK (UND: 3.78 K)",
+      "cantidad": 670,
+      "unidad": "g",
+      "codigoNetSuite": "MP10573",
+      "marca": "Karo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHIVERRE 5 kg",
+      "cantidad": 2700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10676",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Procesar la galleta yemita, con ayuda de bolillo, los trozos de la galleta no deben ser mas grandes de 2cm x 2 cm aprox.",
+    "Derretir la lactocrema en fuego medio aproximadamente 1:30 minutos.",
+    "En la batidora  agregar el azúcar moreno, sal y el almidon, preservante, mezclar con paleta y agregar el huevo, sirope, conserva de chiverre y galleta, mezclar por 2 minutos con paleta en velocidad media, por ultimo agregar la mantequilla derretida cuando la temperatura ha bajado lo suficiente, hasta incorporar todo.",
+    "Colocar el relleno en una bandeja. Tapar la bandeja y rotular."
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "porc",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 610,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

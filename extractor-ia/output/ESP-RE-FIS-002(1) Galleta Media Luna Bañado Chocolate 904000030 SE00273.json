@@ -1,0 +1,45 @@
+{
+  "nombre": "Galleta Media Luna Bañado Chocolate de leche 904000030 SE00273",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE GALLETA MEDIA LUNA",
+      "cantidad": 780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00274",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE LECHE BELCOLADE",
+      "cantidad": 480,
+      "unidad": "g",
+      "codigoNetSuite": "MP10129",
+      "marca": "BELCOLADE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate de leche en el microondas en interbalos de tiempo para evitar que se queme. Dejar enfriar un poco.",
+    "Colocar papel encerado en latas y sobre este colocar las galletas media luna bañadas con el chocolate de leche derretido. ( se debe bañar solo la mitad)",
+    "Dejar enfriar las galletas con ayuda del aire acondicionado."
+  ],
+  "pesoTotalCantidad": 1092,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Cajas",
+  "pesoPorcionCantidad": 680,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

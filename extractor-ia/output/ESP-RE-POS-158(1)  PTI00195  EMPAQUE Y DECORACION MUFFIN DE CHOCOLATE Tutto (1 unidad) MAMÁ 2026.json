@@ -1,0 +1,108 @@
+{
+  "nombre": "PTI00195 EMPAQUE Y DECORACION MUFFIN DE CHOCOLATE Tutto (1 unidad) MAMÁ 2026",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Inyectado Muffin Chocolate",
+      "cantidad": 73,
+      "unidad": "g",
+      "codigoNetSuite": "SE00829",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ganache Blanco Duro",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00799",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Confitura Palitos Rosadas",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10944",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chispas de Chocolate Tutto",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10920",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE 1 UNIDAD DN 665 DARNEL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10342",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA MUFFIN ESPECIAL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10525",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En el contenedor colocar 1 muffin de chocolate",
+    "Colocar el Ganache Blanco en el muffing de chocolate en forma de Hilo y colocar la confitura y las chipas de chooclate Tutto",
+    "Cerrar y etiquetar"
+  ],
+  "pesoTotalCantidad": 84,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 84,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

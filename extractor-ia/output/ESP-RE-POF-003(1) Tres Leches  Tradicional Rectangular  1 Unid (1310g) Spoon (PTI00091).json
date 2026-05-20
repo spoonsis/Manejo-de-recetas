@@ -1,0 +1,119 @@
+{
+  "nombre": "Tres Leches Tradicional Rectangular 1 Unid (1310g) Spoon PTI00091",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES 750g",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00035",
+      "marca": "FAS",
+      "observaciones": "1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES PASTEURIZADA KILO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00031",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY SPOON INDUSTRIA",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY SPOON INDUSTRIA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 2C",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MEZCLA DULCE LECHE C/AGUA",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00038",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTEN. LBH 692 PRALINE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10076",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA POSTRES",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10249",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4*3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Alistar el rosquete, partiendo una plancha de campero por la mitad",
+    "Colocar la mitad de rosquete rectangular dentro del empaque.",
+    "Bañar el rosquete con la mezcla de tres leches,",
+    "Alistar la crema chantilly y peinar, agregar colocho marmoleado con el dulce leche con la manga y la boquilla 2 C",
+    "Etiquetar con nombre codigo de barras declaracion de ingredientes, etiqueta Spoon, fecha juliana, fecha vencimiento."
+  ],
+  "pesoTotalCantidad": 1235,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 1235,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 60,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

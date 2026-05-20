@@ -1,0 +1,77 @@
+{
+  "nombre": "Empaque salsa de maracuya chilena",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Planta",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MARACUYA",
+      "cantidad": 1000,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 30,
+      "unidad": "Gramos",
+      "codigoNetSuite": "1212412",
+      "marca": null,
+      "observaciones": "PAQ=5 KILO",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 700,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 150,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 700,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 150,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": null,
+  "pesoPorcionCantidad": 3000,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

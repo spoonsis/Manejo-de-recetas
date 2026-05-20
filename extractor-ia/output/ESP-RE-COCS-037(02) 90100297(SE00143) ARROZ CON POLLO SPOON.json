@@ -1,0 +1,184 @@
+{
+  "nombre": "ARROZ CON POLLO SPOON",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO MAGGI",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "MAGGI",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE (UND:850g)",
+      "cantidad": 42,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": "LOS PATITOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CURRY POLVO",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10551",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PETI PIOS CON ZANAHORIA",
+      "cantidad": 876,
+      "unidad": "g",
+      "codigoNetSuite": "MP10298",
+      "marca": "LAMB WESTON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO",
+      "cantidad": 264,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLINO KILO",
+      "cantidad": 132,
+      "unidad": "g",
+      "codigoNetSuite": "MP10107",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PECHUGA DESMENUZADA A MANO SPOON",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00144",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ARROZ AMARILLO SPOON",
+      "cantidad": 6480,
+      "unidad": "g",
+      "codigoNetSuite": "SE00145",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLASTICO AUTOADHERIBLE 18X2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla, el aceite, la cebolla, el chile, el apio y el ajo, sofreir hasta cristalizar",
+    "Agregar al sofrito la sal, el consomé de pollo, el achiote, el curry y el preservante, mezclar uniformemente hasta deshacer el achiote",
+    "Agregar la pechuga de pollo desmenuzada junto y mezclar bien",
+    "Agregar los petit pois con la zanahoria y mezclar uniformente",
+    "Agregar el arroz amarillo, mezclar bien, agregar el culantro y el cebollino picado, dejar hasta alcanzar temp de 75°",
+    "Colocar en bandejas y pasar a empaque para choque térmico alcanzando una temperatura menor a los 5°C",
+    "A la hora de empacar, NO PASAR GRANDES CANTIDADES A ZONA DE EMPAQUE para no perder temperatura"
+  ],
+  "pesoTotalCantidad": 12650,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 12650,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1302,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

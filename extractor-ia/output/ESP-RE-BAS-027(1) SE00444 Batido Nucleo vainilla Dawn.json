@@ -1,0 +1,63 @@
+{
+  "nombre": "Batido Nucleo vainilla Dawn",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA BATIDO NUCLEO VAINILLA DAWN",
+      "cantidad": 14195,
+      "unidad": "g",
+      "codigoNetSuite": "SE00443",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO ( CAJA: 10 K)",
+      "cantidad": 7700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 3090,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE MIXTO (UND:17 K)",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": "MP10315",
+      "marca": "PURATOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar los liquidos en la batidora, posterior agregar los ingredientes secos",
+    "Batir por 1 min en velocidad 1. Con paleta",
+    "Batir 4 min en velocidad 3. con paleta"
+  ],
+  "pesoTotalCantidad": 24000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 24000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1375,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

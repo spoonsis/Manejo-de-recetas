@@ -1,0 +1,72 @@
+{
+  "nombre": "Crema de Dulce de Leche",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BETTER DULCE DE LECHE RICH (UND:4 K)",
+      "cantidad": 16000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10165",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND (UND:4 K)",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 22,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la top cream, la crema de dulce de leche y la prestige y el agua con el preservante. (Cumpliendo un temperatura de 5° liquida)",
+    "Batir por 21 minutos.",
+    "Una vez lista a una temperatura de 18° batida, retirar, etiquetar y guardar hasta que sean usadas."
+  ],
+  "pesoTotalCantidad": 24500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 21,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 24500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 500,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

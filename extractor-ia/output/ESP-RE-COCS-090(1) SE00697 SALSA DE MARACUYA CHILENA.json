@@ -1,0 +1,81 @@
+{
+  "nombre": "SALSA DE MARACUYA CHILENA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "EMPAQUE",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MARACUYA",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10753",
+      "marca": "INPACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": "Disolver para espesar",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en una olla. Reservar el almidon y el agua de espesar. Hervir",
+    "Disolver el almidon en el agua y agregar a la mezcla anterior. Hervir.",
+    "Retirar y colocar en bandejas para choque termico."
+  ],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 3000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 230,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

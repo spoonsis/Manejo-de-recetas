@@ -1,0 +1,111 @@
+{
+  "nombre": "Brittle de almendras",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 1080,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SIROPE KARO DARK",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10573",
+      "marca": "KARO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BICARBONATO DE SODIO",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "MP10085",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMENDRA ENTERA",
+      "cantidad": 630,
+      "unidad": "g",
+      "codigoNetSuite": "MP10591",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 1,
+      "unidad": "metro",
+      "codigoNetSuite": "EM10259",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el azucar junto con el agua, sirope en una olla y cocinar hasta tomar punto caramelo.",
+    "Agregar lactocrema, bicarbonato y sal y mezclar bien. Si le falta color seguir dandole punto.",
+    "Colocar sobre bandejas con lamina de silicon las almendras bien esparcidas, Agregar el caramelo anterior cubriendolas muy bien.",
+    "Dejar que enfrie a temp ambiente.",
+    "Pasar po la maquina para quebrar.",
+    "Etiquetar y emplasticar"
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 495,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,142 @@
+{
+  "nombre": "PTI00049 Porción torta chilena bucca caja 6",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE GALLETA CHILENA GRANDE",
+      "cantidad": 1560,
+      "unidad": "g",
+      "codigoNetSuite": "SE00204",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA LIMON BUCCA",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00277",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 6 KG )",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar con Agua",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00533",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA PRALINE 2 (UND)",
+      "cantidad": 4,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10063",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 10,
+      "unidad": "cms",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 28,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA CHILENA BUCCA PORCION",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10387",
+      "marca": "ETIQUETAS MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGULAR ALTO",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "SELLO DE SEGURIDAD",
+      "cantidad": 24,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8X12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la primer galleta de chilena en el plato de aluminio",
+    "Distribuir 200g de manjar con una manga en toda la galleta, repetir esta operacion alternando galletas y manjar (terminar con galleta)",
+    "Distribuir 100g de merengue de limon Bucca y dibujar una espiral con la espatula partiendo del centro hacia el exterior",
+    "Llevar al chiller por 4 horas antes de porcionar.",
+    "Porcionar la torta chilena fria en 8piezas.",
+    "Colocar en la base externa de los empaque triangulares etiqueta con ingredientes y fecha de vencimiento, en el lado interno  5g de hilos de manjar.",
+    "Colocar cada porcion de chilena.",
+    "Dibujar hilos delgados con manjar",
+    "Tapar y colocar en la parte superior etiqueta bucca y a los lados sellos de seguridad",
+    "Colocar 6 unidades en la caja praliné, etiquetar con nombre y vencimiento."
+  ],
+  "pesoTotalCantidad": 3840,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "cajas",
+  "pesoPorcionCantidad": 960,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 60,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

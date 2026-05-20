@@ -1,0 +1,54 @@
+{
+  "nombre": "SE00721 Horneo Base Cheesecake Pie de Pecanas",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno pie de pecanas",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00708",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": "Nueces Industriales",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar dentro del molde desmoldable rectangular grande (porc cheesecake), previamente ensagrasado la base de galleta presionar y hornear a 175°C por 7 min en el Argental, a 175°C por 8 min en el Dicte 1 y Dicte 2, a 170°C en el Dicte 3 y a 175°C por 7 min en el Marshal",
+    "Una vez fria la galleta, agregar el relleno de pecanas y las pecanas sobre el relleno de pecanas. Hornear por 10 min aprox.",
+    "Una vez listo dejar enfriar y desmoldar."
+  ],
+  "pesoTotalCantidad": 662,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 662,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 108,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

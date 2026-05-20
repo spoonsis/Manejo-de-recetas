@@ -1,0 +1,56 @@
+{
+  "nombre": "90100353(SE00339) Caramelo Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Marmitas",
+  "areaEmpaca": "Marmitas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE AZUCAR REFINO",
+      "cantidad": 27000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00226",
+      "marca": "VICTORIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 4455,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 41000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colcoar el azucar en la marmita, encender en programacion \"caramelo\"",
+    "Cuando la marmita lo indique, agregar la lactocrema en cubos.",
+    "Cuando la marmita lo indique agregar la leche.",
+    "Cocinar hasta que se termine el programa, cuidar que no se riegue.",
+    "Preparase para el proceso de empaque."
+  ],
+  "pesoTotalCantidad": 44500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 44500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 27955,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

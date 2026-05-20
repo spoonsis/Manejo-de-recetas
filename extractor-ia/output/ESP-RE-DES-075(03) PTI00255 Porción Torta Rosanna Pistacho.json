@@ -1,0 +1,128 @@
+{
+  "nombre": "PTI00255 Porción Torta Rosanna Pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO PISTACHO",
+      "cantidad": 795,
+      "unidad": "g",
+      "codigoNetSuite": "SE00744",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA VERDE PISTACHO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00741",
+      "marca": "FAS",
+      "observaciones": "Encremado",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "GANACHE DE PISTACHO",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "SE00743",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "PISTACHO TOSTADO",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00738",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 30,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANG ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Porcion Torta Rossana Pistacho",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10470",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Desmoldar el disco de pistacho en la orla 10.",
+    "Encremar de forma lisa con la crema verde pistacho y",
+    "Colocar el ganache con ayuda de una bolsa y exparcirlo con ayuda de una espatula",
+    "Colocar trozos de pistacho tostado",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 930,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 155,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

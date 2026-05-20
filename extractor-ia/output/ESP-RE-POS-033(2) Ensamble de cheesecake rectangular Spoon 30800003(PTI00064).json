@@ -1,0 +1,120 @@
+{
+  "nombre": "Ensamble de cheesecake rectangular Spoon 30800003(PTI00064)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHEESECAKE KILO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00042",
+      "marca": "BUCCA",
+      "observaciones": null,
+      "seccion": "RELLENO O ENSAMBLE"
+    },
+    {
+      "nombre": "RELLENO TOPPING FRESA P/CHEESE CAKE",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00043",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTEN. LBH 692 PRALINE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10076",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Postres",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10249",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "0- Engrasar el Molde, colocar la base de galleta y hornear por 10 min.",
+    "1- colocar sobre la base de galleta previamente tostada y fria el relleno de queso para cheese cake",
+    "2- llevar a cámaras de refrigeración a 4º.",
+    "3- colocar el relleno de fresas con gelatina, refrigerar a cortar en cámaras de refrigeración, minimo 20 horas a 4°",
+    "4- Desmoldar. Colocar el chesse cake en el contenedor praline etiqueta spoon, etiquetar con fecha de vencimiento, etiqueta de ingredientes,lote, codigo de barras.",
+    "5- Guardar en cámaras de refrigeración a 4º"
+  ],
+  "pesoTotalCantidad": 900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

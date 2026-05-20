@@ -1,0 +1,155 @@
+{
+  "nombre": "Crema De Ayote SE00137",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 573,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 1875,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO MOLIDO PRESTO",
+      "cantidad": 115,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AYOTE SAZON PELADO EN TROZOS",
+      "cantidad": 12000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10073",
+      "marca": "FRESCURAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO POLLO CON CARCASA (22780G)",
+      "cantidad": 9375,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE ESTANDAR",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO PARMESANO RALLADO",
+      "cantidad": 521,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA GOURMET PRO 1/1 LITRO",
+      "cantidad": 2400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "GOURMET",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DE HONGOS",
+      "cantidad": 339,
+      "unidad": "g",
+      "codigoNetSuite": "MP10166",
+      "marca": "MAGGIE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMILLO FRESCO ROLLO",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "MP10378",
+      "marca": "CEDI",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HOJUELA DE PAPA",
+      "cantidad": 530,
+      "unidad": "g",
+      "codigoNetSuite": "MP10211",
+      "marca": "RESOCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NUEZ MOSCADA MOLIDA",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10013",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 31,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 3,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la lactocrema, cebolla y ajo a cocinar a fuego bajo por 5 minutos.",
+    "Agregar luego el ayote, caldo de pollo y leche a cocinar por 10 minutos aproximadamente hasta que el ayote este suave.",
+    "Una vez cocido el ayote licuar la mezcla junto con el queso parmesano. Regresar al fuego. Hervir",
+    "Mezclar la crema gourmet , la crema de hongos, nuez mozcada, preservante. Agregar la mezcla a la olla. Agregar el tomillo picado. Llevar a 80°C",
+    "Agregar de ultimo agregar la papa en hojuela. Mezclar bien. Sacar en 80°C"
+  ],
+  "pesoTotalCantidad": 30800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 77,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4976,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

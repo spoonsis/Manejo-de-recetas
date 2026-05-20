@@ -1,0 +1,173 @@
+{
+  "nombre": "Torta Chocolate Moka Economica(1235g) Bucca PTI00029",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE BC 320g",
+      "cantidad": 580,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00622",
+      "marca": "FAS",
+      "observaciones": "2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE BC 320g",
+      "cantidad": 20,
+      "unidad": null,
+      "codigoNetSuite": "SE00622",
+      "marca": "FAS",
+      "observaciones": "CALZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA ALMIBAR C/CAFE",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00053",
+      "marca": "FAS",
+      "observaciones": "1 CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "1/3 TAZA X CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA TOP BASE CHOCOLATE",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00054",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONFITE PALITO CHOCOLATE",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10161",
+      "marca": "DULCETI",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA TOP BASE CHOCOLATE",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "SE00054",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 17",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 110,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SPRINKLES CHOCO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10709",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA # 10 BUCCA",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10084",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA CHOCOLATE MOKA BUCCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10396",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSP. 1/ 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar 1 rosquete por la mitad. El otro lo dejaremos entero.",
+    "Humedecer con 40g solamente el rosquete entero.",
+    "Colocar en la orla medio rosquete humedecido, rellenar con 1/3 tz manjar, colocar un roquete entero humedecido, rellenar esta otra capa con 1/3 tz manjar. \nTapar con medio roquete humedecido.",
+    "Encremar, no es necesario que quede muy cubierto los bordes, cubrir con confitura los bordes de la torta. Hacer colocho de crema chantilly con boquilla 17, \nen el borde, luego en el interior dejar un espacio entre los colochos para cubrir con ganache oscuro. hacer un colocho en el centro y colocar 1 cda de confitura negra encima.",
+    "Tapar y etiquetar con nombre, ingredientes, etiqueta Bucca, día juliano, fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 1010,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1010,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 165,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

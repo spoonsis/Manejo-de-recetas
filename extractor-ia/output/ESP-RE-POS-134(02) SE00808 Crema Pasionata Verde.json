@@ -1,0 +1,53 @@
+{
+  "nombre": "SE00808 Crema Pasionata Verde",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Batido Crema Pasionata",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10755",
+      "marca": "Puratos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Electric Green",
+      "cantidad": 0.2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10152",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Una vez lista la crema pasionata, agregarle el colorante verde y revolver hasta que quede bien mezclado.",
+    "Utilizar inmediatamente."
+  ],
+  "pesoTotalCantidad": 987,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 987,
+  "pesoPorcionUnidad": "Tanda",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

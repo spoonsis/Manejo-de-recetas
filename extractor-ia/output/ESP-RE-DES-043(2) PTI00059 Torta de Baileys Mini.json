@@ -1,0 +1,219 @@
+{
+  "nombre": "PTI00059 Torta de Baileys Mini",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 180G",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "SE00445",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES C/BAILEYS LITRO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CREMA MOKA C/BAILEYS (KILO)",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00085",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES C/BAILEYS LITRO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Segunda capa"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO SPOON",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Segunda capa"
+    },
+    {
+      "nombre": "MEZCLA CHOCOLATE BLANCO C/PECANA (KILO)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00086",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Segunda capa"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES C/BAILEYS LITRO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Segunda capa"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 842",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE BAILEYS (KILO)",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00087",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "GOTAS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "KAROL LEDEZMA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON  8\" (100 * PAQ )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA BASE CON DOMO 9 ALTA (CAJA:50 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA D-31 TORTA BAILEYS (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10283",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir 2 rosquetes por la Utilizar 1 1/2 unidad Huedecer 3 medios rosquetes con mezcla de tres leches con bailyes. Rellenar la primera capa con crema moka.",
+    "Colocar otro medio rosquete humedecido y rellenar con caramelo y chocolate con pecanas.",
+    "Tapar con rosquete humedecido.",
+    "Encremar con crema de dulce de leche. Hacer el colocho marmoleado con la boquilla de 842.",
+    "Colcar en el centro el ganache de baileys y el ganache oscuro en forma de gotas y 2 hojas de otoño acorde a la fotografia.",
+    "Colocar en una orla #10 y en una quequera 10 baja. Etiquetar con nombre, fecha de vencimiento, día Juliano, logo Spoon , sticcker Baileys."
+  ],
+  "pesoTotalCantidad": 766,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 766,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": -45,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

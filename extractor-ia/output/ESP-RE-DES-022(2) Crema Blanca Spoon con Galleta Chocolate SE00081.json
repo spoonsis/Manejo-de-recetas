@@ -1,0 +1,53 @@
+{
+  "nombre": "Crema Blanca Spoon con Galleta Chocolate SE00081",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 16580,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Galleta Oreo Entera 1/12 UD",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10617",
+      "marca": "POZUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En la top creasm, mezclar la crema montada (Temperatura maxima 18°) con la galleta molida, realizar 3 vueltas y retirar (si hace falta terminar de incorporar a mano)",
+    "Guardar en refrigeración etiquetado hasta su uso nuevamente ."
+  ],
+  "pesoTotalCantidad": 17200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 17200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 181,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

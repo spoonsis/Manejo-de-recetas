@@ -1,0 +1,81 @@
+{
+  "nombre": "Empaque Queque Seco Rectangular con Pasas 680g 34021(PTL00165)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE QQ SECO C/PASAS (750g)",
+      "cantidad": 680,
+      "unidad": "g",
+      "codigoNetSuite": "SE00348",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA BLANCA  PEQUEÑAS (100 X PAQ)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL ENCERADO 12 X 10 (CAJA) **",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10090",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO ",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO) **",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Una vez horneado el queque, dejar enfriar.",
+    "Colocar el queque dentro de la caja pequeña con papel encerado en la base.",
+    "Etiquetar con fecha de vencimiento y nombre la caja, colocar dentro de una bolsa 12*18, sellar."
+  ],
+  "pesoTotalCantidad": 680,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 680,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

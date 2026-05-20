@@ -1,0 +1,64 @@
+{
+  "nombre": "ROSQUETE TRES LECHES SOUFFLE Unitario",
+  "subsidiaria": "KFC",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO SOUFFLE (KILO)",
+      "cantidad": 11100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00285",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1375,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 90X32.5 x 265 mm",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10277",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engrasar moldes individuales redondos de pastel de pollo (medidas 7,5cm en la base, 10cm en la boca y 3cm de altura)",
+    "Pesar 35g en cada molde",
+    "Hornear.",
+    "Empacar 60 por lata, etiquetar, embolsar y etiquetar con vencimiento y lote"
+  ],
+  "pesoTotalCantidad": 11000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 440,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 25,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

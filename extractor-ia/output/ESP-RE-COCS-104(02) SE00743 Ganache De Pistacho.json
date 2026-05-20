@@ -1,0 +1,119 @@
+{
+  "nombre": "Porción Torta Rosanna Pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ENSAMBLE DISCO PISTACHO",
+      "cantidad": 795,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "1 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA VERDE PISTACHO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "6g x ud, Encremado",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "GANACHE DE PISTACHO",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "14g x ud",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "PISTACHO TOSTADO",
+      "cantidad": 18,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "3g x ud",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANG ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "EtTIQUETA ESPECIAL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Desmoldar el disco de pistacho en la orla 10.",
+    "Encremar de forma lisa con la crema verde pistacho y",
+    "Colocar el ganache con ayuda de una bolsa y exparcirlo con ayuda de una espatula",
+    "Colocar trozos de pistacho tostado",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 930,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 155,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 8,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

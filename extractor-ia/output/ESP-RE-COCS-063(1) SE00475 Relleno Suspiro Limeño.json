@@ -1,0 +1,81 @@
+{
+  "nombre": "Relleno Suspiro Limeño",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE EVAPORADA",
+      "cantidad": 15200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": "UND: 1 L",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 15200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": "PAQ:11 K",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 3040,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": "CAJA:2 Kg",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GLUCOSA",
+      "cantidad": 380,
+      "unidad": "g",
+      "codigoNetSuite": "MP10556",
+      "marca": "NUEVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "MAYCA",
+      "observaciones": "PAQ=5 KILO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la marmita la leche condensada y la evaporada disolver el preservante y cocinar por 35 minutos a una temperatura de 140 agitacion de un solo sentido con 50 RPM.",
+    "Una vez pasados los 35 minutos, agregar la glucosa y el colorante",
+    "Apagar el fuego sin parar la agitacción y temperar las yemas agregandoles una parte de la mezcla caliente. Agregar la yema temperada a la marmita, mezclar para evitar que las yemas se cocinen."
+  ],
+  "pesoTotalCantidad": 26540,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 26540,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 7340,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

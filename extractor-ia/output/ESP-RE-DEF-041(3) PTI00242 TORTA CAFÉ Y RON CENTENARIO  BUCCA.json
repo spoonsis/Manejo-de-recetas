@@ -1,0 +1,155 @@
+{
+  "nombre": "PTI00242 TORTA CAFÉ Y RON CENTENARIO BUCCA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "DECORACIÓN",
+  "areaEmpaca": "DECORACIÓN",
+  "version": 3,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete vainilla Easy SP 900g",
+      "cantidad": 425,
+      "unidad": "g",
+      "codigoNetSuite": "SE00704",
+      "marca": "Spoon",
+      "observaciones": "0.5 unidad",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR CENTENARIO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00588",
+      "marca": "SPOON",
+      "observaciones": "75g capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHOCORON",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "SE00589",
+      "marca": "NESTLE",
+      "observaciones": "1 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Chocolate Rallado Oscuro",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "1/3 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "Spoon",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "Spoon",
+      "observaciones": "Boquilla 3CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Procesado Chocolate Rallado Oscuro",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RECTANGULAR PEQUEÑA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10429",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Torta Centenario Bucca",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10366",
+      "marca": "Litografia CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir los rosquetes por la mitad y bañar con 50g de almibar centenario.",
+    "En ambas capas colocar una taza de relleno chocoron y 1/3 taza de chocolate rallado oscuro",
+    "Colocar en la orla y encremar con la crema blanca de forma liza, y con el ganache oscuro hacer un circulo hacia el borde de la torta que chorree a los lados.",
+    "Hacer un circulo de colocho y al centro colocar el chocolate rallado.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 990,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 990,
+  "pesoPorcionUnidad": "ud",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

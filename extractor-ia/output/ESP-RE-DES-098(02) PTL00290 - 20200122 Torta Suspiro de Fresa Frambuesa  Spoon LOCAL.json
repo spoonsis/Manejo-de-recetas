@@ -1,0 +1,209 @@
+{
+  "nombre": "Torta Suspiro de Fresa Frambuesa Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoracion",
+  "areaEmpaca": "Decoracion",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 360g",
+      "cantidad": 340,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "100g cada capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRASVASADO LECHE CONDENSADA COCINADA",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE FRESA FRAMBUESA",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00836",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": "Para cubrir el suspiro",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SUSPIRO REDONDO 230G",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10938",
+      "marca": "FAS",
+      "observaciones": "1 ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE FRESA FRAMBUESA",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00836",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Salsa Fresa",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "RELLENO DE FRESA FRAMBUESA",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00836",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Brillo Glit",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "MP10089",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Blanco",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SUSPIRO REDONDO 230G",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "MP10938",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TEMPORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad y bañar con el almibar.",
+    "Colocar primero la leche condensada cocinada, luego salsa de frambuesa y fresa, luego el suspiro del lado de la capa que ya tiene ganache blanco.",
+    "A la otra parte del suspiro colocar la otra parte de ganache blanco, y encima colocar la salsa de fresa y frambuesa. Tapar con la otra mitad de rosquete y colocar en la orla",
+    "Encremar con la crema beidge y hacer un borde con la salsa de fresa, luego con la espatula hacer tipo puntas por todo el borde, y al centro dejar hueco para una piscina de salsa",
+    "Colocar la salsa en el centro y en el borde colocar primero ganache blanco en hilos y sobre el el suspiro quebrado"
+  ],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 1500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 120,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

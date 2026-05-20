@@ -1,0 +1,108 @@
+{
+  "nombre": "Relleno de pollo enchilada mexicana",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "08",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD ( 17 LTS )",
+      "cantidad": 1520,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLLO DESMENUZADO COCCIÓN (58590G)",
+      "cantidad": 19320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00139",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA ( 1 KILO )",
+      "cantidad": 7180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE POLLO (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 2760,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1- Saltear en el aceite la cebolla, el ajo",
+    "2- Agregar el agua con el consome, sal, preservante y paprika y agregar a la mezcla anterior, por ultimo agregar el pollo, Mezclar bien.",
+    "3- Dar temperatura y pasar a enfriamiento."
+  ],
+  "pesoTotalCantidad": 32000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 40,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 32000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 640,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,89 @@
+{
+  "nombre": "Premezcla de Palitos de queso 5476g Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA HARISOL WINTER",
+      "cantidad": 3600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": "HARISOL WINTER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10031",
+      "marca": "ALTLANTIDA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MARGARINA MULTIUSO",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "NUMAR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO AMARILLO",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10003",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en una bolsa 17*25 el harina, preservante junto con la sal. Etiquetar con fecha de producción.",
+    "Pesar en una bolsa 12*18 la margarina. Etiquetar con fecha de produccion."
+  ],
+  "pesoTotalCantidad": 5476,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 5476,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

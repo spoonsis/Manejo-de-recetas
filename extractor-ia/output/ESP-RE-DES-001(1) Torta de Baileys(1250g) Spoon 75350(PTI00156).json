@@ -1,0 +1,183 @@
+{
+  "nombre": "Torta Baileys mediana",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 360G",
+      "cantidad": 313,
+      "unidad": "g",
+      "codigoNetSuite": "SE00462",
+      "marca": "FAS",
+      "observaciones": "1 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES C/BAILEYS LITRO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00084",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ:6 K)",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CREMA MOKA C/BAILEYS (KILO)",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00085",
+      "marca": "FAS",
+      "observaciones": "3/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA CHOCOLATE BLANCO C/PECANA (KILO)",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00086",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 842",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "GOTAS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE BAILEYS (KILO)",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "SE00087",
+      "marca": "FAS",
+      "observaciones": "ESPEJO ARRIBA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "KAROL LEDEZMA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA IMPRES SPOON GRANDE V-272 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10006",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMSUA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMSUA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA D-31 TORTA BAILEYS (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10283",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad y humedecer ambas mitades",
+    "Colocar en la capa el manjar, relleno de moka y la chocopecana.",
+    "Tapar con rosquete humedecido.",
+    "Encremar con crema de dulce de leche. Hacer el colocho marmoleado con la boquilla de 842.",
+    "Colcar en el centro el ganache de baileys y el ganache oscuro en forma de gotas y stick dorado.",
+    "Colocar en una orla #10 y en una quequera 10 baja. Etiquetar con nombre, fecha de vencimiento,lote, logo Spoon , sticcker Baileys."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 23,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,117 @@
+{
+  "nombre": "SE00428 Premezcla queque limon spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "BATIDOS",
+  "areaEmpaca": "BATIDOS",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Harisol Hojaldre",
+      "cantidad": 2250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10206",
+      "marca": "Fachasa",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Polvo Hornear",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "Fleishman",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Industrial",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10027",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10239",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 2300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Bolsa 17X25 Transparente",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Roja Letra Alerjeno",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 12x18 el harina, polvo de hornear, sal y limon en polvo.",
+    "En una bolsa 17x25 pesar la lactocrema y en la otra el azucar blanco.",
+    "Etiquetar."
+  ],
+  "pesoTotalCantidad": 6120,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 6120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

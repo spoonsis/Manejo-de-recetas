@@ -1,0 +1,140 @@
+{
+  "nombre": "Porcion Torta chilena 1300g (8 porc) Fresh Market",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE GALLETA CHILENA GRANDE",
+      "cantidad": 520,
+      "unidad": "g",
+      "codigoNetSuite": "SE00204",
+      "marca": "FAS",
+      "observaciones": "4 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "200g / CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA LIMON BUCCA 21000G",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00277",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Sirope manjar Dulce Leche",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA CHILENA FRESH MARKET",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10255",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": "MACROCOMERCIAL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8X12 TRANSP (KILO)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PUENTES P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la primer galleta de chilena en el plato de aluminio",
+    "Distribuir 200g de manjar con una manga en toda la galleta, repetir esta operacion alternando galletas y manjar (terminar con galleta)",
+    "Distribuir 100g de merengue de limon Bucca y dibujar una espiral con la espatula partiendo del centro hacia el exterior",
+    "Llevar al chiller por 4 horas antes de porcionar.",
+    "Porcionar la torta chilena fria en 8 piezas y hacer hilos de manjar en cada porción con 5 gramos",
+    "Colocar en la base externa de los empaque triangulares etiqueta con ingredientes, #juliano y fecha de vencimiento",
+    "Colocar cada porciÓn de chilena.",
+    "Tapar y colocar en la parte superior etiqueta bucca y al cierre el sello de seguridad"
+  ],
+  "pesoTotalCantidad": 1280,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 160,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

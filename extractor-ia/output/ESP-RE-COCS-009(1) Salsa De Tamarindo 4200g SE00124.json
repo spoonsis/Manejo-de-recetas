@@ -1,0 +1,144 @@
+{
+  "nombre": "Salsa De Tamarindo 4200g SE00124",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GRS PULPA DE TAMARINDO (250g)",
+      "cantidad": 1020,
+      "unidad": "g",
+      "codigoNetSuite": "MP10318",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA DE TOMATE (LATA #10)",
+      "cantidad": 264,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": "RED PACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 2640,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "AYA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JENGIBRE ENTERO",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10220",
+      "marca": "EL CEDI",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 804,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE TOMATE (GALON )",
+      "cantidad": 395,
+      "unidad": "g",
+      "codigoNetSuite": "MP10356",
+      "marca": "BANQUETE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE SESAMO ( 1750 ml )",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10054",
+      "marca": "ISLEÑA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TABASCO (62 g )",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10363",
+      "marca": "BANQUETE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 20,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unid",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en una olla hasta ebullición. Hervir por 20 min.",
+    "Colar la mezcla de manera que solo queden las semillas del tamarindo. Importante frotar bien las semillas para extraerle todo el sabor y pulpa",
+    "Colocar en un bowl de acero inoxidable y cubrir con plastico autoadhesible, llevar a empaque."
+  ],
+  "pesoTotalCantidad": 3780,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "porc.",
+  "pesoPorcionCantidad": 210,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1440,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

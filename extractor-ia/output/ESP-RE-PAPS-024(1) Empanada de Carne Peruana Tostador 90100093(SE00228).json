@@ -1,0 +1,91 @@
+{
+  "nombre": "Empanada de Carne Peruana Tostador",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA FROLA (6400g)",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FRIO CARNE PERUANO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00231",
+      "marca": "FAS",
+      "observaciones": "40 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 16,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "PLANTA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA=100 GUANTES)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "HARINA ESTANDAR",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10004",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA",
+      "cantidad": 0,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Laminar la pasta a 1.1  de grosor SI ES PASTA CON RECORTE Y A 1.4 SI ES PASTA VIRGEN y cortar con el círculo de 14cm de diámetro.",
+    "Pintar los bordes con agua, rellenar con 40g . Doblar por la mitad , sellar los bordes y pellizcarlos hacia adentro.",
+    "Refrigerar un mínimo de 4 horas.",
+    "Reposar en refrigeración. Pintar con yema, Hornear en el Dicte a 170°C por 30 minutos."
+  ],
+  "pesoTotalCantidad": 536,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2.5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Undades",
+  "pesoPorcionCantidad": 90,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 16,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

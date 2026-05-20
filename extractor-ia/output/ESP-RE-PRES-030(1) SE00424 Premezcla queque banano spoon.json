@@ -1,0 +1,122 @@
+{
+  "nombre": "Premezcla mufin banano",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA HARISOL HOJALDRE (SACO: 25 K)",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "11200070",
+      "marca": "Fachasa",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "POLVO HORNEAR FLEISHMAN (PAQ:2.5 K)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "10100046",
+      "marca": "Fleishman",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BICARBONATO DE SODIO (PAQ:2.5 K)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "503000036",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NUEZ MOSCADA MOLIDA (PAQ:3 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "0610256",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "1212410",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR CARAMELO (PAQ:0.5 K)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "10100045",
+      "marca": "Layca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 125,
+      "unidad": "g",
+      "codigoNetSuite": "0310107",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP KILO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "1950702",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950708",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "60100010",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 6500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 6500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 147,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

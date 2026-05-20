@@ -1,0 +1,82 @@
+{
+  "nombre": "RELLENO MELOCOTÓN CON TOPPING",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MELOCOTON EN CUBOS COUNTREE (UND:3 K)",
+      "cantidad": 37800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10039",
+      "marca": "COUNTREE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOOPING MELOCOTON 2000 g",
+      "cantidad": 8000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00012",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 84,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Brillo Glit",
+      "cantidad": 4710,
+      "unidad": "g",
+      "codigoNetSuite": "MP10089",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1- Abrir las latas de melocotón, colocar en la centrifugadora 6 tarros por 5 minutos.",
+    "2-  Colocar en una tina el melocoton drenado, agregar el preservante,  el topping de melocotón y el brillo",
+    "3, Mezclar hasta que quede homogeneo",
+    "4. Tapar y etiquetar y refigerar."
+  ],
+  "pesoTotalCantidad": 49810,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 49810,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 809,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

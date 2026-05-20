@@ -1,0 +1,92 @@
+{
+  "nombre": "Relleno Crema Moka con Baileys",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE MERENGUE DESHIDRATADO (KILO)",
+      "cantidad": 530,
+      "unidad": "g",
+      "codigoNetSuite": "SE00022",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 530,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BAILEYS",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "MP10406",
+      "marca": "BAILEYS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAFÉ INSTANTANEO",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10091",
+      "marca": "NESCAFE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S KILO (pre mezclas)",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una batidora la lactocrema partida y batir con el globo a velocidad 1 por 1 minuto.",
+    "Subir la velocidad a 3 y cremar la lactocrema por 8 minutos, limpiar bordes y agregar el emulcol. Batir por 1 minuto en velocidad 2.",
+    "Limpiar bordes y agregar el café, baileys y preservante disuelto en agua caliente.",
+    "Bajar la velocidad a 1 y agregar el merengue, batir por 1 minuto, hasta que la mezcla este homogenea.",
+    "Refrigerar , Etiquetar"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "Tortas",
+  "pesoPorcionCantidad": 120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 98,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

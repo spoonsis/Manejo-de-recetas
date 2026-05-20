@@ -1,0 +1,45 @@
+{
+  "nombre": "Ganache De Chocolate Blanco",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COBERTURA DE CHOCOLATE BLANCO ( PAQ=5 K )",
+      "cantidad": 20000,
+      "unidad": null,
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL CH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 20000,
+      "unidad": null,
+      "codigoNetSuite": "MP10048",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la crema en una olla llegar a 65 grados, mover, no hervir, agregar los trozos de chocolate y mover hasta que se derritan.",
+    "Mezclar bien, con cuidado de no quemar,cuando este todo derretido, mezlcar con ayuda de un batidor de globo de mano, para asegurarse que no queden grumos",
+    "Colocar en bandejas, enfriar."
+  ],
+  "pesoTotalCantidad": 37380,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 37380,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2620,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

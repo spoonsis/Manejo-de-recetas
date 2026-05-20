@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00829 Inyectado Muffin Chocolate",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFFIN DE CHOCOLATE",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00798",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble Chocolate"
+    },
+    {
+      "nombre": "Trasvasado de Leche Condensada Cocinada",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble Chocolate"
+    }
+  ],
+  "pasos": [
+    "En cada muffin con ayuda del inyector, introducir y aplastar, creando un hueco en el centro hondo.",
+    "Agregar la leche condensada cocinada en el centro."
+  ],
+  "pesoTotalCantidad": 73,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 2,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 73,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

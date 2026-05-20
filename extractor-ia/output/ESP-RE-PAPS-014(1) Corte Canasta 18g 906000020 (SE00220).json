@@ -1,0 +1,35 @@
+{
+  "nombre": "Corte Canasta 18g 906000020 (SE00220)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA TARTALETA/CANASTA",
+      "cantidad": 540,
+      "unidad": "gramos",
+      "codigoNetSuite": "SE00218",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Con ayuda de la cuchara mediana porcionar bolillos.",
+    "Colocar en la maquina tartaletera por 2 min.a 250 ºC. Usar los moldes redondos pequeños. Retirar una vez cocido."
+  ],
+  "pesoTotalCantidad": 18,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 30,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 18,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

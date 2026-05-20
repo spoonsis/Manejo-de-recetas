@@ -1,0 +1,154 @@
+{
+  "nombre": "Relleno carne mechada empanada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ:KILO)",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (PAQ: 1 KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE (UND:850G)",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO (PAQ:500GR)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA TOMATE OLD CALI (UND:3.14 K)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE RES (2000G)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COMINO (UND:454G)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10158",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAN CUADRADO BLANCO (PAQ=22 REBANADAS )",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARNE MECHADA EN COCCION",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00182",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO BLANCO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En la lactocrema y achiote saltear la cebolla, ajo y apio.",
+    "Luego deglasear la preparacion con el vino blanco, despues agregar el agua, pasta de tomate, consome, comino, preservante y sal.",
+    "Cuando la preparacion toma temperatura agregar la carne y el pan molido y mezclar.",
+    "Dar temperatura y apagar."
+  ],
+  "pesoTotalCantidad": 1400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 134,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

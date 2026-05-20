@@ -1,0 +1,74 @@
+{
+  "nombre": "Batido Pasta Frola (Ricota)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE PREMEZCLA PASTA FROLA KILO",
+      "cantidad": 10780,
+      "unidad": "g",
+      "codigoNetSuite": "SE00134",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIG",
+      "cantidad": 850,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HIELO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA HARISOL WINTER (BOLSA:5000G)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora harina, azucar en polvo, polvo de hornear, sal, margarina, huevos y agua.",
+    "Poner a batir todos los ingredientes a velocidad 1 utilizando el gancho. Poco a poco la mezcla se hara homogenea.",
+    "Batir por aproximadamente 1 hora o 1 hora y 5 minutos ( en la batidora H600 ) o en la batidora Sparmix 40 minutos. Manteniendo siempre la velocidad en 1.",
+    "La pasta debe quedar suave y homogenea. Separar la pasta en 4 pedazos de 6643 g cada uno",
+    "Guardar colocando una manta en una lata y sobre la manta la pasta extendido. Cubrirla con la misma manta. Colocar fecha de produccion. Guardar en refrigeracion"
+  ],
+  "pesoTotalCantidad": 13287,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 13287,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 143,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

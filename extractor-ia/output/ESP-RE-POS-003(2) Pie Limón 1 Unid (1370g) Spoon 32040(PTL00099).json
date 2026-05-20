@@ -1,0 +1,112 @@
+{
+  "nombre": "Pie Limón 1 Unid (1370g) Spoon 32040(PTL00099)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHESSE CAKE (9 Kg)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO LIMON P/ PIE LIMON",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00278",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA (UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar dentro del molde desarmable redondo 21 cm ,previamente ensagrasado la base de galleta presionar y hornear a 350º por 5 min",
+    "Enfriar el molde a temperatura ambiente y rellenar con el  Relleno de limón y yemas.",
+    "No dejar el producto en espera de horneo por mas de 10 minutos. Ya que se asientan las yemas y se baja la altura del producto.",
+    "Llevar al horno por 15 minutos.a 350º. Sacar y enfriar",
+    "Desmoldar y colocar el manjar de leche sobre la orla y colocar el pie",
+    "Tapar, fechar con etiqueta de nombre, fecha de vencimiento, Lote",
+    "Guardar en cámaras de refrigeración a 4ºC."
+  ],
+  "pesoTotalCantidad": 1150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1150,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 60,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

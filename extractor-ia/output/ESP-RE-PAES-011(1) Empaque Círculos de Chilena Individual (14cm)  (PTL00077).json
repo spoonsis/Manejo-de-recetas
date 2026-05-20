@@ -1,0 +1,81 @@
+{
+  "nombre": "Empaque Círculos de chilena Individual (14cm) (PTL00077)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CIRCULOS DE CHILENA INDIVIDUAL 14 CM",
+      "cantidad": 348,
+      "unidad": "g",
+      "codigoNetSuite": "SE00176",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUEQUERA  RED C/BASE ALTA 9 (CAJA100 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "GALVANOTEK",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" (100 * PAQ )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": "RAPI BOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA CELOFAN TRANSP. (30X45 cm)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10022",
+      "marca": "CENTINELA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar 6 galletas en una orla, sellar y colocar fecha de vencimiento.",
+    "Colocar en una bolsa de celofan, sellar y colocar fecha de vencimiento.",
+    "Colocar en una quequera."
+  ],
+  "pesoTotalCantidad": 348,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1.5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 58,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

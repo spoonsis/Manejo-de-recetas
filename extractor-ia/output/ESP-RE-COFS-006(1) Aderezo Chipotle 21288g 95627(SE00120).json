@@ -1,0 +1,81 @@
+{
+  "nombre": "Aderezo Chipotle",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MAYONESA SPOON",
+      "cantidad": 18000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00121",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE CHIPOTLE COSTEÑA (UND:2.9 K)",
+      "cantidad": 2800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10116",
+      "marca": "LA COSTEÑA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST (UND:5 L)",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "COTOLIVA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 1,
+      "unidad": "m",
+      "codigoNetSuite": "EM10252",
+      "marca": "BELCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Limpiar el chile chipotle, retirandole todas las semillas con la ayuda de una cuchara. (SE UTILIZARA TODO EL CONTENIDO DE LA LATAI",
+    "Licuar luego el chipotle limpio con el aceite, acido lactico, y conservante, hasta conseguir una pasta bien licuada sin grumos.",
+    "Mezclar el chipotle licuado con la mayonesa. La mayonesa debe quedar de un color homogeneo."
+  ],
+  "pesoTotalCantidad": 21228,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 9,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 21228,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 93,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

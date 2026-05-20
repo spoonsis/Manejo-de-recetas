@@ -1,0 +1,73 @@
+{
+  "nombre": "Batido queque zanahoria spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PRREMEZCLA ZANAHORIA SPOON",
+      "cantidad": 5400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00576",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 1170,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 1300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VAINILLA OSCURA",
+      "cantidad": 65,
+      "unidad": "g",
+      "codigoNetSuite": "MP10385",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ZANAHORIA ENTERA",
+      "cantidad": 2900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10018",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En la batidora colocar el huevo con los azucares y batir hasta que triplique su volumen.",
+    "Luego en forma de hilo agregar el aceite hasta incorporar.",
+    "Agregar la premezcla con la vianilla y la zanahoria.",
+    "Dosificar de inmediato."
+  ],
+  "pesoTotalCantidad": 10500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 105,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 335,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

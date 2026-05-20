@@ -1,0 +1,36 @@
+{
+  "nombre": "PROCESADO MACADAMIA CARMLIZADA CON CHOCOLATE BLANCO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sáchez",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+      "cantidad": 4550,
+      "unidad": "g",
+      "codigoNetSuite": "SE00500",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Pasar por la trituradora la macadamia caramelizada con chocolate blanco.",
+    "Colocarla en una tina azul y taparla.",
+    "Colocarle las mismas etiquetas que vienen de postres."
+  ],
+  "pesoTotalCantidad": 4500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 4500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

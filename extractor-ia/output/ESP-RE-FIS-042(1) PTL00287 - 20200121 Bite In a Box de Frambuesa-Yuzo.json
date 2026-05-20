@@ -1,0 +1,137 @@
+{
+  "nombre": "Bite In a Box de Frambuesa-Yuzo",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.2,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "240g (15g x ud)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "10g x rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Relleno Frambuesa Entera",
+      "cantidad": 480,
+      "unidad": "g",
+      "codigoNetSuite": "SE00818",
+      "marca": "FAS",
+      "observaciones": "60g (Capa Inferior)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Caramelo con Chocolate Blanco",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "10g x postre (1 sola capa)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Relleno Lemon Court de Yuzu",
+      "cantidad": null,
+      "unidad": "g",
+      "codigoNetSuite": "SE00816",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Relleno Frambuesa Entera",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00818",
+      "marca": "FAS",
+      "observaciones": "40g (Capa superior)",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Brillo Glit",
+      "cantidad": 32,
+      "unidad": "g",
+      "codigoNetSuite": "MP10089",
+      "marca": null,
+      "observaciones": "4g x ud",
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Empaque Cuchareable Rectangular",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10499",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BITE IN A BOX FRAMBUESA-YUZU",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete arrollado.",
+    "En cada empaque colocar un rosquete, humedecer con el almibar, colocar el relleno de Frambuesa entera y despues colocar el relleno de lemon court yuzu, colocar los trozos de caramelo bañado en chocolate blanco.",
+    "Colocar otro rosquete, humedecer con el almibar, agregar el relleno de lemon court Yuzu y terminar con el relleno de frambuesa enterear",
+    "Decorar con brillo en toda la superficie",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1552,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 8,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 194,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 240,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

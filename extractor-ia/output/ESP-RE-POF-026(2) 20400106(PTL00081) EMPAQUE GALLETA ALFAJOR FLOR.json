@@ -1,0 +1,46 @@
+{
+  "nombre": "Corte Alfajor mediano en flor",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Andrea Zamora,chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA ALFAJOR",
+      "cantidad": 11680,
+      "unidad": "g",
+      "codigoNetSuite": "95013",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA",
+      "cantidad": 175,
+      "unidad": "g",
+      "codigoNetSuite": "0510188",
+      "marca": "HARISOL",
+      "observaciones": "(estirar)",
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1 Estirar la pasta con ayuda de la maquina hasta 5 mm de espesor. En la laminadora Kemplex utilizar graducion #3, en la laminadora Rondo laminarla en una graduacion de 4,2.",
+    "2 Porcionar con un cortador en forma de flor.",
+    "2 Colocar sobre una bandeja",
+    "4 Hornear por 20 min aprox a 170 ºC en el Dicte 1/ ó 22 minutos en el Dicte 2."
+  ],
+  "pesoTotalCantidad": 11250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 36,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 750,
+  "porcionesUnidad": "Uds",
+  "pesoPorcionCantidad": 15,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 430,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

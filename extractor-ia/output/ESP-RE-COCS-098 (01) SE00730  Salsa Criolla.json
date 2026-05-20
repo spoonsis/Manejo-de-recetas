@@ -1,0 +1,100 @@
+{
+  "nombre": "SE00730 Salsa Criolla",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ = 1 KILO )",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "Presto",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ajo Pelado",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "Presto",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Tomate Pelado Entero",
+      "cantidad": 560,
+      "unidad": "g",
+      "codigoNetSuite": "MP10376",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAZONADOR CHIPOTLE MAGGI",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10717",
+      "marca": "Maggi",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Consome De Res",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10163",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la olla arrocera el aceite. Una vez caliente agregar el ajo molido y la cebolla picada sofreir por 5 minutos.",
+    "Agregar el tomate, agua, consome, sal y maggi chipotle y llevar a hervor.",
+    "Licuar y enviar a enfriamiento",
+    "Colocar en bandejas y llevarlo a shock termico hasta que este frio."
+  ],
+  "pesoTotalCantidad": 700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 115,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

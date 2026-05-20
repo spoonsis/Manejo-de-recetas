@@ -1,0 +1,90 @@
+{
+  "nombre": "LICUADO PARA MASA DE TAMALES",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "APIO PICADO (PAQ:500gr)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ:KILO)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE ENTERO KILO",
+      "cantidad": 1350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10117",
+      "marca": "FRESQUITA",
+      "observaciones": "9 UDS ENTEROS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO (PAQ:1 KILO)",
+      "cantidad": 185,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 1550,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar los ingredientes poco a poco e ir licuando con el caldo de pollo, para no forzar la licuadora",
+    "Debe quedar bien licuado (jugo)",
+    "Coloca en bolsa 17x25 y etiquetar, reservar en refrigeración hasta utilizar en la masa para tamales"
+  ],
+  "pesoTotalCantidad": 6040,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 6040,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 45,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

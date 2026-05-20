@@ -1,0 +1,80 @@
+{
+  "nombre": "SE00794 Base galleta feuilletine",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GALLETA YEMITA (KILO)",
+      "cantidad": 4222,
+      "unidad": null,
+      "codigoNetSuite": "MP10555",
+      "marca": "POZUELO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CORTE GALLETA CHILENA GRANDE",
+      "cantidad": 745,
+      "unidad": null,
+      "codigoNetSuite": "SE00204",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL (CAJA:25 KG)",
+      "cantidad": 3830,
+      "unidad": null,
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR REFINO",
+      "cantidad": 700,
+      "unidad": null,
+      "codigoNetSuite": "SE00226",
+      "marca": "VICTORIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": null,
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FEUILLETINE",
+      "cantidad": 4655,
+      "unidad": null,
+      "codigoNetSuite": "SE00793",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema. No hervir.",
+    "Mezclar la galletas procesada con el azucar, feuilletine quebrado y la lactocrema, en batidora con paleta, hasta homogeneo."
+  ],
+  "pesoTotalCantidad": 14100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 47,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 62,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

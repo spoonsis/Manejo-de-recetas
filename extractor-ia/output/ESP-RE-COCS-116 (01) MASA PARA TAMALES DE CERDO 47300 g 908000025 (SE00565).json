@@ -1,0 +1,118 @@
+{
+  "nombre": "MASA PARA TAMALES DE CERDO 47300 g 908000025 (SE00565)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "COCINA",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE CALDO DE CERDO (4000g)",
+      "cantidad": 22000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00562",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LICUADO P/MASA TAMALES (KILO)",
+      "cantidad": 6040,
+      "unidad": "g",
+      "codigoNetSuite": "SE00553",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANTECA DE CERDO",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10654",
+      "marca": "RETANA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PREMEZCLA P/BATIDO TAMALES",
+      "cantidad": 7508,
+      "unidad": "g",
+      "codigoNetSuite": "SE00555",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 44,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA CHILE AJI (PAQ:1 KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION ZANAHORIA P/TAMALES (KILO)",
+      "cantidad": 3318,
+      "unidad": "g",
+      "codigoNetSuite": "SE00552",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPQUE PAPA TAMAL",
+      "cantidad": 6900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00563",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Plástico Autoaderible 1/ 18*2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el caldo de cerdo, el licuado para tamales, la manteca de cerdo, la salsa ají, los condimentos y preservante, mezclar bien \ny hervir",
+    "Cuando haya hervido, agregar la papa majada y la zanahoria licuada, mezclar bien y dejar hervir MOVER CONSTANTEMENTE",
+    "Agregar la maseca poco a poco hasta homogenizar, utilizar un batidor de globo, y dejar hervir",
+    "Usar inmediatamente para ensamblar los tamales"
+  ],
+  "pesoTotalCantidad": 47300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 47300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1610,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

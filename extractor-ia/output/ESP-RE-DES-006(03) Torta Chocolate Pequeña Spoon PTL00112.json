@@ -1,0 +1,181 @@
+{
+  "nombre": "Torta Chocolate Pequeña Spoon PTL00112",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 280g",
+      "cantidad": 375,
+      "unidad": "g",
+      "codigoNetSuite": "SE00040",
+      "marca": "FAS",
+      "observaciones": "1 1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRASVASADO DE LECHE CONDENSADA COCINADA",
+      "cantidad": 115,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": "1/3 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE FUDGE DE CHOCOLATE SPOON",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "CONEXU",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "COLOCHO BOQUILLA 61",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADITA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "STICK DORADO (CAJA:100 UND)",
+      "cantidad": 0.5,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10011",
+      "marca": "CHOCOLATE SOLUTIONS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA BASE CON DOMO 9 ALTA (CAJA: 50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA IMP. SPOON MEDIANA V-273",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10024",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "dm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 8\" DORADA",
+      "cantidad": 1,
+      "unidad": "UD",
+      "codigoNetSuite": "EM10025",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 8\" DORADA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad,se utilizaran 1 1/2 unidades. Rellenar cada capa con 1/3 taza de manjar y 1/4 taza de fudge",
+    "Encremar la torta con el relleno de fudge de chocolate, pasar el peine por los costados",
+    "Agregar el ganache en el centro con ayuda de una espatula Y realizar un colocho de manjar acorde a la fotografia, agregar el chocolate rallado ( 1 cucharadita ). Decorar con 1/2 stick dorado.",
+    "Colocar la torta dentro del domo, nombre del producto y codigo de barras, fecha juliana y fecha de vencimiento, el local coloca en punto de venta etiqueta Spoon"
+  ],
+  "pesoTotalCantidad": 726,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Torta",
+  "pesoPorcionCantidad": 726,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 99,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

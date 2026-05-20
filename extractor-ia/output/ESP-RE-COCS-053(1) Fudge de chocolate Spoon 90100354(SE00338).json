@@ -1,0 +1,81 @@
+{
+  "nombre": "Fudge de chocolate Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Marmitas",
+  "areaEmpaca": "Marmitas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA",
+      "cantidad": 72000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA (LITRO)",
+      "cantidad": 13000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCOA DUTCH PROCESS",
+      "cantidad": 1700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "CIA NACIONAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE JOHNNYS MARMITA (CAJA: 12K)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10476",
+      "marca": "JOHNNYS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1320,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047 (PAQ=5 KILOS)",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Licuar la cocoa, el preservante y el Johnnys con la leche. Colocar el licuado en olla y agregar el resto de ingredientes.",
+    "Encender la marmita en progrmacion Fudge.",
+    "Apagar y empezar el proceso de empaque"
+  ],
+  "pesoTotalCantidad": 80361,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 58,
+  "tiempoPrepUnidad": "MIN",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "TANDA",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "GRAMOS",
+  "mermaCantidad": 8929,
+  "mermaUnidad": "GRAMOS",
+  "registroCambios": "Importación inicial desde Excel"
+}

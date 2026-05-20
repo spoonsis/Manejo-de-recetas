@@ -1,0 +1,95 @@
+{
+  "nombre": "Empaque salsa criolla",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Aceite Rbd",
+      "cantidad": 25,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10002",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 100,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10020",
+      "marca": null,
+      "observaciones": "(PAQ = 1 KILO )",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Ajo Pelado",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Tomate Pelado Entero",
+      "cantidad": 560,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10376",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "SAZONADOR CHIPOTLE",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10717",
+      "marca": "MAGGI",
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Consome De Res",
+      "cantidad": 5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10163",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 700,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

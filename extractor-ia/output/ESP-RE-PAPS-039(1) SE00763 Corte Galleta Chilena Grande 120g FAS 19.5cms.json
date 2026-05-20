@@ -1,0 +1,113 @@
+{
+  "nombre": "Torta Chilena Bucca",
+  "subsidiaria": "Servicios de Pastelería S.A.",
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "V1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 600,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Torta Chilena Bucca",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10369",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Verde",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Quequera Chilena",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10023",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Orla Carton 10\" Dorada",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 0.2,
+      "unidad": "KILOGRAMOS",
+      "codigoNetSuite": "SE00010",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Dulce Leche Bettercream con agua",
+      "cantidad": 0.008,
+      "unidad": "KILOGRAMOS",
+      "codigoNetSuite": "SE00038",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Corte Galleta Chilena Grande",
+      "cantidad": 4,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "SE00204",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1220,
+  "pesoTotalUnidad": "grs",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": null,
+  "porcionesUnidad": null,
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,41 @@
+{
+  "nombre": "Batido Vainilla Easy SP",
+  "subsidiaria": "Servicios de Pastelería S.A.",
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 139,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Premezcla Vainilla Easy Sp",
+      "cantidad": 0.425,
+      "unidad": "KILOGRAMOS",
+      "codigoNetSuite": "SE00435",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": null,
+  "pesoTotalUnidad": null,
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,120 @@
+{
+  "nombre": "POSTRE TIRAMISU BUCCA WM",
+  "subsidiaria": null,
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Tres Leches Bucca 200g",
+      "cantidad": 144,
+      "unidad": "g",
+      "codigoNetSuite": "SE00757",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Almibar de Leches",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00758",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno de Queso  Y Leche Condensada",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00759",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cocoa Dutch Process",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "CR cocoa",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": null,
+      "observaciones": "Boquilla #22",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA TENTACIÓN TIRAMISU PIREX",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10468",
+      "marca": "MYL",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Bañar el rosquete con la mezcla de almibar de leches, majar un poco para que se absorba mejor.",
+    "Agregar el relleno de queso y exparcir uniformemente.",
+    "Agregar la cocoa (espolvoreada con colador).",
+    "Con ayuda de una espatula y agua caliente realizar lineas (5 lineas) quitando el exceso de cocoa y que el colocho pueda pegar.",
+    "Con la crema blanca realizar el colocho en las lineas (Que sea continuo para que no se levante el colocho).",
+    "Colocar la tapa, cerrar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 89,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

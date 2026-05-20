@@ -1,0 +1,182 @@
+{
+  "nombre": "PTI00236 PORCIÓN TORTA HERSHEY´S",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "3",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Chocolate Dawn 300g",
+      "cantidad": 265,
+      "unidad": "g",
+      "codigoNetSuite": "SE00017",
+      "marca": "FAS",
+      "observaciones": "1 unidad",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Leches Pasteurizada Con Agua",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00254",
+      "marca": "FAS",
+      "observaciones": "30g x tapa",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "Rosquete Brownie Redondo 400 gramos",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00668",
+      "marca": "FAS",
+      "observaciones": "1/4 de Rosquete",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "Semi Sweet Chocolate Chips",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10674",
+      "marca": "Hershey's",
+      "observaciones": "1/4 de taza",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Rosquete Brownie Redondo 400 gramos",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00668",
+      "marca": "FAS",
+      "observaciones": "1/2 rosquete",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "Hilos",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Pelado y Empaque de Chocolate Kisses Hersheys",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00669",
+      "marca": "FAS",
+      "observaciones": "6ud, 1 x por porción",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "FAS",
+      "observaciones": "5g x unidad (Para pegar )",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANG ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA PORCIÓN TORTA BROWNIE HERSHEY´S",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10432",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar y colocar por la mitad y humedecer con la mezcla de leche y agua, cada tapa de rosquete",
+    "Colocar el Ganache sobre una mitad del rosquete, y exparcir uniformemente . Colocar la mousse de chocolate y volver a exparcir uniformemente.",
+    "Con ayuda de un disco, colocar 1/4 de rosquete de brownie y colocar los trozos, despues los Semi Sweet Chocolate Chips y se tapa con la otra mitad del rosquete.",
+    "Encremar solamente la parte superior, colocar el ganache en forma de hilos, colocar los trozos de brownie y en los costados los Hershey's Kisses.",
+    "Guardar, tapar, etiquetar."
+  ],
+  "pesoTotalCantidad": 840,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 140,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 55,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

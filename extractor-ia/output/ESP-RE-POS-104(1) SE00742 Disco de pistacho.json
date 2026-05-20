@@ -1,0 +1,32 @@
+{
+  "nombre": "Disco de pistacho",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PISTACHO ENTERO PELADO",
+      "cantidad": 1000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "Nuevos",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 950,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 950,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": 255,
+  "mermaUnidad": "Gramos",
+  "registroCambios": "Importación inicial desde Excel"
+}

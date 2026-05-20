@@ -1,0 +1,72 @@
+{
+  "nombre": "SE00714 ENSAMBLE DISCO MANJAR Y MOUSSE DE CHOCOLATE",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete nucleo vainilla Dawn redondo 260g",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "SE00611",
+      "marca": "FAS",
+      "observaciones": "1 unidad",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Manjar con sabor de Caramelo",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00715",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Mezcla Tres Leches Con Crema De Dulce Leche",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00307",
+      "marca": "FAS",
+      "observaciones": "65g x capa",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Mousse Chocolate de Leche",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00468",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CARAMELO CON CHOCOLATE LECHE Y SAL",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00713",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "ENSAMBLE"
+    }
+  ],
+  "pasos": [
+    "Se corta el rosquete a la mitad, y se coloca en un molde de aluminio desmoldable (molde pie de limon) y mojar cada tapa con la mezcla de tres leches con crema de dulce leche.",
+    "Colocar en el centro el manjar, despues la mitad de la mousse, el caramelo con chocolate de leche y sal, y despues colocar la otra mitad de la mousse y dejar uniforme.",
+    "Tapar con la otra mitad del rosquete y dejar enfriar minimo 4 horas."
+  ],
+  "pesoTotalCantidad": 810,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 810,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

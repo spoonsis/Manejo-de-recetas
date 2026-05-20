@@ -1,0 +1,45 @@
+{
+  "nombre": "GANACHE DE CHOCOLATE BLANCO COLOR AMARILLO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE GEL EGG YELLOW",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Calentar el ganache 2 minutos en el microondas y mezclar con 1 gota de colorante amarillo huevo. Debe quedar bien mezclada.",
+    "Utilizar de inmediato.",
+    "Tapar y Guardar a temperatura Ambiente Sellado"
+  ],
+  "pesoTotalCantidad": 2500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 2500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

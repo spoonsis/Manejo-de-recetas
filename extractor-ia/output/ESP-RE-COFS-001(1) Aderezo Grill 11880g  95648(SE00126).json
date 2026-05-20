@@ -1,0 +1,129 @@
+{
+  "nombre": "Aderezo Grill",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON",
+      "cantidad": 3500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00458",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA ( 1 KILO )",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO 250 GRS",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA DIJON GRANULADA",
+      "cantidad": 594,
+      "unidad": "g",
+      "codigoNetSuite": "MP10257",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YOGURT BATIDO NATURAL",
+      "cantidad": 6000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10394",
+      "marca": "NUTRILAC",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 28,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO ( CAJA 5 KILOS )",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR INDUSTRIAL",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "DOÑA MARIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINAGRE BLANCO (GALON)",
+      "cantidad": 970,
+      "unidad": "g",
+      "codigoNetSuite": "MP10389",
+      "marca": "PROEXA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 12*2000",
+      "cantidad": 100,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10252",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Mezclar en un balde grande la mayonesa y el yogurt con la ayuda de un batidor. Reservar.",
+    "Por otro lado licuar cebolla picada, culantro, mostaza granulada, sal, ajos, azúcar, conservante, fibra, emulsificante y vinagre hasta que la mezcla quede sin grumos y bien homogenea. 2 min aprox",
+    "Una vez que la mezcla este bien licuada agregar a la mezcla de mayonesa y yogurt reservada.",
+    "Con la ayuda de un batidor de mano mezclar hasta que quede homogenena.",
+    "refrigerar y luego empacar y etiquetar",
+    "Mantener el aderezo refrigerado"
+  ],
+  "pesoTotalCantidad": 11880,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 11880,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 294,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

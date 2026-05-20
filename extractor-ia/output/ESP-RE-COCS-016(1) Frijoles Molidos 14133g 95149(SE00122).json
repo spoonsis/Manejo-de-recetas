@@ -1,0 +1,173 @@
+{
+  "nombre": "Frijoles Molidos 14133g 95149(SE00122)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AJO PELADO ( MOLIDO )",
+      "cantidad": 36,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO PAQ.KILO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10119",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO PAQ.KILO",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO (PAQ:250G)",
+      "cantidad": 86,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA ( 1 KILO )",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA CHILE AJI (BOLSA=1 KILO)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FRIJOL MOLIDO NEGRO",
+      "cantidad": 11600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10194",
+      "marca": "DUCAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA DE TOMATE (GALON )",
+      "cantidad": 285,
+      "unidad": "g",
+      "codigoNetSuite": "MP10356",
+      "marca": "BANQUETE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA FRENCH (GALON ).",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10259",
+      "marca": "FRENCH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10354",
+      "marca": "LIZANO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL (BOLSAS:1500G)",
+      "cantidad": 280,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE 2% PASTEURIZADA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10030",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 KILO",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 90,
+      "unidad": "Cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1 Calentar en una olla la lactocrema y agregar el ajo, el licuado. Y sofreir por 10 min.",
+    "2 Licuar el chile dulce, culantro, cebolla picada y el aji con la leche.",
+    "4 Añadir luego los frijoles molidos y mesclar bien hasta que quede homogeneo bajar el fuego a bajo y cocinar por 10 inutos mas.",
+    "5 Por ultimo añadir la salsa de tomate, mostaza, salsa lizano y azúcar. Mezclar bien y cocinar por 5 minutos mas a fuego bajo.",
+    "6 Colocar en un bote y dejar enfriar."
+  ],
+  "pesoTotalCantidad": 14133,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 613,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

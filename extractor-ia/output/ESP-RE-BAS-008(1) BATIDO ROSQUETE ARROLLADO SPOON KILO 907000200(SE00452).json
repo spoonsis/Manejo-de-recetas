@@ -1,0 +1,55 @@
+{
+  "nombre": "BATIDO ROSQUETE ARROLLADO SPOON KILO SE00452",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BASE PREMEZCLA ARROLLADO SPOON KILO",
+      "cantidad": 1227,
+      "unidad": "g",
+      "codigoNetSuite": "SE00197",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CLARA HUEVO PASTE DEB-EL (CAJA:2.267 K)",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10141",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Poner a crecer la yema y la clara en la batidora con el azúcar, preservante y polvo de hornear a velocidad maxima, hasta obetener punto cinta por 40 minutos aproximadamente.",
+    "Bajar la velocidad de la batidora a mínimo y agregar la harina. No batir mucho.",
+    "La mezcla debe de quedar homogénea y esponjosa, limpiar los bordes de la batidora con una espatula.",
+    "Hornear por 15 minutos en Argental o Marshall a 175°C o en el Dicte 3 a 170°C por 15 minutos"
+  ],
+  "pesoTotalCantidad": 3000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 3,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 77,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

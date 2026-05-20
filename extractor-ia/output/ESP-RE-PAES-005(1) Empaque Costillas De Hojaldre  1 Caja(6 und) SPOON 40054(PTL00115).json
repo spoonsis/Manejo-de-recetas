@@ -1,0 +1,80 @@
+{
+  "nombre": "Empaque Costillas De Hojaldre 1 Caja (6 und)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COSTILLAS DE PASTA HOJALDRE",
+      "cantidad": 192,
+      "unidad": "Und",
+      "codigoNetSuite": "SE00208",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA BLANCA PEQUEÑAS (100 X PAQ)",
+      "cantidad": 32,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP (KILO)",
+      "cantidad": 16,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL ENCERADO 12 X 10 (PAQ*500)",
+      "cantidad": 16,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10090",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 32,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 32,
+      "unidad": "unid",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 6 unidades en una caja blanca pequeña con medio papel encerado en la base.",
+    "Cubrir con media bolsa 12*18. Etiquetar con nombre de producto y fecha de vencimienta."
+  ],
+  "pesoTotalCantidad": 4032,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 32,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 32,
+  "porcionesUnidad": "Cajas",
+  "pesoPorcionCantidad": 126,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

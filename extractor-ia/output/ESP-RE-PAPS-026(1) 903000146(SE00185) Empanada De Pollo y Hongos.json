@@ -1,0 +1,109 @@
+{
+  "nombre": "Empanada De Pollo y Hongos",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RUEDA PASTA FROLA 14 DIAMETRO",
+      "cantidad": 3900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO POLLO Y HONGOS EMPANADA",
+      "cantidad": 3900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00186",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "WINTER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJONJOLI BLANCO",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10060",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJONJOLI NEGRO",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10496",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 0.5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA=100 GUANTES)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pintar con agua las ruedas y colocar en el medio el relleno de pollo y hongos (65g.)",
+    "Cerrar la empanada, darle forma circular y sellar con sellador de empanadas, Pintar con yema y agregarle encima los dos ajonjolies mezclados",
+    "Llevar a refrigeración por un tiempo minimo de 1 hora antes de hornear",
+    "Llevar al horno por 45 minutos en el Dicte 1 a una temperatura de 180°C o en el Dicte 2 a una temperatura de 180°C por 45 minutos"
+  ],
+  "pesoTotalCantidad": 7800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "Unids",
+  "pesoPorcionCantidad": 130,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 351,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

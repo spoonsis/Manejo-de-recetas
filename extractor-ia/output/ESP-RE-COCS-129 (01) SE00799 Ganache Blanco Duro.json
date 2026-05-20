@@ -1,0 +1,230 @@
+{
+  "nombre": "Ganache Blanco Duro",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Confitura Palitos Azules",
+      "cantidad": 2,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA"
+    },
+    {
+      "nombre": "Confitura Perlas Azules",
+      "cantidad": 4,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA"
+    },
+    {
+      "nombre": "Chispas de Chocolate Tutto",
+      "cantidad": 12,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA"
+    },
+    {
+      "nombre": "Muffin Vainilla SP",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SEMIELABORADOS"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 20,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SEMIELABORADOS"
+    },
+    {
+      "nombre": "Trasvasado de Leche Condensada Cocinada",
+      "cantidad": 40,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00386",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SEMIELABORADOS"
+    },
+    {
+      "nombre": "MUFFIN DE CHOCOLATE",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SEMIELABORADOS"
+    },
+    {
+      "nombre": "Ganache Blanco Duro",
+      "cantidad": 24,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "SEMIELABORADOS"
+    },
+    {
+      "nombre": "BIOFUSION BURBUJA P/ CUPCAKE 4 ESPACIOS 100 UND",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "EM10341",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA ESPECIAL 4 PACK",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Muffin Vainilla SP",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 20,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Trasvasado de Leche Condensada Cocinada",
+      "cantidad": 40,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00386",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "MUFFIN DE CHOCOLATE",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Ganache Blanco Duro",
+      "cantidad": 24,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE SEMIELABORADOS"
+    },
+    {
+      "nombre": "Muffin Vainilla SP",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 20,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00001",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Trasvasado de Leche Condensada Cocinada",
+      "cantidad": 40,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00386",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MUFFIN DE CHOCOLATE",
+      "cantidad": 2,
+      "unidad": "UND",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Ganache Blanco Duro",
+      "cantidad": 24,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MODI PREPARACION",
+      "cantidad": 1,
+      "unidad": "N/A",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 346,
+  "pesoTotalUnidad": "GR",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 346,
+  "pesoPorcionUnidad": "GR",
+  "mermaCantidad": 16.45,
+  "mermaUnidad": "GR",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,104 @@
+{
+  "nombre": "Crumble de manzana Spoon",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANZANA PICADA",
+      "cantidad": 1000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10625",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Limon En Polvo",
+      "cantidad": 3,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10239",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 2,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 250,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 250,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 250,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1500,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 1500,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

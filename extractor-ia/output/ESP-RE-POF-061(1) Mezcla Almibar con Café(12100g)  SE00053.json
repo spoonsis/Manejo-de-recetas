@@ -1,0 +1,63 @@
+{
+  "nombre": "Mezcla Almibar con Café(12100g)  SE00053",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ALMIBAR (32.733 Kg)",
+      "cantidad": 992,
+      "unidad": "g",
+      "codigoNetSuite": "SE000005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAFÉ INSTANTANEO ( 500 GRS )",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10091",
+      "marca": "Nescafé",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Disolver en 500g de almibar el café en el microondas, calentar por 2 minutos.",
+    "Mezclar todo con globo.",
+    "Guardar en un tarro y tapar con plastico adhesivo, si sobra."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,374 @@
+{
+  "nombre": "Queque Navideño Grande Spoon 700g",
+  "subsidiaria": "Servicios de Pastelería S.A.",
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Bolsa Al Vacio 10X15",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10038",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Final"
+    },
+    {
+      "nombre": "Caja Queque Navideño Grande",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10309",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Final"
+    },
+    {
+      "nombre": "Orla Navideña Grande",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10303",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Final"
+    },
+    {
+      "nombre": "Rollo PVC 14x500 mts",
+      "cantidad": 0.00028,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10295",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Final"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Final"
+    },
+    {
+      "nombre": "Queque Navideño Grande Spoon 700 g",
+      "cantidad": 1,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "SE00534",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Triple Sec",
+      "cantidad": 80,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10042",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manteca Max Pan",
+      "cantidad": 8.98,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10003",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Harina Estandar Fhacasa",
+      "cantidad": 1.8,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Transparente 56X96X1.80",
+      "cantidad": 29.16,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "AS00028",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Batido Queque Navideño",
+      "cantidad": 0.715,
+      "unidad": "KILOGRAMOS",
+      "codigoNetSuite": "SE00535",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Huevo Liquido Refrigerado",
+      "cantidad": 59.45225,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Dulce Granulado",
+      "cantidad": 42.80705,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10552",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mermelada Naranja",
+      "cantidad": 5.9488,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10252",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Vainilla Oscura",
+      "cantidad": 4.28285,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10385",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo de Naranja TB",
+      "cantidad": 11.89045,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10598",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ron Plata Especial",
+      "cantidad": 26.7553,
+      "unidad": "MILILITROS",
+      "codigoNetSuite": "MP10340",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Premezcla Batido Queque Navideño",
+      "cantidad": 0.5577,
+      "unidad": "KILOGRAMOS",
+      "codigoNetSuite": "SE00536",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Margarina Baker Tableta",
+      "cantidad": 87.96044,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10040",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Moreno",
+      "cantidad": 38.03514,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10076",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almendra Entera Pequeña",
+      "cantidad": 83.20326,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10644",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Harina Trigo Nacarina",
+      "cantidad": 115.29332,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Polvo Hornear",
+      "cantidad": 3.25697,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10304",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bicarbonato De Sodio",
+      "cantidad": 2.61561,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10085",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cocoa Dutch Process",
+      "cantidad": 1.42771,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10146",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 0.61905,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Nuez Moscada Molida",
+      "cantidad": 0.52424,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Clavo de Olor Molido",
+      "cantidad": 0.95367,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10600",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jengibre Molido",
+      "cantidad": 0.71386,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10221",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 6.77606,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Fruta Confitada",
+      "cantidad": 23.77475,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10554",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pasas",
+      "cantidad": 58.24061,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10561",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Higos En Almibar",
+      "cantidad": 34.47144,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10409",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ciruela",
+      "cantidad": 41.60442,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10645",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cereza Confitada",
+      "cantidad": 58.24061,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "MP10646",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 17X25 Transparente",
+      "cantidad": 2.28099,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1.12655,
+      "unidad": "GRAMOS",
+      "codigoNetSuite": "EM10016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 0.11712,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 0.04462,
+      "unidad": "UNIDADES",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 700,
+  "pesoTotalUnidad": "grs",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "grs",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,123 @@
+{
+  "nombre": "Pollo Desmenuzado en Coccion 32000g 95307(SE00139)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "POLLO DSHPCH FILET S/R TD FCO 5KG PP",
+      "cantidad": 90000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10016",
+      "marca": "PIPASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO ALSERRO (PAQ: 1 K)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 50000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO (PAQ:1 KILO)",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ZANAHORIA ENTERA",
+      "cantidad": 720,
+      "unidad": "g",
+      "codigoNetSuite": "MP10018",
+      "marca": "CEDI",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 50000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME POLLO ALSERRO (PAQ: 1 K)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "PECHUGA ENTERA",
+    "Colocar en la sarten basculante el agua y consome de coccion, pechugas, zanahorias, sal, ajo.",
+    "Hervir por 60 min aprox a fuego alto hasta que todas las pechugas esten bien cocidas. (80ºC)",
+    "RECORTE DE POLLO",
+    "Colocar en la sarten basculante el agua y consome de coccion, recorte de pollo, zanahorias, sal, ajo.",
+    "Hervir por 30 min aprox a fuego alto hasta que todia los pedazos de pollo esten bien cocidas. (80ºC)",
+    "Retirar el pollo del caldo, colocar en bandejas y mechar o hacer cchoque termico según corresponda.",
+    "Al caldo en la sarten, agregarle el agua y consome de \"despues de la coccion\". Hervir o llevar a 80°C como minimo.",
+    "Colar el caldo de pollo y enviar a choque termico."
+  ],
+  "pesoTotalCantidad": 57600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 150,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 57600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 136352,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

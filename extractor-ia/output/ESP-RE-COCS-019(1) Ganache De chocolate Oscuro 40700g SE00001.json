@@ -1,0 +1,55 @@
+{
+  "nombre": "Ganache De chocolate Oscuro",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COBERTURA CHOCOLATE LECHE ( 5KG )",
+      "cantidad": 22000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10001",
+      "marca": "Nacional Chocolate",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCO 4K",
+      "cantidad": 20000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "Richs",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1- Colocar la crema de chocolate en una olla y calentar hasta 55 grados hasta hervir, agregar primero la mitad del chocolate. Mezclar hasta derretir.",
+    "2.- Añadir luego la mitad restante de chocolate, mezclar bien hasta derretir completamente el chocolate.",
+    "3- Pasar el ganache caliente por un colador para evitar que queden grumos de chocolate.",
+    "4.- Colocar en cheffing de acero y enfriar."
+  ],
+  "pesoTotalCantidad": 40700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 40700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

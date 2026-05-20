@@ -1,0 +1,101 @@
+{
+  "nombre": "Lasaña de pollo 1 pirex(6 porc) 78002(PTL00123)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA P/LASAG",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "MP10023",
+      "marca": "PASTA Y BASTA",
+      "observaciones": "1 CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION POLLO DESMENUZADO",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00139",
+      "marca": "FAS",
+      "observaciones": "1 CAPA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUESO RALLADO RICO DOS PINOS",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10029",
+      "marca": "DOS PINOS",
+      "observaciones": "20 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA BLANCA SPOON",
+      "cantidad": 1080,
+      "unidad": "g",
+      "codigoNetSuite": "SE00109",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANDEJA ALUM DESE 6 PORC #4040",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10014",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA BAND ALUM. DESE 4040",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10015",
+      "marca": "NOVA S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "UND",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1 Colocar 1/8 taza de salsa blanca en la base para que pegue la pasta",
+    "2 Colocar 1 hoja de pasta precocida, colocar 1 taza llena de salsa blanca y esparcirla, 1 taza llena de pollo sin majar y 20 gramos de queso mozarella",
+    "3 Repetir el paso 2 veces mas.",
+    "4 Colocar 1 hoja de pasta precocida, colocar 1 taza llena de salsa blanca y esparcirla, 1/2 taza llena de pollo sin majar y 20 gramos de queso mozarella",
+    "5 Sobre la ultima capa colocar una ultima capa de hojas de pasta, el ultimo 1/2 taza de salsa blanca. SIN QUESO AL FINAL"
+  ],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Pirex",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 85,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

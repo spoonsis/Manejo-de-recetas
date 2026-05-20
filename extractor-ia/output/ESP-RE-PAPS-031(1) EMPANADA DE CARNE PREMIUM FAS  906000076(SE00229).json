@@ -1,0 +1,94 @@
+{
+  "nombre": "EMPANADA DE CARNE PREMIUM FAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA FROLA KILO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION CARNE MECHADA ARREGLADA KILO",
+      "cantidad": 600,
+      "unidad": null,
+      "codigoNetSuite": "SE00233",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 30,
+      "unidad": null,
+      "codigoNetSuite": "SE00183",
+      "marca": "WINTER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 20,
+      "unidad": null,
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SEMILLA DE AMAPOLA (UND: 566 G)",
+      "cantidad": 3,
+      "unidad": null,
+      "codigoNetSuite": "MP10357",
+      "marca": "MCCORNICK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 0.5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Láminar la pasta y dejarla en 2 de grosor, y cortar en circulos de 12,5 cm de diámetro",
+    "Colocar los circulos sobre la mesa previamente enharinada para evitar que estos se peguen a la mesa.",
+    "Rellenar cada uno de los circulos con 50 gr de relleno de carne mechada arreglada",
+    "Rociar los circulos con agua y sellar con el formador de empanadas y acordes a la ficha técnica. Punzar con un tenedor",
+    "Colocar en una lata con papel mantequilla. Pintar con la yema de huevo y espolvorear las semillas de amapolas. Se puede hornear de una vez o Refrigerar por un día y hornear al día siguiente.",
+    "Llevar al horno Dicte Grande o Pequeño, o Vulcan a 180°C por 25 a 28 minutos. De manera que quede queden dorados acorde a la ficha técnica.",
+    "Hacer choque térmico antes de empacar"
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 12,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 66,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,155 @@
+{
+  "nombre": "Postre de chocolate Cadbury LOCALES",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela Lopez , chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Chocolate 400 grs Spoon",
+      "cantidad": 168,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "DISCO MOUSSE CHOCOLATE",
+      "cantidad": 440,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1 UNIDAD",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Semillas de Cadbury",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Mousse de pastelera",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Empaque Fudge De Chocolate",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 103",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Fudge Liquido",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "No hay receta",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Trozos Chocolate Oscuro",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "MP10384",
+      "marca": "FAS",
+      "observaciones": "6 ud",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Cuadros de Cadbury",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1/2 barra (6 pares)",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Quequera Red C/Base Alta 9\"",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla #9 Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Agregar medio Rosquete de Chocolate Dawn de 400 g en un molde 22 cm Desmoldable.",
+    "Agregar las semillas toceadas, Agregar el disco de mousse de chocolate y colocarla en el Centro del Rosquete Grande",
+    "Agregar la mousse de crema pastelera dejar que corte al menos por 6 horas en refrigeraicon y dezmoldar y pegar con manjar a la orla.",
+    "Decorar con la Boquilla # 103 a los Borde con el Fudge Cholate Fas, Agregar el Fudge Liquido en el centro y Agregar los Trozos de Chocolate intercalando con los pares de chocolate cadbury",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 1120,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 173,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

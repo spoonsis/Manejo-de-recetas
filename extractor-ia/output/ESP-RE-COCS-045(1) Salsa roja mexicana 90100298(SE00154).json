@@ -1,0 +1,126 @@
+{
+  "nombre": "Salsa roja mexicana",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MARGARINA BLOQUE 12.5 KILOS",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10530",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA ( 1 KILO )",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO MOLIDO PRESTO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE CHIPOTLE COSTEÑA (UND:2.9 K)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10116",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO (PAQ:500gr)",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "MP10069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOMATE KILO",
+      "cantidad": 1145,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO (250g)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA ( 500 GRS )",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA ( PAQ: 5000 g )",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA TOMATE OLD CALI (UND:3.14 K)",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Saltear en la margarina la cebolla, el ajo, apio, tomate, chile chipotle y culantro por 5 minutos.",
+    "Luego agregar el agua con la sal, pimienta, pasta de tomate y dejar hervir.",
+    "Licuar la mezcla anterior y llevar a temperatura para luego pasar a enfriamiento."
+  ],
+  "pesoTotalCantidad": 2150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 14,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 180,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 497,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

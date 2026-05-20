@@ -1,0 +1,91 @@
+{
+  "nombre": "Mousse de maracuya",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "POSTRES",
+  "areaEmpaca": "POSTRES",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 330,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Maracuya Congelada",
+      "cantidad": 370,
+      "unidad": "g",
+      "codigoNetSuite": "MP10423",
+      "marca": "Inpak",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Condensada",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Egg Yellow",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": "Astek",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Gelatina Pura",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora el queso crema, leche condensada, maracuya y colorante. Batir hasta incorporar todo.",
+    "Luego agregar la crema chantilly blanca y mezclar hasta incorporar.",
+    "Hidratar la gelatina en agua y agregar a la mezcla anterior.",
+    "Dosificar de inmediato."
+  ],
+  "pesoTotalCantidad": 1050,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 1050,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

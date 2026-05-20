@@ -1,0 +1,77 @@
+{
+  "nombre": "Pasta Alfajor Caramelo",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE CIRCULO Galleta Mini Chilena Caramelo",
+      "cantidad": 32,
+      "unidad": "UND",
+      "codigoNetSuite": "SE00778",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MATERIA PRIMA SEMIELABORADOS"
+    },
+    {
+      "nombre": "ORLA N°3 DORADA (UND)",
+      "cantidad": 8,
+      "unidad": "Und",
+      "codigoNetSuite": "1950769",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CONT.48 ON TRAN.TAPA PLANA (CAJA:200UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "1950672",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0702007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "701096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 576,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 576,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

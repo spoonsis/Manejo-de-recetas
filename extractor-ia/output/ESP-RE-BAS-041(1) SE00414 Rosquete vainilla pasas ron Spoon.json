@@ -1,0 +1,82 @@
+{
+  "nombre": "SE00414 Rosquete vainilla pasas ron Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO VAINILLA PASAS RON SPOON",
+      "cantidad": 20800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00413",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASAS",
+      "cantidad": 1320,
+      "unidad": "g",
+      "codigoNetSuite": "MP10561",
+      "marca": "NUECES INDUS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR INDUSTRIAL",
+      "cantidad": 990,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Harina Harisol Winter 1/25 KG",
+      "cantidad": 1360,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PRESERVANTE NATALUX",
+      "cantidad": 1120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10673",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar en cada molde chimenea previamentre engrasado y con 40g de harina cada uno, 600g de batido, 40g de pasas y 30g de azucar encima.",
+    "Llevar al horno a 180ªC por 35 minutos.",
+    "Desmoldar tibios y rocear con el preservante natalux.",
+    "Dejar enfriar."
+  ],
+  "pesoTotalCantidad": 23110,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 34,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 670,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 4080,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

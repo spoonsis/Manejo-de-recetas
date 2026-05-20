@@ -1,0 +1,176 @@
+{
+  "nombre": "Empaque salsa pastor",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Planta",
+  "areaEmpaca": "Empaque",
+  "version": "ESP-RE-EMPS-095 PTL00271",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 100,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10022",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 120,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10020",
+      "marca": null,
+      "observaciones": "PAQ = 1 KILO",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Ajo Pelado",
+      "cantidad": 20,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Achiote",
+      "cantidad": 70,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10058",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Tomate Pelado Entero",
+      "cantidad": 280,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10376",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Jugo de Naranja TB",
+      "cantidad": 500,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10598",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Nuez Moscada Molida",
+      "cantidad": 0.5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Condimento Comino",
+      "cantidad": 0.5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10158",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Salsa Demiglace Gourmet",
+      "cantidad": 30,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10716",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Clavo de Olor Molido",
+      "cantidad": 0.5,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10600",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "MODI PREPARACION",
+      "cantidad": 1,
+      "unidad": "N/A",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": 77,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": 48.34,
+  "mermaUnidad": "Gramos",
+  "registroCambios": "Importación inicial desde Excel"
+}

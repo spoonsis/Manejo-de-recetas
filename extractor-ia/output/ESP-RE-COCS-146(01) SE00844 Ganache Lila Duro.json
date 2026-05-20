@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00844 Ganache Lila Duro",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "COBERTURA DE CHOCOLATE BLANCO ( PAQ=5 K )",
+      "cantidad": 6700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL CH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE EXOTIC PURPLE",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10155",
+      "marca": "MASTER PACK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COLORANTE ARTIFICIAL ROSADO F225 (LITRO)",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10149",
+      "marca": "AZTECK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la crema en una olla llegar a 65 grados , mover, no hervir, agregar los trozos de chocolate y colorante y mover hasta que se derritan.",
+    "Mezclar bien, con cuidado de no quemar,cuando este todo derretido, agregar el colorante y mezlcar con ayuda de un batidor de globo de mano, para asegurarse que no queden grumos",
+    "Colocar en bandejas, enfriar."
+  ],
+  "pesoTotalCantidad": 8500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 8500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 706,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

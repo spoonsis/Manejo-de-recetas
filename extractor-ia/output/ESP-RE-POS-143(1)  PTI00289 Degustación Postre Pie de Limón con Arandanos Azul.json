@@ -1,0 +1,127 @@
+{
+  "nombre": "PTI00289 Degustación Postre Pie de Limón con Arandanos Azul",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Horneo Base Pie de Limón con Arandanos Azules",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00824",
+      "marca": "FAS",
+      "observaciones": "50g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 108,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "6g x vasito, BOQUILLA#22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA ARANDANOS AZULES",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00791",
+      "marca": "FAS",
+      "observaciones": "10g x vasito",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Corta la plancha en 4.5x4.5, realizando 8 cortes de ancho y 6 de largo (cortando 48 unidades)",
+    "Colocar cada trozo en el vasito de degustación.",
+    "Realizarle el colocho con la manga y boquilla #22, colocarle la salsa de Arandano azules.",
+    "Tapar todos vasitos etiquetar, colocar en la caja, cerrar y teriminar de etiquetar."
+  ],
+  "pesoTotalCantidad": 1152,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 18,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 64,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 36,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

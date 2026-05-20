@@ -1,0 +1,144 @@
+{
+  "nombre": "PTI00230 Torta 15 Bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE VAINILLA EASY SP 1000G",
+      "cantidad": 475,
+      "unidad": "g",
+      "codigoNetSuite": "SE00641",
+      "marca": "FAS",
+      "observaciones": "1/2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE KILO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA BUCCA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00634",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY LILA",
+      "cantidad": 25,
+      "unidad": null,
+      "codigoNetSuite": "SE00065",
+      "marca": null,
+      "observaciones": "COLOCHO BOQUILLA 2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY AMARILLA BUCCA",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00640",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 2CS",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHIPS DE COLORES CORDILLERA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10726",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RECTANGULAR 15 PORCIONES",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10402",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE CARTON RECTANGULAR",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA VAINILLA BUCCA 30 PORC",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10391",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "CM",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.-Partir el rosquete por la mitad y rellenar con la crema chantilly dulce leche.  Colocar sobre la orla",
+    "2.- Encremar con la crema blanca lisa, y hacer colochos con la boquilla 22 la crema lila y amarilla, y en el borde la confitura de colores.",
+    "3.- Empacar en quequera, etiquetar con nombre, ingredientes, código, fecha de vencimiento, día juliano."
+  ],
+  "pesoTotalCantidad": 700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 35,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

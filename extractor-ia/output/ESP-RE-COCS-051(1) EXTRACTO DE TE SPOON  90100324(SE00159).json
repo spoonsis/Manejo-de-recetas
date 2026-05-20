@@ -1,0 +1,55 @@
+{
+  "nombre": "EXTRACTO DE TE SPOON",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 13800,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NEGRO B100 ESPECIAL (PAQUETES DE 100 UNIDADES)",
+      "cantidad": 222,
+      "unidad": "g",
+      "codigoNetSuite": "MP10408",
+      "marca": "MANZA TE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JENGIBRE MOLIDO (UND:340g)",
+      "cantidad": 13,
+      "unidad": "g",
+      "codigoNetSuite": "MP10221",
+      "marca": "MCCORMICK",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Hervir el agua",
+    "Agregar las bolsas de té y el jengibre molido y dejar hervir por 2 min.",
+    "Dejar reposar por 15 min. Tapado",
+    "Escurrir y dejar enfriar."
+  ],
+  "pesoTotalCantidad": 12000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 12,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2035,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

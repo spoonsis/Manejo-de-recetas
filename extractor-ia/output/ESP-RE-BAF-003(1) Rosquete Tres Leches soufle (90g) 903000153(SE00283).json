@@ -1,0 +1,62 @@
+{
+  "nombre": "ROSQUETE SOUFLE CUADRADO (90G)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO P/ROSQUETE SOUFFLE (11100g)",
+      "cantidad": 11850,
+      "unidad": "g",
+      "codigoNetSuite": "SE00285",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES",
+      "cantidad": 650,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "Fas",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 7,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10013",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Verde",
+      "cantidad": 7,
+      "unidad": "Unids",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 90g de mezcla en un engrasado y hornear en el Argental a 175°C por 12 minutos, Marshall 175°C por 13 minutos.",
+    "Desmoldar e introducir en bolsa plastica y etiquetar con fecha de producción."
+  ],
+  "pesoTotalCantidad": 11700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 34,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 130,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 90,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 150,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,80 @@
+{
+  "nombre": "42014 (PTL00116) Laminas Milhojas (Empaque) 5 Uds",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CORTE LÁMINAS MIL HOJAS",
+      "cantidad": 230,
+      "unidad": null,
+      "codigoNetSuite": "SE00210",
+      "marca": "FAS",
+      "observaciones": "5 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAJA PEQ BLANCA",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10055",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8 x12 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 2,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETQ.BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 5 laminas sobre medio papel encerado en una caja pequeña. Introducirla en media bolsa 12*18. Sellarla",
+    "Etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 230,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Caja",
+  "pesoPorcionCantidad": 230,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

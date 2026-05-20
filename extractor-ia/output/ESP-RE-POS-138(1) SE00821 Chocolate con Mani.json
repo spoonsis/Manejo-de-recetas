@@ -1,0 +1,45 @@
+{
+  "nombre": "SE00821 Chocolate con Mani",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mani tostado",
+      "cantidad": 379,
+      "unidad": "g",
+      "codigoNetSuite": "SE00820",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE SEMI AMARGO 54% (PAQ 5 k)",
+      "cantidad": 632,
+      "unidad": "g",
+      "codigoNetSuite": "MP10492",
+      "marca": "NACIONAL DE CHOCOLATES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir el chocolate, hasta que no queden trozos de chocolate.",
+    "Mezclarlo con le mani y colocarlos bien extendido sobre una blonda, hasta que este duro.",
+    "Una vez este duro, pasarlo por la procesadora."
+  ],
+  "pesoTotalCantidad": 1000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 1000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 11,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

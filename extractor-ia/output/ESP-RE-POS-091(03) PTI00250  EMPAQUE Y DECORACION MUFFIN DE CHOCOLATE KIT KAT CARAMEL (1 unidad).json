@@ -1,0 +1,90 @@
+{
+  "nombre": "EMPAQUE Y DECORACION MUFFIN DE CHOCOLATE KIT KAT CARAMEL (1 unidad)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFFIN DE CHOCOLATE KIT KAT",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00402",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE DE DULCE DE LECHE DURO",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00731",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE LECHE",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE 1 UNIDAD DN 665 DARNEL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10342",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA MUFFIN KIT KAT 1 UNIDAD",
+      "cantidad": null,
+      "unidad": null,
+      "codigoNetSuite": "EM1041",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el Ganache de Leche en el muffing en forma de Hilo",
+    "Agregar los trozos de chocolate de leche",
+    "Colocar en el empaque, cerar y etiquetar"
+  ],
+  "pesoTotalCantidad": 88,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 88,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

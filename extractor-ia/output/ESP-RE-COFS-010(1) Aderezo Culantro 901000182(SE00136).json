@@ -1,0 +1,126 @@
+{
+  "nombre": "Aderezo Culantro 901000182(SE00136)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "YOGURT BATIDO NATURAL (UND:1 K)",
+      "cantidad": 1360,
+      "unidad": "g",
+      "codigoNetSuite": "MP10394",
+      "marca": "NUTRILAC",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE MAYONESA SPOON KILO",
+      "cantidad": 675,
+      "unidad": "g",
+      "codigoNetSuite": "SE00458",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA DIJON GRANULADA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10257",
+      "marca": "ROLAND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO",
+      "cantidad": 190,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO DE LIMON (7.9 LITROS)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017 (PAQ=5 KILO)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE AZUCAR INDUSTRIAL",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (KILO)",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el yogurt, mayonesa, cebolla, mostaza, culantro, sal, jugo de limon, azúcar, pasta de ajo, preservante en la licuadora.",
+    "Licuar hasta que se mezcle bien el culantro y el aderezo tenga un color verde",
+    "Tapar con plastico, enviar a empaque."
+  ],
+  "pesoTotalCantidad": 2400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 240,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 24,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

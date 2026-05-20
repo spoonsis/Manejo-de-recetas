@@ -1,0 +1,136 @@
+{
+  "nombre": "Arrollado chocolate BUCCA WM",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PLANCHA ARROLLADO 1800G",
+      "cantidad": 1700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00772",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 760,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "4 tazas",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SPRINKLES CHOCO",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "MP10709",
+      "marca": null,
+      "observaciones": "1 taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 240,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Chocolate Spoon",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "Boquila 4ft",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SPRINKLES CHOCO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10709",
+      "marca": null,
+      "observaciones": "0",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 4,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10326",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Empaque Rectangular Arrollado",
+      "cantidad": 4,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10497",
+      "marca": "MACROCOMERCIAL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq Torta Generica Bucca Grande",
+      "cantidad": 4,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10118",
+      "marca": "MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 4,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": "lote",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 4,
+      "unidad": "uds",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": "vencimiento",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En la media plancha de arrollado colocar la crema de chocolate y los sprinkles de chocolate.",
+    "Formar el primer arrollado y cortar para luego formar el segundo",
+    "Colocar sobre la quequera y pasar al area de encremado. Con la crema de chocolate y boquilla 4ft encremar de lado a lado el arrollado y terminar bañando con el sprinkle de chocolate.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 2980,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 640,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

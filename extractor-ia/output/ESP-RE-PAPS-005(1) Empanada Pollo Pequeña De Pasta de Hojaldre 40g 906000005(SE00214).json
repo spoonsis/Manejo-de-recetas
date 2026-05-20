@@ -1,0 +1,91 @@
+{
+  "nombre": "Empanada Pollo Pequeña De Pasta de Hojaldre 40g 906000005(SE00214)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "RUEDA HOJALDRE EMPANADA POLLO PEQUEÑA",
+      "cantidad": 60,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00215",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO POLLO EMPANADA 41000g",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00216",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "WINTER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "GUANTE LATEX CORRIENTE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00020",
+      "marca": "ESOSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Rellenar cada rueda con relleno de pollo empanda Spoon (15 g).",
+    "Rociar con agua la rueda, doblar formando una empanda, marcar con ayuda de el marcador sellador para empanada. Colocar sobre latas con papel mantequilla",
+    "Antes de hornear pintar con mezcla de yemas. (hornear el mismo dia)",
+    "Hornear a 180º C por 60 Minutos en el Dicte 1 y Dicte 2, o 50 min a 180°C en el Dicte 3"
+  ],
+  "pesoTotalCantidad": 2400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 40,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 80,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

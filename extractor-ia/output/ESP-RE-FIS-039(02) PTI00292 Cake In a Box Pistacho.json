@@ -1,0 +1,137 @@
+{
+  "nombre": "PTI00292 Cake In a Box Pistacho",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.09,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "72g, 2 Unidades por postre de 36g cada ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "15g x rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Caramelo con Chocolate Blanco",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00720",
+      "marca": "FAS",
+      "observaciones": "(1 sola capa), 1 cucharada",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Suave de Pistacho",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00807",
+      "marca": "FAS",
+      "observaciones": "40g xcapa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Pasionata Verde",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00808",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE ARROLLADO 1000g",
+      "cantidad": 0.0105,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00196",
+      "marca": "FAS",
+      "observaciones": "8,4g, MERMA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PISTACHO TOSTADO",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "SE00738",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION"
+    },
+    {
+      "nombre": "Empaque Cake In Box Cuadrado",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10500",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Cake In a Box de Pistacho",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10520",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar el rosquete arrollado en 20 porciones, (4 cuadros de manera vertical y 15 cuadros de manera horizontal, 10,5cm x 10,5cm) quitandole excesos de los laterales.",
+    "En cada empaque colocar un cuadrado de rosquete, humedecer con ayuda de una bolsa el almibar, colocar con ayuda de una bolsa la salsa suave de pistacho, con una manga la crema pasionata verde y el caramelo con chocolate blanco.",
+    "Colocar otro rosquete, humedecer con ayuda de una bolsa el almibar, con una manga agregar la crema pasionata verde.",
+    "Decorar con ayuda de una bolsa la salsa suave de pistacho en toda la superficie y colocar el pistacho tostado (de esquina a esquina)",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 256,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 256,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

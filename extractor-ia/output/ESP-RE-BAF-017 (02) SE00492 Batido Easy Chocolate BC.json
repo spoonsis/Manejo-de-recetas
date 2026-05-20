@@ -1,0 +1,64 @@
+{
+  "nombre": "SE00492 Batido Easy Chocolate BC",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA EASY CHOCOLATE BC",
+      "cantidad": 26150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00439",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO ESPECIAL INNOV (CAJA:10 K)",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 11750,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 6300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todos los ingredientes en la batidora y batir con globo.",
+    "Batir por 1 minutos en velocidad 1.",
+    "Luego batir por 4 minutos a velocidad 2.",
+    "Pasar a dosificar."
+  ],
+  "pesoTotalCantidad": 48500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 11,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 48500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 700,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

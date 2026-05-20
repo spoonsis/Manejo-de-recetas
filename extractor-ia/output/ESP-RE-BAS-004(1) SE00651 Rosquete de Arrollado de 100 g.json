@@ -1,0 +1,301 @@
+{
+  "nombre": "Postre Nueces y Dulce Leche Navidad 2024 Industria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Jose Brizuela, chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 100 g",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "1 unidad Molde # 10 Circular",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 80 g",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "3 unidad Molde Mini Circular",
+      "seccion": "Emsamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "Relleno # 1"
+    },
+    {
+      "nombre": "Relleno de Suspiro con Manjar",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "3/4 taza",
+      "seccion": "Relleno # 1"
+    },
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 80 g",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Relleno # 2"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Relleno # 2"
+    },
+    {
+      "nombre": "Relleno de Suspiro con Manjar",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "3/4 taza",
+      "seccion": "Relleno # 2"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "Utilizar Boquilla 804 Arteco",
+      "seccion": "Relleno # 2"
+    },
+    {
+      "nombre": "Pecana Triturada Y Horneada",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00306",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "Relleno # 2"
+    },
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 80 g",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "1 unidad",
+      "seccion": "Relleno # 3"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Relleno # 3"
+    },
+    {
+      "nombre": "Relleno de Suspiro con Manjar",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "3/4 taza",
+      "seccion": "Relleno # 3"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "Utilizar Boquilla 804 Arteco",
+      "seccion": "Relleno # 3"
+    },
+    {
+      "nombre": "Pecana Triturada Y Horneada",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00306",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "Relleno # 3"
+    },
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 80 g",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "1 unidad",
+      "seccion": "Relleno # 4"
+    },
+    {
+      "nombre": "Mousse de Manjar",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Relleno # 4"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "Colocho Boquilla 127 Wilton",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Relleno de Suspiro con Manjar",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": "En el Centro a Raz 3/4 Taza",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10562",
+      "marca": "FAS",
+      "observaciones": "Por postre",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Circulos de Chocolate de 7,5 cm",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "1 unidad Color Rojo Navidad",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Circulos de chocolate de 5,5 cm",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "2 unidades 2 Dorados",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "Circulos de chocolate de 5,5 cm",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": "2 unidades Color Rojo Navidad",
+      "seccion": "Decoracion"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA UND",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Edicion Especial",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10314",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta de Temporada ( Navidad )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "En un Molde 10 cm alto ,Colocar el Rosquete de 70 g en la Orla , Bañar con Almibar , y Color el Relleno de Suspiro de Manjar",
+    "Colocar el Rosquette de 56g Y bañar con el Almibar ,Agregar el relleno y seguidamente la crema y de ultimo la nuez Pecana procesada",
+    "Repetir el Proceso 2 veces mas",
+    "Por ultimo colocar el Rosquette de 56 Y bañar con el Mousse de Manjar hasta cubrir el molde, refrigerar hasta poder utilizar 6 Horas",
+    "Desmoldar y Decorar",
+    "Colocar la Crema de Caramelo con la Boquilla 127 wilton en Borde, Agregar el relleno de suspiro con manjar en el centro y cubrir",
+    "Colocar las Monedas y la Nuez Entera"
+  ],
+  "pesoTotalCantidad": 1244,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1244,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 129,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

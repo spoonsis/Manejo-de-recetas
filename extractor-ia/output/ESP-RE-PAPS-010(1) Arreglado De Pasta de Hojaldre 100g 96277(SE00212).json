@@ -1,0 +1,66 @@
+{
+  "nombre": "Arreglado De Pasta de Hojaldre 100g 96277(SE00212)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LAMINADO PASTA HOJALDRE (KILO)",
+      "cantidad": 6000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00213",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPEL MANTEQUILLA (CAJA= 1000 UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10018",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Útilizar pasta de hojaldre VIRGEN.",
+    "Laminar en la laminadora Rondo la pasta hojaldre a un grosor de 6, cortar circulos de 11cm de diametro. Dar forma con las manos para que queden medio ovalados.",
+    "Colocar en bandeja engrasada, dejando espacio de 1 cm entre una y otra. Guardar en camaras de refrigeración a 4ºC por 24 horas, puede variar temperatura de la camara.",
+    "Pintar con yema.",
+    "Hornear en el Dicte 1, Dicte 2 o Dicte 3 a 185°C por 60 minutos",
+    "Se puede Hornear tambien en el Vulcan a 325°F por 40 minutos"
+  ],
+  "pesoTotalCantidad": 6000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 52.17391304,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 115,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 122,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

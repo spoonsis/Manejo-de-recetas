@@ -1,0 +1,184 @@
+{
+  "nombre": "Torta Selva Negra Pequeña FRESH MARKET",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "DECORACIÓN",
+  "areaEmpaca": "DECORACIÓN",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE BUCCA 280 g",
+      "cantidad": 330,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "FAS",
+      "observaciones": "1.5 ud",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA ( 4.5 KG )",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Nestle",
+      "observaciones": "1/4 Taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "ALMIBAR (KILO)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "FAS",
+      "observaciones": "Para dos medios rsoquetes",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "SALSA FRESA KILO",
+      "cantidad": 75,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": "1/4 Taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CREMA BLANCA C/GALLETA CHOCO (KILO)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00081",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA (SPOON-IND)(21.01 Kg)",
+      "cantidad": 42,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "Colochos, boquilla #22 Arteco",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CEREZA ROJA C/TALLO MARASCH (UND:GALON)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MARASCH",
+      "observaciones": "1 Unidades Enteras",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "CHOCOLATE LECHE RALLADO (KILO)",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "FAS",
+      "observaciones": "1 cdita",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "Cuadricula con 6 líneas de c/lado",
+      "seccion": "DECORACIÓN"
+    },
+    {
+      "nombre": "QUEQUERA 8 ALTA (70 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ORLA CARTON  8\" DORADA (100 * PAQ )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10025",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA FAMOSO PAN FRESH MARKET (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Partir cada rosquete por la mitad, utilizar 1 1/2 unidad. Bañar dos medios rosquetes con almíbar BASE Y TAPA",
+    "Sobre la primera tapa colocar manjar.",
+    "En otra tapa adicionar la salsa de fresa y la crema. Tapar. Colocar sobra la orla.",
+    "Encremar la torta y pasar el peine por los costados, hacer colochos con la manga usando la boquilla #22 Arteco",
+    "Hacer una cuadrícula con 6 líneas en cada lado de ganache oscuro.",
+    "Colocar una cereza en el centro del pastel y distribuir la ralladura de chocolate en la parte interna de los colochos.",
+    "Colocar la torta en su domo. Etiquetar con Nombre, ingredientes, código, etiqueta FreshMarket, día juliano, fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 625,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 625,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 68,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

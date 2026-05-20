@@ -1,0 +1,63 @@
+{
+  "nombre": "SE00811 Crema Passionata de Coco",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Passionata",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10755",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema de coco",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10924",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Egg Yellow",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10150",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar en la batidora con ayuda de globo la crema passionata hasta que este bien montada.",
+    "Colocar la crema de coco, el colorante y batir hasta que este bien incorpordado.",
+    "Apartar y utilizar inmediatamente."
+  ],
+  "pesoTotalCantidad": 1150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanta",
+  "pesoPorcionCantidad": 1150,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

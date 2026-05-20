@@ -1,0 +1,127 @@
+{
+  "nombre": "Relleno Papa con Carne para Enchilada SE00181",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD ( 17 LTS )",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA ( 1 KILO )",
+      "cantidad": 1750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (KILO)",
+      "cantidad": 350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPA PICADA",
+      "cantidad": 21000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10281",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 140,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONSOME CONCEN. DE POLLO (1000g)",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "MP10017",
+      "marca": "ALSERRO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA CHILE AJI",
+      "cantidad": 1750,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO RECORTE ( BOLSA = 5000g)",
+      "cantidad": 8400,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACHIOTE KG",
+      "cantidad": 210,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": "NEGRITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S(PAQ=5 KILO)",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARNE MECHADA COCIDA",
+      "cantidad": 7000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00182",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar el aceite en una olla y agregar la cebolla picada, ajo. Sofreir hasta que la cebolla este caramelizada.",
+    "Agregar la papa picada junto con la sal, consome, aji, caldo de pollo, achiote y preservante.",
+    "Dejar cocinar la papa este bien suave y reducir el liquido de coccion. Agregar la carne mechada bien picaday Mezclar. Llevar a 80°C",
+    "Enfriar."
+  ],
+  "pesoTotalCantidad": 39000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 80,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 39000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2580,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

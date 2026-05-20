@@ -1,0 +1,72 @@
+{
+  "nombre": "Rosquete Easy queque chocolate SP 1300g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO EASY QUEQUE CHOCOLATE SP",
+      "cantidad": 49000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00431",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 1110,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "1.- Dosificar la mezcla en el molde engrasado y extender con la mano y emparejar con una espatula para que quede pareja la plancha.",
+    "2.- Hornear en horno Curitiva a 140°C por 45 min.",
+    "3.- Desmoldar y colocar 4 ud por latas, cubrir con bolsa plastica, etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 48100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 37,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 900,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

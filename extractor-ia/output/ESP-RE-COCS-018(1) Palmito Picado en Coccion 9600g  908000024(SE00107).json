@@ -1,0 +1,92 @@
+{
+  "nombre": "Palmito Picado en Coccion 9600g 908000024(SE00107)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PALMITO CRUDO KILO",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10267",
+      "marca": "ROVISA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17  L)",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ANTIOXIDANTE",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10068",
+      "marca": "ASESORIA DE A",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 1000,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el agua junto con el aceite, antioxidante y la sal en una olla a fuego alto hasta que hierva.",
+    "Cortar el palmito en rodajas con ayuda de la maquina",
+    "Cocinar en la olla hasta que este suave pero firme",
+    "Retirarlos y escurrirlos con ayuda de un colador.",
+    "Colocar en bandejas metalicas y llevar al chiller."
+  ],
+  "pesoTotalCantidad": 9600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 9600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 10640,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,89 @@
+{
+  "nombre": "SE00644 Relleno arrollado bucca",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "PRESTIGE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DULCE LECHE LA CIABATA",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "LA CIABATA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RON ABUELO RESERVA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10580",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SABORIZANTE RON",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10568",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CANELA EN POLVO",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "BADIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Montar la prestige a punto de chantilly, luego agregar el dulce de leche, ron, leche condensada, saborizante de ron.",
+    "Agregar el preservante y la canela e incoporar."
+  ],
+  "pesoTotalCantidad": 1480,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1480,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 25,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

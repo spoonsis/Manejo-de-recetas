@@ -1,0 +1,41 @@
+{
+  "nombre": "Postre Lemon Court",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Base Galleta P/Chesse Cake",
+      "cantidad": null,
+      "unidad": null,
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno de Lemon Court",
+      "cantidad": null,
+      "unidad": null,
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": null,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": null,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": null,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

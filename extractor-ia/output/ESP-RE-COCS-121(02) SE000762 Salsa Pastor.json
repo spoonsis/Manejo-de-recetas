@@ -1,0 +1,154 @@
+{
+  "nombre": "Salsa Pastor",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Lactocrema Granel",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "Dos pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA (PAQ = 1 KILO )",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "Presto",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ajo Pelado",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Achiote",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10058",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Tomate Pelado Entero",
+      "cantidad": 280,
+      "unidad": "g",
+      "codigoNetSuite": "MP10376",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo de Naranja TB",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10598",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Nuez Moscada Molida",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10013",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Condimento Comino",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10158",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Demiglace Gourmet",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10716",
+      "marca": "Knorr",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Clavo de Olor Molido",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10600",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "10415",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "En una olla colocar la lactocrema, la cebolla, ajo y achiote y cocer.",
+    "Luego agregar el tomate y saltear. Despues agregar el jugo de naranja,agua, sal, comino, nuez moscada, clavo de olor y demiglace.",
+    "Lllevar a hervor y espesar con el amidon disuelto en agua.",
+    "Pasar a enfriamiento."
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

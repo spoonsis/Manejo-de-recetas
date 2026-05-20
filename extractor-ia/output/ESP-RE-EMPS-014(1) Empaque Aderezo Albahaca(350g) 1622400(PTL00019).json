@@ -1,0 +1,62 @@
+{
+  "nombre": "Empaque Aderezo Albahaca (350g) 1622400(PTL00019)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ADEREZO ALBAHACA ECONOMICO",
+      "cantidad": 3200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00125",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 9.1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 6*10*4",
+      "cantidad": 9.1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10044",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 9.1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar 350g de aderezo en una bolsa 6*10*4",
+    "Etiquetar con fecha de vencimiento y nombre del producto."
+  ],
+  "pesoTotalCantidad": 3200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 9.142857143,
+  "porcionesUnidad": "Bolsas",
+  "pesoPorcionCantidad": 350,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

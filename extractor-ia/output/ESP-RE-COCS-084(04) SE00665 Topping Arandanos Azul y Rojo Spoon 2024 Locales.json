@@ -1,0 +1,109 @@
+{
+  "nombre": "SE00665 Topping Arandanos Azul y Rojo Spoon 2024 Locales",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Cocina Caliente",
+  "areaEmpaca": "Empaque",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Arandano Congelado",
+      "cantidad": 1540,
+      "unidad": "g",
+      "codigoNetSuite": "MP10548",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Arandanos Congelados Rojos",
+      "cantidad": 1540,
+      "unidad": "g",
+      "codigoNetSuite": "MP10688",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 1150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo de Limón",
+      "cantidad": 760,
+      "unidad": "g",
+      "codigoNetSuite": "MP10224",
+      "marca": "Ricofood",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 380,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 280,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLASTICO AUTOAD (UND: 18 * 2000 M)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10259",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Agregar en una olla los Arandanos , y el Azucar juntos por lapso de 6 min  hasta que se unifique y mezlar para que no se \npegue sin majar el arandanos",
+    "Mezlar el Almidon y limon en Agua y mezcla bien y agregar a la mezcla de Arandanos y azucar  y el preservante",
+    "Mezclar,hasta su punto y dar choque termino en Cheffing, y Etiquetar",
+    "Colocar en un cheffing"
+  ],
+  "pesoTotalCantidad": 5500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 650,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 195,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

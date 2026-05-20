@@ -1,0 +1,64 @@
+{
+  "nombre": "SE00378 Rosquete Zanahoria Rectangular 900g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO ZANAHORIA CON PIÑA",
+      "cantidad": 10600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00489",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP (KILO) **",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10013",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL ENCERADO 12 X 10 (CAJA) **",
+      "cantidad": 10,
+      "unidad": "Unidades",
+      "codigoNetSuite": "EM10090",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES (29800g)",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engraser el molde con manteca.",
+    "Forrar con un pliego de papel encerado.",
+    "Distribuir 900g del batido en cada molde.",
+    "Hornear"
+  ],
+  "pesoTotalCantidad": 9900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 12,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 12,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 700,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

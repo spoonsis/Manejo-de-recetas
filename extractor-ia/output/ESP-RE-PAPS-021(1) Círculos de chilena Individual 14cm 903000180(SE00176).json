@@ -1,0 +1,45 @@
+{
+  "nombre": "Círculos de chilena Individual 14cm",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA TORTA CHILENA SPOON KILO",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00177",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 175,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Laminar la pasta en la laminadora de chilena a 4 de grosor y cortar circulos de 14cm de diametro. (cortador empanada STB)",
+    "Colocar en latas limpias y hornear.",
+    "Hornear en el Dicte 1/ Dicte 2. a 170°C por 22 minutos a 24 minutos"
+  ],
+  "pesoTotalCantidad": 3900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "uds",
+  "pesoPorcionCantidad": 65,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

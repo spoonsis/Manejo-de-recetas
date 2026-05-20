@@ -1,0 +1,36 @@
+{
+  "nombre": "Pecana triturada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": "NUECES IND",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la pecana en banedjas bien estendidas.",
+    "Hornear la pecana por 5 min en horno a 180 °C.",
+    "Pasar por la trituradora con los engranes cerrados."
+  ],
+  "pesoTotalCantidad": 9500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 9500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 500,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

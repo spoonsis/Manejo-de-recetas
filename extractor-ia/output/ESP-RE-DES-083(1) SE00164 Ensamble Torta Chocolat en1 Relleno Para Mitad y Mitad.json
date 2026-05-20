@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00164 Ensamble Torta Chocolat en1 Relleno Para Mitad y Mitad",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Chocolate Dawn 360 g",
+      "cantidad": 627,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": "2 unidades",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRASVASADO LECHE CONDENSADA COCINADA",
+      "cantidad": 460,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Se utilizan 2 mitades de rosquete.",
+    "Rellenar con leche condensada cocinada, tapar y cortar por la mitad."
+  ],
+  "pesoTotalCantidad": 1030,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 1030,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": 57,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

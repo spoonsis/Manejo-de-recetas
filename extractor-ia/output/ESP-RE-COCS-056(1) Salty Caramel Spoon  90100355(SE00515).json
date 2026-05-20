@@ -1,0 +1,65 @@
+{
+  "nombre": "Salty Caramel Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "AZUCAR REFINADA VICTORIA ( 1 KG )",
+      "cantidad": 27000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10078",
+      "marca": "VICTORIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL ( 25KG )",
+      "cantidad": 4455,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE EVAPORADA (LITRO)",
+      "cantidad": 41000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1. Colocar el azucar en la marmita, encender en programacion \"caramelo\"",
+    "2. Cuando la marmita lo indique, agregar la lactocrema en cubos.",
+    "3. Cuando la marmita lo indique agregar la leche y la sal",
+    "4. Cocinar hasta que se termine el programa, cuidar que no se riegue.",
+    "5. Preparase para el proceso de empaque."
+  ],
+  "pesoTotalCantidad": 44500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 45,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 44500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 27955,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

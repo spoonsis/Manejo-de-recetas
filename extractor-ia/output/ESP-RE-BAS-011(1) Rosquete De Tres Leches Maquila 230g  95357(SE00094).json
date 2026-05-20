@@ -1,0 +1,72 @@
+{
+  "nombre": "Rosquete De Tres Leches Maquila 230g 95357(SE00094)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO P/ROSQUETE TRES LECHES (16700g)",
+      "cantidad": 18300,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES (29800g)",
+      "cantidad": 460,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BATIDO ROSQUETE TRES LECHES",
+      "cantidad": 13,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00036",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP",
+      "cantidad": 13,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "PALSTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO VERDE",
+      "cantidad": 13,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en un molde la mezcla de tres leches.",
+    "Hornear en el Argental a 175°C por 28 minutos, horno Marshall 22min a 175C, y dicte por 22min a 170C",
+    "Enfriar, introducir en bolsas y etiquetar"
+  ],
+  "pesoTotalCantidad": 17940,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "Min",
+  "porcionesCantidad": 78,
+  "porcionesUnidad": "Unids",
+  "pesoPorcionCantidad": 230,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 360,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

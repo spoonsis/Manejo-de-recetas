@@ -1,0 +1,112 @@
+{
+  "nombre": "Arroz con palmito pirex",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, chef",
+  "areaProduce": "Cocina Fría",
+  "areaEmpaca": "Cocina Fría",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA ARROZ CON SALSA BLANCA",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00105",
+      "marca": "FAS",
+      "observaciones": "3 tazas c/ capa (6 tazas total)",
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "Cocción Palmito Picado",
+      "cantidad": 682,
+      "unidad": "g",
+      "codigoNetSuite": "SE00107",
+      "marca": "FAS",
+      "observaciones": "4 tazas",
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "QUESO PARMESANO RALLADO KILO",
+      "cantidad": 135,
+      "unidad": "g",
+      "codigoNetSuite": "SE00106",
+      "marca": "FAS",
+      "observaciones": "1/2 taza c/ capa",
+      "seccion": "Ingredientes Principales"
+    },
+    {
+      "nombre": "Bandeja Aluminio 4040 (6 Porc)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10014",
+      "marca": "Nova S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Tapa Band Alum 4040 (6 Porc)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10015",
+      "marca": "Nova S",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10005",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la base del pyrex 3 tazas de mezcla de arroz con salsa blanca. Esparcir bien con ayuda de una espatula.",
+    "Colocar 1/2 taza de queso parmesano, esparcir bien en toda la superficie.",
+    "Colocar 4 tazas de palmito y esparcir bien por toda la superficie. Agregar 1/2 taza de queso parmesano, esparcir bien en toda la superficie.",
+    "Colcoar 3 tazas de mezcla de arroz con salsa blanca. Esparcir bien con ayuda de una espatula.",
+    "Colocar 1/2 taza de queso parmesano, esparcir bien en toda la superficie.",
+    "Marcar en 6 porciones.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 2150,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 7,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "pyrex",
+  "pesoPorcionCantidad": 2150,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 167,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

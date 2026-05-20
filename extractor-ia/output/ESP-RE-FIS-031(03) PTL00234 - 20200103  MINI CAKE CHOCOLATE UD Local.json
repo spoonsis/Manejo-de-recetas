@@ -1,0 +1,157 @@
+{
+  "nombre": "MINI CAKE CHOCOLATE UD Local",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 120g",
+      "cantidad": 112,
+      "unidad": "g",
+      "codigoNetSuite": "SE00700",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRASVASADO DE LECHE CONDENSADA COCINADA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FUDGE SPOON (PAQ: 5000 G)",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 48",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "PROCESADO CHOCOLATE RALLADO OSCURO",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Chocolate Tulipan Marmol",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10133",
+      "marca": "SOLUCIONES",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": "M Y L",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la punta para nivelar) , rellenar con leche condensad cocinada. Hacer un circulo de manjar sobre la base para inmobilizar el quequito. Pegar el mini cake en la base.",
+    "Con manga y la boquilla cubrir el rosquete y, de manera que se cubran todas la paredes hasta llegar al borde,decorar las paredes",
+    "Con la boquilla hacer en el centro 3 colochos de manjar en la parte superior.",
+    "Colocar un corazon de lado y colocar chocolate rallado.",
+    "Colocar el chocolate rallado en los espacios superiores sin rellenar.",
+    "Tapar y etiquetar. Colocar los sellos de seguridad en lados opuestos, sobre uno de los sellos de seguridad pegar la cinta generica. La fecha de vencimiento, y en el lado inferior etiqueta de ingredientes.",
+    "Colocar etiqueta mas rico & mas grande"
+  ],
+  "pesoTotalCantidad": 229,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 229,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 32,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

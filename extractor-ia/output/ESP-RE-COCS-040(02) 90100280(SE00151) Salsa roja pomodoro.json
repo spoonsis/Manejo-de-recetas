@@ -1,0 +1,145 @@
+{
+  "nombre": "90100280(SE00151) Salsa roja pomodoro",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "TOMATE PELADO ENTERO",
+      "cantidad": 25000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10376",
+      "marca": "MI SABOR",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST (UND:5 L)",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA TOMATE OLD CALI (UND:3.14 K)",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10287",
+      "marca": "OLD CALIFORNIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO (PAQ: 1 KILO)",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO TONES",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "TONES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "COSTEÑA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL KILO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALBAHACA KILO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10061",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 13400,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE ALMIDON MODIFICADO KILO",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Saltear la cebolla, el ajo con el aceite de oliva, luego colocar la albahaca y saltear 30 segundos y luego licuar el tomate junto con esta preparación y regresar a la olla.",
+    "Agregar la sal, pimienta, oregano y y preservante en la mitad del agua y agregar a la preparación anterior, hervir durante 2 minutos.",
+    "En la otra mitad del agua agregar el almidon y luego de los 2 minutos de hervido agregar a la olla y espesar.",
+    "Pasar a enfriamiento en bandejas metalicas."
+  ],
+  "pesoTotalCantidad": 45000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 45000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1140,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

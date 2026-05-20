@@ -1,0 +1,35 @@
+{
+  "nombre": "Suspiro Quebrado",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "EMPAQUE SUSPIRO BANDEJA",
+      "cantidad": 7900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00020",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Pasar las laminas de suspiro por la trituradora de manera que giren los dos rodillos.",
+    "Utilizar de inmediato."
+  ],
+  "pesoTotalCantidad": 7650,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 9,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Porciones",
+  "pesoPorcionCantidad": 7650,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 250,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

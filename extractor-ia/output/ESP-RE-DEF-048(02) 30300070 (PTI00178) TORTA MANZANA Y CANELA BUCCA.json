@@ -1,0 +1,184 @@
+{
+  "nombre": "TORTA MANZANA Y CANELA BUCCA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY VAINILLA BC 350 G",
+      "cantidad": 470,
+      "unidad": "g",
+      "codigoNetSuite": "SE00454",
+      "marca": "FAS",
+      "observaciones": "1.5 de rosquete",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR CANELA EN POLVO",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "30g x capa",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 520,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "260g x capa, 1 Taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO MANZANA CUBITOS (und:19 lbs)",
+      "cantidad": 420,
+      "unidad": "g",
+      "codigoNetSuite": "MP10630",
+      "marca": "MAYCA",
+      "observaciones": "210 x capa, 3/4 Taza",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 4FT",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Topping de Manzana",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Mezcla Sirope manjar Dulce Leche",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 0.5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Quequera Red Base/Domo 10",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "Export pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla # 10 Bucca",
+      "cantidad": 1,
+      "unidad": "UD",
+      "codigoNetSuite": "EM10084",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ET. TORTA BUCCA GENERICA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10112",
+      "marca": "Litografia CR",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta especial Navidad",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVA",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Cortar los rosquetes por la mitad.Utilizar 1,5 rosquetes. Mojar cada uno con almíbar de canela.",
+    "Rellenar la primera capa con 1 taza manjar esparcir bien y colocar 3/4 relleno de manzana",
+    "Colocar otra mitad de rosquete humedecido, agregar 1 taza de manjar y colocar 3/4 de relleno de manzana y tapar con la ultimo rsoquete humedecido.",
+    "Colocar sobre la base de la quequera.",
+    "Con el peine, encremar con crema de manjar y marmolear con la mezcla de sirope manjar dulce de leche",
+    "Realizar el colocho con la boquilla 4FT, en el centro agregar el topping de manzana y espolvorear la canela en polvo.",
+    "Tapar y etiquetar ."
+  ],
+  "pesoTotalCantidad": 1693,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1593,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 161,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,91 @@
+{
+  "nombre": "SE00663 Aderezo de Yogurth Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "YOGURT BATIDO NATURAL",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10394",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO 250 GRS",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "MP10173",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10224",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HIERBABUENA DESHOJADA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10740",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MAYONESA SPOON PLANTA",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00121",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Licuar el Jugo de Limon ,junto a la pasta de ajo , mayonesa ,sal hasta que se incorporen",
+    "Colocar en la mezcla anterior el culantro Desinfectado , y Hierbabuena deshojada",
+    "Colocar en la mezcla anterior el Yogurth y incoporar hasta que quede uniforme .",
+    "Guardar en Frio , utilizar y empacar de Inmediato"
+  ],
+  "pesoTotalCantidad": 955,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 240,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 15,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

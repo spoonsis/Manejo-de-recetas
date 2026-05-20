@@ -1,0 +1,52 @@
+{
+  "nombre": "Relleno fresa nucita",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "DECORACIÓN",
+  "areaEmpaca": "DECORACIÓN",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Prestige Grand",
+      "cantidad": 450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "PRESTIGE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CUBETA NUCITA FRESA",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "NUCITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Colorante Gel Super Red",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10157",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "montar la crema prestige a punto chantilly, luego agregar el relleno de nucita fresa y el colorante super red e incoporar bien."
+  ],
+  "pesoTotalCantidad": 950,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 950,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

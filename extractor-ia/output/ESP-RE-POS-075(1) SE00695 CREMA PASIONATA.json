@@ -1,0 +1,54 @@
+{
+  "nombre": "SE00695 CREMA PASIONATA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 7200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10755",
+      "marca": "Puratos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Poner en la batidora con el globo, la crema pasionata y poner a crecer hasta que llegue a punto yogurt.",
+    "Una vez la crema lista, se incorpora el queso crema y el preservante y se bate 2 minutos más, hasta que quede bien incorporado.",
+    "Guardar y etiquetar."
+  ],
+  "pesoTotalCantidad": 10000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 10000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 220,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

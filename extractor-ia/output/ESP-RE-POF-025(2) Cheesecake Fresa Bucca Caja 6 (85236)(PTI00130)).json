@@ -1,0 +1,139 @@
+{
+  "nombre": "Cheesecake Fresa Bucca Caja 6 (85236)(PTI00130)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": "5 GRAMOS C/ MOLDE",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA P/CHEESE CAKE (KILO)",
+      "cantidad": 1200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": "600 GRAMOS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHEESECAKE KILO",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00042",
+      "marca": "FAS",
+      "observaciones": "1500 GRAMOS",
+      "seccion": "Relleno o Ensamble"
+    },
+    {
+      "nombre": "RELLENO TOPPING FRESA P/CHEESE CAKE",
+      "cantidad": 1300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00043",
+      "marca": "FAS",
+      "observaciones": "650 GRAMOS C/MOLDE",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CAJA MUSMANNI #2 (UND)",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10061",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 400,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BURBUJA PLASTICA 5",
+      "cantidad": 30,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10051",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 35,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 35,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 35,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ET. BUCCA DULCE",
+      "cantidad": 29,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10110",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "SELLO DE SEGURIDAD",
+      "cantidad": 30,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Engrasar el Molde",
+    "Colocar en el molde de aluminio rectangular 600g de base de galleta cheese cake. En cada molde aluminio rectangular (plancha)",
+    "Hornear por 10 minutos, sacar y enfriar.",
+    "Colocar encima 1500g de mezcla de cheese cake. En cada molde",
+    "Enfriar en cámaras a 4ºC. Por 4 horas minimo",
+    "Colocar encima el topping de fresa con la gelatina, llevar a cámaras de refrigeración a 4°C. Enfriar por al menos 6 horas",
+    "Porcionar en 15, empacar cada unidad en la burbuja #5 con etiqueta con el nombre, logo, fecha vencimiento. Empacar 6 unidades en la caja musmanni, sellar y etiquetar con nombre y vencimiento,Lote ."
+  ],
+  "pesoTotalCantidad": 4800,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 16,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 5,
+  "porcionesUnidad": "cajas",
+  "pesoPorcionCantidad": 960,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 710,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

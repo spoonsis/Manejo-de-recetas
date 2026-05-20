@@ -1,0 +1,65 @@
+{
+  "nombre": "Rollo de tocino y queso SE00549",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LAMINADO PASTA HOJALDRE (KILO)",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00213",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO TOCINO Y QUESO",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00548",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CAPSULA # 10 BLANCA",
+      "cantidad": 10,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10067",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Extender la masa en un cuadro de 55cms de largo y 28cms de ancho.",
+    "Distribuir los 500g del relleno por el cuadro dejando un espacio pequeño al final del cuadro para enrrollar.",
+    "Enrrollar y cortar rollitos de 5,5cms.",
+    "Colocar en el molde de minicake con capsula",
+    "Llevar al horno a 180ºC por 35min"
+  ],
+  "pesoTotalCantidad": 1100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 6,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 10,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 110,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 60,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

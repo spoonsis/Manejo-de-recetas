@@ -1,0 +1,136 @@
+{
+  "nombre": "Pre mezcla Brownie Spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes,chef",
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA HARISOL HOJALDRE",
+      "cantidad": 2250,
+      "unidad": "g",
+      "codigoNetSuite": "11200070",
+      "marca": "FACHASA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CAFÉ INSTANTANEO",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "512316",
+      "marca": "Nescafe",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "10100098",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1047S",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "1212410",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCOA DUTCH PROCESS",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "512255",
+      "marca": "Nacional chocolates",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PROCESADO DE CHOCOLATE RALLADO OSCURO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "902000149",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE LECHE",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "1210386",
+      "marca": "Cordillera",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AZUCAR BLANCO INDUSTRIAL",
+      "cantidad": 7500,
+      "unidad": "g",
+      "codigoNetSuite": "510301",
+      "marca": "Layca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP KILO",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "1950702",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950708",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "60100010",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 12x10 la harina, café instantaneo, sal, preservante y cocoa.",
+    "Pesar en la bolsa 12x10 el chocolate rallado oscuro y la cobertura de chocolate leche.",
+    "En la bolsa 17x25 pesar el azucar.",
+    "Etiquetar con nombre y alerjeno."
+  ],
+  "pesoTotalCantidad": 13600,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 13600,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 23,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

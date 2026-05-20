@@ -1,0 +1,62 @@
+{
+  "nombre": "SE00731 Ganache de dulce de leche DURO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BETTER DULCE LECHE RICH (UND:4 K)",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10165",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE BLANCO (PAQ:5 K)",
+      "cantidad": 6700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "NACIONAL C",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Calentar la crema hastsa 55°C - 60°C. Apagar el fuego. Luego agregar el chocolate blanco en trozos lo mas pequeñas posible, ir moviendo constantemete con ayuda de un batidor de globo. Hasta que se derrita",
+    "Colocar en badnejas tapadas, etiquetar con fecha de produccion y vencimiento."
+  ],
+  "pesoTotalCantidad": 7100,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 7100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 200,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

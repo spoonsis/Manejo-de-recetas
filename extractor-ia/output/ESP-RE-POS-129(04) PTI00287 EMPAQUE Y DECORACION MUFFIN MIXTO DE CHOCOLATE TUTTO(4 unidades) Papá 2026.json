@@ -1,0 +1,154 @@
+{
+  "nombre": "PTI00287 EMPAQUE Y DECORACION MUFFIN MIXTO DE CHOCOLATE TUTTO(4 unidades) Papá 2026",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Inyectado Muffin Pastelero",
+      "cantidad": 152,
+      "unidad": "g",
+      "codigoNetSuite": "SE00828",
+      "marca": "FAS",
+      "observaciones": "2 UND",
+      "seccion": "Ensamble Vainilla"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "10 g x ud",
+      "seccion": "Ensamble Vainilla"
+    },
+    {
+      "nombre": "Confitura Palitos Azules",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10919",
+      "marca": null,
+      "observaciones": "0,5g x ud",
+      "seccion": "Ensamble Vainilla"
+    },
+    {
+      "nombre": "Confitura Perlas Azules",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10918",
+      "marca": null,
+      "observaciones": "1g x ud",
+      "seccion": "Ensamble Vainilla"
+    },
+    {
+      "nombre": "Chispas de Chocolate Tutto",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10920",
+      "marca": null,
+      "observaciones": "3g x ud",
+      "seccion": "Ensamble Vainilla"
+    },
+    {
+      "nombre": "Inyectado Muffin Chocolate",
+      "cantidad": 146,
+      "unidad": "g",
+      "codigoNetSuite": "SE00829",
+      "marca": "FAS",
+      "observaciones": "2 UND",
+      "seccion": "Ensamble Chocolate"
+    },
+    {
+      "nombre": "Ganache Blanco Duro",
+      "cantidad": 24,
+      "unidad": "g",
+      "codigoNetSuite": "SE00799",
+      "marca": "FAS",
+      "observaciones": "12g x ud",
+      "seccion": "Ensamble Chocolate"
+    },
+    {
+      "nombre": "Confitura Palitos Azules",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10919",
+      "marca": null,
+      "observaciones": "0,5g x ud",
+      "seccion": "Ensamble Chocolate"
+    },
+    {
+      "nombre": "Confitura Perlas Azules",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10918",
+      "marca": null,
+      "observaciones": "1g x ud",
+      "seccion": "Ensamble Chocolate"
+    },
+    {
+      "nombre": "Chispas de Chocolate Tutto",
+      "cantidad": 6,
+      "unidad": "g",
+      "codigoNetSuite": "MP10920",
+      "marca": null,
+      "observaciones": "3g x ud",
+      "seccion": "Ensamble Chocolate"
+    },
+    {
+      "nombre": "BIOFUSION BURBUJA P/ CUPCAKE \n4 ESPACIOS 100 UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10341",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Muffin Tutto 4 pack",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10515",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Incorporar en el empaque los muffings",
+    "Colocar el Ganache Oscuro en el muffing de vainilla en forma de Hilo y colocar la confitura",
+    "Colocar el Ganache Blanco en el muffing de chocolate en forma de Hilo y colocar la confitura",
+    "Cerrar y etiquetar"
+  ],
+  "pesoTotalCantidad": 346,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 346,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 14,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

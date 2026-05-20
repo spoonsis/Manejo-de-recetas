@@ -1,0 +1,65 @@
+{
+  "nombre": "TARTA DE CHIVERRE",
+  "subsidiaria": "Panadería y Pastelería",
+  "elaboradoPor": "Equipo de desarrollo",
+  "areaProduce": "Ensamble",
+  "areaEmpaca": "Ensamble",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Masa Quebrada Dulce Congelada",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "200000001",
+      "marca": "Panes del Paraíso",
+      "observaciones": "Descongelar y estirar",
+      "seccion": "Base"
+    },
+    {
+      "nombre": "Chiverre Preparado",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "200000002",
+      "marca": "La Huerta",
+      "observaciones": "Listo para usar",
+      "seccion": "Relleno"
+    },
+    {
+      "nombre": "Canela en polvo",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "200000003",
+      "marca": "Especias del Chef",
+      "observaciones": "Para espolvorear",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Nuez moscada rallada",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "200000004",
+      "marca": "Especias del Chef",
+      "observaciones": "Para sabor",
+      "seccion": "Decoración"
+    }
+  ],
+  "pasos": [
+    "Descongelar la masa quebrada y estirarla en un molde para tarta.",
+    "Verter el chiverre preparado sobre la base de masa.",
+    "Espolvorear la canela en polvo y la nuez moscada rallada sobre el chiverre.",
+    "Hornear a 180°C durante 25 minutos, o hasta que la masa esté dorada.",
+    "Dejar enfriar antes de desmoldar y servir."
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "porciones",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

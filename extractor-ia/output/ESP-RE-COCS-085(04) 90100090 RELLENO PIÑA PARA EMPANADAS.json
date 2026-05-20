@@ -1,0 +1,128 @@
+{
+  "nombre": "90100090 RELLENO PIÑA PARA EMPANADAS",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "COCINA",
+  "version": "04",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Piña Picada",
+      "cantidad": 11150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10564",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 3000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00016",
+      "marca": "LAICA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00014",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Astilla",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10095",
+      "marca": "TONES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Clavo de Olor Molido",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10600",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Triple Sec",
+      "cantidad": 48,
+      "unidad": "g",
+      "codigoNetSuite": "MP10042",
+      "marca": "TRIPLE SEC",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Jugo de Naranja TB",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10598",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca Vencimiento",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "EM10125",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Poner a cocinar en una olla grande a fuego medio, la piña, canela, clavo de olor, el azúcar y el preservante por aproximadamente 1 hora y media sin dejar de mover.",
+    "Debemos mover la mezcla constantemente sin que se pegue en el fondo de la olla, el relleno debe estar casi seco.",
+    "Disolver luego la maicena en triple sec y el jugo de naranja. Agregar poco a poco a la piña y dejar cocinar por 10 minutos mas.",
+    "Retirar del fuego",
+    "Colocar en bandejas, rotular con nombre y fecha y enfriar."
+  ],
+  "pesoTotalCantidad": 8850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 120,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "porc",
+  "pesoPorcionCantidad": 8850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 5742,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,181 @@
+{
+  "nombre": "MINI CAKE CHOCOFRESA UD Local",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 4.5 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": "Para pegar",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 100g",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "SE00394",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO FUDGE",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00337",
+      "marca": "FAS",
+      "observaciones": "1/ 8 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BATIDO RELL P/TORTA CHOCOFRESA KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00018",
+      "marca": "FAS",
+      "observaciones": "1/8 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQ RELLENO DE FRESA NATURAL",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00504",
+      "marca": "FAS",
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SUSPIRO QUEBRADO 7650 g",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00019",
+      "marca": null,
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON KILO",
+      "cantidad": 35,
+      "unidad": "g",
+      "codigoNetSuite": "SE00024",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 48 WILTON",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY CHOCO SPOON KILO",
+      "cantidad": 10,
+      "unidad": null,
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA #12 COLOCHO",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "SALSA FRESA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": null,
+      "observaciones": "1 CUCHARADA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MONEDAS MARMOLEADAS",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10253",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "LITOGRAFIA CR",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BASE PARA ROSQUETE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10035",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la punta para nivelar) , rellenar con fudge, relleno para chocofresa, relleno de fresa y suspiro. Hacer un circulo de manjar sobre la orla para inmobilizar el quequito. Pegar el mini cake en la orla.",
+    "Con una manga y la boquilla#48 agregar la crema de chocolate spoon y con la boquilla pequeña # 17 realizar un colocho en el borde y agregar la salsa de fresa en el medio dejandola bien exparcida.",
+    "Colocar la moneda de chocolate",
+    "Tapar y etiquetar. Colocar en la cinta generica, la fecha de vencimiento, pegar la cuchara dejando el lado superior descubierto, del lado opuesto colocar el sello de seguridad y en el lado inferior etiqueta de ingredientes."
+  ],
+  "pesoTotalCantidad": 194,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 149,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 42,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

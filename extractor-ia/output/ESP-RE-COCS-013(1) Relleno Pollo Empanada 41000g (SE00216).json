@@ -1,0 +1,136 @@
+{
+  "nombre": "Relleno Pollo Empanada 41000g SE00216",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 818,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO MOLIDO",
+      "cantidad": 78,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA DE CHILE PERUANO",
+      "cantidad": 152,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 6500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA TONES (511 GRAMOS)",
+      "cantidad": 54,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "TONES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 32,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA",
+      "cantidad": 116,
+      "unidad": "g",
+      "codigoNetSuite": "MP10031",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO",
+      "cantidad": 11290,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Gourmet Pro 1/1 litro",
+      "cantidad": 1075,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "Gourmet",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAN CUADRADO BLANCO",
+      "cantidad": 4450,
+      "unidad": "g",
+      "codigoNetSuite": "MP10035",
+      "marca": "ESCULTURAS JADE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION DE POLLO DESMENUZADO MARMITA",
+      "cantidad": 17200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00139",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Derretir la lactocrema y agregar el ajo, aji, cebolla el curry, paprika, pimienta negra y sal, dejar freir bien por 15 minutos aproximadamente.",
+    "Mezclar bien y dejar cocinar 10 minutos.",
+    "Agregar luego el pollo poco a poco e ir mezclando. El relleno debe quedar bien mesclado.",
+    "Por ultimo agregar el preservante."
+  ],
+  "pesoTotalCantidad": 38890,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 38890,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2915,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

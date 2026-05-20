@@ -1,0 +1,155 @@
+{
+  "nombre": "Torta Melocoton Grande Spoon 36085(PTL00109)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE NUCLEO VAINILLA DAWN REDONDO 270g",
+      "cantidad": 420,
+      "unidad": "g",
+      "codigoNetSuite": "SE00450",
+      "marca": "FAS",
+      "observaciones": "2 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR (KILO)",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "FAS",
+      "observaciones": "50 GRAMOS - 4CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO DE LIMON SPOON KILO",
+      "cantidad": 525,
+      "unidad": "g",
+      "codigoNetSuite": "SE00008",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA - 3 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO MELOCOTON CUBOS PARA TORTA",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "SE00446",
+      "marca": "FAS",
+      "observaciones": "3/4 TAZA - 3 CAPAS",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 220,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "ENCREMAR",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA BEIDGE (KILO)",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "SE00081",
+      "marca": "FAS",
+      "observaciones": "BOQUILLA 22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BORONA P/DECORAR KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00071",
+      "marca": "FAS",
+      "observaciones": "1/2 CENTRO",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TOPPIN DE MELOCOTÓN",
+      "cantidad": 130,
+      "unidad": "g",
+      "codigoNetSuite": "SE00681",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10 (CAJA:50)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10009",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10008",
+      "marca": "RAPIBOX",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir los 2 rosquetes por la mitad y humedecer cada una de las tapa con almíbar.",
+    "Rellenar 3 tapas de rosquete con el relleno de limón, seguido del relleno de melocoton en cubos esparcir y por ultimo topping; colocar la ultima tapa de rosquete. Colocar en una orla.",
+    "Encremar la torta con crema chantilly y pegar borona en los lados acorde a la fotografia.",
+    "En el centro hacer un circulo de colocho con boquilla 22 y colocar el topping de melocotón .",
+    "Colocar la torta en el domo, etiquetar con nombre e ingredientes,Lote, fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 1840,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1840,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 240,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,109 @@
+{
+  "nombre": "TAMAL MUDO",
+  "subsidiaria": "SE00418",
+  "elaboradoPor": "JUAN PÉREZ (CHEF CENTRAL)",
+  "areaProduce": "COCINA CENTRAL",
+  "areaEmpaca": "COCINA CENTRAL",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "HARINA DE MAÍZ NIACINADA",
+      "cantidad": 500,
+      "unidad": "g",
+      "codigoNetSuite": "I-001",
+      "marca": null,
+      "observaciones": "SIN GLÚTEN",
+      "seccion": "MASA"
+    },
+    {
+      "nombre": "AGUA PURIFICADA",
+      "cantidad": 750,
+      "unidad": "ml",
+      "codigoNetSuite": "I-002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MASA"
+    },
+    {
+      "nombre": "SAL FINA",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "I-003",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MASA"
+    },
+    {
+      "nombre": "CARNE DE CERDO PICADA",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "I-004",
+      "marca": null,
+      "observaciones": "MAGRA",
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "POLLO DESHUESADO Y TROCEADO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "I-005",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "ARROZ COCIDO",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "I-006",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "ARVEJAS FRESCAS",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "I-007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "ZANAHORIA EN CUBOS",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "I-008",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "HOJAS DE PLATANO",
+      "cantidad": 10,
+      "unidad": "unidad",
+      "codigoNetSuite": "I-009",
+      "marca": null,
+      "observaciones": "LIMPIAS",
+      "seccion": "HOJAS"
+    }
+  ],
+  "pasos": [
+    "PREPARAR LA MASA: En un bol grande, mezclar la harina de maíz con el agua y la sal hasta obtener una masa homogénea. Reservar.",
+    "PREPARAR EL RELLENO: En una sartén, cocinar la carne de cerdo y el pollo hasta que estén dorados. Añadir el arroz, las arvejas y la zanahoria. Mezclar bien.",
+    "ENSAMBLAR LOS TAMALES: Sobre una hoja de plátano, colocar una porción de masa, luego una porción de relleno. Cerrar cuidadosamente la hoja para formar el tamal.",
+    "COCCIÓN: Cocinar al vapor durante 2 horas."
+  ],
+  "pesoTotalCantidad": 1750,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "horas",
+  "porcionesCantidad": 5,
+  "porcionesUnidad": "porciones",
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

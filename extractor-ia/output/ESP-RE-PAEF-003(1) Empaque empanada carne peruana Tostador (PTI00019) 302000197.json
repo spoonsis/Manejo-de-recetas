@@ -1,0 +1,171 @@
+{
+  "nombre": "Carne mechada arreglada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA SA",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": 12,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE DE OLIVA",
+      "cantidad": 28,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "VIGO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO MOLIDO",
+      "cantidad": 14,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10019",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 278,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHILE DULCE PICADO PAQ.KILO",
+      "cantidad": 138,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "APIO PICADO PAQ.KILO",
+      "cantidad": 138,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION CARNE MECHADA EN OLLA A PRESION",
+      "cantidad": 850,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00182",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CARNE MECHADA ANALOGA DE CARNE",
+      "cantidad": 50,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": "MALTHO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CALDO DE POLLO",
+      "cantidad": 100,
+      "unidad": "Gramos",
+      "codigoNetSuite": null,
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA CHILE PERUANO",
+      "cantidad": 8,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "PROEXA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA ROJA SPOON",
+      "cantidad": 1658,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00111",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SALSA INGLESA LIZANO",
+      "cantidad": 28,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "PROEXA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA FRENCH",
+      "cantidad": 21,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10259",
+      "marca": "FRENCH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL REFINADA",
+      "cantidad": 14,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CULANTRO DESINFECTADO",
+      "cantidad": 110,
+      "unidad": "Gramos",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "FRESQUITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017",
+      "cantidad": 4,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLAST. AUTOAD 18 * 2000",
+      "cantidad": 90,
+      "unidad": "cm",
+      "codigoNetSuite": "NetSuiteCode",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar a fuego fuerte una olla grande y agregarle el aceite. Una vez caliente agregar el ajo molido, cebolla, chile dulce y apio.",
+    "Cocinar por 10 minutos hasta que se doren ligermente y agregar el chile picante, lizano, mostaza, CARNE ANALOGA y salsa roja. Dejar hervir.",
+    "Una vez hervido añadir la carne, culantro y la sal, mezclar bien. Colocar en bandejas y enfriar."
+  ],
+  "pesoTotalCantidad": 3170,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 10.5,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 300,
+  "pesoPorcionUnidad": "gramos",
+  "mermaCantidad": 269,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

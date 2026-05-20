@@ -1,0 +1,46 @@
+{
+  "nombre": "Suspiro Bandeja 907000203(SE00021)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MERENGUE P/SUSPIRO DESHIDRATADO KILO",
+      "cantidad": 11250,
+      "unidad": "g",
+      "codigoNetSuite": "SE00022",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 365,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Una vez listo el batido, colocar 980g de la mezcla en cada bandeja engrasadas",
+    "Distribuir el merengue de manera que quede la mezcla pareja con la ayuda de la herramienta.",
+    "Hornear en el Horno Dicte Grande apagado por toda la noche y luego75 minutos a 110.",
+    "Tambien se puede Hornear en el horno Dicte 1 por 100min"
+  ],
+  "pesoTotalCantidad": 10780,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 16,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 11,
+  "porcionesUnidad": "Bandejas",
+  "pesoPorcionCantidad": 980,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 470,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

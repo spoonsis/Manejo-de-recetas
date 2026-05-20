@@ -1,0 +1,64 @@
+{
+  "nombre": "Batido Nucleo Chocolate Dawn",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA BATIDO NUCLEO CHOCOLATE DAWN",
+      "cantidad": 21971,
+      "unidad": "g",
+      "codigoNetSuite": "SE00341",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO ENTERO PASTERI INNOVO ( CAJA: 10 K)",
+      "cantidad": 6687,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD (UND:17 L)",
+      "cantidad": 5732,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 5350,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Disolver el preservante y el polvo de hornear con el agua y ayuda de un batidor de mano.",
+    "Colocar los liquidos en la batidora, posterior agregar los ingredientes secos",
+    "Batir por 1 min en velocidad 1. Con paleta",
+    "Batir 5 min en velocidad 2. con Paleta"
+  ],
+  "pesoTotalCantidad": 39000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 39000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 740,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

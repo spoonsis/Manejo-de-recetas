@@ -1,0 +1,61 @@
+{
+  "nombre": "Empaque Aceite de hierbas (1/150 grs)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 2300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AJO PELADO",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10021",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "OREGANO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "MP10266",
+      "marca": "BADIA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SAL EMPACADA PLANTA",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar todo en la licuadora y licuar hasta procesar todo el ajo."
+  ],
+  "pesoTotalCantidad": 2900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 19,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 150,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 80,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,44 @@
+{
+  "nombre": "SE00831 Relleno Crema-Pinito",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Crema Chantilly Blanca (Spoon-Ind)",
+      "cantidad": 12800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche en polvo Pinito",
+      "cantidad": 2500,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "PINITO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Mezclar la crema chantilly blanca y agregar la leche pinito, hasta que quede bien incorporada.",
+    "Colcar en un tina y usar inmediatamente."
+  ],
+  "pesoTotalCantidad": 15000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 15000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

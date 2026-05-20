@@ -1,0 +1,46 @@
+{
+  "nombre": "SE00734 Ganache de chocolate duro para mousse",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CHOCOLATE SEMI AMARGO 54% (PAQ 5 k)",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10492",
+      "marca": "NACIONAL DE CHOCOLATES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA PRESTIGE GRAND (UND:4 K)",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "RICHS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Colocar la crema prestige en la marmita, prender la marmita en 140°C en agitacion 30 rpm. Hasta que la crema este hirviendo.",
+    "Apagar la marmita y agregar el chocolate en trozos, y APAGADO, darle agitacion en 50rpm con doble sentido (10 seg por cad sentido)",
+    "Una vez el chocolate este totalmente disuelto y bien mezclado, retirar de la marmita en una olla.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 2400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

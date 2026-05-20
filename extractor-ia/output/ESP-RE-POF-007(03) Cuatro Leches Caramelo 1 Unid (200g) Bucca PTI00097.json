@@ -1,0 +1,128 @@
+{
+  "nombre": "Cuatro Leches Caramelo 1 Unid (200g) Bucca PTI00097",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA P/CUATRO LECHES (KILO)",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "SE00304",
+      "marca": "FAS",
+      "observaciones": "1/2 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "BOQUILLA #842",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEREZAS CON TALLO (1/2 GALON) **",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10109",
+      "marca": "MAYCA",
+      "observaciones": "1/4 x unidad",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": "Boquilla #852",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "VASO 9oz SUNDA TS9 PAQ:50(CAJA:1000 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10105",
+      "marca": "FOOD P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA VASO 9oz P/SUN PAQ:50 (CAJA:2000UN)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10181",
+      "marca": "FOOD P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA CUATRO LECHES CARAMELO BUCCA PORCION",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10385",
+      "marca": "ETIQUETAS MYL",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Sello Seguridad",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la mitad 80g de la mezcla de 4 leches en el vaso",
+    "Con la ayuda de una manga colocar el manjar.",
+    "Cubrir con la mitad restante del recorte de rosquete y 80g de mezcla de 4 leches en el vaso",
+    "Decorar con un colocho de crema y 1/4 de unid cherrie.",
+    "Etiquetar con fecha de vencimiento, lote, nombre del producto, sello de seguridad de cada lado y etiqueta Bucca."
+  ],
+  "pesoTotalCantidad": 200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 2,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

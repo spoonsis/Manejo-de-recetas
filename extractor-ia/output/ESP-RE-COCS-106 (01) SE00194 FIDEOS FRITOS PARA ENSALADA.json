@@ -1,0 +1,44 @@
+{
+  "nombre": "FIDEOS FRITOS PARA ENSALADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Pasta Fideos Arroz Padthai",
+      "cantidad": 10900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10187",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "Capullo",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Calentar la freidora a 170 ºC y poner a freir la pasta de poco en poco unos 20 segundos.",
+    "Colocar papel toalla en una palangana para escurrir el aceite, enfriar y empacar."
+  ],
+  "pesoTotalCantidad": 16895,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 16895,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

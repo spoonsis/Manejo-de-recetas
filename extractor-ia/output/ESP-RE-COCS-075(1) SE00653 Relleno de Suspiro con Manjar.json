@@ -1,0 +1,90 @@
+{
+  "nombre": "SE00653 Relleno de Suspiro con Manjar",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE EVAPORADA",
+      "cantidad": 2865,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA",
+      "cantidad": 2865,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 570,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MANJAR DE LECHE CONDENSADA",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLE",
+      "observaciones": "( 6 KG )",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA MARMITA 14X20 PLANTA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10307",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ BLANCA 3X3",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar la Leche Evaporada,junto a la condensada , y el Manjar de Leche Condensada hasta punto deseado",
+    "Temperar la Yema de Huevo junto al preservante y incorporar a la mezcla y dejar punto deseado",
+    "Vaciar en bolsas termicas y etiquetar. Enfriar en A/C"
+  ],
+  "pesoTotalCantidad": 5490,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 5490,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 891,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

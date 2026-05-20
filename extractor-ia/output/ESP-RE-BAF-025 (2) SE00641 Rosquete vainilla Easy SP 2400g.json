@@ -1,0 +1,72 @@
+{
+  "nombre": "Rosquete vainilla Easy SP 2400g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO EASY QUEQUE VAINILLA SP",
+      "cantidad": 47400,
+      "unidad": "g",
+      "codigoNetSuite": "SE00434",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 2380,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 21,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 21,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 21,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar la mezcla en el molde engrasado.",
+    "Hornear en horno Dicte 1 o 2 a 175°C por 56 minutos.",
+    "Desmoldar y colocar en latas, cubrir con bolsa plastica, etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 46750,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 35,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 19,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 650,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

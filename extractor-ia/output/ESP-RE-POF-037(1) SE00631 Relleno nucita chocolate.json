@@ -1,0 +1,43 @@
+{
+  "nombre": "SE00631 Relleno nucita chocolate",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "POSTRES",
+  "areaEmpaca": "POSTRES",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA PRESTIGE GRAND",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10048",
+      "marca": "PRESTIGE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "NUCITA EMPAQUE",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10714",
+      "marca": "NUCITA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Montar la crema prestige hasta punto chantilly y luego agregar el relleno nucita chocolate, e incoporar bien."
+  ],
+  "pesoTotalCantidad": 1350,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1350,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

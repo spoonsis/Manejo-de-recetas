@@ -1,0 +1,183 @@
+{
+  "nombre": "RELLENO POLLO Y HONGOS EMPANADA",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 400,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 1700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10020",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 160,
+      "unidad": "g",
+      "codigoNetSuite": "MP10019",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE SAL KILO",
+      "cantidad": 43,
+      "unidad": "g",
+      "codigoNetSuite": "SE00104",
+      "marca": "DIAMANTE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 9,
+      "unidad": "g",
+      "codigoNetSuite": "MP10038",
+      "marca": "PRIMA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PAPRIKA",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10034",
+      "marca": "SYSCO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VINO BLANCO PETER CABERNET SAU (UND:5L)",
+      "cantidad": 1350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10392",
+      "marca": "PETER",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HONGO FRESCO REBANADO",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10212",
+      "marca": "SETAS DE CUIVA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA VERSATIE (UND: L)",
+      "cantidad": 1350,
+      "unidad": "g",
+      "codigoNetSuite": "MP10485",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE HARINA ESTANDAR (KILO)",
+      "cantidad": 180,
+      "unidad": "g",
+      "codigoNetSuite": "SE00183",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MOSTAZA HELLMANNS (UND:4K)",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": "MP10258",
+      "marca": "HELLMANNS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION POLLO RECORTE (KILO)",
+      "cantidad": 5500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00135",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PEREJIL DESINFECTADO (PAQ = 250 G)",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10296",
+      "marca": "PRESTO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "JUGO LIMON LITRO",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "SE00015",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 12x18 TRANSP KILO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En una olla caliente agregar la mitad de lactocrema, cebolla, ajo y saltear hasta cristalizar",
+    "Agregar sal, pimienta, paprika, preservante mezclar bien, agregar el vino, cocinar hasta que se evapore el alcohol",
+    "En la misma olla agregar los hongos y cocinar, la crema versatie disuelta con la harina y la mostaza, mezclar bien",
+    "Agregar el pollo desmenuzado, el perejil picado y el jugo de limón, mezclar bien",
+    "Dar temperatura a 75° y colocar en bandejas",
+    "Etiquetar con nombre y pasar a empaque"
+  ],
+  "pesoTotalCantidad": 11700,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 20,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 11700,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 922,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

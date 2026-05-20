@@ -1,0 +1,108 @@
+{
+  "nombre": "SE00753 Ensamble tres leches salty caramel para 4 pax",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "POSTRES",
+  "areaEmpaca": "POSTRES",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE TRES LECHES SOUFLE (43G) KFC",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00302",
+      "marca": "FAS",
+      "observaciones": "34 GRAMOS C/U",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA TRES LECHES SALTY CARAMEL",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "SE00751",
+      "marca": "FAS",
+      "observaciones": "100g",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "25g c/u",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar con Agua",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00533",
+      "marca": "BADIA",
+      "observaciones": "5g",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CONTENEDOR KFC PEQUEÑO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10457",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA CONTENEDOR KFC",
+      "cantidad": null,
+      "unidad": null,
+      "codigoNetSuite": "EM10462",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta KFC individual Navidad Rompope",
+      "cantidad": 8,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10404",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en el molde plastico el rosquete y bañarlo con la mezcla de leches caramelo.",
+    "Con boquilla redonda cubrir el rosquete con la crema dulce y luego hacer lineas con el manjar con agua.",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1040,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 164,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 8,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

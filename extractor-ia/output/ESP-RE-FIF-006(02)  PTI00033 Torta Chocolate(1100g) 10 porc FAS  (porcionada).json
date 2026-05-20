@@ -1,0 +1,86 @@
+{
+  "nombre": "Rosquete Chocolate Pastelero Real",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MEZCLA ENGRASE MOLDES",
+      "cantidad": 1500,
+      "unidad": "GRAMO",
+      "codigoNetSuite": "95720",
+      "marca": null,
+      "observaciones": "29800g",
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "BATIDO P/ROSQUETE CHOCOLATE BUCCA",
+      "cantidad": 48100,
+      "unidad": "GRAMO",
+      "codigoNetSuite": "96296",
+      "marca": null,
+      "observaciones": "11475g",
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80",
+      "cantidad": 15,
+      "unidad": "UND",
+      "codigoNetSuite": "1950928",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 15,
+      "unidad": "UND",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 15,
+      "unidad": "UND",
+      "codigoNetSuite": "0702007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "EMPAQUE ENGRASE MOLDES PLANTA",
+      "cantidad": 1500,
+      "unidad": "N/A",
+      "codigoNetSuite": "95720",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE ENGRASE MOLDES PLANTA",
+      "cantidad": 48100,
+      "unidad": "N/A",
+      "codigoNetSuite": "96296",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 48000,
+  "pesoTotalUnidad": "GRAMOS",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 60,
+  "porcionesUnidad": "UNIDADES",
+  "pesoPorcionCantidad": 800,
+  "pesoPorcionUnidad": "GRAMO",
+  "mermaCantidad": 2,
+  "mermaUnidad": "%",
+  "registroCambios": "Importación inicial desde Excel"
+}

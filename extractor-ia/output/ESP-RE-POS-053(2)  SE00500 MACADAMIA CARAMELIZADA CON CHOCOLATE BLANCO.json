@@ -1,0 +1,64 @@
+{
+  "nombre": "SE00500 MACADAMIA CARAMELIZADA CON CHOCOLATE BLANCO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MACADAMIA CARAMELIZADA",
+      "cantidad": 2300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00499",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COBERTURA CHOCOLATE BLANCO (PAQ:5 K)",
+      "cantidad": 2300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10143",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLÁSTICO AUTOADERIBLE 1/ 18*2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En el microondas derretir el chocolate de 2 minutos en 2 minutos para evitar que se queme, moviendolo constantemente.",
+    "Agregar la macadamia caramelizada picada, mezclar hasta que quede bien mezclado.",
+    "Colocar en una lata y refrigerar por 1 hora.",
+    "Procesar en la maquina y utilizar."
+  ],
+  "pesoTotalCantidad": 4550,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 4550,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

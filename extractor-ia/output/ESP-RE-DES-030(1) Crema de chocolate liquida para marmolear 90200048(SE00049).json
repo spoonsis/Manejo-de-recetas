@@ -1,0 +1,43 @@
+{
+  "nombre": "Crema de chocolate liquida para marmolear 90200048(SE00049)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CREMA BETTERCREAM DOBLE CHOCOLATE",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10006",
+      "marca": "RICH",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO) **",
+      "cantidad": 26,
+      "unidad": "Unidades",
+      "codigoNetSuite": "EM10037",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Empacar en bolsas 8*12 la crema de chocolate (150g)."
+  ],
+  "pesoTotalCantidad": 3900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 26,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 150,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 100,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

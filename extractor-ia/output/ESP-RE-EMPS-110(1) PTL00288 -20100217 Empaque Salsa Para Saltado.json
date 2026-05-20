@@ -1,0 +1,113 @@
+{
+  "nombre": "Salsa Para Saltado",
+  "subsidiaria": "ESP-RE",
+  "elaboradoPor": null,
+  "areaProduce": "Producción",
+  "areaEmpaca": "Empaque",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Ajo Pelado",
+      "cantidad": 145,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Aceite Capullo Rbd",
+      "cantidad": 110,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Aceite De Oliva",
+      "cantidad": 110,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10053",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Perejil Desinfectado",
+      "cantidad": 155,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10296",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Salsa Soya",
+      "cantidad": 580,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10521",
+      "marca": "Lee Kum Kee",
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Salsa Chile Aji Planta",
+      "cantidad": 180,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10032",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 2,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10025",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Jugo Limon Planta",
+      "cantidad": 150,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Jugo Limon Planta",
+      "cantidad": 150,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00015",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 2000,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 2000,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

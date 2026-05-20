@@ -1,0 +1,53 @@
+{
+  "nombre": "SE00788 Almibar Flor de Caña",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "FLOR DE CAÑA 4 AÑOS OSCURO",
+      "cantidad": 4000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10721",
+      "marca": "Flor de Caña",
+      "observaciones": "FLOR DE CAÑA OSCURO !!",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Almibar",
+      "cantidad": 3500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00005",
+      "marca": "Fass",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Pesar el almibar y mezclar con el ron hasta que se incorpore.",
+    "Guardar y etiquetar"
+  ],
+  "pesoTotalCantidad": 7450,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 7450,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 50,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

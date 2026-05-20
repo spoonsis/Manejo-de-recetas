@@ -1,0 +1,118 @@
+{
+  "nombre": "Postre de Tiramisu",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Tres Leches 750 grs",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "SE00035",
+      "marca": "FAS",
+      "observaciones": "25g x unidad ( Total 25 unidades)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Mezcla Almibar C/Cafe",
+      "cantidad": 750,
+      "unidad": "g",
+      "codigoNetSuite": "SE00053",
+      "marca": "FAS",
+      "observaciones": "30g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno de Queso",
+      "cantidad": 1250,
+      "unidad": "g",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FAS",
+      "observaciones": "50g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cocoa Dutch Process",
+      "cantidad": 25,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "CR cocoa",
+      "observaciones": "1g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Procesado Chocolate Rallado Oscuro",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": null,
+      "observaciones": "4g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "VASO 9oz SUNDA TS9 PAQ:50(CAJA:1000 UND)",
+      "cantidad": 25,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10105",
+      "marca": "Food P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA VASO 9oz P/SUN PAQ:50 (CAJA:2000UN)",
+      "cantidad": 25,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10181",
+      "marca": "Food P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 25,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 25,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 25,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En cada vaso de Sunday agregar trozos de rosquete tres leches, agregar la mezcla de almibar con café  y majarlo un poco.",
+    "Agregar con una manga el relleno de queso.",
+    "Decorarlo con cocoa espolvoreada y chocolate oscuro rallado.",
+    "Tapar, sellar y etiquetar."
+  ],
+  "pesoTotalCantidad": 2750,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 25,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 110,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 16,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

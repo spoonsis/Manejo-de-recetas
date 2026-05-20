@@ -1,0 +1,90 @@
+{
+  "nombre": "SE00429 Batido queque limon spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA QUEQUE LIMON",
+      "cantidad": 10000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00428",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HUEVO LIQUIDO REFRIGERADO",
+      "cantidad": 2950,
+      "unidad": "g",
+      "codigoNetSuite": "MP10005",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GALON JUGO LIMON NATURAL",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10680",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "AGUA POTABLE (PLANTA)",
+      "cantidad": 700,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SEMILLA AMAPOLA",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10357",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Agregar al batidora con globo la lactocrema, aceite y la premezcla y batir por 3 minutos a velocidad 2.",
+    "2.- Luego agregar el resto de ingredientes y batir por 6 minutos en velocidad 2.",
+    "3.- Dosificar."
+  ],
+  "pesoTotalCantidad": 18000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 20,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 900,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 18400,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,164 @@
+{
+  "nombre": "PTI00254 MINI CAKE CHOCOLATE UD  HALLOWEN (Monstruo Verde) Industria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ROSQUETE CHOCOLATE DAWN 120g",
+      "cantidad": 112,
+      "unidad": "g",
+      "codigoNetSuite": "SE00700",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TRASVASADO DE LECHE CONDENSADA COCINADA",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema verde Electrico",
+      "cantidad": 22,
+      "unidad": "g",
+      "codigoNetSuite": "SE00457",
+      "marca": "FAS",
+      "observaciones": "Colocho BOQUILLA#48",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema verde Electrico",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00457",
+      "marca": "FAS",
+      "observaciones": "Colocho BOQUILLA#22",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ganache Chocolate Oscuro",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Ojos",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "MP10883",
+      "marca": null,
+      "observaciones": "2 unidades",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Confitura Hallowen",
+      "cantidad": 3,
+      "unidad": "g",
+      "codigoNetSuite": "MP10885",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "QUEQUERA MINI CAKE (CAJA:100 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10288",
+      "marca": "M Y L",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ. GENERICA PEQUEÑA V-274 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10119",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO DE SEGURIDAD (ROLLO:1000 U)",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10135",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA HALLOWEEN MINI CAKE",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10461",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Cortar el mini cake por la mitad (eliminado la punta para nivelar) , rellenar con leche condensad cocinada. Hacer un circulo de manjar sobre la base para inmobilizar el quequito. Pegar el mini cake en la base.",
+    "Con manga y la boquilla cubrir el rosquete con la chantilly verde, de manera que se cubran todas la paredes hasta llegar al borde,decorar las paredes y alisando la parte superior",
+    "Colocar el ganache en el centro con ayuda de una bolsa, realizar el colocho con la boquilla#22, en toda la parte superior realizando besitos.",
+    "Poner dos ojos y la confitura de hallowen.",
+    "Tapar y etiquetar"
+  ],
+  "pesoTotalCantidad": 182,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 182,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 17,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

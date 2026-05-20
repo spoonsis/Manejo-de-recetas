@@ -1,0 +1,44 @@
+{
+  "nombre": "Rueda FROLA 14 DIAMETRO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PASTA FROLA RICOTA",
+      "cantidad": 13287,
+      "unidad": "g",
+      "codigoNetSuite": "SE00132",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "HARINA HARISOL WINTER (25k)",
+      "cantidad": 620,
+      "unidad": "g",
+      "codigoNetSuite": "MP10036",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "La pasta se debe laminar a 1,3 (RECORTE) y en 1,4(PASTA VIRGEN), cortar con el círculo de 14cm de diámetro.",
+    "Refrigerar de no ser usada de inmediato"
+  ],
+  "pesoTotalCantidad": 13000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 25,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 200,
+  "porcionesUnidad": "Ruedas",
+  "pesoPorcionCantidad": 65,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 907,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

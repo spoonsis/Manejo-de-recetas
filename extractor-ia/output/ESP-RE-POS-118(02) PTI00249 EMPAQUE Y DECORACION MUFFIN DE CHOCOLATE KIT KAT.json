@@ -1,0 +1,100 @@
+{
+  "nombre": "EMPAQUE Y DECORACION MUFFIN DE CHOCOLATE KIT KAT (4 unidades) San Valentin",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFFIN DE CHOCOLATE KIT KAT",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00402",
+      "marca": "FAS",
+      "observaciones": "4 UND",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": "10 g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE ROSADO DURO",
+      "cantidad": 12,
+      "unidad": "g",
+      "codigoNetSuite": "SE00771",
+      "marca": "FAS",
+      "observaciones": "4g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MP10532 Confitillo Corazón",
+      "cantidad": 8,
+      "unidad": "g",
+      "codigoNetSuite": "MP10532",
+      "marca": null,
+      "observaciones": "2g x ud",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BIOFUSION BURBUJA P/ CUPCAKE 4 ESPACIOS 100 UND",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10341",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta San Valentin",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Incorporar en el empaque los muffings",
+    "Colocar el Ganache Oscuro bañado en el muffing y colocar el ganache rosado encima en forma de hilos.",
+    "Colocar las la confitura de corazones",
+    "Cerrar y etiquetar"
+  ],
+  "pesoTotalCantidad": 350,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 4,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 350,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 30,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,71 @@
+{
+  "nombre": "Rosquete Easy Chocolate BC 800g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO EASY CHOCOLATE BC",
+      "cantidad": 48500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00440",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES (KILO)",
+      "cantidad": 1770,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 15,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar 800g de mezcla en moldes engrasados tamaño STB. Hornear en Horno Curitiva a 140°C por 42 min.",
+    "Enfriar y colocar en latas limpias, 4 unidad por lata, envolver en bolsa plastica y etiquetar con fecha de producción y nombre"
+  ],
+  "pesoTotalCantidad": 47200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 30,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 59,
+  "porcionesUnidad": "Unidades",
+  "pesoPorcionCantidad": 800,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1300,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,100 @@
+{
+  "nombre": "EMPAQUE Y DECORACION MUFFIN DE CHOCOLATE KIT KAT (1 unidad) HALLOWEN",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "03",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "MUFFIN DE CHOCOLATE KIT KAT",
+      "cantidad": 76,
+      "unidad": "g",
+      "codigoNetSuite": "SE00402",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Confitura de colores (Hallowen)",
+      "cantidad": 1,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Ojos",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "MP10883",
+      "marca": null,
+      "observaciones": "2 unidades",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CHOCOLATE KIT KAT",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10657",
+      "marca": "NESTLE",
+      "observaciones": "1/2 ud (de barra)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE 1 UNIDAD DN 665 DARNEL",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10342",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar el Ganache Oscuro con ayuda de una bolsa en el muffing en forma de Hilo",
+    "Agregar los trozos de chocolate de leche a un costado",
+    "Colocarte los ojos y y la confitura.",
+    "Incorporar en el empaque. Etiquetar"
+  ],
+  "pesoTotalCantidad": 101,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 101,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 3,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

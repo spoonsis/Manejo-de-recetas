@@ -1,0 +1,72 @@
+{
+  "nombre": "SE00611 Rosquete Nucleo Vainilla Dawn redondo 260g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO NUCLEO VAINILLA DAWN",
+      "cantidad": 24000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00444",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 894,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 KILO",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4 (UND)",
+      "cantidad": 6,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Pesar 260 g de mezcla en los moldes previamente engrasados.",
+    "Hornear por 31 minutos en el Dicte 1 a 170°C, en el Dicte 2 por 38 minutos a 170°C y en el Marshall por 26 minutos a 175°C.",
+    "Enfriar, desmoldar, colocar 12 rosquetes por lata, etiquetar con nombre y fecha de producción."
+  ],
+  "pesoTotalCantidad": 23240,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 16,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 89,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 260,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 760,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

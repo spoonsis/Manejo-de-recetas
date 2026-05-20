@@ -1,0 +1,137 @@
+{
+  "nombre": "PTI00179 Degustación Chesscake Pie de Pecanas",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": 2,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Horneo Base Cheescake Pie de Pecanas",
+      "cantidad": 270,
+      "unidad": "g",
+      "codigoNetSuite": "SE00721",
+      "marca": "FAS",
+      "observaciones": "15g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHEESECAKE PREMIUM",
+      "cantidad": 540,
+      "unidad": "g",
+      "codigoNetSuite": "SE00709",
+      "marca": "FAS",
+      "observaciones": "30g x vasito",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Dulce",
+      "cantidad": 72,
+      "unidad": "g",
+      "codigoNetSuite": "0310099",
+      "marca": "FAS",
+      "observaciones": "4g x vasito, BOQUILLA# 4FT",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "TOPPING CARAMELO Y PECANA",
+      "cantidad": 432,
+      "unidad": "g",
+      "codigoNetSuite": "SE00708",
+      "marca": "FAS",
+      "observaciones": "24g x vasito",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10264",
+      "marca": "Estuardo",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "TAPA CONTEDENOR 4 ONZAS (118 ML)",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10266",
+      "marca": "Exp pmt",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Fecha Vencimiento Blanco",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "Etiplast",
+      "observaciones": "juliano, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Regalia Spoon",
+      "cantidad": 19,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10336",
+      "marca": "Etiplast",
+      "observaciones": "mercadeo, cada uno y la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca R-153",
+      "cantidad": 18,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": "fecha de vencimiento en la caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq Blanca 3x3",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10326",
+      "marca": "ETIPLAST",
+      "observaciones": "1 por caja",
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Cinta Adhesiva transp. 1/ 2*100 mts",
+      "cantidad": 50,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Caja Six Pack Musmanni",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10066",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en cada vasito la base del cheescake de pecanas en boronas grandes, luego colocar el relleno de cheescake y manjar y dejar enfriar minimi 4 horas.",
+    "Agregar el topping de caramelo de pecanas",
+    "Hacer con la crema y usando la boquilla 4FT un colocho en el medio.",
+    "Tapar todos los vasitos y colocar la etiqueta de regalia.",
+    "Guardar en la caja, cerrar, sellar y etiquetar la caja."
+  ],
+  "pesoTotalCantidad": 1296,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 72,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 18,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

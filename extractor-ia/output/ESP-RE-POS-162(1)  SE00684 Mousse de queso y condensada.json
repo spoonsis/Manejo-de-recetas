@@ -1,0 +1,101 @@
+{
+  "nombre": "SE00684 Mousse de queso y condensada",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Queso Crema Panadero",
+      "cantidad": 900,
+      "unidad": "g",
+      "codigoNetSuite": "MP10046",
+      "marca": "Dos Pinos",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Crema Gourmet Pro",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "MP10693",
+      "marca": "Rich",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Trasvasado de leche condensada cocinada",
+      "cantidad": 390,
+      "unidad": "g",
+      "codigoNetSuite": "SE00386",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Leche Evaporada",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "Nestle",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Gelatina Pura",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10043",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Agua",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "Aseal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Batir la crema hasta punto yogurt en la batidora con ayuda de un globo en velocidad 3.",
+    "Agregar el praline de avellana y batir hasta que quede una mezcla homogenea .",
+    "Hidratar la gelatina con el agua fria, mezclar bien y derretir en microondas.",
+    "Separar un poco de la crema para temperar, agregar la gelatina pasada por un colador. Volver a incorporar al resto de la crema, hasta que que quede homogenea.",
+    "Guardar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1850,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 1850,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 165,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,183 @@
+{
+  "nombre": "PTI00190 Torta Oreo Spoon PORCION TRIANGULAR",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Figuras",
+  "areaEmpaca": "Figuras",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE CHOCOLATE 400 GRS SPOON",
+      "cantidad": 320,
+      "unidad": "g",
+      "codigoNetSuite": "SE00345",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA CREMA CHOCOLATE CON AGUA",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00477",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "CREMA OREO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00513",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "GALLETA OREO BAÑADA CHOCOLATE BLANCO",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00514",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "RELLENO"
+    },
+    {
+      "nombre": "CREMA OREO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00513",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO ENTERA 1/12 UD",
+      "cantidad": 27,
+      "unidad": "g",
+      "codigoNetSuite": "MP10617",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GALLETA OREO BAÑADA CHOCOLATE BLANCO",
+      "cantidad": 60,
+      "unidad": "g",
+      "codigoNetSuite": "SE00514",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "MANJAR LECHE CONDENSADA (PAQ: 6 K)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": "NESTLÉ",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CONTENEDOR TRIANGU ALTO (CAJA:200 UND)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10079",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA OREO PEQUEÑA",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10345",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 6,
+      "unidad": "Uds",
+      "codigoNetSuite": "EM10002",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA 8x12 TRANSP (KILO)",
+      "cantidad": 1,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10037",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA SELLO SEGURIDAD (ROLLO:1000)",
+      "cantidad": 6,
+      "unidad": "Ud",
+      "codigoNetSuite": "EM10135",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Se utiliza 1 rosquete. Humedecer cada tapa con 40g de mezcla de chocolate con agua",
+    "Rellenar con ganache de chocolate luego con crema de oreo y al final con galleta con chocolate blanco.",
+    "Encremar la parte superior con crema",
+    "Decorar cada porción con galleta oreo bañada en chocolate y cubir con lineas de ganache oscuro. Colocar media oreo por porción.",
+    "Colocar la torta dentro del domo, etiquetar con etiqueta Spoon, nombre del producto y codigo de barras, fecha lote y fecha de vencimiento. Etiqueta oreo, acorde a la fotografía.",
+    "Colocar en el empaque manjar,colocar la porción, cerrar, asegurarlo con sello de seguridad,etiquetar con nombre, fecha de vencimiento y etiqueta Oreo"
+  ],
+  "pesoTotalCantidad": 720,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 10,
+  "tiempoPrepUnidad": "Minutos",
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "porciones",
+  "pesoPorcionCantidad": 130,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 37,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

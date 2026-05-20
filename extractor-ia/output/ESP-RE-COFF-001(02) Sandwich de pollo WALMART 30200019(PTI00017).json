@@ -1,0 +1,91 @@
+{
+  "nombre": "Sandwich de pollo WALMART 30200019(PTI00017)",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PAN TRENZA PLANTA (PAQ:10 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "MP10278",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Relleno De Pollo Lapiz Planta",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00318",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ET.  BUCCA DULCE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10111",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANDEJA NEGRA DELI PLASTICA(CAJA: 200 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10186",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PLASTICO P PALETIZAR 18X1500",
+      "cantidad": 30,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10251",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Separar los papeles plasticos de las rebanadas de queso y partir cada rebanada por la mitad. Cortar tambien el jamon por la mitad.",
+    "Cortar el pan trenza por la mitad horizontalmente",
+    "Colocar luego sobre la tapa de la base el queso y el jamon. Tapar el pan con la tapa superior del pan. Colcoar en una bandeja de esterefon junto con una cremerita de aderezo.",
+    "Envolver el pan con papel adeherente de manera que este todo cubierto. Pegar Stiker de nombre del producto y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 120,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 120,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

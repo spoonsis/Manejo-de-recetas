@@ -1,0 +1,86 @@
+{
+  "nombre": "Postre brownie maracuya spoon",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Maracuya Congelada",
+      "cantidad": 360,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10423",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 100,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00016",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 20,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00014",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 20,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "Empaque Azucar Industrial",
+      "cantidad": 100,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    },
+    {
+      "nombre": "Empaque Almidon Modificado",
+      "cantidad": 20,
+      "unidad": "Gramo",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 420,
+  "pesoTotalUnidad": "GR",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 420,
+  "pesoPorcionUnidad": "GR",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

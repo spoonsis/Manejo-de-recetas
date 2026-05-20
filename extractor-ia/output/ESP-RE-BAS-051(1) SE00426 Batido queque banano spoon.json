@@ -1,0 +1,73 @@
+{
+  "nombre": "SE00426 Batido queque banano spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "PREMEZCLA QUEQUE BANANO",
+      "cantidad": 5430,
+      "unidad": "g",
+      "codigoNetSuite": "SE00424",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CLARA DE HUEVO",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10141",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BANANO BATIDO",
+      "cantidad": 6500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00425",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LACTOCREMA GRANEL",
+      "cantidad": 1250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10022",
+      "marca": "DOS PINOS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1.- Montar la clara a punto de nieve y reservar.",
+    "2.- Cremar la lactocrema con el azucar, luego agregar la yema e incorporar.",
+    "3.- Agregar el banano hasta que se incorpore bien al batido.",
+    "3.- Despues agregar el harina y por ultimo el punto de nieve de la clara e incorporar."
+  ],
+  "pesoTotalCantidad": 14000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 140,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 100,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 980,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

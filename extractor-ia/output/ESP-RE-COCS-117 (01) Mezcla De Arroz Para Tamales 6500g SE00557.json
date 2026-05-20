@@ -1,0 +1,63 @@
+{
+  "nombre": "Mezcla De Arroz Para Tamales 6500g SE00557",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "COCINA",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ARROZ PARA TAMALES SIN PETIT POIS Y ZANAHORIA 14195 G",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00556",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PETI PIOS CON ZANAHORIA (PAQ: 1 K)",
+      "cantidad": 1500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10298",
+      "marca": "LAMBWESTON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 13/16 * 1 7/8 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10120",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PLASTICO AUTOADHERIBLE 18X2000",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en una bandeja una bolsa de arroz para tamales",
+    "Agregar y mezlcar 1500 gramos de petit pois",
+    "Etiquetar con nombre y fecha de vencimiento, mantener en refrigeración hasta su uso"
+  ],
+  "pesoTotalCantidad": 6500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 2,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Ud",
+  "pesoPorcionCantidad": 6500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

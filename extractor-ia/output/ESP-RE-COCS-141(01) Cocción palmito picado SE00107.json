@@ -1,0 +1,191 @@
+{
+  "nombre": "Arroz Con Palmito",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef Ejecutivo",
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "QUESO RAYADO",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "310154",
+      "marca": "RICO",
+      "observaciones": "(PAQ:2 K)",
+      "seccion": "Principal"
+    },
+    {
+      "nombre": "PAN MINI BAGUET",
+      "cantidad": 0.5,
+      "unidad": "unidad",
+      "codigoNetSuite": "11200019",
+      "marca": null,
+      "observaciones": "(PAQ= 5 UND)",
+      "seccion": "Principal"
+    },
+    {
+      "nombre": "ACEITE FRITURA LIBRE DE TRANS",
+      "cantidad": 10,
+      "unidad": "g",
+      "codigoNetSuite": "0910307",
+      "marca": null,
+      "observaciones": "(15.88 LITROS)",
+      "seccion": "Principal"
+    },
+    {
+      "nombre": "OREGANO",
+      "cantidad": 0.01,
+      "unidad": "g",
+      "codigoNetSuite": "0512310",
+      "marca": "TONES",
+      "observaciones": "(141 GRS)",
+      "seccion": "Principal"
+    },
+    {
+      "nombre": "PEREJIL DESINFECTADO",
+      "cantidad": 0.1,
+      "unidad": "g",
+      "codigoNetSuite": "10900040",
+      "marca": null,
+      "observaciones": "pizca",
+      "seccion": "Principal"
+    },
+    {
+      "nombre": "ARROZ C/PEREJIL",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "14049",
+      "marca": null,
+      "observaciones": "1 porc, (BOLSA=600g=4 PORC)",
+      "seccion": "Acompañamiento a elegir"
+    },
+    {
+      "nombre": "PURÉ DE PAPA",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "1522344",
+      "marca": null,
+      "observaciones": "1 porc, (U=450GR=3 porc)",
+      "seccion": "Acompañamiento a elegir"
+    },
+    {
+      "nombre": "PAPA GAJO CASCARA HIERBA",
+      "cantidad": 170,
+      "unidad": "g",
+      "codigoNetSuite": "10100255",
+      "marca": null,
+      "observaciones": "1 porc, (CAJA:4/2.5k)",
+      "seccion": "Acompañamiento a elegir"
+    },
+    {
+      "nombre": "GUARNICIÓN DE VEGETALES",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "SPOON",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Acompañamiento a elegir"
+    },
+    {
+      "nombre": "ENSALADA VERDE PERSONAL",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "SPOON",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Acompañamiento a elegir"
+    },
+    {
+      "nombre": "BANDEJA PLAST NEGRA DELI",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950900",
+      "marca": "PACTIV",
+      "observaciones": "12 ONZ",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TAPA PLAST LISA P/BAND 8/12",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "1950901",
+      "marca": "PACTI",
+      "observaciones": "CJ:250",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "PAPEL ENCERADO 12X12",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "51100018",
+      "marca": null,
+      "observaciones": "(PAQ:1000 UND)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ROLLO SELLO SEGURIDAD ROJO",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "51600022",
+      "marca": null,
+      "observaciones": "(ROLLO)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "TENEDORES LINEA VERDE",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "111300",
+      "marca": null,
+      "observaciones": "(10/100 UD)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CUCHILLOS LINEA VERDE",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "111301",
+      "marca": null,
+      "observaciones": "(10/100 UD)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "SERVILLETA AIRFLEX",
+      "cantidad": 2,
+      "unidad": "uds",
+      "codigoNetSuite": "435424",
+      "marca": "SCOTT",
+      "observaciones": "30/120 UND",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA KRAFT MEDIANA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "915666",
+      "marca": null,
+      "observaciones": "(PAQ: 250 UND)",
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Con ayuda de una espátula retirar una porción del pirex y colocar en una barca",
+    "Agregar 1/4 taza de queso mozarella sobre el arroz, cubrir con plástico",
+    "Llevar al microondas y calentar por 2:00 min, luego DORAR con el soplete o salamandra",
+    "Preparar una tostada con 1/2 und de bageth con aceite y orégano en la plancha y partir trasversalmente",
+    "Limpiar los bordes de la barca, decorar con perejil picado, colocar en el plato y acompañar con las tostadas"
+  ],
+  "pesoTotalCantidad": null,
+  "pesoTotalUnidad": null,
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 6,
+  "porcionesUnidad": "porciones",
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

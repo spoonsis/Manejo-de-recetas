@@ -1,0 +1,149 @@
+{
+  "nombre": "Empaque Salsa pomodoro",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Empaque",
+  "areaEmpaca": "Empaque",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "TOMATE PELADO ENTERO ROMA",
+      "cantidad": 25000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "109000135",
+      "marca": null,
+      "observaciones": "(UND: 2.5 K)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST",
+      "cantidad": 800,
+      "unidad": "Mililitros",
+      "codigoNetSuite": "910311",
+      "marca": null,
+      "observaciones": "(UND:5 L)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "CEBOLLA PICADA",
+      "cantidad": 2000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "101035",
+      "marca": null,
+      "observaciones": "(PAQ:KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PASTA AJO",
+      "cantidad": 300,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0512319",
+      "marca": null,
+      "observaciones": "(PAQ: 1 KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "OREGANO",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "105000002",
+      "marca": null,
+      "observaciones": "(UND: 156 G)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PIMIENTA NEGRA MOLIDA",
+      "cantidad": 20,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0610236",
+      "marca": null,
+      "observaciones": "(PAQ: 5 K)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S",
+      "cantidad": 10,
+      "unidad": "Gramos",
+      "codigoNetSuite": "1212412",
+      "marca": null,
+      "observaciones": "(PAQ=5 KILO)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "AZUCAR DOÑA MARIA",
+      "cantidad": 600,
+      "unidad": "Gramos",
+      "codigoNetSuite": "510109",
+      "marca": null,
+      "observaciones": "(PAQ:5 K)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ALBAHACA",
+      "cantidad": 5400,
+      "unidad": "Gramos",
+      "codigoNetSuite": "101260",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "AGUA",
+      "cantidad": 13400,
+      "unidad": "Gramos",
+      "codigoNetSuite": "99999",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "ALMIDON MODIFICADO",
+      "cantidad": 950,
+      "unidad": "Gramos",
+      "codigoNetSuite": "510215",
+      "marca": null,
+      "observaciones": "(SACO:25 K)",
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "EMPAQUE SAL",
+      "cantidad": 700,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "Materia Prima Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL",
+      "cantidad": 700,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "Empaque Semielaborados"
+    },
+    {
+      "nombre": "EMPAQUE SAL",
+      "cantidad": 700,
+      "unidad": "Gramo",
+      "codigoNetSuite": "90100142",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "MODI"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 39000,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 39000,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": 390,
+  "mermaUnidad": "Gramos",
+  "registroCambios": "Importación inicial desde Excel"
+}

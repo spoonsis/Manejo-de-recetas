@@ -1,0 +1,52 @@
+{
+  "nombre": "SE00686 Empaque Salsa de Whisky",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes-Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Salsa de whisky Red Label",
+      "cantidad": 5000,
+      "unidad": "g",
+      "codigoNetSuite": "SE00687",
+      "marca": "Fas",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Marmita 14x20 Planta",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "EM10307",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Etiqueta lanca 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "Em10307",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "Empacar la salsa de Ron-Flor de caña, caliente, en la bolsa de marmita, hacer nudo, etiquetar y dejar enfriar."
+  ],
+  "pesoTotalCantidad": 5000,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 1,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 5000,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 0,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

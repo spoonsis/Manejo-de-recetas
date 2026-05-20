@@ -1,0 +1,95 @@
+{
+  "nombre": "Ganache Rosado Duro",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Confitillo Corazón",
+      "cantidad": 8,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10532",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "MUFFIN DE CHOCOLATE KIT KAT",
+      "cantidad": 4,
+      "unidad": "UND",
+      "codigoNetSuite": null,
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO",
+      "cantidad": 40,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00298",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "GANACHE ROSADO DURO",
+      "cantidad": 12,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00298",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Semielaborados"
+    },
+    {
+      "nombre": "BIOFUSION BURBUJA P/ CUPCAKE 4 ESPACIOS 100 UND",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "em10341",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "Gramos",
+      "codigoNetSuite": "0702007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "Und",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta KITKAT",
+      "cantidad": 1,
+      "unidad": "und",
+      "codigoNetSuite": "nueva",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 350,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Unidad",
+  "pesoPorcionCantidad": 350,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": 2,
+  "mermaUnidad": "%",
+  "registroCambios": "Importación inicial desde Excel"
+}

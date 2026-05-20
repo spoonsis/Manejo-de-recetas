@@ -1,0 +1,86 @@
+{
+  "nombre": "Empaque Mano de piedra",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": "Planta",
+  "areaEmpaca": "Empaque",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Mano Piedra",
+      "cantidad": 2000,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10244",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Pasta Ajo",
+      "cantidad": 30,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10019",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Pimienta Negra Molida",
+      "cantidad": 2,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10038",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Paprika",
+      "cantidad": 6,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10034",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Oregano",
+      "cantidad": 4,
+      "unidad": "Gramos",
+      "codigoNetSuite": "MP10266",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 15,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Materia Prima Semielaborada"
+    },
+    {
+      "nombre": "Sal Empacada Planta",
+      "cantidad": 15,
+      "unidad": "Gramos",
+      "codigoNetSuite": "SE00104",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque Semielaborado"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1665,
+  "pesoTotalUnidad": "Gramos",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "minutos",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": 1665,
+  "pesoPorcionUnidad": "Gramos",
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}

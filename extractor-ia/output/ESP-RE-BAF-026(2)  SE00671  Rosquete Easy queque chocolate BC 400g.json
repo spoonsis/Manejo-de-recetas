@@ -1,0 +1,72 @@
+{
+  "nombre": "Rosquete Easy queque chocolate BC 400g",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
+  "version": "02",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "BATIDO CHOCOLATE EASY BC 400",
+      "cantidad": 48500,
+      "unidad": "g",
+      "codigoNetSuite": "SE00492",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "MEZCLA P/ENGRASE MOLDES KILO",
+      "cantidad": 2430,
+      "unidad": "g",
+      "codigoNetSuite": "902000019",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "BOLSA TRANSPARENTE 56X96X1.80 (KILO)",
+      "cantidad": 14,
+      "unidad": "ud",
+      "codigoNetSuite": "AS00028",
+      "marca": "PLASTICOS P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 14,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO",
+      "cantidad": 14,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Dosificar la mezcla en el molde engrasado.",
+    "Hornear en horno Dicte 1 o 2 a 185°C por 50 minutos.",
+    "Desmoldar y colocar 4 ud por latas, cubrir con bolsa plastica, etiquetar con nombre y fecha de vencimiento."
+  ],
+  "pesoTotalCantidad": 48500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 40,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 121,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 400,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,275 @@
+{
+  "nombre": "PTI00241 Ensamble Postre Frutos de Campo Industria",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Mariela Barrantes Sánchez",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "06",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 100 g",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00651",
+      "marca": "FAS",
+      "observaciones": "1ud",
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Almibar con limon",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00689",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Relleno De Fresa Espesa",
+      "cantidad": 95,
+      "unidad": "g",
+      "codigoNetSuite": "SE00354",
+      "marca": "FAS",
+      "observaciones": "1/3 de taza",
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00695",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Empaque Relleno de Lemon Court",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "SE00693",
+      "marca": "FAS",
+      "observaciones": "1/4 de taza",
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Caramelo Bañado en Chocolate Blanco",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00682",
+      "marca": "FAS",
+      "observaciones": "1/4 de taza",
+      "seccion": "1 CAPA"
+    },
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 80 g",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": "SE00652",
+      "marca": "FAS",
+      "observaciones": "1ud",
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Almibar con limon",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00689",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Relleno De Fresa Espesa",
+      "cantidad": 95,
+      "unidad": "g",
+      "codigoNetSuite": "SE00354",
+      "marca": "FAS",
+      "observaciones": "1/3 de taza",
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Crema Pasionata",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00695",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Empaque Relleno de Lemon Court",
+      "cantidad": 85,
+      "unidad": "g",
+      "codigoNetSuite": "SE00693",
+      "marca": "FAS",
+      "observaciones": "1/4 de taza",
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Procesado Caramelo Bañado en Chocolate Blanco",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00720",
+      "marca": "FAS",
+      "observaciones": "1/4 de taza",
+      "seccion": "2 CAPA"
+    },
+    {
+      "nombre": "Rosquete Arrollado Spoon Kilo 80 g",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": "SE00652",
+      "marca": "FAS",
+      "observaciones": "1ud",
+      "seccion": "3 CAPA"
+    },
+    {
+      "nombre": "Almibar con limon",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "SE00689",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "3 CAPA"
+    },
+    {
+      "nombre": "Mousse de queso y limon",
+      "cantidad": 518,
+      "unidad": "g",
+      "codigoNetSuite": "SE00694",
+      "marca": "FAS",
+      "observaciones": "Ayudarse con manga",
+      "seccion": "3 CAPA"
+    },
+    {
+      "nombre": "Crema Beidge",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": "FAS",
+      "observaciones": "Colocho Boquilla #804",
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Mezcla Sirope manjar Dulce Leche",
+      "cantidad": 2,
+      "unidad": "g",
+      "codigoNetSuite": "SE00034",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Salsa Fresa",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00025",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Topping Relleno de Lemon Court",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "SE00724",
+      "marca": "FAS",
+      "observaciones": "1/3 Taza",
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Trozos chocolate blanco",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "MP10754",
+      "marca": "Chocolate Soluction",
+      "observaciones": "3 unidades",
+      "seccion": "DECORACION POSTRE"
+    },
+    {
+      "nombre": "Manjar Leche Condensada",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10007",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Quequera Red C/Base Alta 9\"",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Orla #9 Dorada",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiq.Blanca 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "Cemusa",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "Etiqueta Blanca Lisa Bopp Brillante",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10443",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "En un molde para pie de limon, colocar la primera capa del rosquete grande de 70g , en un molde colocar el almibar y mojar el rosqete, colocar el relleno de fresa, con ayuda de una manga colocar la crema pasionata, el relleno de lemon court y por ultimo el caramelo con chocolate blanco.",
+    "En la segunda capa, se coloca un rosquete de 56g, se moja con el almibar con limón, se le coloca el relleno de fresa natural, se pone la crema pasionata, y por ultimo el caramelo con chocolate blanco.",
+    "Se coloca el ultimo rosquete de 56g bañado en almibar con limon y lo apretamos un poco, se coloca la mousse de limon en todo el borde y la superficie de jandolo bien liso.",
+    "Dejar refrigerado minimo 4 horas, recomendable toda la noche.",
+    "Desmoldar, con una espatula y agua caliente, alisar todo el borde, colocar en la orla #9 con manjar para pegar ayudandose de una espatula, colocar en una manga la boquilla #128, agregar en un lado la mezcla de sirope manjar Dulce Leche y ahí mismo la crema beige y realizar colocho en todo el alrededor, con la mezca de sirope viendo para afuera .",
+    "Agregar el lemon court en el centro, colocar con ayuda de una bolsa en puntos referente a la foto colocar la salsa de fresa.",
+    "Colocar en el centro los trozos de chocolate blanco",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1567,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "tanda",
+  "pesoPorcionCantidad": 1567,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 35,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

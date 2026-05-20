@@ -1,0 +1,92 @@
+{
+  "nombre": "SE00732 Relleno Suspiro Limeño PERUANO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "LECHE EVAPORADA (UND: 1 L)",
+      "cantidad": 15200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10024",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LECHE CONDENSADA (PAQ:11 K)",
+      "cantidad": 15200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10050",
+      "marca": "NESTLE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "YEMA DE HUEVO PASTEURIZADA (CAJA:2 Kg)",
+      "cantidad": 5700,
+      "unidad": "g",
+      "codigoNetSuite": "MP10037",
+      "marca": "INNOVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "GLUCOSA",
+      "cantidad": 380,
+      "unidad": "g",
+      "codigoNetSuite": "MP10556",
+      "marca": "NUEVO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PRESERVANTE 1017S (PAQ=5 KILO)",
+      "cantidad": 56,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa Marmita 14x20 Planta",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10307",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 5,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Colocar en la marmita la leche condensada y la evaporada disolver el preservante y cocinar por 45 minutos a una temperatura de 140 agitacion de un solo sentido con 50 RPM.",
+    "Una vez pasados los 45 minutos, agregar la glucosa",
+    "Apagar el fuego sin parar la agitacción y temperar las yemas agregandoles una parte de la mezcla caliente. Agregar la yema temperada a la marmita, mezclar para evitar que las yemas se cocinen.",
+    "Sacar automaticamente de la marmita a bolsas termicas, en 5 kg por bolsa.",
+    "Etiquetar las bolsas y enfriar."
+  ],
+  "pesoTotalCantidad": 23500,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 15,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 23500,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 13036,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,127 @@
+{
+  "nombre": "MASA PARA TAMALES DE POLLO",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Enmanuel Madrigal, Chef",
+  "areaProduce": "COCINA",
+  "areaEmpaca": "COCINA",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "CALDO DE POLLO RECORTE",
+      "cantidad": 22000,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "LICUADO P/MASA TAMALES (KILO)",
+      "cantidad": 6040,
+      "unidad": "g",
+      "codigoNetSuite": "SE00553",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Margarina Baker Tableta",
+      "cantidad": 1800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10040",
+      "marca": "Baker",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ACEITE DE OLIVA PLAST",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10053",
+      "marca": "Mayca",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "PREMEZCLA P/BATIDO TAMALES",
+      "cantidad": 7508,
+      "unidad": "g",
+      "codigoNetSuite": "SE00555",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1017S",
+      "cantidad": 44,
+      "unidad": "g",
+      "codigoNetSuite": "MP10025",
+      "marca": "ASAEL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Salsa Chile Aji Planta",
+      "cantidad": 100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10032",
+      "marca": "AJINKA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "COCCION ZANAHORIA P/TAMALES (KILO)",
+      "cantidad": 3318,
+      "unidad": "g",
+      "codigoNetSuite": "SE00552",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE PARA PAPA TAMAL",
+      "cantidad": 6900,
+      "unidad": "g",
+      "codigoNetSuite": "SE00563",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 PRE BLANCA",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    },
+    {
+      "nombre": "PLASTICO AUTOAD (UND: 18 * 2000 M)",
+      "cantidad": 90,
+      "unidad": "CM",
+      "codigoNetSuite": "EM10259",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "EMPAQUE"
+    }
+  ],
+  "pasos": [
+    "Colocar en una olla el caldo de pollo, el licuado para tamales, la margarina multiusos, aceite de oliva, la salsa ají, los condimentos y preservante, mezclar bien y hervir",
+    "Cuando haya hervido, agregar la papa majada y la zanahoria licuada, mezclar bien y dejar hervir MOVER CONSTANTEMENTE",
+    "Agregar la maseca poco a poco hasta homogenizar, utilizar un batidor de globo, y dejar hervir",
+    "Usar inmediatamente para ensamblar los tamales"
+  ],
+  "pesoTotalCantidad": 46300,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 18,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 46300,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 1610,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

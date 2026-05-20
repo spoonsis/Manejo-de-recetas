@@ -1,0 +1,153 @@
+{
+  "nombre": "Premezcla zanahoria spoon",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes , chef",
+  "areaProduce": "BATIDOS",
+  "areaEmpaca": "BATIDOS",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Trigo Nacarina",
+      "cantidad": 2275,
+      "unidad": "g",
+      "codigoNetSuite": "MP10051",
+      "marca": "Nacarina",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bicarbonato De Sodio",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10085",
+      "marca": "Pastelero",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Polvo Hornear",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10304",
+      "marca": "Royal",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Canela En Polvo",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10096",
+      "marca": "Badia",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Industrial",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10027",
+      "marca": "Atlantida",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Propianato De Calcio",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "MP10566",
+      "marca": "Crystal Pro",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Acido Sorbico",
+      "cantidad": 7,
+      "unidad": "g",
+      "codigoNetSuite": "MP10579",
+      "marca": "Beyco",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Caramelo",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10075",
+      "marca": "Zukra",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 1100,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "Maria",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 800,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": "Nueces Ind",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Bolsa 12X18 Transparente",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10016",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Bolsa 17X25 Transparente",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10013",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Roja Letra Alerjeno",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10133",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "Etiqueta Blanca 2 5/8X1 15/16",
+      "cantidad": 2,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 12x18 el harina, bicarbonato, polvo de hornear, canela, sal, propionato y acido sorbico.",
+    "En una bolsa 17x25 pesar los azucares y en otra la pecana.",
+    "Etiquetar"
+  ],
+  "pesoTotalCantidad": 5400,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 5400,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 89,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

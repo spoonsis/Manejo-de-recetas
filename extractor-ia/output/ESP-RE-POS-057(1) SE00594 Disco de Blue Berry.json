@@ -1,0 +1,62 @@
+{
+  "nombre": "Disco de Blue Berry",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ACEITE CAPULLO RBD",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "MP10002",
+      "marca": "CAPULLO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BASE GALLETA CHEESECAKE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00041",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "RELLENO CHEESECAKE",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00042",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "TOPPING ARANDANOS AZUL",
+      "cantidad": 90,
+      "unidad": "g",
+      "codigoNetSuite": null,
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    }
+  ],
+  "pasos": [
+    "1, Aceitar el molde Colocar la galleta , Hornear por 7 min a 175 grados . Enfriar .",
+    "2, Colocar el Relleno en Molde y Espacir y colocar el Relleno de Arandanos Arriba , Marmolear y Refrigerar hasta que corte por un lapso de 6 Horas,Desmoldar y Utilizar ."
+  ],
+  "pesoTotalCantidad": 540,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 3,
+  "tiempoPrepUnidad": "Min.",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Und.",
+  "pesoPorcionCantidad": 540,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 55,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

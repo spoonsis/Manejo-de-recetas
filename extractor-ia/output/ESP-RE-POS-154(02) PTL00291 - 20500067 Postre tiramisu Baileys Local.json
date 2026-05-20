@@ -1,0 +1,237 @@
+{
+  "nombre": "Postre tiramisu Baileys Local",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Juan Pablo Brenes, Chef",
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
+  "version": "2",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "DEDOS DE SEÑORA",
+      "cantidad": 98,
+      "unidad": "g",
+      "codigoNetSuite": "MP10939",
+      "marca": "ROLAND",
+      "observaciones": "11 ud, Para el borde del molde",
+      "seccion": "BASE MOLDE"
+    },
+    {
+      "nombre": "Rosquete de Arrollado de 80 g",
+      "cantidad": 55,
+      "unidad": "g",
+      "codigoNetSuite": "SE00652",
+      "marca": "FAS",
+      "observaciones": "1 UD, Para el fondo del molde",
+      "seccion": "BASE MOLDE"
+    },
+    {
+      "nombre": "Mezcla Almibar C/Cafe",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00053",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "BASE MOLDE"
+    },
+    {
+      "nombre": "CARAMELO CAFÉ",
+      "cantidad": 80,
+      "unidad": "g",
+      "codigoNetSuite": "SE00839",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "MOUSSE QUESO TIRAMIZU",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00841",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "DEDOS DE SEÑORA",
+      "cantidad": 45,
+      "unidad": "g",
+      "codigoNetSuite": "MP10939",
+      "marca": "ROLAND",
+      "observaciones": "4 ud",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Mezcla Almibar C/Cafe",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00053",
+      "marca": "Fas",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "RELLENO PASTELERA ESPESA BAILEYS",
+      "cantidad": 120,
+      "unidad": "g",
+      "codigoNetSuite": "SE00781",
+      "marca": "FAS",
+      "observaciones": "1/2 taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "CHOCOLATE SEMIAMARGO CON CARAMELO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00840",
+      "marca": "FAS",
+      "observaciones": "1/4 taza",
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "MOUSSE QUESO TIRAMIZU",
+      "cantidad": 300,
+      "unidad": "g",
+      "codigoNetSuite": "SE00841",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "ENSAMBLE"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "REDONDA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Cocoa Dutch Process",
+      "cantidad": 4,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "DUTCH",
+      "observaciones": "SOBRE EL COLOCHO",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "Crema Dulce Leche",
+      "cantidad": 70,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": "FAS",
+      "observaciones": "WILTON 1B",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE SEMIAMARGO CON CARAMELO",
+      "cantidad": 40,
+      "unidad": "g",
+      "codigoNetSuite": "SE00840",
+      "marca": "FAS",
+      "observaciones": "1/4 TAZA",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CARAMELO CAFÉ",
+      "cantidad": 30,
+      "unidad": "g",
+      "codigoNetSuite": "SE00839",
+      "marca": "FAS",
+      "observaciones": "HILOS SOBRE EL POSTRE",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "ORLA CARTON 9\" DORADA (UND )",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10020",
+      "marca": "MAYCA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RED C/BASE ALTA 9\" (CAJA:100 U)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10021",
+      "marca": "EXP PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.FECHA VENCIMIENTO BLANCO (ROLLO)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10004",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENTE 2*100 MTS",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TEMPORADA",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10528",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "Unidad",
+      "codigoNetSuite": "EM10002",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "En la base colocar los dedos de señora bañados en el almibar cafe, por todo el borde del molde y la base poner el arrollado bañado en almibar cafe.",
+    "Dosificar el caramelo sobre el arrollado, luego colocar la primer cantidad de mousse",
+    "Luego colocar los dedos de señora bañados en almibar café, sobre ellos la pastelera de baileys, el chocolate con caramelo y por ultimo el restante de mousse",
+    "Llevo a refrigeracion por minimo 4 horas.",
+    "Decorar con colochos boquilla redonda y colocho 1b sobre todo el postre y espolvorear cocoa. Luego colocar el chocolate con caramelo y hacer hilos con el caramelo café sobre todo el postre",
+    "Tapar y etiquetar."
+  ],
+  "pesoTotalCantidad": 1200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 5,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 1200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 32,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

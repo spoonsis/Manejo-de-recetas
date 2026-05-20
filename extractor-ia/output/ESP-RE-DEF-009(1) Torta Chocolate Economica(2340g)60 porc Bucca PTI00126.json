@@ -1,0 +1,154 @@
+{
+  "nombre": "Torta Chocolate Economica",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
+  "version": "01",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "ROSQUETE EASY QUEQUE CHOCOLATE SP 1800g",
+      "cantidad": 1600,
+      "unidad": "g",
+      "codigoNetSuite": "SE00289",
+      "marca": "FAS",
+      "observaciones": "(PESO CRUDO 1800)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "DULCE LECHE LA CIABATA",
+      "cantidad": 250,
+      "unidad": "g",
+      "codigoNetSuite": "MP10176",
+      "marca": "CIABATA",
+      "observaciones": "1 TAZA",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA CHANTILLY BLANCA SPOON-IND KILO",
+      "cantidad": 230,
+      "unidad": "g",
+      "codigoNetSuite": "SE00010",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CREMA CHANTILLY TOP CREAM CHOCOLATE",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "SE00315",
+      "marca": "FAS",
+      "observaciones": "COLOCHO BOQUILLA 195",
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE OSCURO (KILO)",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00001",
+      "marca": "FAS",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "CHOCOLATE RALLADO OSCURO",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "SE00392",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "GANACHE CHOCOLATE BLANCO",
+      "cantidad": 5,
+      "unidad": "g",
+      "codigoNetSuite": "SE00051",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Decoración"
+    },
+    {
+      "nombre": "BASE CARTON 30 PORCIONES (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10306",
+      "marca": "ESTUARDO",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "QUEQUERA RECTANGULAR 1/2 (CAJA:35 UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10293",
+      "marca": "EXPORT PMT",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 X 3/4",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10002",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10011",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10124",
+      "marca": "CEMUSA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ TORTA GENERICA BUCCA GRANDE (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "EM10118",
+      "marca": "ETIPLAST",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "CINTA ADHESIVA TRANSPARENT 2*100 M (UND)",
+      "cantidad": 60,
+      "unidad": "cm",
+      "codigoNetSuite": "EM10248",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Partir el rosquete por la mitad y rellenar con manjar. Tapar. Colocar en una orla.",
+    "Encremar con crema chantilly, peinar a los lados. Decorar con colochos con crema chantilly de chocolate Bucca.",
+    "Decorar con chocolate rallado sobre el colocho.",
+    "Dejar caer el ganache a los lados, chorreando. Acorde a las fichas."
+  ],
+  "pesoTotalCantidad": 2250,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 8,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "ud",
+  "pesoPorcionCantidad": 2250,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 65,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

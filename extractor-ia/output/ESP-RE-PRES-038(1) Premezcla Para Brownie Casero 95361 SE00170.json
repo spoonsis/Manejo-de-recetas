@@ -1,0 +1,136 @@
+{
+  "nombre": "Premezcla Para Brownie Casero",
+  "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
+  "elaboradoPor": "Javier Tong, Chef",
+  "areaProduce": "Premezcla",
+  "areaEmpaca": "Premezcla",
+  "version": "1",
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Harina Harisol Hojaldre",
+      "cantidad": 2850,
+      "unidad": "g",
+      "codigoNetSuite": "MP10206",
+      "marca": "HARISOL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Café Instantaneo",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "MP10091",
+      "marca": "NESCAFE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Sal Industrial",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "MP10027",
+      "marca": "ATLANTIDA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Preservante 1047S",
+      "cantidad": 20,
+      "unidad": "g",
+      "codigoNetSuite": "MP10008",
+      "marca": "ASEAL",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cocoa Dutch Process",
+      "cantidad": 600,
+      "unidad": "g",
+      "codigoNetSuite": "MP10146",
+      "marca": "COSTA RICA CACAO",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Chocolate Semi Amargo 54%",
+      "cantidad": 1000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10492",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Cobertura Chocolate Leche",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10001",
+      "marca": "CORDILLERA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Azucar Blanco Industrial",
+      "cantidad": 7500,
+      "unidad": "g",
+      "codigoNetSuite": "MP10074",
+      "marca": "LAYCA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "Pecana Entera",
+      "cantidad": 2000,
+      "unidad": "g",
+      "codigoNetSuite": "MP10562",
+      "marca": "NUECES INDUSTRIALES",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "BOLSA 17x25 TRANSP KILO",
+      "cantidad": 3,
+      "unidad": "ud",
+      "codigoNetSuite": "1950708",
+      "marca": "Plasticos P",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16 (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "702123",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA ROJA LETRA ALERJENO (UND)",
+      "cantidad": 1,
+      "unidad": "ud",
+      "codigoNetSuite": "60100010",
+      "marca": "Etiplast",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [
+    "Pesar en la bolsa 17x25 la harina, café instantaneo, sal, preservante y cocoa.",
+    "Pesar en la bolsa 17x25 el chocolate rallado oscuro y la cobertura de chocolate leche.",
+    "En la bolsa 17x25 pesar el azucar.",
+    "Etiquetar con nombre y alerjeno."
+  ],
+  "pesoTotalCantidad": 16200,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": 4,
+  "tiempoPrepUnidad": "min",
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "Tanda",
+  "pesoPorcionCantidad": 16200,
+  "pesoPorcionUnidad": "g",
+  "mermaCantidad": 20,
+  "mermaUnidad": "g",
+  "registroCambios": "Importación inicial desde Excel"
+}

@@ -1,0 +1,149 @@
+{
+  "nombre": "Crema Ron",
+  "subsidiaria": null,
+  "elaboradoPor": null,
+  "areaProduce": null,
+  "areaEmpaca": null,
+  "version": 1,
+  "estado": "APROBADO",
+  "ingredientes": [
+    {
+      "nombre": "Rosquete vainilla",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "NUEVO",
+      "marca": "Dawn",
+      "observaciones": "400g",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "ALMIBAR",
+      "cantidad": 200,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "FLOR DE CAÑA",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "FLAN",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "NUEVO",
+      "marca": "SPOON",
+      "observaciones": "700G",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "EMPAQUE RELLENO CARAMELO",
+      "cantidad": 150,
+      "unidad": "g",
+      "codigoNetSuite": "SE00340",
+      "marca": "SPOON",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "SEMILLAS BAÑADAS",
+      "cantidad": 145,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": "BELCOLADE",
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA RON",
+      "cantidad": 50,
+      "unidad": "g",
+      "codigoNetSuite": "NUEVO",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA BEIDGE",
+      "cantidad": 220,
+      "unidad": "g",
+      "codigoNetSuite": "SE00069",
+      "marca": null,
+      "observaciones": "(KILO)",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "CREMA DULCE LECHE",
+      "cantidad": 15,
+      "unidad": "g",
+      "codigoNetSuite": "SE00032",
+      "marca": null,
+      "observaciones": "KILO",
+      "seccion": "Ensamble"
+    },
+    {
+      "nombre": "QUEQUERA RED BASE/DOMO 10",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "121603",
+      "marca": null,
+      "observaciones": "(CAJA:50)",
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ORLA CARTON 10\" DORADA",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "1950692",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA R-153",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "701096",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA BLANCA 2 5/8X1 15/16",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "0702123",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQ.BLANCA 1 1/4 * 3/4",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "0702069",
+      "marca": null,
+      "observaciones": null,
+      "seccion": "Empaque"
+    },
+    {
+      "nombre": "ETIQUETA TORTA",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "codigoNetSuite": "Nuevo",
+      "marca": "FLOR DE CAÑA",
+      "observaciones": null,
+      "seccion": "Empaque"
+    }
+  ],
+  "pasos": [],
+  "pesoTotalCantidad": 1900,
+  "pesoTotalUnidad": "g",
+  "tiempoPrepCantidad": null,
+  "tiempoPrepUnidad": null,
+  "porcionesCantidad": 1,
+  "porcionesUnidad": "unidad",
+  "pesoPorcionCantidad": null,
+  "pesoPorcionUnidad": null,
+  "mermaCantidad": null,
+  "mermaUnidad": null,
+  "registroCambios": "Importación inicial desde Excel"
+}
