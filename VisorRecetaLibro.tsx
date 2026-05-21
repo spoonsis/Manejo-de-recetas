@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins } from 'lucide-react';
+import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins, Building2, Users, BadgeCheck, Warehouse, Package } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
 import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta } from './types';
@@ -88,12 +88,27 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
           {tab === 'info' && (
             <div className="space-y-8 animate-in fade-in">
               {/* Resumen Administrativo */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 p-4 bg-slate-50 border rounded-2xl">
-                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Subsidiaria</p><p className="font-bold text-xs">{recetaActiva.subsidiaria}</p></div>
-                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Elaborado Por</p><p className="font-bold text-xs">{recetaActiva.elaboradoPor || '---'}</p></div>
-                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Aprobado Por</p><p className="font-bold text-xs">{recetaActiva.aprobadoPor || '---'}</p></div>
-                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Producción</p><p className="font-bold text-xs">{recetaActiva.areaProduce || 'Cocina Central'}</p></div>
-                <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Empaque</p><p className="font-bold text-xs">{recetaActiva.areaEmpaca || 'Línea 1'}</p></div>
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <div className="space-y-1">
+                  <label className="text-xs font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Building2 className="w-3 h-3" /> Subsidiaria</label>
+                  <div className="w-full p-2 border rounded-lg font-black text-slate-700 bg-white text-xs truncate" title={recetaActiva.subsidiaria}>{recetaActiva.subsidiaria}</div>
+                </div>
+                <div className="space-y-1">
+                  <label className="text-xs font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Users className="w-3 h-3" /> Elaborado por</label>
+                  <div className="w-full p-2 border rounded-lg font-bold text-slate-900 bg-white text-xs truncate" title={recetaActiva.elaboradoPor}>{recetaActiva.elaboradoPor || '---'}</div>
+                </div>
+                <div className="space-y-1">
+                  <label className="text-xs font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><BadgeCheck className="w-3 h-3" /> Aprobado por</label>
+                  <div className="w-full p-2 border rounded-lg font-bold text-slate-900 bg-white text-xs truncate" title={recetaActiva.aprobadoPor}>{recetaActiva.aprobadoPor || '---'}</div>
+                </div>
+                <div className="space-y-1">
+                  <label className="text-xs font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Warehouse className="w-3 h-3" /> Área que Produce</label>
+                  <div className="w-full p-2 border rounded-lg font-bold text-slate-900 bg-white text-xs truncate" title={recetaActiva.areaProduce || 'Sin asignar'}>{recetaActiva.areaProduce || 'Sin asignar'}</div>
+                </div>
+                <div className="space-y-1">
+                  <label className="text-xs font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Package className="w-3 h-3" /> Área que Empaca</label>
+                  <div className="w-full p-2 border rounded-lg font-bold text-slate-900 bg-white text-xs truncate" title={recetaActiva.areaEmpaca || 'Sin asignar'}>{recetaActiva.areaEmpaca || 'Sin asignar'}</div>
+                </div>
               </div>
 
               {/* Matriz de Ingredientes */}
@@ -241,7 +256,10 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                       <div className="flex justify-between items-start mb-4">
                         <div>
                           <p className="text-xs text-slate-600 font-black uppercase tracking-widest">Estado: {ETIQUETAS_ESTADO[v.estado]}</p>
-                          <p className="text-base font-black text-slate-900 mt-0.5">ID Único: {v.id}</p>
+                          <div className="text-base font-black text-slate-900 mt-0.5 flex items-center gap-2">
+                             <span className="text-[8px] text-slate-400 uppercase tracking-widest">ID Único: {v.id}</span>
+                             {v.codigoCalidad && <span className="text-[10px] text-business-orange bg-business-mustard/10 border border-business-mustard/30 px-2 py-0.5 rounded uppercase tracking-widest">{v.codigoCalidad}</span>}
+                          </div>
                         </div>
                         <div className="flex gap-2">
                           {v.id === recetaActiva.id ? (

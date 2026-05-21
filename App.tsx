@@ -22,7 +22,8 @@ import {
   Building2, BookOpen, ArrowRight, Settings2, ShieldAlert, GitBranch, Key,
   ToggleRight, CheckSquare, FlaskConical, Activity, ArchiveX, Camera, Microscope,
   ChefHat, DollarSign, PieChart, Star, SlidersHorizontal, UserPlus, ChevronRight,
-  ChevronLeft, ChevronUp, AlertTriangle, Download, User, Loader2
+  ChevronLeft, ChevronUp, AlertTriangle, Download, User, Loader2, Snowflake, Flame, Coffee, Palette, Cake, HelpCircle, FileEdit, XCircle,
+  Factory
 } from 'lucide-react';
 import { Receta, Insumo, EstadoReceta, EstadoInsumo, Rol, IngredienteReceta, ConfiguracionRol, Permiso, FlujoAprobacion, PasoFlujo, FichaTecnica, EstadoFicha, RegistroCambioFicha, AspectoMicrobiologico, FaseFluxoInsumo, HistorialVersiones, Notificacion } from './types';
 import { ESTILOS_ESTADO, ETIQUETAS_ESTADO, ESTILOS_ESTADO_INSUMO, ETIQUETAS_ESTADO_INSUMO, UNIDADES, UNIDADES_STOCK, OPCIONES_IMPUESTO, TIPOS_MATERIAL, MAPA_CONVERSION_UNIDADES } from './constants';
@@ -1212,141 +1213,274 @@ export default function App() {
 
 function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, onDelete, role }: any) {
   const isLoadingData = useStore(state => state.isLoadingData);
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
+
+  const normalizeArea = (rawArea: string) => {
+    const a = (rawArea || '').trim().toLowerCase();
+    if (a === 'cocina fría' || a === 'cocina fria') return 'Cocina Fría';
+    if (a === 'cocina caliente') return 'Cocina Caliente';
+    if (a === 'cocina' || a === 'cocina central') return 'Cocina';
+    if (a === 'batidos') return 'Batidos';
+    if (a.includes('premezcla') || a.includes('premezlca')) return 'Premezclas';
+    if (a.includes('decoración') || a.includes('decoracoración') || a.includes('decoracion')) return 'Decoración';
+    if (a === 'figuras') return 'Figuras';
+    if (a === 'pastas') return 'Pastas';
+    if (a.includes('marmita')) return 'Marmita';
+    if (a === 'empaque') return 'Empaque';
+    if (a.includes('postre') || a.includes('pastelería') || a.includes('pasteleria')) return 'Postres';
+    return 'Área no definida';
+  };
+
+  const AREA_CONFIG: Record<string, { icon: any, color: string, bg: string, border: string }> = {
+    'Borradores': { icon: FileEdit, color: 'text-slate-600', bg: 'bg-slate-100', border: 'border-slate-300 hover:border-slate-400 border-dashed' },
+    'Pendientes': { icon: Clock, color: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-300 hover:border-amber-400 border-dashed' },
+    'Rechazadas': { icon: XCircle, color: 'text-rose-600', bg: 'bg-rose-50', border: 'border-rose-300 hover:border-rose-400 border-dashed' },
+    'Cocina Fría': { icon: Snowflake, color: 'text-sky-600', bg: 'bg-sky-50', border: 'border-sky-200 hover:border-sky-400' },
+    'Cocina Caliente': { icon: Flame, color: 'text-rose-600', bg: 'bg-rose-50', border: 'border-rose-200 hover:border-rose-400' },
+    'Cocina': { icon: ChefHat, color: 'text-slate-700', bg: 'bg-slate-100', border: 'border-slate-300 hover:border-slate-500' },
+    'Batidos': { icon: Coffee, color: 'text-amber-700', bg: 'bg-amber-50', border: 'border-amber-200 hover:border-amber-400' },
+    'Premezclas': { icon: Package, color: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-200 hover:border-indigo-400' },
+    'Decoración': { icon: Palette, color: 'text-fuchsia-600', bg: 'bg-fuchsia-50', border: 'border-fuchsia-200 hover:border-fuchsia-400' },
+    'Figuras': { icon: Sparkles, color: 'text-yellow-600', bg: 'bg-yellow-50', border: 'border-yellow-200 hover:border-yellow-400' },
+    'Pastas': { icon: Utensils, color: 'text-orange-600', bg: 'bg-orange-50', border: 'border-orange-200 hover:border-orange-400' },
+    'Marmita': { icon: Factory, color: 'text-teal-700', bg: 'bg-teal-50', border: 'border-teal-200 hover:border-teal-400' },
+    'Empaque': { icon: Package, color: 'text-business-olive', bg: 'bg-[#8e925b]/10', border: 'border-[#8e925b]/30 hover:border-[#8e925b]/60' },
+    'Postres': { icon: Cake, color: 'text-pink-600', bg: 'bg-pink-50', border: 'border-pink-200 hover:border-pink-400' },
+    'Área no definida': { icon: HelpCircle, color: 'text-slate-400', bg: 'bg-slate-50', border: 'border-slate-200 hover:border-slate-300' },
+  };
+
+  const groupedRecipes = useMemo(() => {
+    const groups: Record<string, any[]> = {};
+    Object.keys(AREA_CONFIG).forEach(k => groups[k] = []);
+    
+    recipes.forEach((r: any) => {
+      let isDraft = r.estado === EstadoReceta.BORRADOR;
+      let isPending = r.estado?.includes('PENDIENTE') || false;
+      let isRejected = r.estado?.includes('RECHAZADO') || false;
+      
+      if (isDraft) groups['Borradores'].push(r);
+      if (isPending) groups['Pendientes'].push(r);
+      if (isRejected) groups['Rechazadas'].push(r);
+      
+      const groupName = normalizeArea(r.areaProduce);
+      if (groupName && groups[groupName]) {
+        groups[groupName].push(r);
+      }
+    });
+    return groups;
+  }, [recipes]);
+
+  const filtradas = useMemo(() => {
+    if (!selectedGroup) return [];
+    return groupedRecipes[selectedGroup] || [];
+  }, [groupedRecipes, selectedGroup]);
 
   return (
-    <div className="space-y-4 animate-in slide-in-from-bottom duration-500">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-        <div>
-          <h2 className="text-xl font-black text-slate-900 uppercase tracking-tight">Administración de Versiones</h2>
-          <p className="text-slate-700 font-medium text-sm mt-0.5">Control de versiones y trazabilidad de recetas.</p>
-        </div>
-
-        <div className="flex items-center gap-3 w-full sm:w-auto">
-          <div className="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex gap-0.5">
-            <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-600 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
-            <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-600 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
-          </div>
-          {(role === 'CHEF' || role === 'ADMIN') && (
-            <Button onClick={onCreate} className="w-full sm:w-auto">
-              <Plus className="w-4 h-4" /> Nueva Receta
-            </Button>
-          )}
-        </div>
-      </div>
-
-      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-4">
-        <div className="p-3 border-b border-slate-100 bg-slate-50 flex items-center gap-3">
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-600" />
-            <input
-              type="text"
-              placeholder="Filtrar catálogo..."
-              value={searchTerm}
-              onChange={(e: { target: { value: any; }; }) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 bg-white border border-slate-200 rounded-lg focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none font-medium text-xs transition-all"
-            />
-          </div>
-        </div>
-
-        {viewMode === 'grid' ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 bg-slate-50/30">
-            {isLoadingData ? (
-              Array.from({ length: 4 }).map((_, i) => <div key={`skg-${i}`} className="h-40 bg-white rounded-2xl animate-pulse border border-slate-100"></div>)
-            ) : recipes.slice().reverse().map((r: any) => (
-              <div key={r.id} className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-xl transition-all group relative">
-                <div>
-                  <div className="flex justify-between items-start mb-3">
-                    <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
-                      {ETIQUETAS_ESTADO[r.estado]}
-                    </Badge>
-                    <span className="text-sm font-black text-slate-700">v{r.versionActual}</span>
-                  </div>
-                  <h3 className="text-lg font-black text-slate-900 leading-tight mb-2 group-hover:text-business-orange transition-colors">{r.nombre}</h3>
-                  <div className="text-xs text-slate-600 font-bold mb-4 flex items-center gap-2">
-                    <History className="w-3.5 h-3.5" /> ID: {r.id}
-                  </div>
-                </div>
-                <div className="border-t border-slate-50 pt-4 mt-auto flex justify-between items-end">
-                  <div>
-                    <div className="text-xs font-black text-slate-600 uppercase mb-0.5 tracking-widest">Costo Auditado</div>
-                    <div className="font-black text-slate-900 text-xl tracking-tighter leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
-                  </div>
-                  <div className="flex gap-2">
-                    <button onClick={() => onEdit(r)} className="p-2.5 bg-slate-900 text-white rounded-xl hover:bg-business-olive transition-all shadow-md">
-                      <Edit3 className="w-4 h-4" />
-                    </button>
-                    {(role === 'CHEF' || role === 'ADMIN') && (
-                      <button onClick={() => onDelete(r.id)} className="p-2.5 bg-rose-50 text-rose-500 rounded-xl hover:bg-rose-500 hover:text-white transition-all shadow-sm">
-                        <Trash2 className="w-4 h-4" />
-                      </button>
-                    )}
-                  </div>
-                </div>
+    <div className="space-y-6 animate-in slide-in-from-bottom duration-500">
+      {!selectedGroup ? (
+        // MENÚ DE ÁREAS PRINCIPAL
+        <div className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+            <div>
+              <h2 className="text-xl font-black text-slate-900 uppercase tracking-tight">Taller de Recetas</h2>
+              <p className="text-slate-700 font-medium text-sm mt-0.5">Control de versiones y áreas productivas.</p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+              <div className="relative w-full sm:w-64">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-600" />
+                <input type="text" placeholder="Buscar en todas las áreas..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full pl-9 pr-4 py-2 bg-white border border-slate-200 rounded-lg focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none font-medium text-xs transition-all shadow-sm" />
               </div>
-            ))}
+              {(role === 'CHEF' || role === 'ADMIN') && (
+                <Button onClick={onCreate} className="w-full sm:w-auto shadow-md">
+                  <Plus className="w-4 h-4" /> Nueva Receta
+                </Button>
+              )}
+            </div>
           </div>
-        ) : (
-          <div className="overflow-x-auto inner-scroll">
-            <table className="w-full text-left min-w-[700px]">
-              <thead className="bg-slate-50 text-slate-600 text-xs font-black uppercase tracking-widest border-b">
-                <tr>
-                  <th className="px-6 py-4">Nombre / Evolución</th>
-                  <th className="px-6 py-4">Fase Actual</th>
-                  <th className="px-6 py-4 text-right">Costo Auditado</th>
-                  <th className="px-6 py-4 text-center">Gestión</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {isLoadingData ? (
-                  Array.from({ length: 5 }).map((_, index) => (
-                    <tr key={`skeleton-${index}`} className="animate-pulse">
-                      <td className="px-6 py-4"><Skeleton className="h-6 w-3/4 mb-2" /><Skeleton className="h-4 w-1/4" /></td>
-                      <td className="px-6 py-4"><Skeleton className="h-6 w-24 rounded-md" /></td>
-                      <td className="px-6 py-4 text-right"><Skeleton className="h-6 w-16 ml-auto mb-2" /><Skeleton className="h-4 w-20 ml-auto" /></td>
-                      <td className="px-6 py-4 text-center"><Skeleton className="h-8 w-8 rounded-lg mx-auto" /></td>
-                    </tr>
-                  ))
-                ) : recipes.slice().reverse().map((r: any) => (
-                  <tr key={r.id} className="hover:bg-slate-50/50 transition-colors group">
-                    <td className="px-6 py-2">
-                      <div className="font-black text-slate-900 text-sm leading-tight">{r.nombre}</div>
-                      <div className="text-xs text-slate-600 font-bold flex items-center gap-2">
-                        <History className="w-2.5 h-2.5" /> v{r.versionActual}
-                        <span className="text-sm bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 uppercase">ID: {r.id}</span>
-                      </div>
-                    </td>
-                    <td className="px-6 py-2">
-                      <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {Object.entries(groupedRecipes).map(([areaName, areaRecipes]) => {
+              const config = AREA_CONFIG[areaName];
+              const Icon = config.icon;
+              const count = areaRecipes.length;
+              
+              if (count === 0 && areaName === 'Área no definida') return null;
+              
+              return (
+                <div 
+                  key={areaName}
+                  onClick={() => setSelectedGroup(areaName)}
+                  className={`relative overflow-hidden cursor-pointer rounded-2xl border-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl group p-6 flex flex-col items-center justify-center text-center h-40 ${config.bg} ${config.border}`}
+                >
+                  <div className={`p-3 rounded-full bg-white shadow-sm mb-3 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}>
+                    <Icon className={`w-6 h-6 ${config.color}`} />
+                  </div>
+                  <h3 className={`text-sm font-black leading-tight uppercase ${config.color} tracking-widest`}>{areaName}</h3>
+                  <div className="mt-2 text-[10px] font-bold uppercase tracking-widest bg-white/60 px-2 py-0.5 rounded-full text-slate-600 border border-slate-200/50">
+                    {count} {count === 1 ? 'Receta' : 'Recetas'}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ) : (
+        // VISTA INTERIOR DEL ÁREA (GRID/LISTA)
+        <div className="space-y-4 animate-in slide-in-from-right-8 duration-300">
+          <header className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+            <div>
+              <button 
+                onClick={() => setSelectedGroup(null)}
+                className="mb-3 flex items-center gap-2 text-[10px] font-black text-slate-500 hover:text-business-orange transition-colors uppercase tracking-widest bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-100 hover:border-business-orange/30"
+              >
+                <ChevronLeft className="w-3 h-3" /> Volver al Menú
+              </button>
+              
+              <div className="flex items-center gap-3">
+                {(() => {
+                  const Icon = AREA_CONFIG[selectedGroup]?.icon || HelpCircle;
+                  return <Icon className={`w-6 h-6 ${AREA_CONFIG[selectedGroup]?.color || 'text-slate-400'}`} />
+                })()}
+                <h1 className="text-xl font-black text-slate-900 tracking-tight uppercase">
+                  {selectedGroup}
+                </h1>
+              </div>
+              <p className="text-slate-500 font-bold text-xs mt-1">
+                Mostrando {filtradas.length} recetas en esta categoría
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+              <div className="bg-slate-50 p-1 rounded-xl border border-slate-200 flex gap-0.5">
+                <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-white text-slate-900 shadow-sm border border-slate-200' : 'text-slate-500 hover:bg-slate-100'}`}><ListIcon size={16} /></button>
+                <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-white text-slate-900 shadow-sm border border-slate-200' : 'text-slate-500 hover:bg-slate-100'}`}><LayoutGrid size={16} /></button>
+              </div>
+              <div className="relative w-full sm:w-56">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-600" />
+                <input type="text" placeholder={`Buscar en ${selectedGroup}...`} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-4 focus:ring-business-mustard/20 focus:border-business-orange outline-none font-medium shadow-inner transition-all text-xs" />
+              </div>
+              {(role === 'CHEF' || role === 'ADMIN') && (
+                <Button onClick={onCreate} className="w-full sm:w-auto shadow-sm">
+                  <Plus className="w-4 h-4" /> Nueva
+                </Button>
+              )}
+            </div>
+          </header>
+
+          {filtradas.length === 0 ? (
+            <div className="bg-white rounded-3xl p-12 text-center border border-slate-100 shadow-sm">
+              <div className="w-16 h-16 bg-slate-50 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Search className="w-8 h-8" />
+              </div>
+              <h3 className="text-lg font-black text-slate-900 mb-1">No hay recetas</h3>
+              <p className="text-slate-500 text-sm font-medium">No se encontraron resultados en esta categoría.</p>
+            </div>
+          ) : viewMode === 'grid' ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {isLoadingData ? (
+                Array.from({ length: 4 }).map((_, i) => <div key={`skg-${i}`} className="h-40 bg-white rounded-2xl animate-pulse border border-slate-100"></div>)
+              ) : filtradas.slice().reverse().map((r: any) => (
+                <div key={r.id} className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-xl transition-all group relative">
+                  <div>
+                    <div className="flex justify-between items-start mb-3">
+                      <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado?.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
                         {ETIQUETAS_ESTADO[r.estado]}
                       </Badge>
-                    </td>
-                    <td className="px-6 py-2 text-right">
-                      <div className="font-black text-slate-900 text-sm leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
-                      <div className="text-sm font-black text-slate-600 uppercase mt-0.5">
-                        Auditado: {r.fechaRevision ||
-                          (r.versiones && r.versiones.length > 0
-                            ? new Date(r.versiones[r.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR')
-                            : 'Pendiente')}
-                      </div>
-                    </td>
-                    <td className="px-6 py-2 text-center">
-                      <Button onClick={() => onEdit(r)} variant="outline" size="sm" className="px-2 py-1 hover:bg-business-olive hover:text-white hover:border-business-olive text-business-orange text-center mx-auto">
-                        <Edit3 className="w-3.5 h-3.5" />
-                      </Button>
+                      <span className="text-sm font-black text-slate-700">v{r.versionActual}</span>
+                    </div>
+                    <div className="flex gap-2 items-start mb-2">
+                      <h3 className="text-lg font-black text-slate-900 leading-tight group-hover:text-business-orange transition-colors">{r.nombre}</h3>
+                      {r.codigoCalidad && <span className="text-[10px] text-business-orange bg-business-mustard/10 border border-business-mustard/30 px-2 py-0.5 rounded uppercase tracking-widest whitespace-nowrap mt-1">{r.codigoCalidad}</span>}
+                    </div>
+                    <div className="text-[9px] text-slate-400 font-bold mb-4 flex items-center gap-2">
+                      <History className="w-3.5 h-3.5" /> ID: {r.id}
+                    </div>
+                  </div>
+                  <div className="border-t border-slate-50 pt-4 mt-auto flex justify-between items-end">
+                    <div>
+                      <div className="text-[10px] font-black text-slate-600 uppercase mb-0.5 tracking-widest">Costo Auditado</div>
+                      <div className="font-black text-slate-900 text-lg tracking-tighter leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
+                    </div>
+                    <div className="flex gap-2">
+                      <button onClick={() => onEdit(r)} className="p-2.5 bg-slate-900 text-white rounded-xl hover:bg-business-olive transition-all shadow-md">
+                        <Edit3 className="w-4 h-4" />
+                      </button>
                       {(role === 'CHEF' || role === 'ADMIN') && (
-                        <Button onClick={() => onDelete(r.id)} variant="outline" size="sm" className="px-2 py-1 hover:bg-rose-600 hover:text-white hover:border-rose-600 text-rose-500 ml-2">
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </Button>
+                        <button onClick={() => onDelete(r.id)} className="p-2.5 bg-rose-50 text-rose-500 rounded-xl hover:bg-rose-500 hover:text-white transition-all shadow-sm">
+                          <Trash2 className="w-4 h-4" />
+                        </button>
                       )}
-                    </td>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="overflow-x-auto inner-scroll bg-white rounded-2xl shadow-sm border border-slate-100">
+              <table className="w-full text-left min-w-[700px]">
+                <thead className="bg-slate-50 text-slate-600 text-xs font-black uppercase tracking-widest border-b">
+                  <tr>
+                    <th className="px-6 py-4">Nombre / Evolución</th>
+                    <th className="px-6 py-4">Fase Actual</th>
+                    <th className="px-6 py-4 text-right">Costo Auditado</th>
+                    <th className="px-6 py-4 text-center">Gestión</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </div>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {isLoadingData ? (
+                    Array.from({ length: 5 }).map((_, index) => (
+                      <tr key={`skeleton-${index}`} className="animate-pulse">
+                        <td className="px-6 py-4"><Skeleton className="h-6 w-3/4 mb-2" /><Skeleton className="h-4 w-1/4" /></td>
+                        <td className="px-6 py-4"><Skeleton className="h-6 w-24 rounded-md" /></td>
+                        <td className="px-6 py-4 text-right"><Skeleton className="h-6 w-16 ml-auto mb-2" /><Skeleton className="h-4 w-20 ml-auto" /></td>
+                        <td className="px-6 py-4 text-center"><Skeleton className="h-8 w-8 rounded-lg mx-auto" /></td>
+                      </tr>
+                    ))
+                  ) : filtradas.slice().reverse().map((r: any) => (
+                    <tr key={r.id} className="hover:bg-slate-50/50 transition-colors group">
+                      <td className="px-6 py-2">
+                        <div className="font-black text-slate-900 text-sm leading-tight flex items-center gap-2">
+                          {r.nombre}
+                          {r.codigoCalidad && <span className="text-[9px] text-business-orange bg-business-mustard/10 border border-business-mustard/30 px-1.5 py-0.5 rounded uppercase tracking-widest">{r.codigoCalidad}</span>}
+                        </div>
+                        <div className="text-xs text-slate-600 font-bold flex items-center gap-2">
+                          <History className="w-2.5 h-2.5" /> v{r.versionActual}
+                          <span className="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 uppercase">ID: {r.id}</span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-2">
+                        <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado?.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
+                          {ETIQUETAS_ESTADO[r.estado]}
+                        </Badge>
+                      </td>
+                      <td className="px-6 py-2 text-right">
+                        <div className="font-black text-slate-900 text-sm leading-none">{r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</div>
+                        <div className="text-[10px] font-black text-slate-600 uppercase mt-0.5">
+                          Auditado: {r.fechaRevision ||
+                            (r.versiones && r.versiones.length > 0
+                              ? new Date(r.versiones[r.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR')
+                              : 'Pendiente')}
+                        </div>
+                      </td>
+                      <td className="px-6 py-2 text-center">
+                        <Button onClick={() => onEdit(r)} variant="outline" size="sm" className="px-2 py-1 hover:bg-business-olive hover:text-white hover:border-business-olive text-business-orange text-center mx-auto">
+                          <Edit3 className="w-3.5 h-3.5" />
+                        </Button>
+                        {(role === 'CHEF' || role === 'ADMIN') && (
+                          <Button onClick={() => onDelete(r.id)} variant="outline" size="sm" className="px-2 py-1 hover:bg-rose-600 hover:text-white hover:border-rose-600 text-rose-500 ml-2">
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </Button>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
