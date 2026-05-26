@@ -16,4 +16,5 @@ export interface FlujoAprobacion {
   descripcion: string;
   pasos: PasoFlujo[];
   activo: boolean;
+  crearNuevaVersion?: boolean;
 }

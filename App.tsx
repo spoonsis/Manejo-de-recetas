@@ -14,7 +14,7 @@ import EditorFichaTecnica from './EditorFichaTecnica';
 import VistaAprobaciones from './VistaAprobaciones';
 
 import {
-  Utensils, Package, ClipboardList, CheckCircle2, History, Plus, Trash2,
+  Utensils, Package, ClipboardList, CheckCircle2, History, Plus, Trash2, CheckCheck,
   LayoutGrid, List as ListIcon,
   Edit3, Eye, AlertCircle, TrendingUp, LayoutDashboard, Search, Save, X,
   FileText, BadgeCheck, Calculator, RefreshCw, Sparkles, ShieldCheck, Info,
@@ -133,6 +133,7 @@ export default function App() {
     cargarNotificaciones,
     enviarNotificacion,
     marcarNotificacionLeida,
+    marcarTodasNotificacionesLeidas,
     rehidratarSesion,
     isLoading: isAuthLoading,
     setLoadingData,
@@ -177,18 +178,18 @@ export default function App() {
     
     if (titulo.includes('insumo')) {
         navigate('/inventario');
-        setEditandoInsumoId(n.referenciaId || null);
+        setEditandoInsumoId(n.referencia_id || null);
     } else if (titulo.includes('aprobada') && titulo.includes('receta')) {
         navigate('/libro');
-        const receta = recetas.find(r => r.id === n.referenciaId);
+        const receta = recetas.find(r => r.id === n.referencia_id);
         if (receta) setDetalleLibro(receta);
     } else if (titulo.includes('revisión') || titulo.includes('pendient')) {
         navigate('/aprobaciones');
-        const receta = recetas.find(r => r.id === n.referenciaId);
+        const receta = recetas.find(r => r.id === n.referencia_id);
         if (receta) setEditandoReceta(receta);
     } else if (titulo.includes('rechazada') && titulo.includes('receta')) {
         navigate('/recetas');
-        const receta = recetas.find(r => r.id === n.referenciaId);
+        const receta = recetas.find(r => r.id === n.referencia_id);
         if (receta) setEditandoReceta(receta);
     }
     
@@ -287,7 +288,7 @@ export default function App() {
         }
 
         // 5. Cargar Flujos de Aprobación
-        const resWorkflows = await fetch(`/api/local/workflows`, { credentials: 'include' });
+        const resWorkflows = await fetch(`/api/local/workflows?t=${Date.now()}`, { credentials: 'include', cache: 'no-store' });
         if (resWorkflows.ok) {
           const dataWorkflows = await resWorkflows.json();
           if (dataWorkflows.length > 0) {
@@ -399,7 +400,7 @@ export default function App() {
   // --- HANDLERS RECETAS ---
 
   const manejarCrearReceta = () => {
-    const flujoDefault = flujos.length > 0 ? flujos[0].id : '';
+    const flujoDefault = flujos.find(f => f.activo)?.id || (flujos.length > 0 ? flujos[0].id : '');
     const nuevaReceta: Receta = {
       id: Math.random().toString(36).substr(2, 9),
       nombre: '',
@@ -486,14 +487,20 @@ export default function App() {
       if (original.estado === EstadoReceta.BORRADOR || original.estado === EstadoReceta.PENDIENTE_COSTOS || original.estado.includes('RECHAZADO')) {
         // Mantiene igual
       } else {
-        const versionesMismoNombre = recetas.filter((r: { nombre: any; }) => r.nombre === original.nombre);
-        const maxVersionActual = Math.max(...versionesMismoNombre.map((v: { versionActual: any; }) => v.versionActual), 0);
-        recetaFinal = {
-          ...actualizada,
-          id: Math.random().toString(36).substr(2, 9),
-          versionActual: maxVersionActual + 1,
-          ultimoRegistroCambios: `Nueva versión v${maxVersionActual + 1} derivada de v${original.versionActual}`
-        };
+        const flujoAsignado = flujos.find(f => f.id === actualizada.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
+        if (flujoAsignado.crearNuevaVersion === false) {
+          // Actualiza sobre la misma versión/receta
+          recetaFinal = actualizada;
+        } else {
+          const versionesMismoNombre = recetas.filter((r: { nombre: any; }) => r.nombre === original.nombre);
+          const maxVersionActual = Math.max(...versionesMismoNombre.map((v: { versionActual: any; }) => v.versionActual), 0);
+          recetaFinal = {
+            ...actualizada,
+            id: Math.random().toString(36).substr(2, 9),
+            versionActual: maxVersionActual + 1,
+            ultimoRegistroCambios: `Nueva versión v${maxVersionActual + 1} derivada de v${original.versionActual}`
+          };
+        }
       }
     }
 
@@ -508,17 +515,28 @@ export default function App() {
       if (res.ok) {
         if (!original) {
           setRecetas((prev: any) => [...prev, recetaFinal]);
-        } else if (original.estado === EstadoReceta.BORRADOR || original.estado === EstadoReceta.PENDIENTE_COSTOS || original.estado.includes('RECHAZADO')) {
+        } else if (recetaFinal.id === original.id) {
           setRecetas((prev: any[]) => prev.map((r: { id: string; }) => r.id === recetaFinal.id ? recetaFinal : r));
         } else {
           setRecetas((prev: any) => [...prev, recetaFinal]);
         }
 
-        if (original && (original.estado === EstadoReceta.BORRADOR || original.estado.includes('RECHAZADO')) && recetaFinal.estado === EstadoReceta.PENDIENTE_COSTOS) {
+        const esCambioAEnviarRevision = original && 
+          (original.estado === EstadoReceta.BORRADOR || original.estado.includes('RECHAZADO')) &&
+          recetaFinal.estado.startsWith('PENDIENTE_');
+
+        if (esCambioAEnviarRevision) {
           const flujoAsignado = flujos.find(f => f.id === recetaFinal.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
-          const primerPaso = flujoAsignado.pasos.find(p => p.orden === 1);
+          const pasosOrdenados = [...flujoAsignado.pasos].sort((a, b) => a.orden - b.orden);
+          const primerPaso = pasosOrdenados[0];
           if (primerPaso) {
-            enviarNotificacion(primerPaso.rolResponsable, 'Receta Enviada a Revisión', `El chef ha enviado la receta "${recetaFinal.nombre}" para tu revisión inicial de costos.`, 'WARNING', recetaFinal.id);
+            enviarNotificacion(
+              primerPaso.rolResponsable, 
+              'Receta Enviada a Revisión', 
+              `El chef ha enviado la receta "${recetaFinal.nombre}" para tu revisión inicial de ${primerPaso.etiqueta.toLowerCase()}.`, 
+              'WARNING', 
+              recetaFinal.id
+            );
           }
         }
 
@@ -535,6 +553,19 @@ export default function App() {
   };
 
   const manejarEliminarReceta = async (id: string) => {
+    const receta = recetas.find((r: { id: string; }) => r.id === id);
+    if (!receta) return;
+
+    if (receta.estado.startsWith('PENDIENTE_')) {
+      alert("No se puede eliminar una receta que está pendiente de aprobación.");
+      return;
+    }
+
+    if (receta.estado !== EstadoReceta.BORRADOR) {
+      alert("No se puede eliminar la receta. Solo se permite eliminar versiones en estado Borrador.");
+      return;
+    }
+
     if (!window.confirm("¿Está seguro de que desea eliminar permanentemente esta receta y sus ingredientes?")) return;
 
     setSaving(true);
@@ -549,8 +580,8 @@ export default function App() {
         alert("Error al intentar eliminar la receta en el servidor.");
       }
     } catch (e) {
-      console.error("Error eliminando receta:", e);
-      alert("Error de conexión al eliminar la receta.");
+      console.error("Error deleting recipe:", e);
+      alert("Error de conexión al intentar eliminar la receta.");
     } finally {
       setSaving(false);
     }
@@ -570,9 +601,14 @@ export default function App() {
           if (existe) return prev.map(f => f.id === flujo.id ? flujo : f);
           return [...prev, flujo];
         });
+      } else {
+        const errorData = await res.json().catch(() => ({}));
+        const detallesMsg = errorData.detalles ? errorData.detalles.map((d: any) => `${d.campo}: ${d.mensaje}`).join(', ') : '';
+        alert(`Error al guardar el flujo: ${errorData.error || res.statusText}. ${detallesMsg}`);
       }
     } catch (e) {
       console.error("Error guardando flujo:", e);
+      alert("Error de conexión al guardar el flujo.");
     }
   };
 
@@ -597,7 +633,29 @@ export default function App() {
     let recetaFinal = { ...currReceta };
     let siguienteEstado = currReceta.estado;
     const flujoAsignado = flujos.find(f => f.id === currReceta.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
-    const pasoActual = flujoAsignado.pasos.find(p => p.rolResponsable === rolActual);
+    // Encontrar el paso activo de forma secuencial
+    const pasosOrdenados = [...flujoAsignado.pasos].sort((a, b) => a.orden - b.orden);
+    let pasoActual = null;
+    let estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+    if (pasosOrdenados.length > 0) {
+      const primerPaso = pasosOrdenados[0];
+      if (primerPaso.rolResponsable === 'MKT') estadoAcumulado = EstadoReceta.PENDIENTE_MKT;
+      else if (primerPaso.rolResponsable === 'CALIDAD') estadoAcumulado = EstadoReceta.PENDIENTE_CALIDAD;
+      else estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+    }
+    for (let i = 0; i < pasosOrdenados.length; i++) {
+      const paso = pasosOrdenados[i];
+      const estadoDelPaso = i === 0 ? estadoAcumulado : pasosOrdenados[i - 1].estadoDestino;
+      if (estadoDelPaso === currReceta.estado) {
+        pasoActual = paso;
+        break;
+      }
+    }
+
+    if (!pasoActual) {
+      pasoActual = flujoAsignado.pasos.find(p => p.rolResponsable === rolActual);
+    }
+
     if (pasoActual) siguienteEstado = pasoActual.estadoDestino;
 
     // MKT Auto-Bypass para Semielaborados
@@ -693,7 +751,27 @@ export default function App() {
           enviarNotificacion('CHEF', 'Receta Aprobada', `La receta "${recetaFinal.nombre}" ha sido aprobada exitosamente y está en el Libro Oficial.`, 'SUCCESS', recetaFinal.id);
           enviarNotificacion('TODOS', 'Nueva Receta Aprobada', `La receta "${recetaFinal.nombre}" ya está disponible en el Libro de Recetas.`, 'INFO', recetaFinal.id);
         } else if (siguienteEstado !== currReceta.estado) {
-          const pasoSiguiente = flujoAsignado.pasos.find(p => p.estadoDestino === siguienteEstado) || flujoAsignado.pasos.find(p => p.orden === (pasoActual?.orden || 0) + 1);
+          const pasosOrdenados = [...flujoAsignado.pasos].sort((a, b) => a.orden - b.orden);
+          let pasoSiguiente = null;
+          let estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+          if (pasosOrdenados.length > 0) {
+            const primerPaso = pasosOrdenados[0];
+            if (primerPaso.rolResponsable === 'MKT') estadoAcumulado = EstadoReceta.PENDIENTE_MKT;
+            else if (primerPaso.rolResponsable === 'CALIDAD') estadoAcumulado = EstadoReceta.PENDIENTE_CALIDAD;
+            else estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+          }
+          for (let i = 0; i < pasosOrdenados.length; i++) {
+            const paso = pasosOrdenados[i];
+            const estadoDelPaso = i === 0 ? estadoAcumulado : pasosOrdenados[i - 1].estadoDestino;
+            if (estadoDelPaso === siguienteEstado) {
+              pasoSiguiente = paso;
+              break;
+            }
+          }
+          if (!pasoSiguiente) {
+            pasoSiguiente = flujoAsignado.pasos.find(p => p.orden === (pasoActual?.orden || 0) + 1);
+          }
+
           if (pasoSiguiente) {
             enviarNotificacion(pasoSiguiente.rolResponsable, 'Receta Pendiente de Revisión', `La receta "${recetaFinal.nombre}" fue aprobada por ${rolActual} y requiere tu validación.`, 'WARNING', recetaFinal.id);
           }
@@ -859,19 +937,98 @@ export default function App() {
   const recetasLibroUnicas = useMemo(() => {
     const aprobadas = recetas.filter((r: { estado: EstadoReceta; }) => r.estado === EstadoReceta.APROBADO);
     const grupos: Record<string, Receta> = {};
+    const duplicados: Receta[] = [];
     aprobadas.forEach((r: Receta) => {
-      if (!grupos[r.nombre] || r.versionActual > grupos[r.nombre].versionActual) {
-        grupos[r.nombre] = r;
+      const areaKey = (r.areaProduce || '').trim().toLowerCase();
+      const key = `${r.nombre.toLowerCase().trim()}_${areaKey}`;
+      if (!grupos[key]) {
+        grupos[key] = r;
+      } else {
+        if (r.versionActual > grupos[key].versionActual) {
+          const antigua = grupos[key];
+          duplicados.push({
+            ...antigua,
+            areaProduce: 'Duplicados'
+          });
+          grupos[key] = r;
+        } else {
+          duplicados.push({
+            ...r,
+            areaProduce: 'Duplicados'
+          });
+        }
       }
     });
-    return Object.values(grupos);
+    return [...Object.values(grupos), ...duplicados];
   }, [recetas]);
 
-  const conteoPendientes = recetas.filter((r: { estado: EstadoReceta; }) =>
-    (rol === 'COSTOS' && r.estado === EstadoReceta.PENDIENTE_COSTOS) ||
-    (rol === 'MKT' && r.estado === EstadoReceta.PENDIENTE_MKT) ||
-    (rol === 'CALIDAD' && r.estado === EstadoReceta.PENDIENTE_CALIDAD)
-  ).length + (rol === 'CALIDAD' ? fichas.filter((f: { estado: EstadoFicha; }) => f.estado === EstadoFicha.PENDIENTE_CALIDAD).length : 0);
+  const filtrarRecetasAprobacion = (recetasList: Receta[], userRole: Rol) => {
+    return recetasList.filter((r: Receta) => {
+      if (!r.estado || !r.estado.startsWith('PENDIENTE_')) return false;
+      if (userRole === 'ADMIN') return true;
+      
+      const flujoAsignado = flujos.find(f => f.id === r.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
+      
+      const pasosOrdenados = [...flujoAsignado.pasos].sort((a, b) => a.orden - b.orden);
+      let pasoActual = null;
+      let estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+      if (pasosOrdenados.length > 0) {
+        const primerPaso = pasosOrdenados[0];
+        if (primerPaso.rolResponsable === 'MKT') estadoAcumulado = EstadoReceta.PENDIENTE_MKT;
+        else if (primerPaso.rolResponsable === 'CALIDAD') estadoAcumulado = EstadoReceta.PENDIENTE_CALIDAD;
+        else estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+      }
+      for (let i = 0; i < pasosOrdenados.length; i++) {
+        const paso = pasosOrdenados[i];
+        const estadoDelPaso = i === 0 ? estadoAcumulado : pasosOrdenados[i - 1].estadoDestino;
+        if (estadoDelPaso === r.estado) {
+          pasoActual = paso;
+          break;
+        }
+      }
+      
+      if (pasoActual) {
+        return pasoActual.rolResponsable === userRole;
+      }
+      
+      // Fallback
+      if (userRole === 'COSTOS') return r.estado === EstadoReceta.PENDIENTE_COSTOS;
+      if (userRole === 'MKT') return r.estado === EstadoReceta.PENDIENTE_MKT;
+      if (userRole === 'CALIDAD') return r.estado === EstadoReceta.PENDIENTE_CALIDAD;
+      return false;
+    });
+  };
+  const obtenerEtiquetaEstado = (r: Receta) => {
+    if (!r.estado || !r.estado.startsWith('PENDIENTE_')) {
+      return ETIQUETAS_ESTADO[r.estado] || r.estado;
+    }
+    const flujoAsignado = flujos.find(f => f.id === r.flujoAprobacionId) || flujos.find(f => f.activo) || FLUJO_DEFAULT;
+    
+    const pasosOrdenados = [...flujoAsignado.pasos].sort((a, b) => a.orden - b.orden);
+    let pasoActual = null;
+    let estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+    if (pasosOrdenados.length > 0) {
+      const primerPaso = pasosOrdenados[0];
+      if (primerPaso.rolResponsable === 'MKT') estadoAcumulado = EstadoReceta.PENDIENTE_MKT;
+      else if (primerPaso.rolResponsable === 'CALIDAD') estadoAcumulado = EstadoReceta.PENDIENTE_CALIDAD;
+      else estadoAcumulado = EstadoReceta.PENDIENTE_COSTOS;
+    }
+    for (let i = 0; i < pasosOrdenados.length; i++) {
+      const paso = pasosOrdenados[i];
+      const estadoDelPaso = i === 0 ? estadoAcumulado : pasosOrdenados[i - 1].estadoDestino;
+      if (estadoDelPaso === r.estado) {
+        pasoActual = paso;
+        break;
+      }
+    }
+    
+    if (pasoActual) {
+      return pasoActual.etiqueta || ETIQUETAS_ESTADO[r.estado];
+    }
+    return ETIQUETAS_ESTADO[r.estado] || r.estado;
+  };
+
+  const conteoPendientes = filtrarRecetasAprobacion(recetas, rol).length + (rol === 'CALIDAD' ? fichas.filter((f: { estado: EstadoFicha; }) => f.estado === EstadoFicha.PENDIENTE_CALIDAD).length : 0);
 
 
   const itemsSidebar = [
@@ -880,7 +1037,7 @@ export default function App() {
     { id: 'fichas', etiqueta: 'Fichas Técnicas', icon: FlaskConical, roles: ['CHEF', 'CALIDAD', 'ADMIN'] },
     { id: 'recetas', etiqueta: 'Taller de Recetas', icon: ClipboardList, roles: ['CHEF', 'ADMIN'] },
     { id: 'inventario', etiqueta: 'Insumos', icon: Package, roles: ['CHEF', 'COSTOS', 'COMPRAS', 'LOGISTICA', 'ADMIN'] },
-    { id: 'aprobaciones', etiqueta: 'Aprobaciones', icon: CheckCircle2, roles: ['COSTOS', 'MKT', 'CALIDAD', 'ADMIN'], badge: conteoPendientes > 0 ? conteoPendientes : undefined },
+    { id: 'aprobaciones', etiqueta: 'Aprobaciones', icon: CheckCircle2, roles: ['CHEF', 'COSTOS', 'MKT', 'CALIDAD', 'ADMIN'], badge: conteoPendientes > 0 ? conteoPendientes : undefined },
     { id: 'admin', etiqueta: 'Administración', icon: Settings2, roles: ['ADMIN'] },
   ].filter(item => item.roles.includes(rol));
 
@@ -1013,7 +1170,18 @@ export default function App() {
             {mostrarNotificaciones && (
               <div className="absolute bottom-full left-0 w-80 mb-2 bg-white rounded-2xl shadow-2xl border border-slate-200 z-50 overflow-hidden flex flex-col max-h-[400px] animate-in slide-in-from-bottom-2 fade-in">
                 <div className="p-3 border-b flex justify-between items-center bg-slate-50">
-                  <h3 className="font-bold text-slate-800 flex items-center gap-2"><Bell className="w-4 h-4 text-business-orange" /> Notificaciones</h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="font-bold text-slate-800 flex items-center gap-1.5"><Bell className="w-4 h-4 text-business-orange" /> Notificaciones</h3>
+                    {notificaciones.some(n => !n.leida) && (
+                      <button 
+                        onClick={() => marcarTodasNotificacionesLeidas()} 
+                        className="p-1 text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 rounded-full transition-all border border-emerald-200 flex items-center justify-center"
+                        title="Marcar todas como leídas"
+                      >
+                        <CheckCheck className="w-3.5 h-3.5" />
+                      </button>
+                    )}
+                  </div>
                   <button onClick={() => setMostrarNotificaciones(false)} className="p-1 hover:bg-business-beige rounded-full"><X className="w-4 h-4 text-slate-700" /></button>
                 </div>
                 <div className="overflow-y-auto custom-scrollbar flex-1 bg-white">
@@ -1099,15 +1267,12 @@ export default function App() {
               onCreate={manejarCrearReceta}
               onDelete={manejarEliminarReceta}
               role={rol}
+              obtenerEtiquetaEstado={obtenerEtiquetaEstado}
             />
           } />
           <Route path="/aprobaciones" element={
             <VistaAprobaciones
-              pendingRecipes={recetas.filter((r: { estado: EstadoReceta; }) =>
-                (rol === 'COSTOS' && r.estado === EstadoReceta.PENDIENTE_COSTOS) ||
-                (rol === 'MKT' && r.estado === EstadoReceta.PENDIENTE_MKT) ||
-                (rol === 'CALIDAD' && r.estado === EstadoReceta.PENDIENTE_CALIDAD)
-              )}
+              pendingRecipes={filtrarRecetasAprobacion(recetas, rol)}
               pendingFichas={rol === 'CALIDAD' ? fichas.filter((f: { estado: EstadoFicha; }) => f.estado === EstadoFicha.PENDIENTE_CALIDAD) : []}
               role={rol}
               onApprove={manejarAprobacion}
@@ -1115,6 +1280,7 @@ export default function App() {
               onOpen={(r: any) => setEditandoReceta(r)}
               onRefreshCosts={manejarRefrescarCostos}
               onApproveFicha={(f: any) => setEditandoFicha(f)}
+              obtenerEtiquetaEstado={obtenerEtiquetaEstado}
             />
           } />
           <Route path="/admin" element={
@@ -1170,6 +1336,7 @@ export default function App() {
           onSaveInsumo={manejarGuardarInsumo}
           role={rol}
           areas={areasMaestras.map(a => a.nombre)}
+          obtenerEtiquetaEstado={obtenerEtiquetaEstado}
         />
       )}
       {editandoFicha && (
@@ -1191,6 +1358,7 @@ export default function App() {
           allRecipes={recetas}
           insumos={insumos}
           onClose={() => setDetalleLibro(null)}
+          obtenerEtiquetaEstado={obtenerEtiquetaEstado}
         />
       )}
     </div>
@@ -1211,7 +1379,7 @@ export default function App() {
 
 
 
-function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, onDelete, role }: any) {
+function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, onDelete, role, obtenerEtiquetaEstado }: any) {
   const isLoadingData = useStore(state => state.isLoadingData);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
@@ -1303,7 +1471,7 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, on
             {Object.entries(groupedRecipes).map(([areaName, areaRecipes]) => {
               const config = AREA_CONFIG[areaName];
               const Icon = config.icon;
-              const count = areaRecipes.length;
+              const count = (areaRecipes as any).length;
               
               if (count === 0 && areaName === 'Área no definida') return null;
               
@@ -1385,7 +1553,7 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, on
                   <div>
                     <div className="flex justify-between items-start mb-3">
                       <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado?.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
-                        {ETIQUETAS_ESTADO[r.estado]}
+                        {obtenerEtiquetaEstado(r)}
                       </Badge>
                       <span className="text-sm font-black text-slate-700">v{r.versionActual}</span>
                     </div>
@@ -1406,7 +1574,7 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, on
                       <button onClick={() => onEdit(r)} className="p-2.5 bg-slate-900 text-white rounded-xl hover:bg-business-olive transition-all shadow-md">
                         <Edit3 className="w-4 h-4" />
                       </button>
-                      {(role === 'CHEF' || role === 'ADMIN') && (
+                      {(role === 'CHEF' || role === 'ADMIN') && r.estado === EstadoReceta.BORRADOR && (
                         <button onClick={() => onDelete(r.id)} className="p-2.5 bg-rose-50 text-rose-500 rounded-xl hover:bg-rose-500 hover:text-white transition-all shadow-sm">
                           <Trash2 className="w-4 h-4" />
                         </button>
@@ -1451,7 +1619,7 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, on
                       </td>
                       <td className="px-6 py-2">
                         <Badge variant={r.estado === EstadoReceta.APROBADO ? 'success' : r.estado?.includes('RECHAZADO') ? 'danger' : r.estado === EstadoReceta.BORRADOR ? 'neutral' : 'warning'}>
-                          {ETIQUETAS_ESTADO[r.estado]}
+                          {obtenerEtiquetaEstado(r)}
                         </Badge>
                       </td>
                       <td className="px-6 py-2 text-right">
@@ -1467,7 +1635,7 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, on
                         <Button onClick={() => onEdit(r)} variant="outline" size="sm" className="px-2 py-1 hover:bg-business-olive hover:text-white hover:border-business-olive text-business-orange text-center mx-auto">
                           <Edit3 className="w-3.5 h-3.5" />
                         </Button>
-                        {(role === 'CHEF' || role === 'ADMIN') && (
+                        {(role === 'CHEF' || role === 'ADMIN') && r.estado === EstadoReceta.BORRADOR && (
                           <Button onClick={() => onDelete(r.id)} variant="outline" size="sm" className="px-2 py-1 hover:bg-rose-600 hover:text-white hover:border-rose-600 text-rose-500 ml-2">
                             <Trash2 className="w-3.5 h-3.5" />
                           </Button>

@@ -27,6 +27,19 @@ router.post("/", async (req, res) => {
     }
 });
 
+// PUT Marcar todas como leidas
+router.put("/leer-todas", async (req, res) => {
+    try {
+        const { rol } = req.query;
+        if (!rol) return res.status(400).json({ error: "Rol no especificado" });
+        await svc.marcarTodasLeidas(rol);
+        res.json({ success: true });
+    } catch (e) {
+        console.error("Error PUT /notificaciones/leer-todas", e);
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
+    }
+});
+
 // PUT Marcar como leida
 router.put("/:id/leer", async (req, res) => {
     try {

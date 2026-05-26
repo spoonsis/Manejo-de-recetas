@@ -6,7 +6,7 @@ import { EstadoReceta } from './types';
 import { ETIQUETAS_ESTADO } from './constants';
 import { useStore } from './useStore';
 
-export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApprove, onReject, onOpen, onRefreshCosts, onApproveFicha }: any) {
+export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApprove, onReject, onOpen, onRefreshCosts, onApproveFicha, obtenerEtiquetaEstado }: any) {
   const { role } = useStore();
   const [codigoCalidadInput, setCodigoCalidadInput] = useState<Record<string, string>>({});
 
@@ -52,7 +52,7 @@ export default function VistaAprobaciones({ pendingRecipes, pendingFichas, onApp
                     Costo: {r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
                   </span>
                   <span className="text-xs font-black uppercase px-3 py-1 bg-business-mustard/10 text-business-orange border border-business-mustard/20 rounded-full">
-                    Fase: {ETIQUETAS_ESTADO[r.estado as EstadoReceta]}
+                    Fase: {obtenerEtiquetaEstado ? obtenerEtiquetaEstado(r) : ETIQUETAS_ESTADO[r.estado as EstadoReceta]}
                   </span>
                   <span className="text-xs font-black uppercase px-3 py-1 bg-slate-50 text-slate-600 border rounded-full">
                     v{r.versionActual}

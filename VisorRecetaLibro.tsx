@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins, Building2, Users, BadgeCheck, Warehouse, Package } from 'lucide-react';
+import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins, Building2, Users, BadgeCheck, Warehouse, Package, AlertCircle } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
 import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta } from './types';
 import { ESTILOS_ESTADO, ETIQUETAS_ESTADO } from './constants';
 import { useStore } from './useStore';
 
-export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose }: { recipe: Receta, allRecipes: Receta[], insumos: Insumo[], onClose: () => void }) {
+export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, obtenerEtiquetaEstado }: { recipe: Receta, allRecipes: Receta[], insumos: Insumo[], onClose: () => void, obtenerEtiquetaEstado?: (r: Receta) => string }) {
   const { role } = useStore();
   const [tab, setTab] = useState<'info' | 'preparacion' | 'historial' | 'costeo'>('info');
   const [recetaActiva, setRecetaActiva] = useState<Receta>(recipe);
@@ -61,7 +61,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
               <h2 className="text-2xl font-black text-slate-900 tracking-tight leading-tight">{recetaActiva.nombre}</h2>
               <div className="flex items-center gap-2 mt-1">
                 <span className={`text-sm font-black px-2 py-0.5 rounded-full border ${ESTILOS_ESTADO[recetaActiva.estado]}`}>
-                  {ETIQUETAS_ESTADO[recetaActiva.estado].toUpperCase()}
+                  {(obtenerEtiquetaEstado ? obtenerEtiquetaEstado(recetaActiva) : ETIQUETAS_ESTADO[recetaActiva.estado]).toUpperCase()}
                 </span>
                 <span className="text-xs font-black text-slate-600 uppercase tracking-widest bg-white border px-2 py-0.5 rounded-md">v{recetaActiva.versionActual}</span>
               </div>
@@ -247,7 +247,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                 Cronograma de Evolución y Copias
               </h3>
               <div className="relative pl-8 border-l-2 border-slate-100 space-y-6">
-                {versionesGuardadas.map((v: { id: any; versionActual: any; estado: string | number; ultimoRegistroCambios: any; costoTotal: number; ingredientes: string | any[]; }) => (
+                {versionesGuardadas.map((v: any) => (
                   <div key={v.id} className="relative group">
                     <div className={`absolute -left-[37px] top-0 w-8 h-8 ${v.id === recetaActiva.id ? 'bg-indigo-600' : 'bg-slate-200'} text-white rounded-lg flex items-center justify-center font-black text-xs shadow-md transition-colors`}>
                       v{v.versionActual}
@@ -255,7 +255,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose 
                     <div className={`bg-white border rounded-2xl p-5 shadow-sm group-hover:shadow-md transition-all ${v.id === recetaActiva.id ? 'ring-2 ring-indigo-600' : ''}`}>
                       <div className="flex justify-between items-start mb-4">
                         <div>
-                          <p className="text-xs text-slate-600 font-black uppercase tracking-widest">Estado: {ETIQUETAS_ESTADO[v.estado]}</p>
+                          <p className="text-xs text-slate-600 font-black uppercase tracking-widest">Estado: {obtenerEtiquetaEstado ? obtenerEtiquetaEstado(v) : ETIQUETAS_ESTADO[v.estado]}</p>
                           <div className="text-base font-black text-slate-900 mt-0.5 flex items-center gap-2">
                              <span className="text-[8px] text-slate-400 uppercase tracking-widest">ID Único: {v.id}</span>
                              {v.codigoCalidad && <span className="text-[10px] text-business-orange bg-business-mustard/10 border border-business-mustard/30 px-2 py-0.5 rounded uppercase tracking-widest">{v.codigoCalidad}</span>}

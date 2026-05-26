@@ -12,12 +12,18 @@ import { useStore } from './useStore';
 // --- Listas de Referencia ---
 // Ahora se reciben como prop 'areas'
 
-export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role, areas = [], onViewRecipe }: any) {
-  const [datosForm, setDatosForm] = useState<Receta>(recipe);
+export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role, areas = [], onViewRecipe, obtenerEtiquetaEstado }: any) {
+  const [datosForm, setDatosForm] = useState<Receta>(() => {
+    const defaultFlujo = flujosAprobacion?.find((f: any) => f.activo)?.id || flujosAprobacion?.[0]?.id || '';
+    return {
+      ...recipe,
+      flujoAprobacionId: recipe.flujoAprobacionId || defaultFlujo
+    };
+  });
   const [tabActiva, setTabActiva] = useState<'ficha' | 'pasos' | 'historial' | 'costeo'>('ficha');
   const [nuevoPaso, setNuevoPaso] = useState('');
   const [nombreTmp, setNombreTmp] = useState('');
-  const [cantidadIngrediente, setCantidadIngrediente] = useState();
+  const [cantidadIngrediente, setCantidadIngrediente] = useState<number | undefined>(0);
   const [unidadIngrediente, setUnidadIngrediente] = useState('g');
   const [esProductoNuevo, setEsProductoNuevo] = useState(false);
   const [isNew, setIsNew] = useState(false);
@@ -38,6 +44,21 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
   const esChefEditable = useMemo(() => role === 'CHEF' && (datosForm.estado === EstadoReceta.BORRADOR || datosForm.estado === EstadoReceta.APROBADO || datosForm.estado.includes('RECHAZADO')), [datosForm.estado, role]);
   const esCostosEditable = useMemo(() => role === 'COSTOS' && datosForm.estado === EstadoReceta.PENDIENTE_COSTOS, [datosForm.estado, role]);
+
+  // Obtener el estado del primer paso del flujo asignado
+  const estadoInicial = useMemo(() => {
+    const flujoAsignado = flujosAprobacion?.find((f: any) => f.id === datosForm.flujoAprobacionId) || 
+                          flujosAprobacion?.find((f: any) => f.activo) || 
+                          flujosAprobacion?.[0];
+    if (!flujoAsignado || !flujoAsignado.pasos || flujoAsignado.pasos.length === 0) {
+      return EstadoReceta.PENDIENTE_COSTOS;
+    }
+    const pasosOrdenados = [...flujoAsignado.pasos].sort((a: any, b: any) => a.orden - b.orden);
+    const primerPaso = pasosOrdenados[0];
+    if (primerPaso.rolResponsable === 'MKT') return EstadoReceta.PENDIENTE_MKT;
+    if (primerPaso.rolResponsable === 'CALIDAD') return EstadoReceta.PENDIENTE_CALIDAD;
+    return EstadoReceta.PENDIENTE_COSTOS;
+  }, [flujosAprobacion, datosForm.flujoAprobacionId]);
 
   const manejarCambioNetSuite = (termino: string) => {
     setCodigoNetSuite(termino);
@@ -64,7 +85,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
       setIdReferenciaInterno(ins.id);
       setCodigoNetSuite(ins.id);
       setDescripcionDetalle(ins.nombre);
-      setUnidadIngrediente(ins.unidadConsumo || 'unidad');
+      setUnidadIngrediente('g');
 
       let materialType = '';
       if (ins.id) {
@@ -82,7 +103,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
       setNombreInterno(sub.nombre);
       setIdReferenciaInterno(sub.id);
       setDescripcionDetalle(sub.nombre);
-      setUnidadIngrediente('unidad');
+      setUnidadIngrediente('g');
 
       let materialType = '';
       if (sub.id) {
@@ -166,8 +187,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
     setObservaciones('');
     setNombreInterno('');
     setIdReferenciaInterno('');
-    setCantidadIngrediente(1);
-    setUnidadIngrediente('kg');
+    setCantidadIngrediente(0);
+    setUnidadIngrediente('g');
     setTipoMaterialIngrediente('');
     setSeccionRecetaTmp('ENSAMBLE');
     setCostoUnitarioTmp(0);
@@ -357,27 +378,27 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
       <div className="bg-white w-full max-w-6xl rounded-3xl shadow-2xl flex flex-col h-full max-h-[92vh] border-0 overflow-hidden">
 
         {/* ENCABEZADO FIJO */}
-        <div className="p-4 md:p-5 border-b bg-white flex justify-between items-center shrink-0">
-          <div className="flex items-center gap-4">
-            <div className="p-3 bg-emerald-600 text-white rounded-xl shadow-lg shadow-emerald-200">
-              <FileText className="w-6 h-6" />
+        <div className="py-2 px-4 md:px-5 border-b bg-white flex justify-between items-center shrink-0">
+          <div className="flex items-center gap-2.5">
+            <div className="p-1.5 bg-emerald-600 text-white rounded-lg shadow-md shadow-emerald-200">
+              <FileText className="w-4 h-4" />
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl font-black text-slate-900 leading-tight">
+              <h2 className="text-base md:text-lg font-black text-slate-900 leading-tight">
                 {datosForm.detalle_nombre_receta || datosForm.nombre || 'Nueva Receta / Plato'}
               </h2>
-              <div className="flex items-center gap-2 mt-1">
-                <span className={`text-sm font-black px-2 py-0.5 rounded-full border shadow-sm ${ESTILOS_ESTADO[datosForm.estado]}`}>
-                  {ETIQUETAS_ESTADO[datosForm.estado]}
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full border shadow-sm ${ESTILOS_ESTADO[datosForm.estado]}`}>
+                  {obtenerEtiquetaEstado ? obtenerEtiquetaEstado(datosForm) : ETIQUETAS_ESTADO[datosForm.estado]}
                 </span>
-                <span className="text-sm font-black text-slate-600 uppercase tracking-widest bg-slate-50 border px-2 py-0.5 rounded-md">
+                <span className="text-[9px] font-black text-slate-600 uppercase tracking-widest bg-slate-50 border px-1.5 py-0.5 rounded-md">
                   v{datosForm.versionActual}
                 </span>
               </div>
             </div>
           </div>
-          <button onClick={onClose} className="p-2 hover:bg-slate-100 rounded-full transition-all">
-            <X className="w-6 h-6 text-slate-600" />
+          <button onClick={onClose} className="p-1 hover:bg-slate-100 rounded-full transition-all">
+            <X className="w-4.5 h-4.5 text-slate-600" />
           </button>
         </div>
 
@@ -402,79 +423,83 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
           {tabActiva === 'ficha' && (
             <div className="space-y-6 animate-in fade-in">
               {/* --- ENCABEZADO ADMINISTRATIVO --- */}
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5 p-3.5 bg-slate-50/50 border border-slate-100 rounded-2xl shadow-sm">
                 <div className="space-y-1">
-                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Building2 className="w-2.5 h-2.5" /> Subsidiaria</label>
-                  <input type="text" disabled className="w-full p-2 border rounded-lg font-black text-slate-700 bg-slate-100 outline-none text-sm" value={datosForm.subsidiaria} />
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1"><Building2 className="w-2.5 h-2.5" /> Subsidiaria</label>
+                  <input type="text" disabled className="w-full p-1.5 border rounded-lg font-bold text-slate-700 bg-slate-100 outline-none text-xs" value={datosForm.subsidiaria} />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Users className="w-2.5 h-2.5" /> Elaborado por</label>
-                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.elaboradoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, elaboradoPor: e.target.value })} placeholder="Creador..." />
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1"><Users className="w-2.5 h-2.5" /> Elaborado por</label>
+                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.elaboradoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, elaboradoPor: e.target.value })} placeholder="Creador..." />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><BadgeCheck className="w-2.5 h-2.5" /> Aprobado por</label>
-                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.aprobadoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, aprobadoPor: e.target.value })} placeholder="Aprobación..." />
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1"><BadgeCheck className="w-2.5 h-2.5" /> Aprobado por</label>
+                  <input list="personal-datalist" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.aprobadoPor} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, aprobadoPor: e.target.value })} placeholder="Aprobación..." />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Warehouse className="w-2.5 h-2.5" /> Área que Produce</label>
-                  <input list="areas-prod-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.areaProduce} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaProduce: e.target.value })} placeholder="Seleccionar..." />
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1"><Warehouse className="w-2.5 h-2.5" /> Área que Produce</label>
+                  <input list="areas-prod-datalist" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.areaProduce} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaProduce: e.target.value })} placeholder="Seleccionar..." />
                   <datalist id="areas-prod-datalist">
                     {areas.map(a => <option key={a} value={a} />)}
                   </datalist>
                 </div>
                 <div className="space-y-1">
-                  <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Package className="w-2.5 h-2.5" /> Área que Empaca</label>
-                  <input list="areas-emp-datalist" disabled={!esChefEditable} className="w-full p-2 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-sm" value={datosForm.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaEmpaca: e.target.value })} placeholder="Seleccionar..." />
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1"><Package className="w-2.5 h-2.5" /> Área que Empaca</label>
+                  <input list="areas-emp-datalist" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.areaEmpaca} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, areaEmpaca: e.target.value })} placeholder="Seleccionar..." />
                   <datalist id="areas-emp-datalist">
                     {areas.map(a => <option key={a} value={a} />)}
                   </datalist>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="lg:col-span-2 space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest">Nombre del Plato / Receta</label>
-                      <input type="text" disabled={!esChefEditable} value={datosForm.nombre} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, nombre: e.target.value })}
-                        className="w-full p-1.5 border rounded-xl font-black text-md outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm" />
-                    </div>
-                    <div>
-                      <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest">Código NetSuite de la Receta</label>
-                      <input
-                        type="text"
-                        disabled={!esChefEditable}
-                        value={datosForm.codigo_netsuite || ''}
-                        onChange={(e) => setDatosForm({ ...datosForm, codigo_netsuite: e.target.value })}
-                        placeholder="Ej. 95822"
-                        className="w-full p-1.5 border rounded-xl font-bold text-sm outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm"
-                      />
-                    </div>
-                    {datosForm.codigoCalidad && (
-                      <div className="relative">
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest flex items-center gap-1">Código QC <Lock className="w-2.5 h-2.5" /></label>
-                        <div className="w-full p-2.5 border rounded-xl font-black text-lg bg-slate-100 text-slate-700 shadow-inner flex items-center justify-between">
-                          {datosForm.codigoCalidad}
-                          <ShieldCheck className="w-5 h-5 text-emerald-500" />
-                        </div>
-                      </div>
-                    )}
-                    {datosForm.detalle_nombre_receta && (
-                      <div className={datosForm.codigoCalidad ? "" : "md:col-span-2"}>
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest flex items-center gap-1">Nombre Detallado Final (Auto) <BadgeCheck className="w-2.5 h-2.5 text-emerald-500" /></label>
-                        <div className="w-full p-2.5 border border-emerald-100 rounded-xl font-black text-xs bg-emerald-50 text-emerald-900 shadow-inner">
-                          {datosForm.detalle_nombre_receta}
-                        </div>
-                      </div>
-                    )}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-3.5 items-end">
+                <div className="md:col-span-5 space-y-1">
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block">Nombre del Plato / Receta</label>
+                  <input type="text" disabled={!esChefEditable} value={datosForm.nombre} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, nombre: e.target.value })}
+                    className="w-full p-1.5 border rounded-lg font-bold text-xs bg-slate-50/50 focus:bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm transition-all" />
+                </div>
+                <div className="md:col-span-4 space-y-1">
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block">Código NetSuite de la Receta</label>
+                  <input
+                    type="text"
+                    disabled={!esChefEditable}
+                    value={datosForm.codigo_netsuite || ''}
+                    onChange={(e) => setDatosForm({ ...datosForm, codigo_netsuite: e.target.value })}
+                    placeholder="Ej. 95822"
+                    className="w-full p-1.5 border rounded-lg font-bold text-xs bg-slate-50/50 focus:bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm transition-all"
+                  />
+                </div>
+                <div className="md:col-span-3 space-y-1">
+                  <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block">Categorización</label>
+                  <div className="w-full bg-slate-50/50 border border-slate-100 rounded-lg p-1.5 flex items-center gap-2 h-[34px]">
+                    <input type="checkbox" disabled={!esChefEditable} checked={datosForm.esSemielaborado} onChange={(e: { target: { checked: any; }; }) => setDatosForm({ ...datosForm, esSemielaborado: e.target.checked })} className="w-3.5 h-3.5 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" id="semielaborado" />
+                    <label htmlFor="semielaborado" className="cursor-pointer select-none leading-none">
+                      <span className="font-black text-amber-900 uppercase text-[9px] tracking-tight block">Semielaborado</span>
+                      <span className="text-[7.5px] text-slate-500 font-bold uppercase tracking-tight italic block">En transformación</span>
+                    </label>
                   </div>
+                </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                    <div className="md:col-span-2">
-                      <label className="text-sm font-black uppercase text-slate-600 block mb-1 tracking-widest flex items-center gap-1">Flujo de Aprobación</label>
+                {datosForm.detalle_nombre_receta && datosForm.codigoCalidad && (
+                  <>
+                    <div className="md:col-span-5 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Nombre Detallado Final (Auto) <BadgeCheck className="w-2 h-2 text-emerald-500" /></label>
+                      <div className="w-full p-1.5 border border-emerald-100 rounded-lg font-bold text-[10px] bg-emerald-50/50 text-emerald-950 shadow-inner h-[34px] flex items-center">
+                        {datosForm.detalle_nombre_receta}
+                      </div>
+                    </div>
+                    <div className="md:col-span-3 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Código QC <Lock className="w-2 h-2" /></label>
+                      <div className="w-full p-1.5 border rounded-lg font-bold text-xs bg-slate-100 text-slate-700 shadow-inner flex items-center justify-between h-[34px]">
+                        {datosForm.codigoCalidad}
+                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+                      </div>
+                    </div>
+                    <div className="md:col-span-4 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
                       <select
                         disabled={!esChefEditable}
-                        className="w-full p-1.5 border rounded-xl font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-sm text-slate-700"
+                        className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
                         value={datosForm.flujoAprobacionId || ''}
                         onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
                       >
@@ -486,34 +511,97 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         )}
                       </select>
                     </div>
-                  </div>
-                </div>
+                  </>
+                )}
 
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 h-fit space-y-3">
-                  <h4 className="text-sm font-black uppercase text-slate-600 tracking-widest">Categorización</h4>
-                  <div className="flex items-center gap-3">
-                    <input type="checkbox" disabled={!esChefEditable} checked={datosForm.esSemielaborado} onChange={(e: { target: { checked: any; }; }) => setDatosForm({ ...datosForm, esSemielaborado: e.target.checked })} className="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" id="semielaborado" />
-                    <label htmlFor="semielaborado" className="cursor-pointer select-none">
-                      <p className="font-black text-amber-900 uppercase text-sm tracking-tighter">Semielaborado</p>
-                      <p className="text-sm text-slate-700 mt-0 font-bold uppercase tracking-tighter italic">En transformación</p>
-                    </label>
+                {datosForm.detalle_nombre_receta && !datosForm.codigoCalidad && (
+                  <>
+                    <div className="md:col-span-6 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Nombre Detallado Final (Auto) <BadgeCheck className="w-2 h-2 text-emerald-500" /></label>
+                      <div className="w-full p-1.5 border border-emerald-100 rounded-lg font-bold text-[10px] bg-emerald-50/50 text-emerald-950 shadow-inner h-[34px] flex items-center">
+                        {datosForm.detalle_nombre_receta}
+                      </div>
+                    </div>
+                    <div className="md:col-span-6 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
+                      <select
+                        disabled={!esChefEditable}
+                        className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
+                        value={datosForm.flujoAprobacionId || ''}
+                        onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
+                      >
+                        {flujosAprobacion?.map((f: any) => (
+                          <option key={f.id} value={f.id}>{f.nombre}</option>
+                        ))}
+                        {(!flujosAprobacion || flujosAprobacion.length === 0) && (
+                          <option value="">(Sin flujos disponibles)</option>
+                        )}
+                      </select>
+                    </div>
+                  </>
+                )}
+
+                {!datosForm.detalle_nombre_receta && datosForm.codigoCalidad && (
+                  <>
+                    <div className="md:col-span-4 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Código QC <Lock className="w-2 h-2" /></label>
+                      <div className="w-full p-1.5 border rounded-lg font-bold text-xs bg-slate-100 text-slate-700 shadow-inner flex items-center justify-between h-[34px]">
+                        {datosForm.codigoCalidad}
+                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+                      </div>
+                    </div>
+                    <div className="md:col-span-8 space-y-1">
+                      <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
+                      <select
+                        disabled={!esChefEditable}
+                        className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
+                        value={datosForm.flujoAprobacionId || ''}
+                        onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
+                      >
+                        {flujosAprobacion?.map((f: any) => (
+                          <option key={f.id} value={f.id}>{f.nombre}</option>
+                        ))}
+                        {(!flujosAprobacion || flujosAprobacion.length === 0) && (
+                          <option value="">(Sin flujos disponibles)</option>
+                        )}
+                      </select>
+                    </div>
+                  </>
+                )}
+
+                {!datosForm.detalle_nombre_receta && !datosForm.codigoCalidad && (
+                  <div className="md:col-span-12 space-y-1">
+                    <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
+                    <select
+                      disabled={!esChefEditable}
+                      className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
+                      value={datosForm.flujoAprobacionId || ''}
+                      onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
+                    >
+                      {flujosAprobacion?.map((f: any) => (
+                        <option key={f.id} value={f.id}>{f.nombre}</option>
+                      ))}
+                      {(!flujosAprobacion || flujosAprobacion.length === 0) && (
+                        <option value="">(Sin flujos disponibles)</option>
+                      )}
+                    </select>
                   </div>
-                </div>
+                )}
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-lg font-black text-slate-900 tracking-tight flex items-center gap-2"><Calculator className="w-5 h-5 text-emerald-600" /> Matriz de Costeo Técnica</h3>
+              <div className="space-y-3">
+                <h3 className="text-base font-black text-slate-900 tracking-tight flex items-center gap-2"><Calculator className="w-5 h-5 text-emerald-600" /> Matriz de Costeo Técnica</h3>
 
                 {esChefEditable && (
-                  <div className="space-y-3 p-4 bg-slate-900 rounded-2xl border shadow-xl">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+                  <div className="space-y-3 p-3 bg-slate-900 rounded-xl border shadow-xl">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-2.5">
                       <div className="md:col-span-1">
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Insumo / SubReceta</label>
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Insumo / SubReceta</label>
                         <input
                           list="netsuite-datalist"
                           value={codigoNetSuite}
                           placeholder="Buscar por código Insumo o Nombre..."
-                          className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs"
+                          className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px]"
                           onChange={(e) => {
                             const value = e.target.value;
                             manejarCambioNetSuite(value);
@@ -528,52 +616,52 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </datalist>
                       </div>
                       <div>
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Tipo Insumo</label>
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Tipo Insumo</label>
                         <input
                           disabled
-                          className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-emerald-400 text-xs text-center uppercase tracking-widest cursor-not-allowed"
+                          className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-emerald-400 text-[10px] text-center uppercase tracking-widest cursor-not-allowed"
                           value={esProductoNuevo ? 'Nuevo' : (codigoNetSuite ? 'Existente' : '-')}
                         />
                       </div>
                       <div>
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Marca</label>
-                        <input placeholder="Marca" className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={marca} onChange={(e: { target: { value: any; }; }) => setMarca(e.target.value)} />
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Marca</label>
+                        <input placeholder="Marca" className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px]" value={marca} onChange={(e: { target: { value: any; }; }) => setMarca(e.target.value)} />
                       </div>
                       <div>
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Descripción</label>
-                        <input placeholder="Descripción..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={descripcionDetalle} onChange={(e: { target: { value: any; }; }) => setDescripcionDetalle(e.target.value)} />
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Descripción</label>
+                        <input placeholder="Descripción..." className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px]" value={descripcionDetalle} onChange={(e: { target: { value: any; }; }) => setDescripcionDetalle(e.target.value)} />
                       </div>
                       {(!codigoNetSuite || esProductoNuevo) && (
                         <div>
-                          <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest flex items-center gap-1">Costo Unitario <span className="text-rose-500">*</span></label>
-                          <input type="number" placeholder="0.00" className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={costoUnitarioTmp} onChange={(e) => setCostoUnitarioTmp(Number(e.target.value))} />
+                          <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest flex items-center gap-1">Costo Unitario <span className="text-rose-500">*</span></label>
+                          <input type="number" placeholder="0.00" className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px]" value={costoUnitarioTmp} onChange={(e) => setCostoUnitarioTmp(Number(e.target.value))} />
                         </div>
                       )}
                     </div>
                     {esProductoNuevo && (
-                      <div className="bg-rose-500/10 border border-rose-500/20 p-2 rounded-lg mt-2 mb-2 flex items-center gap-2">
-                        <AlertCircle className="w-4 h-4 text-rose-400" />
-                        <span className="text-xs font-bold text-rose-300">
+                      <div className="bg-rose-500/10 border border-rose-500/20 p-2 rounded-lg mt-1 mb-1 flex items-center gap-2">
+                        <AlertCircle className="w-3.5 h-3.5 text-rose-400" />
+                        <span className="text-[10px] font-bold text-rose-300">
                           Estás creando un Insumo Nuevo. Asegúrate de proporcionar una <strong className="text-white">Descripción</strong> clara. Este insumo se guardará posteriormente en tu catálogo al guardar.
                         </span>
                       </div>
                     )}
-                    <div className="grid grid-cols-1 md:grid-cols-6 gap-3">
+                    <div className="grid grid-cols-1 md:grid-cols-6 gap-2.5">
                       <div className="md:col-span-2">
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Observaciones</label>
-                        <input placeholder="Notas..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={observaciones} onChange={(e: { target: { value: any; }; }) => setObservaciones(e.target.value)} />
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Observaciones</label>
+                        <input placeholder="Notas..." className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px]" value={observaciones} onChange={(e: { target: { value: any; }; }) => setObservaciones(e.target.value)} />
                       </div>
                       <div>
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Cant.</label>
-                        <input type="number" value={cantidadIngrediente} onChange={(e: { target: { value: any; }; }) => setCantidadIngrediente(Number(e.target.value))} className="w-full p-2 border-none rounded-lg font-black text-emerald-300 bg-slate-800 text-xs" />
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Cant.</label>
+                        <input type="number" value={cantidadIngrediente} onChange={(e: { target: { value: any; }; }) => setCantidadIngrediente(Number(e.target.value))} className="w-full p-1.5 border-none rounded-lg font-black text-emerald-300 bg-slate-800 text-[10px]" />
                       </div>
                       <div>
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">U.M.</label>
-                        <select value={unidadIngrediente} onChange={(e: { target: { value: any; }; }) => setUnidadIngrediente(e.target.value)} className="w-full p-2 border-none rounded-lg bg-slate-800 font-bold text-white outline-none text-xs">{UNIDADES.map(u => <option key={u} value={u}>{u}</option>)}</select>
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">U.M.</label>
+                        <select value={unidadIngrediente} onChange={(e: { target: { value: any; }; }) => setUnidadIngrediente(e.target.value)} className="w-full p-1.5 border-none rounded-lg bg-slate-800 font-bold text-white outline-none text-[10px]">{UNIDADES.map(u => <option key={u} value={u}>{u}</option>)}</select>
                       </div>
                       <div className="md:col-span-1">
-                        <label className="text-sm font-black uppercase text-slate-600 block mb-0.5 tracking-widest">Tipo Material</label>
-                        <input list="tipo-material-list" placeholder="Ej. Materia Prima..." className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs" value={tipoMaterialIngrediente} onChange={(e: { target: { value: any; }; }) => setTipoMaterialIngrediente(e.target.value)} />
+                        <label className="text-xs font-black uppercase text-slate-400 block mb-0.5 tracking-widest">Tipo Material</label>
+                        <input list="tipo-material-list" placeholder="Ej. Materia Prima..." className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px]" value={tipoMaterialIngrediente} onChange={(e: { target: { value: any; }; }) => setTipoMaterialIngrediente(e.target.value)} />
                         <datalist id="tipo-material-list">
                           <option value="Materia Prima" />
                           <option value="Semielaborado" />
@@ -582,9 +670,9 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                         </datalist>
                       </div>
                       <div className="md:col-span-1">
-                        <label className="text-sm font-black uppercase text-amber-500 block mb-0.5 tracking-widest">Sección Receta</label>
+                        <label className="text-xs font-black uppercase text-amber-500 block mb-0.5 tracking-widest">Sección Receta</label>
                         <select
-                          className="w-full p-2 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-xs uppercase"
+                          className="w-full p-1.5 border-none rounded-lg font-bold outline-none bg-slate-800 text-white text-[10px] uppercase"
                           value={seccionRecetaTmp}
                           onChange={(e) => setSeccionRecetaTmp(e.target.value as any)}
                         >
@@ -595,19 +683,19 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                       </div>
                     </div>
                     <div className="flex justify-between items-center pt-2 border-t border-slate-800">
-                      <div className="flex items-center gap-2">
-                        <input type="checkbox" id="es-nuevo-v4" className="w-3.5 h-3.5 rounded text-rose-500 accent-rose-500 cursor-pointer" checked={esProductoNuevo} onChange={(e: { target: { checked: any; }; }) => setEsProductoNuevo(e.target.checked)} />
-                        <label htmlFor="es-nuevo-v4" className="text-sm font-black uppercase text-slate-600 cursor-pointer tracking-wider">Insumo Nuevo</label>
+                      <div className="flex items-center gap-1.5">
+                        <input type="checkbox" id="es-nuevo-v4" className="w-3 h-3 rounded text-rose-500 accent-rose-500 cursor-pointer" checked={esProductoNuevo} onChange={(e: { target: { checked: any; }; }) => setEsProductoNuevo(e.target.checked)} />
+                        <label htmlFor="es-nuevo-v4" className="text-xs font-black uppercase text-slate-400 cursor-pointer tracking-wider">Insumo Nuevo</label>
                       </div>
-                      <button onClick={agregarIngrediente} className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-black text-xs uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">AÑADIR LINEA</button>
+                      <button onClick={agregarIngrediente} className="bg-emerald-600 text-white px-5 py-1.5 rounded-lg font-black text-[10px] uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">AÑADIR LINEA</button>
 
                     </div>
                   </div>
                 )}
 
                 <div className="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
-                  <table className="w-full text-left text-sm">
-                    <thead className="bg-slate-50 text-slate-600 font-black uppercase tracking-widest">
+                  <table className="w-full text-left text-xs">
+                    <thead className="bg-slate-50 text-slate-600 font-black uppercase tracking-widest text-[10px]">
                       <tr className="border-b">
                         <th className="px-4 py-2">Insumo / Descripción</th>
                         <th className="px-4 py-2 text-center">Códigos</th>
@@ -632,19 +720,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                             </td>
                           </tr>
 
-                          {seccion.data.map((ing: {
-                            id: any;
-                            nombre: any;
-                            descripcionIngrediente: any;
-                            observaciones: any;
-                            codigoICG: any;
-                            codigoNetSuite: any;
-                            marca: any;
-                            cantidad: any;
-                            unidad: any;
-                            costoUnitario: number | null;
-                            costoTotal: number | null;
-                          }) => (
+                          {seccion.data.map((ing: any) => (
                             <tr key={ing.id ?? `${ing.nombre}-${Math.random()}`} className="hover:bg-slate-50 transition-colors align-top group">
 
                               <td className="px-4 py-2">
@@ -882,27 +958,27 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   </table>
                 </div>
 
-                <div className="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-6">
-                  <div className="flex items-center gap-3 border-b border-slate-200 pb-3">
-                    <div className="p-2 bg-emerald-600 text-white rounded-xl shadow-md"><Dna className="w-4 h-4" /></div>
+                <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-4">
+                  <div className="flex items-center gap-2.5 border-b border-slate-200 pb-2">
+                    <div className="p-1.5 bg-emerald-600 text-white rounded-lg shadow-md"><Dna className="w-3.5 h-3.5" /></div>
                     <div>
-                      <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Rendimiento y Producción</h4>
-                      <p className="text-sm font-bold text-slate-700 uppercase tracking-widest italic opacity-75">Indicadores técnicos de salida</p>
+                      <h4 className="text-base font-black text-slate-900 uppercase tracking-tight">Rendimiento y Producción</h4>
+                      <p className="text-xs font-bold text-slate-700 uppercase tracking-widest italic opacity-75">Indicadores técnicos de salida</p>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
 
 
                     {/* Peso Total Obtenido */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5" /> Peso Total</label>
-                      <div className="flex gap-1.5">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.pesoTotalCantidad || ''} onChange={(e) => {
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Scale className="w-2 h-2" /> Peso Total</label>
+                      <div className="flex gap-1">
+                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.pesoTotalCantidad || ''} onChange={(e) => {
                           const val = Number(e.target.value);
-                          setDatosForm({ ...datosForm, pesoTotalCantidad: val, pesoPorcionCantidad: val * (datosForm.porcionesCantidad || 0), mermaCantidad: (datosForm.sumaTotalInsumos || 0) - val });
+                          setDatosForm({ ...datosForm, pesoTotalCantidad: val, pesoPorcionCantidad: datosForm.porcionesCantidad ? (val / datosForm.porcionesCantidad) : 0, mermaCantidad: (datosForm.sumaTotalInsumos || 0) - val });
                         }} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.pesoTotalUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoTotalUnidad: e.target.value })}>
+                        <select disabled={!esChefEditable} className="p-1.5 border rounded-lg font-bold bg-white outline-none text-xs" value={datosForm.pesoTotalUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoTotalUnidad: e.target.value })}>
                           {['g', 'kg', 'L', 'ml'].map(u => <option key={u} value={u}>{u}</option>)}
                         </select>
                       </div>
@@ -910,29 +986,32 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Merma */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> Merma</label>
-                      <div className="flex gap-1.5">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.mermaCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, mermaCantidad: Number(e.target.value) })} />
-                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-700 text-sm flex items-center justify-center w-12">g</span>
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2 h-2 text-rose-500" /> Merma</label>
+                      <div className="flex gap-1">
+                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.mermaCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, mermaCantidad: Number(e.target.value) })} />
+                        <span className="p-1.5 border rounded-lg font-bold bg-slate-100 text-slate-700 text-xs flex items-center justify-center w-10">g</span>
                       </div>
                     </div>
                     {/* Suma Total Insumos */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-500" /> Insumos Totales</label>
-                      <div className="flex gap-1.5">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.sumaTotalInsumos || ''} onChange={(e) => {
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Scale className="w-2 h-2 text-emerald-500" /> Insumos Totales</label>
+                      <div className="flex gap-1">
+                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.sumaTotalInsumos || ''} onChange={(e) => {
                           const val = Number(e.target.value);
                           setDatosForm({ ...datosForm, sumaTotalInsumos: val, mermaCantidad: val - (datosForm.pesoTotalCantidad || 0) });
                         }} />
-                        <span className="p-2 border rounded-xl font-bold bg-slate-100 text-slate-700 text-sm flex items-center justify-center w-12">g</span>
+                        <span className="p-1.5 border rounded-lg font-bold bg-slate-100 text-slate-700 text-xs flex items-center justify-center w-10">g</span>
                       </div>
                     </div>
                     {/* Cantidad de Porciones */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Layers className="w-2.5 h-2.5" /> Porciones</label>
-                      <div className="flex gap-1.5">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.porcionesCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, porcionesCantidad: Number(e.target.value), pesoPorcionCantidad: (datosForm.pesoTotalCantidad || 0) * Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.porcionesUnidad || 'porciones'} onChange={(e) => setDatosForm({ ...datosForm, porcionesUnidad: e.target.value })}>
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Layers className="w-2 h-2" /> Porciones</label>
+                      <div className="flex gap-1">
+                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.porcionesCantidad || ''} onChange={(e) => {
+                          const val = Number(e.target.value);
+                          setDatosForm({ ...datosForm, porcionesCantidad: val, pesoPorcionCantidad: val ? ((datosForm.pesoTotalCantidad || 0) / val) : 0 });
+                        }} />
+                        <select disabled={!esChefEditable} className="p-1.5 border rounded-lg font-bold bg-white outline-none text-xs" value={datosForm.porcionesUnidad || 'porciones'} onChange={(e) => setDatosForm({ ...datosForm, porcionesUnidad: e.target.value })}>
                           <option value="porciones">porciones</option>
                           <option value="unidades">tandas</option>
 
@@ -942,10 +1021,10 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Peso por Porción */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Scale className="w-2.5 h-2.5 text-emerald-400" /> Peso X Porción</label>
-                      <div className="flex gap-1.5">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.pesoPorcionCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionCantidad: Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.pesoPorcionUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionUnidad: e.target.value })}>
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Scale className="w-2 h-2 text-emerald-400" /> Peso X Porción</label>
+                      <div className="flex gap-1">
+                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.pesoPorcionCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionCantidad: Number(e.target.value) })} />
+                        <select disabled={!esChefEditable} className="p-1.5 border rounded-lg font-bold bg-white outline-none text-xs" value={datosForm.pesoPorcionUnidad || 'g'} onChange={(e) => setDatosForm({ ...datosForm, pesoPorcionUnidad: e.target.value })}>
                           {['g', 'kg', 'L', 'ml'].map(u => <option key={u} value={u}>{u}</option>)}
                         </select>
                       </div>
@@ -953,10 +1032,10 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Tiempo de Preparación */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Prep.</label>
-                      <div className="flex gap-1.5">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tiempoPrepCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepCantidad: Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.tiempoPrepUnidad || 'min'} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepUnidad: e.target.value })}>
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Timer className="w-2 h-2" /> Tiempo Prep.</label>
+                      <div className="flex gap-1">
+                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.tiempoPrepCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepCantidad: Number(e.target.value) })} />
+                        <select disabled={!esChefEditable} className="p-1.5 border rounded-lg font-bold bg-white outline-none text-xs" value={datosForm.tiempoPrepUnidad || 'min'} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepUnidad: e.target.value })}>
                           {['min', 'horas'].map(u => <option key={u} value={u}>{u}</option>)}
                         </select>
                       </div>
@@ -964,8 +1043,8 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Tipo Costeo */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Coins className="w-2.5 h-2.5" /> Tipo Costeo</label>
-                      <select disabled={!esChefEditable && !esCostosEditable} className="w-full p-2 border rounded-xl font-bold bg-white outline-none text-sm" value={datosForm.tipoCosteo || 'GRAMO'} onChange={(e) => setDatosForm({ ...datosForm, tipoCosteo: e.target.value as any })}>
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Coins className="w-2 h-2" /> Tipo Costeo</label>
+                      <select disabled={!esChefEditable && !esCostosEditable} className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none text-xs" value={datosForm.tipoCosteo || 'GRAMO'} onChange={(e) => setDatosForm({ ...datosForm, tipoCosteo: e.target.value as any })}>
                         <option value="GRAMO">Por Gramo</option>
                         <option value="UNIDAD">Por Unidad</option>
                       </select>
@@ -973,26 +1052,26 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                     {/* Tiempo de Proceso */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Timer className="w-2.5 h-2.5" /> Tiempo Proceso (Min)</label>
-                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tiempoProcesoMinutos || 0} onChange={(e) => setDatosForm({ ...datosForm, tiempoProcesoMinutos: Number(e.target.value) })} />
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Timer className="w-2 h-2" /> Tiempo Proceso (Min)</label>
+                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.tiempoProcesoMinutos || 0} onChange={(e) => setDatosForm({ ...datosForm, tiempoProcesoMinutos: Number(e.target.value) })} />
                     </div>
 
                     {/* % Desecho */}
                     <div className="space-y-1">
-                      <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2.5 h-2.5 text-rose-500" /> % Desecho</label>
-                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.porcentajeDesecho ?? 2} onChange={(e) => setDatosForm({ ...datosForm, porcentajeDesecho: Number(e.target.value) })} step="0.1" />
+                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2 h-2 text-rose-500" /> % Desecho</label>
+                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.porcentajeDesecho ?? 2} onChange={(e) => setDatosForm({ ...datosForm, porcentajeDesecho: Number(e.target.value) })} step="0.1" />
                     </div>
 
                     {/* Tasas MUDI / GIF (Solo visible para COSTOS/ADMIN) */}
                     {(role === 'COSTOS' || role === 'ADMIN') && (
                       <>
                         <div className="space-y-1">
-                          <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><HandCoins className="w-2.5 h-2.5" /> Tasa MODI (x Min)</label>
-                          <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tasaMUDI ?? 77} onChange={(e) => setDatosForm({ ...datosForm, tasaMUDI: Number(e.target.value) })} />
+                          <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><HandCoins className="w-2 h-2" /> Tasa MODI (x Min)</label>
+                          <input type="number" disabled={!esCostosEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.tasaMUDI ?? 77} onChange={(e) => setDatosForm({ ...datosForm, tasaMUDI: Number(e.target.value) })} />
                         </div>
                         <div className="space-y-1">
-                          <label className="text-sm font-black uppercase text-slate-600 tracking-widest block flex items-center gap-1"><Factory className="w-2.5 h-2.5" /> Tasa GIF (x Min)</label>
-                          <input type="number" disabled={!esCostosEditable} className="w-full p-2 border rounded-xl font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-xs" value={datosForm.tasaGIF ?? 83} onChange={(e) => setDatosForm({ ...datosForm, tasaGIF: Number(e.target.value) })} />
+                          <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Factory className="w-2 h-2" /> Tasa GIF (x Min)</label>
+                          <input type="number" disabled={!esCostosEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.tasaGIF ?? 83} onChange={(e) => setDatosForm({ ...datosForm, tasaGIF: Number(e.target.value) })} />
                         </div>
                       </>
                     )}
@@ -1000,30 +1079,30 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                   {/* Resultados de Costeo (Solo visibles para COSTOS) */}
                   {(role === 'COSTOS' || role === 'ADMIN') && (
-                    <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 p-5 bg-emerald-50/50 rounded-[2rem] border border-emerald-100 border-dashed animate-in fade-in zoom-in duration-500">
+                    <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100 border-dashed animate-in fade-in zoom-in duration-500">
                       <div className="space-y-1">
                         <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Mat. + Emp.</p>
-                        <p className="text-sm font-black text-emerald-900">₡{((costeoProyectado.totalMP || 0) + (costeoProyectado.totalEMP || 0)).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
+                        <p className="text-xs font-black text-emerald-900">₡{((costeoProyectado.totalMP || 0) + (costeoProyectado.totalEMP || 0)).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
                         <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Desecho ({datosForm.porcentajeDesecho ?? 2}%)</p>
-                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.costoDesecho || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
+                        <p className="text-xs font-black text-emerald-900">₡{(costeoProyectado.costoDesecho || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
                         <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">M.O.D.</p>
-                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.totalMUDI || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
+                        <p className="text-xs font-black text-emerald-900">₡{(costeoProyectado.totalMUDI || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
                       <div className="space-y-1">
                         <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">G.I.F.</p>
-                        <p className="text-sm font-black text-emerald-900">₡{(costeoProyectado.gif || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
+                        <p className="text-xs font-black text-emerald-900">₡{(costeoProyectado.gif || 0).toLocaleString('es-CR', { maximumFractionDigits: 2 })}</p>
                       </div>
-                      <div className="space-y-1 bg-white p-2 rounded-xl shadow-sm border border-emerald-100">
+                      <div className="space-y-1 bg-white p-1.5 rounded-lg shadow-sm border border-emerald-100">
                         <p className="text-[7px] font-black text-slate-600 uppercase tracking-widest">Total Planta</p>
-                        <p className="text-xl font-black text-emerald-600 leading-none">{(costeoProyectado.costoTotalFinal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p>
+                        <p className="text-lg font-black text-emerald-600 leading-none">{(costeoProyectado.costoTotalFinal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p>
                       </div>
-                      <div className="space-y-1 bg-slate-900 p-2 rounded-xl shadow-sm border border-slate-800">
+                      <div className="space-y-1 bg-slate-900 p-1.5 rounded-lg shadow-sm border border-slate-800">
                         <p className="text-[7px] font-black text-emerald-400 uppercase tracking-widest">Costo / {datosForm.tipoCosteo}</p>
-                        <p className="text-xl font-black text-white leading-none">₡{((costeoProyectado.costoTotalFinal || 0) / (datosForm.tipoCosteo === 'GRAMO' ? (datosForm.pesoTotalCantidad || 1) : (datosForm.porcionesCantidad || 1))).toLocaleString('es-CR', { maximumFractionDigits: 4 })}</p>
+                        <p className="text-lg font-black text-white leading-none">₡{((costeoProyectado.costoTotalFinal || 0) / (datosForm.tipoCosteo === 'GRAMO' ? (datosForm.pesoTotalCantidad || 1) : (datosForm.porcionesCantidad || 1))).toLocaleString('es-CR', { maximumFractionDigits: 4 })}</p>
                       </div>
                     </div>
                   )}
@@ -1034,17 +1113,17 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
           {tabActiva === 'pasos' && (
             <div className="max-w-4xl mx-auto space-y-4 animate-in slide-in-from-bottom duration-500">
-              <div className="flex justify-between items-center bg-emerald-600 p-4 rounded-3xl shadow-md text-white">
-                <div className="flex items-center gap-3">
-                  <Sparkles className="w-6 h-6" />
-                  <div><h4 className="text-sm font-black uppercase tracking-tight">IA Culinary Engine</h4><p className="text-sm opacity-80">Refina tus procesos con inteligencia artificial gastronómica.</p></div>
+              <div className="flex justify-between items-center bg-emerald-600 p-3 rounded-2xl shadow-md text-white">
+                <div className="flex items-center gap-2.5">
+                  <Sparkles className="w-5 h-5" />
+                  <div><h4 className="text-xs font-black uppercase tracking-tight">IA Culinary Engine</h4><p className="text-xs opacity-80">Refina tus procesos con inteligencia artificial gastronómica.</p></div>
                 </div>
                 <button onClick={async () => {
                   setEstaOptimizando(true);
                   const opt = await optimizarPasosReceta(datosForm.nombre, datosForm.ingredientes.map((i: { nombre: any; }) => i.nombre));
                   if (opt) setDatosForm({ ...datosForm, pasos: opt });
                   setEstaOptimizando(false);
-                }} disabled={estaOptimizando || !datosForm.nombre} className="bg-white text-emerald-600 px-4 py-1.5 rounded-xl font-black text-xs uppercase shadow-sm transition-all disabled:opacity-50">{estaOptimizando ? 'Procesando...' : 'Optimizar Pasos'}</button>
+                }} disabled={estaOptimizando || !datosForm.nombre} className="bg-white text-emerald-600 px-3.5 py-1.5 rounded-lg font-black text-[10px] uppercase shadow-sm transition-all disabled:opacity-50">{estaOptimizando ? 'Procesando...' : 'Optimizar Pasos'}</button>
               </div>
 
               <div className="space-y-3">
@@ -1079,32 +1158,32 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
           {tabActiva === 'historial' && (
             <div className="max-w-4xl mx-auto space-y-6 animate-in fade-in duration-500">
-              <div className="p-6 bg-emerald-50 border-2 border-dashed border-emerald-100 rounded-3xl text-center">
-                <History className="w-10 h-10 text-emerald-300 mx-auto mb-4" />
-                <h4 className="text-lg font-black text-emerald-900 uppercase tracking-tight">Trazabilidad Técnica de Cambios</h4>
-                <p className="text-xs text-emerald-500 font-medium mt-1">Sello de inmutabilidad operativa y registro de certificaciones QC.</p>
+              <div className="p-4 bg-emerald-50 border-2 border-dashed border-emerald-100 rounded-2xl text-center">
+                <History className="w-8 h-8 text-emerald-300 mx-auto mb-2" />
+                <h4 className="text-base font-black text-emerald-900 uppercase tracking-tight">Trazabilidad Técnica de Cambios</h4>
+                <p className="text-[10px] text-emerald-500 font-medium mt-1">Sello de inmutabilidad operativa y registro de certificaciones QC.</p>
               </div>
 
               <div className="space-y-4">
                 {datosForm.versiones.slice().reverse().map((v: { numeroVersion: any; fechaAprobacion: any; aprobadoPorCostos: any; codigoCalidad: any; registroCambios: any; }, i: any) => (
-                  <div key={i} className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-3 bg-emerald-600 text-white font-black text-xs uppercase tracking-widest rounded-bl-2xl">Certificado</div>
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="p-3 bg-slate-100 rounded-xl group-hover:bg-emerald-100 transition-colors"><BadgeCheck className="w-6 h-6 text-emerald-600" /></div>
-                      <div><h4 className="text-xl font-black text-slate-900">Versión {v.numeroVersion}</h4><p className="text-xs font-black text-slate-600 uppercase tracking-widest mt-0.5">Auditado el {v.fechaAprobacion}</p></div>
+                  <div key={i} className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm relative overflow-hidden group">
+                    <div className="absolute top-0 right-0 p-2 bg-emerald-600 text-white font-black text-[10px] uppercase tracking-widest rounded-bl-xl">Certificado</div>
+                    <div className="flex items-center gap-3.5 mb-4">
+                      <div className="p-2 bg-slate-100 rounded-lg group-hover:bg-emerald-100 transition-colors"><BadgeCheck className="w-5 h-5 text-emerald-600" /></div>
+                      <div><h4 className="text-lg font-black text-slate-900">Versión {v.numeroVersion}</h4><p className="text-[10px] font-black text-slate-600 uppercase tracking-widest mt-0.5">Auditado el {v.fechaAprobacion}</p></div>
                     </div>
-                    <div className="grid grid-cols-2 gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div className="grid grid-cols-2 gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-100">
                       <div>
-                        <p className="text-sm font-black text-slate-600 uppercase tracking-widest mb-1">ID Auditor Costos</p>
-                        <p className="font-bold text-sm text-slate-600">{v.aprobadoPorCostos || 'S/D'}</p>
+                        <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-1">ID Auditor Costos</p>
+                        <p className="font-bold text-xs text-slate-600">{v.aprobadoPorCostos || 'S/D'}</p>
                       </div>
                       <div>
-                        <p className="text-sm font-black text-slate-600 uppercase tracking-widest mb-1">Código QC de Control</p>
-                        <p className="font-black text-emerald-600 text-sm">{v.codigoCalidad || 'S/D'}</p>
+                        <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-1">Código QC de Control</p>
+                        <p className="font-black text-emerald-600 text-xs">{v.codigoCalidad || 'S/D'}</p>
                       </div>
-                      <div className="col-span-2 pt-3 border-t border-slate-200">
-                        <p className="text-sm font-black text-slate-600 uppercase tracking-widest mb-1.5">Registro de Cambios</p>
-                        <p className="text-xs font-medium text-slate-700 italic">"{v.registroCambios || 'Sin cambios registrados'}"</p>
+                      <div className="col-span-2 pt-2.5 border-t border-slate-200">
+                        <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-1">Registro de Cambios</p>
+                        <p className="text-[10px] font-medium text-slate-700 italic">"{v.registroCambios || 'Sin cambios registrados'}"</p>
                       </div>
                     </div>
                   </div>
@@ -1120,12 +1199,12 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
             <div className="mx-auto w-full max-w-6xl space-y-4 animate-in fade-in duration-500 overflow-x-auto text-sm bg-slate-50 p-4 border rounded-2xl">
               
               {costeoProyectado.tieneSEBruto && (
-                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-xl shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <AlertCircle className="w-5 h-5 text-amber-600" />
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-3 mb-4 rounded-r-lg shadow-sm">
+                  <div className="flex items-center gap-2.5">
+                    <AlertCircle className="w-4 h-4 text-amber-600" />
                     <div>
-                      <h4 className="text-amber-800 font-bold text-xs uppercase">Datos Estructurales Pendientes (NetSuite)</h4>
-                      <p className="text-amber-700 text-xs">Uno o más ingredientes tipo Semielaborado (SE) provienen de NetSuite y aún no cuentan con los campos desglosados (MP, EMP, MODI) en la base de datos externa. Por defecto, su precio total (AverageCost) se está agrupando de forma bruta en el <strong>TOTAL MATERIA PRIMA</strong>. Una vez se actualice NetSuite, los costos se redistribuirán automáticamente.</p>
+                      <h4 className="text-amber-800 font-bold text-[10px] uppercase">Datos Estructurales Pendientes (NetSuite)</h4>
+                      <p className="text-amber-700 text-[10px] leading-tight">Uno o más ingredientes tipo Semielaborado (SE) provienen de NetSuite y aún no cuentan con los campos desglosados (MP, EMP, MODI) en la base de datos externa. Por defecto, su precio total (AverageCost) se está agrupando de forma bruta en el <strong>TOTAL MATERIA PRIMA</strong>. Una vez se actualice NetSuite, los costos se redistribuirán automáticamente.</p>
                     </div>
                   </div>
                 </div>
@@ -1337,7 +1416,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               {/* Tablas Costo por Gramo / Unidad */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6">
                 <div>
-                  <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR GRAMO</h4>
+                  <h4 className="text-blue-700 font-bold text-[14px] uppercase border-b-2 border-blue-100 mb-2">COSTO POR GRAMO</h4>
                   <table className="w-full text-right text-sm font-bold uppercase mb-6">
                     <tbody>
                       <tr>
@@ -1383,7 +1462,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 </div>
 
                 <div>
-                  <h4 className="text-blue-700 font-bold uppercase border-b-2 border-blue-100 mb-2">COSTO POR UNIDAD</h4>
+                  <h4 className="text-blue-700 font-bold text-[14px] uppercase border-b-2 border-blue-100 mb-2">COSTO POR UNIDAD</h4>
                   <table className="w-full text-right text-sm font-bold uppercase">
                     <tbody>
                       <tr>
@@ -1433,7 +1512,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   Salir de Edición
                 </button>
                 <button
-                  onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.PENDIENTE_COSTOS })}
+                  onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: datosForm.estado })}
                   className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all"
                 >
                   Guardar Avance de Costos
@@ -1445,7 +1524,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 {esChefEditable && (
                   <>
                     <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.BORRADOR })} className="flex-1 md:flex-none px-6 py-2.5 bg-slate-100 text-slate-700 font-black uppercase text-sm tracking-widest rounded-xl shadow-sm hover:bg-slate-200 transition-all">Borrador</button>
-                    <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: EstadoReceta.PENDIENTE_COSTOS })} className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all">Enviar a Revisión</button>
+                    <button onClick={() => onSave({ ...datosForm, ...costeoProyectado, costoTotal: costeoProyectado.costoTotalFinal, estado: estadoInicial })} className="flex-1 md:flex-none px-8 py-2.5 bg-emerald-600 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 active:scale-95 transition-all">Enviar a Revisión</button>
                   </>
                 )}
               </>

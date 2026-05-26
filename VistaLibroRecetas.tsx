@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Search, Filter, Clock, Scale, ArrowRight, List as ListIcon, LayoutGrid, Snowflake, Flame, ChefHat, Coffee, Package, Palette, Sparkles, Utensils, Factory, Cake, HelpCircle, ChevronLeft } from 'lucide-react';
+import { BookOpen, Search, Filter, Clock, Scale, ArrowRight, List as ListIcon, LayoutGrid, Snowflake, Flame, ChefHat, Coffee, Package, Palette, Sparkles, Utensils, Factory, Cake, HelpCircle, ChevronLeft, Layers } from 'lucide-react';
 
 const normalizeArea = (rawArea: string) => {
   const a = (rawArea || '').trim().toLowerCase();
+  if (a === 'duplicados') return 'Duplicados';
   if (a === 'cocina fría' || a === 'cocina fria') return 'Cocina Fría';
   if (a === 'cocina caliente') return 'Cocina Caliente';
   if (a === 'cocina' || a === 'cocina central') return 'Cocina';
@@ -30,6 +31,7 @@ const AREA_CONFIG: Record<string, { icon: any, color: string, bg: string, border
   'Marmita': { icon: Factory, color: 'text-teal-700', bg: 'bg-teal-50', border: 'border-teal-200 hover:border-teal-400' },
   'Empaque': { icon: Package, color: 'text-business-olive', bg: 'bg-[#8e925b]/10', border: 'border-[#8e925b]/30 hover:border-[#8e925b]/60' },
   'Postres': { icon: Cake, color: 'text-pink-600', bg: 'bg-pink-50', border: 'border-pink-200 hover:border-pink-400' },
+  'Duplicados': { icon: Layers, color: 'text-amber-600', bg: 'bg-amber-50/50', border: 'border-amber-200 hover:border-amber-400 border-dashed' },
   'Área no definida': { icon: HelpCircle, color: 'text-slate-400', bg: 'bg-slate-50', border: 'border-slate-200 hover:border-slate-300' },
 };
 
@@ -82,7 +84,7 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
             {Object.entries(groupedRecipes).map(([areaName, areaRecipes]) => {
               const config = AREA_CONFIG[areaName] || AREA_CONFIG['Área no definida'];
               const Icon = config.icon;
-              const count = areaRecipes.length;
+              const count = (areaRecipes as any).length;
               
               if (count === 0 && areaName === 'Área no definida') return null;
               

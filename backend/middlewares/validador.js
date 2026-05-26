@@ -65,6 +65,8 @@ const fichaSchema = z.object({
 const workflowSchema = z.object({
     id: z.string().optional(),
     nombre: z.string().min(1, "El nombre del flujo es obligatorio"),
+    activo: z.boolean().optional(),
+    crearNuevaVersion: z.boolean().optional(),
     pasos: z.array(z.any()).optional()
 }).passthrough();
 

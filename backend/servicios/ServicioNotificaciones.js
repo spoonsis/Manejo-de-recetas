@@ -56,8 +56,17 @@ async function marcarLeida(id) {
     return true;
 }
 
+async function marcarTodasLeidas(rol) {
+    await pool.query(`
+        UPDATE notificaciones SET leida = TRUE 
+        WHERE (rol_destino = ? OR rol_destino = 'TODOS') AND leida = FALSE
+    `, [rol]);
+    return true;
+}
+
 module.exports = {
     crearNotificacion,
     obtenerNotificacionesPorRol,
-    marcarLeida
+    marcarLeida,
+    marcarTodasLeidas
 };

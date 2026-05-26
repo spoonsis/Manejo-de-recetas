@@ -7,6 +7,7 @@ async function obtenerFlujos() {
     return flujos.map(f => ({
         ...f,
         activo: Boolean(f.activo),
+        crearNuevaVersion: f.crear_nueva_version !== null && f.crear_nueva_version !== undefined ? Boolean(f.crear_nueva_version) : true,
         pasos: pasos.filter(p => p.flujo_id === f.id)
     }));
 }
@@ -18,17 +19,19 @@ async function upsertFlujo(flujo) {
 
         // 1. Upsert Flujo
         await conn.query(`
-            INSERT INTO flujos_aprobacion (id, nombre, descripcion, activo)
-            VALUES (?, ?, ?, ?)
+            INSERT INTO flujos_aprobacion (id, nombre, descripcion, activo, crear_nueva_version)
+            VALUES (?, ?, ?, ?, ?)
             ON DUPLICATE KEY UPDATE 
                 nombre=VALUES(nombre), 
                 descripcion=VALUES(descripcion), 
-                activo=VALUES(activo)
-        `, [flujo.id, flujo.nombre, flujo.descripcion, flujo.activo ? 1 : 0]);
+                activo=VALUES(activo),
+                crear_nueva_version=VALUES(crear_nueva_version)
+        `, [flujo.id, flujo.nombre, flujo.descripcion, flujo.activo ? 1 : 0, flujo.crearNuevaVersion !== false ? 1 : 0]);
 
         // 2. Manejar Pasos
         // Primero eliminar los que no están en la lista actual
-        const idsPasosActuales = flujo.pasos.filter(p => p.id).map(p => p.id);
+        const pasos = flujo.pasos || [];
+        const idsPasosActuales = pasos.filter(p => p.id).map(p => p.id);
         if (idsPasosActuales.length > 0) {
             await conn.query('DELETE FROM pasos_flujo WHERE flujo_id = ? AND id NOT IN (?)', [flujo.id, idsPasosActuales]);
         } else {
@@ -36,7 +39,7 @@ async function upsertFlujo(flujo) {
         }
 
         // Insertar o actualizar pasos
-        for (const p of flujo.pasos) {
+        for (const p of pasos) {
             await conn.query(`
                 INSERT INTO pasos_flujo (id, flujo_id, orden, rolResponsable, accionRequerida, estadoDestino, etiqueta)
                 VALUES (?, ?, ?, ?, ?, ?, ?)

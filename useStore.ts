@@ -13,6 +13,7 @@ interface AppState {
   cargarNotificaciones: () => Promise<void>;
   enviarNotificacion: (rolDestino: string, titulo: string, mensaje: string, tipo?: 'INFO' | 'SUCCESS' | 'WARNING' | 'DANGER', referenciaId?: string | null) => Promise<void>;
   marcarNotificacionLeida: (id: number) => Promise<void>;
+  marcarTodasNotificacionesLeidas: () => Promise<void>;
   logout: () => Promise<void>;
   setLoadingData: (loading: boolean) => void;
   setSaving: (saving: boolean) => void;
@@ -91,6 +92,37 @@ export const useStore = create<AppState>((set, get) => ({
       }
     } catch (e) {
       console.error("Error marcando notificación como leída", e);
+    }
+  },
+  marcarTodasNotificacionesLeidas: async () => {
+    const { notificaciones } = get();
+    const noLeidas = notificaciones.filter(n => !n.leida);
+    if (noLeidas.length === 0) return;
+
+    // Actualización optimista instantánea
+    set((state) => ({
+      notificaciones: state.notificaciones.map(n => ({ ...n, leida: true }))
+    }));
+
+    try {
+      // Hacemos las peticiones en paralelo utilizando el endpoint individual ya existente en el servidor activo
+      const promesas = noLeidas.map(n =>
+        fetch(`/api/notificaciones/${n.id}/leer`, {
+          method: 'PUT',
+          credentials: 'include'
+        })
+      );
+      
+      const resultados = await Promise.all(promesas);
+      const algunError = resultados.some(res => !res.ok);
+      
+      if (algunError) {
+        console.error("Algunas notificaciones no se pudieron marcar como leídas en el servidor");
+        get().cargarNotificaciones(); // Sincronizar/revertir si hubo fallos
+      }
+    } catch (e) {
+      console.error("Error marcando todas las notificaciones como leídas", e);
+      get().cargarNotificaciones(); // Revertir en caso de excepción
     }
   },
   logout: async () => {

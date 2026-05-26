@@ -90,10 +90,10 @@ export default function AdminWorkflows({
     };
 
     const toggleActivo = (id: string) => {
-        setFlujos(prev => prev.map(f => {
-            if (f.id === id) return { ...f, activo: !f.activo };
-            return f;
-        }));
+        const flujo = flujos.find(f => f.id === id);
+        if (flujo) {
+            onSaveFlujo({ ...flujo, activo: !flujo.activo });
+        }
     };
 
     // --- Fases Insumo Handlers ---
@@ -320,6 +320,7 @@ export default function AdminWorkflows({
                                             nombre: 'Nuevo Flujo',
                                             descripcion: '',
                                             activo: false,
+                                            crearNuevaVersion: true,
                                             pasos: []
                                         })}
                                         className="bg-business-orange text-white px-4 py-2 rounded-xl font-black text-sm uppercase tracking-widest shadow-lg flex items-center gap-2 hover:bg-business-orange/90 transition"
@@ -342,6 +343,11 @@ export default function AdminWorkflows({
                                                     )}
                                                 </div>
                                                 <p className="text-slate-700 font-medium text-sm italic">{f.descripcion}</p>
+                                                <div className="mt-1 flex items-center gap-1.5">
+                                                    <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 border">
+                                                        {f.crearNuevaVersion !== false ? 'Crea nueva versión' : 'Actualiza sobre la misma versión'}
+                                                    </span>
+                                                </div>
                                             </div>
                                             <div className="flex gap-2">
                                                 <button
@@ -665,6 +671,17 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
                     </button>
                     <span className="font-bold text-sm text-slate-600 uppercase">
                         {datos.activo ? 'Activo' : 'Inactivo'}
+                    </span>
+                </div>
+                <div className="flex items-center gap-3 pt-2">
+                    <button
+                        onClick={() => setDatos({ ...datos, crearNuevaVersion: datos.crearNuevaVersion === false ? true : false })}
+                        className={`w-10 h-6 rounded-full relative transition-colors ${datos.crearNuevaVersion !== false ? 'bg-emerald-500' : 'bg-slate-300'}`}
+                    >
+                        <div className={`absolute top-0.5 w-5 h-5 bg-white rounded-full transition-all shadow-md ${datos.crearNuevaVersion !== false ? 'left-4.5' : 'left-0.5'}`} />
+                    </button>
+                    <span className="font-bold text-xs text-slate-600 uppercase">
+                        {datos.crearNuevaVersion !== false ? 'Crear Nueva Versión' : 'Actualizar sobre la misma versión'}
                     </span>
                 </div>
             </div>
