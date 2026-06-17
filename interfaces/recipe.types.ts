@@ -111,4 +111,5 @@ export interface Receta {
   nombre_receta?: string;
   codigo_netsuite?: string;
   detalle_nombre_receta?: string;
+  fechaImpresion?: string;
 }

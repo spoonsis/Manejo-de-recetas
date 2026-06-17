@@ -7,7 +7,8 @@ router.get("/", async (req, res) => {
     try {
         const { rol } = req.query;
         if (!rol) return res.status(400).json({ error: "Rol no especificado" });
-        const data = await svc.obtenerNotificacionesPorRol(rol);
+        const usuarioId = req.usuario ? req.usuario.id : null;
+        const data = await svc.obtenerNotificacionesPorRol(rol, usuarioId);
         res.json(data);
     } catch (e) {
         console.error("Error GET /notificaciones", e);
@@ -32,7 +33,8 @@ router.put("/leer-todas", async (req, res) => {
     try {
         const { rol } = req.query;
         if (!rol) return res.status(400).json({ error: "Rol no especificado" });
-        await svc.marcarTodasLeidas(rol);
+        const usuarioId = req.usuario ? req.usuario.id : null;
+        await svc.marcarTodasLeidas(rol, usuarioId);
         res.json({ success: true });
     } catch (e) {
         console.error("Error PUT /notificaciones/leer-todas", e);
@@ -43,7 +45,8 @@ router.put("/leer-todas", async (req, res) => {
 // PUT Marcar como leida
 router.put("/:id/leer", async (req, res) => {
     try {
-        await svc.marcarLeida(req.params.id);
+        const usuarioId = req.usuario ? req.usuario.id : null;
+        await svc.marcarLeida(req.params.id, usuarioId);
         res.json({ success: true });
     } catch (e) {
         console.error("Error PUT /notificaciones/:id/leer", e);

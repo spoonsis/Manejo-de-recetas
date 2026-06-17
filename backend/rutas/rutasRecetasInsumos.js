@@ -71,6 +71,17 @@ router.delete("/recetas/:id", async (req, res) => {
     }
 });
 
+// POST Registrar impresión/descarga de la receta
+router.post("/recetas/:id/registrar-impresion", async (req, res) => {
+    try {
+        await svc.registrarImpresionReceta(req.params.id);
+        res.json({ success: true, message: "Impresión registrada" });
+    } catch (e) {
+        console.error(`Error POST /recetas/${req.params.id}/registrar-impresion`, e);
+        res.status(500).json({ error: "Error interno del servidor. Contacte a soporte." });
+    }
+});
+
 // GET Insumos y Recetas Unificados
 router.get("/insumos-unificados", async (req, res) => {
     try {

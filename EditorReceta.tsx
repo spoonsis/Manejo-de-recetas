@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import {
-  X, Camera, Plus, Trash2, Search, Sparkles, History, Scale, TrendingUp, Layers, Timer, Coins, HandCoins, Factory, BadgeCheck, Eye, ShieldCheck, FileText, Dna, BookOpen, Loader2, AlertCircle, Trash, Building2, Users, Warehouse, Package, Lock, Calculator
+  X, Camera, Plus, Trash2, Search, Sparkles, History, Scale, TrendingUp, Layers, Timer, Coins, HandCoins, Factory, BadgeCheck, Eye, ShieldCheck, FileText, Dna, BookOpen, Loader2, AlertCircle, Trash, Building2, Users, Warehouse, Package, Lock, Calculator, GripVertical, ChevronUp, ChevronDown, Pencil, Check
 } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
@@ -14,10 +14,10 @@ import { useStore } from './useStore';
 
 export default function EditorReceta({ recipe, insumos, subRecipes, flujosAprobacion, onClose, onSave, onSaveInsumo, role, areas = [], onViewRecipe, obtenerEtiquetaEstado }: any) {
   const [datosForm, setDatosForm] = useState<Receta>(() => {
-    const defaultFlujo = flujosAprobacion?.find((f: any) => f.activo)?.id || flujosAprobacion?.[0]?.id || '';
+    const calculatedFlujo = recipe.esSemielaborado ? 'f_semielaborado' : (recipe.flujoAprobacionId || 'f1');
     return {
       ...recipe,
-      flujoAprobacionId: recipe.flujoAprobacionId || defaultFlujo
+      flujoAprobacionId: calculatedFlujo
     };
   });
   const [tabActiva, setTabActiva] = useState<'ficha' | 'pasos' | 'historial' | 'costeo'>('ficha');
@@ -44,6 +44,75 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
   const esChefEditable = useMemo(() => role === 'CHEF' && (datosForm.estado === EstadoReceta.BORRADOR || datosForm.estado === EstadoReceta.APROBADO || datosForm.estado.includes('RECHAZADO')), [datosForm.estado, role]);
   const esCostosEditable = useMemo(() => role === 'COSTOS' && datosForm.estado === EstadoReceta.PENDIENTE_COSTOS, [datosForm.estado, role]);
+
+  // --- Reordenar Pasos de Preparación ---
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
+
+  const handleDragStart = (index: number) => {
+    if (!esChefEditable) return;
+    setDraggedIndex(index);
+  };
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+    if (draggedIndex === null || draggedIndex === index) return;
+    
+    const newPasos = [...datosForm.pasos];
+    const draggedItem = newPasos[draggedIndex];
+    newPasos.splice(draggedIndex, 1);
+    newPasos.splice(index, 0, draggedItem);
+    
+    setDraggedIndex(index);
+    setDatosForm({ ...datosForm, pasos: newPasos });
+  };
+
+  const handleDragEnd = () => {
+    setDraggedIndex(null);
+  };
+
+  const subirPaso = (index: number) => {
+    if (index === 0) return;
+    const newPasos = [...datosForm.pasos];
+    const temp = newPasos[index];
+    newPasos[index] = newPasos[index - 1];
+    newPasos[index - 1] = temp;
+    setDatosForm({ ...datosForm, pasos: newPasos });
+  };
+
+  const bajarPaso = (index: number) => {
+    if (index === datosForm.pasos.length - 1) return;
+    const newPasos = [...datosForm.pasos];
+    const temp = newPasos[index];
+    newPasos[index] = newPasos[index + 1];
+    newPasos[index + 1] = temp;
+    setDatosForm({ ...datosForm, pasos: newPasos });
+  };
+
+  // --- Editar Pasos de Preparación ---
+  const [editingPasoIndex, setEditingPasoIndex] = useState<number | null>(null);
+  const [editingPasoText, setEditingPasoText] = useState('');
+
+  const iniciarEdicionPaso = (index: number, text: string) => {
+    if (!esChefEditable) return;
+    setEditingPasoIndex(index);
+    setEditingPasoText(text);
+  };
+
+  const guardarEdicionPaso = (index: number) => {
+    if (!editingPasoText.trim()) return;
+    const newPasos = [...datosForm.pasos];
+    newPasos[index] = editingPasoText;
+    setDatosForm({ ...datosForm, pasos: newPasos });
+    setEditingPasoIndex(null);
+    setEditingPasoText('');
+  };
+
+  const cancelarEdicionPaso = () => {
+    setEditingPasoIndex(null);
+    setEditingPasoText('');
+  };
+
+
 
   // Obtener el estado del primer paso del flujo asignado
   const estadoInicial = useMemo(() => {
@@ -267,7 +336,12 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
     const tiempoProceso = Number(datosForm.tiempoProcesoMinutos || 0);
     const tasaMUDI = Number(datosForm.tasaMUDI || 77);
     const tasaGIF = Number(datosForm.tasaGIF || 83);
-    const porcentajeDesecho = Number(datosForm.porcentajeDesecho || 2);
+
+    // Calcular el % de desecho real en base a peso total y merma
+    const pesoTotal = Number(datosForm.pesoTotalCantidad || 0);
+    const merma = Number(datosForm.mermaCantidad || 0);
+    const totalInsumos = pesoTotal + merma;
+    const porcentajeDesecho = totalInsumos > 0 ? (merma / totalInsumos) * 100 : 0;
 
     const mudi_propio = tiempoProceso * tasaMUDI;
     const gif_propio = tiempoProceso * tasaGIF;
@@ -276,7 +350,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
     const costoDesecho = mp * (porcentajeDesecho / 100);
 
     const mudi_total = mudi_se + mudi_propio;
-    const gif_total = gif_se + gif_propio;
+    const gif_total = tasaMUDI > 0 ? (mudi_total / tasaMUDI) * tasaGIF : 0;
 
     const base = mp + emp + mudi_total + costoDesecho;
     const final = base + gif_total;
@@ -302,7 +376,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
     datosForm.tiempoProcesoMinutos, 
     datosForm.tasaMUDI, 
     datosForm.tasaGIF, 
-    datosForm.porcentajeDesecho, 
+    datosForm.mermaCantidad, 
     datosForm.tipoCosteo, 
     datosForm.pesoTotalCantidad, 
     datosForm.porcionesCantidad, 
@@ -472,7 +546,21 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 <div className="md:col-span-3 space-y-1">
                   <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block">Categorización</label>
                   <div className="w-full bg-slate-50/50 border border-slate-100 rounded-lg p-1.5 flex items-center gap-2 h-[34px]">
-                    <input type="checkbox" disabled={!esChefEditable} checked={datosForm.esSemielaborado} onChange={(e: { target: { checked: any; }; }) => setDatosForm({ ...datosForm, esSemielaborado: e.target.checked })} className="w-3.5 h-3.5 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" id="semielaborado" />
+                    <input 
+                      type="checkbox" 
+                      disabled={!esChefEditable} 
+                      checked={datosForm.esSemielaborado} 
+                      onChange={(e) => {
+                        const checked = e.target.checked;
+                        setDatosForm({ 
+                          ...datosForm, 
+                          esSemielaborado: checked,
+                          flujoAprobacionId: checked ? 'f_semielaborado' : 'f1'
+                        });
+                      }} 
+                      className="w-3.5 h-3.5 rounded text-amber-600 focus:ring-amber-500 cursor-pointer" 
+                      id="semielaborado" 
+                    />
                     <label htmlFor="semielaborado" className="cursor-pointer select-none leading-none">
                       <span className="font-black text-amber-900 uppercase text-[9px] tracking-tight block">Semielaborado</span>
                       <span className="text-[7.5px] text-slate-500 font-bold uppercase tracking-tight italic block">En transformación</span>
@@ -498,7 +586,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     <div className="md:col-span-4 space-y-1">
                       <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
                       <select
-                        disabled={!esChefEditable}
+                        disabled={true}
                         className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
                         value={datosForm.flujoAprobacionId || ''}
                         onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
@@ -525,7 +613,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     <div className="md:col-span-6 space-y-1">
                       <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
                       <select
-                        disabled={!esChefEditable}
+                        disabled={true}
                         className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
                         value={datosForm.flujoAprobacionId || ''}
                         onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
@@ -553,7 +641,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     <div className="md:col-span-8 space-y-1">
                       <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
                       <select
-                        disabled={!esChefEditable}
+                        disabled={true}
                         className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
                         value={datosForm.flujoAprobacionId || ''}
                         onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
@@ -573,7 +661,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                   <div className="md:col-span-12 space-y-1">
                     <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block flex items-center gap-1">Flujo de Aprobación</label>
                     <select
-                      disabled={!esChefEditable}
+                      disabled={true}
                       className="w-full p-1.5 border rounded-lg font-bold bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm text-xs text-slate-700 transition-all h-[34px]"
                       value={datosForm.flujoAprobacionId || ''}
                       onChange={(e) => setDatosForm({ ...datosForm, flujoAprobacionId: e.target.value })}
@@ -1030,16 +1118,6 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                       </div>
                     </div>
 
-                    {/* Tiempo de Preparación */}
-                    <div className="space-y-1">
-                      <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><Timer className="w-2 h-2" /> Tiempo Prep.</label>
-                      <div className="flex gap-1">
-                        <input type="number" disabled={!esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.tiempoPrepCantidad || ''} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepCantidad: Number(e.target.value) })} />
-                        <select disabled={!esChefEditable} className="p-1.5 border rounded-lg font-bold bg-white outline-none text-xs" value={datosForm.tiempoPrepUnidad || 'min'} onChange={(e) => setDatosForm({ ...datosForm, tiempoPrepUnidad: e.target.value })}>
-                          {['min', 'horas'].map(u => <option key={u} value={u}>{u}</option>)}
-                        </select>
-                      </div>
-                    </div>
 
                     {/* Tipo Costeo */}
                     <div className="space-y-1">
@@ -1059,7 +1137,7 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                     {/* % Desecho */}
                     <div className="space-y-1">
                       <label className="text-xs font-black uppercase text-slate-500 tracking-widest block flex items-center gap-1"><TrendingUp className="w-2 h-2 text-rose-500" /> % Desecho</label>
-                      <input type="number" disabled={!esCostosEditable && !esChefEditable} className="w-full p-1.5 border rounded-lg font-black text-slate-800 bg-white outline-none focus:ring-2 focus:ring-emerald-100 text-[10px]" value={datosForm.porcentajeDesecho ?? 2} onChange={(e) => setDatosForm({ ...datosForm, porcentajeDesecho: Number(e.target.value) })} step="0.1" />
+                      <input type="text" disabled={true} className="w-full p-1.5 border rounded-lg font-black text-slate-500 bg-slate-100 outline-none text-[10px]" value={Number(costeoProyectado.porcentajeDesecho || 0).toFixed(2) + '%'} readOnly />
                     </div>
 
                     {/* Tasas MUDI / GIF (Solo visible para COSTOS/ADMIN) */}
@@ -1136,13 +1214,102 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
 
                 <div className="space-y-2">
                   {datosForm.pasos.map((p: any, i: number) => (
-                    <div key={i} className="flex gap-3 items-center p-3 bg-white border border-slate-100 rounded-2xl shadow-sm group transition-all hover:shadow-md">
+                    <div 
+                      key={i} 
+                      draggable={esChefEditable}
+                      onDragStart={() => handleDragStart(i)}
+                      onDragOver={(e) => handleDragOver(e, i)}
+                      onDragEnd={handleDragEnd}
+                      className={`flex gap-3 items-center p-3 bg-white border border-slate-100 rounded-2xl shadow-sm group transition-all hover:shadow-md ${
+                        draggedIndex === i ? 'opacity-40 bg-slate-50 border-dashed border-slate-300' : ''
+                      } ${esChefEditable ? 'cursor-grab active:cursor-grabbing' : ''}`}
+                    >
+                      {esChefEditable && (
+                        <div className="text-slate-400 hover:text-slate-600 transition-colors">
+                          <GripVertical size={14} />
+                        </div>
+                      )}
                       <div className="flex-shrink-0 w-8 h-8 bg-slate-900 text-white rounded-xl flex items-center justify-center font-black text-xs shadow-sm">{i + 1}</div>
                       <div className="flex-1">
-                        <p className="text-xs font-medium text-slate-700 leading-snug">{p}</p>
+                        {editingPasoIndex === i ? (
+                          <div className="flex gap-2 items-center w-full">
+                            <textarea 
+                              rows={2}
+                              className="flex-1 p-2 border border-emerald-300 rounded-xl outline-none font-medium text-xs bg-emerald-50/10 focus:ring-2 focus:ring-emerald-100 resize-none"
+                              value={editingPasoText} 
+                              onChange={(e) => setEditingPasoText(e.target.value)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter' && !e.shiftKey) {
+                                  e.preventDefault();
+                                  guardarEdicionPaso(i);
+                                } else if (e.key === 'Escape') {
+                                  cancelarEdicionPaso();
+                                }
+                              }}
+                              autoFocus
+                            />
+                            <div className="flex flex-col gap-1">
+                              <button 
+                                onClick={() => guardarEdicionPaso(i)} 
+                                className="p-1.5 bg-emerald-600 text-white hover:bg-emerald-700 rounded-lg shadow-sm transition-all"
+                                title="Guardar cambios"
+                              >
+                                <Check size={12} />
+                              </button>
+                              <button 
+                                onClick={cancelarEdicionPaso} 
+                                className="p-1.5 bg-slate-100 text-slate-500 hover:bg-slate-200 rounded-lg shadow-sm transition-all"
+                                title="Cancelar"
+                              >
+                                <X size={12} />
+                              </button>
+                            </div>
+                          </div>
+                        ) : (
+                          <p 
+                            className="text-xs font-medium text-slate-700 leading-snug cursor-pointer hover:text-slate-900"
+                            onClick={() => esChefEditable && iniciarEdicionPaso(i, p)}
+                            title={esChefEditable ? "Haz clic para editar" : ""}
+                          >
+                            {p}
+                          </p>
+                        )}
                       </div>
-                      {esChefEditable && (
-                        <button onClick={() => setDatosForm({ ...datosForm, pasos: datosForm.pasos.filter((_: any, idx: any) => idx !== i) })} className="opacity-0 group-hover:opacity-100 p-2 text-rose-500 hover:bg-rose-50 rounded-xl transition-all"><Trash2 size={14} /></button>
+                      {esChefEditable && editingPasoIndex !== i && (
+                        <div className="flex gap-1 items-center">
+                          <div className="flex flex-col gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button 
+                              disabled={i === 0} 
+                              onClick={() => subirPaso(i)} 
+                              className="p-1 hover:bg-slate-100 rounded text-slate-400 hover:text-slate-700 disabled:opacity-30 disabled:hover:bg-transparent"
+                              title="Subir paso"
+                            >
+                              <ChevronUp size={12} />
+                            </button>
+                            <button 
+                              disabled={i === datosForm.pasos.length - 1} 
+                              onClick={() => bajarPaso(i)} 
+                              className="p-1 hover:bg-slate-100 rounded text-slate-400 hover:text-slate-700 disabled:opacity-30 disabled:hover:bg-transparent"
+                              title="Bajar paso"
+                            >
+                              <ChevronDown size={12} />
+                            </button>
+                          </div>
+                          <button 
+                            onClick={() => iniciarEdicionPaso(i, p)} 
+                            className="opacity-0 group-hover:opacity-100 p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-50 rounded-xl transition-all"
+                            title="Editar paso"
+                          >
+                            <Pencil size={12} />
+                          </button>
+                          <button 
+                            onClick={() => setDatosForm({ ...datosForm, pasos: datosForm.pasos.filter((_: any, idx: any) => idx !== i) })} 
+                            className="opacity-0 group-hover:opacity-100 p-2 text-rose-500 hover:bg-rose-50 rounded-xl transition-all"
+                            title="Eliminar paso"
+                          >
+                            <Trash2 size={14} />
+                          </button>
+                        </div>
                       )}
                     </div>
                   ))}
@@ -1162,6 +1329,11 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
                 <History className="w-8 h-8 text-emerald-300 mx-auto mb-2" />
                 <h4 className="text-base font-black text-emerald-900 uppercase tracking-tight">Trazabilidad Técnica de Cambios</h4>
                 <p className="text-[10px] text-emerald-500 font-medium mt-1">Sello de inmutabilidad operativa y registro de certificaciones QC.</p>
+                {datosForm.fechaImpresion && (
+                  <div className="mt-3 inline-block px-3 py-1.5 bg-indigo-50 border border-indigo-100 text-indigo-700 font-black rounded-lg text-[10px] uppercase tracking-wider">
+                    Última impresión en PDF: {new Date(datosForm.fechaImpresion).toLocaleString('es-CR')}
+                  </div>
+                )}
               </div>
 
               <div className="space-y-4">

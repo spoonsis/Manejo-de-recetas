@@ -176,7 +176,7 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
                                   : 'Pendiente')}
                     </div>
                     <div className="flex items-center gap-3 text-xs font-bold text-slate-600 uppercase">
-                      <span className="flex items-center gap-1"><Clock size={12} /> {r.tiempoPrepCantidad}m</span>
+                      <span className="flex items-center gap-1"><Clock size={12} /> {r.tiempoProcesoMinutos || 0}m</span>
                       <span className="flex items-center gap-1"><Scale size={12} /> {r.pesoTotalCantidad}g</span>
                     </div>
                   </div>
@@ -221,7 +221,7 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
                         </td>
                         <td className="px-6 py-3">
                           <div className="flex gap-4 items-center">
-                            <span className="font-bold text-slate-600 flex items-center gap-1"><Clock size={12} className="text-business-orange" /> {r.tiempoPrepCantidad}m</span>
+                            <span className="font-bold text-slate-600 flex items-center gap-1"><Clock size={12} className="text-business-orange" /> {r.tiempoProcesoMinutos || 0}m</span>
                             <span className="font-bold text-slate-600 flex items-center gap-1"><Scale size={12} className="text-business-orange" /> {r.pesoTotalCantidad}g</span>
                           </div>
                         </td>

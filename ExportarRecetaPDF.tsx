@@ -265,19 +265,18 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
           <View style={styles.metaSection}>
             <View style={styles.metaRow}>
               <Text style={styles.metaLabel}>Código:</Text>
-              <Text style={styles.metaValue}>{receta.id || 'S/G'}</Text>
+              <Text style={styles.metaValue}>{receta.codigoCalidad || 'S/G'}</Text>
             </View>
             <View style={styles.metaRow}>
               <Text style={styles.metaLabel}>Revisión:</Text>
-              <Text style={styles.metaValue}>{receta.version || '01'}</Text>
+              <Text style={styles.metaValue}>{receta.versionActual !== undefined && receta.versionActual !== null ? receta.versionActual : '01'}</Text>
             </View>
             <View style={styles.metaRow}>
               <Text style={styles.metaLabel}>Fecha Aprob.:</Text>
               <Text style={styles.metaValue}>
-                {receta.fechaRevision || 
-                 (receta.versiones && receta.versiones.length > 0 
-                   ? new Date(receta.versiones[receta.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR') 
-                   : 'Pendiente')}
+                {receta.versiones && receta.versiones.length > 0 
+                  ? new Date(receta.versiones[receta.versiones.length - 1].fechaAprobacion).toLocaleDateString('es-CR') 
+                  : (receta.fechaRevision || 'Pendiente')}
               </Text>
             </View>
           </View>
@@ -345,9 +344,9 @@ const ExportarRecetaPDF = ({ receta, logoUrl = '/logo.png' }: Props) => {
             <Text style={styles.yieldUnit}>{receta.pesoTotalUnidad || 'g'}</Text>
           </View>
           <View style={styles.yieldRow}>
-            <Text style={styles.yieldLabel}>TIEMPO PREP.</Text>
-            <Text style={styles.yieldValue}>{receta.tiempoPrepCantidad || 0}</Text>
-            <Text style={styles.yieldUnit}>{receta.tiempoPrepUnidad || 'min'}</Text>
+            <Text style={styles.yieldLabel}>TIEMPO PROCESO</Text>
+            <Text style={styles.yieldValue}>{receta.tiempoProcesoMinutos || 0}</Text>
+            <Text style={styles.yieldUnit}>min</Text>
           </View>
           <View style={styles.yieldRow}>
             <Text style={styles.yieldLabel}>PORCIONES</Text>

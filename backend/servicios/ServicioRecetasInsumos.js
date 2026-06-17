@@ -361,6 +361,11 @@ async function marcarRecetasPendientesRecursivo(idReferencia, connParam = null) 
     }
 }
 
+async function registrarImpresionReceta(id) {
+    await pool.query("UPDATE recetas SET fechaImpresion = NOW() WHERE id = ?", [id]);
+    return true;
+}
+
 module.exports = { 
     obtenerInsumosLocales, 
     crearInsumoLocal, 
@@ -368,5 +373,6 @@ module.exports = {
     upsertReceta, 
     guardarVersionHistorial,
     eliminarReceta,
-    marcarRecetasPendientesRecursivo
+    marcarRecetasPendientesRecursivo,
+    registrarImpresionReceta
 };

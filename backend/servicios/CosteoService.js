@@ -59,8 +59,12 @@ class CosteoService {
             }
         }
 
+        const tasaMUDI = Number(receta.tasaMUDI || 77);
+        const tasaGIF = Number(receta.tasaGIF || 83);
+        const gif = tasaMUDI > 0 ? (totalMUDI / tasaMUDI) * tasaGIF : 0;
+
         const costoTotalBase = totalMP + totalEMP + totalMUDI;
-        const costoTotalFinal = costoTotalBase + (receta.gif || 0);
+        const costoTotalFinal = costoTotalBase + gif;
 
         let divisor = 1;
         if (receta.tipoCosteo === 'GRAMO') {
@@ -73,6 +77,7 @@ class CosteoService {
             totalMP,
             totalEMP,
             totalMUDI,
+            gif,
             costoTotalBase,
             costoTotalFinal,
             costoUnitarioMP: totalMP / divisor,

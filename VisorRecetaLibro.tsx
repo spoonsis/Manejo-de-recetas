@@ -6,10 +6,35 @@ import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta } from './types';
 import { ESTILOS_ESTADO, ETIQUETAS_ESTADO } from './constants';
 import { useStore } from './useStore';
 
-export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose, obtenerEtiquetaEstado }: { recipe: Receta, allRecipes: Receta[], insumos: Insumo[], onClose: () => void, obtenerEtiquetaEstado?: (r: Receta) => string }) {
+export default function VisorRecetaLibro({ 
+  recipe, allRecipes, insumos, onClose, obtenerEtiquetaEstado, onRegisterPrint 
+}: { 
+  recipe: Receta, 
+  allRecipes: Receta[], 
+  insumos: Insumo[], 
+  onClose: () => void, 
+  obtenerEtiquetaEstado?: (r: Receta) => string,
+  onRegisterPrint?: (recipeId: string, printedDate: string) => void
+}) {
   const { role } = useStore();
   const [tab, setTab] = useState<'info' | 'preparacion' | 'historial' | 'costeo'>('info');
   const [recetaActiva, setRecetaActiva] = useState<Receta>(recipe);
+
+  const registrarImpresion = async () => {
+    try {
+      const printedDate = new Date().toISOString();
+      await fetch(`/api/local/recetas/${recetaActiva.id}/registrar-impresion`, {
+        method: 'POST',
+        credentials: 'include'
+      });
+      setRecetaActiva(prev => ({ ...prev, fechaImpresion: printedDate }));
+      if (onRegisterPrint) {
+        onRegisterPrint(recetaActiva.id, printedDate);
+      }
+    } catch (e) {
+      console.error("Error registrando impresión", e);
+    }
+  };
 
   // Filtramos todas las versiones físicas guardadas que tienen el mismo nombre
   const versionesGuardadas = useMemo(() => {
@@ -201,7 +226,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose,
                   <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Merma</p><p className="font-bold text-xs text-rose-500">{recetaActiva.mermaCantidad !== undefined && recetaActiva.mermaCantidad !== null ? `${recetaActiva.mermaCantidad} g` : '---'}</p></div>
                   <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Porciones</p><p className="font-bold text-xs text-slate-700">{recetaActiva.porcionesCantidad ? `${recetaActiva.porcionesCantidad} ${recetaActiva.porcionesUnidad}` : '---'}</p></div>
                   <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Peso Porción</p><p className="font-bold text-xs text-slate-700">{recetaActiva.pesoPorcionCantidad ? `${recetaActiva.pesoPorcionCantidad} ${recetaActiva.pesoPorcionUnidad}` : '---'}</p></div>
-                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Tiempo Prep.</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tiempoPrepCantidad ? `${recetaActiva.tiempoPrepCantidad} ${recetaActiva.tiempoPrepUnidad}` : '---'}</p></div>
+                  <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Tiempo Proceso</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tiempoProcesoMinutos !== undefined && recetaActiva.tiempoProcesoMinutos !== null ? `${recetaActiva.tiempoProcesoMinutos} min` : '---'}</p></div>
                   <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">Tipo Costeo</p><p className="font-bold text-xs text-slate-700">{recetaActiva.tipoCosteo || '---'}</p></div>
                   <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">MODI</p><p className="font-bold text-xs text-slate-700">{recetaActiva.mudi !== undefined ? recetaActiva.mudi : '---'}</p></div>
                   <div><p className="text-sm text-slate-600 font-black uppercase mb-0.5">GIF (Fijo)</p><p className="font-bold text-xs text-slate-700">{recetaActiva.gif !== undefined ? recetaActiva.gif : '---'}</p></div>
@@ -278,9 +303,19 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose,
                         <p className="text-xs text-slate-600 font-black uppercase mb-1">Resumen de Cambios:</p>
                         <p className="text-slate-600 text-sm font-medium leading-snug italic">"{v.ultimoRegistroCambios || 'Sin descripción detallada'}"</p>
                       </div>
-                      <div className="mt-4 flex gap-6">
-                        <div><p className="text-sm text-slate-600 font-bold uppercase">Costo Total</p><p className="text-sm font-black text-slate-800">{v.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
-                        <div><p className="text-sm text-slate-600 font-bold uppercase">Ing.</p><p className="text-sm font-black text-slate-800">{v.ingredientes.length}</p></div>
+                      <div className="mt-4 flex flex-wrap gap-6 items-end justify-between">
+                        <div className="flex gap-6">
+                          <div><p className="text-sm text-slate-600 font-bold uppercase">Costo Total</p><p className="text-sm font-black text-slate-800">{v.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}</p></div>
+                          <div><p className="text-sm text-slate-600 font-bold uppercase">Ing.</p><p className="text-sm font-black text-slate-800">{v.ingredientes.length}</p></div>
+                        </div>
+                        {v.fechaImpresion && (
+                          <div className="text-right">
+                            <p className="text-xs text-slate-600 font-black uppercase mb-0.5">Última Impresión PDF</p>
+                            <p className="text-indigo-600 font-black text-xs">
+                              {new Date(v.fechaImpresion).toLocaleString('es-CR')}
+                            </p>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -566,6 +601,7 @@ export default function VisorRecetaLibro({ recipe, allRecipes, insumos, onClose,
           <div className="flex gap-3 items-center">
             {(role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && recetaActiva.estado === EstadoReceta.APROBADO && (
               <PDFDownloadLink
+                onClick={registrarImpresion}
                 document={<ExportarRecetaPDF receta={{ ...recetaActiva, ingredientesCategorizados: ingredientesCategorizados as any }} />}
                 fileName={`Receta_${recetaActiva.nombre || 'Sin_Nombre'}.pdf`}
                 className="px-6 py-2.5 bg-slate-900 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg hover:bg-slate-800 transition-all flex items-center gap-2"

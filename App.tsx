@@ -422,8 +422,7 @@ export default function App() {
       pesoTotalCantidad: 0,
       pesoTotalUnidad: 'g',
       sumaTotalInsumos: 0,
-      tiempoPrepCantidad: 0,
-      tiempoPrepUnidad: 'min',
+      tiempoProcesoMinutos: 0,
       porcionesCantidad: 0,
       porcionesUnidad: 'porciones',
       pesoPorcionCantidad: 0,
@@ -480,6 +479,7 @@ export default function App() {
   };
 
   const manejarActualizarReceta = async (actualizada: Receta) => {
+    actualizada.flujoAprobacionId = actualizada.esSemielaborado ? 'f_semielaborado' : 'f1';
     const original = recetas.find((r: { id: string; }) => r.id === actualizada.id);
     let recetaFinal = actualizada;
 
@@ -691,12 +691,16 @@ export default function App() {
         else mp += costo;
       });
 
+      const tasaMUDI = currReceta.tasaMUDI || 77;
+      const tasaGIF = currReceta.tasaGIF || 83;
+      const gif = tasaMUDI > 0 ? (mudi / tasaMUDI) * tasaGIF : 0;
+
       const base = mp + emp + mudi;
-      const final = base + (currReceta.gif || 0);
+      const final = base + gif;
       const divisor = currReceta.tipoCosteo === 'GRAMO' ? (currReceta.pesoTotalCantidad || 1) : (currReceta.porcionesCantidad || 1);
 
       const snapshotCostos = {
-        totalMP: mp, totalEMP: emp, totalMUDI: mudi, gif: currReceta.gif,
+        totalMP: mp, totalEMP: emp, totalMUDI: mudi, gif: gif,
         costoTotalBase: base, costoTotalFinal: final
       };
 
@@ -724,6 +728,7 @@ export default function App() {
         totalMP: mp,
         totalEMP: emp,
         totalMUDI: mudi,
+        gif: gif,
         costoTotalBase: base,
         costoTotalFinal: final,
         costoUnitarioMP: mp / divisor,
@@ -1359,6 +1364,10 @@ export default function App() {
           insumos={insumos}
           onClose={() => setDetalleLibro(null)}
           obtenerEtiquetaEstado={obtenerEtiquetaEstado}
+          onRegisterPrint={(recipeId: string, printedDate: string) => {
+            setRecetas((prev: any[]) => prev.map((r) => r.id === recipeId ? { ...r, fechaImpresion: printedDate } : r));
+            setDetalleLibro((prev: any) => prev && prev.id === recipeId ? { ...prev, fechaImpresion: printedDate } : prev);
+          }}
         />
       )}
     </div>
