@@ -175,7 +175,18 @@ router.post('/forgot-password', async (req, res) => {
             );
 
             // Step 5: Enviar correo electrónico real
-            const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+            let frontendUrl = req.headers.origin;
+            if (!frontendUrl && req.headers.referer) {
+                try {
+                    const parsedUrl = new URL(req.headers.referer);
+                    frontendUrl = parsedUrl.origin;
+                } catch (e) {
+                    // Ignorar error de parsing
+                }
+            }
+            if (!frontendUrl) {
+                frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+            }
             const resetLink = `${frontendUrl}/reset-password?token=${rawToken}`;
             
             if (process.env.SMTP_USER && process.env.SMTP_PASS) {
