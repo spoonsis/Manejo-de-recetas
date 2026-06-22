@@ -2,8 +2,8 @@
   "nombre": "Torta Chilena Bucca",
   "subsidiaria": "Servicios de Pastelería S.A.",
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoración",
   "version": "V1",
   "estado": "APROBADO",
   "ingredientes": [

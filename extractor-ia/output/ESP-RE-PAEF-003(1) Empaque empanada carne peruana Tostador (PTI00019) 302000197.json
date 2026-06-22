@@ -2,8 +2,8 @@
   "nombre": "Carne mechada arreglada",
   "subsidiaria": "SERVICIOS DE PASTELERIA SA",
   "elaboradoPor": "Javier Tong, Chef",
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
   "version": 12,
   "estado": "APROBADO",
   "ingredientes": [

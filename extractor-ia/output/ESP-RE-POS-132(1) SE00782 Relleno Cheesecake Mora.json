@@ -2,8 +2,8 @@
   "nombre": "Relleno Cheesecake Mora",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaques",
   "version": 1,
   "estado": "APROBADO",
   "ingredientes": [
