@@ -985,8 +985,11 @@ export default function App() {
     }
   };
 
-  const recetasFiltradas = recetas.filter((r: { nombre: string; }) =>
-    r.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase())
+  const recetasFiltradas = recetas.filter((r: any) =>
+    r.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase()) ||
+    (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(terminoBusqueda.toLowerCase())) ||
+    (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(terminoBusqueda.toLowerCase())) ||
+    (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(terminoBusqueda.toLowerCase()))
   );
 
   const recetasLibroUnicas = useMemo(() => {

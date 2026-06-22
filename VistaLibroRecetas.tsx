@@ -156,7 +156,9 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
     const groupList = groupedRecipes[selectedGroup] || [];
     return groupList.filter((r: any) =>
       (r.nombre.toLowerCase().includes(search.toLowerCase()) || 
-       (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(search.toLowerCase())))
+       (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(search.toLowerCase())) ||
+       (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(search.toLowerCase())) ||
+       (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(search.toLowerCase())))
     );
   }, [groupedRecipes, selectedGroup, search]);
 
