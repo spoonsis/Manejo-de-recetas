@@ -39,7 +39,7 @@ async function updateApprovals() {
 
             // Buscar receta por codigoCalidad en la DB
             const [recipes] = await pool.query(
-                "SELECT id, nombre, codigoCalidad, codigo_netsuite FROM recetas WHERE codigoCalidad = ?", 
+                "SELECT id, nombre, codigoCalidad, codigo_netsuite, esSemielaborado FROM recetas WHERE codigoCalidad = ?", 
                 [fileCode]
             );
 
@@ -51,21 +51,33 @@ async function updateApprovals() {
 
             // Para cada receta encontrada
             for (const recipe of recipes) {
+                let finalNS = codigoNetsuite;
+                let esSemi = recipe.esSemielaborado === 1;
+
+                const textToSearch = `${recipe.nombre || ''} ${finalNS}`;
+                const nsMatch = textToSearch.match(/(SE\d+|PTI\d+|PTL\d+)/i);
+                if (nsMatch) {
+                    finalNS = nsMatch[1].toUpperCase();
+                    if (finalNS.startsWith('SE')) {
+                        esSemi = true;
+                    }
+                }
+
                 // Calcular el nuevo detalle_nombre_receta
                 const partCalidad = (recipe.codigoCalidad || '').trim();
                 const partNombre = (recipe.nombre || '').trim();
-                const partNS = codigoNetsuite.trim();
+                const partNS = finalNS.trim();
                 const newDetalle = `${partCalidad} ${partNombre} ${partNS}`.replace(/\s+/g, ' ').trim();
 
                 // Actualizar DB
                 await pool.query(
                     `UPDATE recetas 
-                     SET aprobadoPor = ?, codigo_netsuite = ?, detalle_nombre_receta = ? 
+                     SET aprobadoPor = ?, codigo_netsuite = ?, detalle_nombre_receta = ?, esSemielaborado = ?, flujo_aprobacion_id = ? 
                      WHERE id = ?`,
-                    [aprobadoPor, codigoNetsuite, newDetalle, recipe.id]
+                    [aprobadoPor, finalNS, newDetalle, esSemi ? 1 : 0, esSemi ? 'f_semielaborado' : 'f1', recipe.id]
                 );
 
-                console.log(`✅ Actualizado: [${recipe.codigoCalidad}] ${recipe.nombre} -> Aprobado por: ${aprobadoPor} | Código NS: ${codigoNetsuite}`);
+                console.log(`✅ Actualizado: [${recipe.codigoCalidad}] ${recipe.nombre} -> Aprobado por: ${aprobadoPor} | Código NS: ${finalNS} | Semielaborado: ${esSemi}`);
                 updatedCount++;
             }
         }

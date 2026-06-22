@@ -529,7 +529,22 @@ export default function EditorReceta({ recipe, insumos, subRecipes, flujosAproba
               <div className="grid grid-cols-1 md:grid-cols-12 gap-3.5 items-end">
                 <div className="md:col-span-5 space-y-1">
                   <label className="text-[9px] font-black uppercase text-slate-500 tracking-wide block">Nombre del Plato / Receta</label>
-                  <input type="text" disabled={!esChefEditable} value={datosForm.nombre} onChange={(e: { target: { value: any; }; }) => setDatosForm({ ...datosForm, nombre: e.target.value })}
+                  <input type="text" disabled={!esChefEditable} value={datosForm.nombre} 
+                    onChange={(e: { target: { value: any; }; }) => {
+                      const newName = e.target.value;
+                      let extra: any = {};
+                      const match = newName.match(/(SE\d+|PTI\d+|PTL\d+)/i);
+                      if (match) {
+                        const nsCode = match[1].toUpperCase();
+                        const isSemi = nsCode.startsWith('SE');
+                        extra = {
+                          codigo_netsuite: nsCode,
+                          esSemielaborado: isSemi,
+                          flujoAprobacionId: isSemi ? 'f_semielaborado' : (datosForm.flujoAprobacionId || 'f1')
+                        };
+                      }
+                      setDatosForm({ ...datosForm, nombre: newName, ...extra });
+                    }}
                     className="w-full p-1.5 border rounded-lg font-bold text-xs bg-slate-50/50 focus:bg-white outline-none focus:ring-2 focus:ring-emerald-100 shadow-sm transition-all" />
                 </div>
                 <div className="md:col-span-4 space-y-1">

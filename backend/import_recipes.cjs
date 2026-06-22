@@ -84,16 +84,29 @@ async function importRecipes() {
 
             const manualData = overrides.get(file) || {};
 
+            // Auto-detección de código NetSuite (SE##### / PTI##### / PTL#####) del nombre
+            let codigoNS = manualData["Código NetSuite (Receta)"] || rawData.codigoNetSuiteReceta || "";
+            let esSemi = false;
+            const textToSearch = `${file} ${rawData.nombre || ''} ${codigoNS}`;
+            const nsMatch = textToSearch.match(/(SE\d+|PTI\d+|PTL\d+)/i);
+            if (nsMatch) {
+                codigoNS = nsMatch[1].toUpperCase();
+                if (codigoNS.startsWith('SE')) {
+                    esSemi = true;
+                }
+            }
+
             // Preparar objeto para upsertReceta
             const recipeData = {
                 id: recipeId,
                 nombre: manualData["Nombre Receta (Display)"] || rawData.nombre,
                 nombre_receta: manualData["Nombre Receta (NetSuite)"] || rawData.nombre,
-                codigo_netsuite: manualData["Código NetSuite (Receta)"] || rawData.codigoNetSuiteReceta || "",
+                codigo_netsuite: codigoNS,
                 estado: 'APROBADO', // Registro directo como aprobado
                 versionActual: Number.isNaN(Number(rawData.version)) ? 1 : Number(rawData.version || 1),
                 pasos: rawData.pasos || [],
-                esSemielaborado: false,
+                esSemielaborado: esSemi,
+                flujoAprobacionId: esSemi ? 'f_semielaborado' : 'f1',
                 tipoCosteo: 'GRAMO',
                 subsidiaria: manualData["Subsidiaria"] || rawData.subsidiaria || rawData.subsidiary || '',
                 elaboradoPor: rawData.elaboradoPor?.split(',')[0] || '',

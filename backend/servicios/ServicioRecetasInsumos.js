@@ -148,7 +148,7 @@ async function upsertReceta(data) {
     const conn = await pool.getConnection();
     try {
         await conn.beginTransaction();
-        const {
+        let {
             id, nombre, estado, versionActual, pasos, costoTotal,
             esSemielaborado, tipoCosteo, mudi, gif,
             totalMP, totalEMP, totalMUDI, costoTotalBase, costoTotalFinal,
@@ -162,6 +162,17 @@ async function upsertReceta(data) {
             nombre_receta, codigo_netsuite,
             tiempoProcesoMinutos, porcentajeDesecho, costoDesecho, tasaMUDI, tasaGIF
         } = data;
+
+        // Auto-detección de código NetSuite (SE##### / PTI##### / PTL#####) del nombre
+        const textToSearch = `${data.detalle_nombre_receta || ''} ${nombre || ''} ${nombre_receta || ''}`;
+        const nsMatch = textToSearch.match(/(SE\d+|PTI\d+|PTL\d+)/i);
+        if (nsMatch) {
+            codigo_netsuite = nsMatch[1].toUpperCase();
+            if (codigo_netsuite.startsWith('SE')) {
+                esSemielaborado = true;
+                flujoAprobacionId = 'f_semielaborado';
+            }
+        }
 
         // Lógica de concatenación automática al aprobar
         let detalle_nombre_receta = data.detalle_nombre_receta || null;
