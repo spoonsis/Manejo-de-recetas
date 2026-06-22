@@ -665,7 +665,7 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
     };
 
     // Roles y Estados disponibles para selects
-    const rolesDisponibles: Rol[] = ['CHEF', 'COSTOS', 'MKT', 'CALIDAD', 'COMPRAS', 'LOGISTICA', 'ADMIN'];
+    const rolesDisponibles = configRoles.map(cr => cr.rol);
     const estadosDisponibles = Object.values(EstadoReceta);
 
     return (
@@ -843,7 +843,7 @@ function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, o
         'registrado_netsuite', 'codigo_netsuite'
     ];
 
-    const rolesDisponibles: Rol[] = ['CHEF', 'COSTOS', 'MKT', 'CALIDAD', 'COMPRAS', 'LOGISTICA', 'ADMIN'];
+    const rolesDisponibles = configRoles.map(cr => cr.rol);
 
     const toggleCampo = (campo: keyof Insumo) => {
         setDatos(prev => {

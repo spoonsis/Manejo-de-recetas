@@ -14,12 +14,12 @@ import {
     X,
     Save
 } from 'lucide-react';
-import { Usuario, Rol } from './types';
+import { Usuario, Rol, ConfiguracionRol } from './types';
 import { useStore } from './useStore';
 import { Badge } from './components/ui/Badge';
 import { Button } from './components/ui/Button';
 
-export default function GestionUsuarios() {
+export default function GestionUsuarios({ configRoles = [] }: { configRoles?: ConfiguracionRol[] }) {
     const [usuarios, setUsuarios] = useState<Usuario[]>([]);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
@@ -99,7 +99,9 @@ export default function GestionUsuarios() {
         u.email.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    const roles: Rol[] = ['CHEF', 'COSTOS', 'MKT', 'CALIDAD', 'COMPRAS', 'LOGISTICA', 'ADMIN'];
+    const roles: Rol[] = configRoles.length > 0
+        ? configRoles.map(cr => cr.rol)
+        : ['CHEF', 'COSTOS', 'MKT', 'CALIDAD', 'COMPRAS', 'LOGISTICA', 'ADMIN'];
 
     return (
         <div className="space-y-6 animate-in fade-in duration-500">

@@ -1371,7 +1371,7 @@ export default function App() {
               )}
 
               {adminTab === 'usuarios' && (
-                <GestionUsuarios />
+                <GestionUsuarios configRoles={configRoles} />
               )}
             </div>
           } />
