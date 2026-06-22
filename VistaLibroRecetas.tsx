@@ -1,5 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Search, Filter, Clock, Scale, ArrowRight, List as ListIcon, LayoutGrid, Snowflake, Flame, ChefHat, Coffee, Package, Palette, Sparkles, Utensils, Factory, Cake, HelpCircle, ChevronLeft, Layers } from 'lucide-react';
+import { BookOpen, Search, Filter, Clock, Scale, ArrowRight, List as ListIcon, LayoutGrid, Snowflake, Flame, ChefHat, Coffee, Package, Palette, Sparkles, Utensils, Factory, Cake, HelpCircle, ChevronLeft, Layers, FolderDown, Loader2 } from 'lucide-react';
+import JSZip from 'jszip';
+import { pdf } from '@react-pdf/renderer';
+import ExportarRecetaPDF from './ExportarRecetaPDF';
+import { useStore } from './useStore';
 
 const normalizeArea = (rawArea: string) => {
   const a = (rawArea || '').trim().toLowerCase();
@@ -35,10 +39,100 @@ const AREA_CONFIG: Record<string, { icon: any, color: string, bg: string, border
   'Área no definida': { icon: HelpCircle, color: 'text-slate-400', bg: 'bg-slate-50', border: 'border-slate-200 hover:border-slate-300' },
 };
 
-export default function VistaLibroRecetas({ recipes, onSelect }: any) {
+export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: any) {
   const [search, setSearch] = useState('');
   const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+
+  // Estados para descarga de ZIP masiva
+  const [generandoZIP, setGenerandoZIP] = useState(false);
+  const [progresoActual, setProgresoActual] = useState(0);
+  const [progresoTotal, setProgresoTotal] = useState(0);
+  const [recetaActualZIP, setRecetaActualZIP] = useState('');
+
+  const userRole = useStore((state) => state.role);
+
+  const tienePermisoDescarga = useMemo(() => {
+    const config = configRoles?.find((r: any) => r.rol === userRole);
+    return config ? config.permisos.includes('DESCARGA_MASIVA') : false;
+  }, [configRoles, userRole]);
+
+  const descargarCategoriaZIP = async () => {
+    if (filtradas.length === 0) return;
+    
+    setGenerandoZIP(true);
+    setProgresoActual(0);
+    setProgresoTotal(filtradas.length);
+    
+    try {
+      const zip = new JSZip();
+      
+      for (let i = 0; i < filtradas.length; i++) {
+        const receta = filtradas[i];
+        setRecetaActualZIP(receta.nombre);
+        setProgresoActual(i + 1);
+        
+        // Generar ingredientes categorizados como lo hace el ExportarRecetaPDF
+        const grupos = {
+          ensamble: [] as any[],
+          decoracion: [] as any[],
+          empaque: [] as any[]
+        };
+
+        (receta.ingredientes || []).forEach((ing: any) => {
+          if (ing.seccionReceta === 'ENSAMBLE') {
+            grupos.ensamble.push(ing);
+          } else if (ing.seccionReceta === 'DECORACION') {
+            grupos.decoracion.push(ing);
+          } else if (ing.seccionReceta === 'EMPAQUE') {
+            grupos.empaque.push(ing);
+          } else {
+            const tipo = (ing.tipoMaterial || '').toUpperCase();
+            if (tipo.includes('EMPAQUE')) {
+              grupos.empaque.push(ing);
+            } else {
+              grupos.ensamble.push(ing);
+            }
+          }
+        });
+
+        const doc = React.createElement(ExportarRecetaPDF, {
+          receta: {
+            ...receta,
+            ingredientesCategorizados: grupos
+          }
+        });
+        
+        const blob = await pdf(doc).toBlob();
+        
+        // Limpiar el nombre de la receta para el archivo local
+        const cleanName = (receta.nombre || 'Receta').replace(/[\/\\?%*:|"<>]/g, '_').trim();
+        const codePart = receta.codigoCalidad ? `[${receta.codigoCalidad}] ` : '';
+        const fileName = `${codePart}${cleanName}.pdf`;
+        
+        zip.file(fileName, blob);
+      }
+      
+      setRecetaActualZIP('Comprimiendo carpeta...');
+      const content = await zip.generateAsync({ type: 'blob' });
+      
+      // Descargar el archivo ZIP
+      const url = URL.createObjectURL(content);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `Recetas_${selectedGroup || 'Categoria'}.zip`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      
+    } catch (err) {
+      console.error("Error al generar descarga masiva ZIP:", err);
+      alert("Ocurrió un error al generar la descarga masiva de recetas. Por favor intenta de nuevo.");
+    } finally {
+      setGenerandoZIP(false);
+    }
+  };
 
   // Compute grouped recipes
   const groupedRecipes = useMemo(() => {
@@ -137,6 +231,15 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
                 <button onClick={() => setViewMode('list')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'list' ? 'bg-business-orange text-white shadow-md' : 'text-slate-600 hover:bg-slate-50'}`}><ListIcon size={16} /></button>
                 <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-business-orange text-white shadow-md' : 'text-slate-600 hover:bg-slate-50'}`}><LayoutGrid size={16} /></button>
               </div>
+              {tienePermisoDescarga && filtradas.length > 0 && (
+                <button
+                  onClick={descargarCategoriaZIP}
+                  className="flex items-center gap-2 px-4 py-2 bg-[#8e925b] hover:bg-[#7d833c] text-white text-xs font-black uppercase tracking-wider rounded-xl shadow-md transition-all active:scale-95 shrink-0"
+                >
+                  <FolderDown className="w-4 h-4" />
+                  Descargar Categoría (ZIP)
+                </button>
+              )}
               <div className="relative w-full sm:w-64">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-600" />
                 <input type="text" placeholder={`Buscar en ${selectedGroup}...`} value={search} onChange={(e) => setSearch(e.target.value)} className="w-full pl-10 pr-4 py-2 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-business-mustard/20 outline-none font-medium shadow-sm transition-all text-xs" />
@@ -234,6 +337,41 @@ export default function VistaLibroRecetas({ recipes, onSelect }: any) {
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {/* OVERLAY DE PROGRESO ZIP */}
+      {generandoZIP && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-md z-50 flex items-center justify-center animate-in fade-in duration-300">
+          <div className="bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 max-w-md w-full mx-4 text-center space-y-6">
+            <div className="w-16 h-16 bg-slate-50 text-indigo-600 rounded-full flex items-center justify-center mx-auto shadow-inner animate-pulse">
+              <Loader2 className="w-8 h-8 text-[#8e925b] animate-spin" />
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight">Generando Descarga Masiva</h3>
+              <p className="text-slate-500 font-medium text-sm">
+                Procesando recetas del área de <strong className="text-[#8e925b]">{selectedGroup}</strong>. Por favor, no cierres esta ventana.
+              </p>
+            </div>
+            
+            <div className="space-y-1">
+              <div className="flex justify-between text-xs font-bold text-slate-600 uppercase tracking-widest">
+                <span>Progreso</span>
+                <span>{progresoActual} / {progresoTotal}</span>
+              </div>
+              <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div 
+                  className="bg-[#8e925b] h-full rounded-full transition-all duration-300"
+                  style={{ width: `${(progresoActual / progresoTotal) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-left">
+              <span className="text-[10px] font-black uppercase text-slate-600 block tracking-widest mb-1">Archivo actual:</span>
+              <p className="text-xs font-bold text-slate-800 truncate">{recetaActualZIP}</p>
+            </div>
+          </div>
         </div>
       )}
     </div>

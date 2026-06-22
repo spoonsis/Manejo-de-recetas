@@ -40,17 +40,18 @@ const MICROORGANISMOS_INICIALES = ["Salmonella spp", "Listeria monocytogenes", "
 const PERMISOS_DISPONIBLES: Permiso[] = [
   'RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'APROBAR_COSTOS',
   'APROBAR_MKT', 'CERTIFICAR_CALIDAD', 'GESTION_INSUMOS',
-  'CONFIG_SISTEMA', 'GESTION_USUARIOS', 'FICHAS_TECNICAS'
+  'CONFIG_SISTEMA', 'GESTION_USUARIOS', 'FICHAS_TECNICAS',
+  'DESCARGA_MASIVA'
 ];
 
 const CONFIG_ROLES_INICIAL: ConfiguracionRol[] = [
-  { rol: 'CHEF', permisos: ['RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'GESTION_INSUMOS', 'FICHAS_TECNICAS'], color: 'bg-blue-500' },
+  { rol: 'CHEF', permisos: ['RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'GESTION_INSUMOS', 'FICHAS_TECNICAS', 'DESCARGA_MASIVA'], color: 'bg-blue-500' },
   { rol: 'COSTOS', permisos: ['RECETAS_LECTURA', 'APROBAR_COSTOS', 'GESTION_INSUMOS'], color: 'bg-yellow-500' },
   { rol: 'MKT', permisos: ['RECETAS_LECTURA', 'APROBAR_MKT'], color: 'bg-orange-500' },
   { rol: 'CALIDAD', permisos: ['RECETAS_LECTURA', 'CERTIFICAR_CALIDAD', 'FICHAS_TECNICAS', 'GESTION_INSUMOS'], color: 'bg-purple-500' },
   { rol: 'COMPRAS', permisos: ['GESTION_INSUMOS'], color: 'bg-emerald-500' },
   { rol: 'LOGISTICA', permisos: ['GESTION_INSUMOS'], color: 'bg-orange-500' },
-  { rol: 'ADMIN', permisos: ['RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'APROBAR_COSTOS', 'APROBAR_MKT', 'CERTIFICAR_CALIDAD', 'GESTION_INSUMOS', 'CONFIG_SISTEMA', 'GESTION_USUARIOS', 'FICHAS_TECNICAS'], color: 'bg-slate-900' }
+  { rol: 'ADMIN', permisos: ['RECETAS_LECTURA', 'RECETAS_ESCRITURA', 'APROBAR_COSTOS', 'APROBAR_MKT', 'CERTIFICAR_CALIDAD', 'GESTION_INSUMOS', 'CONFIG_SISTEMA', 'GESTION_USUARIOS', 'FICHAS_TECNICAS', 'DESCARGA_MASIVA'], color: 'bg-slate-900' }
 ];
 
 const FLUJO_DEFAULT: FlujoAprobacion = {
@@ -1251,7 +1252,7 @@ export default function App() {
       <main className="flex-1 overflow-y-auto p-3 md:p-6 relative">
         <Routes>
           <Route path="/" element={<Panel recipes={recetas} insumos={insumos} role={rol} setView={(v: string) => navigate(v === 'panel' ? '/' : `/${v}`)} />} />
-          <Route path="/libro" element={<VistaLibroRecetas recipes={recetasLibroUnicas} onSelect={(r: Receta) => setDetalleLibro(r)} />} />
+          <Route path="/libro" element={<VistaLibroRecetas recipes={recetasLibroUnicas} onSelect={(r: Receta) => setDetalleLibro(r)} configRoles={configRoles} />} />
           <Route path="/inventario" element={<VistaInventario insumos={insumos} onSave={manejarGuardarInsumo} role={rol} onDelete={(id: string) => setInsumos((p: any[]) => p.filter((i: { id: string; }) => i.id !== id))} fasesConfig={fasesInsumo} proveedores={proveedores} editandoId={editandoInsumoId} onClearEdit={() => setEditandoInsumoId(null)} />} />
           <Route path="/fichas" element={
             <VistaFichasTecnicas

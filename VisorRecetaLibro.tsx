@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins, Building2, Users, BadgeCheck, Warehouse, Package, AlertCircle } from 'lucide-react';
+import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins, Building2, Users, BadgeCheck, Warehouse, Package, AlertCircle, Layers, Network, ChevronDown, ChevronRight } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
 import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta } from './types';
@@ -35,6 +35,191 @@ export default function VisorRecetaLibro({
       console.error("Error registrando impresión", e);
     }
   };
+
+  const [mostrarExplosion, setMostrarExplosion] = useState(false);
+  const [cantidadProducir, setCantidadProducir] = useState<number>(1);
+  const [subTabExplosion, setSubTabExplosion] = useState<'consolidado' | 'arbol'>('consolidado');
+
+  React.useEffect(() => {
+    setCantidadProducir(
+      recetaActiva.tipoCosteo === 'GRAMO'
+        ? (recetaActiva.pesoTotalCantidad || 1000)
+        : (recetaActiva.porcionesCantidad || 10)
+    );
+  }, [recetaActiva]);
+
+  // Interfaces para la explosión de materiales
+  interface ExplodedItem {
+    idReferencia: string;
+    codigoNetSuite: string;
+    nombre: string;
+    cantidad: number;
+    unidad: string;
+    costoUnitario: number;
+    costoTotal: number;
+    marca: string;
+    seccionReceta: 'ENSAMBLE' | 'DECORACION' | 'EMPAQUE';
+  }
+
+  interface TreeItem {
+    nombre: string;
+    codigoNetSuite?: string;
+    cantidad: number;
+    unidad: string;
+    esSemielaborado: boolean;
+    costoTotal: number;
+    hijos: TreeItem[];
+  }
+
+  // Memorizar el cálculo de la explosión
+  const datosExplosion = useMemo(() => {
+    if (!mostrarExplosion) return { consolidado: [], arbol: [] };
+
+    const consolidado: { [key: string]: ExplodedItem } = {};
+    const arbolJerarquico: TreeItem[] = [];
+
+    // Rendimiento base de la receta actual activa
+    const baseYield = recetaActiva.tipoCosteo === 'GRAMO'
+      ? (recetaActiva.pesoTotalCantidad || 1)
+      : (recetaActiva.porcionesCantidad || 1);
+
+    const factorInicial = cantidadProducir / baseYield;
+
+    const explotarRecursivo = (
+      r: Receta,
+      factor: number,
+      seccionParent: 'ENSAMBLE' | 'DECORACION' | 'EMPAQUE',
+      listaArbol: TreeItem[]
+    ) => {
+      r.ingredientes.forEach((ing) => {
+        const costoUnit = ing.costoUnitario || 0;
+        const costoTot = costoUnit * ing.cantidad * factor;
+
+        // Determinar sección de uso hereda del padre o del ingrediente
+        const seccion = ing.seccionReceta || seccionParent;
+
+        // Validar tipo de ingrediente
+        const tipoMaterial = (ing.tipoMaterial || '').toUpperCase();
+        const esEmpaqueOModi = tipoMaterial.includes('EMPAQUE') || tipoMaterial.includes('MODI') || seccion === 'EMPAQUE';
+        
+        // Aplicar merma/desecho recursivo a ingredientes que sean materia prima (no empaque ni labor)
+        const factorDesecho = esEmpaqueOModi ? 1 : (1 + (r.porcentajeDesecho || 0) / 100);
+
+        // Identificar si es Semielaborado por tipo, prefijo del id o del código de calidad
+        const ins = insumos.find((i: any) => i.id === ing.idReferencia);
+        const codNS = (ing.codigoNetSuite || ins?.codigoNetSuite || '').trim();
+        const idString = String(ing.idReferencia || ing.id || '').trim();
+        const descUpper = (ing.nombre || '').toUpperCase();
+        
+        const esSemielaborado = 
+          ing.tipo === 'SEMIELABORADO' || 
+          idString.toUpperCase().startsWith('SE') || 
+          codNS.toUpperCase().startsWith('SE') || 
+          tipoMaterial === 'SEMIELABORADO' ||
+          tipoMaterial === 'SE' ||
+          descUpper.startsWith('SEMIELABORADO') ||
+          descUpper.startsWith('SE ');
+
+        let sub = null;
+        if (esSemielaborado) {
+          // Buscar receta en la base de datos por ID, por código de calidad o por nombre
+          sub = allRecipes.find((sr) => 
+            sr.id === ing.idReferencia || 
+            (codNS && sr.codigoCalidad && sr.codigoCalidad.trim().toUpperCase() === codNS.toUpperCase()) ||
+            (ing.nombre && sr.nombre && sr.nombre.trim().toUpperCase() === ing.nombre.trim().toUpperCase())
+          );
+        }
+
+        if (esSemielaborado && sub) {
+          // Es un semielaborado y encontramos su receta
+          const qtySub = ing.cantidad * factor * factorDesecho;
+          const subYield = sub.tipoCosteo === 'GRAMO'
+            ? (sub.pesoTotalCantidad || 1)
+            : (sub.porcionesCantidad || 1);
+
+          const costoSub = qtySub * (sub.costoTotalFinal / subYield);
+
+          const nodoArbol: TreeItem = {
+            nombre: ing.nombre,
+            codigoNetSuite: sub.codigoCalidad || ing.codigoCalidad || '',
+            cantidad: qtySub,
+            unidad: ing.unidad,
+            esSemielaborado: true,
+            costoTotal: costoSub,
+            hijos: []
+          };
+          listaArbol.push(nodoArbol);
+
+          // Factor recursivo incluyendo desecho del padre
+          const subFactor = factor * factorDesecho * (ing.cantidad / subYield);
+          explotarRecursivo(sub, subFactor, seccion, nodoArbol.hijos);
+        } else {
+          // Es un insumo básico (o un semielaborado sin receta asociada, que tratamos como insumo terminal)
+          const marca = ing.marca || ins?.marca || '';
+          const qtyFinal = ing.cantidad * factor * factorDesecho;
+          const costoFinal = qtyFinal * costoUnit;
+
+          // Consolidar
+          const key = `${ing.idReferencia || ing.id}_${seccion}`;
+          if (consolidado[key]) {
+            consolidado[key].cantidad += qtyFinal;
+            consolidado[key].costoTotal += costoFinal;
+          } else {
+            consolidado[key] = {
+              idReferencia: ing.idReferencia || ing.id,
+              codigoNetSuite: codNS,
+              nombre: ing.nombre,
+              cantidad: qtyFinal,
+              unidad: ing.unidad,
+              costoUnitario: costoUnit,
+              costoTotal: costoFinal,
+              marca,
+              seccionReceta: seccion,
+            };
+          }
+
+          // Agregar al árbol
+          listaArbol.push({
+            nombre: ing.nombre + (esSemielaborado ? ' (SE sin receta en BD)' : ''),
+            codigoNetSuite: codNS,
+            cantidad: qtyFinal,
+            unidad: ing.unidad,
+            esSemielaborado: esSemielaborado, // Si era SE pero no tenía receta
+            costoTotal: costoFinal,
+            hijos: []
+          });
+        }
+      });
+    };
+
+    const arbolPrincipal: TreeItem = {
+      nombre: recetaActiva.nombre,
+      codigoNetSuite: recetaActiva.codigoCalidad || '',
+      cantidad: cantidadProducir,
+      unidad: recetaActiva.tipoCosteo === 'GRAMO' ? (recetaActiva.pesoTotalUnidad || 'g') : (recetaActiva.porcionesUnidad || 'porc.'),
+      esSemielaborado: true,
+      costoTotal: 0,
+      hijos: []
+    };
+
+    explotarRecursivo(recetaActiva, factorInicial, 'ENSAMBLE', arbolPrincipal.hijos);
+
+    // Sumar costos de forma ascendente en el árbol
+    const recalcularCostosArbol = (nodo: TreeItem): number => {
+      if (nodo.hijos.length === 0) return nodo.costoTotal;
+      const sumHijos = nodo.hijos.reduce((sum, h) => sum + recalcularCostosArbol(h), 0);
+      nodo.costoTotal = sumHijos;
+      return sumHijos;
+    };
+    recalcularCostosArbol(arbolPrincipal);
+
+    arbolJerarquico.push(arbolPrincipal);
+
+    return {
+      consolidado: Object.values(consolidado),
+      arbol: arbolJerarquico
+    };
+  }, [mostrarExplosion, recetaActiva, cantidadProducir, insumos, allRecipes]);
 
   // Filtramos todas las versiones físicas guardadas que tienen el mismo nombre
   const versionesGuardadas = useMemo(() => {
@@ -615,12 +800,246 @@ export default function VisorRecetaLibro({
               </PDFDownloadLink>
             )}
 
+            <button
+              onClick={() => setMostrarExplosion(true)}
+              className="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-755 text-white font-black uppercase text-sm tracking-widest rounded-xl shadow-lg shadow-indigo-100 hover:bg-indigo-700 transition-all flex items-center gap-2 active:scale-95"
+            >
+              <Layers className="w-4 h-4" />
+              Explosionar BOM
+            </button>
+
             <button onClick={onClose} className="px-8 py-2.5 bg-white border border-slate-200 text-slate-600 font-black uppercase text-sm rounded-xl shadow-sm hover:bg-slate-50 active:scale-95 transition-all">
               Cerrar Consulta
             </button>
           </div>
         </div>
+
+        {/* Modal de Explosión de Materiales */}
+        {mostrarExplosion && (
+          <div className="fixed inset-0 z-[60] bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
+            <div className="bg-white w-full max-w-5xl rounded-3xl shadow-2xl border flex flex-col h-full max-h-[88vh] overflow-hidden">
+              {/* Cabecera del modal */}
+              <div className="p-5 border-b flex justify-between items-center bg-slate-50/50 shrink-0">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 bg-indigo-600 text-white rounded-xl"><Layers className="w-5 h-5" /></div>
+                  <div>
+                    <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight">Explosión Jerárquica de Materiales (BOM)</h3>
+                    <p className="text-[10px] text-slate-500 font-medium mt-0.5">
+                      Receta: <span className="font-bold text-slate-700">{recetaActiva.nombre}</span> | Versión Actual: <span className="font-bold text-slate-700">v{recetaActiva.versionActual}</span>
+                    </p>
+                  </div>
+                </div>
+                <button 
+                  onClick={() => setMostrarExplosion(false)} 
+                  className="p-1.5 hover:bg-slate-200 rounded-full transition-all text-slate-600"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Controles de Escalamiento y Estadísticas */}
+              <div className="p-5 bg-slate-50 border-b grid grid-cols-1 md:grid-cols-12 gap-4 items-center shrink-0">
+                {/* Escalamiento */}
+                <div className="md:col-span-6 flex flex-wrap gap-4 items-center">
+                  <div className="space-y-1">
+                    <span className="text-[10px] font-black text-slate-500 uppercase tracking-wider block">Rendimiento Base</span>
+                    <div className="px-3 py-1.5 bg-slate-200/80 text-slate-700 font-black rounded-lg text-xs uppercase tracking-wide border">
+                      {recetaActiva.tipoCosteo === 'GRAMO'
+                        ? `${recetaActiva.pesoTotalCantidad} g`
+                        : `${recetaActiva.porcionesCantidad} porciones`}
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <span className="text-[10px] font-black text-indigo-600 uppercase tracking-wider block">Cantidad a Producir</span>
+                    <div className="flex items-center">
+                      <input 
+                        type="number" 
+                        min="1"
+                        className="w-28 p-1.5 border rounded-lg font-black text-slate-800 outline-none focus:ring-2 focus:ring-indigo-100 text-xs text-center"
+                        value={cantidadProducir}
+                        onChange={(e) => setCantidadProducir(Math.max(1, Number(e.target.value)))}
+                      />
+                      <span className="ml-2 text-xs font-bold text-slate-600 capitalize">
+                        {recetaActiva.tipoCosteo === 'GRAMO' ? 'gramos (g)' : recetaActiva.porcionesUnidad || 'porciones'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Estadísticas rápidas */}
+                <div className="md:col-span-6 grid grid-cols-3 gap-3">
+                  <div className="bg-white border p-2.5 rounded-2xl shadow-sm text-center">
+                    <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest block">Insumos Únicos</span>
+                    <span className="text-sm font-black text-slate-700">{datosExplosion.consolidado.length}</span>
+                  </div>
+                  <div className="bg-white border p-2.5 rounded-2xl shadow-sm text-center">
+                    <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest block">Costo Materiales</span>
+                    <span className="text-sm font-black text-indigo-600">
+                      {datosExplosion.consolidado.reduce((acc, curr) => acc + curr.costoTotal, 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC', maximumFractionDigits: 0 })}
+                    </span>
+                  </div>
+                  <div className="bg-white border p-2.5 rounded-2xl shadow-sm text-center">
+                    <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest block">Costo / U.M.</span>
+                    <span className="text-sm font-black text-slate-700">
+                      {(datosExplosion.consolidado.reduce((acc, curr) => acc + curr.costoTotal, 0) / cantidadProducir).toLocaleString('es-CR', { style: 'currency', currency: 'CRC', minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Pestañas secundarias de Explosión */}
+              <div className="flex border-b bg-white px-6 space-x-6 shrink-0">
+                <button
+                  onClick={() => setSubTabExplosion('consolidado')}
+                  className={`py-3.5 text-xs font-black uppercase tracking-widest border-b-4 transition-all flex items-center gap-1.5 ${subTabExplosion === 'consolidado' ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-600 hover:text-slate-500'}`}
+                >
+                  <Calculator className="w-3.5 h-3.5" />
+                  Materia Prima Consolidada
+                </button>
+                <button
+                  onClick={() => setSubTabExplosion('arbol')}
+                  className={`py-3.5 text-xs font-black uppercase tracking-widest border-b-4 transition-all flex items-center gap-1.5 ${subTabExplosion === 'arbol' ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-600 hover:text-slate-500'}`}
+                >
+                  <Network className="w-3.5 h-3.5" />
+                  Árbol de Explosión
+                </button>
+              </div>
+
+              {/* Contenido Dinámico del modal */}
+              <div className="flex-1 overflow-y-auto p-5 bg-slate-50/50">
+                {subTabExplosion === 'consolidado' && (
+                  <div className="bg-white border rounded-2xl overflow-hidden shadow-sm animate-in fade-in duration-300">
+                    <table className="w-full text-left text-xs uppercase">
+                      <thead className="bg-slate-50 text-slate-600 font-black tracking-wider border-b">
+                        <tr>
+                          <th className="px-4 py-2.5">Código NS</th>
+                          <th className="px-4 py-2.5">Descripción</th>
+                          <th className="px-4 py-2.5">Marca</th>
+                          <th className="px-4 py-2.5 text-center">Sección</th>
+                          <th className="px-4 py-2.5 text-right">Cantidad Requerida</th>
+                          <th className="px-4 py-2.5 text-right">Costo Unitario</th>
+                          <th className="px-4 py-2.5 text-right">Costo Total</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-100 font-bold text-slate-700">
+                        {datosExplosion.consolidado.map((item, idx) => (
+                          <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                            <td className="px-4 py-2.5 font-mono text-[10px] text-slate-400">{item.codigoNetSuite || '-'}</td>
+                            <td className="px-4 py-2.5 text-slate-800 text-[11px] font-black">{item.nombre}</td>
+                            <td className="px-4 py-2.5 text-[10px] text-slate-500 italic">{item.marca || 'N/A'}</td>
+                            <td className="px-4 py-2.5 text-center">
+                              <span className={`text-[9px] font-black px-2 py-0.5 rounded-full ${
+                                item.seccionReceta === 'ENSAMBLE' ? 'bg-indigo-50 border border-indigo-100 text-indigo-700' :
+                                item.seccionReceta === 'DECORACION' ? 'bg-amber-50 border border-amber-100 text-amber-700' :
+                                'bg-blue-50 border border-blue-100 text-blue-700'
+                              }`}>
+                                {item.seccionReceta}
+                              </span>
+                            </td>
+                            <td className="px-4 py-2.5 text-right font-black text-slate-900">
+                              {item.cantidad.toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {item.unidad}
+                            </td>
+                            <td className="px-4 py-2.5 text-right text-slate-500">
+                              {item.costoUnitario.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+                            </td>
+                            <td className="px-4 py-2.5 text-right font-black text-indigo-600">
+                              {item.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+                            </td>
+                          </tr>
+                        ))}
+                        {datosExplosion.consolidado.length === 0 && (
+                          <tr>
+                            <td colSpan={7} className="text-center py-12 text-slate-400 font-bold uppercase tracking-widest italic">No hay insumos consolidados</td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+
+                {subTabExplosion === 'arbol' && (
+                  <div className="bg-white border rounded-2xl p-5 shadow-sm space-y-2 animate-in fade-in duration-300">
+                    <div className="p-3 bg-indigo-50/50 border border-indigo-100 text-indigo-700 font-medium rounded-xl text-xs flex gap-2 items-center mb-4">
+                      <AlertCircle className="w-4 h-4 shrink-0" />
+                      <span>Esta vista jerárquica muestra el árbol técnico de materiales y cómo contribuye cada subreceta al rendimiento y costo final.</span>
+                    </div>
+                    <div className="overflow-x-auto">
+                      {datosExplosion.arbol.map((nodo, idx) => (
+                        <TreeNode key={idx} node={nodo} depth={0} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Pie del modal */}
+              <div className="p-5 border-t bg-slate-50/50 flex justify-between items-center shrink-0">
+                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">GastroFlow Material Explosion Engine</span>
+                <button 
+                  onClick={() => setMostrarExplosion(false)} 
+                  className="px-6 py-2 bg-slate-900 text-white font-black uppercase text-xs tracking-widest rounded-xl hover:bg-slate-800 transition-all active:scale-95"
+                >
+                  Cerrar Explosión
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 }
+
+// Componente para renderizar nodos del árbol jerárquico de forma recursiva
+const TreeNode = ({ node, depth = 0 }: { node: any; depth: number }) => {
+  const [isOpen, setIsOpen] = useState(true);
+  const tieneHijos = node.hijos && node.hijos.length > 0;
+
+  return (
+    <div className="ml-4 animate-in fade-in duration-200">
+      <div 
+        className={`flex items-center justify-between py-2 px-3 rounded-xl hover:bg-slate-50 transition-colors ${node.esSemielaborado ? 'font-black text-slate-900 bg-slate-50/50 my-1' : 'font-medium text-slate-600 text-xs border-b border-dashed border-slate-100 py-1'}`}
+      >
+        <div className="flex items-center gap-2">
+          {node.esSemielaborado && (
+            <button 
+              onClick={() => setIsOpen(!isOpen)} 
+              className="p-1 hover:bg-slate-200 rounded transition-all text-slate-500 shrink-0"
+            >
+              {isOpen ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+            </button>
+          )}
+          {!node.esSemielaborado && <div className="w-5 h-5 rounded-md bg-slate-100 flex items-center justify-center text-[8px] text-slate-500 font-black shrink-0 uppercase">MP</div>}
+          {node.esSemielaborado && !tieneHijos && <div className="w-5 h-5 rounded-md bg-amber-100 flex items-center justify-center text-[8px] text-amber-600 font-black shrink-0 uppercase">SE</div>}
+          
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="text-xs">{node.nombre}</span>
+            {node.codigoNetSuite && (
+              <span className="text-[8px] text-slate-500 bg-slate-100 border px-1.5 py-0.5 rounded font-mono uppercase tracking-wider">
+                {node.codigoNetSuite}
+              </span>
+            )}
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 text-right">
+          <div className="text-xs font-black text-slate-700 min-w-[100px]">
+            {node.cantidad.toLocaleString('es-CR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {node.unidad}
+          </div>
+          <div className="text-xs font-black text-indigo-600 w-24">
+            {node.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+          </div>
+        </div>
+      </div>
+
+      {tieneHijos && isOpen && (
+        <div className="pl-4 border-l-2 border-slate-100 ml-3 space-y-1 mt-1">
+          {node.hijos.map((h: any, idx: number) => (
+            <TreeNode key={idx} node={h} depth={depth + 1} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
