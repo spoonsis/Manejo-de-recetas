@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import AdminWorkflows from './AdminWorkflows';
 import GestionUsuarios from './GestionUsuarios';
 import VistaInventario from './VistaInventario';
@@ -159,7 +159,32 @@ export default function App() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
   // Estados de Administración
-  const [configRoles, setConfigRoles] = useState<ConfiguracionRol[]>(CONFIG_ROLES_INICIAL);
+  const [configRoles, setConfigRolesState] = useState<ConfiguracionRol[]>(CONFIG_ROLES_INICIAL);
+
+  const guardarConfigRoles = async (nuevaConfig: ConfiguracionRol[]) => {
+    try {
+      const res = await fetch(`/api/usuarios/roles/config`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify(nuevaConfig)
+      });
+      if (!res.ok) {
+        console.error("Error guardando roles en base de datos:", res.statusText);
+      }
+    } catch (e) {
+      console.error("Fallo de red al guardar roles:", e);
+    }
+  };
+
+  const setConfigRoles = useCallback((update: any) => {
+    setConfigRolesState((prev) => {
+      const nextValue = typeof update === 'function' ? update(prev) : update;
+      guardarConfigRoles(nextValue);
+      return nextValue;
+    });
+  }, []);
+
   const [flujos, setFlujos] = useState<FlujoAprobacion[]>([FLUJO_DEFAULT]);
   const [fasesInsumo, setFasesInsumo] = useState<FaseFluxoInsumo[]>(FASES_INSUMO_DEFAULT);
   const [maestroMicroorganismos, setMaestroMicroorganismos] = useState<string[]>(MICROORGANISMOS_INICIALES);
@@ -319,6 +344,30 @@ export default function App() {
             setFasesInsumo(FASES_INSUMO_DEFAULT);
           }
         }
+
+        // Cargar Configuración de Roles
+        try {
+          const resRoles = await fetch(`/api/usuarios/roles/config`, { credentials: 'include' });
+          if (resRoles.ok) {
+            const dataRoles = await resRoles.json();
+            if (dataRoles && dataRoles.length > 0) {
+              setConfigRolesState(dataRoles);
+            } else {
+              console.log("Sembrando roles iniciales en base de datos...");
+              await fetch(`/api/usuarios/roles/config`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
+                body: JSON.stringify(CONFIG_ROLES_INICIAL)
+              });
+              setConfigRolesState(CONFIG_ROLES_INICIAL);
+            }
+          }
+        } catch (errRoles) {
+          console.error("Error al cargar roles de la BD:", errRoles);
+          setConfigRolesState(CONFIG_ROLES_INICIAL);
+        }
+
         // 6. Cargar Proveedores SQL Server
         const resProveedores = await fetch(`/api/proveedores`, { credentials: 'include' });
         if (resProveedores.ok) {

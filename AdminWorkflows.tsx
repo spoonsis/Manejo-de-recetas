@@ -276,6 +276,22 @@ export default function AdminWorkflows({
                                         )}
                                     </div>
 
+                                    {/* Información de Auditoría */}
+                                    {(cr.creadoPor || cr.fechaCreacion) && (
+                                        <div className="flex flex-wrap gap-x-3 gap-y-1 text-[10px] text-slate-500 font-bold uppercase tracking-wider bg-slate-100/50 p-2.5 rounded-xl border border-slate-100">
+                                            {cr.creadoPor && (
+                                                <span>
+                                                    Creado por: <strong className="text-slate-700">{cr.creadoPor}</strong>
+                                                </span>
+                                            )}
+                                            {cr.fechaCreacion && (
+                                                <span>
+                                                    Fecha: <strong className="text-slate-700">{new Date(cr.fechaCreacion).toLocaleDateString()}</strong>
+                                                </span>
+                                            )}
+                                        </div>
+                                    )}
+
                                     <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm max-h-60 overflow-y-auto inner-scroll">
                                         <p className="text-sm font-black text-slate-600 uppercase mb-3 sticky top-0 bg-white pb-2 border-b border-slate-50">Permisos Asignados:</p>
                                         <div className="grid grid-cols-1 gap-2">
@@ -292,6 +308,30 @@ export default function AdminWorkflows({
                                                     </button>
                                                 );
                                             })}
+                                        </div>
+                                    </div>
+
+                                    {/* Personal Asignado */}
+                                    <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm max-h-40 overflow-y-auto inner-scroll space-y-2">
+                                        <p className="text-sm font-black text-slate-600 uppercase mb-2 border-b border-slate-50 pb-1 flex items-center justify-between">
+                                            <span>Personal con este rol:</span>
+                                            <span className="bg-slate-100 text-slate-600 text-[10px] font-black px-2 py-0.5 rounded-full">
+                                                {cr.usuariosAsignados?.length || 0}
+                                            </span>
+                                        </p>
+                                        <div className="flex flex-wrap gap-1.5">
+                                            {(cr.usuariosAsignados || []).map((u: any) => (
+                                                <span 
+                                                    key={u.id} 
+                                                    className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 bg-slate-50 border text-slate-600 rounded-lg hover:bg-slate-100 transition-colors"
+                                                    title={`@${u.nombreUsuario} - ${u.activo ? 'Activo' : 'Inactivo'}`}
+                                                >
+                                                    {u.nombreCompleto}
+                                                </span>
+                                            ))}
+                                            {(!cr.usuariosAsignados || cr.usuariosAsignados.length === 0) && (
+                                                <span className="text-[10px] font-bold text-slate-600 italic">Sin personal asignado</span>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

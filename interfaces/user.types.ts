@@ -16,6 +16,14 @@ export interface ConfiguracionRol {
   rol: Rol;
   permisos: Permiso[];
   color: string;
+  creadoPor?: string;
+  fechaCreacion?: string;
+  usuariosAsignados?: {
+    id: string;
+    nombreUsuario: string;
+    nombreCompleto: string;
+    activo: boolean;
+  }[];
 }
 
 export interface Usuario {
