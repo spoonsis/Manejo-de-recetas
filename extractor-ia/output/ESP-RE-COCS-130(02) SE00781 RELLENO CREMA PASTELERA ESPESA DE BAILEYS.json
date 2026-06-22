@@ -2,8 +2,8 @@
   "nombre": "RELLENO CREMA PASTELERA ESPESA DE BAILEYS",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Cocina",
   "version": "02",
   "estado": "APROBADO",
   "ingredientes": [

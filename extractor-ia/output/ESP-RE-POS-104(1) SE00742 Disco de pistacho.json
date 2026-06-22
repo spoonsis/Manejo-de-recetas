@@ -2,8 +2,8 @@
   "nombre": "Disco de pistacho",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
   "version": "1",
   "estado": "APROBADO",
   "ingredientes": [

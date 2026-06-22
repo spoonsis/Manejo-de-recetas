@@ -2,7 +2,7 @@
   "nombre": "Empaque mini baguettina",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
+  "areaProduce": "Cocina",
   "areaEmpaca": "Empaque",
   "version": "1",
   "estado": "APROBADO",

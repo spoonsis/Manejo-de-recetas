@@ -2,8 +2,8 @@
   "nombre": "Almendra tostadas pequeña",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
   "version": 1,
   "estado": "APROBADO",
   "ingredientes": [

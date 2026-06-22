@@ -2,8 +2,8 @@
   "nombre": "Premezcla para Turron de chocolate y pecanas",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
   "version": "1",
   "estado": "APROBADO",
   "ingredientes": [

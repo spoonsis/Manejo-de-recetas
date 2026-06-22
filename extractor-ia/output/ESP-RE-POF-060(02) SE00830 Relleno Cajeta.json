@@ -2,8 +2,8 @@
   "nombre": "Relleno Cajeta",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
   "version": "02",
   "estado": "APROBADO",
   "ingredientes": [

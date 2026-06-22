@@ -2,8 +2,8 @@
   "nombre": "Queque Navideño Madiano Spoon 400 g",
   "subsidiaria": "Empresa principal : Servicios de Pastelería S.A.",
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
   "version": "1",
   "estado": "APROBADO",
   "ingredientes": [

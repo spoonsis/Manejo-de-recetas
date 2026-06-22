@@ -2,8 +2,8 @@
   "nombre": "Pasta Alfajor Caramelo",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
   "version": "03",
   "estado": "APROBADO",
   "ingredientes": [

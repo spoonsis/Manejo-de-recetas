@@ -2,7 +2,7 @@
   "nombre": "Empaque pollo y Pesto de 200 g",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
+  "areaProduce": "Cocina",
   "areaEmpaca": "Empaque",
   "version": "1",
   "estado": "APROBADO",

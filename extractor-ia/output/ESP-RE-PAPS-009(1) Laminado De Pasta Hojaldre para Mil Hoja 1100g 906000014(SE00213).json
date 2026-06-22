@@ -2,8 +2,8 @@
   "nombre": "Laminado De Pasta Hojaldre para Mil Hoja 1100g",
   "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
   "elaboradoPor": "Javier Tong, Chef",
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
   "version": "05",
   "estado": "APROBADO",
   "ingredientes": [

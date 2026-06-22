@@ -98,29 +98,33 @@ async function run() {
                         const filePath = path.join(INPUT_DIR, matchingFile);
                         try {
                             const workbook = XLSX.readFile(filePath);
-                            const sheet = workbook.Sheets[workbook.SheetNames[0]];
-                            const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
-
                             let excelAreaP = '';
                             let excelAreaE = '';
 
-                            for (const row of rows) {
-                                if (!row) continue;
-                                for (let colIdx = 0; colIdx < row.length; colIdx++) {
-                                    const val = String(row[colIdx] || '').trim().toLowerCase();
-                                    
-                                    if (val.includes('area que produce') || val.includes('área que produce')) {
-                                        let nextIdx = colIdx + 1;
-                                        while (nextIdx < row.length && !excelAreaP) {
-                                            excelAreaP = String(row[nextIdx] || '').trim();
-                                            nextIdx++;
+                            for (const sheetName of workbook.SheetNames) {
+                                if (excelAreaP && excelAreaE) break; // Already found both areas
+                                
+                                const sheet = workbook.Sheets[sheetName];
+                                const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+                                for (const row of rows) {
+                                    if (!row) continue;
+                                    for (let colIdx = 0; colIdx < row.length; colIdx++) {
+                                        const val = String(row[colIdx] || '').trim().toLowerCase();
+                                        
+                                        if (val.includes('area que produce') || val.includes('área que produce')) {
+                                            let nextIdx = colIdx + 1;
+                                            while (nextIdx < row.length && !excelAreaP) {
+                                                excelAreaP = String(row[nextIdx] || '').trim();
+                                                nextIdx++;
+                                            }
                                         }
-                                    }
-                                    if (val.includes('area que empaca') || val.includes('área que empaca')) {
-                                        let nextIdx = colIdx + 1;
-                                        while (nextIdx < row.length && !excelAreaE) {
-                                            excelAreaE = String(row[nextIdx] || '').trim();
-                                            nextIdx++;
+                                        if (val.includes('area que empaca') || val.includes('área que empaca')) {
+                                            let nextIdx = colIdx + 1;
+                                            while (nextIdx < row.length && !excelAreaE) {
+                                                excelAreaE = String(row[nextIdx] || '').trim();
+                                                nextIdx++;
+                                            }
                                         }
                                     }
                                 }

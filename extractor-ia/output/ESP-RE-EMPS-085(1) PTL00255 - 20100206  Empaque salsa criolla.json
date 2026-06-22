@@ -2,7 +2,7 @@
   "nombre": "Empaque salsa criolla",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
+  "areaProduce": "Cocina",
   "areaEmpaca": "Empaque",
   "version": "1",
   "estado": "APROBADO",

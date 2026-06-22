@@ -2,8 +2,8 @@
   "nombre": "BASE PREMEZCLA PARA PASTA ALFAJOR VELVET",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Premezclas",
+  "areaEmpaca": "Premezclas",
   "version": 1,
   "estado": "APROBADO",
   "ingredientes": [

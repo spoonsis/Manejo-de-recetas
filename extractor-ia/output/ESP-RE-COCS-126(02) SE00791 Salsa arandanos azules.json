@@ -2,8 +2,8 @@
   "nombre": "Salsa arandanos azules",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Pastas",
+  "areaEmpaca": "Pastas",
   "version": "02",
   "estado": "APROBADO",
   "ingredientes": [

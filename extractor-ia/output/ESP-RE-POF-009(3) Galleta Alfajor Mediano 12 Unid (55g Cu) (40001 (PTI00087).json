@@ -2,8 +2,8 @@
   "nombre": "Galleta Alfajor Mediano",
   "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
   "elaboradoPor": "Marta Beeche M",
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Postres",
+  "areaEmpaca": "Postres",
   "version": "3",
   "estado": "APROBADO",
   "ingredientes": [

@@ -2,8 +2,8 @@
   "nombre": "Ganache Blanco Duro",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
   "version": "01",
   "estado": "APROBADO",
   "ingredientes": [

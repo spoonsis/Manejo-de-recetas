@@ -2,8 +2,8 @@
   "nombre": "Crumble de manzana Spoon",
   "subsidiaria": null,
   "elaboradoPor": null,
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Cocina",
+  "areaEmpaca": "Empaque",
   "version": "01",
   "estado": "APROBADO",
   "ingredientes": [

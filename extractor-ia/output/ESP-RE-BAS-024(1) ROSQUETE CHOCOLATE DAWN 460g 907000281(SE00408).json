@@ -2,8 +2,8 @@
   "nombre": "ROSQUETE CHOCOLATE DAWN 460g",
   "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
   "elaboradoPor": "Javier Tong, Chef",
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Batidos",
+  "areaEmpaca": "Batidos",
   "version": "1",
   "estado": "APROBADO",
   "ingredientes": [

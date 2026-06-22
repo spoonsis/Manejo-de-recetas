@@ -2,8 +2,8 @@
   "nombre": "Torta Pie de Limon LOCALES",
   "subsidiaria": "SERVICIOS DE PASTELERIA S.A.",
   "elaboradoPor": "Maria Jose Rodriguez, Chef",
-  "areaProduce": null,
-  "areaEmpaca": null,
+  "areaProduce": "Decoración",
+  "areaEmpaca": "Decoracion",
   "version": "1",
   "estado": "APROBADO",
   "ingredientes": [
