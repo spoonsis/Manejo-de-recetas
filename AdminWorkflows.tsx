@@ -347,6 +347,7 @@ export default function AdminWorkflows({
                                 flujo={editandoFlujo}
                                 onSave={guardarFlujo}
                                 onCancel={() => setEditandoFlujo(null)}
+                                configRoles={configRoles}
                             />
                         ) : (
                             <div className="space-y-8">
@@ -457,6 +458,7 @@ export default function AdminWorkflows({
                                 fase={editandoFase}
                                 onSave={guardarFase}
                                 onCancel={() => setEditandoFase(null)}
+                                configRoles={configRoles}
                             />
                         ) : (
                             <div className="space-y-8">
@@ -621,7 +623,7 @@ export default function AdminWorkflows({
 
 // --- Subcomponente Editor Flujo (Aprobación) ---
 
-function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSave: (f: FlujoAprobacion) => void, onCancel: () => void }) {
+function EditorFlujo({ flujo, onSave, onCancel, configRoles }: { flujo: FlujoAprobacion, onSave: (f: FlujoAprobacion) => void, onCancel: () => void, configRoles: ConfiguracionRol[] }) {
     const [datos, setDatos] = useState<FlujoAprobacion>(flujo);
 
     const agregarPaso = () => {
@@ -829,7 +831,7 @@ function EditorFlujo({ flujo, onSave, onCancel }: { flujo: FlujoAprobacion, onSa
 
 // --- Subcomponente Editor Fase Insumo ---
 
-function EditorFaseInsumo({ fase, onSave, onCancel }: { fase: FaseFluxoInsumo, onSave: (f: FaseFluxoInsumo) => void, onCancel: () => void }) {
+function EditorFaseInsumo({ fase, onSave, onCancel, configRoles }: { fase: FaseFluxoInsumo, onSave: (f: FaseFluxoInsumo) => void, onCancel: () => void, configRoles: ConfiguracionRol[] }) {
     const [datos, setDatos] = useState<FaseFluxoInsumo>(fase);
 
     const todosCampos: (keyof Insumo)[] = [
