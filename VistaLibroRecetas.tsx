@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookOpen, Search, Filter, Clock, Scale, ArrowRight, List as ListIcon, LayoutGrid, Snowflake, Flame, ChefHat, Coffee, Package, Palette, Sparkles, Utensils, Factory, Cake, HelpCircle, ChevronLeft, Layers, FolderDown, Loader2 } from 'lucide-react';
+import { BookOpen, Search, Filter, Clock, Scale, ArrowRight, List as ListIcon, LayoutGrid, Snowflake, Flame, ChefHat, Coffee, Package, Palette, Sparkles, Utensils, Factory, Cake, HelpCircle, ChevronLeft, Layers, FolderDown, Loader2, X } from 'lucide-react';
 import JSZip from 'jszip';
 import { pdf } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
@@ -41,6 +41,7 @@ const AREA_CONFIG: Record<string, { icon: any, color: string, bg: string, border
 
 export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: any) {
   const [search, setSearch] = useState('');
+  const [libroSearchTerm, setLibroSearchTerm] = useState('');
   const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
@@ -147,8 +148,27 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
         groups['Área no definida'].push(r);
       }
     });
-    return groups;
   }, [recipes]);
+
+  // Categorías que coinciden globalmente
+  const categoriasCoincidentes = useMemo(() => {
+    if (!libroSearchTerm.trim()) return [];
+    return Object.keys(groupedRecipes).filter(cat => 
+      cat !== 'Área no definida' && cat !== 'Duplicados' && 
+      cat.toLowerCase().includes(libroSearchTerm.toLowerCase())
+    );
+  }, [groupedRecipes, libroSearchTerm]);
+
+  // Recetas que coinciden globalmente (aprobadas)
+  const recetasCoincidentes = useMemo(() => {
+    if (!libroSearchTerm.trim()) return [];
+    return recipes.filter((r: any) =>
+      r.nombre.toLowerCase().includes(libroSearchTerm.toLowerCase()) ||
+      (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(libroSearchTerm.toLowerCase())) ||
+      (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(libroSearchTerm.toLowerCase())) ||
+      (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(libroSearchTerm.toLowerCase()))
+    );
+  }, [recipes, libroSearchTerm]);
 
   // Filter recipes within the selected group
   const filtradas = useMemo(() => {
@@ -167,40 +187,143 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
       {!selectedGroup ? (
         // MENÚ DE ÁREAS
         <div className="space-y-8 animate-in slide-in-from-bottom-4 duration-500">
-          <header className="flex flex-col gap-2">
-            <h1 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
-              <BookOpen className="w-10 h-10 text-business-orange" /> Libro de Recetas
-            </h1>
-            <p className="text-slate-600 font-medium text-base max-w-2xl">
-              Selecciona un área de producción para visualizar las recetas vigentes y aprobadas.
-            </p>
+          <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+            <div>
+              <h1 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
+                <BookOpen className="w-10 h-10 text-business-orange" /> Libro de Recetas
+              </h1>
+              <p className="text-slate-600 font-medium text-base max-w-2xl mt-1">
+                Selecciona un área de producción para visualizar las recetas vigentes y aprobadas.
+              </p>
+            </div>
+            <div className="relative w-full sm:w-80 shrink-0">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Buscar receta o categoría..."
+                value={libroSearchTerm}
+                onChange={(e) => setLibroSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-10 py-2.5 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-business-mustard/20 focus:border-business-orange outline-none font-medium shadow-sm transition-all text-xs"
+              />
+              {libroSearchTerm && (
+                <button
+                  onClick={() => setLibroSearchTerm('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 hover:bg-slate-100 rounded-full text-slate-400 hover:text-slate-600 transition-colors"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
           </header>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {Object.entries(groupedRecipes).map(([areaName, areaRecipes]) => {
-              const config = AREA_CONFIG[areaName] || AREA_CONFIG['Área no definida'];
-              const Icon = config.icon;
-              const count = (areaRecipes as any).length;
-              
-              if (count === 0 && areaName === 'Área no definida') return null;
-              
-              return (
-                <div 
-                  key={areaName}
-                  onClick={() => setSelectedGroup(areaName)}
-                  className={`relative overflow-hidden cursor-pointer rounded-2xl border-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl group p-6 flex flex-col items-center justify-center text-center h-48 ${config.bg} ${config.border}`}
-                >
-                  <div className={`p-4 rounded-full bg-white shadow-sm mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}>
-                    <Icon className={`w-8 h-8 ${config.color}`} />
-                  </div>
-                  <h3 className={`text-lg font-black leading-tight ${config.color}`}>{areaName}</h3>
-                  <div className="mt-2 text-xs font-bold uppercase tracking-widest bg-white/60 px-3 py-1 rounded-full text-slate-600">
-                    {count} {count === 1 ? 'Receta' : 'Recetas'}
+          {libroSearchTerm.trim() ? (
+            <div className="space-y-6 animate-in fade-in duration-300">
+              {/* Categorías coincidentes */}
+              {categoriasCoincidentes.length > 0 && (
+                <div className="space-y-3">
+                  <h2 className="text-xs font-black text-slate-500 uppercase tracking-widest">Áreas Encontradas</h2>
+                  <div className="flex flex-wrap gap-3">
+                    {categoriasCoincidentes.map(areaName => {
+                      const config = AREA_CONFIG[areaName] || AREA_CONFIG['Área no definida'];
+                      const Icon = config.icon;
+                      const count = (groupedRecipes[areaName] || []).length;
+                      return (
+                        <button
+                          key={areaName}
+                          onClick={() => {
+                            setSelectedGroup(areaName);
+                            setLibroSearchTerm('');
+                          }}
+                          className={`flex items-center gap-2.5 px-4 py-2 bg-white border-2 rounded-xl transition-all hover:-translate-y-0.5 hover:shadow-md active:scale-95 ${config.border}`}
+                        >
+                          <Icon className={`w-4 h-4 ${config.color}`} />
+                          <span className={`text-xs font-black uppercase tracking-wider ${config.color}`}>{areaName}</span>
+                          <span className="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">{count}</span>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
-              );
-            })}
-          </div>
+              )}
+
+              {/* Recetas coincidentes */}
+              <div className="space-y-3">
+                <h2 className="text-xs font-black text-slate-500 uppercase tracking-widest">Recetas Encontradas</h2>
+                {recetasCoincidentes.length === 0 ? (
+                  <div className="bg-white rounded-3xl p-12 text-center border border-slate-100 shadow-sm">
+                    <h3 className="text-lg font-black text-slate-900 mb-2">No se encontraron recetas</h3>
+                    <p className="text-slate-500 font-medium text-sm">
+                      Intenta buscar con otro término en el Libro de Recetas.
+                    </p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+                    {recetasCoincidentes.map((r: any) => (
+                      <div
+                        key={r.id}
+                        onClick={() => onSelect(r)}
+                        className="bg-white p-4 rounded-2xl shadow-sm border border-slate-50 hover:shadow-xl hover:scale-[1.01] transition-all cursor-pointer group flex flex-col justify-between"
+                      >
+                        <div>
+                          <div className="flex justify-between items-start mb-2">
+                            <div className="flex gap-2 items-center">
+                              <span className="text-xs font-black uppercase tracking-widest px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded-md border border-emerald-100">Vigente</span>
+                              {r.codigoCalidad && <span className="text-[10px] font-black bg-business-mustard/10 text-business-orange px-2 py-0.5 rounded border border-business-mustard/30 uppercase tracking-widest">{r.codigoCalidad}</span>}
+                            </div>
+                            <span className="text-xs font-black text-slate-700">v{r.versionActual}</span>
+                          </div>
+                          <h3 className="text-lg font-black text-slate-900 mb-1 group-hover:text-business-orange transition-colors leading-tight">
+                            {r.detalle_nombre_receta || r.nombre}
+                          </h3>
+                          <div className="text-sm font-bold text-slate-600 uppercase mb-2">
+                            Área: {normalizeArea(r.areaProduce)}
+                          </div>
+                          <div className="flex items-center gap-3 text-xs font-bold text-slate-600 uppercase">
+                            <span className="flex items-center gap-1"><Clock size={12} /> {r.tiempoProcesoMinutos || 0}m</span>
+                            <span className="flex items-center gap-1"><Scale size={12} /> {r.pesoTotalCantidad}g</span>
+                          </div>
+                        </div>
+                        <div className="pt-3 mt-4 border-t border-slate-50 flex justify-between items-center">
+                          <span className="font-black text-slate-900 text-xl tracking-tighter">
+                            {r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+                          </span>
+                          <button className="p-2 bg-business-olive text-white rounded-lg group-hover:bg-business-orange transition-all shadow-md">
+                            <ArrowRight className="w-4 h-4" />
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {Object.entries(groupedRecipes).map(([areaName, areaRecipes]) => {
+                const config = AREA_CONFIG[areaName] || AREA_CONFIG['Área no definida'];
+                const Icon = config.icon;
+                const count = (areaRecipes as any).length;
+                
+                if (count === 0 && areaName === 'Área no definida') return null;
+                
+                return (
+                  <div 
+                    key={areaName}
+                    onClick={() => setSelectedGroup(areaName)}
+                    className={`relative overflow-hidden cursor-pointer rounded-2xl border-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl group p-6 flex flex-col items-center justify-center text-center h-48 ${config.bg} ${config.border}`}
+                  >
+                    <div className={`p-4 rounded-full bg-white shadow-sm mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}>
+                      <Icon className={`w-8 h-8 ${config.color}`} />
+                    </div>
+                    <h3 className={`text-lg font-black leading-tight ${config.color}`}>{areaName}</h3>
+                    <div className="mt-2 text-xs font-bold uppercase tracking-widest bg-white/60 px-3 py-1 rounded-full text-slate-600">
+                      {count} {count === 1 ? 'Receta' : 'Recetas'}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       ) : (
         // LISTADO DE RECETAS POR ÁREA
