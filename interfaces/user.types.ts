@@ -10,7 +10,8 @@ export type Permiso =
   | 'CONFIG_SISTEMA'
   | 'GESTION_USUARIOS'
   | 'FICHAS_TECNICAS'
-  | 'DESCARGA_MASIVA';
+  | 'DESCARGA_MASIVA'
+  | 'DESCARGA_INDIVIDUAL';
 
 export interface ConfiguracionRol {
   rol: Rol;

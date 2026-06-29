@@ -2,21 +2,27 @@ import React, { useState, useMemo } from 'react';
 import { BookOpen, X, Calculator, Clock, Scale, Sparkles, History, Eye, ShieldCheck, FileText, Camera, HandCoins, Factory, TrendingUp, Coins, Building2, Users, BadgeCheck, Warehouse, Package, AlertCircle, Layers, Network, ChevronDown, ChevronRight } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ExportarRecetaPDF from './ExportarRecetaPDF';
-import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta } from './types';
+import { Receta, Rol, Insumo, IngredienteReceta, EstadoReceta, ConfiguracionRol } from './types';
 import { ESTILOS_ESTADO, ETIQUETAS_ESTADO } from './constants';
 import { useStore } from './useStore';
 
 export default function VisorRecetaLibro({ 
-  recipe, allRecipes, insumos, onClose, obtenerEtiquetaEstado, onRegisterPrint 
+  recipe, allRecipes, insumos, onClose, obtenerEtiquetaEstado, onRegisterPrint, configRoles 
 }: { 
   recipe: Receta, 
   allRecipes: Receta[], 
   insumos: Insumo[], 
   onClose: () => void, 
   obtenerEtiquetaEstado?: (r: Receta) => string,
-  onRegisterPrint?: (recipeId: string, printedDate: string) => void
+  onRegisterPrint?: (recipeId: string, printedDate: string) => void,
+  configRoles?: ConfiguracionRol[]
 }) {
   const { role } = useStore();
+
+  const tienePermisoDescargaIndividual = useMemo(() => {
+    const config = configRoles?.find((r) => r.rol === role);
+    return config ? config.permisos.includes('DESCARGA_INDIVIDUAL') : false;
+  }, [configRoles, role]);
   const [tab, setTab] = useState<'info' | 'preparacion' | 'historial' | 'costeo'>('info');
   const [recetaActiva, setRecetaActiva] = useState<Receta>(recipe);
 
@@ -784,7 +790,7 @@ export default function VisorRecetaLibro({
           </div>
 
           <div className="flex gap-3 items-center">
-            {(role === 'CALIDAD' || role === 'CHEF' || role === 'ADMIN') && recetaActiva.estado === EstadoReceta.APROBADO && (
+            {tienePermisoDescargaIndividual && recetaActiva.estado === EstadoReceta.APROBADO && (
               <PDFDownloadLink
                 onClick={registrarImpresion}
                 document={<ExportarRecetaPDF receta={{ ...recetaActiva, ingredientesCategorizados: ingredientesCategorizados as any }} />}
