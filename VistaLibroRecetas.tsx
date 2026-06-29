@@ -148,6 +148,7 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
         groups['Área no definida'].push(r);
       }
     });
+    return groups;
   }, [recipes]);
 
   // Categorías que coinciden globalmente

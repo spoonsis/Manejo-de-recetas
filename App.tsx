@@ -1598,7 +1598,7 @@ function ListaRecetas({ recipes, searchTerm, setSearchTerm, onEdit, onCreate, on
                           <div className="flex justify-between items-start mb-2">
                             <div className="flex gap-2 items-center">
                               <span className={`text-xs font-black uppercase tracking-widest px-2 py-0.5 rounded-md border ${r.estado === EstadoReceta.APROBADO ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : r.estado?.includes('RECHAZADO') ? 'bg-rose-50 text-rose-700 border-rose-200' : r.estado === EstadoReceta.BORRADOR ? 'bg-slate-50 text-slate-600 border-slate-200' : 'bg-amber-50 text-amber-700 border-amber-200'}`}>
-                                {(obtenerEtiquetaEstado ? obtenerEtiquetaEstado(r) : r.estado).toUpperCase()}
+                                {((obtenerEtiquetaEstado ? obtenerEtiquetaEstado(r) : r.estado) || '').toUpperCase()}
                               </span>
                               {r.codigoCalidad && <span className="text-[10px] font-black bg-business-mustard/10 text-business-orange px-2 py-0.5 rounded border border-business-mustard/30 uppercase tracking-widest">{r.codigoCalidad}</span>}
                             </div>
