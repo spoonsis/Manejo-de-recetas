@@ -140,6 +140,8 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
     const groups: Record<string, any[]> = {};
     Object.keys(AREA_CONFIG).forEach(k => groups[k] = []);
     
+    if (!recipes || !Array.isArray(recipes)) return groups;
+    
     recipes.forEach((r: any) => {
       const groupName = normalizeArea(r.areaProduce);
       if (groups[groupName]) {
@@ -153,33 +155,36 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
 
   // Categorías que coinciden globalmente
   const categoriasCoincidentes = useMemo(() => {
-    if (!libroSearchTerm.trim()) return [];
+    if (!libroSearchTerm || !libroSearchTerm.trim() || !groupedRecipes) return [];
+    const term = libroSearchTerm.toLowerCase();
     return Object.keys(groupedRecipes).filter(cat => 
       cat !== 'Área no definida' && cat !== 'Duplicados' && 
-      cat.toLowerCase().includes(libroSearchTerm.toLowerCase())
+      cat.toLowerCase().includes(term)
     );
   }, [groupedRecipes, libroSearchTerm]);
 
   // Recetas que coinciden globalmente (aprobadas)
   const recetasCoincidentes = useMemo(() => {
-    if (!libroSearchTerm.trim()) return [];
+    if (!recipes || !Array.isArray(recipes) || !libroSearchTerm || !libroSearchTerm.trim()) return [];
+    const term = libroSearchTerm.toLowerCase();
     return recipes.filter((r: any) =>
-      r.nombre.toLowerCase().includes(libroSearchTerm.toLowerCase()) ||
-      (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(libroSearchTerm.toLowerCase())) ||
-      (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(libroSearchTerm.toLowerCase())) ||
-      (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(libroSearchTerm.toLowerCase()))
+      (r.nombre && r.nombre.toLowerCase().includes(term)) ||
+      (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(term)) ||
+      (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(term)) ||
+      (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(term))
     );
   }, [recipes, libroSearchTerm]);
 
   // Filter recipes within the selected group
   const filtradas = useMemo(() => {
-    if (!selectedGroup) return [];
+    if (!selectedGroup || !groupedRecipes) return [];
     const groupList = groupedRecipes[selectedGroup] || [];
+    const term = (search || '').toLowerCase();
     return groupList.filter((r: any) =>
-      (r.nombre.toLowerCase().includes(search.toLowerCase()) || 
-       (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(search.toLowerCase())) ||
-       (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(search.toLowerCase())) ||
-       (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(search.toLowerCase())))
+      (r.nombre && r.nombre.toLowerCase().includes(term)) || 
+      (r.detalle_nombre_receta && r.detalle_nombre_receta.toLowerCase().includes(term)) ||
+      (r.codigoCalidad && r.codigoCalidad.toLowerCase().includes(term)) ||
+      (r.codigo_netsuite && r.codigo_netsuite.toLowerCase().includes(term))
     );
   }, [groupedRecipes, selectedGroup, search]);
 
@@ -286,7 +291,7 @@ export default function VistaLibroRecetas({ recipes, onSelect, configRoles }: an
                         </div>
                         <div className="pt-3 mt-4 border-t border-slate-50 flex justify-between items-center">
                           <span className="font-black text-slate-900 text-xl tracking-tighter">
-                            {r.costoTotal.toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
+                            {(r.costoTotal || 0).toLocaleString('es-CR', { style: 'currency', currency: 'CRC' })}
                           </span>
                           <button className="p-2 bg-business-olive text-white rounded-lg group-hover:bg-business-orange transition-all shadow-md">
                             <ArrowRight className="w-4 h-4" />
